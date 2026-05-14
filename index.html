@@ -26,6 +26,10 @@
     .logo-text { font-size: 1.45rem; font-weight: 900; letter-spacing: -0.5px; background: linear-gradient(135deg,#e0f2fe,#38bdf8,#2dd4bf); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
     .tagline { font-size: 0.95rem; color: var(--cyan-dim); letter-spacing: 2px; font-weight: 300; text-transform: uppercase; margin-bottom: 8px; }
     .header-sub { font-size: 0.82rem; color: var(--muted); letter-spacing: 0.5px; }
+    .lang-switcher { display: flex; gap: 8px; justify-content: center; margin-top: 18px; }
+    .lang-switcher a { text-decoration: none; color: var(--muted); font-size: 0.85rem; font-weight: 600; padding: 5px 14px; border: 1px solid var(--border); border-radius: 20px; background: var(--tag-bg); transition: color .2s, border-color .2s, background .2s; }
+    .lang-switcher a:hover { color: var(--cyan); border-color: var(--border-glow); }
+    .lang-switcher a.active { color: var(--white); border-color: var(--cyan); background: rgba(56,189,248,0.18); }
     header::before { content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 600px; height: 200px; background: radial-gradient(ellipse at center,rgba(56,189,248,.10) 0%,transparent 70%); pointer-events: none; }
     .section-label { display: flex; align-items: center; gap: 12px; margin: 40px 0 16px; font-size: 0.72rem; font-weight: 700; color: var(--muted); letter-spacing: 2.5px; text-transform: uppercase; }
     .section-label::before,.section-label::after { content: ''; flex: 1; height: 1px; background: var(--border); }
@@ -64,6 +68,27 @@
     .footer-note { font-size: 0.78rem; color: var(--muted); line-height: 1.7; }
     .footer-note a { color: var(--cyan); text-decoration: none; }
     .footer-note a:hover { text-decoration: underline; }
+    /* News-tip submission form */
+    .tip-section { margin: 40px 0 16px; }
+    .tip-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px 24px; }
+    .tip-title { font-size: 1.0rem; font-weight: 700; color: var(--white); margin-bottom: 4px; }
+    .tip-sub { font-size: 0.82rem; color: var(--muted); margin-bottom: 16px; line-height: 1.6; }
+    .tip-form { display: flex; flex-direction: column; gap: 10px; }
+    .tip-form label { font-size: 0.74rem; font-weight: 700; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; }
+    .tip-form input, .tip-form textarea { font-family: inherit; font-size: 0.92rem; background: var(--bg-card2); color: var(--white); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 10px 12px; transition: border-color .2s; width: 100%; }
+    .tip-form input:focus, .tip-form textarea:focus { outline: none; border-color: var(--cyan); }
+    .tip-form textarea { min-height: 70px; resize: vertical; }
+    .tip-form .row { display: flex; flex-direction: column; gap: 4px; }
+    .tip-form .row.compact { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .tip-form .submit { background: var(--cyan); color: var(--bg-deep); font-weight: 800; border: none; border-radius: var(--radius-sm); padding: 10px 18px; cursor: pointer; font-size: 0.92rem; letter-spacing: 0.3px; transition: background .2s; margin-top: 6px; align-self: flex-start; }
+    .tip-form .submit:hover { background: var(--cyan-dim); }
+    .tip-form .submit:disabled { background: var(--muted); cursor: not-allowed; }
+    .tip-msg { font-size: 0.85rem; margin-top: 8px; }
+    .tip-msg.ok { color: var(--teal); }
+    .tip-msg.err { color: #fca5a5; }
+    @media (max-width: 600px) {
+      .tip-form .row.compact { grid-template-columns: 1fr; gap: 10px; }
+    }
     ::-webkit-scrollbar { width: 6px; }
     ::-webkit-scrollbar-track { background: var(--bg-deep); }
     ::-webkit-scrollbar-thumb { background: rgba(56,189,248,.3); border-radius: 3px; }
@@ -82,6 +107,10 @@
     <div class="logo-badge"><span class="logo-emoji">🛡️</span><span class="logo-text">Space Korean</span></div>
     <div class="tagline">우주산업 뉴스, 한국어로</div>
     <div class="header-sub">Orbital Datacenters · Launch · AI in Space · 우주 스타트업</div>
+    <div class="lang-switcher">
+      <a href="./" class="active">🇰🇷 한국어</a>
+      <a href="./thai/">🇹🇭 ไทย</a>
+    </div>
   </header>
   <div class="section-label">최신 브리핑</div>
 
@@ -452,6 +481,33 @@
       </div>
     </div>
   </div>
+  <div class="section-label">📣 뉴스 제보</div>
+  <div class="tip-section">
+    <div class="tip-card">
+      <div class="tip-title">우주 데이터센터 관련 뉴스를 제보해 주세요</div>
+      <div class="tip-sub">국내외 어떤 출처도 환영합니다. 짧은 한 줄 + 링크만 있어도 충분 — 다음 날 아침 브리핑 후보로 검토합니다.</div>
+      <form class="tip-form" id="tipForm">
+        <div class="row">
+          <label for="tip-title">헤드라인 *</label>
+          <input id="tip-title" name="title" type="text" maxlength="200" placeholder="예: 한화시스템, 우주 데이터센터 시제 위성 발사 발표" required />
+        </div>
+        <div class="row">
+          <label for="tip-url">출처 링크</label>
+          <input id="tip-url" name="url" type="url" maxlength="500" placeholder="https://..." />
+        </div>
+        <div class="row">
+          <label for="tip-note">메모</label>
+          <textarea id="tip-note" name="note" maxlength="2000" placeholder="추가 맥락이나 한국에서 왜 중요한지 등 (선택)"></textarea>
+        </div>
+        <div class="row">
+          <label for="tip-contact">연락처 (선택)</label>
+          <input id="tip-contact" name="contact" type="text" maxlength="200" placeholder="이메일 또는 트위터 핸들 — 후속 확인이 필요하면 사용" />
+        </div>
+        <button class="submit" type="submit" id="tip-submit">제보 보내기</button>
+        <div class="tip-msg" id="tip-msg"></div>
+      </form>
+    </div>
+  </div>
 </div>
 <footer>
   <div class="page-wrap" style="padding-bottom:0">
@@ -478,6 +534,103 @@
     function loop() { ctx.clearRect(0,0,W,H); drawStars(); drawShootingStars(); requestAnimationFrame(loop); }
     window.addEventListener('resize',()=>{resize();initStars();}); resize(); initStars(); loop();
     setInterval(spawnShootingStar,SHOOT_INTERVAL); setTimeout(spawnShootingStar,800);
+  })();
+
+  // ===== Cloudflare tracker beacon + news-tip form =====
+  // Replace WORKER_URL_PLACEHOLDER with deployed worker URL after `wrangler deploy`.
+  // Format: https://spacekorean-tracker.<your-subdomain>.workers.dev
+  (function () {
+    var WORKER_URL = "WORKER_URL_PLACEHOLDER";
+    var LANG = "ko";
+
+    // Skip locally / before deployment.
+    var localHost = location.hostname === "localhost" || location.hostname === "127.0.0.1";
+    var unconfigured = WORKER_URL.indexOf("PLACEHOLDER") !== -1;
+
+    // --- visitor beacon ---
+    function fireBeacon() {
+      if (localHost || unconfigured) return;
+      var payload = JSON.stringify({
+        path: location.pathname,
+        anchor: (location.hash || "").replace(/^#/, ""),
+        referrer: document.referrer || "",
+      });
+      var sent = false;
+      if (navigator.sendBeacon) {
+        try { sent = navigator.sendBeacon(WORKER_URL + "/beacon", new Blob([payload], { type: "application/json" })); } catch (_) {}
+      }
+      if (!sent) {
+        fetch(WORKER_URL + "/beacon", { method: "POST", headers: { "Content-Type": "application/json" }, body: payload, keepalive: true, mode: "cors", credentials: "omit" }).catch(function () {});
+      }
+    }
+    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", fireBeacon);
+    else fireBeacon();
+    var lastAnchor = (location.hash || "").replace(/^#/, "");
+    window.addEventListener("hashchange", function () {
+      var cur = (location.hash || "").replace(/^#/, "");
+      if (cur !== lastAnchor) { lastAnchor = cur; fireBeacon(); }
+    });
+
+    // --- news-tip form submit ---
+    var form = document.getElementById("tipForm");
+    if (form) {
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        var btn = document.getElementById("tip-submit");
+        var msg = document.getElementById("tip-msg");
+        msg.className = "tip-msg";
+        msg.textContent = "";
+
+        if (unconfigured) {
+          msg.className = "tip-msg err";
+          msg.textContent = "제보 시스템 준비 중입니다. 잠시 후 다시 시도해 주세요.";
+          return;
+        }
+
+        var data = {
+          lang: LANG,
+          title: document.getElementById("tip-title").value.trim(),
+          url: document.getElementById("tip-url").value.trim(),
+          note: document.getElementById("tip-note").value.trim(),
+          contact: document.getElementById("tip-contact").value.trim(),
+        };
+        if (!data.title && !data.note) {
+          msg.className = "tip-msg err";
+          msg.textContent = "헤드라인 또는 메모 중 하나는 필수입니다.";
+          return;
+        }
+
+        btn.disabled = true;
+        btn.textContent = "보내는 중...";
+
+        fetch(WORKER_URL + "/suggest", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data),
+          mode: "cors",
+          credentials: "omit",
+        })
+        .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, body: j }; }); })
+        .then(function (res) {
+          if (res.ok && res.body.ok) {
+            msg.className = "tip-msg ok";
+            msg.textContent = "✓ 감사합니다. 제보가 접수됐습니다. 내일 아침 브리핑 후보로 검토하겠습니다.";
+            form.reset();
+          } else {
+            msg.className = "tip-msg err";
+            msg.textContent = "전송 실패: " + (res.body && res.body.error ? res.body.error : "다시 시도해 주세요.");
+          }
+        })
+        .catch(function (e) {
+          msg.className = "tip-msg err";
+          msg.textContent = "네트워크 오류: " + e.message;
+        })
+        .finally(function () {
+          btn.disabled = false;
+          btn.textContent = "제보 보내기";
+        });
+      });
+    }
   })();
 </script>
 </body>

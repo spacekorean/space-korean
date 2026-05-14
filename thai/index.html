@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Space Korean — ข่าวอุตสาหกรรมอวกาศ ฉบับภาษาไทย</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;700;900&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg-deep: #020818; --bg-card: #071028; --bg-card2: #0a1535;
+      --border: rgba(56,189,248,0.18); --border-glow: rgba(56,189,248,0.55);
+      --cyan: #38bdf8; --cyan-dim: #7dd3fc; --teal: #2dd4bf;
+      --white: #e8f4fd; --muted: #94a3b8; --accent: #818cf8;
+      --tag-bg: rgba(56,189,248,0.10); --radius: 12px; --radius-sm: 8px;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Noto Sans Thai', 'Noto Sans KR', -apple-system, sans-serif; background: var(--bg-deep); color: var(--white); min-height: 100vh; overflow-x: hidden; line-height: 1.7; }
+    #star-canvas { position: fixed; inset: 0; z-index: 0; pointer-events: none; }
+    .page-wrap { position: relative; z-index: 1; max-width: 820px; margin: 0 auto; padding: 0 20px 80px; }
+    header { text-align: center; padding: 60px 20px 48px; position: relative; }
+    .logo-badge { display: inline-flex; align-items: center; gap: 12px; background: linear-gradient(135deg,rgba(56,189,248,.12),rgba(45,212,191,.08)); border: 1px solid var(--border-glow); border-radius: 50px; padding: 10px 24px; margin-bottom: 22px; box-shadow: 0 0 32px rgba(56,189,248,.15),inset 0 1px 0 rgba(255,255,255,.06); backdrop-filter: blur(8px); }
+    .logo-emoji { font-size: 1.6rem; }
+    .logo-text { font-size: 1.45rem; font-weight: 900; letter-spacing: -0.5px; background: linear-gradient(135deg,#e0f2fe,#38bdf8,#2dd4bf); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .tagline { font-size: 0.95rem; color: var(--cyan-dim); letter-spacing: 1px; font-weight: 400; text-transform: none; margin-bottom: 8px; }
+    .header-sub { font-size: 0.82rem; color: var(--muted); letter-spacing: 0.5px; }
+    header::before { content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 600px; height: 200px; background: radial-gradient(ellipse at center,rgba(56,189,248,.10) 0%,transparent 70%); pointer-events: none; }
+    .lang-switcher { display: flex; gap: 8px; justify-content: center; margin-top: 18px; }
+    .lang-switcher a { text-decoration: none; color: var(--muted); font-size: 0.85rem; font-weight: 600; padding: 5px 14px; border: 1px solid var(--border); border-radius: 20px; background: var(--tag-bg); transition: color .2s, border-color .2s, background .2s; }
+    .lang-switcher a:hover { color: var(--cyan); border-color: var(--border-glow); }
+    .lang-switcher a.active { color: var(--white); border-color: var(--cyan); background: rgba(56,189,248,0.18); }
+    .section-label { display: flex; align-items: center; gap: 12px; margin: 40px 0 16px; font-size: 0.72rem; font-weight: 700; color: var(--muted); letter-spacing: 1.5px; text-transform: uppercase; }
+    .section-label::before,.section-label::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+    .card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 20px; overflow: hidden; transition: border-color .25s,box-shadow .25s; box-shadow: 0 2px 24px rgba(0,0,0,.4); }
+    .card:hover { border-color: rgba(56,189,248,.45); box-shadow: 0 4px 40px rgba(56,189,248,.10); }
+    .card-header { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 20px 24px; cursor: pointer; user-select: none; -webkit-user-select: none; transition: background .2s; }
+    .card-header:hover { background: rgba(56,189,248,.04); }
+    .card-meta { display: flex; align-items: center; gap: 12px; }
+    .card-date { font-size: 0.78rem; font-weight: 700; color: var(--cyan); letter-spacing: 1px; background: var(--tag-bg); border: 1px solid var(--border); border-radius: 20px; padding: 3px 12px; white-space: nowrap; }
+    .card-title-row { flex: 1; }
+    .card-edition { font-size: 1.0rem; font-weight: 700; color: var(--white); line-height: 1.3; }
+    .card-count { font-size: 0.75rem; color: var(--muted); margin-top: 2px; }
+    .toggle-icon { width: 28px; height: 28px; border-radius: 50%; border: 1px solid var(--border); background: rgba(56,189,248,.06); display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: transform .3s,background .2s; color: var(--cyan); font-size: 0.8rem; }
+    .card.open .toggle-icon { transform: rotate(180deg); background: rgba(56,189,248,.14); }
+    .card-body { display: none; padding: 0 24px 24px; border-top: 1px solid var(--border); animation: fadeSlide .25s ease; }
+    .card.open .card-body { display: block; }
+    @keyframes fadeSlide { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: translateY(0); } }
+    .section-title { font-size: 0.70rem; font-weight: 700; color: var(--teal); letter-spacing: 1.5px; text-transform: uppercase; margin: 20px 0 12px; }
+    .headline-list { list-style: none; display: flex; flex-direction: column; gap: 10px; margin-bottom: 4px; }
+    .headline-item { display: flex; align-items: flex-start; gap: 10px; padding: 12px 16px; background: var(--bg-card2); border: 1px solid var(--border); border-radius: var(--radius-sm); transition: border-color .2s,background .2s; }
+    .headline-item:hover { border-color: rgba(56,189,248,.35); background: rgba(56,189,248,.04); }
+    .hl-bullet { width: 6px; height: 6px; border-radius: 50%; background: var(--cyan); margin-top: 7px; flex-shrink: 0; box-shadow: 0 0 6px var(--cyan); }
+    .hl-text { font-size: 0.92rem; color: var(--white); font-weight: 400; line-height: 1.55; }
+    .hl-date { display: inline-block; min-width: 5.5em; margin-right: 8px; color: var(--muted); font-variant-numeric: tabular-nums; font-size: 0.82em; font-weight: 500; letter-spacing: 0.3px; }
+    .hl-text a { color: var(--white); text-decoration: none; transition: color .2s; }
+    .hl-text a:hover { color: var(--cyan); text-decoration: underline; }
+    .summary-box { background: linear-gradient(135deg,rgba(56,189,248,.07),rgba(45,212,191,.04)); border: 1px solid rgba(56,189,248,.25); border-radius: var(--radius-sm); padding: 16px 18px; margin-top: 18px; }
+    .summary-label { font-size: 0.68rem; font-weight: 700; color: var(--teal); letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 8px; }
+    .summary-text { font-size: 0.9rem; color: var(--cyan-dim); line-height: 1.78; font-weight: 300; }
+    .links-row { margin-top: 16px; display: flex; flex-wrap: wrap; gap: 8px; }
+    .src-link { display: inline-flex; align-items: center; gap: 5px; font-size: 0.76rem; color: var(--cyan); text-decoration: none; background: var(--tag-bg); border: 1px solid var(--border); border-radius: 20px; padding: 4px 12px; transition: background .2s,border-color .2s,color .2s; font-weight: 500; }
+    .src-link:hover { background: rgba(56,189,248,.18); border-color: var(--border-glow); color: #e0f2fe; }
+    .src-link::before { content: '↗'; font-size: 0.72rem; }
+    .stub-note { color: var(--muted); font-size: 0.92rem; line-height: 1.8; padding: 20px 0 8px; }
+    .stub-note a { color: var(--cyan); text-decoration: none; }
+    .stub-note a:hover { text-decoration: underline; }
+    .tip-section { margin: 40px 0 16px; }
+    .tip-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px 24px; }
+    .tip-title { font-size: 1.0rem; font-weight: 700; color: var(--white); margin-bottom: 4px; }
+    .tip-sub { font-size: 0.86rem; color: var(--muted); margin-bottom: 16px; line-height: 1.7; }
+    .tip-form { display: flex; flex-direction: column; gap: 10px; }
+    .tip-form label { font-size: 0.78rem; font-weight: 700; color: var(--muted); letter-spacing: 0.5px; }
+    .tip-form input, .tip-form textarea { font-family: inherit; font-size: 0.94rem; background: var(--bg-card2); color: var(--white); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 10px 12px; transition: border-color .2s; width: 100%; }
+    .tip-form input:focus, .tip-form textarea:focus { outline: none; border-color: var(--cyan); }
+    .tip-form textarea { min-height: 70px; resize: vertical; }
+    .tip-form .row { display: flex; flex-direction: column; gap: 4px; }
+    .tip-form .submit { background: var(--cyan); color: var(--bg-deep); font-weight: 800; border: none; border-radius: var(--radius-sm); padding: 10px 18px; cursor: pointer; font-size: 0.94rem; transition: background .2s; margin-top: 6px; align-self: flex-start; }
+    .tip-form .submit:hover { background: var(--cyan-dim); }
+    .tip-form .submit:disabled { background: var(--muted); cursor: not-allowed; }
+    .tip-msg { font-size: 0.88rem; margin-top: 8px; }
+    .tip-msg.ok { color: var(--teal); }
+    .tip-msg.err { color: #fca5a5; }
+    footer { text-align: center; padding: 32px 20px 16px; border-top: 1px solid var(--border); margin-top: 20px; }
+    .footer-logo { font-size: 1.1rem; font-weight: 700; color: var(--cyan-dim); margin-bottom: 8px; }
+    .footer-note { font-size: 0.82rem; color: var(--muted); line-height: 1.8; }
+    .footer-note a { color: var(--cyan); text-decoration: none; }
+    .footer-note a:hover { text-decoration: underline; }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--bg-deep); }
+    ::-webkit-scrollbar-thumb { background: rgba(56,189,248,.3); border-radius: 3px; }
+    @media (max-width: 600px) {
+      header { padding: 40px 0 32px; } .logo-badge { padding: 8px 18px; } .logo-text { font-size: 1.2rem; }
+      .card-header { padding: 16px 16px; } .card-body { padding: 0 16px 20px; }
+      .card-edition { font-size: 0.92rem; } .card-date { font-size: 0.70rem; }
+      .headline-item { padding: 10px 12px; } .hl-text { font-size: 0.86rem; } .summary-text { font-size: 0.86rem; }
+    }
+  </style>
+</head>
+<body>
+<canvas id="star-canvas"></canvas>
+<div class="page-wrap">
+  <header>
+    <div class="logo-badge"><span class="logo-emoji">🛡️</span><span class="logo-text">Space Korean</span></div>
+    <div class="tagline">ข่าวอุตสาหกรรมอวกาศ · ฉบับภาษาไทย</div>
+    <div class="header-sub">Orbital Datacenters · Launch · AI in Space · สตาร์ตอัปอวกาศ</div>
+    <div class="lang-switcher">
+      <a href="../">🇰🇷 한국어</a>
+      <a href="./" class="active">🇹🇭 ไทย</a>
+    </div>
+  </header>
+
+  <div class="section-label">บรีฟล่าสุด</div>
+
+  <div class="card open" id="brief-coming-soon">
+    <div class="card-header" onclick="toggleCard(this)">
+      <div class="card-meta"><span class="card-date">เร็วๆ นี้</span></div>
+      <div class="card-title-row">
+        <div class="card-edition">🚀 บรีฟประจำวันภาษาไทยกำลังจะเริ่ม</div>
+        <div class="card-count">เปิดตัวเร็วๆ นี้</div>
+      </div>
+      <div class="toggle-icon">▼</div>
+    </div>
+    <div class="card-body">
+      <div class="stub-note">
+        Space Korean กำลังเตรียมเวอร์ชันภาษาไทย — บรีฟประจำวันเรื่อง <strong>ศูนย์ข้อมูลในวงโคจร · การปล่อยจรวด · AI ในอวกาศ · สตาร์ตอัปอวกาศ</strong> จะอัปเดตที่นี่ทุกเช้า เร็วๆ นี้
+        <br><br>
+        ในระหว่างนี้สามารถดูเนื้อหาฉบับภาษาเกาหลีได้ที่ <a href="../">หน้าหลักภาษาเกาหลี</a> หรือชมวิดีโอประจำวันได้ที่ YouTube channel <a href="https://youtube.com/@spacekorean" target="_blank" rel="noopener">@spacekorean</a>
+        <br><br>
+        💡 มีข่าวหรือข้อมูลเกี่ยวกับอุตสาหกรรมอวกาศที่อยากแนะนำ? ส่งข้อเสนอแนะมาได้ — ฟอร์มจะเปิดในไม่ช้านี้ด้านล่าง
+      </div>
+    </div>
+  </div>
+
+  <div class="section-label">📣 ส่งข่าวให้เรา</div>
+  <div class="tip-section">
+    <div class="tip-card">
+      <div class="tip-title">เสนอข่าวอุตสาหกรรมอวกาศที่น่าสนใจ</div>
+      <div class="tip-sub">ข่าวจากแหล่งใดก็ยินดี — แค่ส่งหัวข้อสั้นๆ พร้อมลิงก์ก็พอ เราจะพิจารณาเป็นบรีฟประจำวันถัดไป</div>
+      <form class="tip-form" id="tipForm">
+        <div class="row">
+          <label for="tip-title">หัวข้อข่าว *</label>
+          <input id="tip-title" name="title" type="text" maxlength="200" placeholder="ตัวอย่าง: SpaceX เปิดตัว Starship V3 พร้อมยกระดับ payload" required />
+        </div>
+        <div class="row">
+          <label for="tip-url">ลิงก์แหล่งข่าว</label>
+          <input id="tip-url" name="url" type="url" maxlength="500" placeholder="https://..." />
+        </div>
+        <div class="row">
+          <label for="tip-note">หมายเหตุ</label>
+          <textarea id="tip-note" name="note" maxlength="2000" placeholder="บริบทเพิ่มเติม หรือเหตุผลที่ข่าวนี้สำคัญ (ไม่บังคับ)"></textarea>
+        </div>
+        <div class="row">
+          <label for="tip-contact">ติดต่อ (ไม่บังคับ)</label>
+          <input id="tip-contact" name="contact" type="text" maxlength="200" placeholder="อีเมลหรือ Twitter handle หากต้องการให้ติดต่อกลับ" />
+        </div>
+        <button class="submit" type="submit" id="tip-submit">ส่งข้อเสนอแนะ</button>
+        <div class="tip-msg" id="tip-msg"></div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="page-wrap" style="padding-bottom:0">
+    <div class="footer-logo">🛡️ Space Korean · ฉบับภาษาไทย</div>
+    <div class="footer-note">
+      รวบรวมข่าวอัตโนมัติทุกเช้า · สรุปด้วย AI<br />
+      <span style="font-size:0.72rem;opacity:.6;">© 2026 Space Korean — บรีฟนี้มีวัตถุประสงค์เพื่อให้ข้อมูล ลิขสิทธิ์เนื้อหาต้นฉบับเป็นของแต่ละแหล่งข่าว</span>
+    </div>
+  </div>
+</footer>
+<script>
+  function toggleCard(headerEl) { const card = headerEl.closest('.card'); card.classList.toggle('open'); }
+  (function () {
+    const canvas = document.getElementById('star-canvas');
+    const ctx = canvas.getContext('2d');
+    let W, H, stars = [], shootingStars = [];
+    const STAR_COUNT = 280, SHOOT_INTERVAL = 4000;
+    function resize() { W = canvas.width = window.innerWidth; H = canvas.height = window.innerHeight; }
+    function randRange(a, b) { return a + Math.random() * (b - a); }
+    function initStars() { stars = []; for (let i = 0; i < STAR_COUNT; i++) { stars.push({ x: Math.random()*W, y: Math.random()*H, r: randRange(0.3,1.6), alpha: randRange(0.2,1.0), dAlpha: randRange(0.003,0.012)*(Math.random()<.5?1:-1), color: Math.random()<.12 ? 'hsl('+randRange(180,220)+',80%,80%)' : '#ffffff' }); } }
+    function spawnShootingStar() { const angle=randRange(15,35)*Math.PI/180; const startX=randRange(-100,W*.7); const startY=randRange(0,H*.5); shootingStars.push({x:startX,y:startY,vx:Math.cos(angle)*randRange(6,12),vy:Math.sin(angle)*randRange(6,12),len:randRange(80,180),life:1.0,decay:randRange(0.012,0.024)}); }
+    function drawStars() { stars.forEach(s => { s.alpha+=s.dAlpha; if(s.alpha>=1.0){s.alpha=1.0;s.dAlpha*=-1;} if(s.alpha<=0.1){s.alpha=0.1;s.dAlpha*=-1;} ctx.globalAlpha=s.alpha; ctx.beginPath(); ctx.arc(s.x,s.y,s.r,0,Math.PI*2); ctx.fillStyle=s.color; ctx.fill(); ctx.globalAlpha=1; }); }
+    function drawShootingStars() { shootingStars=shootingStars.filter(ss=>ss.life>0); shootingStars.forEach(ss => { const tailX=ss.x-ss.vx*(ss.len/10); const tailY=ss.y-ss.vy*(ss.len/10); const grad=ctx.createLinearGradient(tailX,tailY,ss.x,ss.y); grad.addColorStop(0,'rgba(56,189,248,0)'); grad.addColorStop(1,'rgba(255,255,255,'+ss.life*.9+')'); ctx.beginPath(); ctx.moveTo(tailX,tailY); ctx.lineTo(ss.x,ss.y); ctx.strokeStyle=grad; ctx.lineWidth=1.5*ss.life; ctx.stroke(); ss.x+=ss.vx; ss.y+=ss.vy; ss.life-=ss.decay; }); }
+    function loop() { ctx.clearRect(0,0,W,H); drawStars(); drawShootingStars(); requestAnimationFrame(loop); }
+    window.addEventListener('resize',()=>{resize();initStars();}); resize(); initStars(); loop();
+    setInterval(spawnShootingStar,SHOOT_INTERVAL); setTimeout(spawnShootingStar,800);
+  })();
+
+  // ===== Cloudflare tracker beacon + news-tip form (Thai) =====
+  (function () {
+    var WORKER_URL = "WORKER_URL_PLACEHOLDER";
+    var LANG = "th";
+    var localHost = location.hostname === "localhost" || location.hostname === "127.0.0.1";
+    var unconfigured = WORKER_URL.indexOf("PLACEHOLDER") !== -1;
+
+    function fireBeacon() {
+      if (localHost || unconfigured) return;
+      var payload = JSON.stringify({ path: location.pathname, anchor: (location.hash || "").replace(/^#/, ""), referrer: document.referrer || "" });
+      var sent = false;
+      if (navigator.sendBeacon) { try { sent = navigator.sendBeacon(WORKER_URL + "/beacon", new Blob([payload], { type: "application/json" })); } catch (_) {} }
+      if (!sent) fetch(WORKER_URL + "/beacon", { method: "POST", headers: { "Content-Type": "application/json" }, body: payload, keepalive: true, mode: "cors", credentials: "omit" }).catch(function () {});
+    }
+    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", fireBeacon); else fireBeacon();
+    var lastAnchor = (location.hash || "").replace(/^#/, "");
+    window.addEventListener("hashchange", function () { var cur = (location.hash || "").replace(/^#/, ""); if (cur !== lastAnchor) { lastAnchor = cur; fireBeacon(); } });
+
+    var form = document.getElementById("tipForm");
+    if (form) {
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        var btn = document.getElementById("tip-submit");
+        var msg = document.getElementById("tip-msg");
+        msg.className = "tip-msg"; msg.textContent = "";
+
+        if (unconfigured) {
+          msg.className = "tip-msg err";
+          msg.textContent = "ระบบส่งข้อเสนอแนะกำลังเตรียมการ กรุณาลองอีกครั้งในภายหลัง";
+          return;
+        }
+
+        var data = {
+          lang: LANG,
+          title: document.getElementById("tip-title").value.trim(),
+          url: document.getElementById("tip-url").value.trim(),
+          note: document.getElementById("tip-note").value.trim(),
+          contact: document.getElementById("tip-contact").value.trim(),
+        };
+        if (!data.title && !data.note) {
+          msg.className = "tip-msg err";
+          msg.textContent = "กรุณากรอกหัวข้อข่าวหรือหมายเหตุอย่างน้อยหนึ่งช่อง";
+          return;
+        }
+
+        btn.disabled = true; btn.textContent = "กำลังส่ง...";
+        fetch(WORKER_URL + "/suggest", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(data), mode: "cors", credentials: "omit" })
+          .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, body: j }; }); })
+          .then(function (res) {
+            if (res.ok && res.body.ok) {
+              msg.className = "tip-msg ok";
+              msg.textContent = "✓ ขอบคุณ ข้อเสนอแนะของท่านได้รับเรียบร้อยแล้ว";
+              form.reset();
+            } else {
+              msg.className = "tip-msg err";
+              msg.textContent = "ส่งไม่สำเร็จ: " + (res.body && res.body.error ? res.body.error : "กรุณาลองใหม่");
+            }
+          })
+          .catch(function (e) { msg.className = "tip-msg err"; msg.textContent = "ข้อผิดพลาดเครือข่าย: " + e.message; })
+          .finally(function () { btn.disabled = false; btn.textContent = "ส่งข้อเสนอแนะ"; });
+      });
+    }
+  })();
+</script>
+</body>
+</html>
