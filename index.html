@@ -537,10 +537,10 @@
   })();
 
   // ===== Cloudflare tracker beacon + news-tip form =====
-  // Replace WORKER_URL_PLACEHOLDER with deployed worker URL after `wrangler deploy`.
+  // Replace https://spacekorean-tracker.koreasat5a.workers.dev with deployed worker URL after `wrangler deploy`.
   // Format: https://spacekorean-tracker.<your-subdomain>.workers.dev
   (function () {
-    var WORKER_URL = "WORKER_URL_PLACEHOLDER";
+    var WORKER_URL = "https://spacekorean-tracker.koreasat5a.workers.dev";
     var LANG = "ko";
 
     // Skip locally / before deployment.
