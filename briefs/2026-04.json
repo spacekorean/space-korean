@@ -1,0 +1,42 @@
+{
+  "2026-04-29": {
+    "date": "2026-04-29",
+    "headlines": [
+      {
+        "date": null,
+        "html": "<a href=\"https://spacenews.com/spacex-offers-details-on-orbital-data-center-satellites/\" target=\"_blank\" rel=\"noopener\"><strong>SpaceX</strong>, 위성 100만 기 규모 구도 데이터센터 계획을 FCC에 제출 — 메가콘스텔레이션 기반 우주 클라우드 인프라 구상 공개</a>"
+      },
+      {
+        "date": null,
+        "html": "<a href=\"https://spacenews.com/blue-origin-joins-the-orbital-data-center-race/\" target=\"_blank\" rel=\"noopener\"><strong>블루오리진(Blue Origin)</strong>, Project Sunrise(51,600기 위성 네트워크) FCC 신청 접수</a>"
+      },
+      {
+        "date": null,
+        "html": "<strong>플래닛(Planet) × 구글, Project Suncatcher</strong> — TPU 탐재 AI 위성 2027년 발사 예정"
+      },
+      {
+        "date": null,
+        "html": "<a href=\"https://spacenews.com/china-backs-orbital-data-center-startup-with-8-4-billion-in-credit-lines/\" target=\"_blank\" rel=\"noopener\"><strong>중국 Orbital Chenguang</strong>, 84억 달러 신용 한도 확보</a>"
+      },
+      {
+        "date": null,
+        "html": "<a href=\"https://spacenews.com/the-race-to-build-orbital-data-centers-is-missing-its-biggest-variable-power/\" target=\"_blank\" rel=\"noopener\"><strong>전력·공급망이 진짜 병목</strong>: 전문가 분석 — 하드웨어 수요보다 발사 공급·전력 시스템이 실질적 한계 요인</a>"
+      }
+    ],
+    "summary_html": "4월 29일은 구도 데이터센터 경쟁이 본격적으로 공식화된 날입니다.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/spacex-1m-satellite-fcc",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/blue-origin-project-sunrise",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/planet-google-suncatcher",
+        "label": "SpaceNews"
+      }
+    ]
+  }
+}
