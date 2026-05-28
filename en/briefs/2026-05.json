@@ -1,4 +1,28 @@
 {
+  "2026-05-29": {
+    "date": "2026-05-29",
+    "headlines": [
+      {
+        "date": "2026-05-27",
+        "html": "<a href=\"https://payloadspace.com/aitech-upgrades-its-space-supercomputer/\" target=\"_blank\" rel=\"noopener\"><strong>Aitech&#x27;s space supercomputer makes a 22x leap</strong>: California-based Aitech Systems announced it is integrating NVIDIA&#x27;s IGX Thor platform into its next-generation S-A2300 supercomputer, boosting inference performance from 248 TOPS to 5,581 FP4 TFLOPS — a next-generation chip purpose-built for orbital data centers is stepping up — (Payloadspace)</a>"
+      },
+      {
+        "date": "2026-05-28",
+        "html": "<a href=\"https://payloadspace.com/observable-space-raises-90m-series-a/\" target=\"_blank\" rel=\"noopener\"><strong>Observable Space closes $90M Series A</strong>: The optical communications ground station and optical sensing hardware company secured $90 million in a round led by Lux Capital, while simultaneously winning a U.S. Space Force IDIQ contract worth up to $94 million — capital is now flowing in to unclog the ground downlink bottleneck for orbital data centers — (Payloadspace)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Payloadspace (5/27)</strong> — Aitech Systems announced on May 27 that it is integrating NVIDIA&#x27;s IGX Thor platform into its next-generation space supercomputer, the S-A2300. The current generation is based on the Jetson AGX Orin and delivers 248 TOPS, but after the Thor upgrade it will provide 5,581 FP4 TFLOPS of AI inference performance and 400 Gigabit Ethernet connectivity — roughly a 22x performance leap. Aitech is an established supplier of space-grade GPGPUs, having delivered earlier models to NASA, Sidus Space and numerous other missions. Dan Mor, Director of Customer Solutions, framed the significance by saying the company is &quot;positioned to bring terrestrial industrial AI directly into the harsh orbital environment.&quot; As the roster of constellation-scale ODC operators grows (Starcloud, Cowboy Space, Sophia Space), this marks a step up in the specifications of the core components they will be putting on orbit.<br><br><strong>② Payloadspace (5/28)</strong> — Observable Space announced on May 28 that it had closed a $90 million Series A. The round was led by Lux Capital with participation from Upfront, Detroit Venture Partners, Ireland Green and RTX Ventures. In the same announcement, the U.S. Space Force awarded an IDIQ contract worth up to $94 million for satellite-tracking optical ground network work, with an initial $22 million task order. The company manufactures three product lines — optical communications ground stations, ground-based optical sensing, and optical payloads for satellites — at facilities in Los Angeles and Michigan, and will use the funds to expand its Detroit site. To the diagnosis that the world lacks the optical ground stations needed to receive the terabit-scale data that orbital data centers will transmit (the 10% infrastructure gap covered in the May 15 Calabs piece), the capital markets have now delivered a direct answer. Today&#x27;s two stories both show capital and technology converging on the supporting infrastructure layer of the ODC ecosystem. Following Redwire&#x27;s deployable radiator and thermal management white paper on May 21 and Novaspace&#x27;s optical ground station (OGS) market outlook on May 24, this week saw two more axes step up simultaneously — compute silicon (Aitech, NVIDIA) on one side and ground downlink (Observable Space) on the other. The constellation-scale announcements (Starcloud&#x27;s 88,000 satellites, Blue Origin&#x27;s 51,600, SpaceX&#x27;s 1 million) all left the same question hanging: &quot;Once first launches begin in 2028, who will supply the chips and the downlinks?&quot; That answer is now being filled in week by week. On the U.S. side, the Space Force has put $94 million on the table via the Observable Space IDIQ, pulling military demand along with it; the next-quarter storyline to watch will be which operators Europe and Korea cultivate in this same supporting infrastructure layer.",
+    "sources": [
+      {
+        "url": "https://payloadspace.com/aitech-upgrades-its-space-supercomputer/",
+        "label": "Payload"
+      },
+      {
+        "url": "https://payloadspace.com/observable-space-raises-90m-series-a/",
+        "label": "Payload"
+      }
+    ]
+  },
   "2026-05-28": {
     "date": "2026-05-28",
     "headlines": [
