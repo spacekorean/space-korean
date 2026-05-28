@@ -103,6 +103,9 @@
     #load-more:hover { background: rgba(56,189,248,.16); border-color: var(--border-glow); }
     #load-more:disabled { opacity: .5; cursor: default; }
     .cards-empty { color: var(--muted); text-align: center; padding: 48px 20px; font-size: 0.9rem; }
+      #expand-all-wrap { text-align: right; margin: -6px 0 12px; }
+    #expand-all { background: transparent; color: var(--muted); border: 1px solid var(--border); border-radius: 16px; padding: 5px 14px; font-family: inherit; font-size: 0.76rem; font-weight: 600; cursor: pointer; transition: color .2s, border-color .2s; }
+    #expand-all:hover { color: var(--cyan); border-color: var(--border-glow); }
   </style>
 </head>
 <body>
@@ -113,12 +116,14 @@
     <div class="tagline">ข่าวอุตสาหกรรมอวกาศ · ฉบับภาษาไทย</div>
     <div class="header-sub">Orbital Datacenters · Launch · AI in Space · สตาร์ตอัปอวกาศ</div>
     <div class="lang-switcher">
+      <a href="../en/">🇬🇧 English</a>
       <a href="../">🇰🇷 한국어</a>
       <a href="./" class="active">🇹🇭 ไทย</a>
     </div>
   </header>
 
   <div class="section-label">บรีฟล่าสุด</div>
+  <div id="expand-all-wrap"><button id="expand-all" type="button" data-expand="ขยายทั้งหมด" data-collapse="ย่อทั้งหมด">ขยายทั้งหมด</button></div>
   <div id="cards-container"></div>
   <div id="load-more-wrap"><button id="load-more" type="button">ดูบรีฟก่อนหน้า</button></div>
 
@@ -343,6 +348,17 @@
 
     window.addEventListener("hashchange", scrollToHash);
     if (btn) btn.addEventListener("click", function () { loadNext(); });
+    var expandBtn = document.getElementById("expand-all");
+    if (expandBtn) {
+      var EXP = expandBtn.getAttribute("data-expand"), COL = expandBtn.getAttribute("data-collapse");
+      expandBtn.addEventListener("click", function () {
+        var cards = container.querySelectorAll(".card");
+        var anyClosed = Array.prototype.some.call(cards, function (c) { return !c.classList.contains("open"); });
+        Array.prototype.forEach.call(cards, function (c) { c.classList.toggle("open", anyClosed); });
+        expandBtn.textContent = anyClosed ? COL : EXP;
+      });
+    }
+
   })();
 
 </script>

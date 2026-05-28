@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Space Korean — 우주산업 뉴스, 한국어로</title>
+  <title>Space Korean — Orbital Data Center News</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
@@ -115,42 +115,42 @@
 <div class="page-wrap">
   <header>
     <div class="logo-badge"><span class="logo-emoji">🛡️</span><span class="logo-text">Space Korean</span></div>
-    <div class="tagline">우주산업 뉴스, 한국어로</div>
-    <div class="header-sub">Orbital Datacenters · Launch · AI in Space · 우주 스타트업</div>
+    <div class="tagline">Orbital Data Center News</div>
+    <div class="header-sub">Orbital Datacenters · Launch · AI in Space · Space Startups</div>
     <div class="lang-switcher">
-      <a href="./en/">🇬🇧 English</a>
-      <a href="./" class="active">🇰🇷 한국어</a>
-      <a href="./thai/">🇹🇭 ไทย</a>
+      <a href="./" class="active">🇬🇧 English</a>
+      <a href="../">🇰🇷 한국어</a>
+      <a href="../thai/">🇹🇭 ไทย</a>
     </div>
   </header>
-  <div class="section-label">최신 브리핑</div>
-  <div id="expand-all-wrap"><button id="expand-all" type="button" data-expand="모두 펼치기" data-collapse="모두 접기">모두 펼치기</button></div>
+  <div class="section-label">Latest Briefings</div>
+  <div id="expand-all-wrap"><button id="expand-all" type="button" data-expand="Expand All" data-collapse="Collapse All">Expand All</button></div>
   <div id="cards-container"></div>
-  <div id="load-more-wrap"><button id="load-more" type="button">이전 브리핑 더 보기</button></div>
+  <div id="load-more-wrap"><button id="load-more" type="button">Load Older Briefings</button></div>
 
-  <div class="section-label">📣 뉴스 제보</div>
+  <div class="section-label">📣 Submit a Tip</div>
   <div class="tip-section">
     <div class="tip-card">
-      <div class="tip-title">우주 데이터센터 관련 뉴스를 제보해 주세요</div>
-      <div class="tip-sub">국내외 어떤 출처도 환영합니다. 짧은 한 줄 + 링크만 있어도 충분 — 다음 날 아침 브리핑 후보로 검토합니다.</div>
+      <div class="tip-title">Submit orbital data center news</div>
+      <div class="tip-sub">Any source welcome. A one-line headline + link is enough — we review tips as candidates for the next morning's briefing.</div>
       <form class="tip-form" id="tipForm">
         <div class="row">
-          <label for="tip-title">헤드라인 *</label>
-          <input id="tip-title" name="title" type="text" maxlength="200" placeholder="예: 한화시스템, 우주 데이터센터 시제 위성 발사 발표" required />
+          <label for="tip-title">Headline *</label>
+          <input id="tip-title" name="title" type="text" maxlength="200" placeholder="e.g. Hanwha Systems announces orbital data center prototype launch" required />
         </div>
         <div class="row">
-          <label for="tip-url">출처 링크</label>
+          <label for="tip-url">Source link</label>
           <input id="tip-url" name="url" type="url" maxlength="500" placeholder="https://..." />
         </div>
         <div class="row">
-          <label for="tip-note">메모</label>
-          <textarea id="tip-note" name="note" maxlength="2000" placeholder="추가 맥락이나 한국에서 왜 중요한지 등 (선택)"></textarea>
+          <label for="tip-note">Note</label>
+          <textarea id="tip-note" name="note" maxlength="2000" placeholder="Extra context or why it matters (optional)"></textarea>
         </div>
         <div class="row">
-          <label for="tip-contact">연락처 (선택)</label>
-          <input id="tip-contact" name="contact" type="text" maxlength="200" placeholder="이메일 또는 트위터 핸들 — 후속 확인이 필요하면 사용" />
+          <label for="tip-contact">Contact (optional)</label>
+          <input id="tip-contact" name="contact" type="text" maxlength="200" placeholder="Email or X handle — in case we need to follow up" />
         </div>
-        <button class="submit" type="submit" id="tip-submit">제보 보내기</button>
+        <button class="submit" type="submit" id="tip-submit">Send Tip</button>
         <div class="tip-msg" id="tip-msg"></div>
       </form>
     </div>
@@ -160,8 +160,8 @@
   <div class="page-wrap" style="padding-bottom:0">
     <div class="footer-logo">🛡️ Space Korean</div>
     <div class="footer-note">
-      매일 아침 자동 수집 · AI 요약<br />
-      <span style="font-size:0.72rem;opacity:.6;">© 2026 Space Korean — 본 브리핑은 정보 제공 목적이며, 원문 저작권은 각 출처에 있습니다.</span>
+      Auto-collected &amp; AI-summarized every morning<br />
+      <span style="font-size:0.72rem;opacity:.6;">© 2026 Space Korean — Informational use only; original article copyright belongs to each source.</span>
     </div>
   </div>
 </footer>
@@ -188,7 +188,7 @@
   // Format: https://spacekorean-tracker.<your-subdomain>.workers.dev
   (function () {
     var WORKER_URL = "https://spacekorean-tracker.koreasat5a.workers.dev";
-    var LANG = "ko";
+    var LANG = "en";
 
     // Skip locally / before deployment.
     var localHost = location.hostname === "localhost" || location.hostname === "127.0.0.1";
@@ -230,7 +230,7 @@
 
         if (unconfigured) {
           msg.className = "tip-msg err";
-          msg.textContent = "제보 시스템 준비 중입니다. 잠시 후 다시 시도해 주세요.";
+          msg.textContent = "Tip system is warming up. Please try again shortly.";
           return;
         }
 
@@ -243,12 +243,12 @@
         };
         if (!data.title && !data.note) {
           msg.className = "tip-msg err";
-          msg.textContent = "헤드라인 또는 메모 중 하나는 필수입니다.";
+          msg.textContent = "A headline or a note is required.";
           return;
         }
 
         btn.disabled = true;
-        btn.textContent = "보내는 중...";
+        btn.textContent = "Sending...";
 
         fetch(WORKER_URL + "/suggest", {
           method: "POST",
@@ -261,20 +261,20 @@
         .then(function (res) {
           if (res.ok && res.body.ok) {
             msg.className = "tip-msg ok";
-            msg.textContent = "✓ 감사합니다. 제보가 접수됐습니다. 내일 아침 브리핑 후보로 검토하겠습니다.";
+            msg.textContent = "✓ Thanks! Your tip was received. We'll review it for tomorrow morning's briefing.";
             form.reset();
           } else {
             msg.className = "tip-msg err";
-            msg.textContent = "전송 실패: " + (res.body && res.body.error ? res.body.error : "다시 시도해 주세요.");
+            msg.textContent = "Send failed: " + (res.body && res.body.error ? res.body.error : "please try again.");
           }
         })
         .catch(function (e) {
           msg.className = "tip-msg err";
-          msg.textContent = "네트워크 오류: " + e.message;
+          msg.textContent = "Network error: " + e.message;
         })
         .finally(function () {
           btn.disabled = false;
-          btn.textContent = "제보 보내기";
+          btn.textContent = "Send Tip";
         });
       });
     }
@@ -284,13 +284,13 @@
   (function () {
     var BRIEFS = "briefs/";
     var L = {
-      edition: "오늘의 우주 데이터센터 브리핑",
-      editionLatest: "🆕 오늘의 우주 데이터센터 브리핑",
-      section: "📰 주요 헤드라인",
-      summary: "🔍 오늘의 핵심",
-      countOne: function (n) { return "헤드라인 " + n + "건"; },
-      loadMore: "이전 브리핑 더 보기",
-      error: "브리핑을 불러오지 못했습니다. 잠시 후 새로고침해 주세요."
+      edition: "Today's Orbital Data Center Briefing",
+      editionLatest: "🆕 Today's Orbital Data Center Briefing",
+      section: "📰 Top Headlines",
+      summary: "🔍 Key Points",
+      countOne: function (n) { return n + (n === 1 ? " headline" : " headlines"); },
+      loadMore: "Load Older Briefings",
+      error: "Couldn't load briefings. Please refresh in a moment."
     };
     var container = document.getElementById("cards-container");
     var btn = document.getElementById("load-more");

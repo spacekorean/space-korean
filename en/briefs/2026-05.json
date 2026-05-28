@@ -1,0 +1,90 @@
+{
+  "2026-05-28": {
+    "date": "2026-05-28",
+    "headlines": [
+      {
+        "date": "2026-05-27",
+        "html": "<a href=\"https://www.m-i.kr/news/articleView.html?idxno=1365463\" target=\"_blank\" rel=\"noopener\"><strong>K-Moonshot task force officially launches, with the space mission revealed as an &#x27;orbital data center&#x27;</strong>: — The Ministry of Science and ICT finalized 12 national missions and appointed Lee Chun-woo, a principal researcher at the Korea Aerospace Research Institute, as the lead PD for the space mission. The Korea AeroSpace Administration set a target of demonstrating core technologies in orbit by 2030. — (Etnews, HelloDD, Maeil Ilbo)</a>"
+      },
+      {
+        "date": "2026-05-27",
+        "html": "<a href=\"https://spacenews.com/starclouds-path-to-88000-computing-satellites/\" target=\"_blank\" rel=\"noopener\"><strong>Starcloud unveils 88,000-satellite roadmap — 200 kW platforms, deployable radiators, inference workload focus</strong>: — CEO Philip Johnston officially confirmed for the first time a deployable radiator that is one-tenth the weight and one-hundredth the cost of the ISS equivalent, a 10 GW power agreement with Crusoe Energy, and a strategy aimed at the inference market rather than training. — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-05-27",
+        "html": "<a href=\"https://spacenews.com/european-space-industry-watching-spacex-ipo-plans/\" target=\"_blank\" rel=\"noopener\"><strong>European space industry watches SpaceX IPO as &#x27;moment of validation&#x27; — orbital data centers named as next investment target</strong>: — Sven Meyer-Brunswick of Alpine Space Ventures directly cited orbital data centers, alongside AI applications, as a destination for capital flowing in after the IPO. The head of ESA&#x27;s Phi-lab cautioned that SpaceX is a &quot;unique company,&quot; making generalizations difficult. — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Ministry of Science and ICT · HelloDD · Maeil Ilbo (Korean press, 5/27)</strong> — The K-Moonshot project held its launch ceremony on the 27th at Dragon City in Seoul and appointed lead PDs for its 12 missions. A &#x27;space&#x27; mission slot was assigned alongside new drugs, BCI, fusion, humanoids, quantum, and semiconductors, with KARI principal researcher Lee Chun-woo taking the space mission PD role. The Korea AeroSpace Administration confirmed that the substance of this mission is a Korean-style orbital data center, and laid out a goal of completing in-orbit demonstration by 2030 along three axes: ① high-efficiency solar-panel-based power control, ② radiation-tolerant AI semiconductors and thermal control, and ③ ultra-low-latency, high-capacity LEO communications. While the KSLV-II (Nuri) will serve as the launch vehicle, its per-kilogram launch cost — roughly ten times that of Falcon 9 — was flagged as an economic challenge. The Korea AeroSpace Administration&#x27;s 2026 R&amp;D budget stands at ₩949.5 billion.<br><br><strong>② SpaceNews — Jeff Foust (5/27)</strong> — Starcloud CEO Philip Johnston unveiled a roadmap stretching from the 8 kW-class Starcloud-2, scheduled to launch in eight months, all the way to a constellation of 88,000 satellites at 200 kW each. The ultimate target generation capacity is 20 gigawatts, with power supply secured through a 10-gigawatt agreement with Crusoe Energy, OpenAI&#x27;s data center operator. Key technology breakthroughs cited include the use of Nvidia H100s — delivering &quot;100 times the performance of existing space GPUs&quot; — and a deployable radiator that is one-tenth the weight per watt and one-hundredth the cost of the ISS radiator. Johnston made clear that the company is targeting inference workloads rather than training, competing with terrestrial data centers on energy costs, and said full-scale constellation deployment will begin around 2029–2030, when SpaceX is expected to bring per-kilogram launch costs below $500.<br><br><strong>③ SpaceNews — Jeff Foust (5/27)</strong> — European space financiers are watching SpaceX&#x27;s IPO, projected for mid-June, as a litmus test for the entire space sector. Sven Meyer-Brunswick of Alpine Space Ventures directly named orbital data centers — alongside AI applications, launch, and communications — as a priority destination for fresh capital after the IPO. Mike Collett of Promus Ventures acknowledged the limits of generalization, calling SpaceX &quot;a unique company with no one-to-one comparison,&quot; and Giuseppe Borghi of ESA&#x27;s Phi-lab similarly assessed that the company&#x27;s market dominance makes the ripple effects hard to predict. The article diagnosed that European investment lags the United States by five to ten years, and that the absence of revenue visibility through large government contracts is blocking companies from reaching the IPO stage. The three stories illuminate three axes of the same industry on the same day. The United States has the private sector — exemplified by Starcloud — independently working out the engineering specifications and capital sourcing for 80,000-plus-satellite constellations; Korea has the Korea AeroSpace Administration and Ministry of Science and ICT defining a single mission at the national level and floating a government-led roadmap to demonstrate it within five years; and Europe is just now entering the stage where capital markets — via the SpaceX IPO — begin to put a price on the space sector. Korea&#x27;s ₩949.5 billion R&amp;D budget is smaller than even a single 10-gigawatt power deal bundled between Crusoe and Starcloud, but the fact that it has been designated a &#x27;national mission&#x27; signals that Korean launch, semiconductor, and communications supply chains are beginning to align around the single goal of an ODC. The defining feature of this week is that government policy signals, private capital, and infrastructure supply chains all moved in the same week.",
+    "sources": [
+      {
+        "url": "https://www.etnews.com/20260527000084",
+        "label": "전자신문"
+      },
+      {
+        "url": "https://www.hellodd.com/news/articleView.html?idxno=111915",
+        "label": "hellodd.com"
+      },
+      {
+        "url": "https://www.m-i.kr/news/articleView.html?idxno=1365463",
+        "label": "m-i.kr"
+      },
+      {
+        "url": "https://spacenews.com/starclouds-path-to-88000-computing-satellites/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/european-space-industry-watching-spacex-ipo-plans/",
+        "label": "SpaceNews"
+      }
+    ]
+  },
+  "2026-05-27": {
+    "date": "2026-05-27",
+    "headlines": [
+      {
+        "date": "2026-05-26",
+        "html": "<a href=\"https://spacenews.com/starcloud-orders-starlink-lasers-for-orbital-data-center-network/\" target=\"_blank\" rel=\"noopener\"><strong>Starcloud orders 50 Starlink Mini laser terminals — building out the communications backbone for its orbital data center constellation</strong>: 25 satellites will be fitted with SpaceX optical communications terminals to form a mesh network that bypasses ground stations, while the company seeks more than $200 million in additional next-round funding — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① SpaceNews (SpaceNews, 5/26)</strong> — Orbital data center startup Starcloud announced on the 26th that it has ordered more than 50 Starlink Mini laser optical communications terminals from SpaceX. With two terminals per satellite across a minimum of 25 spacecraft, the constellation will be linked via 25 Gbps inter-satellite optical links spanning up to 4,000 km, bypassing bandwidth-constrained ground stations. The first deployment will be the 450 kg Starcloud-2 satellite, slated to launch on a Falcon 9 next January and serving as the company&#x27;s first spacecraft to run commercial cloud workloads. Separately, Starcloud is pursuing an additional funding round of more than $200 million, an effort to double the $1.1 billion valuation reached in its March round. CEO Philip Johnston said the company &quot;can get by on Falcon 9 until Starship comes fully online,&quot; with the ultimate goal of operating an orbital data center constellation of 88,000 satellites.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/starcloud-orders-starlink-lasers-for-orbital-data-center-network/",
+        "label": "SpaceNews"
+      }
+    ]
+  },
+  "2026-05-26": {
+    "date": "2026-05-26",
+    "headlines": [
+      {
+        "date": "2026-05-25",
+        "html": "<a href=\"https://www.edaily.co.kr/news/newspath.asp?newsid=02027046645452528\" target=\"_blank\" rel=\"noopener\"><strong>South Korea faces looming LEO spectrum deadline</strong>: Korea University professor Kang Chung-koo warned about the gap between the ITU&#x27;s &quot;Bring Into Use&quot; rule and Korea&#x27;s plan to launch just two satellites by 2030, identifying orbital data centers as a critical infrastructure layer the country cannot afford to miss — Edaily</a>"
+      },
+      {
+        "date": "2026-05-22",
+        "html": "<a href=\"https://payloadspace.com/the-us-needs-a-new-launch-site-air-force-secretary-says/\" target=\"_blank\" rel=\"noopener\"><strong>US launch site saturation bottlenecks data-center launch demand</strong>: Air Force Secretary Troy Meink and Space Operations Chief Chance Saltzman testified to Congress that Cape Canaveral and Vandenberg have hit capacity, while launch demand over the next decade is set to triple — Payload Space</a>"
+      },
+      {
+        "date": "2026-05-21",
+        "html": "<a href=\"https://spacenews.com/the-internet-was-too-expensive-too/\" target=\"_blank\" rel=\"noopener\"><strong>Op-ed rebuts orbital data center skepticism</strong>: Sophia Space co-founder Brian Monin analyzed in SpaceNews how cost, cooling, and radiation concerns around ODCs echo 1990s internet skepticism, presenting a modular TILE architecture as the counter — SpaceNews</a>"
+      }
+    ],
+    "summary_html": "<strong>① Edaily — Interview with Professor Kang Chung-koo (5/25)</strong> — Under ITU rules, operators must actually launch within seven years of filing to demonstrate spectrum use, and non-geostationary mega-constellations face mandatory rights reductions if they miss the 10%, 50%, and 100% staged deployment milestones, Korea University professor Kang Chung-koo explained. With the Korean government planning to launch only two satellites by 2030, Kang diagnosed that &quot;the structure rewards whoever actually puts hardware in orbit&quot; and that time is running out. Kang argued that orbital data centers — leveraging unlimited solar power and cryogenic temperatures — are the next-generation infrastructure to solve the power and cooling limits of terrestrial data centers in the AI era, recommending a mega-consortium binding Samsung Electronics, Hanwha, KT SAT, and KAI together, with priority on securing inter-satellite laser communications.<br><br><strong>② Payload Space — US launch site limits (5/22)</strong> — Air Force Secretary Troy Meink and Space Operations Chief Chance Saltzman testified before the House Armed Services Committee that Cape Canaveral and Vandenberg absorbed 175 launches last year and have reached capacity. The FAA projects US launch demand will nearly triple over the next decade; Congress allocated $1.3 billion between 2024 and 2028, and the Space Force has requested an additional $2.2 billion in FY2027. Saltzman said &quot;we cannot remain tied to just two ports if we want geographic resilience,&quot; elevating the launch bottleneck behind Cowboy Space&#x27;s 20,000-satellite and SpaceX&#x27;s 1-million-satellite orbital data-center plans onto the policy agenda.<br><br><strong>③ SpaceNews op-ed — Brian Monin (5/21)</strong> — Sophia Space co-founder Brian Monin argued that critiques of ODCs over &quot;launch cost, cooling, radiation, and complexity&quot; structurally mirror the skepticism Paul Krugman, Robert Metcalfe, and Clifford Stoll directed at the internet in the 1990s. The reusable launch cost curves of Starship, New Glenn, and Vulcan Centaur — combined with passive radiative cooling — are rapidly improving ODC economics, and Sophia Space unveiled a plan to bundle TILE satellites — integrating power, avionics, compute, and thermal management in a single module — into constellations that drive down standardization costs. Citing the era&#x27;s pessimism that &quot;the dream of video-on-demand as the killer app of telecommunications will vanish,&quot; Monin forecast that ODCs will ride the same learning curve. The three pieces illuminate three variables of the orbital data center market at once. Kang covers the policy clock, Meink and Saltzman the launch infrastructure clock, and Monin the cost-curve clock — together showing that the bottleneck ODCs must clear is not a single technology but the simultaneous satisfaction of spectrum rights, spaceport throughput, and reusable launch unit economics. While Korea remains anchored to its two-satellite plan, the US mainland is escalating launch-site scarcity onto the congressional docket, and European and American ODC operators are counter-arguing that reusable launch is already defanging the critiques. This week&#x27;s signal is clear: 1-million-satellite and 20,000-ODC constellations are no longer slide decks but variables shaking policy, infrastructure, and finance simultaneously — and time is rapidly running out for latecomers.",
+    "sources": [
+      {
+        "url": "https://www.edaily.co.kr/news/newspath.asp?newsid=02027046645452528",
+        "label": "edaily.co.kr"
+      },
+      {
+        "url": "https://payloadspace.com/the-us-needs-a-new-launch-site-air-force-secretary-says/",
+        "label": "Payload"
+      },
+      {
+        "url": "https://spacenews.com/the-internet-was-too-expensive-too/",
+        "label": "SpaceNews"
+      }
+    ]
+  }
+}
