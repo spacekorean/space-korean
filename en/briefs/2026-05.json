@@ -1,4 +1,28 @@
 {
+  "2026-05-30": {
+    "date": "2026-05-30",
+    "headlines": [
+      {
+        "date": "2026-05-28",
+        "html": "<a href=\"https://www.satellitetoday.com/technology/2026/05/28/orbital-data-centers-must-tackle-chip-lifespan-launch-availability-and-cybersecurity-challenges/\" target=\"_blank\" rel=\"noopener\"><strong>European ODC panel: &quot;$300/kg launch cost is the hard floor&quot;</strong>: On day two of the Small Satellites Europe conference in Amsterdam, former AMD vice president Paul Struhsaker laid out the engineering and economic preconditions for orbital data centers — custom silicon, modular plug-in architectures, and launch costs below $300 per kilogram — (SatNews)</a>"
+      },
+      {
+        "date": "2026-05-28",
+        "html": "<a href=\"https://satnews.com/2026/05/28/the-orbital-data-center-thesis-just-became-an-economics-question/\" target=\"_blank\" rel=\"noopener\"><strong>&quot;AI chips refresh every 2 years, satellites last 5&quot;</strong>: On the same panel, Dr. Karasu of Oxford University outlined the five unresolved ODC challenges — chip lifespan, launch availability, cybersecurity, power demand, and decommissioning logistics — seeking balance between skepticism and advocacy — (Via Satellite)</a>"
+      }
+    ],
+    "summary_html": "<strong>① SatNews (5/28)</strong> — The business stage at Small Satellites Europe (May 26–28, Amsterdam RAI) devoted nearly all of day two to stress-testing the orbital data center thesis. Paul Struhsaker, former AMD vice president and now CEO of Arasar Partners, declared &quot;It is doable. But it requires clever design,&quot; and laid out three engineering preconditions: custom silicon, modular plug-in architectures, and a cost threshold that requires launch prices to fall below $300 per kilogram. A single GPU card&#x27;s power consumption is doubling each generation — from roughly 1.2 kilowatts to 2.3 kilowatts to 3 kilowatts — with each card now requiring 6 to 7 square meters of solar array. The infrastructure required for a 50-megawatt orbital data center, the panel concluded, rivals the International Space Station in scale. D-Orbit UK&#x27;s Vinny Diri offered an edge-compute alternative that &quot;extracts only the information and erases the rest,&quot; while Sitael&#x27;s Vincenzo Stanzione argued for federated architectures over single megawatt-scale facilities.<br><br><strong>② Via Satellite (5/28)</strong> — At the same conference, Dr. Oguz Karasu of Oxford University presented five unresolved challenges that will determine whether ODCs are a bubble or a genuine breakthrough. First, AI data center blades have a five-year lifespan, but AI processors see a new generation every two years — creating a mismatch with satellite replacement logistics. Second, the energy burden of chip power doubling with each generation. Third, absolute dependence on Starship-class heavy launchers. Fourth, the absence of cybersecurity provisions to protect orbital data centers from targeted attacks. Fifth, the undefined procedures for satellite decommissioning and replacement. Dr. Karasu warned that &quot;investing in this idea limits the capacity to invest in real problems,&quot; while Struhsaker assessed that full-stack operators like SpaceX and Amazon will leverage their launch infrastructure to secure competitive advantage. A wave of mega-constellation announcements — Starcloud&#x27;s 88,000 satellites, Blue Origin&#x27;s Project Sunrise at 51,600, and SpaceX&#x27;s one-million-satellite plan — has poured out over the past month. Now, European industry and academia have gathered for the first time to ask: &quot;Will this actually work?&quot; Following Sophia Space&#x27;s Brian Monin&#x27;s May 26 SpaceNews op-ed, which framed ODC advocacy through an internet-skeptic analogy, the Small Satellites Europe panel answered not with skepticism but with precise preconditions: launch costs below $300 per kilogram, alignment of chip and satellite lifecycles, and cybersecurity responses. With the United States and China racing ahead on capital and launch infrastructure, Europe is sharpening a differentiated vision — edge compute and federated architectures — alongside domestic players like D-Orbit, Sitael, Inoflight, ELV, and Unibap. As the logic on both sides sharpens week by week, the question to watch is which side next quarter&#x27;s capital and contract flows will favor.",
+    "sources": [
+      {
+        "url": "https://satnews.com/2026/05/28/the-orbital-data-center-thesis-just-became-an-economics-question/",
+        "label": "satnews.com"
+      },
+      {
+        "url": "https://www.satellitetoday.com/technology/2026/05/28/orbital-data-centers-must-tackle-chip-lifespan-launch-availability-and-cybersecurity-challenges/",
+        "label": "satellitetoday.com"
+      }
+    ]
+  },
   "2026-05-29": {
     "date": "2026-05-29",
     "headlines": [
