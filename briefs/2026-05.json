@@ -1,4 +1,20 @@
 {
+  "2026-05-31": {
+    "date": "2026-05-31",
+    "headlines": [
+      {
+        "date": "2026-05-26",
+        "html": "<a href=\"https://breakingdefense.com/2026/05/despite-peak-hype-orbital-data-centers-for-ai-not-yet-ready-for-natsec-prime-time/\" target=\"_blank\" rel=\"noopener\"><strong>미국 국방·정보 당국 &quot;궤도 데이터센터, 아직 도입 시점 아니다&quot;</strong>: 2026년 1분기 ODC 부문에만 5억 4100만 달러 민간 자본이 유입됐지만, 펜타곤·정보계 핵심 구매처는 지상 대비 5배 비용·5년 위성 vs 2년 칩 수명 불일치·발사비 ㎏당 200달러 미달성을 들어 관망 입장 — (Breaking Defense)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Breaking Defense (5/26)</strong> — 미국 국방·정보계 핵심 구매처가 궤도 데이터센터 도입에 일제히 거리를 두었습니다. 5월 5일 콜로라도주 덴버 지오인트 심포지엄과 4월 30일 스페이스뉴스 웨비나에서 미 국가정찰국 지리정보시스템 획득국장 브렛 스콧은 &quot;아주 초기 단계&quot;라고 평했고, 한 미우주군 관계자는 ODC 기술을 &quot;흥미롭지만 아직 배아 단계&quot;라고 표현했습니다. 펜타곤 인공지능 책임자 캐머런 스탠리는 AI 도구에 대한 끝없는 수요를 인정했지만 궤도행은 시기상조라고 못박았습니다. 시장 측 분석은 더 가혹합니다. 테크놀로지 스트래티지 파트너스의 마이클 피어스는 ODC가 20년 기준 지상 데이터센터 대비 5배가량 더 비싸다고 추산했고, 발사비가 킬로그램당 200달러 밑으로 떨어져야 손익 분기점에 도달한다고 봤습니다. 현재 팰컨9 발사비는 킬로그램당 4200달러에서 7000달러 수준이며, AI 칩 2년 세대 교체 주기와 LEO 위성 5년 수명의 격차도 핵심 걸림돌입니다. GXO 최고전략책임자 데이브 고티에는 &quot;지금이 하이프 사이클의 정점&quot;이라고 진단했습니다. 2025년 ODC 투자가 1억 9700만 달러였던 데 비해 2026년 1분기 석 달에만 5억 4100만 달러가 유입된 가운데, 정부 사용자들은 산업이 기술·경제성을 입증할 때까지 관망하겠다는 자세를 분명히 했습니다. 비즈 리서치와 퀼티 스페이스는 ODC 시장이 2029년 18억 달러, 2035년 390억 달러 규모로 성장한다고 봤지만, 국가안보 수요는 그 그래프 밖에 머물러 있습니다.",
+    "sources": [
+      {
+        "url": "https://breakingdefense.com/2026/05/despite-peak-hype-orbital-data-centers-for-ai-not-yet-ready-for-natsec-prime-time/",
+        "label": "breakingdefense.com"
+      }
+    ]
+  },
   "2026-05-30": {
     "date": "2026-05-30",
     "headlines": [

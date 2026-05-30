@@ -1,4 +1,20 @@
 {
+  "2026-05-31": {
+    "date": "2026-05-31",
+    "headlines": [
+      {
+        "date": "2026-05-26",
+        "html": "<a href=\"https://breakingdefense.com/2026/05/despite-peak-hype-orbital-data-centers-for-ai-not-yet-ready-for-natsec-prime-time/\" target=\"_blank\" rel=\"noopener\"><strong>U.S. defense and intelligence officials: &quot;Orbital data centers aren&#x27;t ready for prime time&quot;</strong>: Although $541 million in private capital flowed into the ODC sector in Q1 2026 alone, the Pentagon and intelligence community&#x27;s key buyers remain on the sidelines, citing 5× higher costs versus terrestrial alternatives, a mismatch between 5-year satellite lifespans and 2-year chip cycles, and launch costs that have yet to fall below $200/kg — (Breaking Defense)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Breaking Defense (5/26)</strong> — The U.S. defense and intelligence community&#x27;s key buyers have collectively distanced themselves from adopting orbital data centers. At the GEOINT Symposium in Denver, Colorado, on May 5 and a SpaceNews webinar on April 30, Brett Scott, director of geospatial intelligence systems acquisition at the National Reconnaissance Office, called the technology &quot;very early stage,&quot; while a U.S. Space Force official described ODC technology as &quot;interesting, but still embryonic.&quot; Pentagon AI chief Cameron Stanley acknowledged the insatiable demand for AI tools but flatly stated that moving to orbit is premature. Market-side analysis is harsher still. Michael Pierce of Technology Strategy Partners estimated that ODCs would cost roughly 5× more than terrestrial data centers over a 20-year horizon, and projected that launch costs must fall below $200 per kilogram to reach breakeven. Current Falcon 9 launch costs run between $4,200 and $7,000 per kilogram, and the gap between the 2-year generational refresh cycle of AI chips and the 5-year service life of LEO satellites remains a core obstacle. Dave Gauthier, chief strategy officer at GXO, diagnosed the moment as &quot;the peak of the hype cycle.&quot; Against the backdrop of $197 million in ODC investment in 2025 versus $541 million flowing in during just the first three months of Q1 2026, government users have made clear they will wait until industry proves both the technology and the economics. BIS Research and Quilty Space project the ODC market will grow to $1.8 billion by 2029 and $39 billion by 2035, but national security demand remains off that curve.",
+    "sources": [
+      {
+        "url": "https://breakingdefense.com/2026/05/despite-peak-hype-orbital-data-centers-for-ai-not-yet-ready-for-natsec-prime-time/",
+        "label": "breakingdefense.com"
+      }
+    ]
+  },
   "2026-05-30": {
     "date": "2026-05-30",
     "headlines": [
