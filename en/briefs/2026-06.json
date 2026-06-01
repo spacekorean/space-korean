@@ -1,4 +1,28 @@
 {
+  "2026-06-02": {
+    "date": "2026-06-02",
+    "headlines": [
+      {
+        "date": "2026-06-01",
+        "html": "<a href=\"https://spacenews.com/new-glenn-failure-worsens-constrained-launch-market/\" target=\"_blank\" rel=\"noopener\"><strong>New Glenn explosion fallout accelerates single-vendor concentration in launch market — direct hit to ODC constellations</strong>: Cape Canaveral&#x27;s LC-36 launch pad is expected to require at least 12 months to rebuild, and Impulse Space President Eric Romo warned that &quot;2029 to 2030 will be a rough patch,&quot; flagging the single-dependency risk as orbital data center satellite deployments pile onto Starship — SpaceNews</a>"
+      },
+      {
+        "date": "2026-06-01",
+        "html": "<a href=\"https://spacenews.com/spaceport-facility-bonds-are-now-law-and-they-fundamentally-change-space-infrastructure-finance/\" target=\"_blank\" rel=\"noopener\"><strong>OBBBA spaceport tax-exempt bonds take effect, reshaping space infrastructure financing</strong>: A provision in the One Big Beautiful Bill Act extending tax-exempt private activity bonds to spaceport facilities, with no project size cap and allowing 100% private use, has opened a new capital channel for ground infrastructure underpinning ODC constellation capex — SpaceNews</a>"
+      }
+    ],
+    "summary_html": "<strong>① SpaceNews (SpaceNews, 6/1)</strong> — The fallout from the May 28 New Glenn explosion is rippling across the launch market. According to SpaceNews reporting, LC-36 will take at least 12 months to rebuild and possibly longer, with SpaceX&#x27;s 15-month turnaround after the 2016 Falcon 9 explosion cited as the baseline. The 48 Amazon Leo broadband satellites slated for NG-4 are grounded, and Amazon&#x27;s total of 24 launches contracted to New Glenn — supporting a roughly 3,200-satellite constellation deployment — now faces an uncertain schedule. AST SpaceMobile&#x27;s stock fell 15% in the immediate aftermath, and its target of putting 45 satellites in orbit this year is now in doubt. Impulse Space President Eric Romo warned that &quot;2029 to 2030 will be a rough patch,&quot; flagging single-vendor dependency risk, while SpaceX VP of Launch Kiko Dontchev stated that Starship&#x27;s priorities are next-generation Starlink and orbital data center satellites. From an ODC perspective, the weight of this reporting is twofold. First, New Glenn — slated to lift Project Sunrise&#x27;s 51,600 satellites — is sidelined for over a year. Second, SpaceX&#x27;s million-satellite constellation and Starcloud&#x27;s 88,000-satellite deployment timelines are now effectively tied to the operating clock of a single launch vehicle: Starship. The 2029 launch bottleneck is emerging as the real ceiling of the ODC industry — ahead of chips or power.<br><br><strong>② SpaceNews (SpaceNews, 6/1)</strong> — Craig Hrinkevich, Managing Director of Public and Project Finance at D.A. Davidson, drew on 30 years of infrastructure finance experience to analyze the newly enacted spaceport tax-exempt private activity bond provision in the One Big Beautiful Bill Act. The crux is that launch facilities can now tap the municipal bond market for the first time, with no project size cap and permitting 100% private use of bond-financed facilities. Defense primes such as Lockheed Martin, Northrop Grumman, Boeing, and RTX, alongside launch providers Rocket Lab, SpaceX, Blue Origin, ULA, Firefly, and Stoke Space, all qualify, and the scope extends to manufacturing and industrial facilities adjacent to licensed spaceports. From an ODC capex perspective, this provision pairs precisely with the spaceport bottleneck exposed by yesterday&#x27;s explosion. Putting mega-constellations into orbit requires more private spaceports and the manufacturing complexes alongside them, yet capital markets have until now been unable to address spaceport infrastructure in earnest. The opening of a new bond market with longer maturities and no size cap establishes the capital foundation to accelerate the ground infrastructure expansion that ODC operators will depend on. Yesterday&#x27;s New Glenn explosion landed as a direct hit on Project Sunrise, but today&#x27;s two stories shift the frame to a larger picture. First, on the launch capacity side, short-term single-vendor concentration is now unmistakable, and 2029 to 2030 increasingly looks like the real ceiling for ODC mega-constellation deployment. Second, the U.S. government has simultaneously institutionalized capital mobilization for private spaceport infrastructure through tax-exempt bonds, opening a capital exit to lift that ceiling. The next phase of the ODC industry will be determined less by chip performance or orbital compute unit cost than by who builds spaceports and adjacent manufacturing complexes, and how quickly. Capital has been unlocked; the schedule has tightened.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/new-glenn-failure-worsens-constrained-launch-market/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/spaceport-facility-bonds-are-now-law-and-they-fundamentally-change-space-infrastructure-finance/",
+        "label": "SpaceNews"
+      }
+    ]
+  },
   "2026-06-01": {
     "date": "2026-06-01",
     "headlines": [
