@@ -1,0 +1,26 @@
+{
+  "2026-06-01": {
+    "date": "2026-06-01",
+    "headlines": [
+      {
+        "date": "2026-05-29",
+        "html": "<a href=\"https://spacenews.com/new-glenn-rocket-explodes-on-cape-canaveral-pad/\" target=\"_blank\" rel=\"noopener\"><strong>New Glenn pad explosion deals a direct blow to Blue Origin&#x27;s orbital data center plans</strong>: An explosion during a New Glenn first-stage static fire test at Cape Canaveral&#x27;s LC-36 on May 28 caused extensive damage to the launch pad, putting the rollout of Project Sunrise — Blue Origin&#x27;s 51,600-satellite orbital data center constellation filed with the FCC in April — at risk of at least a six-month delay — SpaceNews</a>"
+      }
+    ],
+    "summary_html": "<strong>① SpaceNews (SpaceNews, 5/29)</strong> — Blue Origin&#x27;s New Glenn exploded during a first-stage static fire test on the night of May 28 at Cape Canaveral&#x27;s Launch Complex 36. The anomaly occurred while igniting the seven methane/liquid-oxygen BE-4 engines, and the launch pad sustained extensive damage — including a collapsed lightning tower — with recovery expected to take at least six months. The NG-4 mission scheduled for June 4, along with the Amazon Leo broadband satellites it was set to carry, has been postponed, and the schedules for NASA&#x27;s Artemis Blue Moon lander and AST SpaceMobile launches are also affected. Blue Origin stated, &quot;There was an anomaly during the static fire test, and everyone is safe,&quot; and Jeff Bezos said, &quot;It&#x27;s a tough day, but we will rebuild whatever it takes and return to flight.&quot; From an orbital data center perspective, the weight of this incident is significant. Project Sunrise, which Blue Origin filed with the FCC this past April, is a plan to build an orbital data center network with 51,600 satellites — and New Glenn is the only heavy-lift launcher capable of deploying this constellation. With the vehicle grounded for more than half a year, the constellation deployment clock slips by the same margin. Making matters more painful, just hours before the explosion Blue Origin had been awarded a new national security launch task order from the National Reconnaissance Office (NRO). The race to deploy orbital data center megaconstellations effectively rests on the shoulders of two heavy-lift launchers: Starship and New Glenn. SpaceX envisions one million satellites, Blue Origin around 51,000, and Starcloud 88,000 — but actually putting these satellites in orbit ultimately comes down to the throughput of reusable heavy-lift launchers. With one of those axes now sidelined for more than six months, ODC launch demand is concentrated even more heavily on SpaceX alone. Combined with U.S. Air Force testimony to Congress in late May that &quot;the launch ranges have reached their limits,&quot; it is once again clear that the real bottleneck for orbital data centers is not chips or power, but launch capacity.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/new-glenn-rocket-explodes-on-cape-canaveral-pad/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://payloadspace.com/blue-origins-new-glenn-explodes-on-the-pad/",
+        "label": "Payload"
+      },
+      {
+        "url": "https://spacenews.com/blue-origin-gets-national-security-launch-task-order-hours-before-new-glenn-explosion/",
+        "label": "SpaceNews"
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "2026-06-01": {
+    "date": "2026-06-01",
+    "headlines": [
+      {
+        "date": "2026-05-29",
+        "html": "<a href=\"https://spacenews.com/new-glenn-rocket-explodes-on-cape-canaveral-pad/\" target=\"_blank\" rel=\"noopener\"><strong>뉴 글렌 발사대 폭발, 블루 오리진 궤도 데이터센터 계획에 직격</strong>: 5월 28일 케이프 커내버럴 LC-36에서 뉴 글렌 1단 정적 점화 시험 중 폭발이 발생해 발사대가 광범위하게 파손됐고, 블루 오리진이 4월 FCC에 신청한 5만 1천 6백 기 규모 궤도 데이터센터 별자리 프로젝트 선라이즈의 전개가 최소 반년 미뤄질 위기에 놓였습니다 — SpaceNews</a>"
+      }
+    ],
+    "summary_html": "<strong>① SpaceNews (SpaceNews, 5/29)</strong> — 블루 오리진의 뉴 글렌이 5월 28일 밤 케이프 커내버럴 발사 단지 36에서 1단 정적 점화 시험 도중 폭발했습니다. 메탄과 액체산소를 쓰는 BE-4 엔진 7기를 점화하던 중 이상이 발생했고, 낙뢰탑이 무너지는 등 발사대가 광범위하게 파손돼 복구에 최소 여섯 달 이상이 걸릴 전망입니다. 6월 4일로 예정됐던 NG-4 미션과 여기 실릴 아마존 Leo 광대역 위성 발사가 연기됐고, NASA 아르테미스 블루문 착륙선과 AST 스페이스모바일 발사 일정도 영향권에 들었습니다. 블루 오리진은 &quot;정적 점화 시험 중 이상이 있었으며 전원 안전하다&quot;고 밝혔고, 제프 베조스는 &quot;힘든 날이지만 무엇이든 다시 만들어 비행에 복귀하겠다&quot;고 말했습니다. 우주 데이터센터 관점에서 이번 사고의 무게는 큽니다. 블루 오리진이 지난 4월 FCC에 신청한 프로젝트 선라이즈는 5만 1천 6백 기 위성으로 궤도 데이터센터망을 구축하는 구상인데, 이 별자리를 실어 올릴 유일한 중량 발사체가 바로 뉴 글렌입니다. 발사체가 반년 넘게 멈추면 별자리 전개 시계도 그만큼 늦춰집니다. 폭발 불과 몇 시간 전 블루 오리진이 국가정찰국 NRO로부터 안보 발사 임무를 새로 수주했다는 점이 상황을 더 뼈아프게 만듭니다. 궤도 데이터센터 메가 별자리 경쟁은 사실상 스타십과 뉴 글렌, 두 중량 발사체의 어깨 위에 서 있습니다. 스페이스X는 백만 기, 블루 오리진은 5만 천여 기, 스타클라우드는 8만 8천 기를 그리지만 이 위성들을 궤도에 올리는 일은 결국 재사용 중량 발사체의 처리량 문제로 귀결됩니다. 이번 사고로 한 축이 반년 넘게 멈추면서 ODC 발사 수요는 스페이스X 한 곳에 더 쏠리게 됐습니다. 5월 하순 미공군이 의회에서 &quot;발사장이 한계에 도달했다&quot;고 증언한 흐름과 맞물려, 궤도 데이터센터의 진짜 병목이 칩이나 전력이 아니라 발사 능력이라는 점이 다시 분명해졌습니다.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/new-glenn-rocket-explodes-on-cape-canaveral-pad/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://payloadspace.com/blue-origins-new-glenn-explodes-on-the-pad/",
+        "label": "Payload"
+      },
+      {
+        "url": "https://spacenews.com/blue-origin-gets-national-security-launch-task-order-hours-before-new-glenn-explosion/",
+        "label": "SpaceNews"
+      }
+    ]
+  }
+}
