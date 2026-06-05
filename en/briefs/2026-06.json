@@ -1,4 +1,36 @@
 {
+  "2026-06-06": {
+    "date": "2026-06-06",
+    "headlines": [
+      {
+        "date": "2026-06-05",
+        "html": "<a href=\"https://spacenews.com/satellite-maker-apexs-valuation-rises-to-2-3-billion-after-latest-200-million-raise/\" target=\"_blank\" rel=\"noopener\"><strong>Apex hits $2.3 billion valuation on $200 million round</strong>: CEO Ian Cinnamon explicitly names orbital data centers as a primary commercial market for the new Comet bus — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-06-05",
+        "html": "<a href=\"https://spacenews.com/axiom-space-adds-more-than-175-million-to-funding-round/\" target=\"_blank\" rel=\"noopener\"><strong>Axiom Space closes $525 million round with additional $175 million</strong>: Japan&#x27;s largest bank MUFG joins as a new investor; 4iG Group cites &quot;an active role in orbital data center development&quot; — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-06-05",
+        "html": "<a href=\"https://payloadspace.com/us-commercial-space-stations-expand-to-europe/\" target=\"_blank\" rel=\"noopener\"><strong>Three U.S. commercial space station companies push into Europe</strong>: Vast in Paris, Axiom in Zurich, Starlab&#x27;s German subsidiary — competition heats up for European ODC host platforms — (Payload Space)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Jason Rainbow (SpaceNews, 6/5)</strong> — Apex closed its third $200 million round in 14 months, lifting its valuation to $2.3 billion. Cumulative funding now stands at $718 million. Glade Brook Capital Partners led the round with Washington Harbour Partners joining. CEO Ian Cinnamon said of the new large-form Comet bus unveiled in April that &quot;the elements required for high-power radar platforms translate directly to orbital data centers, and we&#x27;re seeing substantial demand.&quot; The current lineup spans three buses: Aries (100kg–3,000kg+ payloads), Nova (70% vertically integrated, first flight imminent), and Comet (high-power). The capital will fund a 2,800m² expansion of Apex&#x27;s first LA factory and further vertical integration following the acquisition of Phase Four&#x27;s propulsion business.<br><br><strong>② Jeff Foust (SpaceNews, 6/5)</strong> — Axiom Space added $175 million to the $350 million round announced in February, closing it at $525 million. Japan&#x27;s largest bank MUFG joined as a new investor, and 4iG Group, Europe&#x27;s largest strategic investor, explicitly cited &quot;an active role in orbital data center development.&quot; The funds will be allocated to Axiom Station, the NASA AxEMU spacesuit contract, and the broader infrastructure roadmap. Axiom is the only commercial operator to have placed its first two ODC nodes in low Earth orbit, on January 11, and the round closed shortly after NASA scrapped its government-owned core module plan and announced it would release a commercial space station RFP in late June. CEO Jonathan Sutton noted that &quot;investor interest exceeded our target raise.&quot;<br><br><strong>③ Payload Space (6/5)</strong> — Three U.S. commercial space station companies simultaneously expanded their European footprint in the same week. Vast opened a Paris office and signed flight agreements with French astronauts Thomas Pesquet and Arnaud Prost, while Axiom established a Swiss base to navigate EU export-control and procurement constraints. Starlab had already incorporated its German subsidiary in January. With the ISS being phased out, all three companies are designing orbital data centers as dockable host platforms — Axiom&#x27;s ODC nodes, Vast Haven&#x27;s 15kW satellite bus, and Starlab modules — and the race to capture European sovereign cloud demand is now fully underway. The thread running through all three stories is the capitalization of the ODC infrastructure supply chain. Unlike May, when headlines centered on satellite operators (Starcloud, SpaceX, Blue Origin), this week saw the <strong>bus, station, and European outpost</strong> layers of auxiliary infrastructure draw funding simultaneously. Apex is positioning a merchant-manufactured ODC bus, Axiom is operating human-serviceable ODC nodes, and the three companies expanding into Europe are targeting regional multipolarity for ODC host platforms. Despite skeptical signals — the Pentagon&#x27;s May 31 doubts and the May 30 SmallSat European engineer critique — capital placed an additional $900 million bet on ODC-adjacent infrastructure in a single week. Where the late-June NASA CLD RFP and the mid-June rumored SpaceX IPO steer this capital flow will be next week&#x27;s inflection point.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/satellite-maker-apexs-valuation-rises-to-2-3-billion-after-latest-200-million-raise/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/axiom-space-adds-more-than-175-million-to-funding-round/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://payloadspace.com/us-commercial-space-stations-expand-to-europe/",
+        "label": "Payload"
+      }
+    ]
+  },
   "2026-06-04": {
     "date": "2026-06-04",
     "headlines": [

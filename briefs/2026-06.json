@@ -1,4 +1,36 @@
 {
+  "2026-06-06": {
+    "date": "2026-06-06",
+    "headlines": [
+      {
+        "date": "2026-06-05",
+        "html": "<a href=\"https://spacenews.com/satellite-maker-apexs-valuation-rises-to-2-3-billion-after-latest-200-million-raise/\" target=\"_blank\" rel=\"noopener\"><strong>Apex, 2억 달러 라운드로 23억 달러 평가</strong>: CEO 이언 시나몬이 신형 Comet 버스의 주요 상업 시장으로 궤도 데이터센터를 명시적으로 지목 — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-06-05",
+        "html": "<a href=\"https://spacenews.com/axiom-space-adds-more-than-175-million-to-funding-round/\" target=\"_blank\" rel=\"noopener\"><strong>액시엄 스페이스, 1억 7천5백만 달러 추가로 5억 2천5백만 달러 라운드 마감</strong>: 일본 최대은행 MUFG 신규 합류, 4iG 그룹은 &quot;궤도 데이터센터 개발의 능동적 역할&quot; 명시 — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-06-05",
+        "html": "<a href=\"https://payloadspace.com/us-commercial-space-stations-expand-to-europe/\" target=\"_blank\" rel=\"noopener\"><strong>상업 우주정거장 3사 유럽 진출 본격화</strong>: 바스트 파리·액시엄 취리히 신설, 스타랩 독일 자회사 — 유럽 ODC 호스트 플랫폼 경쟁 — (Payload Space)</a>"
+      }
+    ],
+    "summary_html": "<strong>① 제이슨 레인보우(SpaceNews, 6/5)</strong> — Apex가 14개월 만에 세 번째 2억 달러 라운드를 마감하며 평가액을 23억 달러로 끌어올렸습니다. 누적 조달은 7억 1천8백만 달러. 글레이드 브룩 캐피털 파트너스가 주도하고 워싱턴 하버 파트너스가 합류했습니다. CEO 이언 시나몬은 4월 공개한 신형 대형 버스 Comet에 대해 &quot;고출력 레이더 플랫폼에 필요한 요소들이 궤도 데이터센터에도 그대로 들어맞아 상당한 수요를 확인하고 있다&quot;고 밝혔습니다. 보유 라인업은 Aries(100kg–3,000kg+ 페이로드)·Nova(70퍼센트 자체 제작, 곧 첫 비행)·Comet(고출력) 3종. 자금은 LA 1공장 2,800m² 확장과 페이즈 포 추진계 인수에 이은 수직통합에 투입됩니다.<br><br><strong>② 제프 파우스트(SpaceNews, 6/5)</strong> — 액시엄 스페이스가 2월 발표한 3억 5천만 달러 라운드에 1억 7천5백만 달러를 더해 5억 2천5백만 달러로 최종 마감했습니다. 일본 최대은행 MUFG가 신규 투자자로 합류했고, 유럽 최대 전략적 투자자인 4iG 그룹은 &quot;궤도 데이터센터 개발의 능동적 역할&quot;을 명시했습니다. 자금은 액시엄 스테이션·NASA 우주복 계약 AxEMU·인프라 로드맵에 배정됩니다. 액시엄은 1월 11일 첫 ODC 노드 2기를 저궤도에 올린 유일한 상업 운용자이며, 이번 라운드는 NASA가 정부 소유 코어 모듈안을 폐기하고 6월 말 상업 우주정거장 RFP를 내놓겠다고 밝힌 직후 마감됐습니다. CEO 조너선 서튼은 &quot;투자자 관심이 목표 조달액을 넘어섰다&quot;고 평했습니다.<br><br><strong>③ 페이로드 스페이스(6/5)</strong> — 미국 상업 우주정거장 3사가 같은 주에 유럽 거점을 한꺼번에 확장했습니다. 바스트가 파리에 사무소를 열고 프랑스 우주인 토마스 페스케·아르노 프로스트의 비행 협약을 체결했으며, 액시엄은 스위스에 EU 수출통제·조달 제약을 우회할 거점을 마련했습니다. 스타랩은 1월 독일 자회사를 이미 설립했습니다. ISS가 단계적으로 종료되는 가운데, 세 회사 모두 궤도 데이터센터를 도킹 가능한 호스트 플랫폼으로 설계 중이라는 점에서 — 액시엄의 ODC 노드, 바스트 헤이븐의 15kW 위성 버스, 스타랩 모듈 — 유럽의 주권 클라우드 수요를 누가 선점하느냐 경쟁이 본격화한 셈입니다. 세 기사를 관통하는 흐름은 ODC 인프라 공급 사슬의 자본화입니다. 헤드라인이 위성 운용자(스타클라우드·SpaceX·블루 오리진)에 쏠려 있던 5월과 달리, 이번 주는 <strong>버스·정거장·유럽 거점</strong> 같은 보조 인프라 층이 동시에 자금을 끌어모았습니다. Apex는 위탁 제조형 ODC 버스를, 액시엄은 인간이 보수 가능한 ODC 노드를 운용 중이며, 유럽 진출 3사는 ODC 호스트 플랫폼의 지역적 다극화를 노립니다. 펜타곤의 5월 31일 회의론, 5월 30일 SmallSat 유럽 엔지니어 비판 같은 회의 신호가 있었음에도 자본은 1주일에 9억 달러를 ODC 인접 인프라에 추가 베팅했습니다. 6월 말 NASA CLD RFP·6월 중순 거론되는 SpaceX IPO가 이 자본 흐름을 어디로 끌고 갈지가 다음 주의 분기점입니다.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/satellite-maker-apexs-valuation-rises-to-2-3-billion-after-latest-200-million-raise/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/axiom-space-adds-more-than-175-million-to-funding-round/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://payloadspace.com/us-commercial-space-stations-expand-to-europe/",
+        "label": "Payload"
+      }
+    ]
+  },
   "2026-06-04": {
     "date": "2026-06-04",
     "headlines": [
