@@ -31,6 +31,38 @@
       }
     ]
   },
+  "2026-06-05": {
+    "date": "2026-06-05",
+    "headlines": [
+      {
+        "date": "2026-06-04",
+        "html": "<a href=\"https://spacenews.com/china-builds-institutional-framework-for-space-computing-push/\" target=\"_blank\" rel=\"noopener\"><strong>중국, 우주 컴퓨팅 산업위원회 출범으로 궤도 데이터센터 국가 전략화</strong>: (SpaceNews, 2026-06-04)</a>"
+      },
+      {
+        "date": "2026-06-04",
+        "html": "<a href=\"https://spacenews.com/delian-asparouhov-and-philip-johnston-on-making-the-case-for-orbital-data-centers/\" target=\"_blank\" rel=\"noopener\"><strong>파운더스 펀드의 델리안 아스파로호프, 궤도 데이터센터 회의론에서 돌아서</strong>: (SpaceNews, 2026-06-04)</a>"
+      },
+      {
+        "date": "2026-06-03",
+        "html": "<a href=\"https://payloadspace.com/nasa-reverts-to-original-cld-procurement-plan/\" target=\"_blank\" rel=\"noopener\"><strong>NASA, 상업용 우주정거장 ‘코어 모듈’ 폐기 후 자유비행 노선 복귀</strong>: (Payload Space, 2026-06-03)</a>"
+      }
+    ],
+    "summary_html": "<strong>① 스페이스뉴스(SpaceNews, 6/4)</strong> — 중국 공업정보화부(MIIT) 산하 전자정보국이 6월 3일 ‘우주 컴퓨팅 산업위원회’를 정식 출범시켰고, 중국과학원 출신 왕젠위가 위원장으로 선출됐습니다. 칩·하드웨어·전력·통신·발사 서비스 등 분야에서 이미 100개 이상의 기관이 가입 신청했고, 4월에는 베이징 이좡 경제구에서 ‘우주 컴퓨팅 파워 전문위원회’가 별도로 출범해 표준·응용·지상통합을 담당합니다. 15차 5개년 계획(2026~2030)은 ‘하늘·지구·지상’ 통합 컴퓨팅 체계를 명시했고, 중국항천과기집단(CASC)은 같은 기간 기가와트급 궤도 인프라를 목표로 합니다. 5월에 알려진 오비탈 천광의 84억 달러 신용공여, 1000기 5체-삼체 컨스텔레이션 1엑사플롭 계획에 더해, 상하이 바이링 항천의 100kW급 플랫폼 초기 펀딩과 오리엔트 톈순·광번웨이의 ‘세계 최초 광컴퓨팅 위성’ 개발도 처음 공개됐습니다.<br><br><strong>② 스페이스뉴스(SpaceNews, 6/4)</strong> — 스페이스 마인즈 팟캐스트에서 파운더스 펀드 파트너이자 바르다 스페이스 공동창업자인 델리안 아스파로호프가 “궤도 데이터센터로 마음이 기울고 있다”고 밝혔습니다. 그는 그동안 ODC에 대해 보수적 입장으로 평가받아 온 대표적 VC인데, 입장 변화 자체가 미국 벤처 캐피털 내 합의 형성 신호로 읽힙니다. 후반부에는 스타클라우드 CEO 필립 존스턴이 같이 출연해, 5월 27일 발표한 스타링크 미니 레이저 단말 50기 도입과 2027년 1월 팰컨 9 발사 일정을 뒷받침하는 사업 논리를 재차 설명했습니다. 4월 30일 스페이스뉴스 ODC 행사에서 녹음한 두 대담은, 5월 31일자 펜타곤 회의론·5월 30일 SmallSat 유럽의 엔지니어 비판과 정면으로 마주 서는 ‘찬성 측 변론’ 모음에 해당합니다.<br><br><strong>③ 페이로드 스페이스(Payload Space, 6/3)</strong> — NASA가 3월에 검토하던 ‘ISS 부착 코어 모듈’ 안을 공식 폐기하고, 원래 계획대로 자유비행 상업용 우주정거장 후속 사업(CLD)을 지원하기로 했습니다. 액시엄·바스트·스타랩 등 사업자들이 이미 페이로드 수요가 있다는 증거를 제출하며 시장 지속 가능성을 입증한 결과입니다. 6월 중 RFP 초안이 공개되고, 산업계 의견을 반영한 요구사항이 확정됩니다. 6월 3일 브리핑에서 다룬 액시엄 ODC 도킹 노드와 바스트 헤이븐의 15kW 위성 버스, NVIDIA 스페이스-1 베라 루빈 모듈 탑재 경로 모두 정거장 인프라가 안정적으로 유지된다는 전제 위에서 굴러갑니다. 코어 모듈 안이 살아남았다면 ODC 모듈을 추가 도킹할 항만 자체가 좁아질 뻔했습니다. 오늘의 3건은 정책·자본·인프라 세 축을 한 화면에 모아 놓은 모양새입니다. 중국은 MIIT가 직접 위원회를 띄워 ODC를 국가 산업 정책으로 ‘제도화’하는 단계에 진입했고, 미국은 같은 시점에 파운더스 펀드 같은 벤처 캐피털 측이 회의론을 거두며 자본 시장 합의를 다지고 있습니다. NASA의 CLD 노선 복귀는 그 합의가 실현되려면 자유비행 정거장이라는 ‘부두’가 필요하다는 사실을 행정 정책 차원에서 확인해 준 셈입니다. 5월 말부터 이어진 펜타곤·SmallSat 유럽의 엔지니어링 회의론과 정확히 대척점에 서 있고, 이번 주 후반 발표될 액시엄 RFP·중국 위원회 가입 명단·아스파로호프 후속 투자 행보를 함께 지켜봐야 다음 단계 그림이 잡힙니다.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/china-builds-institutional-framework-for-space-computing-push/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/delian-asparouhov-and-philip-johnston-on-making-the-case-for-orbital-data-centers/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://payloadspace.com/nasa-reverts-to-original-cld-procurement-plan/",
+        "label": "Payload"
+      }
+    ]
+  },
   "2026-06-04": {
     "date": "2026-06-04",
     "headlines": [

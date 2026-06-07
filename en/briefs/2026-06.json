@@ -31,6 +31,38 @@
       }
     ]
   },
+  "2026-06-05": {
+    "date": "2026-06-05",
+    "headlines": [
+      {
+        "date": "2026-06-04",
+        "html": "<a href=\"https://spacenews.com/delian-asparouhov-and-philip-johnston-on-making-the-case-for-orbital-data-centers/\" target=\"_blank\" rel=\"noopener\"><strong>China elevates orbital data centers to national strategy with launch of Space Computing Industry Committee</strong>: (SpaceNews, 2026-06-04)</a>"
+      },
+      {
+        "date": "2026-06-04",
+        "html": "<a href=\"https://spacenews.com/china-builds-institutional-framework-for-space-computing-push/\" target=\"_blank\" rel=\"noopener\"><strong>Founders Fund&#x27;s Delian Asparouhov reverses course on orbital data center skepticism</strong>: (SpaceNews, 2026-06-04)</a>"
+      },
+      {
+        "date": "2026-06-03",
+        "html": "<a href=\"https://payloadspace.com/nasa-reverts-to-original-cld-procurement-plan/\" target=\"_blank\" rel=\"noopener\"><strong>NASA scraps commercial space station &quot;core module&quot; plan, returns to free-flyer track</strong>: (Payload Space, 2026-06-03)</a>"
+      }
+    ],
+    "summary_html": "<strong>① SpaceNews (6/4)</strong> — The Electronic Information Department under China&#x27;s Ministry of Industry and Information Technology (MIIT) formally launched the Space Computing Industry Committee on June 3, with Wang Jianyu, a Chinese Academy of Sciences veteran, elected as chair. More than 100 organizations across chips, hardware, power, communications, and launch services have already filed for membership, and in April a separate Space Computing Power Specialized Committee was launched in Beijing&#x27;s Yizhuang Economic Zone to handle standards, applications, and ground integration. The 15th Five-Year Plan (2026–2030) explicitly calls for an integrated &quot;sky-earth-ground&quot; computing system, and the China Aerospace Science and Technology Corporation (CASC) is targeting gigawatt-class orbital infrastructure over the same period. On top of Orbital Tianguang&#x27;s $8.4 billion credit line disclosed in May and its 1,000-satellite Wuti-Santi constellation aiming for 1 exaFLOP, the briefing also revealed for the first time early funding for Shanghai Bailing Aerospace&#x27;s 100kW-class platform and development by Orient Tianxun and Guangbenwei of what they bill as &quot;the world&#x27;s first optical computing satellite.&quot;<br><br><strong>② SpaceNews (6/4)</strong> — On the Space Minds podcast, Founders Fund partner and Varda Space co-founder Delian Asparouhov said he is &quot;coming around to orbital data centers.&quot; Long viewed as one of the more skeptical leading VCs on ODCs, his shift in stance reads as a signal of consensus-building within US venture capital. Starcloud CEO Philip Johnston joined the second half of the podcast to reiterate the business case behind the company&#x27;s May 27 announcement of 50 Starlink mini laser terminals and its January 2027 Falcon 9 launch slot. The two conversations, recorded at SpaceNews&#x27;s April 30 ODC event, amount to a &quot;case for the defense&quot; lined up squarely against the May 31 Pentagon skepticism and the engineer pushback at SmallSat Europe on May 30.<br><br><strong>③ Payload Space (6/3)</strong> — NASA has formally scrapped the &quot;ISS-attached core module&quot; option it had been weighing in March, opting instead to back the Commercial LEO Destinations (CLD) program&#x27;s original free-flyer track. Operators including Axiom, Vast, and Starlab submitted evidence of existing payload demand, demonstrating market viability. A draft RFP is due out in June, with requirements to be finalized after industry input. Axiom&#x27;s ODC docking node, Vast&#x27;s 15kW Haven satellite bus, and the path for NVIDIA&#x27;s Space-1 Vera Rubin module — all covered in the June 3 briefing — depend on station infrastructure remaining stable. Had the core module option survived, berthing capacity for additional ODC modules would have been squeezed. Today&#x27;s three items line up policy, capital, and infrastructure on a single screen. China has entered a phase of &quot;institutionalizing&quot; ODCs as national industrial policy, with MIIT itself standing up a dedicated committee, while in the US at the same moment a venture capital camp led by firms like Founders Fund is dropping its skepticism and consolidating capital-market consensus. NASA&#x27;s return to the CLD track confirms at the policy level that this consensus needs free-flying stations as the &quot;docks&quot; to make it real. The trio sits directly opposite the engineering skepticism running from the late-May Pentagon and SmallSat Europe sessions, and the next stage of the picture will only come into focus as the Axiom RFP, China&#x27;s committee membership roster, and Asparouhov&#x27;s follow-on investment moves all land later this week.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/china-builds-institutional-framework-for-space-computing-push/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/delian-asparouhov-and-philip-johnston-on-making-the-case-for-orbital-data-centers/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://payloadspace.com/nasa-reverts-to-original-cld-procurement-plan/",
+        "label": "Payload"
+      }
+    ]
+  },
   "2026-06-04": {
     "date": "2026-06-04",
     "headlines": [
