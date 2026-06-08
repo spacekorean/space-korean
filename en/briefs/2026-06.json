@@ -1,4 +1,32 @@
 {
+  "2026-06-09": {
+    "date": "2026-06-09",
+    "headlines": [
+      {
+        "date": "2026-06-05",
+        "html": "<a href=\"https://techcrunch.com/2026/06/05/google-will-pay-spacex-920m-per-month-for-compute/\" target=\"_blank\" rel=\"noopener\"><strong>Google to pay SpaceX $920 million per month — 110,000 Nvidia GPU lease locks in second anchor customer for the ODC capital cycle</strong>: SpaceX&#x27;s amended S-1 filing on June 5 disclosed for the first time that Google will lease Colossus data center compute capacity for $920 million per month from October 2026 through June 2029, totaling roughly $30 billion (about ₩47 trillion). Combined with the $1.25 billion per month Anthropic contract revealed on May 8, two hyperscalers will be paying SpaceX a combined $2.17 billion per month — $26 billion per year — and this cash flow becomes the first quantitative foundation underpinning the million-satellite orbital data center mega-constellation capex slated for immediately after the IPO — TechCrunch</a>"
+      },
+      {
+        "date": "2026-06-08",
+        "html": "<a href=\"https://www.ibtimes.co.uk/spacex-google-data-centre-deal-1801386\" target=\"_blank\" rel=\"noopener\"><strong>IBTimes: Anthropic formally signals intent to use SpaceX orbital data centers — first explicit signal that the ₩47 trillion ground deal extends to orbital ODCs</strong>: In an analysis published June 8, reporter Niloy Chakrabarti was the first to frame the ODC implications of both contracts on a single page. Anthropic stated it &quot;intends to use SpaceX&#x27;s orbital data center service if it successfully launches commercially,&quot; while Google is simultaneously accelerating its own Project Suncatcher 2027 orbital demonstration schedule. This is the first time external filings have confirmed that two anchor customers have jointly procured both ground-based Colossus capacity and future orbital capacity in a bundled structure — IBTimes</a>"
+      }
+    ],
+    "summary_html": "<strong>① TechCrunch (Sean O&#x27;Kane, 6/5)</strong> — Reporter Sean O&#x27;Kane analyzed SpaceX&#x27;s amended S-1 filed on June 5 and reported that Google will pay $920 million per month from October 2026 through June 2029 to lease approximately 110,000 Nvidia GPUs along with the full stack of CPU, memory, and networking. The three-year total comes to about $30 billion, or roughly ₩47 trillion. Through the end of September 2026, the monthly rate will step up in line with phased rack activation, and if SpaceX fails to bring 110,000 GPUs online by that point, Google may either terminate the contract after a one-month grace period or adjust the monthly rate proportional to the active GPU ratio. A provision also allows either party to terminate with 90 days&#x27; notice after December 31, 2026, effectively making first-year utilization the determining factor for the entire $27 billion balance. The filing does not specify which facility SpaceX will use, but CEO Elon Musk has previously stated he intends to reserve the Colossus 2 facility exclusively for xAI, suggesting Google&#x27;s capacity will come from Colossus 1 or an additional Memphis site.<br><br><strong>② IBTimes (Niloy Chakrabarti, 6/8)</strong> — In an analysis published June 8, the UK edition of IBTimes was the first to consolidate on a single page the $1.25 billion per month Anthropic contract disclosed May 8 and the $920 million per month Google contract disclosed June 5. The combined monthly total is $2.17 billion, or $26 billion annually. Two pieces of decisively new information emerged. First, the specific figure that Anthropic is leasing 222,000 Nvidia chips at the Colossus facility was disclosed for the first time. Second, Anthropic explicitly stated it &quot;intends to use SpaceX&#x27;s orbital data center service if it successfully launches commercially.&quot; The parallel picture on Google&#x27;s side pairs with its own Project Suncatcher 2027 orbital TPU demonstration plan, and is being read as a signal that both hyperscalers have accepted a phased roadmap of validating SpaceX&#x27;s compute operations capability at ground-based Colossus for one to two years before migrating to orbit. Google cited the lease rationale as &quot;temporary reinforcement capacity to address explosive demand for Gemini Enterprise.&quot; Today&#x27;s two stories fill a decisive missing link in the capital cycle that has run from SpaceX&#x27;s first IPO S-1 disclosure on May 22, the May 23 conversion of Colossus 1 into an xAI neocloud, and the June 6 SatNews Oppenheimer bear-case scenario. Until now, the million-satellite orbital data center vision and the $1.77 trillion IPO valuation had been tethered to forward-dated promises like &quot;2028 launches&quot; and &quot;2030s break-even.&quot; With Google and Anthropic, $2.17 billion per month in cash flow has for the first time become capacity that is &quot;being realized this very quarter.&quot; And IBTimes&#x27; framing of Anthropic&#x27;s stated intent to use ODCs marks the first instance, confirmed through external filings, of an implicit understanding that these two anchor customers are using ground-based Colossus as a pre-validation ground for ODC operational capability. Within the schedule that runs through June 11 IPO pricing, June 12 Nasdaq listing (ticker SPCX), the June 17 Ariane 6 Amazon Leo launch, and a late-June NASA CLD RFP, this weekend marks the threshold at which the ODC capital cycle crosses from the ground-validation phase into the orbital capex phase.",
+    "sources": [
+      {
+        "url": "https://techcrunch.com/2026/06/05/google-will-pay-spacex-920m-per-month-for-compute/",
+        "label": "TechCrunch"
+      },
+      {
+        "url": "https://www.ibtimes.co.uk/spacex-google-data-centre-deal-1801386",
+        "label": "ibtimes.co.uk"
+      },
+      {
+        "url": "https://www.aitimes.com/news/articleView.html?idxno=211421",
+        "label": "aitimes.com"
+      }
+    ]
+  },
   "2026-06-08": {
     "date": "2026-06-08",
     "headlines": [
