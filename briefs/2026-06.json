@@ -1,4 +1,36 @@
 {
+  "2026-06-10": {
+    "date": "2026-06-10",
+    "headlines": [
+      {
+        "date": "2026-06-09",
+        "html": "<a href=\"https://www.edaily.co.kr/News/Read?newsId=03893366645480080&amp;mediaCodeNo=257\" target=\"_blank\" rel=\"noopener\"><strong>스페이스X, 1세대 궤도 AI 데이터센터 위성 AI1 첫 설계 공개 — 윙스팬 70미터·피크 150kW·GB300 1랙 등가</strong>: 일론 머스크가 6월 9일 월요일 밤 X에 30분짜리 비디오를 공개하며 백만 기 궤도 데이터센터 컨스텔레이션의 첫 위성인 AI1 설계를 직접 설명했습니다. 윙스팬 70미터·전개 높이 20미터의 거대 태양광 패널이 평균 120kW, 피크 150kW의 컴퓨트 페이로드를 600km 궤도에서 가동하며, 효율은 톤당 70kW입니다. 칩은 교체형으로 설계해 엔비디아 등 다양한 칩메이커가 페이로드를 채울 수 있도록 했고, 배치형 액체 라디에이터로 열을 처리합니다. 머스크는 “AI 위성은 스타링크보다 훨씬 단순합니다”라고 말하며 한 기당 컴퓨트가 지상 엔비디아 GB300 1랙(약 140kW)에 해당한다고 정량화했습니다 — Tom&#x27;s Hardware</a>"
+      },
+      {
+        "date": "2026-06-09",
+        "html": "<a href=\"https://www.tomshardware.com/tech-industry/spacex-details-its-ai1-compute-satellite\" target=\"_blank\" rel=\"noopener\"><strong>Gigasat 공장 11백만 sqft 부지 + 2027년 말 가동 + 연 1기가와트 컴퓨트 목표 — 생산 캐파도 동시 공개</strong>: 같은 발표에서 스페이스X는 텍사스 바스트롭에 1,000에이커 이상을 확보한 Gigasat 공장 계획을 추가로 밝혔습니다. 부지 잠재 연면적은 1,100만 sqft(약 102만 ㎡), 2027년 말부터 AI1 위성을 본격 생산합니다. 목표는 연 1기가와트 우주 컴퓨트 출하로, AI1 한 기가 150kW이므로 연 6,000기 이상 생산 페이스를 의미합니다. 한국 EDaily는 같은 단지에 칩 자체를 만드는 TeraFab 팹도 별도로 계획돼 있으며 면적이 테슬라 기가 오스틴의 10배 규모라고 추가 보도했습니다. 6월 12일 SPCX 상장(목표 평가 1조 7천7백억 달러) 사흘 전에 떨어진 발표라 IPO 내러티브의 마지막 카탈리스트로 해석됩니다 — Tom&#x27;s Hardware</a>"
+      }
+    ],
+    "summary_html": "<strong>① Tom&#x27;s Hardware / Yahoo Finance (6/9)</strong> — 머스크가 6월 9일 월요일 밤 X에 올린 30분 비디오에서 처음으로 AI1 위성의 구체 설계가 공개됐습니다. 평균 120kW·피크 150kW·톤당 70kW·600km 궤도가 핵심 수치이며, 윙스팬 70미터에 전개 높이 20미터로 보잉 747보다 폭이 넓습니다. 250W/㎡ 효율의 태양광 패널로 150kW를 생산하고, 배치형 액체 라디에이터로 폐열을 우주로 방출합니다. 페이로드는 교체형 “칩 슬롯”으로 설계해 엔비디아·AMD·자체 ASIC 등 어떤 칩메이커도 들어올 수 있도록 했고, 머스크는 한 기당 컴퓨트가 지상 GB300 1랙(약 140kW)과 동일하다고 비교했습니다. 머스크는 “AI 위성은 스타링크보다 훨씬 단순합니다, 복잡한 안테나가 필요 없으니까요”라고 말하며 엔지니어링 난이도가 낮다고 강조했습니다.<br><br><strong>② Tom&#x27;s Hardware (6/9)</strong> — 위성 설계와 함께 공개된 제조 인프라가 사실상 IPO 약속의 등본입니다. 스페이스X는 텍사스 바스트롭에 1,000에이커 이상을 확보한 Gigasat 단지를 발표했으며, 잠재 연면적은 1,100만 sqft(약 102만 ㎡)입니다. 2027년 말부터 AI1 위성과 태양전지·웨이퍼를 본격 생산하며, 목표 출하 페이스는 연 1기가와트 우주 컴퓨트 — 위성 한 기가 150kW이므로 연 6,000기 이상을 한 공장에서 찍어내는 셈입니다. 한국 EDaily 임유경 기자는 같은 단지에 별도 칩 팹 “TeraFab”도 계획돼 있고, 면적이 테슬라 기가 오스틴의 10배 규모라고 정리했습니다. 6월 12일 나스닥 상장(티커 SPCX, 주당 135달러, 555.6백만 주, 1조 7천7백억 달러 평가) 사흘 전 떨어진 발표라, AI1과 Gigasat이 IPO 마지막 내러티브 카탈리스트 역할을 합니다. 이번 발표는 1월 FCC에 제출한 백만 기 컨스텔레이션 계획과 5월 8일 앤트로픽 월 12억 5천만 달러, 6월 5일 구글 월 9억 2천만 달러 콜로서스 임대 계약을 잇는 마지막 퍼즐 조각입니다. 그동안 외부에서는 “지상 콜로서스에 두 앵커 고객을 모은 자본을 정말 궤도로 옮길 수 있느냐”가 핵심 의문이었는데, 이번에 위성 한 기의 컴퓨트가 지상 GB300 1랙과 동일하다는 단위 등가성과 연 1기가와트 생산 캐파가 동시에 공개되면서 “1백만 기 = 1백만 랙 = 메가급 궤도 컴퓨트”라는 단순한 산수가 처음 IPO 투자자 앞에 놓였습니다. 동시에 페이스도 보입니다. 연 6,000기 페이스라면 1백만 기 완성은 약 25년 — 2050년대 메가 ODC를 목표로 한 자본 사이클이지, 5년짜리 단거리 경주가 아니라는 신호입니다. Starcloud 88,000기·블루 오리진 51,600기·Cowboy Space 1MW 2단 데이터센터 같은 경쟁자들과의 차이는 수직 통합(로켓·위성·공장·칩 팹 한 묶음)에서 갈리고, 그 차이가 6월 11일 IPO 프라이싱·12일 SPCX 상장의 가격 정당화 논거가 됩니다. 6월 17일 Ariane 6의 아마존 Leo 36기 발사와 6월 말 NASA CLD RFP가 이어지는 일정 안에서, 이번 주 AI1·Gigasat 발표는 ODC 자본 사이클이 “지상 검증 → 궤도 청사진”에서 “궤도 청사진 → 공장 가동 일정”으로 한 단계 더 구체화됐다는 분기점입니다.",
+    "sources": [
+      {
+        "url": "https://www.tomshardware.com/tech-industry/spacex-details-its-ai1-compute-satellite",
+        "label": "tomshardware.com"
+      },
+      {
+        "url": "https://www.tomshardware.com/tech-industry/big-tech/spacex-unveils-11-million-square-foot-gigasat-factory-a-new-manufacturing-facility-for-space-based-data-centers-aims-for-1-gw-year-of-space-ai-compute-by-late-2027-from-its-satellites",
+        "label": "tomshardware.com"
+      },
+      {
+        "url": "https://finance.yahoo.com/sectors/technology/article/spacex-reveals-its-first-orbital-data-center-much-simpler-than-a-starlink-satellite-musk-says-141110185.html",
+        "label": "finance.yahoo.com"
+      },
+      {
+        "url": "https://www.edaily.co.kr/News/Read?newsId=03893366645480080&mediaCodeNo=257",
+        "label": "edaily.co.kr"
+      }
+    ]
+  },
   "2026-06-09": {
     "date": "2026-06-09",
     "headlines": [

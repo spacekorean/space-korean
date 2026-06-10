@@ -1,4 +1,36 @@
 {
+  "2026-06-10": {
+    "date": "2026-06-10",
+    "headlines": [
+      {
+        "date": "2026-06-09",
+        "html": "<a href=\"https://www.tomshardware.com/tech-industry/spacex-details-its-ai1-compute-satellite\" target=\"_blank\" rel=\"noopener\"><strong>SpaceX unveils first-generation orbital AI data center satellite AI1 — 70-meter wingspan, 150 kW peak, equivalent to one Nvidia GB300 rack</strong>: Elon Musk posted a 30-minute video to X on the night of Monday, June 9, personally walking through the design of AI1, the first satellite in a planned million-unit orbital data center constellation. Massive solar panels with a 70-meter wingspan and 20-meter deployed height power an average 120 kW — peaking at 150 kW — compute payload in 600 km orbit, at an efficiency of 70 kW per ton. The chips are designed as swappable modules so payloads can be filled by Nvidia or other chipmakers, and waste heat is handled by deployable liquid radiators. Musk said &quot;AI satellites are far simpler than Starlink,&quot; quantifying the compute per satellite as equivalent to one ground-based Nvidia GB300 rack (about 140 kW) — Tom&#x27;s Hardware</a>"
+      },
+      {
+        "date": "2026-06-09",
+        "html": "<a href=\"https://www.tomshardware.com/tech-industry/big-tech/spacex-unveils-11-million-square-foot-gigasat-factory-a-new-manufacturing-facility-for-space-based-data-centers-aims-for-1-gw-year-of-space-ai-compute-by-late-2027-from-its-satellites\" target=\"_blank\" rel=\"noopener\"><strong>Gigasat factory: 11 million sq ft site, online by late 2027, targeting 1 GW/year of compute — production capacity disclosed alongside</strong>: In the same announcement, SpaceX detailed plans for a Gigasat factory on more than 1,000 acres in Bastrop, Texas. The site has a potential built area of 11 million sq ft (about 1.02 million m²), with full AI1 satellite production beginning in late 2027. The target is 1 gigawatt of space compute shipped per year — since each AI1 is 150 kW, that implies a production pace of more than 6,000 satellites per year. Korea&#x27;s EDaily added that a separate chip fabrication plant called TeraFab is also planned on the same campus, with the overall footprint roughly 10 times the size of Tesla&#x27;s Giga Austin. Coming three days before the June 12 SPCX listing (targeting a $1.77 trillion valuation), the announcement is being read as the final catalyst for the IPO narrative — Tom&#x27;s Hardware</a>"
+      }
+    ],
+    "summary_html": "<strong>① Tom&#x27;s Hardware / Yahoo Finance (6/9)</strong> — In a 30-minute video Musk posted to X on the night of Monday, June 9, the concrete design of the AI1 satellite was disclosed for the first time. The key figures are 120 kW average, 150 kW peak, 70 kW per ton, and 600 km orbit, with a 70-meter wingspan and 20-meter deployed height — wider than a Boeing 747. Solar panels with 250 W/m² efficiency produce 150 kW, and deployable liquid radiators dump waste heat into space. The payload is designed around swappable &quot;chip slots&quot; so that any chipmaker — Nvidia, AMD, or in-house ASICs — can plug in, and Musk compared the compute per satellite to one ground-based GB300 rack (about 140 kW). Musk said &quot;AI satellites are far simpler than Starlink, because they don&#x27;t need complex antennas,&quot; emphasizing the lower engineering difficulty.<br><br><strong>② Tom&#x27;s Hardware (6/9)</strong> — Disclosed alongside the satellite design, the manufacturing infrastructure is effectively the receipt for the IPO promise. SpaceX announced the Gigasat campus on more than 1,000 acres in Bastrop, Texas, with a potential built area of 11 million sq ft (about 1.02 million m²). Full production of AI1 satellites, solar cells, and wafers begins in late 2027, with a target shipping pace of 1 gigawatt of space compute per year — at 150 kW per satellite, that means churning out more than 6,000 satellites a year from a single factory. EDaily&#x27;s Lim Yu-kyung reported that a separate &quot;TeraFab&quot; chip fab is also planned on the same campus, with a footprint about 10 times the size of Tesla&#x27;s Giga Austin. Dropped three days before the June 12 Nasdaq listing (ticker SPCX, $135 per share, 555.6 million shares, $1.77 trillion valuation), AI1 and Gigasat serve as the final narrative catalyst for the IPO. This announcement is the final puzzle piece following the million-satellite constellation plan filed with the FCC in January, the $1.25 billion-per-month Anthropic Colossus lease on May 8, and the $920 million-per-month Google Colossus lease on June 5. Until now, the core outside question was &quot;can the capital that gathered two anchor customers on ground-based Colossus really be moved to orbit?&quot; — but with the simultaneous disclosure of unit equivalence (one satellite&#x27;s compute equals one ground-based GB300 rack) and 1 GW/year production capacity, the simple arithmetic &quot;1 million units = 1 million racks = megaclass orbital compute&quot; was put in front of IPO investors for the first time. The pace is also visible. At 6,000 units per year, completing a million-unit constellation takes about 25 years — a signal that this is a capital cycle aimed at a 2050s megascale ODC, not a five-year sprint. The differentiator versus competitors like Starcloud&#x27;s 88,000 satellites, Blue Origin&#x27;s 51,600, or Cowboy Space&#x27;s 1 MW two-stage data center comes down to vertical integration (rocket, satellite, factory, and chip fab in one bundle), and that gap becomes the price-justification argument for the June 11 IPO pricing and June 12 SPCX listing. Within a schedule that runs through Ariane 6&#x27;s launch of 36 Amazon Leo satellites on June 17 and NASA&#x27;s CLD RFP at the end of June, this week&#x27;s AI1 and Gigasat announcements mark an inflection point where the ODC capital cycle has moved one step further from &quot;ground validation → orbital blueprint&quot; to &quot;orbital blueprint → factory ramp schedule.&quot;",
+    "sources": [
+      {
+        "url": "https://www.tomshardware.com/tech-industry/spacex-details-its-ai1-compute-satellite",
+        "label": "tomshardware.com"
+      },
+      {
+        "url": "https://www.tomshardware.com/tech-industry/big-tech/spacex-unveils-11-million-square-foot-gigasat-factory-a-new-manufacturing-facility-for-space-based-data-centers-aims-for-1-gw-year-of-space-ai-compute-by-late-2027-from-its-satellites",
+        "label": "tomshardware.com"
+      },
+      {
+        "url": "https://finance.yahoo.com/sectors/technology/article/spacex-reveals-its-first-orbital-data-center-much-simpler-than-a-starlink-satellite-musk-says-141110185.html",
+        "label": "finance.yahoo.com"
+      },
+      {
+        "url": "https://www.edaily.co.kr/News/Read?newsId=03893366645480080&mediaCodeNo=257",
+        "label": "edaily.co.kr"
+      }
+    ]
+  },
   "2026-06-09": {
     "date": "2026-06-09",
     "headlines": [
