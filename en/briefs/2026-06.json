@@ -1,4 +1,32 @@
 {
+  "2026-06-11": {
+    "date": "2026-06-11",
+    "headlines": [
+      {
+        "date": "2026-06-10",
+        "html": "<a href=\"https://spacenews.com/orbital-raises-5-million-to-join-orbital-data-center-race/\" target=\"_blank\" rel=\"noopener\"><strong>Orbital raises $5 million pre-seed, joins the orbital data center race</strong>: Founded by e-scooter entrepreneur Yuwen Poon, the LA-based startup secured $5 million in a round led by a16z Speedrun, unveiling a roadmap from a 2027 Falcon 9 rideshare demonstration to a dedicated 100kW satellite in 2028, with a long-term vision of a 100,000-satellite, 10GW constellation — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-06-10",
+        "html": "<a href=\"https://www.bloomberg.com/news/articles/2026-06-10/spacex-holder-sees-large-risk-on-orbital-data-centers\" target=\"_blank\" rel=\"noopener\"><strong>Baillie Gifford: &quot;Orbital data centers are the next hypothesis to validate&quot;</strong>: Peter Singlehurst, head of private companies at long-time SpaceX investor Baillie Gifford, told Bloomberg that &quot;the rewards if successful are enormous, but everyone needs to understand the risk,&quot; reframing the ODC thesis as a &quot;hypothesis under validation&quot; ahead of the IPO — (Bloomberg)</a>"
+      }
+    ],
+    "summary_html": "<strong>① SpaceNews (SpaceNews, 6/10)</strong> — Orbital&#x27;s $5 million pre-seed was an oversubscribed round led by a16z Speedrun, with participation from 14 funds including Basis Set and Human Element. Founder Yuwen Poon is the entrepreneur behind Spin, the e-scooter company he sold to Ford, and has no prior space industry experience. The first mission, Pathfinder, will test GPU, radiation, and thermal performance on a 2027 Falcon 9 rideshare, followed in 2028 by a dedicated satellite, Orbital-1, carrying 100kW of compute. The long-term vision is a distributed 100,000-satellite, 10GW constellation. Poon emphasized the gap by noting that &quot;the largest commercial satellite operated to date has been only 20-30kW,&quot; and stated bluntly that &quot;the economics don&#x27;t work at Falcon 9 prices — full scale only becomes possible once Starship is fully operational.&quot; The design is based on NVIDIA&#x27;s Vera Rubin-class Space-1 GPU architecture.<br><br><strong>② Bloomberg (Bloomberg, 6/10)</strong> — Peter Singlehurst of Baillie Gifford, one of SpaceX&#x27;s major private investors, characterized orbital data centers as &quot;the next hypothesis the company needs to validate&quot; in an interview just ahead of the IPO. While saying &quot;the rewards if successful are enormous,&quot; he qualified that &quot;everyone needs to understand the risk.&quot; SpaceX&#x27;s S-1 filing, made public on April 22, similarly stated that ODCs &quot;involve significant technical complexity and unproven technology, and may be commercially difficult to realize&quot; — a signal that contrasts subtly with the confidence Musk projected on June 8 when he unveiled the AI1 satellite (70m wingspan, 150kW peak, 110㎡ liquid radiator). For a SpaceX seeking a $1.77 trillion valuation and a $75 billion raise, a key long-term investor has effectively called ODCs an &quot;experiment&quot; rather than a &quot;conviction.&quot; In a single day, the two extremes of the ODC market launched headlines on the same date. On one side, a founder with no space industry background entered the market with a $5 million round and a 100,000-satellite vision; on the other, Baillie Gifford — sizing up a $1.77 trillion valuation — downgraded ODCs to an unproven hypothesis. The two are not in conflict but rather two faces of the same cycle: new entrants are building their businesses on the assumption of a world where Starship has collapsed launch costs, while long-term investors are pricing in the time risk until that world arrives. The capital cycle this channel has tracked throughout May (Apex, Starcloud, and Star Catcher reaching unicorn status; the Pentagon&#x27;s seed-stage assessments; the launch of the Space Data Center Research Council) is, with this week&#x27;s IPO inflection point, shifting the question from &quot;how much more is coming in&quot; to &quot;how many will survive.&quot;",
+    "sources": [
+      {
+        "url": "https://spacenews.com/orbital-raises-5-million-to-join-orbital-data-center-race/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://techcrunch.com/2026/06/09/how-an-e-scooter-founder-raised-5-million-to-build-space-data-centers/",
+        "label": "TechCrunch"
+      },
+      {
+        "url": "https://www.bloomberg.com/news/articles/2026-06-10/spacex-holder-sees-large-risk-on-orbital-data-centers",
+        "label": "Bloomberg"
+      }
+    ]
+  },
   "2026-06-10": {
     "date": "2026-06-10",
     "headlines": [

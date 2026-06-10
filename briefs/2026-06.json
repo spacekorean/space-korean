@@ -1,4 +1,32 @@
 {
+  "2026-06-11": {
+    "date": "2026-06-11",
+    "headlines": [
+      {
+        "date": "2026-06-10",
+        "html": "<a href=\"https://spacenews.com/orbital-raises-5-million-to-join-orbital-data-center-race/\" target=\"_blank\" rel=\"noopener\"><strong>오비탈(Orbital), 5백만 달러 프리시드 유치하며 궤도 데이터센터 경주 합류</strong>: 전기 스쿠터 창업가 유윈 푼이 세운 LA 신생사가 a16z 스피드런 주도 라운드로 5백만 달러를 확보, 2027년 팰컨 나인 라이드셰어 시연 → 2028년 100kW 전용 위성 → 장기 10만 기 10GW 구상을 공개했습니다 — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-06-10",
+        "html": "<a href=\"https://www.bloomberg.com/news/articles/2026-06-10/spacex-holder-sees-large-risk-on-orbital-data-centers\" target=\"_blank\" rel=\"noopener\"><strong>베일리 기퍼드 &quot;궤도 데이터센터는 다음 검증 가설&quot;</strong>: 스페이스X 장기 투자자 베일리 기퍼드의 비공개 기업 담당 피터 싱글허스트가 블룸버그 인터뷰에서 &quot;성공 시 보상은 거대하지만 누구나 위험을 알아야 한다&quot;며, IPO를 앞둔 ODC 논제를 &#x27;검증 중 가설&#x27;로 재정의했습니다 — (Bloomberg)</a>"
+      }
+    ],
+    "summary_html": "<strong>① SpaceNews (SpaceNews, 6/10)</strong> — 오비탈의 5백만 달러 프리시드는 a16z 스피드런이 주도하고 베이시스 셋·휴먼 엘리먼트 등 14개 펀드가 참여한 오버서브스크라이브 라운드입니다. 창업자 유윈 푼은 포드에 매각한 전기 스쿠터 회사 스핀의 창업가로, 우주 경력은 없습니다. 첫 미션 패스파인더는 2027년 팰컨 나인 라이드셰어로 GPU·방사선·열성능을 시험하고, 2028년 전용 위성 오비탈-1이 100kW 컴퓨트를 탑재합니다. 장기 비전은 10만 기·10GW 분산형 컨스텔레이션입니다. 푼은 &quot;지금까지 운용된 최대 상용 위성도 20~30kW에 불과하다&quot;고 격차를 강조했고, &quot;팰컨 나인 가격으로는 경제성이 안 나오며 스타십이 본격 가동돼야 풀스케일이 가능하다&quot;고 못박았습니다. 엔비디아의 베라 루빈급 스페이스-1 GPU 아키텍처를 기준으로 설계 중입니다.<br><br><strong>② Bloomberg (Bloomberg, 6/10)</strong> — 스페이스X의 주요 비상장 투자자 베일리 기퍼드의 피터 싱글허스트는 IPO 직전 인터뷰에서 궤도 데이터센터를 &quot;회사가 검증해야 할 다음 가설&quot;로 규정했습니다. &quot;성공 시 보상은 거대하다&quot;면서도 &quot;모두가 위험을 알아야 한다&quot;고 단서를 달았습니다. 4월 22일 공개된 스페이스X S-1도 ODC에 대해 &quot;상당한 기술적 복잡성과 미검증 기술을 수반하며 상업적 실현이 어려울 수 있다&quot;고 적시한 바 있는데, 6월 8일 머스크가 공개한 AI1 위성(70m 날개폭·150kW 첨두·110㎡ 액체 라디에이터)의 자신감과는 결이 미묘하게 다른 신호입니다. 1조 7천7백억 달러 가치 평가, 7백5십억 달러 조달을 노리는 스페이스X에 핵심 장기 투자자가 ODC를 &#x27;확신&#x27;이 아닌 &#x27;실험&#x27;으로 부른 셈입니다. 하루 사이에 ODC 시장의 양 극단이 같은 날짜 헤드라인을 쏘아 올렸습니다. 한쪽엔 우주 경력이 전무한 창업가가 5백만 달러로 10만 기 구상을 들고 시장에 진입했고, 반대쪽엔 1조 7천7백억 달러를 검토하는 베일리 기퍼드가 ODC를 미검증 가설로 격하시켰습니다. 둘은 충돌이 아니라 같은 사이클의 두 얼굴입니다 — 신규 진입자는 스타십이 발사비용을 무너뜨린 다음 세상을 전제로 사업을 짜고, 장기 투자자는 그 세상이 도래하기 전까지의 시간 위험을 가격에 반영합니다. 이 채널이 5월 내내 추적한 자본 사이클(아펙스·스타클라우드·스타 캐처의 유니콘화, 펜타곤의 발아 단계 평가, 우주데이터센터연구회 출범)이 이번 주 IPO 분기점을 지나며 &#x27;얼마나 더 많이 들어오느냐&#x27;에서 &#x27;얼마나 많이 살아남느냐&#x27;로 질문을 바꾸고 있습니다.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/orbital-raises-5-million-to-join-orbital-data-center-race/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://techcrunch.com/2026/06/09/how-an-e-scooter-founder-raised-5-million-to-build-space-data-centers/",
+        "label": "TechCrunch"
+      },
+      {
+        "url": "https://www.bloomberg.com/news/articles/2026-06-10/spacex-holder-sees-large-risk-on-orbital-data-centers",
+        "label": "Bloomberg"
+      }
+    ]
+  },
   "2026-06-10": {
     "date": "2026-06-10",
     "headlines": [
