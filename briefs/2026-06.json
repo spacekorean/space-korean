@@ -1,4 +1,36 @@
 {
+  "2026-06-12": {
+    "date": "2026-06-12",
+    "headlines": [
+      {
+        "date": "2026-06-10",
+        "html": "<a href=\"https://payloadspace.com/symphony-space-unveils-adagio-xl-odc-sat/\" target=\"_blank\" rel=\"noopener\"><strong>심포니 스페이스, &#x27;Adagio-XL&#x27; 궤도 데이터센터 위성 공개</strong>: 100kW 출력에 로봇팔로 임무 중 GPU 세대 교체가 가능한 15년 수명 ODC 플랫폼이 처음 윤곽을 드러냈습니다 — (Payload Space)</a>"
+      },
+      {
+        "date": "2026-06-12",
+        "html": "<a href=\"https://www.seoul.co.kr/news/economy/industry/2026/06/12/20260612030001\" target=\"_blank\" rel=\"noopener\"><strong>스페이스X, 오늘 &#x27;SPCX&#x27; 나스닥 데뷔 — &#x27;MANGOS&#x27; 프레임에 한국 자금 67조 원이 빠져나갔다</strong>: 1조 7,700억 달러 IPO를 떠받치는 궤도 데이터센터 베팅이 한국 코스피의 청약 순매도와 우주테크 ETF 4.4조 원 유입까지 끌어냈습니다 — (서울신문)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Payload Space (페이로드 스페이스, 6/10)</strong> — 미국 버지니아 기반 스타트업 심포니 스페이스가 호스티드 페이로드 플랫폼 어다지오의 ODC 전용 상위 모델 &#x27;어다지오-엑스엘(Adagio-XL)&#x27;을 공개했습니다. 페이로드 적재량은 기존과 동일한 1,200kg이지만 출력은 12kW에서 100kW로 확대됐고, 후속 모델은 200kW를 목표로 합니다. 핵심 차별점은 로봇팔을 이용해 임무 중에도 GPU 모듈을 교체할 수 있다는 설계입니다. 위성 수명은 15년이고 그 기간에 약 8세대의 GPU 갱신을 수용합니다. CEO 메리 워커는 &quot;데이터센터의 감가상각이 가팔라 최신 기술 탑재가 핵심&quot;이라고 강조했습니다. 5월에는 지상 데이터센터 운영사 카탈리스트 데이터센터와 제휴해 고객망과 설계 노하우를 들여왔고, 첫 발사는 2029년 말로 잡혀 있습니다.<br><br><strong>② Seoul Sinmun (서울신문, 6/12)</strong> — 스페이스X가 6월 12일 미국 나스닥에 티커 &#x27;SPCX&#x27;, 공모가 135달러로 상장하면서 약 1조 7,700억 달러 기업가치와 750억 달러 조달로 사상 최대 규모 IPO 기록을 세웁니다. 한국 시장은 외국인이 5월 7일부터 6월 9일까지 코스피에서 약 67조 원을 순매도해 청약 자금을 댔고, 국내 우주테크 ETF 7종에는 4조 4,000억 원이 유입됐습니다. 서울신문은 메타·앤트로픽·엔비디아·구글·오픈AI·스페이스X를 묶은 &#x27;MANGOS&#x27;를 AI·우주 융합 시대의 새 주도주 그룹으로 제시했습니다. 다만 모닝스타는 적정가치를 7,800억 달러로 평가해 공모가의 절반 이하라는 보수적 시각을 견지합니다. 머스크가 공언한 연 1GW 궤도 AI 데이터센터 구상이 이 프리미엄을 정당화할 수 있는지가 첫날 거래의 시험대입니다. 오늘의 두 기사는 같은 시장의 양 축을 보여줍니다. 한쪽엔 스페이스X처럼 발사·위성·칩까지 수직 통합한 거대 베팅이 자본시장에서 가격 발견을 받기 시작했고, 다른 한쪽엔 심포니 스페이스처럼 호스티드 페이로드 모델로 ODC 시장에 진입하는 &#x27;인프라 서비스형&#x27; 신규 진입자가 있습니다. 어다지오-엑스엘이 내세운 로봇팔 GPU 교체는 이 산업이 5월 30일 SmallSat Europe 패널에서 지적됐던 &#x27;2년 칩 사이클 vs 5년 위성 수명&#x27; 불일치를 정면으로 풀려는 첫 상용 해법이고, 1조 7,700억 달러 SpaceX IPO의 첫날 주가는 자본시장이 같은 거대 베팅을 어디까지 받아들이는지를 가르는 잣대가 됩니다. 두 사건이 같은 날 만난다는 점에서, 궤도 데이터센터는 더 이상 &#x27;AI 인프라의 미래 가능성&#x27;이 아니라 오늘의 가격 발견 대상이 됐다고 정리할 수 있습니다.",
+    "sources": [
+      {
+        "url": "https://payloadspace.com/symphony-space-unveils-adagio-xl-odc-sat/",
+        "label": "Payload"
+      },
+      {
+        "url": "https://www.seoul.co.kr/news/economy/industry/2026/06/12/20260612030001",
+        "label": "seoul.co.kr"
+      },
+      {
+        "url": "https://www.satellitetoday.com/finance/2026/06/11/spacex-set-for-ipo-banking-on-faith-in-elon-musk-and-massive-ai-growth/",
+        "label": "satellitetoday.com"
+      },
+      {
+        "url": "https://biz.heraldcorp.com/article/10769020",
+        "label": "biz.heraldcorp.com"
+      }
+    ]
+  },
   "2026-06-11": {
     "date": "2026-06-11",
     "headlines": [

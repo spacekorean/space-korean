@@ -1,4 +1,36 @@
 {
+  "2026-06-12": {
+    "date": "2026-06-12",
+    "headlines": [
+      {
+        "date": "2026-06-10",
+        "html": "<a href=\"https://payloadspace.com/symphony-space-unveils-adagio-xl-odc-sat/\" target=\"_blank\" rel=\"noopener\"><strong>Symphony Space unveils &#x27;Adagio-XL&#x27; orbital data center satellite</strong>: A 15-year ODC platform delivering 100 kW of power, with a robotic arm enabling in-mission GPU generation swaps, has been outlined for the first time — (Payload Space)</a>"
+      },
+      {
+        "date": "2026-06-12",
+        "html": "<a href=\"https://www.seoul.co.kr/news/economy/industry/2026/06/12/20260612030001\" target=\"_blank\" rel=\"noopener\"><strong>SpaceX makes Nasdaq debut today under &#x27;SPCX&#x27; — ₩67 trillion exits Korea on the &#x27;MANGOS&#x27; frame</strong>: The orbital data center bet underpinning the $1.77 trillion IPO has driven net foreign selling on Korea&#x27;s KOSPI and ₩4.4 trillion of inflows into domestic space-tech ETFs — (Seoul Sinmun)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Payload Space (6/10)</strong> — Virginia-based startup Symphony Space has unveiled &#x27;Adagio-XL,&#x27; the ODC-dedicated top-tier model of its Adagio hosted payload platform. Payload capacity is unchanged at 1,200 kg, but power output has expanded from 12 kW to 100 kW, with follow-on models targeting 200 kW. The key differentiator is a design that allows GPU modules to be swapped via a robotic arm during the mission. The satellite has a 15-year service life and is built to accommodate roughly eight GPU generation refreshes over that span. CEO Mary Walker emphasized that &quot;data center depreciation is steep, so loading the latest technology is critical.&quot; In May, the company partnered with terrestrial data center operator Catalyst Data Center to bring in a customer network and design know-how, with the first launch slated for late 2029.<br><br><strong>② Seoul Sinmun (6/12)</strong> — SpaceX lists on the U.S. Nasdaq on June 12 under the ticker &#x27;SPCX&#x27; at an IPO price of $135, setting a record for the largest IPO ever at a valuation of roughly $1.77 trillion and $75 billion raised. In Korea&#x27;s market, foreign investors net-sold roughly ₩67 trillion on the KOSPI between May 7 and June 9 to fund subscriptions, while ₩4.4 trillion flowed into seven domestic space-tech ETFs. Seoul Sinmun framed &#x27;MANGOS&#x27; — bundling Meta, Anthropic, Nvidia, Google, OpenAI, and SpaceX — as the new leading-stock group of the AI–space convergence era. Morningstar, however, holds a more conservative view, pegging fair value at $780 billion, less than half the IPO price. Whether Musk&#x27;s stated vision of 1 GW per year of orbital AI data centers can justify the premium will be the first-day trading test. Today&#x27;s two stories show the two poles of the same market. On one side, a vertically integrated mega-bet spanning launch, satellites, and chips — SpaceX — is beginning to see price discovery in the capital markets. On the other, an &#x27;infrastructure-as-a-service&#x27; new entrant like Symphony Space is moving into the ODC market via the hosted-payload model. The robotic-arm GPU swap touted by Adagio-XL is the first commercial attempt to directly address the &#x27;2-year chip cycle vs. 5-year satellite life&#x27; mismatch flagged at the May 30 SmallSat Europe panel, and the first-day stock price of the $1.77 trillion SpaceX IPO becomes the yardstick for how far capital markets will go in accepting the same mega-bet. With the two events landing on the same day, orbital data centers can no longer be summed up as &#x27;a future possibility for AI infrastructure&#x27; — they are now an object of price discovery today.",
+    "sources": [
+      {
+        "url": "https://payloadspace.com/symphony-space-unveils-adagio-xl-odc-sat/",
+        "label": "Payload"
+      },
+      {
+        "url": "https://www.seoul.co.kr/news/economy/industry/2026/06/12/20260612030001",
+        "label": "seoul.co.kr"
+      },
+      {
+        "url": "https://www.satellitetoday.com/finance/2026/06/11/spacex-set-for-ipo-banking-on-faith-in-elon-musk-and-massive-ai-growth/",
+        "label": "satellitetoday.com"
+      },
+      {
+        "url": "https://biz.heraldcorp.com/article/10769020",
+        "label": "biz.heraldcorp.com"
+      }
+    ]
+  },
   "2026-06-11": {
     "date": "2026-06-11",
     "headlines": [
