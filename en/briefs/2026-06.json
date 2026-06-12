@@ -1,4 +1,52 @@
 {
+  "2026-06-13": {
+    "date": "2026-06-13",
+    "headlines": [
+      {
+        "date": "2026-06-12",
+        "html": "<a href=\"https://biz.heraldcorp.com/article/10770252\" target=\"_blank\" rel=\"noopener\"><strong>Hanmi Semiconductor invests ₩50 billion directly in SpaceX</strong>: Chairman Kwak Dong-shin&#x27;s first equity stake in a space company marks a strategic bet by a K-semiconductor equipment leader on the convergence of AI chips, data centers, aerospace, and satellite-communications data industries. — (Herald Economy·Newsis)</a>"
+      },
+      {
+        "date": "2026-06-12",
+        "html": "<a href=\"https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html\" target=\"_blank\" rel=\"noopener\"><strong>SPCX surges 25% on Nasdaq debut, Musk becomes first trillionaire</strong>: SpaceX shares opened at the $135 IPO price and climbed to $169, pushing market cap to $2.22 trillion — an immediate market revaluation of the $1.77 trillion IPO valuation. — (CNBC·NPR·24-7 Wall St)</a>"
+      },
+      {
+        "date": "2026-06-12",
+        "html": "<a href=\"https://www.bloomberg.com/news/articles/2026-06-12/spacex-rented-out-computing-after-own-teams-had-trouble-using-it\" target=\"_blank\" rel=\"noopener\"><strong>Bloomberg reveals the backstory of the Colossus 1 lease</strong>: An internal xAI team failed to operate Memphis&#x27;s Colossus 1 jointly with a second facility 16 kilometers away due to latency issues, ultimately leasing the entire site to Anthropic — a disclosure that again highlights the geographic limits of terrestrial data centers. — (Bloomberg)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Herald Economy·Newsis·EBN (Herald·Newsis·EBN, 6/12)</strong> — Hanmi Semiconductor disclosed on June 12 that it will invest ₩50 billion — roughly 7.2% of its ₩690 billion in shareholders&#x27; equity — in SpaceX common stock. The company described the move as &quot;a strategic investment aligned with the expansion of the AI industry beyond semiconductors and data centers into aerospace and satellite-communications data industries,&quot; and added that it intends to gain early access to the AI semiconductor supply chain by linking up with Musk&#x27;s roughly ₩177 trillion Terafab project in Austin, Texas. The market response was immediate. Hanmi Semiconductor shares jumped 23.71% the same day to close at ₩360,000, and additional capital flowed into the KOSPI space-tech sector.<br><br><strong>② CNBC·NPR·24-7 Wall St (CNBC, 6/12)</strong> — SpaceX debuted on the Nasdaq under the ticker SPCX on June 12, selling 555.6 million shares at the $135 IPO price to raise $75 billion in the largest IPO ever recorded. On the first trading day, the stock opened at $150 — an 11% jump — and ran as high as $169 intraday, up 25%, lifting market cap to $2.22 trillion and making Musk the world&#x27;s first trillionaire. Trading volume passed 360 million shares within the first two hours of the open, ten times that of this year&#x27;s second-largest IPO, Cerebras. MSCI announced early index inclusion of SPCX effective June 13, foreshadowing additional index-fund inflows. Musk identified Starship, Terafab, and orbital AI compute infrastructure as the top priorities for deploying the proceeds.<br><br><strong>③ Bloomberg (Bloomberg, 6/12)</strong> — In a report published immediately after the IPO, Bloomberg revealed that xAI had attempted to use the Memphis Colossus 1 data center in earnest for Grok training, but failed when pairing it with a second site roughly 16 kilometers away due to aging network infrastructure and optical-path latency issues. The company ultimately decided to lease the entire facility to Anthropic for $1.25 billion per month — a move that goes beyond a routine business decision and instead exposes the physical limits of terrestrial data centers, where geographic dispersion directly translates into added latency. The theoretical advantages of orbital data centers — a roughly 70,000-kilometer light-speed edge and the ability to concentrate compute within a single satellite — were thrown into relief in the same week, at the same company. This week&#x27;s three stories point in the same direction across capital, markets, and technology. ① signals a K-semiconductor equipment champion taking its first equity stake in a space company and entering the ODC supply chain; ② is the result of U.S. capital markets committing record-breaking capital to Musk&#x27;s ODC blueprint; and ③ is the moment when the dispersion limits of terrestrial data centers became unmistakably clear inside a single operator. The momentum that has accumulated through mid-June — Symphony Adagio-XL, Orbital, Apex, Starcloud, SpaceX AI1 — has peaked on the capital side, and the market&#x27;s focus is now shifting to who will deliver the first commercial operations data. From Korea&#x27;s standpoint, if the K-Moonshot task force&#x27;s 2030 orbital demonstration schedule fails to synchronize with the global capital cycle, the Hanmi Semiconductor case may harden into a pattern in which the private sector enters the U.S. ODC supply chain first.",
+    "sources": [
+      {
+        "url": "https://biz.heraldcorp.com/article/10770252",
+        "label": "biz.heraldcorp.com"
+      },
+      {
+        "url": "https://www.newsis.com/view/NISX20260612_0003666573",
+        "label": "뉴시스"
+      },
+      {
+        "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1712258",
+        "label": "ebn.co.kr"
+      },
+      {
+        "url": "https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html",
+        "label": "CNBC"
+      },
+      {
+        "url": "https://www.npr.org/2026/06/12/nx-s1-5855004/stock-ai-spacex-ipo-elon-musk",
+        "label": "npr.org"
+      },
+      {
+        "url": "https://247wallst.com/investing/2026/06/12/spacex-soars-23-in-record-75-billion-debut-as-elon-musk-becomes-the-worlds-first-trillionaire/",
+        "label": "247wallst.com"
+      },
+      {
+        "url": "https://www.bloomberg.com/news/articles/2026-06-12/spacex-rented-out-computing-after-own-teams-had-trouble-using-it",
+        "label": "Bloomberg"
+      }
+    ]
+  },
   "2026-06-12": {
     "date": "2026-06-12",
     "headlines": [

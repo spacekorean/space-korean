@@ -1,4 +1,52 @@
 {
+  "2026-06-13": {
+    "date": "2026-06-13",
+    "headlines": [
+      {
+        "date": "2026-06-12",
+        "html": "<a href=\"https://biz.heraldcorp.com/article/10770252\" target=\"_blank\" rel=\"noopener\"><strong>한미반도체, 스페이스X에 500억원 직접 투자</strong>: 곽동신 회장이 결정한 첫 우주기업 지분 매입으로, AI 반도체·데이터센터·우주항공·위성통신 데이터 산업이 한 축으로 묶이는 흐름에 K-반도체 장비사가 전략적으로 베팅했습니다. — (헤럴드경제·뉴시스)</a>"
+      },
+      {
+        "date": "2026-06-12",
+        "html": "<a href=\"https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html\" target=\"_blank\" rel=\"noopener\"><strong>SPCX 나스닥 첫날 25퍼센트 급등, 머스크 첫 1조 달러 부자 등극</strong>: 공모가 135달러로 출발한 SpaceX 주가는 169달러까지 치솟아 시가총액 2조 2천 2백억 달러를 찍었고, 이는 1조 7천 7백억 달러였던 IPO 평가가치를 시장이 즉시 재평가한 결과입니다. — (CNBC·NPR·24-7 Wall St)</a>"
+      },
+      {
+        "date": "2026-06-12",
+        "html": "<a href=\"https://www.bloomberg.com/news/articles/2026-06-12/spacex-rented-out-computing-after-own-teams-had-trouble-using-it\" target=\"_blank\" rel=\"noopener\"><strong>블룸버그, 콜로서스 1 임대 배경 폭로</strong>: xAI 내부팀이 멤피스 콜로서스 1과 16킬로미터 떨어진 두 번째 시설을 묶을 때 지연 시간 문제로 활용에 실패하자 통째로 Anthropic에 임대했다는 사실이 공개됐고, 이는 지상 데이터센터의 지리적 한계를 다시 부각시켰습니다. — (Bloomberg)</a>"
+      }
+    ],
+    "summary_html": "<strong>① 헤럴드경제·뉴시스·이비엔 (Herald·Newsis·EBN, 6/12)</strong> — 한미반도체가 자기자본 6천 9백억 원의 약 7.2퍼센트에 해당하는 500억 원을 SpaceX 보통주에 투입한다고 6월 12일 공시했습니다. 회사 측은 &quot;AI 산업의 발전이 반도체와 데이터센터를 넘어 우주항공·위성통신 데이터 산업으로 확장되는 흐름에 발맞춘 전략적 투자&quot;라고 설명하며, 머스크가 텍사스 오스틴에 추진 중인 약 177조 원 규모 테라팹 프로젝트와 연계해 AI 반도체 공급망에 선제 진입한다는 입장도 밝혔습니다. 시장 반응은 즉각적이었습니다. 한미반도체 주가는 같은 날 23.71퍼센트 급등해 36만 원에 마감했고, KOSPI 우주테크 섹터로 자금이 추가 유입됐습니다.<br><br><strong>② CNBC·NPR·24-7 Wall St (CNBC, 6/12)</strong> — SpaceX는 6월 12일 SPCX 티커로 나스닥에 데뷔하며 공모가 135달러에 5억 5천 5백 60만 주를 매각, 750억 달러를 조달해 사상 최대 IPO를 완성했습니다. 거래 첫날 주가는 시초가 150달러로 11퍼센트 점프한 뒤 장중 169달러까지 25퍼센트 급등했고, 시가총액은 2조 2천 2백억 달러를 찍으며 머스크를 세계 최초의 1조 달러 부자로 만들었습니다. 거래량은 개장 두 시간 만에 3억 6천만 주를 돌파해 올해 두 번째로 컸던 Cerebras IPO의 10배를 기록했고, MSCI는 6월 13일부터 SPCX의 조기 지수 편입을 발표해 인덱스 자금 추가 유입이 예고됐습니다. 머스크는 조달 자금 우선순위로 스타십·테라팹·궤도 AI 컴퓨트 인프라를 꼽았습니다.<br><br><strong>③ Bloomberg (Bloomberg, 6/12)</strong> — IPO 다음 직후 공개된 보도에서 블룸버그는 xAI가 멤피스 콜로서스 1 데이터센터를 자체 그록 학습용으로 본격 활용하려 했으나, 약 16킬로미터 떨어진 두 번째 부지와 묶을 때 노후 네트워크 인프라와 광경로 지연 문제로 실패했다는 사실을 보도했습니다. 결국 통째로 Anthropic에 월 12억 5천만 달러에 임대하는 결정이 내려졌고, 이는 단순한 영업 결정이 아닌 지상 데이터센터의 물리적 한계 — 부지 분산이 곧 지연 시간 증가로 이어지는 구조 — 가 드러난 사례로 평가됩니다. 7만 킬로미터에 달하는 광속 우위와 단일 위성 안에 컴퓨트를 집적할 수 있는 궤도 데이터센터의 이론적 강점이 같은 회사의 같은 주에 같이 부각된 셈입니다. 이번 주의 세 기사는 자본·시장·기술 세 축이 같은 방향을 가리킵니다. ①은 K-반도체 장비 챔피언이 처음으로 우주 기업 지분을 잡으며 ODC 공급망에 진입하는 신호이고, ②는 미국 자본시장이 머스크의 ODC 청사진에 사상 최대 자본을 집행한 결과이며, ③은 지상 데이터센터의 부지 분산 한계가 동일 사업자 안에서 명확해진 순간입니다. 6월 중순까지 누적된 흐름 — Symphony Adagio-XL, Orbital, Apex, Starcloud, SpaceX AI1 — 가 자본 측면에서 정점을 찍었고, 이제 시장은 누가 첫 상업 운영 데이터를 내놓느냐로 초점이 이동합니다. 한국 입장에서는 정부 K-문샷 추진단의 2030년 궤도 실증 일정이 글로벌 자본 사이클과 동기화되지 않을 경우, 한미반도체 같은 사례처럼 민간이 먼저 미국 ODC 공급망에 편입되는 경로가 굳어질 수 있습니다.",
+    "sources": [
+      {
+        "url": "https://biz.heraldcorp.com/article/10770252",
+        "label": "biz.heraldcorp.com"
+      },
+      {
+        "url": "https://www.newsis.com/view/NISX20260612_0003666573",
+        "label": "뉴시스"
+      },
+      {
+        "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1712258",
+        "label": "ebn.co.kr"
+      },
+      {
+        "url": "https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html",
+        "label": "CNBC"
+      },
+      {
+        "url": "https://www.npr.org/2026/06/12/nx-s1-5855004/stock-ai-spacex-ipo-elon-musk",
+        "label": "npr.org"
+      },
+      {
+        "url": "https://247wallst.com/investing/2026/06/12/spacex-soars-23-in-record-75-billion-debut-as-elon-musk-becomes-the-worlds-first-trillionaire/",
+        "label": "247wallst.com"
+      },
+      {
+        "url": "https://www.bloomberg.com/news/articles/2026-06-12/spacex-rented-out-computing-after-own-teams-had-trouble-using-it",
+        "label": "Bloomberg"
+      }
+    ]
+  },
   "2026-06-12": {
     "date": "2026-06-12",
     "headlines": [
