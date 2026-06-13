@@ -1,4 +1,40 @@
 {
+  "2026-06-14": {
+    "date": "2026-06-14",
+    "headlines": [
+      {
+        "date": "2026-06-12",
+        "html": "<a href=\"https://spacenews.com/astronomers-fear-orbital-data-centers-will-interfere-with-observations/\" target=\"_blank\" rel=\"noopener\"><strong>Astronomy community formally raises alarm over orbital data center light pollution</strong>: UC Davis professor Tony Tyson warns that a 1-million-satellite ODC constellation, including SpaceX&#x27;s AI1, would cripple observations at the Vera Rubin Observatory — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-06-12",
+        "html": "<a href=\"https://www.airandspaceforces.com/senators-want-pentagon-to-tap-in-to-commercial-on-orbit-data-centers/\" target=\"_blank\" rel=\"noopener\"><strong>U.S. Senate introduces &#x27;New Horizon Act&#x27; directing the Pentagon to run a commercial ODC pilot</strong>: Senators Cruz and Hickenlooper file a bipartisan bill citing the need to cut military data latency — (Air &amp; Space Forces Magazine)</a>"
+      },
+      {
+        "date": "2026-06-16",
+        "html": "<a href=\"https://www.smarttoday.co.kr/ko-kr/articles/108231\" target=\"_blank\" rel=\"noopener\">(2026-06-16 listing) **Kiwoom&#x27;s U.S. Space Data Center Infrastructure ETF lists June 16, with 25% SpaceX weighting**: Korea&#x27;s first passive ETF on the ODC infrastructure theme arrives, tracking an iSelect index calculated by NH Investment &amp; Securities — (SmartToday, Newspim)</a>"
+      }
+    ],
+    "summary_html": "<strong>① SpaceNews (6/12)</strong> — SpaceX President Gwynne Shotwell reaffirmed plans to launch the first AI1 satellite in 2027, and Vera Rubin Observatory chief scientist Tony Tyson pushed back immediately. Tyson noted that Starlink V2 Mini satellites are already observed at magnitude 5, brighter than the recommended magnitude 7 threshold, and warned that the 70-meter-wide AI1, operating in the low-Earth-orbit drag regime, would etch an &quot;extremely bright band&quot; permanently across the sky. At a scale of 1 million satellites, night-sky brightness would rise to roughly half-moon levels, effectively making time-domain astronomy and supernova and gamma-ray observations impossible, according to the analysis. Tyson dismissed ODCs as &quot;a failing business model that cannot compete with ground infrastructure,&quot; criticizing the near-total absence of technical and policy mitigation efforts.<br><br><strong>② Air &amp; Space Forces Magazine (6/12)</strong> — Sen. Ted Cruz (R-Texas) and Sen. John Hickenlooper (D-Colorado) introduced the bipartisan &#x27;New Horizon Act,&#x27; which would require the Department of Defense to run a pilot program evaluating commercial orbital data center and cloud services. The bill covers integration testing with military data-transport satellites and ground networks, acquisition pathway clarification, and responses to kinetic, non-kinetic, and cyber threats. Cruz said the legislation &quot;enables operational testing of space-based data processing and storage,&quot; and the bill explicitly states that ground systems impose &quot;latency, bandwidth constraints, and vulnerabilities&quot; that degrade military effectiveness in contested environments. It marks Congress responding with legislative pressure to the &quot;nascent-stage&quot; skepticism inside the Pentagon, NRO, and U.S. Space Force reported by Breaking Defense in late May.<br><br><strong>③ SmartToday, Newspim (6/10, 6/12)</strong> — Kiwoom Asset Management will list the &#x27;KIWOOM U.S. Space Data Center Infrastructure&#x27; ETF on the Korea Exchange on June 16. Tracking the iSelect U.S. Space Data Center Infrastructure Index calculated by NH Investment &amp; Securities, the fund holds 12 names spanning listed launch vehicle and orbital data center infrastructure companies, with SpaceX weighted at 25%, Rocket Lab at 25%, Intel at 12.5%, and Alphabet, Amazon, Nvidia, and STMicroelectronics also included. It launches with ₩12 billion in initial trust principal and a 0.49% total expense ratio, with quarterly rebalancing on the third Friday of January, April, July, and November. On the same day, Shinhan&#x27;s SOL Aerospace Value Chain and BNK&#x27;s bond-type ETF also list, bringing the total number of listed ETFs to 1,140. The three stories show that the three axes of the ODC cycle activated simultaneously in the same week. SpaceX&#x27;s Nasdaq debut on June 12 ($1.77 trillion) marked the peak of the capital axis, while on the same day the astronomy community pushed back head-on from the science and observation axis with light-pollution warnings, and the U.S. Senate applied legislative pressure from the policy axis by directing the Pentagon to test commercial ODCs. Korea formally joins the capital axis with the launch of an ODC-themed ETF on June 16, signaling an industrial and financial entry alongside Hanmi Semiconductor&#x27;s ₩50 billion SpaceX investment (6/13). Whereas the U.S. now has to manage the simultaneous collision of capital, policy, and science, Korea has reached the point where it can passively track an index via an ETF with 25% SpaceX exposure. The magnitude-5 brightness and half-moon-level light pollution raised by astronomers are likely to surface as regulatory agenda items at the ITU and IAU, and in turn become a variable in capital scenarios during constellation-scale negotiations.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/astronomers-fear-orbital-data-centers-will-interfere-with-observations/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://www.airandspaceforces.com/senators-want-pentagon-to-tap-in-to-commercial-on-orbit-data-centers/",
+        "label": "airandspaceforces.com"
+      },
+      {
+        "url": "https://www.smarttoday.co.kr/ko-kr/articles/108231",
+        "label": "smarttoday.co.kr"
+      },
+      {
+        "url": "https://www.newspim.com/news/view/20260612001028",
+        "label": "newspim.com"
+      }
+    ]
+  },
   "2026-06-13": {
     "date": "2026-06-13",
     "headlines": [

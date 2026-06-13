@@ -1,4 +1,40 @@
 {
+  "2026-06-14": {
+    "date": "2026-06-14",
+    "headlines": [
+      {
+        "date": "2026-06-12",
+        "html": "<a href=\"https://spacenews.com/astronomers-fear-orbital-data-centers-will-interfere-with-observations/\" target=\"_blank\" rel=\"noopener\"><strong>천문학계, 궤도 데이터센터 빛 공해 본격 우려 표명</strong>: UC 데이비스 토니 타이슨 교수가 SpaceX AI1을 비롯한 100만 기 ODC 컨스텔레이션이 베라 루빈 천문대 관측을 마비시킬 것이라고 경고 — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-06-12",
+        "html": "<a href=\"https://www.airandspaceforces.com/senators-want-pentagon-to-tap-in-to-commercial-on-orbit-data-centers/\" target=\"_blank\" rel=\"noopener\"><strong>미 상원, 펜타곤에 상용 ODC 시범사업 명령하는 &#x27;New Horizon Act&#x27; 발의</strong>: 크루즈·히컨루퍼 의원이 군사 데이터 지연시간 단축을 명분으로 초당적 법안 발의 — (Air &amp; Space Forces Magazine)</a>"
+      },
+      {
+        "date": "2026-06-16",
+        "html": "<a href=\"https://www.newspim.com/news/view/20260612001028\" target=\"_blank\" rel=\"noopener\">(2026-06-16 상장) **키움 미국우주데이터센터인프라 ETF 16일 상장, SpaceX 25% 편입**: 국내 첫 ODC 인프라 테마 패시브 ETF 등장, NH투자증권 산정 iSelect 지수 추종 — (스마트투데이·뉴스핌)</a>"
+      }
+    ],
+    "summary_html": "<strong>① SpaceNews (6/12)</strong> — SpaceX 사장 그윈 쇼트웰은 2027년 첫 AI1 위성을 발사한다고 재확인했고, 베라 루빈 천문대 수석과학자 토니 타이슨 교수는 이를 즉각 반박했습니다. 타이슨은 현재 스타링크 V2 미니가 이미 권고치인 7등급보다 밝은 5등급으로 관측되는데, 70m 폭의 AI1이 저궤도 대기 구간에서 운영되면 &quot;극도로 밝은 띠&quot;가 하늘에 영구적으로 새겨질 것이라 지적했습니다. 100만 기 규모에 도달하면 밤하늘 밝기가 반달 수준으로 올라가 시간영역 천문학과 초신성·감마선 관측이 사실상 불가능해진다는 분석입니다. 타이슨은 ODC를 &quot;지상 인프라와 경쟁 불가능한 실패 사업 모델&quot;이라며 기술·정책 완화 노력이 거의 없다고 비판했습니다.<br><br><strong>② Air &amp; Space Forces Magazine (6/12)</strong> — 텍사스 공화당 테드 크루즈와 콜로라도 민주당 존 히컨루퍼 의원이 &#x27;New Horizon Act&#x27; 초당적 법안을 발의해 미국방부가 상용 궤도 데이터센터·클라우드 서비스를 평가하는 시범사업을 의무화하도록 했습니다. 법안은 군사 데이터 전송위성·지상망과의 통합 검증, 인수경로 정리, 운동·비운동·사이버 위협 대응까지 포괄합니다. 크루즈는 &quot;우주 기반 데이터 처리·저장에 대한 작전 시험을 가능케 한다&quot;고 밝혔고, 법안은 지상 시스템이 &quot;지연시간·대역폭 제약·취약성&quot;을 야기해 분쟁 환경 군 효과를 저하시킨다고 명시했습니다. 5월말 브레이킹 디펜스가 보도한 펜타곤·NRO·미우주군의 &quot;발아 단계&quot; 회의론에 의회가 입법 압박으로 응답한 형태입니다.<br><br><strong>③ 스마트투데이·뉴스핌 (6/10·6/12)</strong> — 키움투자자산운용은 &#x27;KIWOOM 미국우주데이터센터인프라&#x27; ETF를 6월 16일 한국거래소에 상장합니다. NH투자증권이 산정한 iSelect 미국우주데이터센터인프라 지수를 추종해 상장 발사체·궤도 데이터센터 인프라 종목 12개를 담는데, SpaceX 비중 25%, 로켓랩 25%, 인텔 12.5%에 알파벳·아마존·엔비디아·ST마이크로일렉트로닉스 등도 포함됩니다. 신탁원본 120억원, 총보수 0.49%로 출발하며 1·4·7·11월 셋째 주 금요일 분기 리밸런싱합니다. 같은 날 신한 SOL 우주항공밸류체인, BNK 채권형 ETF가 함께 상장돼 총 상장 ETF 1140개를 기록합니다. 세 기사는 ODC 사이클의 세 축이 같은 주에 동시에 작동했음을 보여줍니다. 6월 12일 SpaceX 나스닥 데뷔(1.77조 달러)가 자본 축의 정점을 찍자, 같은 날 천문학계는 과학·관측 축에서 빛 공해 경고를 정면으로 띄우고, 미 상원은 정책 축에서 펜타곤에 상용 ODC를 시험하라는 입법 압박을 가했습니다. 한국은 16일 ODC 테마 ETF 출시로 자본 축에 본격 합류해 한미반도체 500억 SpaceX 투자(6/13)에 이어 산업·금융 동반 진입 신호를 보냅니다. 미국이 자본·정책·과학 충돌을 동시에 처리해야 하는 단계라면, 한국은 SpaceX 25% 편입형 ETF로 지수 추종이 가능한 시점에 도달했다는 점이 다릅니다. 천문학계가 제기한 5등급 밝기·반달 수준 광공해는 향후 ITU·IAU 규제 의제로 부상할 가능성이 높고, 이는 컨스텔레이션 규모 협상에서 결국 자본 시나리오의 변수가 됩니다.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/astronomers-fear-orbital-data-centers-will-interfere-with-observations/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://www.airandspaceforces.com/senators-want-pentagon-to-tap-in-to-commercial-on-orbit-data-centers/",
+        "label": "airandspaceforces.com"
+      },
+      {
+        "url": "https://www.smarttoday.co.kr/ko-kr/articles/108231",
+        "label": "smarttoday.co.kr"
+      },
+      {
+        "url": "https://www.newspim.com/news/view/20260612001028",
+        "label": "newspim.com"
+      }
+    ]
+  },
   "2026-06-13": {
     "date": "2026-06-13",
     "headlines": [
