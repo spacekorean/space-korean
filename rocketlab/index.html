@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rocketlab — 인터랙티브 조종</title>
+<style>
+ :root{--ink:#dfe7ff;--mut:#8fa3d0;--accent:#5b8cff;--accent2:#ffd34d;--ok:#5dde8f;--err:#ff6b6b}
+ *{box-sizing:border-box}
+ html,body{margin:0;height:100%;background:#0b1020;color:var(--ink);overflow:hidden;
+   font:13px/1.5 -apple-system,'Apple SD Gothic Neo',Segoe UI,sans-serif;
+   -webkit-user-select:none;user-select:none;touch-action:none}
+ #cv{position:absolute;inset:0;width:100%;height:100%}
+ .panel{position:absolute;background:rgba(10,16,38,.82);border:1px solid #2a3a66;
+   border-radius:10px;padding:10px 12px;backdrop-filter:blur(4px)}
+ #hud{top:12px;left:12px;min-width:188px}
+ #hud h1{font-size:13px;margin:0 0 7px;color:#9fc1ff}
+ #hud table{border-collapse:collapse;width:100%}
+ #hud td{padding:1px 6px 1px 0;white-space:nowrap;color:var(--mut)}
+ #hud td:last-child{text-align:right;font-variant-numeric:tabular-nums;color:#fff}
+ #top{top:12px;left:50%;transform:translateX(-50%);text-align:center;padding:7px 14px;
+   font-size:13px;color:#aebde6}
+ #top b{font-size:15px} #top.ok b{color:var(--ok)} #top.err b{color:var(--err)}
+ #help{top:12px;right:12px;max-width:230px;font-size:11.5px;color:var(--mut);line-height:1.7}
+ #help b{color:var(--accent2)} #help kbd{background:#1c2c5c;border:1px solid #3a55a0;
+   border-radius:4px;padding:0 5px;color:#dce7ff;font-size:11px}
+ #keys{position:absolute;bottom:14px;left:50%;transform:translateX(-50%);display:flex;
+   gap:7px;align-items:flex-end;flex-wrap:wrap;justify-content:center;max-width:94vw}
+ .key{background:rgba(12,20,44,.9);border:1px solid #33508f;border-radius:9px;padding:6px 8px 5px;
+   min-width:50px;text-align:center;cursor:pointer;transition:background .05s,transform .05s}
+ .key kbd{display:block;font:600 13px ui-monospace,Menlo,monospace;color:#cdd9ff;margin-bottom:2px}
+ .key span{display:block;font-size:10.5px;color:var(--mut)}
+ .key em{display:block;font-size:9.5px;color:#5f72a3;font-style:normal}
+ .key.on{background:#2a64ff;border-color:#6f9bff;transform:translateY(1px)}
+ .key.on kbd,.key.on span,.key.on em{color:#fff}
+ .key.reset{background:#3a1c2c;border-color:#7a3a50}
+ .key.act{background:#163057;border-color:#2f5a9a}
+ .key.act:hover{background:#1d3f72}
+ #cfg{bottom:14px;left:14px;max-width:184px}
+ #cfgToggle{cursor:pointer;color:#9fc1ff;font-size:12px;font-weight:600}
+ #cfgBody{margin-top:8px}
+ #cfg .crow{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:4px 0}
+ #cfg label{color:var(--mut);font-size:11px}
+ #cfg input{width:80px;background:#0c1530;border:1px solid #33508f;color:var(--ink);
+   border-radius:6px;padding:4px 6px;font-size:12px}
+ #cfg button{width:100%;margin-top:6px;background:#16224a;border:1px solid #34509a;color:#cdddff;
+   border-radius:7px;padding:6px;font-size:11.5px;cursor:pointer}
+ #cfg button:hover{background:#1b2c5e}
+</style></head><body>
+<canvas id="cv"></canvas>
+<div class="panel" id="hud">
+ <h1 id="rname">로켓</h1>
+ <table>
+  <tr><td>시간</td><td id="h_t"></td></tr>
+  <tr><td>고도 (중심)</td><td id="h_y"></td></tr>
+  <tr><td>수평 위치</td><td id="h_x"></td></tr>
+  <tr><td>속도</td><td id="h_v"></td></tr>
+  <tr><td>수직 속도</td><td id="h_vy"></td></tr>
+  <tr><td>기울기</td><td id="h_th"></td></tr>
+  <tr><td>연료</td><td id="h_f"></td></tr>
+  <tr><td>최고 고도</td><td id="h_max"></td></tr>
+ </table>
+</div>
+<div class="panel" id="top"><span id="top_txt">엔진을 점화해 이륙하세요</span></div>
+<div class="panel" id="help">
+ <div><b>조작</b></div>
+ <div><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd><kbd>F</kbd><kbd>G</kbd> 메인 엔진 (좌→우)</div>
+ <div><kbd>J</kbd><kbd>K</kbd> 사이드 부스터 (좌·우)</div>
+ <div><kbd>SPACE</kbd> 전체 메인 · <kbd>R</kbd> 리셋 · <kbd>M</kbd> 음소거</div>
+ <div style="margin-top:5px;color:#5f72a3">부드럽게(≤4 m/s, 수직) 접지하면 착륙 성공 · ▶ 리플레이</div>
+</div>
+<div class="panel" id="keys"></div>
+<div class="panel" id="cfg">
+ <div id="cfgToggle">⚙ 로켓 설정</div>
+ <div id="cfgBody" style="display:none">
+  <div class="crow"><label>메인 엔진</label><input id="c_engines" type="number" min="1" max="5" value="3"></div>
+  <div class="crow"><label>추력 N</label><input id="c_thrust" type="number" step="500" value="10000"></div>
+  <div class="crow"><label>연료 kg</label><input id="c_fuel" type="number" step="50" value="800"></div>
+  <div class="crow"><label>RCS N</label><input id="c_rcs" type="number" step="100" value="1500"></div>
+  <button id="c_apply">재구성 &amp; 리셋</button>
+  <button id="c_hopper">Hopper 프리셋</button>
+ </div>
+</div>
+<script>
+const cv = document.getElementById('cv'), ctx = cv.getContext('2d');
+const G = 9.81, G0 = 9.80665, DT = 0.02;
+const VMAX = 4.0, TILTMAX = 12 * Math.PI / 180, XMAX = 300, YMAX = 600;
+const STATUS_TXT = {0:'비행 중', 1:'착륙 성공 ✅', 2:'추락 💥', 3:'구역 이탈 ⚠️'};
+
+let R, eng, st, H, Rr, H2, dry, fuelCap;
+const keys = {};
+window.keys = keys; // 디버그/테스트 훅
+
+// 리플레이 / 궤적 + 사운드 상태
+let trail = [], mode = 'live', rfi = 0, recording = true, lastStatus = 0, replayEnded = false;
+let replayBtn = null, muteBtn = null;
+let audio = null, boostGain = null, muted = false;   // Web Audio 합성 (외부 파일 없음)
+
+function wrap(a){ let r = (a + Math.PI) % (2 * Math.PI); if (r < 0) r += 2 * Math.PI; return r - Math.PI; }
+function lowest(th){ return Math.abs(Math.sin(th)) * Rr + Math.abs(Math.cos(th)) * H2; }
+
+// 로켓은 브라우저에서 직접 빌드 (백엔드 불필요 → 정적 호스팅 가능).
+// physics.py 의 Rocket.quick 과 동일한 배치 규칙을 포팅.
+const HOPPER = {name:'hopper', body:{height:12, radius:1.0, dry_mass:1100, fuel_mass:900},
+  engines:[{pos:[-0.75,-6],dir_deg:90,max_thrust:10000,isp:285},
+           {pos:[0,-6],dir_deg:90,max_thrust:10000,isp:285},
+           {pos:[0.75,-6],dir_deg:90,max_thrust:10000,isp:285},
+           {pos:[1,4.2],dir_deg:180,max_thrust:1200,isp:240},
+           {pos:[-1,4.2],dir_deg:0,max_thrust:1200,isp:240}]};
+
+function buildQuick(c){
+  const n = Math.max(1, Math.min(5, c.engines | 0)), r = c.radius;
+  const xs = n === 1 ? [0] : Array.from({length:n}, (_,i) => (-0.75 + 1.5*i/(n-1)) * r);
+  const engines = xs.map(x => ({pos:[x, -c.height/2], dir_deg:90, max_thrust:c.thrust, isp:c.isp}));
+  if (c.rcs > 0){ const y = c.height * 0.35;
+    engines.push({pos:[r, y], dir_deg:180, max_thrust:c.rcs, isp:240});
+    engines.push({pos:[-r, y], dir_deg:0, max_thrust:c.rcs, isp:240}); }
+  return {name:'quick-' + n + 'x' + (c.thrust/1000).toFixed(0) + 'kN',
+          body:{height:c.height, radius:c.radius, dry_mass:c.dry_mass, fuel_mass:c.fuel}, engines};
+}
+function configFromURL(){
+  const q = new URLSearchParams(location.search), g = (k,d) => q.has(k) ? parseFloat(q.get(k)) : d;
+  return {source:q.get('source') || 'quick', engines:g('engines',3), thrust:g('thrust',10000),
+          isp:g('isp',280), dry_mass:g('dry_mass',1200), fuel:g('fuel',800),
+          height:g('height',12), radius:g('radius',1), rcs:g('rcs',1500)};
+}
+function buildRocket(c){ return c.source === 'hopper' ? HOPPER : buildQuick(c); }
+
+function setupRocket(spec){
+  R = spec; H = R.body.height; Rr = R.body.radius; H2 = H/2; dry = R.body.dry_mass; fuelCap = R.body.fuel_mass;
+  document.getElementById('rname').textContent = R.name;
+  eng = R.engines.map(e => {
+    const d = e.dir_deg * Math.PI / 180, cd = Math.cos(d), sd = Math.sin(d);
+    return {px:e.pos[0], py:e.pos[1], cd, sd, fmax:e.max_thrust, isp:e.isp,
+            minth:e.min_throttle || 0, dir_deg:e.dir_deg, tarm:e.pos[0]*sd - e.pos[1]*cd,
+            lift:sd, u:0, key:null, kind:null};
+  });
+  const mains = eng.filter(e => e.lift > 0.3).sort((a,b) => a.px - b.px);
+  const MK = ['a','s','d','f','g'];
+  mains.forEach((e,i) => { e.kind = 'main'; e.key = MK[i] || null; });
+  eng.filter(e => e.lift <= 0.3).forEach(e => { e.kind = 'side'; e.key = e.cd < 0 ? 'j' : 'k'; });
+  buildKeys();
+  reset();
+}
+
+const gid = id => document.getElementById(id);
+function init(){
+  const c = configFromURL();
+  gid('c_engines').value = c.engines; gid('c_thrust').value = c.thrust;
+  gid('c_fuel').value = c.fuel; gid('c_rcs').value = c.rcs;
+  setupRocket(buildRocket(c));
+  addEventListener('resize', fit); fit();
+  requestAnimationFrame(loop);
+}
+
+function reset(){
+  st = {x:0, y:H2, vx:0, vy:0, th:0, om:0, fuel:fuelCap, status:0, lifted:false, rot:0, t:0, imp:0, maxAlt:H2};
+  trail = []; mode = 'live'; rfi = 0; recording = true; lastStatus = 0; replayEnded = false;
+}
+window.getState = () => st;
+
+// ---- 프레임 / 리플레이 ----
+function liveFrame(){
+  return {x:st.x, y:st.y, th:st.th, vx:st.vx, vy:st.vy, fuel:st.fuel, status:st.status, t:st.t, u:eng.map(e => e.u)};
+}
+function shownFrame(){ return (mode === 'replay' && trail.length) ? trail[Math.min(rfi, trail.length - 1)] : liveFrame(); }
+function startReplay(){ if (trail.length > 1){ mode = 'replay'; rfi = 0; acc = 0; replayEnded = false; } }
+
+// ---- 사운드 (Web Audio 합성: 외부 음원 없음 → 정적 배포 유지) ----
+function initAudio(){            // 자동재생 정책: 첫 사용자 입력에서 생성/재개
+  if (audio){ if (audio.state === 'suspended') audio.resume(); return; }
+  const AC = window.AudioContext || window.webkitAudioContext;
+  if (!AC) return;
+  audio = new AC();
+  const buf = audio.createBuffer(1, audio.sampleRate * 2, audio.sampleRate), d = buf.getChannelData(0);
+  let b = 0;                     // 브라운 노이즈 = 엔진 럼블
+  for (let i = 0; i < d.length; i++){ const w = Math.random()*2 - 1; b = (b + 0.02*w)/1.02; d[i] = b * 3.2; }
+  const src = audio.createBufferSource(); src.buffer = buf; src.loop = true;
+  const lp = audio.createBiquadFilter(); lp.type = 'lowpass'; lp.frequency.value = 360;
+  boostGain = audio.createGain(); boostGain.gain.value = 0;
+  src.connect(lp).connect(boostGain).connect(audio.destination); src.start();
+}
+function setBoost(level){        // 부스트음: 스로틀에 비례한 게인
+  if (!boostGain) return;
+  boostGain.gain.setTargetAtTime(muted ? 0 : Math.min(level, 1) * 0.22, audio.currentTime, 0.05);
+}
+function burst(dur, vol, cut){   // 감쇠 노이즈 버스트
+  const n = (audio.sampleRate * dur) | 0, buf = audio.createBuffer(1, n, audio.sampleRate), d = buf.getChannelData(0);
+  for (let i = 0; i < n; i++) d[i] = (Math.random()*2 - 1) * Math.pow(1 - i/n, 2);
+  const s = audio.createBufferSource(); s.buffer = buf;
+  const g = audio.createGain(); g.gain.value = vol;
+  const lp = audio.createBiquadFilter(); lp.type = 'lowpass'; lp.frequency.value = cut;
+  s.connect(lp).connect(g).connect(audio.destination); s.start();
+}
+function sfxCrash(){
+  if (!audio || muted) return;
+  const t = audio.currentTime;
+  burst(0.5, 0.5, 900);                                 // 충돌 노이즈
+  const o = audio.createOscillator(); o.type = 'sine';  // 저역 thud
+  o.frequency.setValueAtTime(120, t); o.frequency.exponentialRampToValueAtTime(38, t + 0.3);
+  const g = audio.createGain(); g.gain.setValueAtTime(0.5, t); g.gain.exponentialRampToValueAtTime(0.001, t + 0.45);
+  o.connect(g).connect(audio.destination); o.start(t); o.stop(t + 0.5);
+}
+function sfxSuccess(){
+  if (!audio || muted) return;
+  const t = audio.currentTime;                          // C-E-G-C 상행 차임
+  [523.25, 659.25, 783.99, 1046.5].forEach((f, i) => {
+    const o = audio.createOscillator(); o.type = 'triangle'; o.frequency.value = f;
+    const g = audio.createGain(), tt = t + i*0.12;
+    g.gain.setValueAtTime(0, tt); g.gain.linearRampToValueAtTime(0.25, tt + 0.03); g.gain.exponentialRampToValueAtTime(0.001, tt + 0.5);
+    o.connect(g).connect(audio.destination); o.start(tt); o.stop(tt + 0.55);
+  });
+}
+function toggleMute(){
+  muted = !muted;
+  if (muteBtn) muteBtn.querySelector('kbd').textContent = muted ? '🔇' : '🔊';
+  if (muted) setBoost(0);
+}
+
+function buildKeys(){
+  const box = gid('keys'); box.innerHTML = '';
+  function add(key, label, sub, cls){
+    const b = document.createElement('div'); b.className = 'key' + (cls ? ' ' + cls : '');
+    b.innerHTML = '<kbd>' + (key === ' ' ? 'SPACE' : key.toUpperCase()) + '</kbd><span>' + label + '</span>' + (sub ? '<em>' + sub + '</em>' : '');
+    b.onpointerdown = ev => { ev.preventDefault(); initAudio(); b.setPointerCapture(ev.pointerId); if (key === 'r') reset(); else keys[key] = true; };
+    b.onpointerup = () => { keys[key] = false; };
+    b.onpointercancel = () => { keys[key] = false; };
+    box.appendChild(b); return b;
+  }
+  function addAction(label, sub, fn){
+    const b = document.createElement('div'); b.className = 'key act';
+    b.innerHTML = '<kbd>' + label + '</kbd><span>' + sub + '</span>';
+    b.onclick = () => { initAudio(); fn(); };
+    box.appendChild(b); return b;
+  }
+  eng.filter(e => e.kind === 'main' && e.key).forEach((e,i) => { e.btn = add(e.key, '엔진' + (i+1), (e.fmax/1000).toFixed(0) + 'kN'); });
+  add(' ', '전체 메인', 'collective')._space = true;
+  const sides = eng.filter(e => e.kind === 'side' && e.key);
+  sides.forEach(e => { e.btn = add(e.key, e.cd < 0 ? '좌 부스터' : '우 부스터', (e.fmax/1000).toFixed(1) + 'kN'); });
+  if (!sides.length) add('j', '부스터 없음', 'RCS=0').style.opacity = .4;
+  add('r', '리셋', '', 'reset');
+  replayBtn = addAction('▶', '리플레이', startReplay);
+  muteBtn = addAction('🔊', '소리', toggleMute);
+}
+
+function step(){
+  if (st.status !== 0) return;
+  let fxb = 0, fyb = 0, tau = 0, burn = 0;
+  for (const e of eng){
+    let on = (e.key && keys[e.key]) ? 1 : 0;
+    if (e.kind === 'main' && keys[' ']) on = 1;
+    let u = (on >= e.minth) ? Math.min(Math.max(on, 0), 1) : 0;
+    if (st.fuel <= 0) u = 0;
+    e.u = u;
+    const F = u * e.fmax;
+    fxb += F * e.cd; fyb += F * e.sd; tau += F * e.tarm; burn += F / (e.isp * G0);
+  }
+  const c = Math.cos(st.th), s = Math.sin(st.th);
+  let fxw = c * fxb - s * fyb, fyw = s * fxb + c * fyb;
+  const m = dry + st.fuel, I = m * (3*Rr*Rr + H*H) / 12;
+  let ax = fxw / m, ay = fyw / m - G, al = tau / I;
+  let clear = st.y - lowest(st.th);
+  const grounded = (!st.lifted) && (clear <= 1e-6);
+  if (grounded){ st.y = lowest(st.th); st.vy = Math.max(st.vy, 0); st.vx = 0; st.om = 0; }
+  if (grounded && ay <= 0){ ax = 0; ay = 0; al = 0; }
+  st.vx += ax*DT; st.vy += ay*DT; st.om += al*DT;
+  st.x += st.vx*DT; st.y += st.vy*DT;
+  const dth = st.om*DT; st.th += dth; st.rot += dth;
+  st.fuel = Math.max(st.fuel - burn*DT, 0);
+  st.t += DT;
+  clear = st.y - lowest(st.th);
+  if (!st.lifted && clear > 0.5) st.lifted = true;
+  if (st.y > st.maxAlt) st.maxAlt = st.y;
+  if (st.lifted && clear <= 0){
+    const spd = Math.hypot(st.vx, st.vy), tilt = Math.abs(wrap(st.th));
+    st.imp = spd;
+    st.status = (spd <= VMAX && tilt <= TILTMAX) ? 1 : 2;
+    st.vx = 0; st.vy = 0; st.om = 0; st.y = lowest(st.th);
+  }
+  if (Math.abs(st.x) > XMAX || st.y > YMAX) st.status = 3;
+}
+
+// ---- 카메라 + 렌더 (지면~로켓+여유가 항상 보이도록 줌, x는 로켓 추종) ----
+let scale, ox, oy, viewTop = 45, camX = 0, dpr = 1;
+function fit(){ dpr = devicePixelRatio || 1; cv.width = innerWidth*dpr; cv.height = innerHeight*dpr; ctx.setTransform(dpr,0,0,dpr,0,0); }
+const SX = wx => ox + wx * scale, SY = wy => oy - wy * scale;
+function b2w(xc, yc, th, bx, by){ const c = Math.cos(th), s = Math.sin(th); return [xc + c*bx - s*by, yc + s*bx + c*by]; }
+function poly(pts, fill, stroke){
+  ctx.beginPath();
+  pts.forEach((p,i) => { const x = SX(p[0]), y = SY(p[1]); i ? ctx.lineTo(x,y) : ctx.moveTo(x,y); });
+  ctx.closePath();
+  if (fill){ ctx.fillStyle = fill; ctx.fill(); }
+  if (stroke){ ctx.strokeStyle = stroke; ctx.lineWidth = 1; ctx.stroke(); }
+}
+function gridStep(span){ for (const s of [2,5,10,20,50,100,200]) if (span/s <= 14) return s; return 500; }
+
+let tick = 0;
+function draw(){
+  tick++;
+  const fr = shownFrame();
+  const W = innerWidth, Hc = innerHeight;
+  const tTop = Math.max(fr.y + 16, 45);
+  viewTop += (tTop - viewTop) * 0.07;
+  camX += (fr.x - camX) * 0.10;
+  const vb = -3, vt = viewTop;
+  scale = (Hc - 30) / (vt - vb);
+  oy = (Hc - 15) + vb * scale;
+  ox = W/2 - camX * scale;
+  const xmin = (0 - ox)/scale, xmax = (W - ox)/scale;
+
+  const bg = ctx.createLinearGradient(0,0,0,Hc);
+  bg.addColorStop(0,'#070b1c'); bg.addColorStop(1,'#101a3a');
+  ctx.fillStyle = bg; ctx.fillRect(0,0,W,Hc);
+
+  const gs = gridStep(vt - vb);
+  ctx.strokeStyle = 'rgba(90,120,200,.13)'; ctx.fillStyle = 'rgba(140,165,220,.45)';
+  ctx.font = '10px sans-serif'; ctx.lineWidth = 1;
+  for (let gx = Math.ceil(xmin/gs)*gs; gx <= xmax; gx += gs){
+    ctx.beginPath(); ctx.moveTo(SX(gx), 0); ctx.lineTo(SX(gx), Hc); ctx.stroke();
+    ctx.fillText(gx + 'm', SX(gx) + 3, SY(0) + 13);
+  }
+  for (let gy = 0; gy <= vt; gy += gs){
+    ctx.beginPath(); ctx.moveTo(0, SY(gy)); ctx.lineTo(W, SY(gy)); ctx.stroke();
+    if (gy > 0) ctx.fillText(gy + 'm', 4, SY(gy) - 3);
+  }
+  // 지면
+  ctx.fillStyle = '#182246'; ctx.fillRect(0, SY(0), W, Hc - SY(0));
+  ctx.strokeStyle = '#3d5494'; ctx.lineWidth = 2;
+  ctx.beginPath(); ctx.moveTo(0, SY(0)); ctx.lineTo(W, SY(0)); ctx.stroke();
+  ctx.fillStyle = '#2c3c72'; ctx.fillRect(SX(-Rr*2.2), SY(0), Rr*4.4*scale, 4);
+
+  // 궤적 (trail) — 라이브는 지나온 전체, 리플레이는 현재 프레임까지
+  if (trail.length > 1){
+    const end = (mode === 'replay') ? Math.min(rfi, trail.length - 1) : trail.length - 1;
+    ctx.strokeStyle = 'rgba(110,220,255,.5)'; ctx.lineWidth = 1.6; ctx.beginPath();
+    for (let k = 0; k <= end; k++){ const p = trail[k], px = SX(p.x), py = SY(p.y); k ? ctx.lineTo(px, py) : ctx.moveTo(px, py); }
+    ctx.stroke();
+  }
+
+  const xc = fr.x, yc = fr.y, th = fr.th;
+  // 불꽃
+  for (let k = 0; k < eng.length; k++){
+    const e = eng[k], u = fr.u[k] || 0;
+    if (u <= 0.02) continue;
+    const phi = e.dir_deg * Math.PI/180, exd = -Math.cos(phi), eyd = -Math.sin(phi);
+    const flick = 0.8 + 0.35 * Math.abs(Math.sin(tick*1.3 + e.px*5));
+    const L = (H*0.22 + 0.6) * u * flick, wh = Rr*0.38*(0.55 + 0.45*u);
+    const pxv = -eyd, pyv = exd;
+    poly([b2w(xc,yc,th, e.px + pxv*wh, e.py + pyv*wh),
+          b2w(xc,yc,th, e.px - pxv*wh, e.py - pyv*wh),
+          b2w(xc,yc,th, e.px + exd*L, e.py + eyd*L)], 'rgba(255,122,26,.85)');
+    poly([b2w(xc,yc,th, e.px + pxv*wh*0.5, e.py + pyv*wh*0.5),
+          b2w(xc,yc,th, e.px - pxv*wh*0.5, e.py - pyv*wh*0.5),
+          b2w(xc,yc,th, e.px + exd*L*0.55, e.py + eyd*L*0.55)], 'rgba(255,224,107,.95)');
+  }
+  // 몸체 + 노즈콘 + 노즐
+  poly([b2w(xc,yc,th,-Rr,-H2), b2w(xc,yc,th,Rr,-H2), b2w(xc,yc,th,Rr,H2), b2w(xc,yc,th,-Rr,H2)], '#d7dce6', '#69789c');
+  poly([b2w(xc,yc,th,-Rr,H2), b2w(xc,yc,th,0,H2+Rr*1.5), b2w(xc,yc,th,Rr,H2)], '#ff7a1a', '#b35511');
+  for (const e of eng){ const p = b2w(xc,yc,th, e.px, e.py); ctx.fillStyle = '#39435c';
+    ctx.beginPath(); ctx.arc(SX(p[0]), SY(p[1]), Math.max(2.5, Rr*0.18*scale), 0, 7); ctx.fill(); }
+  // 상태 오버레이
+  if (fr.status > 0){
+    ctx.font = 'bold 22px sans-serif'; ctx.textAlign = 'center';
+    ctx.fillStyle = fr.status === 1 ? '#5dde8f' : (fr.status === 2 ? '#ff6b6b' : '#ffb24d');
+    ctx.fillText(STATUS_TXT[fr.status], SX(xc), SY(yc) - H2*scale - 16);
+    ctx.textAlign = 'left';
+  }
+}
+
+function hud(){
+  const fr = shownFrame();
+  const f = (id,v) => gid(id).textContent = v;
+  f('h_t', fr.t.toFixed(1) + ' s');
+  f('h_y', fr.y.toFixed(1) + ' m');
+  f('h_x', fr.x.toFixed(1) + ' m');
+  f('h_v', Math.hypot(fr.vx, fr.vy).toFixed(1) + ' m/s');
+  const vy = gid('h_vy'); vy.textContent = fr.vy.toFixed(1) + ' m/s';
+  vy.style.color = (fr.vy < -VMAX) ? '#ff8a8a' : '#fff';
+  f('h_th', (wrap(fr.th)*180/Math.PI).toFixed(0) + '°');
+  const pct = fr.fuel / Math.max(fuelCap, 1e-9) * 100;
+  const fl = gid('h_f'); fl.textContent = fr.fuel.toFixed(0) + ' kg (' + pct.toFixed(0) + '%)';
+  fl.style.color = pct < 12 ? '#ff8a8a' : '#fff';
+  f('h_max', st.maxAlt.toFixed(1) + ' m');
+  const top = gid('top'), tt = gid('top_txt');
+  top.className = 'panel' + (fr.status === 1 ? ' ok' : (fr.status >= 2 ? ' err' : ''));
+  if (mode === 'replay') tt.innerHTML = '<b>리플레이 ▶</b> ' + fr.t.toFixed(1) + ' s · <kbd>R</kbd> 라이브로';
+  else if (fr.status === 0) tt.innerHTML = st.lifted ? '비행 중' : '엔진을 점화해 이륙하세요';
+  else if (fr.status === 1) tt.innerHTML = '<b>착륙 성공 ✅</b> · 접지 ' + st.imp.toFixed(2) + ' m/s · ▶ 리플레이 · <kbd>R</kbd> 다시';
+  else tt.innerHTML = '<b>' + STATUS_TXT[fr.status] + '</b> · ▶ 리플레이 · <kbd>R</kbd> 다시';
+  eng.forEach((e,k) => { if (e.btn) e.btn.classList.toggle('on', ((mode === 'replay' ? fr.u[k] : e.u) || 0) > 0.001); });
+  for (const b of document.querySelectorAll('.key')) if (b._space) b.classList.toggle('on', !!keys[' ']);
+}
+
+let last = null, acc = 0;
+function loop(now){
+  if (last === null) last = now;
+  acc += (now - last) / 1000; last = now;
+  acc = Math.min(acc, 0.1);
+  if (mode === 'live'){
+    while (acc >= DT){
+      step();
+      if (recording && st.lifted && trail.length < 4500){ trail.push(liveFrame()); if (st.status !== 0) recording = false; }
+      acc -= DT;
+    }
+    if (st.status !== lastStatus){ if (st.status === 1) sfxSuccess(); else if (st.status >= 2) sfxCrash(); lastStatus = st.status; }
+  } else {                                  // 리플레이: 기록된 프레임을 실시간으로 재생
+    while (acc >= DT && rfi < trail.length - 1){ rfi++; acc -= DT; }
+    if (rfi >= trail.length - 1 && !replayEnded){
+      const s = trail[trail.length - 1].status;
+      if (s === 1) sfxSuccess(); else if (s >= 2) sfxCrash();
+      replayEnded = true;
+    }
+  }
+  const fr = shownFrame();                  // 부스트음 (라이브·리플레이 공통, 메인 스로틀 평균)
+  let lvl = 0, n = 0;
+  eng.forEach((e,k) => { if (e.kind === 'main'){ lvl += fr.u[k] || 0; n++; } });
+  setBoost(fr.status === 0 ? (n ? lvl/n : 0) : 0);
+  draw(); hud();
+  requestAnimationFrame(loop);
+}
+
+const TRACK = ['a','s','d','f','g','j','k',' ','r'];
+addEventListener('keydown', e => {
+  const k = e.key.toLowerCase();
+  if (TRACK.includes(k)) e.preventDefault();
+  initAudio();                       // 첫 입력에서 오디오 활성화 (자동재생 정책)
+  if (k === 'r'){ reset(); return; }
+  if (k === 'm'){ toggleMute(); return; }
+  keys[k] = true;
+});
+addEventListener('keyup', e => { keys[e.key.toLowerCase()] = false; });
+addEventListener('blur', () => { for (const k in keys) keys[k] = false; });
+
+// 로켓 설정 패널 (정적 페이지에서도 방문자가 로켓을 바꿔볼 수 있게)
+gid('cfgToggle').onclick = () => {
+  const b = gid('cfgBody'); b.style.display = b.style.display === 'none' ? 'block' : 'none';
+};
+gid('c_apply').onclick = () => setupRocket(buildQuick({
+  engines:+gid('c_engines').value, thrust:+gid('c_thrust').value, fuel:+gid('c_fuel').value,
+  rcs:+gid('c_rcs').value, isp:280, dry_mass:1200, height:12, radius:1}));
+gid('c_hopper').onclick = () => setupRocket(HOPPER);
+
+init();
+</script></body></html>
