@@ -1,4 +1,32 @@
 {
+  "2026-06-16": {
+    "date": "2026-06-16",
+    "headlines": [
+      {
+        "date": "2026-06-16",
+        "html": "<a href=\"https://zdnet.co.kr/view/?no=20260615104231\" target=\"_blank\" rel=\"noopener\"><strong>&#x27;KIWOOM US Space Data Center Infrastructure&#x27; ETF debuts</strong>: Korea&#x27;s first orbital-data-center-themed ETF lists on the KOSPI market, launching with a 25% SpaceX weighting alongside 12 holdings including Amazon and Nvidia — (Newspim, ZDNet Korea)</a>"
+      },
+      {
+        "date": "2026-06-15",
+        "html": "<a href=\"https://www.sedaily.com/article/20056031\" target=\"_blank\" rel=\"noopener\"><strong>Domestic space ETFs slump despite ₩334.5 billion SPCX inflow</strong>: Six ETFs simultaneously loaded up on SpaceX, yet KODEX US Aerospace fell 7.82% and ACE US Space Tech Active dropped 10.81% — (Seoul Economic Daily)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Kiwoom Asset Management (Newspim, 6/12)</strong> — Kiwoom Asset Management today listed its &#x27;KIWOOM US Space Data Center Infrastructure&#x27; ETF on the KOSPI market. With ₩12 billion in initial trust assets and a 0.49% total expense ratio, the fund tracks the iSelect US Space Data Center Infrastructure Index calculated by NH Investment &amp; Securities. The structure weights launch vehicles at 50% and data center infrastructure at 50%, with SpaceX carrying the largest single weighting at 25%. Rocket Lab anchors the launch vehicle leg, while Amazon, Alphabet, Nvidia, Intel, Lumentum, First Solar, and STMicroelectronics fill the infrastructure leg. Combined with Shinhan&#x27;s &#x27;SOL US Aerospace Value Chain&#x27; ETF (₩15 billion in trust assets, 0.45% fee, 10 holdings) listed the same day, the domestic ETF count rose to 1,140.<br><br><strong>② Domestic space ETF market (Seoul Economic Daily, 6/15)</strong> — Six domestic space-themed ETFs collectively purchased ₩334.5 billion worth of SpaceX shares on June 15, yet KODEX US Aerospace plunged 7.82% and ACE US Space Tech Active dropped 10.81% the same day. By contrast, TIGER Global AI Active rose 7.66% and TIMEFOLIO Global AI Active gained 6.14%, revealing a capital rotation from the space sector into the AI sector. Han Ji-young, analyst at Kiwoom Securities, noted that &quot;the mechanical inclusion by passive funds combined with active funds&#x27; pursuit of excess returns will sustain volatility in SPCX flows.&quot; The SpaceX listing and the launch of the KIWOOM US Space Data Center Infrastructure ETF mark the first time Korean capital has packaged the orbital data center value chain — bundling launch vehicles with semiconductor and power infrastructure — into a passive product. Yet the broad-based selloff in existing space ETFs on June 15 also signals that SPCX has become the conduit absorbing the rebalancing shock across the space ETF ecosystem. Capital flowing toward ODC infrastructure is concentrating in US large caps (SpaceX, Nvidia, Amazon) while liquidity drains from small- and mid-cap NewSpace names — a pattern now visible in the Korean market as well.",
+    "sources": [
+      {
+        "url": "https://zdnet.co.kr/view/?no=20260615104231",
+        "label": "지디넷"
+      },
+      {
+        "url": "https://www.newspim.com/news/view/20260612001028",
+        "label": "newspim.com"
+      },
+      {
+        "url": "https://www.sedaily.com/article/20056031",
+        "label": "sedaily.com"
+      }
+    ]
+  },
   "2026-06-14": {
     "date": "2026-06-14",
     "headlines": [
