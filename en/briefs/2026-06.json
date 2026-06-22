@@ -1,4 +1,36 @@
 {
+  "2026-06-22": {
+    "date": "2026-06-22",
+    "headlines": [
+      {
+        "date": "2026-06-19",
+        "html": "<a href=\"https://www.insurancejournal.com/news/international/2026/06/19/874489.htm\" target=\"_blank\" rel=\"noopener\"><strong>An insurance market for orbital data centers is taking shape</strong>: For the first time, space companies and insurers have begun discussing insurance structures for the orbital AI data centers being pursued by SpaceX and Blue Origin — (Reuters / Insurance Journal)</a>"
+      },
+      {
+        "date": "2026-06-21",
+        "html": "<a href=\"https://www.cnbc.com/2026/06/21/do-space-based-ai-data-centers-make-economic-sense.html\" target=\"_blank\" rel=\"noopener\"><strong>Entering a phase of rigorous &quot;does it pencil out&quot; scrutiny</strong>: U.S. business outlet CNBC tackles the cost structure of orbital data centers head-on, signaling a shift from hype to due diligence — (CNBC)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Reuters · Marsh (Reuters, 6/19)</strong> — On June 19, Reuters reported that three space companies and four brokers and underwriters had entered early talks over the terms and structure of orbital data center insurance. Patton Kline, who leads the space and aviation practice at insurance broker Marsh, said that &quot;data center and digital infrastructure companies have started asking the insurance industry for support.&quot; Lonestar Data Holdings even held a briefing for some 25 Lloyd&#x27;s insurers at Marsh&#x27;s offices. Still, David Wade, a space underwriter at Atrium, drew a line, saying &quot;demand for insurance is very limited at the moment&quot; and that a real market will not open until the startups grow larger. The global space insurance market currently stands at around $500 million a year, with only about a dozen insurers actually underwriting orbital risk.<br><br><strong>② CNBC (CNBC, 6/21)</strong> — That same week, on June 21, CNBC took on the question of &quot;whether space-based AI data centers make economic sense&quot; head-on. The analysis presented showed that orbital computing currently costs about four times as much as an equivalent ground-based data center, that break-even sits around 2040, and that launch costs would need to fall below $200 per kilogram. Ultimately, the companies investing now are betting not on &quot;space being cheaper today,&quot; but on falling launch costs, a saturating terrestrial power grid, and the first-mover advantage of climbing the learning curve early. A concept that Sam Altman once called &quot;ridiculous&quot; has now moved into a stage where it is being seriously calculated against the cost curve. The orbital data center fervor that peaked earlier this month with SpaceX&#x27;s IPO and the unveiling of AI1 is, as of June, moving into a &quot;verification phase.&quot; On one side, insurance underwriters are asking &quot;can this risk be modeled?&quot; while on the other, economic analysts are asking &quot;can this cost structure turn a profit?&quot; The fact that capital and risk markets have begun their due diligence before a single satellite has even launched is a sign that the field is moving beyond the conceptual stage and into a genuine industry — while also meaning that the gates it must now pass through have grown that much tougher.",
+    "sources": [
+      {
+        "url": "https://www.insurancejournal.com/news/international/2026/06/19/874489.htm",
+        "label": "insurancejournal.com"
+      },
+      {
+        "url": "https://www.newsspace.kr/news/article.html?no=14422",
+        "label": "newsspace.kr"
+      },
+      {
+        "url": "https://www.cnbc.com/2026/06/21/do-space-based-ai-data-centers-make-economic-sense.html",
+        "label": "CNBC"
+      },
+      {
+        "url": "https://www.sciencedaily.com/releases/2026/06/260618041501.htm",
+        "label": "sciencedaily.com"
+      }
+    ]
+  },
   "2026-06-16": {
     "date": "2026-06-16",
     "headlines": [

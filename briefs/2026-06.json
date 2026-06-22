@@ -1,4 +1,36 @@
 {
+  "2026-06-22": {
+    "date": "2026-06-22",
+    "headlines": [
+      {
+        "date": "2026-06-19",
+        "html": "<a href=\"https://www.insurancejournal.com/news/international/2026/06/19/874489.htm\" target=\"_blank\" rel=\"noopener\"><strong>궤도 데이터센터 보험 시장이 태동했습니다</strong>: 스페이스X·블루오리진이 추진하는 궤도 AI 데이터센터를 두고 우주기업과 보험사들이 처음으로 보험 구조 협의에 들어갔습니다 — (Reuters / Insurance Journal)</a>"
+      },
+      {
+        "date": "2026-06-21",
+        "html": "<a href=\"https://www.cnbc.com/2026/06/21/do-space-based-ai-data-centers-make-economic-sense.html\" target=\"_blank\" rel=\"noopener\"><strong>&quot;경제성이 있나&quot; 정밀 검증 국면으로</strong>: 미국 경제 매체 CNBC가 궤도 데이터센터의 비용 구조를 정면으로 따지며, 시장이 열기에서 실사 단계로 넘어가는 분위기입니다 — (CNBC)</a>"
+      }
+    ],
+    "summary_html": "<strong>① 로이터·마시 (Reuters, 6/19)</strong> — 로이터는 6월 19일, 우주기업 세 곳과 브로커·언더라이터 네 곳이 궤도 데이터센터 보험의 조건과 구조를 두고 초기 논의에 들어갔다고 보도했습니다. 보험 브로커 마시의 우주·항공 부문 책임자 패튼 클라인은 &quot;데이터센터와 디지털 인프라 기업들이 보험업계에 지원을 요청하기 시작했다&quot;고 말했습니다. 론스타 데이터 홀딩스는 마시 사무실에서 로이즈 보험사 약 25곳을 상대로 브리핑까지 열었습니다. 다만 애트리엄의 우주 언더라이터 데이비드 웨이드는 &quot;현재로선 보험 수요가 매우 제한적&quot;이라며, 스타트업이 더 커져야 본격 시장이 열린다고 선을 그었습니다. 현재 전 세계 우주보험 시장은 연 5억 달러 안팎, 궤도 위험을 실제로 인수하는 보험사는 열두 곳 남짓에 불과합니다.<br><br><strong>② CNBC (CNBC, 6/21)</strong> — 같은 주, CNBC는 6월 21일 &quot;우주 AI 데이터센터가 경제성이 있는가&quot;를 정면으로 짚었습니다. 현재 궤도 컴퓨팅 비용은 동급 지상 데이터센터의 약 네 배로, 손익분기는 2040년 전후, 발사 단가가 1킬로그램당 200달러 밑으로 떨어져야 한다는 분석이 제시됐습니다. 결국 지금 투자하는 기업들은 &quot;오늘 우주가 더 싸다&quot;가 아니라, 발사비 하락과 지상 전력망 포화, 그리고 먼저 학습곡선을 타는 선점 효과에 기대를 거는 셈입니다. 한때 샘 올트먼이 &quot;터무니없다&quot;고 했던 구상이, 이제는 비용 곡선을 놓고 진지하게 계산되는 단계로 넘어갔습니다. 이달 초 스페이스X 상장과 AI1 공개로 정점을 찍은 궤도 데이터센터 열기가, 6월 들어 &#x27;검증 국면&#x27;으로 넘어가고 있습니다. 한쪽에선 보험 언더라이터들이 &quot;이 위험을 모델링할 수 있는가&quot;를, 다른 쪽에선 경제 분석가들이 &quot;이 비용 구조가 수익을 낼 수 있는가&quot;를 묻습니다. 위성 한 기 띄우기도 전에 자본·위험 시장이 먼저 실사에 들어갔다는 것은, 이 분야가 구상 단계를 넘어 하나의 산업으로 진입하고 있다는 신호인 동시에, 앞으로 통과해야 할 관문이 그만큼 까다로워졌다는 뜻이기도 합니다.",
+    "sources": [
+      {
+        "url": "https://www.insurancejournal.com/news/international/2026/06/19/874489.htm",
+        "label": "insurancejournal.com"
+      },
+      {
+        "url": "https://www.newsspace.kr/news/article.html?no=14422",
+        "label": "newsspace.kr"
+      },
+      {
+        "url": "https://www.cnbc.com/2026/06/21/do-space-based-ai-data-centers-make-economic-sense.html",
+        "label": "CNBC"
+      },
+      {
+        "url": "https://www.sciencedaily.com/releases/2026/06/260618041501.htm",
+        "label": "sciencedaily.com"
+      }
+    ]
+  },
   "2026-06-16": {
     "date": "2026-06-16",
     "headlines": [
