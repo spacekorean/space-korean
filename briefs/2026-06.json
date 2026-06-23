@@ -1,4 +1,40 @@
 {
+  "2026-06-24": {
+    "date": "2026-06-24",
+    "headlines": [
+      {
+        "date": "2026-06-23",
+        "html": "<a href=\"https://www.bloomberg.com/news/articles/2026-06-23/masa-son-dismisses-musk-s-space-data-center-as-an-ai-race-winner\" target=\"_blank\" rel=\"noopener\"><strong>손정의, 머스크 우주 데이터센터 일축</strong>: 소프트뱅크 손정의 회장이 주주총회에서 &quot;AI 승부는 지상에서 난다&quot;며 머스크의 궤도 데이터센터 구상에 회의론을 던졌습니다. 같은 날 스페이스X 주가(SPCX)는 고점 대비 31% 빠졌습니다. — (Bloomberg / Japan Times)</a>"
+      },
+      {
+        "date": "2026-06-22",
+        "html": "<a href=\"https://spacenews.com/sophia-selects-apex-bus-for-on-orbit-computing-demonstration/\" target=\"_blank\" rel=\"noopener\"><strong>소피아 스페이스, 에이펙스 위성 버스 채택</strong>: 궤도 컴퓨팅 스타트업 소피아 스페이스가 첫 궤도 컴퓨팅 노드를 위해 에이펙스의 노바 위성 버스를 선택, 2027년 실증 비행을 예고했습니다. — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-06-23",
+        "html": "<a href=\"https://spacenews.com/loft-orbital-to-test-ai-models-on-spacecraft-for-earth-observation/\" target=\"_blank\" rel=\"noopener\"><strong>로프트 오비탈, NASA JPL과 위성 탑재 AI 시험</strong>: 로프트 오비탈이 JPL의 자율 측정 프로젝트 FAME에 따라 위성 온보드 컴퓨터에서 AI 소프트웨어를 돌리는 시험을 이달 시작했습니다. — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① 블룸버그 (Bloomberg, 6/23)</strong> — 소프트뱅크 손정의 회장이 모바일 사업부 연례 주주총회에서 머스크가 추진하는 궤도 데이터센터에 &quot;장점이 거의 없다&quot;고 잘라 말했습니다. 그는 우주 데이터센터의 핵심 이점인 전기요금 절감은 반도체 등 하드웨어 비용에 비하면 운영비의 극히 일부에 불과하고, 그 절감분을 우주 운반 비용·유지보수·통신 지연이 상쇄하고도 남는다고 지적했습니다. 손 회장은 &quot;AI 경쟁에서 앞으로 몇 년이 10년 뒤 일보다 훨씬 중요하다&quot;며 소프트뱅크는 지상에 막강한 데이터센터 역량을 구축하는 데 집중하겠다고 밝혔습니다. 그는 오픈AI에 약 650억 달러를 약정한 지상 AI 인프라의 최대 큰손으로, 머스크를 &quot;비범한 변화의 주역&quot;이라 평하면서도 비관 시나리오에 무게를 실은 셈입니다.<br><br><strong>② 소피아 스페이스 (SpaceNews, 6/22)</strong> — 궤도 컴퓨팅 스타트업 소피아 스페이스가 첫 궤도 컴퓨팅 노드를 에이펙스의 노바 위성 버스에 실어 2027년 실증한다고 발표했습니다. 이번 미션은 소피아의 타일(TILE) 컴퓨트 모듈을 검증하는 자리로, 회사는 700만 달러 SAFE 라운드를 마무리해 누적 조달액을 2천200만 달러로 늘립니다. 에이펙스 공동창업자 이언 시나몬 CEO는 &quot;소피아의 실시간 궤도 컴퓨팅 비전은 노바 플랫폼이 떠받치도록 설계된 바로 그 미션&quot;이라고 말했습니다. 궤도에서 쏟아지는 데이터를 전부 지상으로 내려보내는 기존 방식이 한계에 부딪히면서, 궤도에서 곧바로 처리하는 엣지 컴퓨팅 수요가 커지고 있다는 점이 거래의 배경입니다.<br><br><strong>③ 로프트 오비탈 (SpaceNews, 6/23)</strong> — 로프트 오비탈이 NASA가 지원하는 자율 측정 프로젝트 FAME(Federated Autonomous Measurement)에 따라 제트추진연구소(JPL)의 AI 소프트웨어를 자사 위성 온보드 컴퓨터에서 시험한다고 밝혔습니다. 시험은 이달 시작됐고 2027년과 2028년 후속 위성으로 이어집니다. 목표는 한 위성이 포착한 영상으로 관심 지점을 짚어내 다른 위성이 정밀 관측하도록 넘기는 &#x27;팁 앤 큐&#x27; 자동화입니다. 앞서 로프트는 위성 YAM-9에서 구글 딥마인드의 젬마 3 모델을 엔비디아 젯슨 오린 GPU로 구동해, 원본 픽셀을 지상에 내려보내지 않고 궤도에서 영상을 분류·요약하는 데 성공한 바 있습니다. 오늘 세 기사는 궤도 데이터센터 담론이 &#x27;구상&#x27;에서 &#x27;검증&#x27;으로 넘어가는 분기점을 보여줍니다. 손정의의 회의론은 단순한 비판이 아니라 지상 AI 인프라에 수천억 달러를 베팅한 최대 투자자의 노선 선언으로, IPO 이후 식어가는 SPCX 주가 심리와 맞물려 머스크식 백만 기 궤도 컴퓨트 비전의 경제성에 시장이 다시 가격표를 매기는 국면을 드러냅니다. 반면 소피아·에이펙스 계약과 로프트·JPL 시험은 메가컨스텔레이션의 거대 담론과는 다른 결로, 지상 다운링크 병목을 푸는 &#x27;궤도 엣지 처리&#x27;라는 당장의 실수요에서 실제 하드웨어와 비행 일정이 굴러가고 있음을 보여줍니다. 거시 회의론(지상이냐 궤도냐)과 미시 실증(작게라도 궤도에서 처리하라)이 같은 주에 공존하는 것 — 이것이 지금 궤도 데이터센터 시장의 좌표입니다.",
+    "sources": [
+      {
+        "url": "https://www.bloomberg.com/news/articles/2026-06-23/masa-son-dismisses-musk-s-space-data-center-as-an-ai-race-winner",
+        "label": "Bloomberg"
+      },
+      {
+        "url": "https://www.japantimes.co.jp/business/2026/06/23/companies/softbank-dismissal-musk-idea-data-centers/",
+        "label": "japantimes.co.jp"
+      },
+      {
+        "url": "https://spacenews.com/sophia-selects-apex-bus-for-on-orbit-computing-demonstration/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/loft-orbital-to-test-ai-models-on-spacecraft-for-earth-observation/",
+        "label": "SpaceNews"
+      }
+    ]
+  },
   "2026-06-22": {
     "date": "2026-06-22",
     "headlines": [

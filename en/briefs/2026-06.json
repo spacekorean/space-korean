@@ -1,4 +1,40 @@
 {
+  "2026-06-24": {
+    "date": "2026-06-24",
+    "headlines": [
+      {
+        "date": "2026-06-23",
+        "html": "<a href=\"https://www.bloomberg.com/news/articles/2026-06-23/masa-son-dismisses-musk-s-space-data-center-as-an-ai-race-winner\" target=\"_blank\" rel=\"noopener\"><strong>Son dismisses Musk&#x27;s orbital data centers</strong>: At a shareholders meeting, SoftBank Chairman Masayoshi Son cast doubt on Musk&#x27;s orbital data center concept, declaring &quot;the AI race will be won on the ground.&quot; The same day, SpaceX shares (SPCX) were down 31% from their peak. — (Bloomberg / Japan Times)</a>"
+      },
+      {
+        "date": "2026-06-22",
+        "html": "<a href=\"https://spacenews.com/sophia-selects-apex-bus-for-on-orbit-computing-demonstration/\" target=\"_blank\" rel=\"noopener\"><strong>Sophia Space adopts Apex satellite bus</strong>: On-orbit computing startup Sophia Space selected Apex&#x27;s Nova satellite bus for its first orbital computing node, signaling a demonstration flight in 2027. — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-06-23",
+        "html": "<a href=\"https://spacenews.com/loft-orbital-to-test-ai-models-on-spacecraft-for-earth-observation/\" target=\"_blank\" rel=\"noopener\"><strong>Loft Orbital to test onboard satellite AI with NASA JPL</strong>: Loft Orbital began tests this month running AI software on its satellite onboard computer under JPL&#x27;s autonomous measurement project, FAME. — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Bloomberg (6/23)</strong> — At the annual shareholders meeting of its mobile unit, SoftBank Chairman Masayoshi Son flatly stated that the orbital data centers Musk is pursuing have &quot;few advantages.&quot; He pointed out that the central benefit of space data centers — savings on electricity costs — amounts to only a tiny fraction of operating expenses compared with hardware costs such as semiconductors, and that those savings are more than offset by the costs of space transport, maintenance, and communication latency. Son said that &quot;in the AI race, the next few years matter far more than what happens a decade from now,&quot; adding that SoftBank will focus on building formidable data center capacity on the ground. As the largest backer of ground-based AI infrastructure — having committed roughly $65 billion to OpenAI — Son praised Musk as &quot;a driver of extraordinary change&quot; while nonetheless lending his weight to the pessimistic scenario.<br><br><strong>② Sophia Space (SpaceNews, 6/22)</strong> — On-orbit computing startup Sophia Space announced it will demonstrate its first orbital computing node aboard Apex&#x27;s Nova satellite bus in 2027. The mission serves to validate Sophia&#x27;s TILE compute module, and the company is closing a $7 million SAFE round that brings its cumulative funding to $22 million. Apex co-founder and CEO Ian Cinnamon said, &quot;Sophia&#x27;s vision of real-time on-orbit computing is exactly the kind of mission the Nova platform was designed to support.&quot; The deal is set against the limits of the conventional approach of sending all the data pouring in from orbit down to the ground, as demand grows for edge computing that processes data right where it is generated in orbit.<br><br><strong>③ Loft Orbital (SpaceNews, 6/23)</strong> — Loft Orbital said it is testing the Jet Propulsion Laboratory&#x27;s (JPL) AI software on its satellite onboard computer under NASA&#x27;s federally supported autonomous measurement project, FAME (Federated Autonomous Measurement). The tests began this month and will continue with follow-on satellites in 2027 and 2028. The goal is to automate &quot;tip and cue&quot; — using imagery captured by one satellite to identify points of interest and hand them off to another satellite for precise observation. Loft previously succeeded in running Google DeepMind&#x27;s Gemma 3 model on an Nvidia Jetson Orin GPU aboard its YAM-9 satellite, classifying and summarizing imagery in orbit without downlinking the raw pixels to the ground. Today&#x27;s three stories mark the turning point at which the orbital data center conversation moves from &quot;concept&quot; to &quot;validation.&quot; Son&#x27;s skepticism is not mere criticism but a statement of direction from the largest investor betting hundreds of billions of dollars on ground-based AI infrastructure; coupled with cooling sentiment around SPCX shares since its IPO, it reveals a moment in which the market is re-pricing the economics of Musk&#x27;s vision of a million-unit orbital compute fleet. By contrast, the Sophia-Apex deal and the Loft-JPL test run on a different register from the grand megaconstellation narrative, showing that real hardware and flight schedules are already in motion driven by immediate, concrete demand for &quot;orbital edge processing&quot; that solves the ground-downlink bottleneck. Macro skepticism (ground versus orbit) and micro validation (process in orbit, however modestly) coexisting in the same week — this is the coordinate of the orbital data center market right now.",
+    "sources": [
+      {
+        "url": "https://www.bloomberg.com/news/articles/2026-06-23/masa-son-dismisses-musk-s-space-data-center-as-an-ai-race-winner",
+        "label": "Bloomberg"
+      },
+      {
+        "url": "https://www.japantimes.co.jp/business/2026/06/23/companies/softbank-dismissal-musk-idea-data-centers/",
+        "label": "japantimes.co.jp"
+      },
+      {
+        "url": "https://spacenews.com/sophia-selects-apex-bus-for-on-orbit-computing-demonstration/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/loft-orbital-to-test-ai-models-on-spacecraft-for-earth-observation/",
+        "label": "SpaceNews"
+      }
+    ]
+  },
   "2026-06-22": {
     "date": "2026-06-22",
     "headlines": [
