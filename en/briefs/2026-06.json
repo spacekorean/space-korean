@@ -1,4 +1,20 @@
 {
+  "2026-06-30": {
+    "date": "2026-06-30",
+    "headlines": [
+      {
+        "date": "2026-06-30",
+        "html": "<a href=\"https://spacenews.com/orbital-files-plans-for-100000-orbital-data-centers/\" target=\"_blank\" rel=\"noopener\"><strong>Orbital data center startup &#x27;Orbital&#x27; files FCC application for 100,000-satellite, 10-gigawatt constellation</strong>: A six-person LA startup, founded just five months ago, has submitted plans to the U.S. FCC to deploy up to 100,000 data center satellites in low Earth orbit, vaulting it into the ODC mega-constellation race overnight. — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Orbital (SpaceNews, 6/30)</strong> — Los Angeles-based startup Orbital filed an application with the U.S. FCC on June 24 to deploy up to 100,000 data center satellites in low Earth orbit at altitudes of 500–850 km. The satellites are rated at 100 kilowatts, with solar panels and radiators spanning roughly 100 meters and a dry mass of 1.5–2.5 tons. Total targeted compute capacity is 10 gigawatts, with data relayed via optical inter-satellite links to external constellations such as Starlink. A demonstration satellite is targeted for next year, and the first dedicated satellite, &#x27;Orbital-1,&#x27; for 2028. The six-person team, led by founder Yuwin Poon (formerly the founder of Spin), draws on alumni from SpaceX, Amazon, and Northrop Grumman, with cumulative funding of just $5 million in pre-seed capital. Poon described the demonstration mission as &quot;a very scaled-down version of what we&#x27;re trying to do, carrying a single GPU.&quot; Orbital&#x27;s filing is not an isolated event but one scene in an &quot;FCC filing rush&quot; as ODC operators race to stake out orbital slots and spectrum. Following Starcloud (88,000 satellites, 200 kW), Cowboy Space (20,000 satellites), Blue Origin&#x27;s Project Sunrise (51,600 satellites), and SpaceX (up to 1 million satellites, 150 kW), a five-month-old company with six employees and $5 million in capital has now put 100,000 satellites and 10 gigawatts on paper. Regardless of whether the venture is ever actually completed, it shows that orbital computing has moved beyond the &quot;single demonstrator&quot; stage into a land-grab over who can secure regulatory paper territory first.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/orbital-files-plans-for-100000-orbital-data-centers/",
+        "label": "SpaceNews"
+      }
+    ]
+  },
   "2026-06-24": {
     "date": "2026-06-24",
     "headlines": [
