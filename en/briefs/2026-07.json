@@ -1,4 +1,20 @@
 {
+  "2026-07-02": {
+    "date": "2026-07-02",
+    "headlines": [
+      {
+        "date": "2026-07-01",
+        "html": "<a href=\"https://spacenews.com/blue-origin-outlines-new-launch-pad-approach-as-it-pushes-to-return-new-glenn-to-flight/\" target=\"_blank\" rel=\"noopener\"><strong>Blue Origin declares New Glenn will return to flight this year — unveils new launch-pad approach</strong>: Rather than rebuilding the launch pad destroyed in the May 28 explosion in its original form, the company said it will switch to a horizontal-vertical hybrid method, moving the rocket horizontally and then raising it upright with a crane. The return-to-flight target is late 2026. New Glenn is the sole heavy-lift vehicle for Blue Origin&#x27;s orbital data center constellation, &quot;Project Sunrise.&quot; — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Blue Origin (SpaceNews, 7/1)</strong> — CEO Dave Limp disclosed the recovery plan for the first time since the May 28 pad explosion. The core message is &quot;we will not rebuild the same pad&quot;: the company has adopted a horizontal-vertical hybrid operating method in which the rocket is transported horizontally without a payload, then raised upright and aligned by crane, with the same crane mating the payload on top. Initial analysis found the explosion originated in the aft section of the first stage, and the BE-4 engines are still under investigation. Limp said &quot;the road to space does not stop here, and we will return to flight within this year,&quot; while NASA Administrator Jared Isaacman praised the response as &quot;almost beyond imagination&quot; and confirmed that the Blue Moon lander&#x27;s New Glenn launch contract will be maintained. On the surface this is launch-site recovery news, but on the orbital data center map its weight is different. Last April, Blue Origin filed with the FCC for &quot;Project Sunrise,&quot; an orbital data center constellation of 51,600 satellites — and New Glenn is the only vehicle capable of lofting these heavy satellites. With the May explosion halting flights for nearly seven months, the Sunrise deployment schedule effectively fell into a vacuum, and the key point is that this marks the first time an end date — &quot;return within the year&quot; — has been drawn. As Orbital&#x27;s filing for a 100,000-satellite orbital data center and the large-scale filings from Starcloud, Cowboy Space, and SpaceX pile up one after another, the New Glenn accident and its return timeline reaffirm that the ultimate bottleneck for all of these ambitions is not the blueprint but the launch cadence of heavy-lift vehicles.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/blue-origin-outlines-new-launch-pad-approach-as-it-pushes-to-return-new-glenn-to-flight/",
+        "label": "SpaceNews"
+      }
+    ]
+  },
   "2026-07-01": {
     "date": "2026-07-01",
     "headlines": [
