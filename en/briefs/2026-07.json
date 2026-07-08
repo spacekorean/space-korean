@@ -1,4 +1,24 @@
 {
+  "2026-07-09": {
+    "date": "2026-07-09",
+    "headlines": [
+      {
+        "date": "2026-07-08",
+        "html": "<a href=\"https://satnews.com/2026/07/08/spacex-files-fcc-application-for-100000-third-generation-starlink-satellites/\" target=\"_blank\" rel=\"noopener\"><strong>SpaceX files FCC application for 100,000 third-generation Starlink satellites</strong>: Documents submitted on July 6 reveal satellites weighing roughly 2 tonnes each, launched exclusively by Starship, with 1 terabit of downlink capacity per satellite. The same filing explicitly states that this broadband constellation is separate from &quot;Starmind,&quot; a 1-million-satellite orbital data center project — reaffirming that SpaceX is pursuing broadband and orbital compute as two parallel tracks. — (SatNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① SpaceX (SatNews, 7/8)</strong> — On July 6, SpaceX applied to the U.S. Federal Communications Commission to deploy up to 100,000 third-generation Starlink satellites. Each satellite weighs about 2 tonnes — more than triple the 575 kg of the second generation — and can be launched only by Starship. Per-satellite downlink capacity rises tenfold to 1 terabit, while uplink climbs twenty-two-fold to 160–200 gigabits, with the satellites deployed across two low-Earth-orbit shells (roughly 323–327 km and 473–477 km). The crucial detail is that the filing explicitly states this broadband constellation is entirely separate from the company&#x27;s orbital data center project, &quot;Starmind.&quot; Starmind is a plan for up to 1 million dedicated compute satellites mass-produced at the Gigasat factory in Bastrop, Texas, targeting delivery of 1 gigawatt of space-based compute capacity per year around 2027. The broadband satellites are not themselves orbital data centers, but their 2-tonne class, Starship-only launch profile, and mass-manufacturing system form the industrial base that validates and scales the very launch cadence and Texas production line on which Starmind depends. Over the past six weeks, orbital data center news has converged on a race of orbital satellite constellation filings. The axes have been Orbital&#x27;s 100,000 satellites (June 30), Starcloud&#x27;s 88,000, Blue Origin Sunrise&#x27;s 51,600, and China&#x27;s Hongqing and Honghu-3 lines in the 10,000 range. What sets this SpaceX filing apart is that it is an official document revealing a single company explicitly separating and running two megaconstellations in parallel — broadband (third-generation Starlink) and orbital compute (Starmind). Both tracks share a single root: Starship launches and Texas mass manufacturing. In other words, today&#x27;s move to scale broadband satellites up to the 2-tonne class and ramp launch cadence is a prelude that pulls forward the launch and manufacturing scale needed to actually put orbital data centers into orbit. It shows that the battleground for orbital data centers is shifting from individual satellite design to an industrial-base contest over &quot;who can build in volume and launch cheaply.&quot;",
+    "sources": [
+      {
+        "url": "https://satnews.com/2026/07/08/spacex-files-fcc-application-for-100000-third-generation-starlink-satellites/",
+        "label": "satnews.com"
+      },
+      {
+        "url": "https://finance.biggo.com/news/83a23cc2-b4ab-4fe3-82a9-455493765c32",
+        "label": "finance.biggo.com"
+      }
+    ]
+  },
   "2026-07-06": {
     "date": "2026-07-06",
     "headlines": [
