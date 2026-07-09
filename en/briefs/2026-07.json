@@ -1,4 +1,28 @@
 {
+  "2026-07-10": {
+    "date": "2026-07-10",
+    "headlines": [
+      {
+        "date": "2026-07-09",
+        "html": "<a href=\"https://spacenews.com/blue-origin-seeks-to-raise-10-billion-in-outside-capital/\" target=\"_blank\" rel=\"noopener\"><strong>Blue Origin pursues $10 billion in outside capital — including 51,600-satellite Project Sunrise</strong>: In its first outside investment in the company&#x27;s 25-year history, the round is led by Coatue Management at a $130 billion valuation. Alongside a New Glenn production ramp-up and the Blue Moon lunar lander, funds will flow into Project Sunrise, its orbital data center constellation. — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-07-09",
+        "html": "<a href=\"https://spacenews.com/space-force-awards-pulse-space-40-million-to-advance-laser-power-technology/\" target=\"_blank\" rel=\"noopener\"><strong>Space Force awards Pulse Space $40 million — satellite-to-satellite laser power and data transfer</strong>: Development of optical-link technology for spacecraft to exchange power and data wirelessly. It is infrastructure for distributing &quot;power&quot; — the biggest bottleneck for orbital compute — in orbit. — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Blue Origin (SpaceNews, 7/9)</strong> — Blue Origin is raising $10 billion in outside capital. For a company that Jeff Bezos has self-funded for more than 25 years through sales of Amazon stock, this marks its first outside investment, with Coatue Management leading the round at a $130 billion valuation. The capital will flow across capital-intensive projects: rebuilding Launch Complex 36 at Cape Canaveral, damaged in a May explosion; ramping up production of the New Glenn rocket; the Blue Moon lunar lander for NASA&#x27;s Artemis program; the 5,400-satellite Terawave broadband constellation; and Project Sunrise, an orbital data center constellation of up to 51,600 satellites. CEO Dave Limp said the company has &quot;entered a phase where the opportunity in space is expanding rapidly.&quot; With New Glenn — the only heavy-lift vehicle Sunrise depends on — grounded by a May 28 explosion, this raise is the capital to simultaneously revive both that launch base and the orbital data center plan.<br><br><strong>② Pulse Space (SpaceNews, 7/9)</strong> — The Space Force is paying Bellevue-based startup Pulse Space $40 million to advance laser-based wireless power and data transfer technology. The company is developing a system for spacecraft to exchange power and data over optical links, allowing satellites to share power and communicate with one another. Founder Carl Steadman said he was &quot;honored to mature laser technology with the Space Force.&quot; The military application was not disclosed, but the problem the technology targets aligns precisely with the biggest variable for orbital data centers. Across every orbital compute concept — Orbital&#x27;s 100,000 satellites, Starcloud, Sunrise — the real constraint is how to supply and distribute the tens to hundreds of kilowatts of power each satellite requires. Wireless power sharing between satellites could become an enabling technology for a future architecture that separates solar-generating satellites from compute satellites. This week the axis of orbital data center news is shifting from &quot;design&quot; to &quot;capital and power.&quot; Where the past six weeks were a race over who filed how large a constellation with the FCC — Orbital&#x27;s 100,000 satellites, SpaceX&#x27;s Starmind at 1 million, Sunrise at 51,600 — today the talk is about the money and energy to actually put those plans in orbit. Blue Origin&#x27;s $10 billion is a signal that even a company that insisted on 25 years of self-funding needs outside capital in the face of orbital-data-center-scale ambition, and — following SpaceX&#x27;s IPO and the venture rounds at Orbital and Starcloud — it shows large capital continuing to pour into the sector. At the same time, the Pulse Space contract reveals that the Space Force has begun investing first in the physical ceiling all these constellations will eventually hit — power supply in orbit. Alongside the industrial-base race to build satellites en masse and launch them cheaply, a second bottleneck has now emerged in parallel: how to power them once they&#x27;re up.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/blue-origin-seeks-to-raise-10-billion-in-outside-capital/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/space-force-awards-pulse-space-40-million-to-advance-laser-power-technology/",
+        "label": "SpaceNews"
+      }
+    ]
+  },
   "2026-07-09": {
     "date": "2026-07-09",
     "headlines": [
