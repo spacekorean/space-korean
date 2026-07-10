@@ -1,4 +1,36 @@
 {
+  "2026-07-11": {
+    "date": "2026-07-11",
+    "headlines": [
+      {
+        "date": "2026-07-09",
+        "html": "<a href=\"https://spacenews.com/environmental-groups-seek-fcc-pause-on-orbital-data-center-constellations/\" target=\"_blank\" rel=\"noopener\"><strong>Environmental groups ask FCC to halt orbital data center licensing</strong>: Three environmental groups represented by Earthjustice petitioned the FCC to pause approval of orbital data center constellations until it conducts a programmatic environmental impact review under the National Environmental Policy Act (NEPA) — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-07-10",
+        "html": "<a href=\"https://spacenews.com/china-unveils-members-of-state-backed-commercial-space-consortium/\" target=\"_blank\" rel=\"noopener\"><strong>China unveils 271-member state-backed commercial space consortium</strong>: A coordinating body grouping 271 members across nine divisions — satellites, launch vehicles, data applications and more — was unveiled, with orbital compute and D2D named as national priority sectors — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-07-10",
+        "html": "<a href=\"https://spacenews.com/china-becomes-second-country-to-recover-orbital-booster-with-long-march-10b/\" target=\"_blank\" rel=\"noopener\"><strong>China&#x27;s Long March 10B recovers first stage with a net, a first</strong>: Becoming the second country after the U.S. to recover an orbital-class rocket first stage, China set a within-the-year target for reuse aimed at lowering the cost of deploying low-Earth-orbit satellite internet constellations — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Earthjustice and environmental groups (SpaceNews, 7/9)</strong> — Public Employees for Environmental Responsibility (PEER), Environment America and DarkSky International, acting through Earthjustice, petitioned the FCC to first conduct a NEPA-based programmatic environmental impact statement (PEIS) before approving orbital data center licenses. The petition named SpaceX (up to 1 million orbital data center satellites), Orbital, Starcloud, Blue Origin, Cowboy Space and Cesiumastro, noting that these applicants alone have filed for roughly 260,000 additional satellites, and that a recent Ku-, Ka- and V-band processing round covered 13 constellations totaling about 140,000 satellites. Ozone-layer depletion and night-sky light pollution are the core concerns, while operators counter that orbital data centers ease the power, water and land burdens of ground infrastructure.<br><br><strong>② China&#x27;s state-backed commercial space consortium (SpaceNews, 7/10)</strong> — China unveiled the formation of a national commercial space consortium spanning 271 members across nine divisions, including 79 satellite developers, 44 data-application firms and 41 launch-vehicle companies. Orbital-capable firms such as Landspace, iSpace and Galactic Energy, along with mass satellite manufacturers such as Shanghai Spacesail (the operator of Qianfan) and GalaxySpace, are included, with orbital compute and D2D satellite services explicitly named as national priority sectors. As a coordinating body handling policy transmission, supply-demand matching and self-regulation, it is not an orbital data center itself but an industrial-base move to vertically integrate the satellite supply chain that will underpin them.<br><br><strong>③ Long March 10B net recovery (SpaceNews, 7/10)</strong> — China became the second country after the U.S. to recover an orbital-class rocket first stage. Instead of landing legs, the tensioned net of the recovery ship &quot;Linghangzhe&quot; captured the first stage about six minutes after stage separation, in what CASC called the &quot;world&#x27;s first net-based rocket recovery.&quot; The 63-meter, 760,000-kilogram-liftoff-mass vehicle carries 16,000 kilograms to low Earth orbit in its reusable configuration and is designed to target LEO satellite internet constellation deployment and cost reduction. CASC signaled it will re-fly this first stage within the year. It is a day in which the same industry is being handled by the U.S. and China at opposite phases. In the U.S., the orbital data center boom (SpaceX&#x27;s 1-million-satellite filing, a processing round on the scale of 140,000 satellites) has run into organized regulatory and environmental resistance for the first time, and the axis of growth is beginning to shift from &quot;how fast can you launch&quot; to &quot;can you get permission.&quot; China, by contrast, answers with industrialization rather than debate — binding the satellite supply chain into a 271-member consortium and lowering LEO deployment unit costs with reusable launch vehicles, removing for itself the bottlenecks of mass constellation rollout. It is an early sign of the orbital compute race splitting into a West hobbled by regulation and an East focused on throughput.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/environmental-groups-seek-fcc-pause-on-orbital-data-center-constellations/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/china-unveils-members-of-state-backed-commercial-space-consortium/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/china-becomes-second-country-to-recover-orbital-booster-with-long-march-10b/",
+        "label": "SpaceNews"
+      }
+    ]
+  },
   "2026-07-10": {
     "date": "2026-07-10",
     "headlines": [

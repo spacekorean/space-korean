@@ -1,4 +1,36 @@
 {
+  "2026-07-11": {
+    "date": "2026-07-11",
+    "headlines": [
+      {
+        "date": "2026-07-09",
+        "html": "<a href=\"https://spacenews.com/environmental-groups-seek-fcc-pause-on-orbital-data-center-constellations/\" target=\"_blank\" rel=\"noopener\"><strong>환경단체, FCC에 궤도 데이터센터 인가 중단 요청</strong>: 어스저스티스가 대리한 3개 환경단체가 궤도 데이터센터 컨스텔레이션 승인 전 국가환경정책법(NEPA)에 따른 프로그램 환경영향평가를 요구하며 FCC에 제동을 걸었습니다 — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-07-10",
+        "html": "<a href=\"https://spacenews.com/china-unveils-members-of-state-backed-commercial-space-consortium/\" target=\"_blank\" rel=\"noopener\"><strong>중국, 271개 기업 국가 상업우주 컨소시엄 공개</strong>: 위성·발사체·데이터응용 등 9개 분과 271개 회원사를 묶은 조율 기구가 공개됐고, 궤도 컴퓨트와 D2D가 국가 지원 우선 분야로 지목됐습니다 — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-07-10",
+        "html": "<a href=\"https://spacenews.com/china-becomes-second-country-to-recover-orbital-booster-with-long-march-10b/\" target=\"_blank\" rel=\"noopener\"><strong>중국 창정 10B, 그물망으로 1단 회수 성공</strong>: 미국에 이어 두 번째로 궤도급 로켓 1단 회수에 성공, 저궤도 위성인터넷 컨스텔레이션 배치 비용을 낮추기 위한 재사용을 연내 목표로 제시했습니다 — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① 어스저스티스·환경단체 (SpaceNews, 7/9)</strong> — 공공환경책임연대(PEER)·인바이런먼트 아메리카·다크스카이 인터내셔널이 어스저스티스를 통해, FCC가 궤도 데이터센터 인가를 승인하기 전에 NEPA 기반 프로그램 환경영향평가(PEIS)를 먼저 실시하라고 청원했습니다. 청원서는 스페이스X(최대 100만 기 궤도 데이터센터), 오비탈, 스타클라우드, 블루 오리진, 카우보이 스페이스, 세슘애스트로를 지목했고, 이들이 추가로 신청한 위성만 약 26만 기, 최근 Ku·Ka·V 대역 처리 라운드는 13개 컨스텔레이션 약 14만 기에 달한다고 지적했습니다. 오존층 훼손과 밤하늘 광공해가 핵심 우려이며, 사업자들은 궤도 데이터센터가 지상 인프라의 전력·물·토지 부담을 줄인다고 반박합니다.<br><br><strong>② 중국 국가 상업우주 컨소시엄 (SpaceNews, 7/10)</strong> — 중국이 위성개발 79곳, 데이터응용 44곳, 발사체 41곳 등 9개 분과 271개 회원사를 아우르는 국가 상업우주 컨소시엄의 구성을 공개했습니다. 랜드스페이스·아이스페이스·갤럭틱 에너지 등 궤도 진입 기업과 상하이 스페일세일(첸판 운용사)·갤럭시스페이스 같은 위성 대량제조사가 포함됐고, 궤도 컴퓨트와 D2D 위성 서비스가 국가 지원 우선 분야로 명시됐습니다. 정책 전달·수급 매칭·자율규제를 담당하는 조율 기구로, 궤도 데이터센터 자체는 아니지만 이를 떠받칠 위성 공급망을 수직계열화하는 산업 기반 움직임입니다.<br><br><strong>③ 창정 10B 그물망 회수 (SpaceNews, 7/10)</strong> — 중국이 미국에 이어 두 번째로 궤도급 로켓 1단 회수에 성공했습니다. 착륙 다리 대신 &#x27;링항저&#x27; 회수선의 장력 그물망으로 단 분리 약 6분 뒤 1단을 포착하는 방식으로, CASC는 &quot;세계 최초 그물망 방식 로켓 회수&quot;라고 밝혔습니다. 길이 63미터·이륙중량 76만 킬로그램의 이 발사체는 재사용 구성에서 저궤도 1만 6천 킬로그램을 운반하며, 저궤도 위성인터넷 컨스텔레이션 배치와 비용 절감을 겨냥해 설계됐습니다. CASC는 이번 1단을 연내 재비행시키겠다고 예고했습니다. 같은 산업을 미국과 중국이 정반대 국면에서 다루는 하루입니다. 미국에선 궤도 데이터센터 붐(스페이스X 100만 기 신청, 14만 기 규모 처리 라운드)이 처음으로 조직된 규제·환경 저항에 부딪혀, 성장의 축이 &#x27;얼마나 빨리 쏘느냐&#x27;에서 &#x27;허가를 받을 수 있느냐&#x27;로 이동하기 시작했습니다. 반면 중국은 논쟁 대신 산업화로 답합니다 — 271개사 컨소시엄으로 위성 공급망을 묶고, 재사용 발사체로 저궤도 배치 단가를 낮춰 컨스텔레이션 대량 전개의 병목을 스스로 제거하고 있습니다. 궤도 컴퓨트 경쟁이 규제에 발목 잡힌 서방과 처리량에 집중하는 동방으로 갈라지는 초기 신호입니다.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/environmental-groups-seek-fcc-pause-on-orbital-data-center-constellations/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/china-unveils-members-of-state-backed-commercial-space-consortium/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/china-becomes-second-country-to-recover-orbital-booster-with-long-march-10b/",
+        "label": "SpaceNews"
+      }
+    ]
+  },
   "2026-07-10": {
     "date": "2026-07-10",
     "headlines": [
