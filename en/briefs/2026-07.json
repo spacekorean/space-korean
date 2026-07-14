@@ -1,4 +1,28 @@
 {
+  "2026-07-15": {
+    "date": "2026-07-15",
+    "headlines": [
+      {
+        "date": "2026-07-12",
+        "html": "<a href=\"https://spacenews.com/spacex-gears-up-for-starship-flight-13/\" target=\"_blank\" rel=\"noopener\"><strong>SpaceX Starship Flight 13 to attempt first operational deployment of Starlink V3 satellites</strong>: Starship 13, launching July 16, will carry 20 working Starlink V3 satellites for the first time — the first real-world proof of the mass-deployment pipeline that orbital data center concepts depend on — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-07-13",
+        "html": "<a href=\"https://spacenews.com/l3harris-sierra-space-to-build-36-satellites-to-expand-u-s-missile-tracking-network/\" target=\"_blank\" rel=\"noopener\"><strong>L3Harris and Sierra Space win $1.75 billion for 36 Space Development Agency tracking satellites</strong>: A step up for the U.S. satellite mass-manufacturing base — the industrial foundation that ODC constellations share — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① SpaceX (SpaceX, 7/12)</strong> — SpaceX will deploy 20 working Starlink V3 satellites for the first time on Starship&#x27;s 13th test flight on July 16. Earlier flights carried only mass simulators, but this time the actual satellites will attempt to establish laser links with a ground station in South Africa and the existing Starlink network. Six of the satellites carry cameras to film Starship&#x27;s heat shield. Success would clear the way for Starship&#x27;s first orbital launch on the following flight. The crux is this V3 deployment pipeline — Starlink V3 itself is a broadband network, not a data center, but SpaceX&#x27;s orbital data center plans (the AI1 compute satellite in 2027 and an FCC filing for a million-satellite constellation) hinge entirely on whether Starship can operationally deploy heavy V3-class satellites. With 100-megawatt-class orbital compute requiring more than 50 launches, deployment throughput is the single biggest bottleneck in this field.<br><br><strong>② L3Harris and Sierra Space (SpaceNews, 7/13)</strong> — The Space Development Agency (SDA) has awarded the two companies a combined $1.75 billion to build 36 missile-tracking satellites. L3Harris takes 18 satellites for $955 million and Sierra Space 18 for $798 million, with a target of launch readiness by the end of 2028. These satellites form a missile-defense tracking layer (the PWSA tracking layer), a different mission from orbital data centers. But this award brings L3Harris&#x27;s Palm Bay, Florida factory to a cumulative 72 satellites — and this industrial base for churning out satellites en masse is exactly the supply chain that any orbital compute constellation would lean on. Today&#x27;s news is about defense satellites, but behind it is an expansion of the manufacturing capacity that underpins orbital infrastructure as a whole. This week the center of gravity in the news has shifted from &quot;design and filing&quot; to &quot;actual deployment capacity.&quot; Through June and July, briefings were filled with FCC filings for constellations of 100,000 to a million satellites and multibillion-dollar capital raises, but yesterday&#x27;s (7/14) recovery of a Long March 10C booster by China, today&#x27;s first operational deployment of Starlink V3 by SpaceX, and the large U.S. defense-satellite award all point to the same axis — the real bottleneck in the orbital data center race is not ideas but the throughput to actually build and launch satellites at megaconstellation scale. The United States (SpaceX&#x27;s launch cadence plus its defense manufacturing base) and China (reusable launch) are the two poles of this throughput contest, and the vision of orbital compute is now dictated by launch and manufacturing capacity.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/spacex-gears-up-for-starship-flight-13/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/l3harris-sierra-space-to-build-36-satellites-to-expand-u-s-missile-tracking-network/",
+        "label": "SpaceNews"
+      }
+    ]
+  },
   "2026-07-14": {
     "date": "2026-07-14",
     "headlines": [
