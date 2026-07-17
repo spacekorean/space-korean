@@ -1,4 +1,32 @@
 {
+  "2026-07-18": {
+    "date": "2026-07-18",
+    "headlines": [
+      {
+        "date": "2026-07-14",
+        "html": "<a href=\"https://spacenews.com/accel-and-prosus-backed-qosmic-raises-3-33-million-to-build-optical-ground-stations-for-the-orbital-data-economy/\" target=\"_blank\" rel=\"noopener\"><strong>An Orbital Data Highway</strong>: Indian deep-tech startup QOSMIC has raised a $3.33 million seed round led by Accel and Prosus, and is teaming with orbital data center startup TakeMe2Space to build India&#x27;s first indigenous optical inter-satellite link (OISL) — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-07-14",
+        "html": "<a href=\"https://spacenews.com/flexell-space-raises-20-million-in-series-a-round/\" target=\"_blank\" rel=\"noopener\"><strong>K-Space Solar Cells Raise $20 Million</strong>: South Korea&#x27;s Flexell Space has closed a $20 million Series A, targeting thin, flexible perovskite and CIGS solar cells as a power source for space applications including orbital data centers — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① QOSMIC × TakeMe2Space (SpaceNews, 7/14)</strong> — Putting computers in orbit is pointless if you can&#x27;t get the results back down to the ground. Bangalore deep-tech firm QOSMIC is targeting exactly this bottleneck, raising a $3.33 million seed round co-led by Accel and Prosus. Its optical ground stations use lasers rather than radio to receive satellite signals, delivering 10 gigabits per second today and scaling toward 100 gigabits per second in the future. That far exceeds the 1–2 gigabits per second of conventional radio links, and its data transfer cost of roughly $1 per gigabyte is dramatically lower than the $3 to $17 charged by commercial radio operators. The key is the partnership — QOSMIC is co-designing the optical terminals with TakeMe2Space, an orbital data center company building a 50-kilowatt-class orbital data center and a six-satellite MOI constellation, and together they will create India&#x27;s first indigenous optical inter-satellite link network. Without this data highway to process data in orbit and stream it down to the ground in real time, space data centers simply don&#x27;t work.<br><br><strong>② Flexell Space (SpaceNews, 7/14)</strong> — South Korean space solar cell company Flexell Space has raised a $20 million Series A, bringing its cumulative funding to roughly $25 million. Domestic financial players including Mirae Asset, IBK, NH, and the Korea Credit Guarantee Fund participated heavily. The company makes thin, flexible perovskite and CIGS cells instead of the heavy, expensive conventional gallium arsenide cells, touting advantages in weight, scalability, and price. What stands out is the target market — beyond communications and observation satellites and space stations, it explicitly targets orbital data centers and lunar and Mars exploration systems. Running large-scale AI computation in orbit means drawing that much power from the sun, and lightweight, mass-producible solar cells are a precondition for it. The company is conducting on-orbit validation via the Nuri rocket and the International Space Station, with mass production targeted for 2028. It has also secured roughly $7.1 million in government R&amp;D funding. This week the center of gravity in orbital data center news is shifting from &quot;who filed for the 100,000-satellite constellation&quot; to &quot;who actually makes it work.&quot; Following news from the past two days — the U.S. Defense Innovation Unit&#x27;s call for orbital power beaming (7/17) and a record first-half satellite investment tally (7/16) — today&#x27;s two stories are both about the supply chain underneath the operators, not the data center operators themselves. QOSMIC builds the optical links that stream data from orbit to the ground; Flexell builds the power that feeds the computation. Neither is a space data center itself, but unless these two bottlenecks — downlink and power — are solved, any orbital compute plan stays on paper. Geographically, it&#x27;s also a signal that in a game long dominated by the U.S. and China, India (QOSMIC, TakeMe2Space) and South Korea (Flexell) are staking out positions at the component and materials layer.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/accel-and-prosus-backed-qosmic-raises-3-33-million-to-build-optical-ground-stations-for-the-orbital-data-economy/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/flexell-space-raises-20-million-in-series-a-round/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://www.electronicsforyou.biz/industry-buzz/takeme2space-partners-with-qosmic-to-build-indias-first-indigenous-oisl/",
+        "label": "electronicsforyou.biz"
+      }
+    ]
+  },
   "2026-07-16": {
     "date": "2026-07-16",
     "headlines": [

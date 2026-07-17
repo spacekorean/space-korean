@@ -1,4 +1,32 @@
 {
+  "2026-07-18": {
+    "date": "2026-07-18",
+    "headlines": [
+      {
+        "date": "2026-07-14",
+        "html": "<a href=\"https://spacenews.com/accel-and-prosus-backed-qosmic-raises-3-33-million-to-build-optical-ground-stations-for-the-orbital-data-economy/\" target=\"_blank\" rel=\"noopener\"><strong>궤도 데이터 고속도로</strong>: 인도 딥테크 코스믹(QOSMIC)이 액셀·프로수스 주도로 삼백삼십삼만 달러 시드를 유치하고, 궤도 데이터센터 스타트업 테이크미투스페이스와 인도 최초의 자국산 광 위성 간 링크(OISL)를 함께 구축합니다 — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-07-14",
+        "html": "<a href=\"https://spacenews.com/flexell-space-raises-20-million-in-series-a-round/\" target=\"_blank\" rel=\"noopener\"><strong>K-우주 태양전지 이십억 유치</strong>: 한국 플렉셀 스페이스가 이천만 달러 시리즈A를 유치하며, 얇고 휘어지는 페로브스카이트·CIGS 태양전지를 궤도 데이터센터를 포함한 우주 전력원으로 겨냥합니다 — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① 코스믹 × 테이크미투스페이스 (SpaceNews, 7/14)</strong> — 궤도에 컴퓨터를 올려도 그 결과를 지상으로 내려보내지 못하면 소용이 없습니다. 방갈로르 딥테크 코스믹이 이 병목을 겨냥해 액셀·프로수스 공동 주도로 삼백삼십삼만 달러 시드를 유치했습니다. 이들의 광학 지상국은 라디오 대신 레이저로 위성 신호를 받아 현재 초당 십 기가비트, 향후 백 기가비트까지 끌어올립니다. 기존 무선 링크의 일 초당 일에서 이 기가비트를 훨씬 웃돌고, 데이터 전송 단가도 기가바이트당 약 일 달러로 상업 무선 사업자의 삼에서 십칠 달러보다 파격적으로 낮습니다. 핵심은 파트너입니다 — 코스믹은 오십 킬로와트급 궤도 데이터센터와 여섯 기 MOI 컨스텔레이션을 짓는 궤도 데이터센터 기업 테이크미투스페이스와 광학 단말을 공동 설계하고, 인도 최초의 자국산 광 위성 간 링크 망을 함께 만듭니다. 궤도에서 데이터를 처리하고 실시간으로 지상에 내려보내는 이 데이터 고속도로가 없으면 우주 데이터센터는 성립하지 않습니다.<br><br><strong>② 플렉셀 스페이스 (SpaceNews, 7/14)</strong> — 한국의 우주 태양전지 기업 플렉셀 스페이스가 이천만 달러 규모 시리즈A를 유치해 누적 조달액을 약 이천오백만 달러로 늘렸습니다. 미래에셋·기업은행·NH·신용보증기금 등 국내 금융권이 대거 참여했습니다. 이 회사는 무겁고 비싼 기존 갈륨비소 전지 대신 얇고 휘어지는 페로브스카이트와 CIGS 전지를 만드는데, 무게·확장성·가격 면에서 이점을 내세웁니다. 주목할 대목은 타깃 시장입니다 — 통신·관측 위성과 우주정거장뿐 아니라 궤도 데이터센터, 달·화성 탐사 시스템까지 명시적으로 겨냥합니다. 궤도에서 대규모 AI 연산을 돌리려면 그만큼의 전력을 태양에서 뽑아내야 하고, 가볍고 대량생산 가능한 태양전지는 그 전제 조건입니다. 누리호와 국제우주정거장으로 궤도 실증을 진행 중이며 이천이십팔 년 양산이 목표입니다. 정부 R&amp;D로 약 칠백십만 달러도 확보했습니다. 이번 주 궤도 데이터센터 뉴스의 무게중심이 &quot;누가 십만 기 컨스텔레이션을 신청했나&quot;에서 &quot;누가 그걸 실제로 돌아가게 만드나&quot;로 옮겨가고 있습니다. 지난 이틀간 나온 소식 — 미 국방혁신단의 궤도 전력 빔 공모(7/17), 상반기 위성 투자 신기록(7/16) — 에 이어 오늘의 두 건은 모두 데이터센터 운영사가 아니라 그 밑을 받치는 공급망입니다. 코스믹은 궤도에서 지상으로 데이터를 내려보내는 광 링크를, 플렉셀은 그 연산을 먹일 전력을 만듭니다. 둘 다 우주 데이터센터 자체는 아니지만, 이 두 병목 — 다운링크와 전력 — 이 풀리지 않으면 어떤 궤도 컴퓨트 계획도 종이 위에 머뭅니다. 지리적으로도 미·중 양강이 주도하던 판에 인도(코스믹·테이크미투스페이스)와 한국(플렉셀)이 부품·소재 계층에서 자리를 잡고 있다는 신호입니다.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/accel-and-prosus-backed-qosmic-raises-3-33-million-to-build-optical-ground-stations-for-the-orbital-data-economy/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/flexell-space-raises-20-million-in-series-a-round/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://www.electronicsforyou.biz/industry-buzz/takeme2space-partners-with-qosmic-to-build-indias-first-indigenous-oisl/",
+        "label": "electronicsforyou.biz"
+      }
+    ]
+  },
   "2026-07-16": {
     "date": "2026-07-16",
     "headlines": [
