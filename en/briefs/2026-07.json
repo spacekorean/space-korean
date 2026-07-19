@@ -1,4 +1,23 @@
 {
+  "2026-07-20": {
+    "date": "2026-07-20",
+    "headlines": [
+      {
+        "date": "2026-07-18",
+        "html": "<strong>U.S. Space Force triples national-security launch contract ceiling from $5.6 billion to $17 billion</strong>: (SpaceNews, 2026-07-18) — The American launch base on which orbital data center constellations will stand is expanding rapidly."
+      },
+      {
+        "date": "2026-07-18",
+        "html": "<strong>Pentagon invests $7.1 million to expand domestic production of satellite cover glass</strong>: (SpaceNews, 2026-07-18) — A supply-chain reshaping of solar-panel protective components, easing a bottleneck for mass satellite and ODC manufacturing."
+      },
+      {
+        "date": "2026-07-18",
+        "html": "<strong>India&#x27;s Skyroot reaches orbit on its first Vikram-1 launch</strong>: (SpaceNews, 2026-07-18) — One more commercial orbital launch nation added, expanding global launch capacity."
+      }
+    ],
+    "summary_html": "<strong>① U.S. Space Force (SpaceNews, 7/18)</strong> — The U.S. Space Force has raised the maximum ceiling of its National Security Space Launch (NSSL) Phase 3 Lane 1 contract more than threefold, from $5.6 billion to $17 billion. Through fiscal year 2029, it has identified 25 additional missions on top of the 54 launches originally planned over five years. Seven providers are competing: SpaceX, ULA, Blue Origin, Rocket Lab, Stoke Space, Impulse Space and Relativity. Orbital data centers are, in essence, large-scale constellations. SpaceX&#x27;s 1-million-satellite ODC and Blue Origin&#x27;s Project Sunrise, with 51,600 satellites, both presuppose enormous launch capacity. Military demand tripling the launch industry&#x27;s base means the launch corridor through which ODC constellations will actually ascend is widening.<br><br><strong>② Pentagon (SpaceNews, 7/18)</strong> — The Pentagon has awarded $7.1 million under Title III of the Defense Production Act to Martin Materials, a specialty-glass manufacturer in Twinsburg, Ohio. Cover glass is the thin, radiation-hardened glass that protects the photovoltaic cells of satellite solar panels from radiation and micrometeoroids, and only a handful of U.S. companies make it. The Pentagon aims to reduce the vulnerability of having limited domestic and foreign supply sources. ODC satellites are effectively giant slabs of solar panels. By Orbital Compute&#x27;s design alone, a single satellite carries a 100-kilowatt, 100-meter-scale solar array. If the supply chain for this small component wavers, the very deployment of mass satellites and ODCs is delayed.<br><br><strong>③ Skyroot (SpaceNews, 7/18)</strong> — Indian startup Skyroot succeeded in reaching a 450-kilometer low Earth orbit on the maiden flight of its Vikram-1 rocket. It is India&#x27;s first commercial rocket to reach orbit on its debut launch. It carried its own CubeSats alongside CubeSats from India&#x27;s Grahaa Space and additional hosted payloads. Vikram-1 lifts 350 kilograms to low Earth orbit, and an upgraded booster-equipped variant carries 550 kilograms. The company has secured $60 million to pursue mass production and development of the larger Vikram-2. While not an orbital data center itself, the emergence of a new launch nation broadens the base of cheap, abundant launch capacity that ODCs require. Today&#x27;s three stories all point the same way. The center of gravity in the ODC race is shifting from &quot;how many satellites did you file for with the FCC&quot; to &quot;who can actually build and launch them at scale.&quot; The United States is widening the launch corridor by tripling its launch contract ceiling, while at the same time shoring up the domestic supply chain down to end components like cover glass. On top of that, India has joined the ranks of launch nations, reaching orbit with its own commercial rocket. If the past few days&#x27; capital and design news (Blue Origin&#x27;s $10 billion raise, Orbital Compute&#x27;s 10-gigawatt filing) was about &quot;what they intend to build,&quot; today is a signal on a different level: &quot;is the industrial base to build it actually being laid down.&quot; Orbital data centers are ultimately a contest of launch, component and manufacturing capacity — and that base is now thickening rapidly on both fronts, national budgets and emerging launch nations alike.",
+    "sources": []
+  },
   "2026-07-18": {
     "date": "2026-07-18",
     "headlines": [
