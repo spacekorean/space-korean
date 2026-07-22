@@ -1,4 +1,40 @@
 {
+  "2026-07-23": {
+    "date": "2026-07-23",
+    "headlines": [
+      {
+        "date": "2026-07-22",
+        "html": "<a href=\"https://spacenews.com/fcc-approves-sweeping-space-reforms-while-clearing-more-c-band-for-5g/\" target=\"_blank\" rel=\"noopener\"><strong>FCC Overhauls Satellite Licensing</strong>: The U.S. regulator replaces its decades-old Part 25 framework with a new Part 100 to cut non-geostationary (NGSO) constellation licensing from &quot;years to weeks,&quot; while simultaneously opening an additional 160 MHz of C-band for 5G — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-07-22",
+        "html": "<a href=\"https://spacenews.com/relativity-space-to-expand-terran-r-production-in-florida/\" target=\"_blank\" rel=\"noopener\"><strong>Relativity to Build New Terran R Plant in Florida</strong>: Florida is providing up to $134 million in financial support as the company expands reusable medium-lift Terran R production and test capacity at Cape Canaveral&#x27;s LC-16 — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-07-21",
+        "html": "<a href=\"https://spacenews.com/spacex-launches-northrop-mission-to-extend-the-life-of-aging-satellites/\" target=\"_blank\" rel=\"noopener\"><strong>Northrop MRV Launches for On-Orbit Refueling and Life Extension</strong>: A SpaceX Falcon 9 lofts a multi-satellite servicing robot to geostationary orbit, extending the lives of Intelsat and Optus satellites by roughly six years each — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① FCC (SpaceNews, 7/22)</strong> — The U.S. Federal Communications Commission unanimously approved a new Part 100 satellite licensing framework. Replacing the decades-old Part 25 regime with a &quot;licensing assembly line,&quot; it compresses application processing for NGSO constellation operators — who frequently replenish and upgrade satellites — from years to weeks or months. At the same time, the upper 160 MHz of C-band (3.98–4.14 GHz) will be auctioned in July 2027, joining the lower 280 MHz auctioned in 2020 (which fetched more than $80 billion) to secure a 440 MHz 5G &quot;superband&quot; across the top 75 markets by December 2030. SES and Eutelsat will migrate to the remaining 40 MHz or to Ku-band, with compensation funding smaller than the $13.4 billion set aside in the lower-band auction.<br><br><strong>② Relativity Space (SpaceNews, 7/22)</strong> — In addition to its Long Beach plant, the company will build a new Terran R manufacturing and test facility on Florida&#x27;s Space Coast. The Florida Department of Transportation is providing up to $134 million through its spaceport improvement program, with thousands of high-wage jobs projected through 2034. Terran R is a reusable-first-stage medium-lift vehicle launching from Cape Canaveral&#x27;s LC-16 and was recently added to the U.S. Space Force&#x27;s NSSL Phase 3 Lane 1 contract. CEO Eric Schmidt said the &quot;Florida capacity expansion supports scaling Terran R for commercial, scientific, and national security missions.&quot;<br><br><strong>③ Northrop Grumman MRV (SpaceNews, 7/21)</strong> — A SpaceX Falcon 9 lofted Northrop&#x27;s Mission Robotic Vehicle (MRV) and three life-extension pods to geostationary orbit. Unlike the earlier MEV, which remained permanently attached to a single satellite, the MRV is reusable infrastructure that moves between multiple satellites for repeat servicing. The pods attach to a satellite&#x27;s structural ring without refueling and use electric propulsion to maintain orbit, extending the life of geostationary communications satellites by about six years each. Two Intelsat satellites and one Australian Optus satellite are under contract, and the MRV itself has an operational life of roughly 15 years. The Falcon 9 booster used here completed its 32nd and final flight, and the U.S. Space Force is also planning to use the MRV as a commercial resource. The three stories show the U.S. infrastructure stack that will underpin orbital data centers advancing simultaneously across three layers — regulation, manufacturing, and operations. Because orbital data centers are ultimately large-scale constellations, deployment speed, launch capacity, and on-orbit asset maintenance are all prerequisites. The FCC&#x27;s licensing overhaul removes the regulatory bottleneck for putting tens of thousands of satellites into orbit — from &quot;years to weeks&quot; — changing deployment speed (though licensing reform itself is not a data center, but rather the regulatory foundation that enables one), while Relativity&#x27;s plant expansion builds the launch capacity to support it. Northrop&#x27;s MRV is the operational layer that keeps orbital assets alive longer through refueling and life extension — an early form of the maintenance infrastructure that continuous orbital compute will require. The same day, China&#x27;s OrienSpace launched nine AI-equipped Huantian constellation satellites via a Gravity-1 sea launch, reaffirming a structure in which the U.S. and China are building their respective orbital industrial bases in parallel.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/fcc-approves-sweeping-space-reforms-while-clearing-more-c-band-for-5g/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/relativity-space-to-expand-terran-r-production-in-florida/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/spacex-launches-northrop-mission-to-extend-the-life-of-aging-satellites/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/gravity-1-sea-launch-off-shanghai-puts-9-satellites-into-orbit/",
+        "label": "SpaceNews"
+      }
+    ]
+  },
   "2026-07-22": {
     "date": "2026-07-22",
     "headlines": [

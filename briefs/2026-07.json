@@ -1,4 +1,40 @@
 {
+  "2026-07-23": {
+    "date": "2026-07-23",
+    "headlines": [
+      {
+        "date": "2026-07-22",
+        "html": "<a href=\"https://spacenews.com/fcc-approves-sweeping-space-reforms-while-clearing-more-c-band-for-5g/\" target=\"_blank\" rel=\"noopener\"><strong>미 FCC, 위성 인가제 대개편</strong>: 수십 년 묵은 파트25를 신설 파트100으로 교체해 비정지궤도(NGSO) 컨스텔레이션 인가를 &quot;수년→수주&quot;로 단축, 동시에 C밴드 160MHz를 5G에 추가 개방 — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-07-22",
+        "html": "<a href=\"https://spacenews.com/relativity-space-to-expand-terran-r-production-in-florida/\" target=\"_blank\" rel=\"noopener\"><strong>렐러티비티, 플로리다에 테란R 공장 신설</strong>: 플로리다주가 최대 1억 3,400만 달러 금융 지원, 케이프커내버럴 LC-16에서 재사용 중형 발사체 테란R 생산·시험 캐파 확장 — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-07-21",
+        "html": "<a href=\"https://spacenews.com/spacex-launches-northrop-mission-to-extend-the-life-of-aging-satellites/\" target=\"_blank\" rel=\"noopener\"><strong>노스럽 MRV 궤도 급유·수명연장 발사</strong>: 스페이스X 팰컨9로 정지궤도에 다중 위성 서비싱 로봇 발사, 인텔샛·옵투스 위성 수명을 각각 약 6년 연장 — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① 미 FCC (SpaceNews, 7/22)</strong> — 미 연방통신위원회가 만장일치로 신설 파트100 위성 인가 규칙을 통과시켰습니다. 수십 년 된 파트25 체계를 &quot;인가 조립라인&quot;으로 대체해, 위성 보충·업그레이드가 잦은 NGSO 컨스텔레이션 사업자의 인가 처리를 수년에서 수주·수개월로 압축합니다. 동시에 상단 C밴드 160MHz(3.98~4.14GHz)를 2027년 7월 경매에 부쳐, 2020년 하단 280MHz(낙찰가 800억 달러 이상)와 합쳐 상위 75개 시장에 5G용 440MHz &quot;슈퍼밴드&quot;를 2030년 12월까지 확보합니다. SES·유텔샛은 남은 40MHz나 Ku밴드로 이전하며, 보상 재원은 하단 경매 당시의 134억 달러보다 적습니다.<br><br><strong>② 렐러티비티 스페이스 (SpaceNews, 7/22)</strong> — 롱비치 공장에 더해 플로리다 스페이스코스트에 테란R 제조·시험 시설을 새로 짓습니다. 플로리다 교통국이 스페이스포트 개선 프로그램을 통해 최대 1억 3,400만 달러를 지원하며, 2034년까지 수천 개의 고임금 일자리를 예고했습니다. 테란R은 케이프커내버럴 LC-16에서 발사하는 재사용 1단 중형 발사체로, 최근 미우주군 NSSL 3단계 레인1 계약에 편입됐습니다. 에릭 슈밋 CEO는 &quot;플로리다 캐파 확장이 상업·과학·안보 임무를 위한 테란R 규모 확대를 뒷받침한다&quot;고 밝혔습니다.<br><br><strong>③ 노스럽 그러먼 MRV (SpaceNews, 7/21)</strong> — 스페이스X 팰컨9가 노스럽의 미션 로보틱 비히클(MRV)과 수명연장 포드 3기를 정지궤도로 올렸습니다. 기존 MEV가 위성 1기에 붙박이로 남던 것과 달리, MRV는 여러 위성을 옮겨 다니며 반복 서비싱하는 재사용 인프라입니다. 포드는 급유 없이 구조링에 결합해 전기추진으로 궤도를 유지하며, 정지궤도 통신위성 수명을 각각 약 6년 늘립니다. 인텔샛 2기·호주 옵투스 1기가 계약됐고, MRV 자체 운용수명은 약 15년입니다. 이번에 쓰인 팰컨9 부스터는 32번째이자 마지막 비행을 마쳤고, 미우주군도 상용 자원으로 MRV 이용을 계획 중입니다. 세 소식은 궤도 데이터센터를 떠받칠 미국 인프라 스택이 규제·제조·운용 세 층에서 동시에 전진하고 있음을 보여줍니다. 궤도 데이터센터는 결국 대규모 컨스텔레이션이므로 — 배치 속도, 발사 캐파, 궤도 자산 유지가 모두 전제조건입니다. FCC의 인가 개편은 수만 기 위성을 궤도에 올리는 규제 병목을 &quot;수년→수주&quot;로 걷어내 배치 속도를 바꾸고(다만 인가 완화 자체가 데이터센터는 아니며 이를 가능케 하는 규제 기반입니다), 렐러티비티의 공장 증설은 이를 받쳐줄 발사 캐파를 늘립니다. 노스럽 MRV는 궤도에 올린 자산을 급유·수명연장으로 오래 살려두는 운용층으로, 지속적 궤도 컴퓨트가 필요로 할 유지·정비 인프라의 초기 형태입니다. 같은 날 중국은 오리엔스페이스 그래비티1 해상발사로 AI 탑재 환톈 컨스텔레이션 위성 9기를 올려, 미·중이 각자 궤도 산업 기반을 병렬로 쌓는 구도를 재확인시켰습니다.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/fcc-approves-sweeping-space-reforms-while-clearing-more-c-band-for-5g/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/relativity-space-to-expand-terran-r-production-in-florida/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/spacex-launches-northrop-mission-to-extend-the-life-of-aging-satellites/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/gravity-1-sea-launch-off-shanghai-puts-9-satellites-into-orbit/",
+        "label": "SpaceNews"
+      }
+    ]
+  },
   "2026-07-22": {
     "date": "2026-07-22",
     "headlines": [
