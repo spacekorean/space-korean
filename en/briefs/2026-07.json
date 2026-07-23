@@ -1,4 +1,28 @@
 {
+  "2026-07-24": {
+    "date": "2026-07-24",
+    "headlines": [
+      {
+        "date": "2026-07-23",
+        "html": "<a href=\"https://spacenews.com/airbus-space-business-takes-advantage-of-growing-demand-for-satellite-systems/\" target=\"_blank\" rel=\"noopener\"><strong>Airbus: With Satellite Demand Surging, &quot;There&#x27;s No Better Time to Reshape Our Space Business&quot;</strong>: Europe&#x27;s largest satellite manufacturer, Airbus, is raising its space-division profit targets on the back of demand from the IRIS² constellation, defense, and Earth observation — a signal that the European satellite mass-production base on which orbital data centers will stand is expanding. — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-07-23",
+        "html": "<a href=\"https://spacenews.com/mark-matossian-co-founds-whipsmart-ventures-for-space-and-deep-tech/\" target=\"_blank\" rel=\"noopener\"><strong>Whipsmart Ventures Launches — A Space and Deep-Tech Fund Founded by Isar and Lonestar Alumni</strong>: The fund names &quot;edge and orbital compute&quot; among its seven investment pillars, targeting Series A startups that have completed demonstration flights but must still cross the commercialization &quot;valley of death.&quot; — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Airbus (SpaceNews, 7/23)</strong> — Airbus Defence and Space signaled it stands to benefit from surging demand for European satellite systems. CEO Mike Schoellhorn said there has &quot;never been a better time to reshape the space business.&quot; Underpinning that demand are the European Space Agency, which locked in a record budget at its November 2025 ministerial council; IRIS², the secure-communications constellation led by the EU&#x27;s executive commission; and defense and Earth-observation satellites. The company set a target of lifting its space-division EBIT from €800 million in 2025 to €1.3 billion by 2029. With earnings due July 29, the quiet period kept volume and order figures under wraps. A caveat — what Airbus builds are communications, defense, and observation satellites, not orbital data centers themselves. Still, since any orbital compute constellation ultimately rides on mass-produced satellites, news that a European prime manufacturer is scaling up production capacity reads as an expansion of the industrial base that will support ODCs.<br><br><strong>② Whipsmart Ventures (SpaceNews, 7/23)</strong> — Mark Matossian, a veteran of Isar US and Lonestar Data Holdings (lunar data centers), has founded Whipsmart Ventures, a venture fund specializing in space and deep tech, together with Ryan Masterman and Judy Robinett. The fund&#x27;s size was not disclosed, but its seven investment pillars name &quot;edge and orbital compute&quot; alongside secure positioning and navigation, robotics, real-time intelligence, sovereign technology, edge processing, distributed power, and broadband. It targets Series A startups that have completed demonstration flights but, at 10 to 20 employees, remain stuck at the commercialization threshold. Amid a capital flood in which the space-tech sector raised $7.5 billion in the second quarter of 2026 alone, it signals that specialized capital designed to carry companies across the &quot;valley of death&quot; between lab and market is now expanding into the orbital compute field. Today was not about a milestone in a new ODC program, but a day when the &quot;foundation&quot; those programs will stand on moved. One axis is manufacturing — Europe&#x27;s largest satellite maker is confirming surging demand and scaling up production capacity. The other axis is capital — a specialized fund aimed at space startups at the commercialization threshold has emerged, nailing &quot;orbital compute&quot; into its investment thesis. If last week was an infrastructure chain running through launch caps (7/20), launch engines (7/21), orbital power (7/22), and regulatory reform (7/23), today was the manufacturing-and-capital axis of &quot;who builds and who funds&quot; the satellites that will actually fill that infrastructure. Neither is an orbital data center in itself, but without mass-produced satellites and the capital to push them forward, no orbital compute constellation can stand.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/airbus-space-business-takes-advantage-of-growing-demand-for-satellite-systems/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/mark-matossian-co-founds-whipsmart-ventures-for-space-and-deep-tech/",
+        "label": "SpaceNews"
+      }
+    ]
+  },
   "2026-07-23": {
     "date": "2026-07-23",
     "headlines": [
