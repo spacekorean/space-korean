@@ -1,4 +1,40 @@
 {
+  "2026-07-25": {
+    "date": "2026-07-25",
+    "headlines": [
+      {
+        "date": "2026-07-23",
+        "html": "<a href=\"https://spacenews.com/poland-commits-745-million-to-eus-iris%c2%b2-constellation-project/\" target=\"_blank\" rel=\"noopener\"><strong>China launches actual orbital computing satellites</strong>: The commercial Kinetica-1 rocket, part of the Kuaizhou-class family, lofted five satellites from Jiuquan, among them Chenguang-1, billed as a &quot;space computing satellite,&quot; and Zhitianxing A-04, an &quot;intelligent computing satellite&quot; — putting the first demonstration compute payloads of orbital data center startup Orbital Chenguang into actual orbit — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-07-23",
+        "html": "<a href=\"https://spacenews.com/poland-commits-745-million-to-eus-iris%c2%b2-constellation-project/\" target=\"_blank\" rel=\"noopener\"><strong>Poland pledges $745 million to the EU&#x27;s IRIS²</strong>: Poland has committed €656 million to build its national share of 12 satellites in IRIS² (292 satellites total), the European Union&#x27;s secure communications constellation, marking a substantial inflow of state capital into a European sovereign constellation — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-07-24",
+        "html": "<a href=\"https://spacenews.com/office-of-space-commerce-to-move-ahead-on-mission-authorization/\" target=\"_blank\" rel=\"noopener\"><strong>U.S. Commerce Department activates authorization pathway for &quot;novel space activities&quot;</strong>: The Office of Space Commerce launched an autonomous certification regime for emerging activities outside FAA and FCC jurisdiction, using a &quot;presumption of approval&quot; approach that grants automatic clearance if no objection is raised within 120 days — reducing regulatory uncertainty for new ventures such as orbital servicing, commercial stations, and orbital compute — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Kinetica-1 / Chenguang-1 (SpaceNews, 7/23)</strong> — On July 23, CAS Space&#x27;s commercial Kinetica-1 rocket placed five satellites into orbit from the Jiuquan launch site. Among them, Chenguang-1 is a &quot;space computing satellite&quot; and Zhitianxing A-04 an &quot;intelligent computing satellite&quot; — not communications satellites but compute payloads that perform calculations directly in orbit. Chenguang-1 is the first demonstrator of the &quot;Star Compute&quot; plan being pursued by orbital data center startup Orbital Chenguang, a company that secured credit lines of roughly ¥57.7 billion, or $8.4 billion, this past April and has set targets of 2,800 computing satellites and a gigawatt-class space data center by 2035. As planned, it would deploy 2,400 inference satellites and 400 training satellites into a dawn-dusk sun-synchronous orbit. This was China&#x27;s 50th and 51st orbital launches of 2026; CAS Space has signaled monthly launches in the second half of the year, and China is aiming for 100 launches in a single year for the first time.<br><br><strong>② Poland → IRIS² (SpaceNews, 7/23)</strong> — Poland has committed €656 million, roughly $745 million, to IRIS², the EU&#x27;s secure communications constellation. The money covers the construction of the six medium-Earth-orbit and six low-Earth-orbit satellites allocated as Poland&#x27;s share. IRIS² comprises 292 satellites — 18 in medium Earth orbit, 264 in the upper low-Earth-orbit layer, and 10 in the lower layer — and serves as Europe&#x27;s sovereign communications network to counter SpaceX&#x27;s Starlink, safeguarding government communications while integrating with terrestrial 5G and 6G. If yesterday&#x27;s Airbus story was a &quot;manufacturing demand&quot; signal driven by surging satellite demand, Poland&#x27;s commitment is a &quot;capital&quot; signal of member-state treasuries actually opening up. That said, IRIS² is a communications constellation, not an orbital data center, so it should be read not as ODC itself but as an expansion of the European industrial base that builds and launches large numbers of satellites.<br><br><strong>③ U.S. Office of Space Commerce (SpaceNews, 7/24)</strong> — The Office of Space Commerce, under the U.S. Commerce Department, is activating an autonomous &quot;space commerce certification&quot; regime for novel space activities that fall outside FAA and FCC jurisdiction. When a company submits a proposal, it undergoes interagency review, but is automatically approved under a &quot;presumption of approval&quot; approach if no separate action is taken within 120 days. Director Taylor Jordan said the office would &quot;focus on mature technologies and missions close to real-world operations,&quot; and cited satellite servicing, commercial space stations, and sunlight-reflecting satellites as candidate categories. Although orbital data centers were not directly mentioned, orbital compute platforms are likewise &quot;novel activities&quot; sitting between existing regulatory frameworks, so this reads as the United States paving the licensing runway for this emerging domain in advance. It is another axis of the same &quot;regulatory groundwork&quot; trend as the FCC Part 100 satellite licensing overhaul covered on July 23. Today&#x27;s three stories show, in a single day, three different axes of the race to build in orbit. China proved &quot;capability&quot; by actually putting compute satellites into orbit; Europe moved &quot;capital&quot; by opening the state treasury to a sovereign constellation; and the United States paved the &quot;regulatory&quot; runway for new space ventures. The contours of the U.S.–China orbital data center race in particular are diverging — Orbital Chenguang&#x27;s Chenguang-1 is a core ODC play that has put real compute in orbit, whereas the United States remains at the licensing and regulatory-groundwork stage for SpaceX&#x27;s Starmind, Orbital, and Blue Origin&#x27;s Sunrise. Europe&#x27;s IRIS² and China&#x27;s broadband constellations are not data centers in themselves, but they form the backdrop for who seizes the lead in the prerequisite industries of ODC — mass satellite manufacturing and low-cost launch. In sum, orbital compute is now advancing simultaneously as a hardware race over &quot;who launches first&quot; and an institutional race over &quot;who clears the path first.&quot;",
+    "sources": [
+      {
+        "url": "https://spacenews.com/lightning-strikes-long-march-3b-after-liftoff-kinetica-1-launches-5-satellites/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/china-backs-orbital-data-center-startup-with-8-4-billion-in-credit-lines/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/poland-commits-745-million-to-eus-iris%c2%b2-constellation-project/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/office-of-space-commerce-to-move-ahead-on-mission-authorization/",
+        "label": "SpaceNews"
+      }
+    ]
+  },
   "2026-07-24": {
     "date": "2026-07-24",
     "headlines": [

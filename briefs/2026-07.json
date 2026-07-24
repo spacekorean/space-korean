@@ -1,4 +1,40 @@
 {
+  "2026-07-25": {
+    "date": "2026-07-25",
+    "headlines": [
+      {
+        "date": "2026-07-23",
+        "html": "<a href=\"https://spacenews.com/poland-commits-745-million-to-eus-iris%c2%b2-constellation-project/\" target=\"_blank\" rel=\"noopener\"><strong>중국, 궤도 컴퓨팅 위성 실물 발사</strong>: 상업 발사체 카이저우 계열 카이닉스(Kinetica-1)가 주취안에서 위성 5기를 올렸는데, 그중 천광 1호(Chenguang-1)는 &#x27;우주 컴퓨팅 위성&#x27;, 지톈싱 A-04는 &#x27;지능형 컴퓨팅 위성&#x27;으로, 궤도 데이터센터 스타트업 오비탈 천광의 첫 실증 컴퓨트 페이로드가 실제 궤도에 진입했습니다 — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-07-23",
+        "html": "<a href=\"https://spacenews.com/poland-commits-745-million-to-eus-iris%c2%b2-constellation-project/\" target=\"_blank\" rel=\"noopener\"><strong>폴란드, EU 아이리스투에 7억4500만 달러 투입</strong>: 유럽연합의 보안 통신 컨스텔레이션 IRIS²(총 292기)에 폴란드가 자국 몫 위성 12기 제작비로 6억5600만 유로를 약정하며, 유럽 주권형 컨스텔레이션에 국가 자본이 본격 유입됐습니다 — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-07-24",
+        "html": "<a href=\"https://spacenews.com/lightning-strikes-long-march-3b-after-liftoff-kinetica-1-launches-5-satellites/\" target=\"_blank\" rel=\"noopener\"><strong>미 상무부, &#x27;신규 우주 활동&#x27; 인가 경로 가동</strong>: 우주상무국이 FAA·FCC 관할 밖 신종 활동을 위한 자율 인증 제도를 출범, 120일 내 이의 없으면 자동 승인되는 &#x27;승인 추정&#x27; 방식으로 궤도 서비싱·상업 정거장·궤도 컴퓨트 같은 신규 사업의 규제 불확실성을 낮췄습니다 — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① 카이닉스 / 천광 1호 (SpaceNews, 7/23)</strong> — 7월 23일 CAS 스페이스의 상업 발사체 카이닉스가 주취안 발사장에서 위성 5기를 궤도에 올렸습니다. 이 가운데 천광 1호는 &#x27;우주 컴퓨팅 위성&#x27;, 지톈싱 A-04는 &#x27;지능형 컴퓨팅 위성&#x27;으로, 통신 위성이 아니라 궤도에서 직접 연산을 수행하는 컴퓨트 페이로드입니다. 천광 1호는 궤도 데이터센터 스타트업 오비탈 천광이 추진하는 &#x27;성쏸(Star Compute)&#x27; 계획의 첫 실증기로, 이 회사는 지난 4월 약 577억 위안, 8억4천만 달러 규모 신용 한도를 확보했고 컴퓨팅 위성 2800기, 2035년 기가와트급 우주 데이터센터를 목표로 내걸었습니다. 계획대로면 추론 위성 2400기와 훈련 위성 400기를 새벽-황혼 태양동기궤도에 배치합니다. 이번은 중국의 2026년 50·51번째 궤도 발사로, CAS 스페이스는 하반기 매월 발사를 예고했고 중국은 연 100회 발사를 처음 겨냥하고 있습니다.<br><br><strong>② 폴란드 → IRIS² (SpaceNews, 7/23)</strong> — 폴란드가 EU의 보안 통신 컨스텔레이션 IRIS²에 6억5600만 유로, 약 7억4500만 달러를 약정했습니다. 이 돈은 폴란드 몫으로 배정된 중궤도 위성 6기와 저궤도 위성 6기의 제작비입니다. IRIS²는 중궤도 18기, 저궤도 상층 264기, 저궤도 하층 10기를 합쳐 292기로 구성되며, 스페이스X 스타링크에 맞선 유럽의 주권형 통신망으로 지상 5G·6G와 연동해 정부 통신을 지킵니다. 어제 다룬 에어버스가 위성 수요 급증이라는 &#x27;제조 수요&#x27; 신호였다면, 폴란드의 약정은 회원국 국고가 실제로 열리는 &#x27;자본&#x27; 신호입니다. 다만 IRIS²는 궤도 데이터센터가 아니라 통신 컨스텔레이션으로, ODC 자체가 아니라 대규모 위성을 만들고 띄우는 유럽 산업 기반의 확장으로 봐야 합니다.<br><br><strong>③ 미 우주상무국 (SpaceNews, 7/24)</strong> — 미 상무부 산하 우주상무국이 FAA와 FCC 관할에 속하지 않는 신종 우주 활동을 위한 자율 &#x27;우주 상무 인증&#x27; 제도를 가동합니다. 기업이 제안을 내면 부처 간 검토를 거치되, 120일 내 별도 조치가 없으면 자동 승인되는 &#x27;승인 추정&#x27; 방식입니다. 국장 테일러 조던은 &quot;성숙한 기술과 실운영에 가까운 임무에 집중하겠다&quot;고 밝혔으며, 위성 서비싱·상업 우주정거장·햇빛 반사 위성 등이 대상으로 거론됐습니다. 궤도 데이터센터를 직접 언급하진 않았지만, 궤도 컴퓨트 플랫폼 역시 기존 규제 틀 사이에 놓인 &#x27;신규 활동&#x27;이라, 미국이 이 신흥 영역의 인허가 활주로를 미리 닦는 움직임으로 읽힙니다. 이는 7월 23일 다룬 FCC 파트100 위성 인가 개편과 같은 &#x27;규제 정비&#x27; 흐름의 다른 축입니다. 오늘 세 소식은 궤도 구축 경쟁의 서로 다른 세 축을 하루에 보여줍니다. 중국은 컴퓨트 위성을 실제로 궤도에 올려 &#x27;능력&#x27;을 증명했고, 유럽은 주권형 컨스텔레이션에 국고를 여는 &#x27;자본&#x27;을 움직였으며, 미국은 신규 우주 사업의 &#x27;규제&#x27; 활주로를 닦았습니다. 특히 미·중 궤도 데이터센터 경쟁의 결이 갈립니다 — 오비탈 천광의 천광 1호는 실물 컴퓨트를 궤도에 올린 ODC 핵심 플레이인 반면, 미국은 아직 스페이스X 스타마인드·오비탈·블루오리진 선라이즈의 인가와 규제 정비 단계에 머뭅니다. 유럽의 IRIS²와 중국의 광대역 컨스텔레이션은 그 자체가 데이터센터는 아니지만, 대량 위성 제조와 저비용 발사라는 ODC의 전제 산업을 누가 선점하는지를 가르는 배경입니다. 정리하면, 궤도 컴퓨트는 이제 &#x27;누가 먼저 띄우느냐&#x27;의 하드웨어 경쟁과 &#x27;누가 먼저 길을 터주느냐&#x27;의 제도 경쟁으로 동시에 진행되고 있습니다.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/lightning-strikes-long-march-3b-after-liftoff-kinetica-1-launches-5-satellites/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/china-backs-orbital-data-center-startup-with-8-4-billion-in-credit-lines/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/poland-commits-745-million-to-eus-iris%c2%b2-constellation-project/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/office-of-space-commerce-to-move-ahead-on-mission-authorization/",
+        "label": "SpaceNews"
+      }
+    ]
+  },
   "2026-07-24": {
     "date": "2026-07-24",
     "headlines": [
