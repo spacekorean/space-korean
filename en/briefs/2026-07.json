@@ -1,4 +1,28 @@
 {
+  "2026-07-27": {
+    "date": "2026-07-27",
+    "headlines": [
+      {
+        "date": "2026-07-24",
+        "html": "<a href=\"https://www.universetoday.com/articles/spacexs-starship-deploys-starlink-satellites-during-13th-flight-test\" target=\"_blank\" rel=\"noopener\"><strong>Starship Flight 13 makes first operational deployment of Starlink V3</strong>: On its 13th test flight, SpaceX&#x27;s Starship placed 20 next-generation Starlink V3 satellites into orbit, deploying a functional payload for the first time, with both the booster and upper stage splashing down smoothly — the first demonstration of the operational Starship capability that mass deployment of orbital data centers depends on — (SpaceNews / Universe Today)</a>"
+      }
+    ],
+    "summary_html": "<strong>① SpaceX (7/24)</strong> — SpaceX carried out a successful 13th Starship flight from Starbase, Texas, on July 24, deploying 20 next-generation Starlink V3 satellites into orbit. It was the first time Starship placed a functioning payload in orbit; both the Super Heavy booster and the upper stage landed successfully, with the upper stage making its smoothest-ever splashdown in the Indian Ocean. Each V3 satellite targets 1 terabit of downlink, 160 to 200 gigabits of uplink, and roughly 4 terabits of combined laser and radio bandwidth, and SpaceX is planning a launch cadence that would deploy up to 60 per Starship flight. While the V3 satellites themselves are broadband communications satellites rather than orbital data centers, SpaceX&#x27;s vision of a million-satellite orbital data center hinges entirely on whether Starship can deploy large volumes of satellites cheaply and repeatedly — making this first operational deployment a significant crossing of that launch-infrastructure threshold. The economics of SpaceX&#x27;s orbital data centers turn on launch, not the satellites. The million-satellite concept filed with the FCC on January 30 envisions roughly 120 kilowatts per satellite harvested from solar power at altitudes of 500 to 2,000 kilometers, linked by a laser mesh and dumping heat by radiation — a scale that only works once Starship enters operational service. This first V3 deployment shows that launch capability has moved beyond the test-flight stage into actual payload operations, and the same V3 bus is also the foundation for the on-orbit compute demonstrations (AI satellites) that SpaceX has previewed. That said, headwinds from capital, regulation, and the environment sharpened the same week: short-seller Jim Chanos is skeptical of Musk&#x27;s declaration that he will &quot;start putting up orbital data centers next year,&quot; and astronomers warn that mass satellite deployments could interfere with observations. Launch capability has entered the proven stage, but economics and social acceptance remain open questions.",
+    "sources": [
+      {
+        "url": "https://www.universetoday.com/articles/spacexs-starship-deploys-starlink-satellites-during-13th-flight-test",
+        "label": "universetoday.com"
+      },
+      {
+        "url": "https://www.space.com/news/live/spacex-starship-flight-13-launch-updates-july-24-2026",
+        "label": "Space.com"
+      },
+      {
+        "url": "https://keeptrack.space/space-brief/space-brief-2026-07-25",
+        "label": "keeptrack.space"
+      }
+    ]
+  },
   "2026-07-25": {
     "date": "2026-07-25",
     "headlines": [

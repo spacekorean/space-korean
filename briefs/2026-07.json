@@ -1,4 +1,28 @@
 {
+  "2026-07-27": {
+    "date": "2026-07-27",
+    "headlines": [
+      {
+        "date": "2026-07-24",
+        "html": "<a href=\"https://www.universetoday.com/articles/spacexs-starship-deploys-starlink-satellites-during-13th-flight-test\" target=\"_blank\" rel=\"noopener\"><strong>스타십 13호, 스타링크 V3 첫 실전 배치</strong>: 스페이스X 스타십이 13차 시험비행에서 차세대 스타링크 V3 위성 20기를 궤도에 올리며 처음으로 실제 탑재체를 배치했고, 부스터와 상단이 모두 부드럽게 착수했습니다 — 궤도 데이터센터 대량 배치의 전제인 스타십의 실전 운용 능력이 처음으로 입증됐습니다 — (SpaceNews / Universe Today)</a>"
+      }
+    ],
+    "summary_html": "<strong>① 스페이스X (SpaceX, 7/24)</strong> — 스페이스X가 7월 24일 텍사스 스타베이스에서 스타십 13차 비행을 성공시키며, 차세대 스타링크 V3 위성 20기를 궤도에 배치했습니다. 스타십이 기능하는 탑재체를 실제로 궤도에 올린 것은 이번이 처음으로, 슈퍼헤비 부스터와 상단이 모두 착륙에 성공했고 상단은 인도양에 역대 가장 부드럽게 착수했습니다. V3 위성 한 기는 하향 링크 1테라비트, 상향 160에서 200기가비트, 레이저와 무선을 합쳐 약 4테라비트에 달하는 대역폭을 목표로 하며, 스페이스X는 스타십 한 번에 최대 60기까지 배치하는 발사 리듬을 계획하고 있습니다. 이번 V3 위성 자체는 궤도 데이터센터가 아닌 광대역 통신 위성이지만, 스페이스X의 백만 기 규모 궤도 데이터센터 구상은 스타십이 대량 위성을 값싸게 반복 배치할 수 있느냐에 전적으로 달려 있어, 이번 첫 실전 배치가 그 발사 인프라의 문턱을 넘었다는 의미가 큽니다. 스페이스X의 궤도 데이터센터 경제성은 위성이 아니라 발사에서 갈립니다. 1월 30일 FCC에 제출한 백만 기 구상은 고도 500에서 2천 킬로미터에서 위성당 약 120킬로와트를 태양광으로 얻고 레이저 메시로 연결해 복사로 열을 버리는 그림인데, 이 규모는 스타십이 실전 운용에 진입해야만 성립합니다. 이번 V3 첫 배치는 그 발사 능력이 시험비행 단계를 벗어나 실제 탑재체 운용으로 넘어갔음을 보여주며, 같은 V3 버스는 스페이스X가 예고한 온궤도 컴퓨트 시범(AI 위성) 계열의 토대이기도 합니다. 다만 머스크가 &quot;내년부터 궤도 데이터센터를 띄우겠다&quot;고 공언한 데 대해 공매도 투자자 짐 차노스는 회의적이고, 천문학계는 대량 위성이 관측을 방해할 수 있다고 경고하는 등 자본과 규제·환경 쪽 역풍도 같은 주에 뚜렷해졌습니다. 발사 능력은 증명 단계로 들어섰지만, 경제성과 사회적 수용은 아직 열려 있는 질문입니다.",
+    "sources": [
+      {
+        "url": "https://www.universetoday.com/articles/spacexs-starship-deploys-starlink-satellites-during-13th-flight-test",
+        "label": "universetoday.com"
+      },
+      {
+        "url": "https://www.space.com/news/live/spacex-starship-flight-13-launch-updates-july-24-2026",
+        "label": "Space.com"
+      },
+      {
+        "url": "https://keeptrack.space/space-brief/space-brief-2026-07-25",
+        "label": "keeptrack.space"
+      }
+    ]
+  },
   "2026-07-25": {
     "date": "2026-07-25",
     "headlines": [
