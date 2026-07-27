@@ -1,4 +1,28 @@
 {
+  "2026-07-28": {
+    "date": "2026-07-28",
+    "headlines": [
+      {
+        "date": "2026-07-27",
+        "html": "<a href=\"https://spacenews.com/intel-debuts-new-chip-for-space-computing/\" target=\"_blank\" rel=\"noopener\"><strong>Intel unveils &#x27;Starfire&#x27; space computing chip</strong>: A commercial-based space SoC integrating CPU, graphics, neural network, and image processing on a single chip. Targeting on-orbit AI inference and data processing — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-07-27",
+        "html": "<a href=\"https://spacenews.com/amazon-files-application-for-direct-to-device-satellite-constellation/\" target=\"_blank\" rel=\"noopener\"><strong>Amazon files FCC application for 5,105-satellite direct-to-device (D2D) constellation</strong>: Building a direct-to-phone network using spectrum secured through its Globalstar acquisition. To operate alongside Amazon&#x27;s Leo broadband network — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Intel (SpaceNews, 7/27)</strong> — Intel has unveiled &#x27;Starfire,&#x27; a system-on-chip designed for satellite payloads. The x86-based chip bundles CPU, GPU, neural network, and image processing into one package, runs Ubuntu Linux, and receives regular software updates. The low-power model draws under 10 watts, with a design life of more than 10 years. The core aim is to handle onboard AI tasks — image analysis, object detection, anomaly detection, and sensor fusion — on the satellite itself. Rather than the expensive, radiation-hardened dedicated chips that have long stood in the way of on-orbit compute, Intel is seeking to bring commercial semiconductor performance and a software ecosystem into orbit. Radiation certification is slated for completion in the third quarter, with customer deliveries targeted for year-end. Intel has signed contracts with multiple government and channel partners but did not disclose customer names.<br><br><strong>② Amazon (SpaceNews, 7/27)</strong> — Amazon has filed an FCC application for a 5,105-satellite direct-to-device (D2D) constellation. Operating at altitudes of 510 to 580 kilometers, the company has secured more than 11,000 orbital slots but will cap actual deployment at 5,105 satellites. It will use the 1.6 and 2.4 GHz bands — obtained through the Globalstar acquisition announced in April — for handset communications, while gateways and control links will use Ka- and V-band. The acquisition is expected to close in 2027. The network will be coordinated with Amazon&#x27;s Leo broadband constellation to enable text messaging, emergency communications, and vehicle and Internet-of-Things connectivity. While the network itself is not an orbital data center, the capability to design, mass-produce, and deploy a fleet of 5,000-plus satellites is the industrial foundation underpinning any orbital compute constellation. Today&#x27;s two stories illustrate two different layers that underpin orbital data centers. Intel represents the &#x27;chip&#x27; layer. The long-standing bottleneck for on-orbit compute has been expensive, slow, radiation-hardened dedicated semiconductors, and Intel aims to lower that barrier with a commercial-based chip that runs Ubuntu and the x86 ecosystem as-is. Since orbital compute only works when satellites can run AI inference on their own, an entry at the silicon level speaks directly to this channel&#x27;s premise. Amazon represents the &#x27;scale&#x27; layer. While the D2D network itself is a communications network, not a data center, the ability to mass-produce and deploy more than 5,000 satellites is a prerequisite for any orbital compute megaconstellation. Set against this week&#x27;s trend of China actually launching orbital compute satellites, a picture emerges of the United States, where Big Tech is filling in the orbital compute stack along different avenues — silicon (Intel) and mass deployment (Amazon).",
+    "sources": [
+      {
+        "url": "https://spacenews.com/intel-debuts-new-chip-for-space-computing/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/amazon-files-application-for-direct-to-device-satellite-constellation/",
+        "label": "SpaceNews"
+      }
+    ]
+  },
   "2026-07-27": {
     "date": "2026-07-27",
     "headlines": [
