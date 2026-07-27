@@ -29,6 +29,9 @@
     .lang-switcher { display: flex; gap: 8px; justify-content: center; margin-top: 18px; }
     .lang-switcher a { text-decoration: none; color: var(--muted); font-size: 0.85rem; font-weight: 600; padding: 5px 14px; border: 1px solid var(--border); border-radius: 20px; background: var(--tag-bg); transition: color .2s, border-color .2s, background .2s; }
     .lang-switcher a:hover { color: var(--cyan); border-color: var(--border-glow); }
+    .lang-switcher .sep { width: 1px; align-self: stretch; background: var(--border); margin: 2px 2px; }
+    .lang-switcher a.yt-link { color: var(--white); border-color: rgba(255,72,72,0.45); background: rgba(255,72,72,0.12); }
+    .lang-switcher a.yt-link:hover { color: #fff; border-color: #ff4848; background: rgba(255,72,72,0.22); }
     .lang-switcher a.active { color: var(--white); border-color: var(--cyan); background: rgba(56,189,248,0.18); }
     header::before { content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 600px; height: 200px; background: radial-gradient(ellipse at center,rgba(56,189,248,.10) 0%,transparent 70%); pointer-events: none; }
     .section-label { display: flex; align-items: center; gap: 12px; margin: 40px 0 16px; font-size: 0.72rem; font-weight: 700; color: var(--muted); letter-spacing: 2.5px; text-transform: uppercase; }
@@ -122,6 +125,8 @@
       <a href="./en/">🇬🇧 English</a>
       <a href="./" class="active">🇰🇷 한국어</a>
       <a href="./thai/">🇹🇭 ไทย</a>
+      <span class="sep" aria-hidden="true"></span>
+      <a class="yt-link" href="https://www.youtube.com/@spacedc" target="_blank" rel="noopener">▶ 유튜브 채널</a>
     </div>
   </header>
   <div class="section-label">최신 브리핑</div>
