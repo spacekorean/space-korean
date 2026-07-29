@@ -212,6 +212,35 @@
     var lastAnchor = (location.hash || "").replace(/^#/, "");
     window.addEventListener("hashchange", function () { var cur = (location.hash || "").replace(/^#/, ""); if (cur !== lastAnchor) { lastAnchor = cur; fireBeacon(); } });
 
+    // --- outbound click beacon ---
+    function clickLang() {
+      var p = location.pathname;
+      if (/\/en\/?$|\/en\//.test(p)) return "en";
+      if (/\/thai\/?$|\/thai\//.test(p)) return "th";
+      return "ko";
+    }
+    document.addEventListener("click", function (ev) {
+      if (localHost || unconfigured) return;
+      var a = ev.target && ev.target.closest ? ev.target.closest("a[href]") : null;
+      if (!a) return;
+      var href = a.getAttribute("href") || "";
+      if (!/^https?:/i.test(href)) return;
+      if (a.host === location.host) return;
+      var kind = a.classList.contains("yt-link") ? "youtube_channel"
+               : a.classList.contains("video-cta") ? "card_video"
+               : (a.classList.contains("src-link") || a.closest(".headline-list")) ? "source"
+               : "other";
+      var card = a.closest ? a.closest(".card") : null;
+      var payload = JSON.stringify({ lang: clickLang(), kind: kind, href: href, anchor: card ? (card.id || "") : "" });
+      var sent = false;
+      if (navigator.sendBeacon) {
+        try { sent = navigator.sendBeacon(WORKER_URL + "/click", new Blob([payload], { type: "application/json" })); } catch (_) {}
+      }
+      if (!sent) {
+        fetch(WORKER_URL + "/click", { method: "POST", headers: { "Content-Type": "application/json" }, body: payload, keepalive: true, mode: "cors", credentials: "omit" }).catch(function () {});
+      }
+    }, true);
+
     var form = document.getElementById("tipForm");
     if (form) {
       form.addEventListener("submit", function (e) {

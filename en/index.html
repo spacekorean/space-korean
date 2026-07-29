@@ -229,6 +229,43 @@
       if (cur !== lastAnchor) { lastAnchor = cur; fireBeacon(); }
     });
 
+    // --- outbound click beacon ---
+    // One delegated listener: which links actually take people off the site
+    // (YouTube channel button, a card's video CTA, source articles). Fires on
+    // capture so it still records when the browser navigates away.
+    function clickLang() {
+      var p = location.pathname;
+      if (/\/en\/?$|\/en\//.test(p)) return "en";
+      if (/\/thai\/?$|\/thai\//.test(p)) return "th";
+      return "ko";
+    }
+    document.addEventListener("click", function (ev) {
+      if (localHost || unconfigured) return;
+      var a = ev.target && ev.target.closest ? ev.target.closest("a[href]") : null;
+      if (!a) return;
+      var href = a.getAttribute("href") || "";
+      if (!/^https?:/i.test(href)) return;               // internal / hash links: ignore
+      if (a.host === location.host) return;              // same-site absolute links: ignore
+      var kind = a.classList.contains("yt-link") ? "youtube_channel"
+               : a.classList.contains("video-cta") ? "card_video"
+               : (a.classList.contains("src-link") || a.closest(".headline-list")) ? "source"
+               : "other";
+      var card = a.closest ? a.closest(".card") : null;
+      var payload = JSON.stringify({
+        lang: clickLang(),
+        kind: kind,
+        href: href,
+        anchor: card ? (card.id || "") : "",
+      });
+      var sent = false;
+      if (navigator.sendBeacon) {
+        try { sent = navigator.sendBeacon(WORKER_URL + "/click", new Blob([payload], { type: "application/json" })); } catch (_) {}
+      }
+      if (!sent) {
+        fetch(WORKER_URL + "/click", { method: "POST", headers: { "Content-Type": "application/json" }, body: payload, keepalive: true, mode: "cors", credentials: "omit" }).catch(function () {});
+      }
+    }, true);
+
     // --- news-tip form submit ---
     var form = document.getElementById("tipForm");
     if (form) {
