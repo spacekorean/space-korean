@@ -29,6 +29,12 @@
     .lang-switcher { display: flex; gap: 8px; justify-content: center; margin-top: 18px; }
     .lang-switcher a { text-decoration: none; color: var(--muted); font-size: 0.85rem; font-weight: 600; padding: 5px 14px; border: 1px solid var(--border); border-radius: 20px; background: var(--tag-bg); transition: color .2s, border-color .2s, background .2s; }
     .lang-switcher a:hover { color: var(--cyan); border-color: var(--border-glow); }
+    .card-video-badge { font-size: 0.78rem; font-weight: 700; color: #ff9a9a; background: rgba(255,72,72,0.12); border: 1px solid rgba(255,72,72,0.40); border-radius: 20px; padding: 3px 12px; white-space: nowrap; }
+    .video-cta { display: flex; align-items: center; gap: 14px; margin: 18px 0 2px; padding: 14px 16px; border: 1px solid rgba(255,72,72,0.35); background: rgba(255,72,72,0.08); border-radius: 12px; text-decoration: none; transition: border-color .2s, background .2s; }
+    .video-cta:hover { border-color: rgba(255,72,72,0.7); background: rgba(255,72,72,0.16); }
+    .video-cta .play { font-size: 1.4rem; color: #ff6b6b; line-height: 1; }
+    .video-cta .vc-main { display: block; color: var(--white); font-weight: 700; font-size: 0.95rem; }
+    .video-cta .vc-sub { display: block; color: var(--muted); font-size: 0.8rem; margin-top: 3px; line-height: 1.35; }
     .lang-switcher .sep { width: 1px; align-self: stretch; background: var(--border); margin: 2px 2px; }
     .lang-switcher a.yt-link { color: var(--white); border-color: rgba(255,72,72,0.45); background: rgba(255,72,72,0.12); }
     .lang-switcher a.yt-link:hover { color: #fff; border-color: #ff4848; background: rgba(255,72,72,0.22); }
@@ -296,6 +302,8 @@
       summary: "🔍 오늘의 핵심",
       countOne: function (n) { return "헤드라인 " + n + "건"; },
       loadMore: "이전 브리핑 더 보기",
+      videoBadge: "▶ 영상",
+      videoCta: "이 브리핑을 영상으로 보기",
       error: "브리핑을 불러오지 못했습니다. 잠시 후 새로고침해 주세요."
     };
     var container = document.getElementById("cards-container");
@@ -320,11 +328,16 @@
       }).join('');
       return '<div class="card' + (isLatest ? ' open' : '') + '" id="brief-' + esc(c.date) + '">'
         + '<div class="card-header" onclick="toggleCard(this)">'
-        + '<div class="card-meta"><span class="card-date">' + pretty(c.date) + '</span></div>'
+        + '<div class="card-meta"><span class="card-date">' + pretty(c.date) + '</span>'
+        + (c.video ? '<span class="card-video-badge">' + L.videoBadge + '</span>' : '') + '</div>'
         + '<div class="card-title-row"><div class="card-edition">' + edition + '</div>'
         + '<div class="card-count">' + L.countOne((c.headlines || []).length) + '</div></div>'
         + '<div class="toggle-icon">▼</div></div>'
-        + '<div class="card-body"><div class="section-title">' + L.section + '</div>'
+        + '<div class="card-body">'
+        + (c.video ? '<a class="video-cta" href="https://youtube.com/shorts/' + esc(c.video.id) + '" target="_blank" rel="noopener">'
+            + '<span class="play">\u25B6</span><span><span class="vc-main">' + L.videoCta + '</span>'
+            + '<span class="vc-sub">' + esc(c.video.title || '') + '</span></span></a>' : '')
+        + '<div class="section-title">' + L.section + '</div>'
         + '<ul class="headline-list">' + hls + '</ul>'
         + '<div class="summary-box"><div class="summary-label">' + L.summary + '</div>'
         + '<div class="summary-text">' + (c.summary_html || '') + '</div></div>'
