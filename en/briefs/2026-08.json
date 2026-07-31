@@ -1,0 +1,13 @@
+{
+  "2026-08-01": {
+    "date": "2026-08-01",
+    "headlines": [
+      {
+        "date": "2026-07-30",
+        "html": "<strong>Orbital data center constellations need &quot;rules of the road&quot;</strong>: As orbital data center plans on the scale of Starcloud&#x27;s 88,000 satellites and SpaceX&#x27;s 1 million take shape, a Washington policy panel warned that space traffic coordination standards to prevent satellite collisions must be established now — (SpaceNews)"
+      }
+    ],
+    "summary_html": "<strong>① SpaceNews (SpaceNews, 7/30)</strong> — At a July 29 panel hosted by the Secure World Foundation in Washington, Starcloud co-founder and chief technology officer Ezra Feilden, along with officials from The Aerospace Corporation, Planet, and the U.S. Commerce Department&#x27;s Office of Space Commerce, raised the question of traffic management for orbital data center constellations. Starcloud has filed for 88,000 satellites and SpaceX for as many as 1 million, and the analysis warns that satellite avoidance maneuvers — currently running in the hundreds of thousands per year — could surge to roughly 500 million per year in a 1-million-satellite era. The dawn-dusk sun-synchronous orbits where data center satellites are expected to cluster are of particular concern, since every satellite must travel in the same direction; Feilden warned it would be &quot;like a highway where no one has decided which lane to drive in — the risk of head-on collisions would be enormous.&quot; Participants proposed that industry set its own standards ahead of government-mandated regulation, through the Commerce Department&#x27;s build-out of TraCSS, a space traffic coordination system modeled on air traffic control, and through the Space Commerce certification program, which is currently voluntary.",
+    "sources": []
+  }
+}
