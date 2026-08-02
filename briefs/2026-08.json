@@ -1,4 +1,32 @@
 {
+  "2026-08-03": {
+    "date": "2026-08-03",
+    "headlines": [
+      {
+        "date": "2026-07-31",
+        "html": "<a href=\"https://spacenews.com/spain-commits-up-to-2-3-billion-for-national-military-communications-for-iris%c2%b2/\" target=\"_blank\" rel=\"noopener\"><strong>스페인, IRIS² 주권 군위성망에 최대 20억 유로</strong>: 유럽 자체 컨스텔레이션 IRIS²에 연동되는 국가 군용 위성통신망 구축에 스페인이 최대 20억 유로(약 23억 달러)를 배정, 단일 국가로는 최대 후원국에 올랐습니다 — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-08-01",
+        "html": "<a href=\"https://spacenews.com/space-force-awards-k2-space-22-9-million-for-orbital-laser-communications-demonstration/\" target=\"_blank\" rel=\"noopener\"><strong>미우주군, K2 스페이스에 위성 간 레이저 통신 실증 2천290만 달러</strong>: 궤도 데이터센터용 기가와트급 버스를 만드는 K2 스페이스가 위성끼리 직접 데이터를 주고받는 광통신 단말 실증 계약을 따냈습니다 — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① 스페인 국방부 (SpaceNews, 7/31)</strong> — 스페인이 유럽연합의 저궤도·중궤도 통신 컨스텔레이션 IRIS²에 통합될 자국 군용 위성통신망에 16억에서 20억 유로를 투입하기로 했습니다. 며칠 앞서 약 7억 5천만 달러를 약속한 폴란드를 넘어서는 규모로, IRIS²의 단일 국가 최대 후원국이 됐습니다. 총사업비 백육억 유로에 위성 약 이백구십이 기 규모인 IRIS²는 이천삼십 년 완전 가동을 목표로 하며, 스페인은 중궤도 여섯 기와 저궤도 여섯 기, 지상 관문국까지 직접 확보합니다. 국방부는 이번 예산이 &quot;우주 부문과 지상 관제, 시스템 운용 전 수명주기&quot;를 포괄한다고 밝혔습니다. 궤도 데이터센터 자체는 아니지만, 유럽이 위성을 대량으로 만들고 운용하는 주권 인프라를 갖추는 흐름입니다.<br><br><strong>② K2 스페이스 (SpaceNews, 8/1)</strong> — 미우주군이 K2 스페이스에 2천290만 달러를 지급해 위성 간 레이저 통신을 실증합니다. K2는 두 기의 자사 위성에 &#x27;엔터프라이즈 스페이스 터미널&#x27;을 얹어 조달·통합·발사·운용하며, 이천이십팔 년 완료가 목표입니다. 이 광학 단말은 지상국을 거치지 않고 위성끼리 직접 데이터를 쏘는 장치로, 국방부가 추진하는 다궤도 분산 감시망에서 미사일 경보·추적·표적 정보를 빠르게 나누기 위한 &#x27;스페이스 데이터 네트워크&#x27;의 일부입니다. K2는 지난주 오억 달러 시리즈 D를 유치하며 궤도 데이터센터용 기가와트급 대형 버스를 내세운 곳으로, 이번 광통신 실증은 궤도 컴퓨트 컨스텔레이션이 반드시 필요로 하는 위성 간 광 백본 기술을 함께 검증하는 셈입니다. 오늘 두 소식은 궤도 데이터센터의 &#x27;노드&#x27;가 아니라 그 아래를 떠받치는 인프라와 자본 이야기입니다. 스페인의 이십억 유로는 누가 컨스텔레이션을 짓고 소유하느냐 — 유럽의 위성 양산·운용 주권 — 를 보여주고, K2의 광통신 계약은 위성끼리 지상국 없이 데이터를 나르는 광 백본을 검증합니다. 두 가지 모두 그 자체로는 데이터센터가 아니라 통신·국방용이지만, 대량 생산되는 위성과 위성 간 광 네트워크는 스페이스X의 백만 기 궤도 데이터센터든 스타클라우드의 팔만 팔천 기든 모든 궤도 컴퓨트 구상이 딛고 설 전제 조건입니다. 소피아 스페이스의 특허, 규제 논의 같은 코어 헤드라인이 앞줄을 차지하는 사이, 정부와 국방 자금은 그 밑단의 산업 기반과 광 백본으로 조용히 흘러들고 있습니다.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/spain-commits-up-to-2-3-billion-for-national-military-communications-for-iris%c2%b2/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/space-force-awards-k2-space-22-9-million-for-orbital-laser-communications-demonstration/",
+        "label": "SpaceNews"
+      }
+    ],
+    "video": {
+      "id": "NrTQcNuHxzU",
+      "title": "K2 스페이스, 미우주군 레이저 위성 광통신 계약 수주"
+    }
+  },
   "2026-08-01": {
     "date": "2026-08-01",
     "headlines": [

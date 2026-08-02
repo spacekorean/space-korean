@@ -1,4 +1,28 @@
 {
+  "2026-08-03": {
+    "date": "2026-08-03",
+    "headlines": [
+      {
+        "date": "2026-07-31",
+        "html": "<a href=\"https://spacenews.com/spain-commits-up-to-2-3-billion-for-national-military-communications-for-iris%c2%b2/\" target=\"_blank\" rel=\"noopener\"><strong>Spain commits up to €2 billion to IRIS² sovereign military satellite network</strong>: Spain has allocated up to €2 billion (about $2.3 billion) to build a national military satellite communications network tied into Europe&#x27;s own IRIS² constellation, making it the largest single-nation backer — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-08-01",
+        "html": "<a href=\"https://spacenews.com/space-force-awards-k2-space-22-9-million-for-orbital-laser-communications-demonstration/\" target=\"_blank\" rel=\"noopener\"><strong>U.S. Space Force awards K2 Space $22.9 million for satellite-to-satellite laser communications demo</strong>: K2 Space, which builds gigawatt-class buses for orbital data centers, has won a contract to demonstrate optical communications terminals that let satellites exchange data directly with one another — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Spanish Ministry of Defense (SpaceNews, 7/31)</strong> — Spain will invest between €1.6 billion and €2 billion in a national military satellite communications network to be integrated into IRIS², the European Union&#x27;s low- and medium-Earth-orbit communications constellation. The figure surpasses the roughly $750 million pledged days earlier by Poland, making Spain the largest single-nation backer of IRIS². With a total program cost of €10.6 billion and a fleet of about 292 satellites, IRIS² is targeting full operation by 2030, and Spain will directly secure six medium-orbit and six low-orbit satellites along with a ground gateway station. The Ministry of Defense said the budget covers &quot;the space segment, ground control, and the entire lifecycle of system operations.&quot; It is not an orbital data center in itself, but it reflects Europe&#x27;s move to build sovereign infrastructure for mass-producing and operating satellites.<br><br><strong>② K2 Space (SpaceNews, 8/1)</strong> — The U.S. Space Force is paying K2 Space $22.9 million to demonstrate satellite-to-satellite laser communications. K2 will procure, integrate, launch, and operate two of its own satellites fitted with the &quot;Enterprise Space Terminal,&quot; with completion targeted for 2028. These optical terminals beam data directly between satellites without routing through a ground station, and they form part of the &quot;space data network&quot; the Department of Defense is pursuing to rapidly share missile-warning, tracking, and targeting information across a multi-orbit distributed surveillance layer. K2, which raised a $500 million Series D last week on the strength of its gigawatt-class large buses for orbital data centers, is with this optical demonstration validating the satellite-to-satellite optical backbone technology that any orbital compute constellation will require. Today&#x27;s two stories are not about the &quot;nodes&quot; of an orbital data center but about the infrastructure and capital underpinning them. Spain&#x27;s €2 billion speaks to who builds and owns the constellation — Europe&#x27;s sovereignty over satellite mass production and operation — while K2&#x27;s optical communications contract validates the optical backbone that carries data between satellites without a ground station. Neither is a data center in itself; both serve communications and defense. But mass-produced satellites and satellite-to-satellite optical networks are the precondition on which every orbital compute vision stands, whether SpaceX&#x27;s million-satellite orbital data center or Starcloud&#x27;s 88,000. While core headlines like Sophia Space&#x27;s patents and regulatory debates take the front row, government and defense money is quietly flowing into the industrial base and optical backbone beneath them.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/spain-commits-up-to-2-3-billion-for-national-military-communications-for-iris%c2%b2/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/space-force-awards-k2-space-22-9-million-for-orbital-laser-communications-demonstration/",
+        "label": "SpaceNews"
+      }
+    ]
+  },
   "2026-08-01": {
     "date": "2026-08-01",
     "headlines": [
