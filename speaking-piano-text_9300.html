@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Speaking Piano — 글자를 치다</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --stage:#0e0c0a; --stage2:#171310;
+    --ivory:#f3ede0; --brass:#b98a3a; --brass-hi:#e0b96a;
+    --felt:#8a2323; --smoke:#6b6257;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:var(--stage);color:var(--ivory);font-family:'IBM Plex Sans KR',sans-serif;-webkit-font-smoothing:antialiased}
+  body{min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:26px 14px 50px}
+  .wrap{width:100%;max-width:900px}
+
+  header{margin-bottom:20px}
+  .eyebrow{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.22em;color:var(--brass);text-transform:uppercase;margin-bottom:8px}
+  h1{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(30px,5.6vw,48px);line-height:1.05}
+  h1 em{font-style:italic;font-weight:600;color:var(--brass-hi)}
+  .sub{margin-top:10px;font-size:13.5px;line-height:1.65;color:var(--smoke);max-width:62ch}
+
+  .panel{background:var(--stage2);border:1px solid #2a231c;border-radius:10px;padding:16px;margin-bottom:12px}
+  textarea{width:100%;min-height:72px;resize:vertical;background:#0b0906;border:1px solid #33291f;border-radius:8px;
+    color:var(--ivory);font-family:'IBM Plex Sans KR',sans-serif;font-size:17px;line-height:1.6;padding:12px 14px}
+  textarea:focus{outline:2px solid var(--brass);outline-offset:1px}
+  textarea::placeholder{color:#4a4239}
+
+  .row{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:12px}
+  button{font-family:'IBM Plex Sans KR',sans-serif;font-size:14px;font-weight:500;border:none;border-radius:7px;
+    padding:11px 18px;cursor:pointer;transition:transform .08s ease,background .15s ease}
+  button:active{transform:translateY(1px)}
+  button:focus-visible{outline:2px solid var(--brass-hi);outline-offset:2px}
+  .btn-brass{background:var(--brass);color:#1a1206}
+  .btn-brass:hover{background:var(--brass-hi)}
+  .btn-ghost{background:transparent;color:var(--ivory);border:1px solid #3a3128}
+  .btn-ghost:hover{border-color:var(--brass)}
+  button:disabled{opacity:.35;cursor:not-allowed}
+  .status{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--smoke);margin-left:auto}
+  .tip{margin-top:10px;font-size:12px;color:var(--smoke);line-height:1.6}
+  .tip b{color:var(--brass-hi);font-weight:500}
+
+  .controls{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px}
+  .ctrl label{display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:11px;
+    letter-spacing:.06em;color:var(--smoke);margin-bottom:7px;text-transform:uppercase}
+  .ctrl label b{color:var(--brass-hi);font-weight:500}
+  input[type=range]{width:100%;accent-color:var(--brass);height:22px}
+
+  .now{height:66px;display:flex;align-items:center;justify-content:center;gap:4px;overflow:hidden;flex-wrap:wrap}
+  .now .syl{font-family:'Fraunces',serif;font-size:22px;color:#4a4239;transition:all .1s ease;font-weight:300}
+  .now .syl.on{color:var(--brass-hi);font-size:42px;font-weight:600;text-shadow:0 0 26px rgba(224,185,106,.35)}
+  .now .syl.done{color:#7a6f5f}
+
+  .kb-shell{background:linear-gradient(#241c13,#171208);border:1px solid #33281a;border-radius:12px;padding:14px 12px 16px;
+    box-shadow:0 14px 40px rgba(0,0,0,.55)}
+  .fallboard{height:10px;border-radius:4px 4px 0 0;margin:0 2px;
+    background:linear-gradient(90deg,#3a2c17,#6b4f24 18%,#8a6a30 50%,#6b4f24 82%,#3a2c17);
+    box-shadow:inset 0 -2px 4px rgba(0,0,0,.6)}
+  .felt-strip{height:4px;background:var(--felt);margin:0 2px}
+  .kb{position:relative;display:flex;height:150px;margin:0 2px;user-select:none}
+  .wk{flex:1;position:relative;background:linear-gradient(#fbf7ec,#eee6d4 82%,#d8cdb5);
+    border:1px solid #b7ab92;border-top:none;border-radius:0 0 3px 3px;
+    transition:transform 40ms ease-out, background 40ms ease-out, box-shadow 40ms ease-out;
+    transform-origin:top;box-shadow:0 3px 0 #b3a78d}
+  .wk.down{transform:perspective(400px) rotateX(4.5deg) translateY(1px);
+    background:linear-gradient(#f2e2b6,#e0b96a 85%,#c69a48);box-shadow:0 1px 0 #9c8756, 0 0 18px rgba(224,185,106,.5)}
+  .bk{position:absolute;top:0;height:62%;z-index:2;border-radius:0 0 3px 3px;
+    background:linear-gradient(#3a332b,#14100c 70%,#000);border:1px solid #000;border-top:none;
+    transition:transform 40ms ease-out, background 40ms ease-out, box-shadow 40ms ease-out;transform-origin:top;
+    box-shadow:0 3px 2px rgba(0,0,0,.7)}
+  .bk.down{transform:perspective(400px) rotateX(5deg) translateY(1px);
+    background:linear-gradient(#8a6a30,#5c4318 70%,#2c1f0a);box-shadow:0 1px 1px rgba(0,0,0,.7), 0 0 14px rgba(185,138,58,.55)}
+
+  footer{margin-top:18px;font-size:12px;color:var(--smoke);line-height:1.7}
+  footer span{color:var(--brass)}
+  @media (prefers-reduced-motion: reduce){ .wk,.bk,button,.now .syl{transition:none} }
+  @media (max-width:640px){ .kb{height:110px} .now .syl{font-size:18px} .now .syl.on{font-size:32px} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">After Peter Ablinger · Quadraturen III</div>
+    <h1>글자를 <em>치다</em></h1>
+    <p class="sub">문장 → 자모 분해 → 포먼트 궤적 합성 → 성대 배음 전체(최대 40개)를 스펙트럼 포락선 크기대로 건반에 양자화. 화음 하나가 음성 스펙트럼 한 조각입니다.</p>
+  </header>
+
+  <div class="panel">
+    <textarea id="text" placeholder="안녕하세요" spellcheck="false">안녕하세요, 말하는 피아노입니다.</textarea>
+    <div class="row">
+      <button id="playPianoBtn" class="btn-brass">▶ 피아노로 말하기</button>
+      <button id="playVoiceBtn" class="btn-ghost">합성 음성 듣기</button>
+      <button id="stopBtn" class="btn-ghost" disabled>정지</button>
+      <button id="dlBtn" class="btn-ghost" disabled>WAV 저장</button>
+      <span class="status" id="status">대기 중</span>
+    </div>
+    <div class="tip"><b>듣는 요령:</b> 먼저 "합성 음성"을 한 번 듣고 피아노 버전을 들으면 뇌가 같은 스펙트럼 패턴을 인식합니다 — 원작 공연에서 자막을 띄우는 것과 같은 원리입니다.</div>
+  </div>
+
+  <div class="panel">
+    <div class="controls">
+      <div class="ctrl">
+        <label>말하기 속도 <b id="vTempo">1.0×</b></label>
+        <input type="range" id="tempo" min="0.4" max="1.8" step="0.05" value="0.85">
+      </div>
+      <div class="ctrl">
+        <label>목소리 높이 <b id="vPitch">130 Hz</b></label>
+        <input type="range" id="pitch" min="85" max="230" step="5" value="130">
+      </div>
+      <div class="ctrl">
+        <label>화음 밀도 <b id="vDens">22</b></label>
+        <input type="range" id="dens" min="10" max="34" step="2" value="22">
+      </div>
+    </div>
+  </div>
+
+  <div class="now" id="now"></div>
+
+  <div class="kb-shell">
+    <div class="fallboard"></div>
+    <div class="felt-strip"></div>
+    <div class="kb" id="kb"></div>
+  </div>
+
+  <footer>
+    아블링거의 원리 그대로 — 음성의 배음렬을 <span>포먼트 공명 포락선</span>으로 무게를 매겨 건반에 투사하고, 55ms마다 전체 화음을 재타건해 시간축을 흉내냅니다. 밀도를 올릴수록 말에 가깝고, 내릴수록 음악에 가깝습니다.
+  </footer>
+</div>
+
+<script>
+(() => {
+"use strict";
+const $ = id => document.getElementById(id);
+const MIDI_LO=21, MIDI_HI=108;
+const clampMidi = m => Math.max(MIDI_LO, Math.min(MIDI_HI, m));
+const midiOf = f => clampMidi(Math.round(69+12*Math.log2(f/440)));
+const freqOf = m => 440*Math.pow(2,(m-69)/12);
+
+/* ================= keyboard DOM ================= */
+const kb=$('kb'), keyEls={};
+const BLACK=new Set([1,3,6,8,10]);
+(function(){
+  const whites=[];
+  for(let m=MIDI_LO;m<=MIDI_HI;m++) if(!BLACK.has(m%12)) whites.push(m);
+  const ww=100/whites.length;
+  whites.forEach(m=>{const el=document.createElement('div');el.className='wk';kb.appendChild(el);keyEls[m]=el;});
+  let wi=0;
+  for(let m=MIDI_LO;m<=MIDI_HI;m++){
+    if(BLACK.has(m%12)){
+      const el=document.createElement('div');el.className='bk';
+      el.style.left=(wi*ww-ww*0.31)+'%'; el.style.width=(ww*0.62)+'%';
+      kb.appendChild(el);keyEls[m]=el;
+    } else wi++;
+  }
+})();
+
+/* ================= phoneme inventory =================
+   Each phone: { d: base duration(s), voiced, F:[F1,F2,F3], A:[amp per formant],
+                 noise: {lo,hi,amp}, gap: pre-closure silence }              */
+const VOW = (f1,f2,f3=2600)=>({d:.16, voiced:1, F:[f1,f2,f3], A:[1,.7,.32]});
+const GLIDE=(f1,f2)=>({d:.055, voiced:1, F:[f1,f2,2700], A:[.9,.75,.3]});
+const V = {
+  a:VOW(760,1250), eo:VOW(590,1000), o:VOW(430,800), u:VOW(330,720),
+  eu:VOW(400,1400,2500), i:VOW(290,2250,3000), e:VOW(510,1850,2700), ae:VOW(580,1750,2650),
+  j:GLIDE(290,2250), w:GLIDE(330,720)
+};
+V.e2=V.e;
+const NAS=(f2)=>({d:.09, voiced:1, F:[250,f2,2300], A:[1,.3,.1], nasal:1});
+const PH = {
+  m:NAS(1000), n:NAS(1450), ng:NAS(900),
+  l:{d:.06, voiced:1, F:[380,1150,2600], A:[.9,.7,.25]},
+  h:{d:.07, noise:{lo:900, hi:4800, amp:.4}},
+  s:{d:.11, noise:{lo:4000, hi:7600, amp:.85}},
+  ss:{d:.12, noise:{lo:4200, hi:7800, amp:1}},
+  // stops: gap then burst
+  g:{d:.045, gap:.04, noise:{lo:1400,hi:2700,amp:.7}},
+  k:{d:.05, gap:.05, noise:{lo:1400,hi:2900,amp:.95}},
+  d:{d:.045, gap:.04, noise:{lo:2600,hi:4300,amp:.7}},
+  t:{d:.05, gap:.05, noise:{lo:2600,hi:4500,amp:.95}},
+  b:{d:.045, gap:.04, noise:{lo:500,hi:1400,amp:.65}},
+  p:{d:.05, gap:.05, noise:{lo:500,hi:1500,amp:.9}},
+  j_:{d:.08, gap:.035, noise:{lo:3000,hi:6200,amp:.75}},
+  ch:{d:.1, gap:.045, noise:{lo:3200,hi:6600,amp:.95}},
+  codaStop:{d:.055, voiced:0, thud:1},
+  pause:{d:.16}, pauseL:{d:.34}
+};
+const CHO_MAP={'ㄱ':'g','ㄲ':'k','ㄴ':'n','ㄷ':'d','ㄸ':'t','ㄹ':'l','ㅁ':'m','ㅂ':'b','ㅃ':'p','ㅅ':'s','ㅆ':'ss','ㅇ':null,'ㅈ':'j_','ㅉ':'ch','ㅊ':'ch','ㅋ':'k','ㅌ':'t','ㅍ':'p','ㅎ':'h'};
+const JONG_MAP={'ㄱ':'codaStop','ㄲ':'codaStop','ㄳ':'codaStop','ㄴ':'n','ㄵ':'n','ㄶ':'n','ㄷ':'codaStop','ㄹ':'l','ㄺ':'codaStop','ㄻ':'m','ㄼ':'codaStop','ㄽ':'l','ㄾ':'codaStop','ㄿ':'codaStop','ㅀ':'l','ㅁ':'m','ㅂ':'codaStop','ㅄ':'codaStop','ㅅ':'codaStop','ㅆ':'codaStop','ㅇ':'ng','ㅈ':'codaStop','ㅊ':'codaStop','ㅋ':'codaStop','ㅌ':'codaStop','ㅍ':'codaStop','ㅎ':'codaStop'};
+const CHO='ㄱㄲㄴㄷㄸㄹㅁㅂㅃㅅㅆㅇㅈㅉㅊㅋㅌㅍㅎ';
+const JONGC=[null,'ㄱ','ㄲ','ㄳ','ㄴ','ㄵ','ㄶ','ㄷ','ㄹ','ㄺ','ㄻ','ㄼ','ㄽ','ㄾ','ㄿ','ㅀ','ㅁ','ㅂ','ㅄ','ㅅ','ㅆ','ㅇ','ㅈ','ㅊ','ㅋ','ㅌ','ㅍ','ㅎ'];
+const JUNG=[['a'],['ae'],['j','a'],['j','ae'],['eo'],['e'],['j','eo'],['j','e'],['o'],['w','a'],['w','ae'],['w','e2'],['j','o'],['u'],['w','eo'],['w','e'],['w','i'],['j','u'],['eu'],['eu','i'],['i']];
+
+function textToPhones(text){
+  const seq=[], syls=[];
+  const push=(p,extra)=>seq.push(Object.assign({},p,extra||{}));
+  for(const ch of text){
+    const cp=ch.codePointAt(0);
+    if(cp>=0xAC00&&cp<=0xD7A3){
+      syls.push({ch, at:seq.length});
+      const s=cp-0xAC00, ci=Math.floor(s/588), ji=Math.floor((s%588)/28), ti=s%28;
+      const cname=CHO_MAP[CHO[ci]];
+      if(cname) push(PH[cname]);
+      for(const v of JUNG[ji]){
+        const isGlide = JUNG[ji].length>1 && v===JUNG[ji][0] && (v==='j'||v==='w');
+        push(V[v]==null?V.i:V[v], isGlide?{}:{});
+      }
+      if(ti>0){ const jn=JONG_MAP[JONGC[ti]]; if(jn) push(PH[jn],{coda:1}); }
+    }
+    else if(/[a-zA-Z]/.test(ch)){
+      syls.push({ch, at:seq.length});
+      const l=ch.toLowerCase();
+      if('aeiou'.includes(l)) push(V[{a:'a',e:'e',i:'i',o:'o',u:'u'}[l]]);
+      else if(l==='s'||l==='z'||l==='x'||l==='c') push(PH.s);
+      else if(l==='f'||l==='v'||l==='h') push(PH.h);
+      else if(l==='m') push(PH.m); else if(l==='n') push(PH.n);
+      else if(l==='l'||l==='r') push(PH.l);
+      else if(l==='b') push(PH.b); else if(l==='p') push(PH.p);
+      else if(l==='d') push(PH.d); else if(l==='t') push(PH.t);
+      else if(l==='g'||l==='k'||l==='q') push(PH.g);
+      else push(PH.d);
+    }
+    else if(ch===' ') push(PH.pause);
+    else if(',;·'.includes(ch)) push(PH.pauseL);
+    else if('.!?…'.includes(ch)) push(PH.pauseL,{final:ch});
+  }
+  return {seq, syls};
+}
+
+/* ================= phones -> frames =================
+   frame: {t, voiced, f0, F:[3], A:[3], noise?, amp} every HOP seconds,
+   formants linearly interpolated across phone boundaries (coarticulation). */
+function buildFrames(){
+  const tempo=+$('tempo').value, f0base=+$('pitch').value;
+  const {seq, syls}=textToPhones($('text').value);
+  if(!seq.length) return null;
+  const HOP=0.055;
+  const question=/\?\s*$/.test($('text').value);
+
+  // timeline of phone segments
+  let t=0.12; const segs=[];
+  for(const p of seq){
+    if(p.gap){ segs.push({t, d:p.gap/tempo, silent:1}); t+=p.gap/tempo; }
+    const d=(p.d||.1)/tempo;
+    segs.push({t, d, p});
+    t+=d;
+  }
+  const total=t+0.15;
+
+  // syllable times
+  const sylTimes=[];
+  {
+    let si=0, acc=0.12, i=0;
+    for(const p of seq){
+      while(si<syls.length && syls[si].at===i){ sylTimes.push({t:acc, ch:syls[si].ch}); si++; }
+      acc += ((p.gap||0)+(p.d||.1))/tempo; i++;
+    }
+  }
+
+  // helper: phone state at time tt (with interpolation into next voiced phone)
+  const frames=[];
+  const f0At=fr=>{
+    let f=f0base*(1.1-0.18*fr);
+    if(question&&fr>0.8) f*=1+(fr-0.8)*1.8;
+    return f;
+  };
+  for(let tt=0; tt<total; tt+=HOP){
+    // find segment
+    let cur=null, idx=-1;
+    for(let i=0;i<segs.length;i++){ if(tt>=segs[i].t && tt<segs[i].t+segs[i].d){cur=segs[i];idx=i;break;} }
+    if(!cur||cur.silent||!cur.p||(!cur.p.voiced&&!cur.p.noise&&!cur.p.thud)){ continue; }
+    const p=cur.p, fr=tt/total;
+    const frame={t:tt, f0:f0At(fr), amp:1};
+    if(p.voiced){
+      // interpolate F toward next voiced phone across the last 40% of this phone
+      let F=p.F.slice();
+      const prog=(tt-cur.t)/cur.d;
+      let nxt=null;
+      for(let j=idx+1;j<segs.length&&j<idx+3;j++){ if(segs[j].p&&segs[j].p.voiced){nxt=segs[j].p;break;} if(segs[j].p&&segs[j].p.noise)break; }
+      if(nxt&&prog>0.6){
+        const mix=(prog-0.6)/0.4*0.5;
+        for(let k=0;k<3;k++) F[k]=F[k]*(1-mix)+nxt.F[k]*mix;
+      }
+      frame.voiced=1; frame.F=F; frame.A=p.A; frame.nasal=p.nasal||0;
+      // simple amplitude contour within vowel
+      frame.amp = 0.55+0.45*Math.sin(Math.min(1,prog)*Math.PI);
+      if(p.coda) frame.amp*=0.8;
+    } else if(p.noise){
+      frame.noise=p.noise; frame.amp=p.noise.amp;
+    } else if(p.thud){
+      frame.thud=1; frame.amp=0.5;
+    }
+    frames.push(frame);
+  }
+  return {frames, sylTimes, dur:total+0.8, HOP};
+}
+
+/* ============ spectral envelope: Lorentzian formant peaks + tilt ============ */
+function envAt(f, F, A, nasal){
+  const BW=[90,110,160];
+  let e=0;
+  for(let i=0;i<3;i++){
+    const d=(f-F[i])/BW[i];
+    e += A[i]/(1+d*d);
+  }
+  // glottal spectral tilt ≈ -6 dB/oct above 500Hz
+  e *= f<500?1:Math.pow(500/f,0.9);
+  if(nasal && f>600 && f<1400) e*=0.35; // anti-resonance
+  return e;
+}
+
+/* ================= frames -> piano note events ================= */
+function framesToEvents(frames, HOP){
+  const density=+$('dens').value;
+  const ev=[];
+  let jseed=7;
+  const jrand=()=>{jseed=(jseed*16807)%2147483647; return jseed/2147483647;};
+  for(const fr of frames){
+    const cand=[];
+    if(fr.voiced){
+      // sample every harmonic of f0 through the formant envelope
+      for(let k=1;;k++){
+        const f=fr.f0*k;
+        if(f>4600) break;
+        cand.push([f, envAt(f, fr.F, fr.A, fr.nasal)]);
+      }
+    } else if(fr.noise){
+      const {lo,hi}=fr.noise, n=Math.max(6,Math.round(density*0.55));
+      for(let i=0;i<n;i++){
+        const f=lo*Math.pow(hi/lo,(i+jrand()*0.8)/n);
+        cand.push([f, 0.55+0.45*jrand()]);
+      }
+      cand.push([freqOf(MIDI_LO+2), 0.5]); // hammer body
+    } else if(fr.thud){
+      cand.push([freqOf(MIDI_LO+1),1],[freqOf(MIDI_LO+8),0.6]);
+    }
+    if(!cand.length) continue;
+    // quantize to keys, merge duplicates keeping max
+    const byKey=new Map();
+    let mx=1e-9;
+    for(const [f,a] of cand){
+      const m=midiOf(f);
+      const v=Math.max(byKey.get(m)||0,a);
+      byKey.set(m,v); if(v>mx)mx=v;
+    }
+    const list=[...byKey.entries()].map(([m,a])=>[m,a/mx]).filter(([,a])=>a>0.05);
+    list.sort((x,y)=>y[1]-x[1]);
+    for(const [m,a] of list.slice(0,density)){
+      ev.push({t:fr.t, midi:m, vel:Math.pow(a,0.55)*fr.amp, dur:HOP*2.2});
+    }
+  }
+  return ev;
+}
+
+/* ================= piano tone bank ================= */
+let audioCtx=null;
+const ensureCtx=()=>audioCtx||(audioCtx=new (window.AudioContext||window.webkitAudioContext)());
+const toneCache=new Map();
+function pianoTone(midi,sr){
+  const key=midi+'_'+sr;
+  if(toneCache.has(key)) return toneCache.get(key);
+  const f=freqOf(midi), rel=(midi-MIDI_LO)/(MIDI_HI-MIDI_LO);
+  const tau=0.34*(1-rel*0.7)+0.05, n=Math.floor(Math.min(0.8,tau*4)*sr);
+  const out=new Float32Array(n);
+  for(const [h,a] of [[1,1],[2,0.4],[3,0.17],[4,0.07]]){
+    const fh=f*h; if(fh>sr*0.45) continue;
+    const w=2*Math.PI*fh/sr, tc=tau/Math.sqrt(h);
+    for(let i=0;i<n;i++) out[i]+=a*Math.sin(w*i)*Math.exp(-(i/sr)/tc);
+  }
+  const atk=Math.floor(0.002*sr);
+  for(let i=0;i<atk&&i<n;i++) out[i]*=i/atk;
+  toneCache.set(key,out);
+  return out;
+}
+function renderPiano(ev,dur){
+  const ac=ensureCtx(), sr=ac.sampleRate, n=Math.ceil(dur*sr);
+  const mix=new Float32Array(n);
+  for(const e of ev){
+    const tone=pianoTone(e.midi,sr), off=Math.floor(e.t*sr);
+    const len=Math.min(tone.length,n-off), g=e.vel*0.5;
+    for(let i=0;i<len;i++) mix[off+i]+=tone[i]*g;
+  }
+  let pk=1e-9; for(let i=0;i<n;i++){const a=Math.abs(mix[i]);if(a>pk)pk=a;}
+  const s=0.88/pk; for(let i=0;i<n;i++) mix[i]*=s;
+  const b=ac.createBuffer(1,n,sr); b.copyToChannel(mix,0);
+  return b;
+}
+
+/* ============ reference formant voice (same frames, continuous) ============ */
+function renderVoice(frames,dur,HOP){
+  const ac=ensureCtx(), sr=ac.sampleRate, n=Math.ceil(dur*sr);
+  const mix=new Float32Array(n);
+  const winLen=Math.floor(HOP*2*sr);
+  const win=new Float32Array(winLen);
+  for(let i=0;i<winLen;i++) win[i]=0.5-0.5*Math.cos(2*Math.PI*i/(winLen-1));
+  for(const fr of frames){
+    const off=Math.floor(fr.t*sr);
+    if(fr.voiced){
+      for(let k=1;;k++){
+        const f=fr.f0*k; if(f>4800) break;
+        const a=envAt(f,fr.F,fr.A,fr.nasal)*fr.amp;
+        if(a<0.02) continue;
+        const w=2*Math.PI*f/sr;
+        const len=Math.min(winLen,n-off);
+        for(let i=0;i<len;i++) mix[off+i]+=a*Math.sin(w*(off+i))*win[i]*0.28;
+      }
+    } else if(fr.noise){
+      const {lo,hi}=fr.noise, len=Math.min(winLen,n-off);
+      for(let b=0;b<10;b++){
+        const f=lo*Math.pow(hi/lo,(b+0.5)/10);
+        const w=2*Math.PI*f/sr, ph=Math.random()*6.28;
+        for(let i=0;i<len;i++) mix[off+i]+=0.09*fr.amp*Math.sin(w*i+ph)*win[i];
+      }
+    }
+  }
+  let pk=1e-9; for(let i=0;i<n;i++){const a=Math.abs(mix[i]);if(a>pk)pk=a;}
+  const s=0.85/pk; for(let i=0;i<n;i++) mix[i]*=s;
+  const b=ac.createBuffer(1,n,sr); b.copyToChannel(mix,0);
+  return b;
+}
+
+/* ================= playback + animation ================= */
+let playingNode=null, rafId=0, startT=0, curEv=null, curSyl=null, lastPianoBuf=null;
+const nowEl=$('now');
+function stop(){
+  if(playingNode){try{playingNode.stop();}catch(e){} playingNode=null;}
+  cancelAnimationFrame(rafId);
+  for(const m in keyEls) keyEls[m].classList.remove('down');
+  $('stopBtn').disabled=true;
+}
+function playBuf(buf, ev, sylTimes){
+  stop();
+  const ac=ensureCtx(); if(ac.state==='suspended') ac.resume();
+  const src=ac.createBufferSource();
+  src.buffer=buf; src.connect(ac.destination); src.start();
+  playingNode=src; startT=ac.currentTime; curEv=ev; curSyl=sylTimes;
+  src.onended=()=>{if(playingNode===src) stop();};
+  $('stopBtn').disabled=false;
+  nowEl.innerHTML='';
+  sylTimes.forEach(s=>{const d=document.createElement('span');d.className='syl';d.textContent=s.ch;nowEl.appendChild(d);s.el=d;});
+  const tick=()=>{
+    if(!playingNode) return;
+    const t=ac.currentTime-startT;
+    if(curEv){
+      const down=new Set();
+      for(const e of curEv) if(t>=e.t&&t<e.t+Math.min(e.dur,0.13)) down.add(e.midi);
+      for(const m in keyEls) keyEls[m].classList.toggle('down',down.has(+m));
+    }
+    let ci=-1;
+    for(let i=0;i<curSyl.length;i++) if(t>=curSyl[i].t) ci=i;
+    curSyl.forEach((s,i)=>{s.el.classList.toggle('on',i===ci);s.el.classList.toggle('done',i<ci);});
+    rafId=requestAnimationFrame(tick);
+  };
+  tick();
+}
+
+function go(kind){
+  const built=buildFrames();
+  if(!built){$('status').textContent='문장을 입력하세요';return;}
+  $('status').textContent='합성 중…';
+  setTimeout(()=>{
+    if(kind==='piano'){
+      const ev=framesToEvents(built.frames, built.HOP);
+      lastPianoBuf=renderPiano(ev, built.dur);
+      $('dlBtn').disabled=false;
+      $('status').textContent=`${ev.length.toLocaleString()} notes · ${built.dur.toFixed(1)}s`;
+      playBuf(lastPianoBuf, ev, built.sylTimes);
+    } else {
+      const buf=renderVoice(built.frames, built.dur, built.HOP);
+      $('status').textContent=`합성 음성 · ${built.dur.toFixed(1)}s`;
+      playBuf(buf, null, built.sylTimes);
+    }
+  },20);
+}
+$('playPianoBtn').onclick=()=>go('piano');
+$('playVoiceBtn').onclick=()=>go('voice');
+$('stopBtn').onclick=stop;
+
+['tempo','pitch','dens'].forEach(id=>{
+  $(id).oninput=()=>{
+    $('vTempo').textContent=(+$('tempo').value).toFixed(2).replace(/0$/,'')+'×';
+    $('vPitch').textContent=$('pitch').value+' Hz';
+    $('vDens').textContent=$('dens').value;
+  };
+});
+$('tempo').dispatchEvent(new Event('input'));
+
+$('dlBtn').onclick=()=>{
+  if(!lastPianoBuf) return;
+  const d=lastPianoBuf.getChannelData(0), sr=lastPianoBuf.sampleRate;
+  const buf=new ArrayBuffer(44+d.length*2), v=new DataView(buf);
+  const ws=(o,s)=>{for(let i=0;i<s.length;i++)v.setUint8(o+i,s.charCodeAt(i))};
+  ws(0,'RIFF');v.setUint32(4,36+d.length*2,true);ws(8,'WAVE');ws(12,'fmt ');
+  v.setUint32(16,16,true);v.setUint16(20,1,true);v.setUint16(22,1,true);
+  v.setUint32(24,sr,true);v.setUint32(28,sr*2,true);v.setUint16(32,2,true);
+  v.setUint16(34,16,true);ws(36,'data');v.setUint32(40,d.length*2,true);
+  for(let i=0;i<d.length;i++)v.setInt16(44+i*2,Math.max(-1,Math.min(1,d[i]))*32767,true);
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(new Blob([buf],{type:'audio/wav'}));
+  a.download='speaking-piano.wav'; a.click();
+};
+})();
+</script>
+</body>
+</html>
