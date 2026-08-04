@@ -1,0 +1,1530 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SDC 서비스·통신 시뮬레이터 v3</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/prop-types@15/prop-types.min.js"></script>
+<script src="https://unpkg.com/recharts@2.12.7/umd/Recharts.js"></script>
+<script src="https://unpkg.com/@babel/standalone@7/babel.min.js"></script>
+<style>html,body{margin:0;background:#E9EAE4}</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel" data-presets="react">
+/* @jsxRuntime classic @jsx React.createElement */
+const { useState, useMemo } = React;
+const { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceDot } = Recharts;
+
+
+/* ──────────────────────────────────────────────────────────────
+   우주 데이터센터(SDC) 서비스·통신 설계 시뮬레이터  v3
+
+   질문의 흐름 (각 단락의 출력이 다음 단락의 입력):
+   ① 컴퓨터를 얼마나 싣는가        → 연산능력 · 메모리
+   ② 그걸로 어떤 서비스를 얼마나    → 사용자 규모 · 트래픽 발생량
+   ③ 그 트래픽에 통신이 얼마나      → ISL 4터미널 판정 · 릴레이 수
+   ④ 위성이 몇 기면 되는가          → 성좌 합계
+   비교: SpaceX AI1 대비 이 설계
+   ⑤ 참고: 전력·열·무게 (성립 검증)
+
+   통신 구조: TT&C만 RF 직접. 서비스 트래픽은 전량
+   광 ISL → 저궤도 릴레이 위성 → 지상.
+   ISL 기본 구성: SDC 링 전·후 2기 + 릴레이 주·예비 2기 = 4기.
+   ────────────────────────────────────────────────────────────── */
+
+const C = {
+  paper: "#E9EAE4", panel: "#F8F8F4", panelAlt: "#F1F1EB",
+  ink: "#161B21", ink2: "#5C6672", ink3: "#8B939C", rule: "#CFD1C8",
+  compute: "#1F4E5F", computeLt: "#3A7A8E", hot: "#C2562A",
+  power: "#A8830F", comm: "#6B4E8F", bus: "#7E8590", margin: "#BEC1B6",
+  good: "#2F6B4F", warn: "#A33B2A", idle: "#C9CCC2",
+};
+const MONO = "'SF Mono','JetBrains Mono','IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace";
+const SANS = "'Pretendard','Apple SD Gothic Neo','Noto Sans KR',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif";
+
+/* ── 상수 ─────────────────────────────────────────────────── */
+const S_SOLAR = 1361, Q_IR = 237, ALBEDO = 0.30, SB = 5.670374e-8;
+const RE = 6378, MU = 398600;
+
+/* ── 탑재 유닛 ────────────────────────────────────────────── */
+const UNITS = {
+  h100:  { g: "module", name: "H100 SXM5",             w: 700,    pf8: 1.98, hbm: 80,     mass: 2.0,  chassis: 1.6 },
+  h200:  { g: "module", name: "H200 SXM",              w: 700,    pf8: 1.98, hbm: 141,    mass: 2.1,  chassis: 1.6 },
+  b200:  { g: "module", name: "B200 SXM",              w: 1000,   pf8: 4.5,  hbm: 192,    mass: 2.6,  chassis: 1.6 },
+  gb200: { g: "module", name: "GB200 (GPU당 환산)",     w: 1200,   pf8: 5.0,  hbm: 192,    mass: 3.2,  chassis: 1.6 },
+  r200:  { g: "module", name: "Rubin R200 (패키지)",    w: 1800,   pf8: 25.0, hbm: 288,    mass: 3.6,  chassis: 1.8 },
+  vrq:   { g: "rack", name: "VR200 NVL72 · Max Q",      w: 190000, pf8: 1800, hbm: 20736,  mass: 900,  chassis: 0 },
+  vrp:   { g: "rack", name: "VR200 NVL72 · Max P",      w: 230000, pf8: 2100, hbm: 20736,  mass: 950,  chassis: 0 },
+  vrcpx: { g: "rack", name: "VR NVL144 CPX",            w: 370000, pf8: 3200, hbm: 100000, mass: 1150, chassis: 0 },
+  kyber: { g: "rack", name: "Rubin Ultra NVL576 Kyber", w: 600000, pf8: 5000, hbm: 147456, mass: 1300, chassis: 0 },
+};
+
+const PHASES = {
+  preA: { name: "개념설계 (Pre-A)", eqD: 30, eqC: 20, eqAB: 10, sys: 20 },
+  ab:   { name: "Phase A/B (PDR)",  eqD: 20, eqC: 10, eqAB: 5,  sys: 20 },
+  cd:   { name: "Phase C/D (CDR)",  eqD: 10, eqC: 5,  eqAB: 2,  sys: 10 },
+};
+
+const RHO_TABLE = [[300,2.4e-11],[400,2.8e-12],[500,5.2e-13],[600,1.4e-13],[700,4.5e-14],
+                   [800,1.8e-14],[900,8.0e-15],[1000,4.0e-15],[1100,2.2e-15],[1200,1.3e-15]];
+const rhoAt = (h) => {
+  if (h <= RHO_TABLE[0][0]) return RHO_TABLE[0][1];
+  const last = RHO_TABLE[RHO_TABLE.length - 1];
+  if (h >= last[0]) return last[1];
+  for (let i = 0; i < RHO_TABLE.length - 1; i++) {
+    const [h0, r0] = RHO_TABLE[i], [h1, r1] = RHO_TABLE[i + 1];
+    if (h >= h0 && h <= h1) {
+      const t = (h - h0) / (h1 - h0);
+      return Math.exp(Math.log(r0) + t * (Math.log(r1) - Math.log(r0)));
+    }
+  }
+  return last[1];
+};
+const SOLAR_ACT = { low: { name: "저조", f: 0.3 }, mean: { name: "평균", f: 1 }, high: { name: "활발", f: 4 } };
+const RAD_ATT = {
+  edge:  { name: "궤도면 평행 (태양 회피)", fF: 0.30, sun: false },
+  nadir: { name: "천저 지향",              fF: 1.00, sun: false },
+  sunny: { name: "태양 노출 불가피",        fF: 0.55, sun: true },
+};
+const ORBIT_TYPES = {
+  ddsso: { name: "여명-황혼 SSO", beta: 62, desc: "거의 상시 일조. 궤도 DC 표준 선택" },
+  leo:   { name: "일반 LEO",      beta: 15, desc: "매 궤도 식(蝕) 통과 — 배터리 부담 증가" },
+};
+
+/* 전력 캡 성능 민감도 (Perf ∝ f^β) */
+const BETAS = {
+  compute:  { name: "연산 집약", b: 1.00, desc: "학습·프리필 — 클럭에 비례해 느려짐" },
+  balanced: { name: "혼합",      b: 0.55, desc: "일반 추론 서비스" },
+  memory:   { name: "메모리 지배", b: 0.20, desc: "LLM 디코드 — 클럭 낮춰도 거의 무손실" },
+};
+
+const LAUNCHERS = {
+  f9:  { name: "Falcon 9",       cap: 11000,  cost: 70,  kgCost: 6400 },
+  fh:  { name: "Falcon Heavy",   cap: 26000,  cost: 150, kgCost: 5800 },
+  ss:  { name: "Starship",       cap: 100000, cost: 100, kgCost: 1000 },
+  ssL: { name: "Starship 성숙기", cap: 150000, cost: 40,  kgCost: 267 },
+};
+
+/* 서비스 모델 (2026년 중반 공개 가중치 기준) */
+const MODELS = {
+  gemma4:    { name: "Gemma 4 12B",               total: 12,   act: 12, tier: "소형" },
+  llama33:   { name: "Llama 3.3 70B",             total: 70,   act: 70, tier: "중형 밀집" },
+  qwen3_235: { name: "Qwen3 235B-A22B",           total: 235,  act: 22, tier: "중형 MoE" },
+  qwen35:    { name: "Qwen 3.5 397B-A17B",        total: 397,  act: 17, tier: "대형 MoE" },
+  llama4mav: { name: "Llama 4 Maverick 400B-A17B", total: 400, act: 17, tier: "대형 MoE" },
+  qwen3c:    { name: "Qwen3-Coder 480B-A35B",     total: 480,  act: 35, tier: "대형 MoE" },
+  mistral3:  { name: "Mistral Large 3 675B-A41B", total: 675,  act: 41, tier: "대형 MoE" },
+  glm52:     { name: "GLM-5.2 744B",              total: 744,  act: 40, tier: "대형 MoE", est: true },
+  kimi25:    { name: "Kimi K2.5 1T-A32B",         total: 1000, act: 32, tier: "프런티어" },
+  dsv4:      { name: "DeepSeek V4-Pro 1.6T-A49B", total: 1600, act: 49, tier: "프런티어" },
+  custom:    { name: "직접 지정",                  total: 2000, act: 60, tier: "—" },
+};
+
+/* 남는 연산을 채우는 방법 */
+const FILLS = {
+  none:  { name: "채우지 않음 (유휴)",   desc: "남는 연산을 놀립니다. 전력 캡을 낮출 근거" },
+  batch: { name: "오프라인 배치 추론",    desc: "문서 처리·합성데이터 — 통신 부담 소폭 증가" },
+  train: { name: "위성 간 분산 학습",     desc: "SDC 여러 기를 묶어 학습 — 링 ISL 트래픽 급증" },
+  eo:    { name: "지구관측 데이터 처리",  desc: "관측위성 원시 데이터를 링 ISL로 흡수" },
+};
+
+/* ── 비교 기준 위성: SpaceX AI1 (2026-06-09 공개) ────────────
+   공개치: 윙스팬 70 m × 전개 높이 20 m, 컴퓨트 페이로드 평균 120 kW ·
+   피크 150 kW, 600 km 궤도, 효율 70 kW/t, GB300 1랙(~140 kW) 등가,
+   교체형 칩, 배치형 액체 라디에이터. 나머지는 등가 랙 기준 추정. */
+const AI1 = {
+  name: "SpaceX AI1",
+  kwAvg: 120, kwPk: 150, alt: 600, kwPerTon: 70,
+  wing: "70 m × 20 m",
+  est: { massT: 2.1, pf8: 720, hbmTB: 20, tfPerW: 6, areaM2: 1400 },
+};
+
+/* ── 포맷 ─────────────────────────────────────────────────── */
+const fmt = (n, d = 1) => {
+  if (!isFinite(n)) return "—";
+  if (Math.abs(n) >= 1e4) return Math.round(n).toLocaleString("ko-KR");
+  return n.toLocaleString("ko-KR", { minimumFractionDigits: d, maximumFractionDigits: d });
+};
+const kW = (w, d = 1) => (Math.abs(w) >= 1e6 ? fmt(w / 1e6, 2) + " MW" : fmt(w / 1000, d) + " kW");
+const bw = (b) => {
+  if (!isFinite(b) || b <= 0) return "0";
+  if (b >= 1e12) return fmt(b / 1e12, 2) + " Tbps";
+  if (b >= 1e9) return fmt(b / 1e9, 2) + " Gbps";
+  if (b >= 1e6) return fmt(b / 1e6, 1) + " Mbps";
+  return fmt(b / 1e3, 1) + " kbps";
+};
+const flops = (pf) => (pf >= 1e6 ? fmt(pf / 1e6, 2) + " ZFLOPS" : pf >= 1000 ? fmt(pf / 1000, 2) + " EFLOPS" : fmt(pf, 1) + " PFLOPS");
+const users = (n) => (n >= 1e9 ? fmt(n / 1e9, 2) + "십억 명" : n >= 1e6 ? fmt(n / 1e6, 2) + "백만 명" : fmt(n, 0) + " 명");
+
+/* ── UI 부품 ──────────────────────────────────────────────── */
+const Eyebrow = ({ children, color = C.ink3 }) => (
+  <div style={{ fontFamily: MONO, fontSize: 10, letterSpacing: "0.16em", textTransform: "uppercase", color, fontWeight: 600 }}>{children}</div>
+);
+const Panel = ({ children, title, eyebrow, flow, accent = C.ink, style }) => (
+  <section style={{ background: C.panel, border: `1px solid ${C.rule}`, ...style }} className="p-5 sm:p-6">
+    {(title || eyebrow) && (
+      <div className="mb-5" style={{ borderBottom: `1px solid ${C.rule}`, paddingBottom: 10 }}>
+        {eyebrow && <Eyebrow color={accent}>{eyebrow}</Eyebrow>}
+        {title && <h2 className="mt-1" style={{ fontSize: 17, fontWeight: 700, letterSpacing: "-0.01em" }}>{title}</h2>}
+        {flow && <div className="mt-1" style={{ fontSize: 11.5, color: C.ink3, lineHeight: 1.5 }}>{flow}</div>}
+      </div>
+    )}
+    {children}
+  </section>
+);
+const Slider = ({ label, value, onChange, min, max, step = 1, unit = "", hint, dec }) => (
+  <label className="block mb-3.5">
+    <div className="flex items-baseline justify-between mb-1">
+      <span style={{ fontSize: 12.5, color: C.ink2, fontWeight: 500 }}>{label}</span>
+      <span style={{ fontFamily: MONO, fontSize: 12.5, fontWeight: 600, fontVariantNumeric: "tabular-nums" }}>
+        {fmt(value, dec !== undefined ? dec : step < 1 ? 2 : 0)}
+        <span style={{ color: C.ink3, marginLeft: 3, fontWeight: 400 }}>{unit}</span>
+      </span>
+    </div>
+    <input type="range" min={min} max={max} step={step} value={value}
+      onChange={(e) => onChange(parseFloat(e.target.value))} className="w-full" style={{ accentColor: C.compute, height: 3 }} />
+    {hint && <div style={{ fontSize: 10.5, color: C.ink3, marginTop: 2, lineHeight: 1.4 }}>{hint}</div>}
+  </label>
+);
+const Choice = ({ label, options, value, onChange, cols = 2 }) => (
+  <div className="mb-3.5">
+    {label && <div style={{ fontSize: 12.5, color: C.ink2, fontWeight: 500, marginBottom: 6 }}>{label}</div>}
+    <div className="grid gap-1.5" style={{ gridTemplateColumns: `repeat(${cols}, minmax(0,1fr))` }}>
+      {options.map((o) => {
+        const on = o.key === value;
+        return (
+          <button key={o.key} onClick={() => onChange(o.key)} className="text-left px-2.5 py-2"
+            style={{ background: on ? C.compute : "transparent", border: `1px solid ${on ? C.compute : C.rule}`,
+              color: on ? "#fff" : C.ink2, fontSize: 12, fontWeight: on ? 600 : 400, cursor: "pointer", lineHeight: 1.25 }}>
+            {o.label}
+            {o.sub && <div style={{ fontFamily: MONO, fontSize: 9.5, opacity: 0.72, marginTop: 2 }}>{o.sub}</div>}
+          </button>
+        );
+      })}
+    </div>
+  </div>
+);
+const Metric = ({ label, value, unit, sub, color = C.ink, big }) => (
+  <div>
+    <Eyebrow>{label}</Eyebrow>
+    <div className="mt-1" style={{ fontFamily: MONO, fontSize: big ? 25 : 19, fontWeight: 700, color,
+      lineHeight: 1.1, fontVariantNumeric: "tabular-nums", letterSpacing: "-0.02em" }}>
+      {value}{unit && <span style={{ fontSize: big ? 13 : 11, fontWeight: 500, color: C.ink2, marginLeft: 4 }}>{unit}</span>}
+    </div>
+    {sub && <div style={{ fontSize: 10.5, color: C.ink3, marginTop: 3, lineHeight: 1.4 }}>{sub}</div>}
+  </div>
+);
+const Row = ({ k, v, u, accent, indent, dim }) => (
+  <div className="flex items-baseline justify-between py-1.5" style={{ borderBottom: `1px dotted ${C.rule}`, paddingLeft: indent ? 12 : 0 }}>
+    <span style={{ fontSize: 12.5, color: dim ? C.ink3 : C.ink2 }}>{k}</span>
+    <span style={{ fontFamily: MONO, fontSize: 12.5, fontWeight: dim ? 400 : 600, color: accent || (dim ? C.ink3 : C.ink), fontVariantNumeric: "tabular-nums" }}>
+      {v}{u && <span style={{ color: C.ink3, fontWeight: 400, marginLeft: 3, fontSize: 11 }}>{u}</span>}
+    </span>
+  </div>
+);
+/* 이 설계 vs 기준 위성 비교 행 — 공개 확정치는 진하게, 추정치는 흐리게 */
+const CmpRow = ({ k, mine, refV, refEst, accent }) => (
+  <div className="grid items-baseline py-1.5" style={{ gridTemplateColumns: "1.1fr 1fr 1.1fr", borderBottom: `1px dotted ${C.rule}` }}>
+    <span style={{ fontSize: 12, color: C.ink2 }}>{k}</span>
+    <span style={{ fontFamily: MONO, fontSize: 12, fontWeight: 600, color: accent || C.ink, fontVariantNumeric: "tabular-nums" }}>{mine}</span>
+    <span style={{ fontFamily: MONO, fontSize: 12, fontWeight: refEst ? 400 : 600, color: refEst ? C.ink3 : C.ink, fontVariantNumeric: "tabular-nums" }}>
+      {refV}{refEst && <span style={{ fontSize: 9.5, marginLeft: 4 }}>추정</span>}
+    </span>
+  </div>
+);
+const BudgetTable = ({ rows, unit, total, fmtV }) => (
+  <div>
+    <div className="grid items-baseline pb-1.5" style={{ gridTemplateColumns: "1fr 84px 52px 84px", borderBottom: `1px solid ${C.ink}` }}>
+      <Eyebrow>항목</Eyebrow><Eyebrow>CBE</Eyebrow>
+      <div style={{ fontFamily: MONO, fontSize: 10, letterSpacing: "0.1em", color: C.ink3, fontWeight: 600, textAlign: "right" }}>마진</div>
+      <Eyebrow>MEV</Eyebrow>
+    </div>
+    {rows.map((r, i) => (
+      <div key={i} className="grid items-baseline py-1.5" style={{ gridTemplateColumns: "1fr 84px 52px 84px", borderBottom: `1px dotted ${C.rule}` }}>
+        <span style={{ fontSize: 12.5, color: r.strong ? C.ink : C.ink2, fontWeight: r.strong ? 600 : 400 }}>{r.k}</span>
+        <span style={{ fontFamily: MONO, fontSize: 12, color: C.ink2, fontVariantNumeric: "tabular-nums" }}>{fmtV(r.cbe)}</span>
+        <span style={{ fontFamily: MONO, fontSize: 11, color: C.ink3, textAlign: "right" }}>{r.m != null ? `+${r.m}%` : "—"}</span>
+        <span style={{ fontFamily: MONO, fontSize: 12, fontWeight: 600, color: r.strong ? C.compute : C.ink }}>{fmtV(r.mev)}</span>
+      </div>
+    ))}
+    <div className="grid items-baseline pt-2" style={{ gridTemplateColumns: "1fr 84px 52px 84px", borderTop: `1px solid ${C.ink}` }}>
+      <span style={{ fontSize: 13, fontWeight: 700 }}>{total.k}</span>
+      <span style={{ fontFamily: MONO, fontSize: 12, color: C.ink2 }}>{fmtV(total.cbe)}</span>
+      <span />
+      <span style={{ fontFamily: MONO, fontSize: 13.5, fontWeight: 700, color: C.compute }}>{fmtV(total.mev)}</span>
+    </div>
+    <div style={{ fontFamily: MONO, fontSize: 9.5, color: C.ink3, textAlign: "right", marginTop: 3, letterSpacing: "0.08em" }}>{unit}</div>
+  </div>
+);
+const Band = ({ segments, total, unit, height = 44 }) => (
+  <div>
+    <div className="flex w-full overflow-hidden" style={{ height, border: `1px solid ${C.ink}`, background: C.panelAlt }}>
+      {segments.map((s, i) => {
+        const pct = total > 0 ? (s.v / total) * 100 : 0;
+        if (pct <= 0) return null;
+        return (
+          <div key={i} title={`${s.label} · ${fmt(s.v, 1)}${unit}`} className="flex flex-col justify-center px-2"
+            style={{ width: `${pct}%`, background: s.c, borderRight: i < segments.length - 1 ? "1px solid rgba(255,255,255,0.35)" : "none",
+              transition: "width 260ms cubic-bezier(.4,0,.2,1)", overflow: "hidden" }}>
+            {pct > 9 && (
+              <>
+                <div style={{ fontFamily: MONO, fontSize: 8.5, letterSpacing: "0.06em", color: "rgba(255,255,255,0.9)", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{s.label}</div>
+                <div style={{ fontFamily: MONO, fontSize: 12.5, fontWeight: 700, color: "#fff" }}>{fmt(s.v, s.v < 10 ? 1 : 0)}</div>
+              </>
+            )}
+          </div>
+        );
+      })}
+    </div>
+    <div style={{ fontFamily: MONO, fontSize: 9.5, color: C.ink3, textAlign: "right", marginTop: 2, letterSpacing: "0.1em" }}>{unit} · 합계 {fmt(total, 1)}</div>
+  </div>
+);
+/* 용량 대비 수요 점유 바 */
+const LoadBar = ({ label, need, cap, color }) => {
+  const over = cap > 0 && need > cap;
+  return (
+    <div className="mb-3">
+      <div className="flex justify-between items-baseline mb-1">
+        <span style={{ fontSize: 12, color: C.ink2 }}>{label} · 용량 {bw(cap)}</span>
+        <span style={{ fontFamily: MONO, fontSize: 11.5, fontWeight: 700, color: over ? C.warn : C.good }}>
+          {over ? `${fmt(need / cap, 1)}배 초과` : `${fmt(cap > 0 ? (need / cap) * 100 : 0, 1)}% 점유`}
+        </span>
+      </div>
+      <div style={{ height: 12, background: C.panelAlt, border: `1px solid ${C.rule}` }}>
+        <div style={{ width: `${cap > 0 ? Math.min((need / cap) * 100, 100) : 0}%`, height: "100%", background: over ? C.warn : color, transition: "width 260ms ease" }} />
+      </div>
+    </div>
+  );
+};
+/* 접히는 세부 가정 묶음 */
+const Details = ({ label, children }) => (
+  <details className="mt-2 mb-2">
+    <summary style={{ fontSize: 12, color: C.ink3, cursor: "pointer", fontWeight: 500 }}>▸ {label}</summary>
+    <div className="mt-3">{children}</div>
+  </details>
+);
+
+/* ── 수치 연동 위성 형상 ──────────────────────────────────────
+   ⑤에서 산출된 태양전지판·방열판 면적과 ①의 컴퓨트 본체,
+   ③의 ISL 4터미널을 실제 축척(m)으로 그립니다.
+   면적 가정: 어레이 날개 2장(가로:세로 4:1), 방열판 2장(세로:가로 3:1, 궤도면 평행) */
+const SatDiagram = ({ geo, comp, islRate, islOk }) => {
+  const { saA, radA, busS, wingW, wingH, radW, radH, gap, spanM, heightM } = geo;
+  const W = 660, H = 400, PAD = 52;
+  const s = Math.min((W - 2 * PAD) / spanM, (H - 2 * PAD) / heightM);
+  const cx = W / 2, cy = H / 2 + 6;
+  const bs = busS * s;
+  const bd = Math.max(bs, 16); // 본체 최소 표시 크기 — 실축척이면 점이 되어 보이지 않음
+  const gp = Math.max(gap * s, 6);
+
+  /* 축척 막대: 40~130px 사이가 되는 보기 좋은 길이 */
+  const scaleLen = [1, 2, 5, 10, 20, 50, 100, 200].find((L) => L * s >= 40 && L * s <= 130) || 10;
+  const ai1Half = 35 * s; // AI1 윙스팬 70 m 비교 마커
+
+  const wingY = cy - (wingH * s) / 2;
+  const isl = [
+    { x: cx - bd / 2 - 13, y: cy - 4, dx: -9, dy: 0, c: C.hot },   // SDC 링 전방
+    { x: cx + bd / 2 + 5,  y: cy - 4, dx: 9,  dy: 0, c: C.hot },   // SDC 링 후방
+    { x: cx - bd / 2 - 15, y: cy - bd / 2 - 15, dx: -7, dy: -7, c: C.comm }, // 릴레이 주 (상방 대각)
+    { x: cx + bd / 2 + 7,  y: cy - bd / 2 - 15, dx: 7,  dy: -7, c: C.comm }, // 릴레이 예비
+  ];
+
+  return (
+    <div>
+      <svg viewBox={`0 0 ${W} ${H}`} style={{ width: "100%", background: C.panelAlt, border: `1px solid ${C.rule}` }}>
+        {/* AI1 윙스팬 70 m 비교 마커 */}
+        <line x1={cx - ai1Half} y1={H - 26} x2={cx + ai1Half} y2={H - 26} stroke={C.ink3} strokeDasharray="5 4" strokeWidth={1} />
+        <line x1={cx - ai1Half} y1={H - 31} x2={cx - ai1Half} y2={H - 21} stroke={C.ink3} strokeWidth={1} />
+        <line x1={cx + ai1Half} y1={H - 31} x2={cx + ai1Half} y2={H - 21} stroke={C.ink3} strokeWidth={1} />
+        <text x={cx} y={H - 33} textAnchor="middle" style={{ font: `9px ${MONO}`, fill: C.ink3 }}>AI1 윙스팬 70 m (비교)</text>
+
+        {/* 태양전지판 날개 2장 */}
+        {saA > 0 && (
+          <>
+            <rect x={cx - bd / 2 - gp - wingW * s} y={wingY} width={wingW * s} height={wingH * s}
+              fill={C.power} opacity={0.82} stroke={C.ink} strokeWidth={0.8} />
+            <rect x={cx + bd / 2 + gp} y={wingY} width={wingW * s} height={wingH * s}
+              fill={C.power} opacity={0.82} stroke={C.ink} strokeWidth={0.8} />
+            {/* 셀 분할선 */}
+            {[0.25, 0.5, 0.75].map((f, i) => (
+              <React.Fragment key={i}>
+                <line x1={cx - bd / 2 - gp - wingW * s * f} y1={wingY} x2={cx - bd / 2 - gp - wingW * s * f} y2={wingY + wingH * s} stroke="#fff" strokeWidth={0.6} opacity={0.5} />
+                <line x1={cx + bd / 2 + gp + wingW * s * f} y1={wingY} x2={cx + bd / 2 + gp + wingW * s * f} y2={wingY + wingH * s} stroke="#fff" strokeWidth={0.6} opacity={0.5} />
+              </React.Fragment>
+            ))}
+            <text x={cx - bd / 2 - gp - (wingW * s) / 2} y={wingY - 7} textAnchor="middle" style={{ font: `10px ${MONO}`, fill: C.power, fontWeight: 700 }}>
+              태양전지판 {fmt(saA, 0)} m²
+            </text>
+            <text x={cx - bd / 2 - gp - (wingW * s) / 2} y={wingY + wingH * s + 13} textAnchor="middle" style={{ font: `9px ${MONO}`, fill: C.ink3 }}>
+              날개 {fmt(wingW, 0)} × {fmt(wingH, 0)} m × 2장 · 총 스팬 {fmt(spanM, 0)} m
+            </text>
+          </>
+        )}
+
+        {/* 방열판 2장 (상·하, 궤도면 평행) */}
+        {radA > 0 && (
+          <>
+            <rect x={cx - (radW * s) / 2} y={cy - bd / 2 - gp - radH * s} width={radW * s} height={radH * s}
+              fill={C.hot} opacity={0.55} stroke={C.ink} strokeWidth={0.8} />
+            <rect x={cx - (radW * s) / 2} y={cy + bd / 2 + gp} width={radW * s} height={radH * s}
+              fill={C.hot} opacity={0.55} stroke={C.ink} strokeWidth={0.8} />
+            <text x={cx + (radW * s) / 2 + 8} y={cy + bd / 2 + gp + (radH * s) / 2} style={{ font: `10px ${MONO}`, fill: C.hot, fontWeight: 700 }}>
+              방열판 {fmt(radA, 0)} m²
+            </text>
+            <text x={cx + (radW * s) / 2 + 8} y={cy + bd / 2 + gp + (radH * s) / 2 + 13} style={{ font: `9px ${MONO}`, fill: C.ink3 }}>
+              {fmt(radW, 0)} × {fmt(radH, 0)} m × 2장
+            </text>
+          </>
+        )}
+
+        {/* 컴퓨트 본체 */}
+        <rect x={cx - bd / 2} y={cy - bd / 2} width={bd} height={bd} fill={C.compute} stroke={C.ink} strokeWidth={1.2} />
+        <text x={cx} y={cy + bd / 2 + gp + (radA > 0 ? radH * s : 0) + 16} textAnchor="middle" style={{ font: `10px ${MONO}`, fill: C.compute, fontWeight: 700 }}>
+          컴퓨트 {kW(comp.pCompCBE)} · 본체 ~{fmt(busS, 1)} m{bd > bs + 0.1 ? " (본체·ISL 확대 표시)" : ""}
+        </text>
+
+        {/* ISL 터미널 4기 */}
+        {isl.map((t, i) => (
+          <g key={i}>
+            <rect x={t.x} y={t.y} width={8} height={8} fill={islOk ? t.c : C.warn} stroke={C.ink} strokeWidth={0.7} />
+            <line x1={t.x + 4 + t.dx * 0.7} y1={t.y + 4 + t.dy * 0.7} x2={t.x + 4 + t.dx * 2.2} y2={t.y + 4 + t.dy * 2.2}
+              stroke={islOk ? t.c : C.warn} strokeWidth={1.4} />
+          </g>
+        ))}
+        <text x={cx} y={cy - bd / 2 - gp - (radA > 0 ? radH * s : 0) - 10} textAnchor="middle" style={{ font: `10px ${MONO}`, fill: C.comm, fontWeight: 700 }}>
+          ISL 4기 × {islRate} Gbps (릴레이행 2 ↑ 오프로딩 · 링 2 ←→ 학습·관측)
+        </text>
+
+        {/* 축척 막대 */}
+        <line x1={PAD} y1={H - 26} x2={PAD + scaleLen * s} y2={H - 26} stroke={C.ink} strokeWidth={1.5} />
+        <line x1={PAD} y1={H - 31} x2={PAD} y2={H - 21} stroke={C.ink} strokeWidth={1.5} />
+        <line x1={PAD + scaleLen * s} y1={H - 31} x2={PAD + scaleLen * s} y2={H - 21} stroke={C.ink} strokeWidth={1.5} />
+        <text x={PAD + (scaleLen * s) / 2} y={H - 33} textAnchor="middle" style={{ font: `9px ${MONO}`, fill: C.ink }}>{scaleLen} m</text>
+      </svg>
+    </div>
+  );
+};
+
+/* 클립보드 폴백 (file:// 등 clipboard API 불가 환경) */
+const fallbackCopy = (text) => {
+  const ta = document.createElement("textarea");
+  ta.value = text; ta.style.position = "fixed"; ta.style.opacity = "0";
+  document.body.appendChild(ta); ta.select();
+  try { document.execCommand("copy"); } catch (e) { /* 무시 */ }
+  document.body.removeChild(ta);
+};
+
+/* ── 종단 토폴로지: 사용자 – 인터넷 – 관문국(GW) – 릴레이 LEO – SDC ──
+   서비스 트래픽 경로와 각 구간의 산출 수치를 함께 표시. TT&C만 RF 직접 */
+const TopoNode = ({ x, y, w = 84, h = 44, label, sub, fill = C.panel, color = C.ink, dash }) => (
+  <g>
+    <rect x={x} y={y} width={w} height={h} fill={fill} stroke={color} strokeWidth={1.2} strokeDasharray={dash} />
+    <text x={x + w / 2} y={y + h / 2 + (sub ? -2 : 4)} textAnchor="middle" style={{ font: `bold 11px ${SANS}`, fill: color }}>{label}</text>
+    {sub && <text x={x + w / 2} y={y + h / 2 + 13} textAnchor="middle" style={{ font: `8.5px ${MONO}`, fill: C.ink3 }}>{sub}</text>}
+  </g>
+);
+const TopoLink = ({ x1, x2, y = 122, label, sub, color = C.ink2, dash, double: dbl }) => (
+  <g>
+    <line x1={x1} y1={y} x2={x2} y2={y} stroke={color} strokeWidth={1.6} strokeDasharray={dash} />
+    {dbl && <line x1={x1} y1={y + 4} x2={x2} y2={y + 4} stroke={color} strokeWidth={1.6} strokeDasharray={dash} />}
+    {label && <text x={(x1 + x2) / 2} y={y - 8} textAnchor="middle" style={{ font: `9.5px ${MONO}`, fill: color, fontWeight: 700 }}>{label}</text>}
+    {sub && <text x={(x1 + x2) / 2} y={y + 18} textAnchor="middle" style={{ font: `8.5px ${MONO}`, fill: C.ink3 }}>{sub}</text>}
+  </g>
+);
+const TopologyDiagram = ({ cm, con, relayLinks, relayIslPorts, ttcMbps, nSats }) => (
+  <svg viewBox="0 0 860 240" style={{ width: "100%", background: C.panelAlt, border: `1px solid ${C.rule}` }}>
+    {/* 지상 | 우주 경계 */}
+    <line x1={352} y1={14} x2={352} y2={226} stroke={C.ink3} strokeDasharray="6 5" />
+    <text x={344} y={26} textAnchor="end" style={{ font: `9px ${MONO}`, fill: C.ink3 }}>지상</text>
+    <text x={360} y={26} style={{ font: `9px ${MONO}`, fill: C.ink3 }}>우주</text>
+
+    <TopoNode x={16} y={100} w={70} label="사용자" color={C.ink2} />
+    <TopoNode x={130} y={100} w={78} label="인터넷" color={C.ink2} />
+    <TopoNode x={252} y={100} w={80} label="관문국" sub="GW 지상국" color={C.bus} />
+    <TopoNode x={396} y={100} w={96} label="릴레이 LEO" sub={`${isFinite(con.relayTotal) ? fmt(con.relayTotal, 0) : "—"}기 · ${relayIslPorts}포트`} fill="#EFEAF4" color={C.comm} />
+    <TopoNode x={560} y={94} w={104} h={56} label="SDC 위성" sub={`${nSats.toLocaleString("ko-KR")}기 성좌`} fill="#E7EDEF" color={C.compute} />
+    <TopoNode x={724} y={26} w={112} label="이웃 SDC (전방)" color={C.hot} dash="4 3" />
+    <TopoNode x={724} y={170} w={112} label="이웃 SDC (후방)" color={C.hot} dash="4 3" />
+    <TopoNode x={252} y={182} w={80} h={36} label="관제국" sub="TT&C" color={C.bus} dash="4 3" />
+
+    <TopoLink x1={86} x2={130} label="액세스망" />
+    <TopoLink x1={208} x2={252} label={bw(con.totalFeeder)} sub="성좌 전체 지상행" color={C.comm} />
+    <TopoLink x1={332} x2={396} label="피더링크" color={C.comm} />
+    <TopoLink x1={492} x2={560} label={`광 ISL ×${relayLinks}`} sub={`링크당 ${bw(con.linkBps)}`} color={C.comm} double={relayLinks === 2} />
+    {/* SDC ↔ 이웃 SDC (링, 학습·관측 전용) */}
+    <line x1={664} y1={106} x2={724} y2={48} stroke={C.hot} strokeWidth={1.4} />
+    <line x1={664} y1={138} x2={724} y2={192} stroke={C.hot} strokeWidth={1.4} />
+    <text x={700} y={92} textAnchor="middle" style={{ font: `8.5px ${MONO}`, fill: C.hot, fontWeight: 700 }}>링 ISL ×2</text>
+    <text x={702} y={158} textAnchor="middle" style={{ font: `8.5px ${MONO}`, fill: C.hot }}>{cm.inter > 0 ? bw(cm.inter) : "학습·관측 전용"}</text>
+    {/* TT&C RF 직접 링크 */}
+    <path d="M 332 202 Q 470 238 588 150" fill="none" stroke={C.bus} strokeWidth={1.2} strokeDasharray="3 3" />
+    <text x={470} y={224} textAnchor="middle" style={{ font: `8.5px ${MONO}`, fill: C.bus }}>TT&C RF {fmt(ttcMbps, 0)} Mbps 직접</text>
+    {/* SDC 지상행 주석 */}
+    <text x={612} y={84} textAnchor="middle" style={{ font: `9.5px ${MONO}`, fill: C.comm, fontWeight: 700 }}>위성 1기 지상행 {bw(cm.feeder)}</text>
+  </svg>
+);
+
+/* ══════════════════════════════════════════════════════════ */
+function SDCServiceCommSimulator() {
+  /* ① 위성에 싣는 컴퓨터 */
+  const [designMode, setDesignMode] = useState("spec"); // unit=부품 기반 · spec=제원 기반
+  const [unitKey, setUnitKey] = useState("kyber");
+  const [nUnits, setNUnits] = useState(1);
+  const [specKW, setSpecKW] = useState(120);
+  const [specTfPerW, setSpecTfPerW] = useState(6);
+  const [specHbmTB, setSpecHbmTB] = useState(20);
+  const [specUnit, setSpecUnit] = useState(null); // 제원 모드에서 마지막으로 불러온 부품 프리셋
+  const [compMargin100, setCompMargin100] = useState(false);
+  const [hostOh, setHostOh] = useState(20);
+  const [radLoss, setRadLoss] = useState(15);
+  const [pCap, setPCap] = useState(100);
+  const [betaKey, setBetaKey] = useState("balanced");
+
+  /* ② 어떤 AI 서비스를 얼마나 */
+  const [modelKey, setModelKey] = useState("kimi25");
+  const [customTotal, setCustomTotal] = useState(2000);
+  const [customAct, setCustomAct] = useState(60);
+  const [inOut, setInOut] = useState(4);
+  const [ctxK, setCtxK] = useState(32);
+  const [tokPerUser, setTokPerUser] = useState(8000);
+  const [fillKey, setFillKey] = useState("batch");
+  const [clusterG, setClusterG] = useState(8);
+  const [eoIntensity, setEoIntensity] = useState(1000); // kFLOP/byte
+  const [mfuPct, setMfuPct] = useState(40);
+  const [kvPerTok, setKvPerTok] = useState(30);
+  const [sessTokS, setSessTokS] = useState(40);
+  const [peakRatio, setPeakRatio] = useState(3);
+  /* 서비스 통신 유형: 텍스트는 기본, 인터넷·멀티미디어는 선택 (출력 1K토큰당 KB) */
+  const [webOn, setWebOn] = useState(true);
+  const [webKBper1k, setWebKBper1k] = useState(200); // 인터넷 검색·브라우징 유입 (원문 페이지 등)
+  const [mmOn, setMmOn] = useState(true);
+  const [mmKBper1k, setMmKBper1k] = useState(100);   // 이미지 등 멀티미디어 산출물 하향
+
+  /* ③ 통신 — ISL 4터미널 기준 설계 */
+  const [islRate, setIslRate] = useState(10);        // 터미널 1기 속도 Gbps (일반 상용 10 G급)
+  const [islTargetPct, setIslTargetPct] = useState(70);
+  const [relayCap, setRelayCap] = useState(10);      // 릴레이 위성 1기 용량 Gbps
+  const [relayEffPct, setRelayEffPct] = useState(70);
+  const [relayLinks, setRelayLinks] = useState(2);       // 릴레이행 ISL 2기 중 동시 사용 링크 수
+  const [relayIslPorts, setRelayIslPorts] = useState(4); // 릴레이 위성 1기가 수용하는 SDC 링크 수
+  const [protoOh, setProtoOh] = useState(3);
+  const [ttcMbps, setTtcMbps] = useState(2);
+
+  /* ④ 성좌 — 궤도면 수 × 궤도면당 위성 수 */
+  const [nPlanes, setNPlanes] = useState(1);
+  const [satsPerPlane, setSatsPerPlane] = useState(1000);
+  const [launcherKey, setLauncherKey] = useState("ss");
+
+  /* ⑤ 참고 가정 */
+  const [phase, setPhase] = useState("preA");
+  const [orbitType, setOrbitType] = useState("ddsso");
+  const [alt, setAlt] = useState(1000);
+  const [betaAng, setBetaAng] = useState(62);
+  const [solarAct, setSolarAct] = useState("mean");
+  const [life, setLife] = useState(5);
+  const [shedLoad, setShedLoad] = useState(false);
+  const [alphaVF, setAlphaVF] = useState(2.6);
+  const [staticFrac, setStaticFrac] = useState(30);
+  const [cellEff, setCellEff] = useState(30);
+  const [inherentDeg, setInherentDeg] = useState(77);
+  const [degPerYr, setDegPerYr] = useState(2.75);
+  const [incAng, setIncAng] = useState(15);
+  const [saWkg, setSaWkg] = useState(200);
+  const [xd, setXd] = useState(85);
+  const [xe, setXe] = useState(65);
+  const [dod, setDod] = useState(25);
+  const [battWhKg, setBattWhKg] = useState(180);
+  const [pcduEff, setPcduEff] = useState(93);
+  const [aocsBase, setAocsBase] = useState(300);
+  const [aocsPerM2, setAocsPerM2] = useState(1.2);
+  const [obdhW, setObdhW] = useState(600);
+  const [radT, setRadT] = useState(40);
+  const [emis, setEmis] = useState(85);
+  const [absorp, setAbsorp] = useState(12);
+  const [radAtt, setRadAtt] = useState("edge");
+  const [finEff, setFinEff] = useState(85);
+  const [radKgM2, setRadKgM2] = useState(5);
+  const [projFrac, setProjFrac] = useState(25);
+  const [skDv, setSkDv] = useState(30);
+
+  const U = UNITS[unitKey];
+  const isRack = U.g === "rack";
+  const uL = isRack ? "랙" : "기";
+  const P = PHASES[phase];
+  const nSats = nPlanes * satsPerPlane;
+
+  /* ── 전력 캡 → 유닛당 실효 전력·성능 ───────────────────── */
+  const dv = useMemo(() => {
+    const s0 = staticFrac / 100, b = BETAS[betaKey].b;
+    const floor = Math.ceil(s0 * 100) + 1;
+    const c = Math.max(pCap, floor) / 100;
+    const x = Math.pow(Math.max(0, (c - s0) / (1 - s0)), 1 / alphaVF);
+    const perf = Math.pow(x, b);
+    return { c, perf, floor, effW: U.w * c, effPF: U.pf8 * perf,
+      tfPerW: U.w * c > 0 ? (U.pf8 * perf * 1000) / (U.w * c) : 0, gain: perf / c };
+  }, [U, pCap, alphaVF, staticFrac, betaKey]);
+
+  /* ── 궤도 (⑤ 참고 산출용) ──────────────────────────────── */
+  const orb = useMemo(() => {
+    const a = RE + alt;
+    const T = (2 * Math.PI * Math.sqrt((a * a * a) / MU)) / 60;
+    const rhoAng = Math.asin(RE / a);
+    const b = (betaAng * Math.PI) / 180;
+    let fE = 0;
+    if (Math.abs(b) < rhoAng) {
+      const num = Math.sqrt(alt * alt + 2 * RE * alt);
+      fE = (1 / Math.PI) * Math.acos(Math.min(1, num / (a * Math.cos(b))));
+    }
+    const Te = fE * T, Td = T - Te;
+    const V = Math.sqrt(MU / a) * 1000;
+    const rp = RE + 100;
+    const deorbitDv = V * (1 - Math.sqrt((2 * rp) / (a + rp)));
+    return { T, Te, Td, fE, sunFrac: Td / T, V, deorbitDv,
+      rho: rhoAt(alt) * SOLAR_ACT[solarAct].f };
+  }, [alt, betaAng, solarAct]);
+
+  /* ── ① 컴퓨트 자원 총량 ────────────────────────────────── */
+  const comp = useMemo(() => {
+    const isSpec = designMode === "spec";
+    const duty = shedLoad ? orb.sunFrac : 1;
+    /* spec 모드: 페이로드 전력 × 와트당 성능으로 역산 (전력 캡·오버헤드는 효율값에 포함 간주) */
+    const peakPF = isSpec ? specKW * specTfPerW : nUnits * dv.effPF;
+    const effPF = peakPF * (1 - radLoss / 100) * duty;
+    const servedPF = compMargin100 ? effPF / 2 : effPF;
+    const pCompCBE = isSpec ? specKW * 1000 : nUnits * dv.effW * (1 + hostOh / 100);
+    return { isSpec, duty, peakPF, effPF, servedPF, pCompCBE,
+      hbmTB: isSpec ? specHbmTB : (nUnits * U.hbm) / 1000,
+      label: isSpec ? `컴퓨트 페이로드 (제원 ${specKW} kW)` : `컴퓨트 페이로드 (${nUnits} ${uL})`,
+      payloadMass: isSpec ? specKW * 5 : nUnits * (U.mass + U.chassis) }; // 제원 모드는 5 kg/kW 추정
+  }, [U, uL, nUnits, dv, radLoss, compMargin100, hostOh, shedLoad, orb.sunFrac,
+      designMode, specKW, specTfPerW, specHbmTB]);
+
+  /* ── ② 서비스: 활용률 · 채우기 ─────────────────────────── */
+  const svc = useMemo(() => {
+    const hbmGB = comp.hbmTB * 1000;
+    const BPP = 1; // FP8 1 byte/param
+    const base = MODELS[modelKey];
+    const total = modelKey === "custom" ? customTotal : base.total;
+    const act = modelKey === "custom" ? customAct : base.act;
+    const weightsGB = total * BPP;
+    const fits = weightsGB * 1.15 <= hbmGB;
+    const kvFreeGB = Math.max(0, hbmGB - weightsGB * 1.15);
+    const kvSessGB = (ctxK * 1000 * kvPerTok) / 1e6; // K토큰 × kB/토큰 → GB
+
+    const Cs = comp.servedPF * 1e15 * (mfuPct / 100);
+    const flopsPerTok = 2 * act * 1e9 * (1 + inOut); // 프리필 포함
+    const tokSMax = fits && flopsPerTok > 0 ? Cs / flopsPerTok : 0;
+
+    const concCompute = sessTokS > 0 ? tokSMax / sessTokS : 0;
+    const concMem = kvSessGB > 0 ? kvFreeGB / kvSessGB : 0;
+    const conc = Math.min(concCompute, concMem);
+    const bound = concCompute <= concMem ? "연산" : "메모리";
+
+    const rtTokS = conc * sessTokS;
+    const rtFrac = tokSMax > 0 ? Math.min(1, rtTokS / tokSMax) : 0;
+    const leftFrac = fits ? Math.max(0, 1 - rtFrac) : 1;
+    const leftCs = Cs * leftFrac;
+
+    /* 남는 연산 채우기 */
+    let fill = { tokS: 0, islIn: 0, dlExtra: 0, used: 0, note: "" };
+    if (fillKey === "batch" && fits && leftCs > 0) {
+      fill.tokS = leftCs / flopsPerTok;
+      fill.used = leftFrac;
+      fill.note = `배치 추론 ${fmt(fill.tokS, 0)} tok/s 추가 처리`;
+    } else if (fillKey === "train" && leftCs > 0) {
+      const actP = act * 1e9, totalP = total * 1e9;
+      const tStep = (6 * actP * 16e6) / (clusterG * leftCs);
+      const bpn = 2 * ((clusterG - 1) / clusterG) * totalP * 2 * 0.25;
+      fill.islIn = tStep > 0 ? (bpn * 8) / tStep : 0;
+      fill.dlExtra = tStep > 0 ? ((totalP * 2) / (1000 * tStep)) * 8 : 0;
+      fill.used = leftFrac;
+      fill.note = `SDC ${clusterG}기 묶음 학습 — 스텝 ${fmt(tStep, 1)} s, all-reduce가 링 ISL 지배`;
+    } else if (fillKey === "eo" && leftCs > 0) {
+      const ingest = (leftCs / (eoIntensity * 1000)) * 8;
+      fill.islIn = ingest;
+      fill.dlExtra = ingest / 100;
+      fill.used = leftFrac;
+      fill.note = `원시 데이터 ${bw(ingest)} 흡수, 산출물 1/100 하향`;
+    }
+    const usedFrac = Math.min(1, rtFrac + fill.used);
+    const dailyTok = (rtTokS * 86400) / peakRatio;
+    const dau = tokPerUser > 0 ? dailyTok / tokPerUser : 0;
+
+    const ladder = Object.entries(MODELS).filter(([k]) => k !== "custom").map(([k, m]) => ({
+      k, ...m, ok: m.total * BPP * 1.15 <= hbmGB,
+    }));
+
+    return { hbmGB, total, act, weightsGB, fits, kvFreeGB, kvSessGB,
+      Cs, flopsPerTok, tokSMax, concCompute, concMem, conc, bound,
+      rtTokS, rtFrac, leftFrac, leftCs, fill, usedFrac, dailyTok, dau, ladder,
+      name: base.name, tier: base.tier, est: base.est };
+  }, [comp, modelKey, customTotal, customAct, mfuPct, inOut, ctxK, kvPerTok,
+      sessTokS, peakRatio, tokPerUser, fillKey, clusterG, eoIntensity]);
+
+  /* ── ③ 통신: 고정 4터미널 (SDC 링 전·후 2 + 릴레이 주·예비 2) ── */
+  const cm = useMemo(() => {
+    const B = 3 * 8; // 토큰당 3 byte
+    const rtDl = svc.rtTokS * B * protoOh;
+    const rtUl = svc.rtTokS * inOut * B * protoOh;
+    const batchDl = svc.fill.tokS * B * protoOh;
+    const batchUl = svc.fill.tokS * inOut * B * protoOh;
+    const tokBps = rtDl + rtUl + batchDl + batchUl;                    // 텍스트 토큰 자체
+    /* 에이전트 추가 트래픽: 웹 검색 유입(지상→SDC) · 멀티미디어 출력(SDC→지상) — 둘 다 릴레이 링크를 지남 */
+    const webK = webOn ? webKBper1k : 0, mmK = mmOn ? mmKBper1k : 0;
+    const webBps = (svc.rtTokS / 1000) * webK * 1e3 * 8;
+    const mmBps = (svc.rtTokS / 1000) * mmK * 1e3 * 8;
+    const feeder = tokBps + webBps + mmBps + svc.fill.dlExtra;         // 릴레이 경유 지상행
+    const inter = svc.fill.islIn;                                      // SDC 링(학습·관측)
+    const totalNeed = feeder + inter;
+
+    const islCapEach = islRate * 1e9 * (islTargetPct / 100);
+    const nIslTotal = 4;
+    /* 오프로딩(지상행)은 릴레이행 2기 중 동시 사용 가능한 링크(relayLinks)가 전담 — 링 2기는 학습·관측 전용 */
+    const feederCap = relayLinks * islCapEach;
+    const interCap = 2 * islCapEach;   // SDC 링 전·후 2회선
+    const feederOk = feeder <= feederCap;
+    const interOk = inter <= interCap;
+    /* 현 트래픽을 4터미널 구성으로 감당하기 위한 터미널 최소 속도 */
+    const reqRate = Math.max(feeder / relayLinks / (islTargetPct / 100), inter / 2 / (islTargetPct / 100)) / 1e9;
+
+    const relayEffCap = relayCap * 1e9 * (relayEffPct / 100);
+    const relaysPerSat = relayEffCap > 0 ? feeder / relayEffCap : Infinity;
+    const satsPerRelay = feeder > 0 ? relayEffCap / feeder : Infinity;
+
+    /* 요약용 가정 사슬: 세션 1개·사용자 1인이 만드는 트래픽 */
+    const perSessBps = svc.conc > 0 ? (rtDl + rtUl) / svc.conc : 0;
+    const perUserDayMB = (tokPerUser * (1 + inOut) * 3 * protoOh + tokPerUser * (webK + mmK)) / 1e6;
+
+    return { rtDl, rtUl, batchDl, batchUl, tokBps, webBps, mmBps, feeder, inter, totalNeed,
+      islCapEach, nIslTotal, feederCap, interCap, feederOk, interOk, reqRate,
+      relayEffCap, relaysPerSat, satsPerRelay, perSessBps, perUserDayMB,
+      ttc: ttcMbps * 1e6 };
+  }, [svc, inOut, protoOh, islRate, islTargetPct, relayCap, relayEffPct, relayLinks, ttcMbps, tokPerUser, webOn, webKBper1k, mmOn, mmKBper1k]);
+
+  /* ── 환경 열유속 · 어레이 (⑤) ──────────────────────────── */
+  const env = useMemo(() => {
+    const Fe = Math.pow(RE / (RE + alt), 2) * RAD_ATT[radAtt].fF;
+    const Tr = radT + 273.15, e = emis / 100, a2 = absorp / 100;
+    const emit = 2 * e * SB * Math.pow(Tr, 4);
+    const net = (emit - e * Q_IR * Fe - a2 * S_SOLAR * ALBEDO * Fe
+      - (RAD_ATT[radAtt].sun ? a2 * S_SOLAR : 0)) * (finEff / 100);
+    return { Fe, emit, net, sunLit: RAD_ATT[radAtt].sun };
+  }, [alt, radAtt, radT, emis, absorp, finEff]);
+
+  const arr = useMemo(() => {
+    const eol = Math.pow(1 - degPerYr / 100, life);
+    return { eol, wPerM2: S_SOLAR * (cellEff / 100) * (inherentDeg / 100) * Math.cos((incAng * Math.PI) / 180) * eol };
+  }, [degPerYr, life, cellEff, inherentDeg, incAng]);
+
+  /* ── ⑤ 전력 예산 ───────────────────────────────────────── */
+  const pw = useMemo(() => {
+    const pIslEach = 60 + 0.04 * islRate;
+    const pCommCBE = cm.nIslTotal * pIslEach + 120; // 광 ISL 4기 + TT&C RF 120 W
+    const rough = (comp.pCompCBE + pCommCBE) * 1.55;
+    const approxArea = (env.net > 0 ? rough / env.net : 0) + (arr.wPerM2 > 0 ? rough / arr.wPerM2 : 0);
+    const aocsW = aocsBase + aocsPerM2 * approxArea;
+    const pTcsCBE = (comp.pCompCBE + pCommCBE + aocsW) * 0.035;
+
+    const items = [
+      { k: comp.label, cbe: comp.pCompCBE, m: P.eqD, strong: true },
+      { k: `통신 (ISL ${cm.nIslTotal}기 + TT&C RF)`, cbe: pCommCBE, m: P.eqD },
+      { k: "열제어", cbe: pTcsCBE, m: P.eqD },
+      { k: "자세·궤도제어 (AOCS)", cbe: aocsW, m: P.eqC },
+      { k: "탑재컴퓨터·TT&C (OBDH)", cbe: obdhW, m: P.eqAB },
+    ].map((r) => ({ ...r, mev: r.cbe * (1 + r.m / 100) }));
+
+    const cbeSum = items.reduce((s, r) => s + r.cbe, 0);
+    const mevSum = items.reduce((s, r) => s + r.mev, 0);
+    const withSys = mevSum * (1 + P.sys / 100);
+    const busInput = withSys / (pcduEff / 100);
+    const Pe = shedLoad ? busInput * 0.12 : busInput;
+    const Psa = (Pe * orb.Te / (xe / 100) + busInput * orb.Td / (xd / 100)) / orb.Td;
+    const saArea = Psa / arr.wPerM2;
+    const saMass = Psa / saWkg;
+    const battWh = (Pe * (orb.Te / 60)) / ((dod / 100) * 0.9);
+    const battMass = battWh / battWhKg;
+    return { items, cbeSum, mevSum, withSys, busInput, Psa, saArea, saMass,
+      battWh, battMass, pCommCBE, pTcsCBE, aocsW };
+  }, [comp, cm.nIslTotal, islRate, P, obdhW, pcduEff, shedLoad,
+      orb, arr, env, xe, xd, saWkg, dod, battWhKg, aocsBase, aocsPerM2]);
+
+  /* ── ⑤ 열·질량 ─────────────────────────────────────────── */
+  const th = useMemo(() => {
+    const Q = pw.busInput;
+    const area = env.net > 0 ? Q / env.net : Infinity;
+    return { Q, area, mass: area * radKgM2, loopMass: (Q / 1000) * 3.0 };
+  }, [pw.busInput, env, radKgM2]);
+
+  const ms = useMemo(() => {
+    const eq = [
+      { k: comp.label, cbe: comp.payloadMass, m: P.eqD, strong: true },
+      { k: "방열판·유체루프", cbe: th.mass + th.loopMass, m: P.eqD },
+      { k: "태양전지판", cbe: pw.saMass, m: P.eqC },
+      { k: "배터리", cbe: pw.battMass, m: P.eqAB },
+      { k: "PCDU·전력전자", cbe: (pw.Psa / 1000) * 3.0, m: P.eqC },
+      { k: `통신 (ISL ${cm.nIslTotal}기 + TT&C)`, cbe: cm.nIslTotal * 12 + 20, m: P.eqC },
+      { k: "AOCS·OBDH", cbe: 65 + (pw.Psa / 1000) * 0.9, m: P.eqC },
+      { k: "추진 (건조)", cbe: 30 + (pw.Psa / 1000) * 0.5, m: P.eqC },
+    ].map((r) => ({ ...r, mev: r.cbe * (1 + r.m / 100) }));
+    const eqCBE = eq.reduce((s, r) => s + r.cbe, 0);
+    const eqMEV = eq.reduce((s, r) => s + r.mev, 0);
+    const harness = eqMEV * 0.05, struct = (eqMEV + harness) * 0.25;
+    const dry = (eqMEV + harness + struct) * (1 + P.sys / 100);
+    const deployed = th.area + pw.saArea;
+    const Aproj = deployed * (projFrac / 100);
+    const accel = (0.5 * orb.rho * orb.V * orb.V * 2.2 * Aproj) / dry;
+    const dragDvYr = accel * 3.156e7;
+    const dV = dragDvYr * life + orb.deorbitDv + skDv;
+    const prop = dry * (Math.exp(dV / (1600 * 9.80665)) - 1) * 1.02;
+    return { eq, eqCBE, eqMEV, harness, struct, dry, prop, wet: dry + prop,
+      dV, dragDvYr, deployed, Aproj };
+  }, [comp, th, pw, cm.nIslTotal, P, orb, life, projFrac, skDv]);
+
+  /* ── ④ 성좌 합계 ─────────────────────────────────────────── */
+  const con = useMemo(() => {
+    const L = LAUNCHERS[launcherKey];
+    const per = Math.floor((L.cap * 0.9) / ms.wet);
+    const launches = per >= 1 ? Math.ceil(nSats / per) : Infinity;
+    const totalFeeder = cm.feeder * nSats;
+    /* 릴레이 소요 — 링크·용량 결합 산식.
+       SDC 1기의 지상행은 동시 링크 L개에 나뉘고(링크당 feeder/L), 링크 하나는 릴레이 간 분할 불가.
+       → 릴레이 1기가 실제 수용하는 링크 = min(포트 수 P, ⌊실효용량 ÷ 링크당 트래픽⌋)
+       → 필요 릴레이 = ⌈총 링크 수(SDC수 × L) ÷ 실제 수용 링크⌉ */
+    const linkBps = relayLinks > 0 ? cm.feeder / relayLinks : 0;
+    const portsByCap = linkBps <= 0 ? relayIslPorts
+      : cm.relayEffCap > 0 ? Math.floor(cm.relayEffCap / linkBps) : 0;
+    const portsEff = Math.max(0, Math.min(relayIslPorts, portsByCap));
+    const linkFeasible = linkBps <= 0 || portsByCap >= 1;
+    const relayTotal = linkFeasible && portsEff > 0 ? Math.ceil((nSats * relayLinks) / portsEff) : Infinity;
+    const relayBind = !linkFeasible ? "링크 과부하" : portsEff >= relayIslPorts ? "링크 수" : "용량";
+    return {
+      totalPF: comp.servedPF * nSats,
+      totalMW: (pw.Psa * nSats) / 1e6,
+      totalT: (ms.wet * nSats) / 1000,
+      totalDau: svc.dau * nSats,
+      totalFeeder, linkBps, portsByCap, portsEff, linkFeasible, relayTotal, relayBind,
+      per, launches, cost: per >= 1 ? (launches * L.cost) / 1000 : Infinity, L,
+    };
+  }, [comp, pw, ms, svc, cm, nSats, relayLinks, relayIslPorts, launcherKey]);
+
+  /* ── 위성 형상 기하 (m) — SatDiagram과 형상 패널이 공유 ── */
+  const geo = useMemo(() => {
+    const saA = isFinite(pw.saArea) && pw.saArea > 0 ? pw.saArea : 0;
+    const radA = isFinite(th.area) && th.area > 0 ? th.area : 0;
+    const busS = Math.max(1.5, Math.cbrt(Math.max(comp.payloadMass, 100) / 200)); // 밀도 200 kg/m³ 가정
+    const wingH = saA > 0 ? Math.sqrt(saA / 8) : 0;   // 날개 1장 = saA/2, 폭:높이 4:1
+    const wingW = 4 * wingH;
+    const radW = radA > 0 ? Math.sqrt(radA / 6) : 0;  // 방열판 1장 = radA/2, 높이:폭 3:1
+    const radH = 3 * radW;
+    const gap = Math.max(busS * 0.4, 1);
+    const spanM = 2 * (wingW + gap) + busS;
+    const heightM = Math.max(2 * (radH + gap) + busS, wingH) * 1.06;
+    return { saA, radA, busS, wingW, wingH, radW, radH, gap, spanM, heightM };
+  }, [pw.saArea, th.area, comp.payloadMass]);
+
+  /* 릴레이 용량별 소요 대수 곡선 */
+  const relayCurve = useMemo(() => {
+    return [1, 2, 5, 10, 20, 30, 50, 75, 100].map((cap) => ({
+      cap,
+      relays: cm.feeder > 0 ? Math.ceil((cm.feeder * nSats) / (cap * 1e9 * (relayEffPct / 100))) : 0,
+    }));
+  }, [cm.feeder, nSats, relayEffPct]);
+
+  /* 컴퓨트 활용 밴드 (%) */
+  const utilSegs = [
+    { label: "실시간 추론", v: svc.rtFrac * 100, c: C.compute },
+    { label: FILLS[fillKey].name.split(" ")[0], v: svc.fill.used * 100, c: fillKey === "none" ? C.idle : C.computeLt },
+    { label: "유휴", v: Math.max(0, 100 - svc.usedFrac * 100), c: C.idle },
+  ];
+  /* 트래픽 밴드 (Gbps) */
+  const trafSegs = [
+    { label: "토큰 상·하향", v: (cm.tokBps + svc.fill.dlExtra) / 1e9, c: C.comm },
+    { label: "웹 유입", v: cm.webBps / 1e9, c: "#8E77AE" },
+    { label: "멀티미디어", v: cm.mmBps / 1e9, c: C.power },
+    { label: "SDC 링", v: cm.inter / 1e9, c: C.hot },
+  ];
+
+  const utilColor = svc.usedFrac >= 0.9 ? C.good : svc.usedFrac >= 0.6 ? C.power : C.warn;
+  const islOk = cm.feederOk && cm.interOk;
+  const kwPerTon = ms.wet > 0 ? (comp.pCompCBE / 1000) / (ms.wet / 1000) : 0; // AI1 비교용
+  const applyAI1 = () => {
+    setDesignMode("spec"); setSpecKW(120); setSpecTfPerW(AI1.est.tfPerW);
+    setSpecHbmTB(AI1.est.hbmTB); setAlt(AI1.alt); setSpecUnit(null);
+  };
+  /* 설정·결과 요약을 텍스트로 복사 — AI에게 붙여넣어 질문하는 용도 */
+  const [copied, setCopied] = useState(false);
+  const copySummary = () => {
+    const Ls = [
+      "[SDC 시뮬레이터 v3 · 설정/결과 요약]",
+      "",
+      "① 컴퓨트",
+      designMode === "spec"
+        ? `- 제원 입력: ${specKW} kW · ${specTfPerW} TF/W · HBM ${specHbmTB} TB`
+        : `- 부품: ${U.name} × ${nUnits}${uL} · 전력캡 ${Math.max(pCap, dv.floor)}% · 오버헤드 ${hostOh}%`,
+      `- 방사선 감쇠 ${radLoss}% · 컴퓨팅 마진 100% ${compMargin100 ? "적용" : "미적용"}`,
+      `- 결과: 서비스 가용 연산 ${flops(comp.servedPF)} · HBM ${fmt(comp.hbmTB, 1)} TB · 컴퓨트 전력 ${kW(comp.pCompCBE)}`,
+      "② 서비스",
+      `- 모델 ${svc.name} (총 ${svc.total}B/활성 ${svc.act}B) · MFU ${mfuPct}% · 입:출 ${inOut}:1 · 컨텍스트 ${ctxK}K · KV ${kvPerTok} kB/tok`,
+      `- 세션 ${sessTokS} tok/s · 1인 ${tokPerUser} tok/일 · 피크/평균 ${peakRatio} · 프로토콜 ×${protoOh}`,
+      `- 통신 유형: 텍스트${webOn ? ` + 웹 ${webKBper1k} KB/1K토큰` : ""}${mmOn ? ` + 멀티미디어 ${mmKBper1k} KB/1K토큰` : ""}`,
+      `- 남는 연산 채우기: ${FILLS[fillKey].name}${fillKey === "train" ? ` (${clusterG}기 묶음)` : ""}`,
+      `- 결과: 동시 ${fmt(svc.conc, 0)}세션 (${svc.bound} 제약) · DAU ${users(svc.dau)} · 활용률 ${fmt(svc.usedFrac * 100, 0)}%`,
+      "③ 통신 (TT&C만 RF 직접 · 서비스 트래픽은 ISL→릴레이 LEO→지상)",
+      `- ISL 4터미널 × ${islRate} Gbps (릴레이행 동시 ${relayLinks} + 링 2) · 목표점유 ${islTargetPct}% · 판정 ${islOk ? "충족" : "부족(터미널당 " + fmt(cm.reqRate, 1) + " Gbps 필요)"}`,
+      `- 릴레이 위성: 용량 ${relayCap} Gbps · 실효율 ${relayEffPct}% · 포트 ${relayIslPorts}링크`,
+      `- 결과: 위성 1기 지상행 ${bw(cm.feeder)} (토큰 ${bw(cm.tokBps)}${cm.webBps > 0 ? " + 웹 " + bw(cm.webBps) : ""}${cm.mmBps > 0 ? " + 멀티미디어 " + bw(cm.mmBps) : ""}) · SDC 링 ${bw(cm.inter)}`,
+      `- 릴레이 산정: 링크당 ${bw(con.linkBps)} → 릴레이 1기 수용 min(${relayIslPorts}, ${fmt(con.portsByCap, 0)}) = ${fmt(con.portsEff, 0)}링크 → 필요 ${isFinite(con.relayTotal) ? fmt(con.relayTotal, 0) : "—"}기 (${con.relayBind} 제약)`,
+      "④ 성좌",
+      `- ${nPlanes}면 × ${satsPerPlane}기 = ${nSats.toLocaleString("ko-KR")}기 · 총 연산 ${flops(con.totalPF)} · 총 DAU ${users(con.totalDau)} · 총 지상행 ${bw(con.totalFeeder)}`,
+      "⑤ 참고 산출",
+      `- 발사질량 ${fmt(ms.wet / 1000, 1)} t · 태양전지판 ${fmt(pw.saArea, 0)} m² (${kW(pw.Psa)}) · 방열판 ${fmt(th.area, 0)} m² · 고도 ${alt} km · 수명 ${life}년`,
+    ];
+    const text = Ls.join("\n");
+    const done = () => { setCopied(true); setTimeout(() => setCopied(false), 2500); };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done).catch(() => { fallbackCopy(text); done(); });
+    } else { fallbackCopy(text); done(); }
+  };
+
+  /* 부품 프리셋 → 제원 자동 입력: 랙은 전력까지, 모듈은 현재 전력 기준 효율·HBM 환산 */
+  const loadSpecUnit = (k) => {
+    const u = UNITS[k];
+    setSpecUnit(k);
+    const kw = u.g === "rack" ? Math.round(u.w / 1000) : specKW;
+    if (u.g === "rack") setSpecKW(kw);
+    setSpecTfPerW(Math.round((u.pf8 * 1000 / u.w) * 10) / 10);
+    setSpecHbmTB(Math.max(1, Math.round((kw * 1000 / u.w) * (u.hbm / 1000))));
+  };
+
+  return (
+    <div style={{ background: C.paper, color: C.ink, fontFamily: SANS, minHeight: "100%" }} className="p-4 sm:p-7">
+      <div className="max-w-6xl mx-auto">
+        <header className="mb-6">
+          <Eyebrow color={C.hot}>우주 데이터센터(SDC) · 서비스 · 통신 설계 시뮬레이터 v3</Eyebrow>
+          <h1 className="mt-2" style={{ fontSize: 28, fontWeight: 800, letterSpacing: "-0.03em", lineHeight: 1.14 }}>
+            이 위성으로 무슨 서비스를 얼마나 할 수 있고,<br />통신은 얼마나 필요한가
+          </h1>
+          <p className="mt-3 max-w-3xl" style={{ fontSize: 13, color: C.ink2, lineHeight: 1.65 }}>
+            각 단락의 출력이 다음 단락의 입력입니다:
+            <strong> ① 컴퓨터를 싣는다 → 연산능력 · ② 서비스를 올린다 → 사용자 규모와 트래픽 ·
+            ③ 트래픽을 나른다 → ISL·릴레이 소요 · ④ 곱하기 N기 → 성좌 합계</strong>.
+            통신은 관제(TT&C)만 RF 직접, 서비스 트래픽은 전량 광 ISL → 저궤도 릴레이 경유입니다.
+            전력·열·무게는 ⑤에서 "이 설계가 성립하는가"를 검증하는 참고 산출입니다.
+          </p>
+        </header>
+
+        {/* ═══ 결과 요약 ═══ */}
+        <Panel eyebrow="결과 요약" title="궁극적으로 알고 싶은 다섯 개의 숫자" accent={C.hot} style={{ marginBottom: 18 }}>
+          <div className="grid gap-5" style={{ gridTemplateColumns: "repeat(auto-fit,minmax(170px,1fr))" }}>
+            <Metric label="① 위성 1기 연산능력" value={flops(comp.servedPF)} big color={C.compute}
+              sub={`HBM ${fmt(comp.hbmTB, 1)} TB · 마진 반영 후`} />
+            <Metric label="② 서비스 규모 (1기)" value={svc.dau >= 1e6 ? fmt(svc.dau / 1e6, 2) + "M" : fmt(svc.dau, 0)} unit="DAU" big color={C.compute}
+              sub={`동시 ${fmt(svc.conc, 0)}세션 · ${svc.name}`} />
+            <Metric label="③ 위성 1기 통신 수요" value={bw(cm.totalNeed)} big color={C.comm}
+              sub={`토큰 ${bw(cm.tokBps)}${cm.webBps > 0 ? ` + 웹 ${bw(cm.webBps)}` : ""}${cm.mmBps > 0 ? ` + 멀티미디어 ${bw(cm.mmBps)}` : ""}${cm.inter > 0 ? ` + 링 ${bw(cm.inter)}` : ""}`} />
+            <Metric label="③ ISL 4터미널 판정" value={islOk ? "충족" : "부족"} big color={islOk ? C.good : C.warn}
+              sub={islOk ? `${islRate} Gbps × 4기 · 오프로딩은 릴레이행 2기` : `터미널당 ${fmt(cm.reqRate, 1)} Gbps 이상 필요`} />
+            <Metric label="④ 릴레이 위성 소요" value={isFinite(con.relayTotal) ? fmt(con.relayTotal, 0) + "기" : "—"} big color={C.comm}
+              sub={`릴레이당 ${fmt(con.portsEff, 0)}링크 수용 (링크당 ${bw(con.linkBps)}) · ${con.relayBind} 제약`} />
+          </div>
+          <div className="mt-4 p-3" style={{ background: C.panelAlt, border: `1px dashed ${C.rule}` }}>
+            <span style={{ fontSize: 11.5, color: C.ink2, lineHeight: 1.8 }}>
+              <strong>통신 수요가 나오는 가정 사슬</strong> — 세션당 출력 {sessTokS} tok/s, 입력은 그 {fmt(inOut, 1)}배,
+              토큰당 3 B, 프로토콜 오버헤드 {fmt(protoOh, 1)}배 → <strong>세션당 {bw(cm.perSessBps)}</strong>.
+              × 동시 {fmt(svc.conc, 0)}세션 = 토큰 트래픽 {bw(cm.tokBps)}.
+              {(cm.webBps > 0 || cm.mmBps > 0) ? (
+                <> 에이전트 가산 — {cm.webBps > 0 && <>웹 유입 {webKBper1k} KB/1K토큰 = {bw(cm.webBps)}</>}
+                {cm.webBps > 0 && cm.mmBps > 0 && <>, </>}
+                {cm.mmBps > 0 && <>멀티미디어 {mmKBper1k} KB/1K토큰 = {bw(cm.mmBps)}</>} → </>
+              ) : <> (텍스트 전용) → </>}
+              <strong>위성 1기 {bw(cm.feeder)}</strong>, 성좌 {nSats.toLocaleString("ko-KR")}기 = <strong>{bw(con.totalFeeder)}</strong>.
+              릴레이 산정 — 지상행이 동시 링크 {relayLinks}개에 나뉘어 <strong>링크당 {bw(con.linkBps)}</strong>.
+              릴레이 1기(실효 {bw(cm.relayEffCap)} · 포트 {relayIslPorts}링크)가 실제 수용하는 링크
+              = min({relayIslPorts}, ⌊용량 ÷ 링크 트래픽⌋ = {fmt(con.portsByCap, 0)}) = <strong>{fmt(con.portsEff, 0)}링크</strong>.
+              총 링크 {nSats.toLocaleString("ko-KR")} × {relayLinks} ÷ {fmt(con.portsEff, 0)}
+              = <strong>{isFinite(con.relayTotal) ? fmt(con.relayTotal, 0) : "—"}기 ({con.relayBind} 제약)</strong>.
+              1인 기준으로는 하루 {fmt(tokPerUser * (1 + inOut), 0)}토큰 + 웹·멀티미디어 ≈ {fmt(cm.perUserDayMB, 1)} MB.
+              관제(TT&C)는 별도 RF {fmt(ttcMbps, 0)} Mbps 직접 링크.
+            </span>
+          </div>
+          <button onClick={copySummary} className="mt-3 px-4 py-2"
+            style={{ background: copied ? C.good : "transparent", border: `1px solid ${copied ? C.good : C.compute}`,
+              color: copied ? "#fff" : C.compute, fontFamily: MONO, fontSize: 12, fontWeight: 700, cursor: "pointer" }}>
+            {copied ? "✓ 복사됨 — AI 채팅에 붙여넣어 질문하세요" : "⧉ 설정·결과 요약 복사 (AI 질문용)"}
+          </button>
+        </Panel>
+
+        {/* ═══ 위성 형상 (수치 연동) ═══ */}
+        <Panel eyebrow="위성 형상" title="지금 설정한 수치가 만드는 위성의 모습"
+          flow="①의 컴퓨트 본체 · ③의 ISL 4기 · ⑤에서 산출된 태양전지판·방열판 면적을 실제 축척으로 — 수치를 바꾸면 형상이 바뀝니다"
+          accent={C.compute} style={{ marginBottom: 18 }}>
+          <div className="grid gap-6 lg:grid-cols-3">
+            <div className="lg:col-span-2">
+              <SatDiagram geo={geo} comp={comp} islRate={islRate} islOk={islOk} />
+            </div>
+            <div>
+              <Row k="총 스팬 (어레이 포함)" v={fmt(geo.spanM, 0)} u="m" accent={C.power} />
+              <Row k="태양전지판 날개" v={`${fmt(geo.wingW, 0)} × ${fmt(geo.wingH, 0)} m × 2장`} accent={C.power} />
+              <Row k="태양전지판 면적" v={`${fmt(geo.saA, 0)} m² (${kW(pw.Psa)})`} indent dim />
+              <Row k="방열판" v={`${fmt(geo.radW, 0)} × ${fmt(geo.radH, 0)} m × 2장 (${fmt(geo.radA, 0)} m²)`} accent={C.hot} />
+              <Row k="컴퓨트 본체" v={`한 변 ~${fmt(geo.busS, 1)} m · ${fmt(comp.payloadMass, 0)} kg`} />
+              <Row k="ISL 터미널" v={`4기 × ${islRate} Gbps`} accent={islOk ? C.good : C.warn} />
+              <Row k="발사질량" v={`${fmt(ms.wet / 1000, 1)} t`} dim />
+              <p className="mt-3" style={{ fontSize: 11, color: C.ink3, lineHeight: 1.6 }}>
+                날개 가로:세로 4:1, 방열판 세로:가로 3:1(궤도면 평행 배치), 본체 밀도 200 kg/m³ 가정의
+                개략 형상입니다. 점선은 AI1 윙스팬 70 m — 지금 설계가 AI1 대비 얼마나 큰지 한눈에 비교됩니다.
+              </p>
+            </div>
+          </div>
+        </Panel>
+
+        {/* ═══ ① 위성에 싣는 컴퓨터 ═══ */}
+        <Panel eyebrow="① 위성에 싣는 컴퓨터" title="GPU를 얼마나 올릴 것인가"
+          flow="출력: 연산능력(PFLOPS)과 메모리(HBM) → ②에서 서비스 규모를 결정"
+          accent={C.compute} style={{ marginBottom: 18 }}>
+          <Choice label="설계 방식" cols={2} value={designMode} onChange={setDesignMode}
+            options={[
+              { key: "unit", label: "부품 기반", sub: "GPU/랙을 골라서 적재" },
+              { key: "spec", label: "위성 제원 기반", sub: "AI1처럼 전력·효율·메모리로 역산" },
+            ]} />
+          <div className="grid gap-5 lg:grid-cols-3">
+            <div>
+              {comp.isSpec ? (
+                <>
+                  <Eyebrow color={C.hot}>위성 제원 직접 입력</Eyebrow>
+                  <div className="mt-2">
+                    <Choice label="부품 프리셋 — 선택하면 아래 제원이 자동 입력" cols={2} value={specUnit} onChange={loadSpecUnit}
+                      options={Object.entries(UNITS).map(([k, u]) => ({
+                        key: k, label: u.name, sub: `${(u.pf8 * 1000 / u.w).toFixed(1)} TF/W${u.g === "rack" ? ` · ${u.w / 1000} kW` : ""}` }))} />
+                    <Slider label="컴퓨트 페이로드 전력" value={specKW} onChange={setSpecKW} min={10} max={1500} step={10} unit="kW"
+                      hint="AI1 공개치: 평균 120 kW · 피크 150 kW" />
+                    <Slider label="와트당 성능 (FP8)" value={specTfPerW} onChange={setSpecTfPerW} min={1} max={40} step={0.5} unit="TF/W" dec={1}
+                      hint="GB300 랙 등가 ~6 · VR200 ~9.5 · Rubin Ultra ~8.3" />
+                    <Slider label="탑재 메모리 (HBM)" value={specHbmTB} onChange={setSpecHbmTB} min={1} max={300} step={1} unit="TB" />
+                    <button onClick={applyAI1} className="w-full px-3 py-2 mt-1"
+                      style={{ background: "transparent", border: `1px solid ${C.hot}`, color: C.hot,
+                        fontFamily: MONO, fontSize: 11.5, fontWeight: 600, cursor: "pointer" }}>
+                      ⟳ AI1 제원 불러오기 (120 kW · 6 TF/W · 20 TB · 600 km)
+                    </button>
+                  </div>
+                </>
+              ) : (
+                <>
+                  <Eyebrow>GPU 모듈 단위</Eyebrow>
+                  <div className="mt-2">
+                    <Choice cols={2} value={unitKey} onChange={setUnitKey}
+                      options={Object.entries(UNITS).filter(([, u]) => u.g === "module").map(([k, u]) => ({
+                        key: k, label: u.name, sub: `${u.w} W · ${u.pf8} PF · HBM ${u.hbm} GB` }))} />
+                  </div>
+                  <Eyebrow color={C.hot}>랙 단위</Eyebrow>
+                  <div className="mt-2">
+                    <Choice cols={2} value={unitKey} onChange={setUnitKey}
+                      options={Object.entries(UNITS).filter(([, u]) => u.g === "rack").map(([k, u]) => ({
+                        key: k, label: u.name, sub: `${u.w / 1000} kW · ${u.pf8 / 1000} EF · ${(u.hbm / 1000).toFixed(0)} TB` }))} />
+                  </div>
+                </>
+              )}
+            </div>
+            <div>
+              {!comp.isSpec && (
+                <Slider label="탑재 수량" value={nUnits} onChange={(v) => setNUnits(Math.round(v))} min={1} max={isRack ? 8 : 200} unit={uL} />
+              )}
+              <label className="flex items-start gap-2 mb-3 cursor-pointer">
+                <input type="checkbox" checked={compMargin100} onChange={(e) => setCompMargin100(e.target.checked)} style={{ accentColor: C.compute, marginTop: 2 }} />
+                <span style={{ fontSize: 12.5, color: C.ink2, lineHeight: 1.4 }}>컴퓨팅 마진 100% (ECSS 개념설계 권고)<br />
+                  <span style={{ fontSize: 10.5, color: C.ink3 }}>서비스 가용 연산을 절반으로 계상</span></span>
+              </label>
+              <Details label="성능 세부 조정 (전력 캡 · 오버헤드 · 감쇠)">
+                {!comp.isSpec && (
+                  <>
+                    <Slider label="전력 설정 (전력 캡)" value={Math.max(pCap, dv.floor)} onChange={setPCap} min={20} max={100} unit="% of TDP"
+                      hint={`낮출수록 와트당 성능↑ (현재 ${fmt(dv.gain, 2)}배 효율). 하한 ${dv.floor}%`} />
+                    <Choice label="주 워크로드 성격 (전력 캡 민감도)" cols={1} value={betaKey} onChange={setBetaKey}
+                      options={Object.entries(BETAS).map(([k, v]) => ({ key: k, label: `${v.name} (β=${v.b})`, sub: v.desc }))} />
+                    <Slider label="호스트·패브릭 오버헤드" value={hostOh} onChange={setHostOh} min={0} max={60} unit="%" />
+                  </>
+                )}
+                <Slider label="방사선 대응 성능 감쇠" value={radLoss} onChange={setRadLoss} min={0} max={50} unit="%"
+                  hint="ECC·재시도 등 순수 손실" />
+              </Details>
+            </div>
+            <div className="grid grid-cols-2 gap-4 content-start">
+              <Metric label="정격 성능" value={flops(comp.peakPF)} />
+              <Metric label="유효 성능" value={flops(comp.effPF)} sub="전력캡·감쇠·가동률 반영" />
+              <Metric label="서비스 가용 연산" value={flops(comp.servedPF)} big color={C.compute}
+                sub={compMargin100 ? "마진 100% 차감 후" : "마진 미적용"} />
+              <Metric label="탑재 메모리 (HBM)" value={fmt(comp.hbmTB, 1)} unit="TB" big />
+              <Metric label="컴퓨트 전력" value={kW(comp.pCompCBE)} color={C.power} sub="CBE 기준" />
+              <Metric label="와트당 성능" value={fmt(comp.isSpec ? specTfPerW : dv.tfPerW, 2)} unit="TF/W"
+                sub={comp.isSpec ? "제원 입력값" : `전력 캡 ${Math.max(pCap, dv.floor)}% 기준`} />
+            </div>
+          </div>
+        </Panel>
+
+        {/* ═══ ② 어떤 AI 서비스를 얼마나 ═══ */}
+        <Panel eyebrow="② 어떤 AI 서비스를 얼마나" title="모델을 고르면 연산능력의 몇 %를 쓰는지 보입니다"
+          flow="입력: ①의 연산능력·메모리 → 출력: 사용자 규모(DAU)와 트래픽 발생량 → ③의 통신 수요"
+          accent={C.compute} style={{ marginBottom: 18 }}>
+
+          {/* 활용률 게이지 */}
+          <div className="mb-5">
+            <div className="flex items-baseline justify-between mb-1.5">
+              <Eyebrow color={utilColor}>총 연산능력 대비 사용 비중</Eyebrow>
+              <span style={{ fontFamily: MONO, fontSize: 16, fontWeight: 700, color: utilColor }}>{fmt(svc.usedFrac * 100, 0)}%</span>
+            </div>
+            <Band segments={utilSegs} total={100} unit="%" />
+            {svc.fits && svc.leftFrac > 0.05 && fillKey === "none" && (
+              <p className="mt-2" style={{ fontSize: 11.5, color: C.warn, lineHeight: 1.5 }}>
+                연산의 {fmt(svc.leftFrac * 100, 0)}%가 놀고 있습니다 — 오른쪽 "남는 연산 채우기"를 선택하거나,
+                ①의 전력 캡을 낮춰 남는 만큼 전력·방열을 줄이세요.
+              </p>
+            )}
+          </div>
+
+          <div className="p-4 mb-5" style={{ background: C.panelAlt, border: `1px solid ${svc.fits ? C.compute : C.warn}` }}>
+            {svc.fits ? (
+              <p style={{ fontSize: 13, color: C.ink, lineHeight: 1.7 }}>
+                위성 1기가 <strong style={{ color: C.compute }}>{svc.name}</strong>({svc.tier}, 가중치 {fmt(svc.weightsGB, 0)} GB)를 상주시키고
+                출력 <strong>{fmt(svc.rtTokS, 0)} tok/s</strong> · 동시 <strong>{fmt(svc.conc, 0)}세션</strong>({svc.bound} 제약)
+                · 일일 활성 사용자 <strong style={{ color: C.compute }}>{users(svc.dau)}</strong>를 감당합니다.
+                이 실시간 서비스는 가용 연산의 <strong style={{ color: utilColor }}>{fmt(svc.rtFrac * 100, 0)}%</strong>를 사용
+                {svc.fill.used > 0 && <>, 남는 {fmt(svc.leftFrac * 100, 0)}%는 <strong>{FILLS[fillKey].name}</strong>으로 채웁니다 ({svc.fill.note})</>}.
+              </p>
+            ) : (
+              <p style={{ fontSize: 13, color: C.warn, lineHeight: 1.7 }}>
+                <strong>{svc.name}</strong>은 가중치만 {fmt(svc.weightsGB, 0)} GB — 탑재 HBM {fmt(svc.hbmGB, 0)} GB에 들어가지 않습니다.
+                위성 여러 기 파이프라인 병렬이 필요하며 그 순간 ISL이 지배 제약이 됩니다. 탑재 수량을 늘리거나 작은 모델을 고르세요.
+              </p>
+            )}
+          </div>
+
+          <div className="grid gap-6 lg:grid-cols-3">
+            <div>
+              <div className="flex items-baseline justify-between mb-1.5">
+                <span style={{ fontSize: 12.5, color: C.ink2, fontWeight: 500 }}>서비스 모델</span>
+                <span style={{ fontFamily: MONO, fontSize: 10.5, color: C.ink3 }}>메모리 상한 {fmt(svc.hbmGB / 1.15, 0)} GB</span>
+              </div>
+              <div className="grid gap-1" style={{ gridTemplateColumns: "1fr 1fr" }}>
+                {svc.ladder.map((m) => {
+                  const on = m.k === modelKey;
+                  const dis = !m.ok;
+                  return (
+                    <button key={m.k} onClick={() => !dis && setModelKey(m.k)} disabled={dis}
+                      className="text-left px-2 py-1.5"
+                      style={{ background: on ? C.compute : "transparent",
+                        border: `1px solid ${on ? C.compute : C.rule}`,
+                        color: on ? "#fff" : dis ? C.ink3 : C.ink2,
+                        opacity: dis ? 0.45 : 1, fontSize: 11, lineHeight: 1.2,
+                        cursor: dis ? "not-allowed" : "pointer", fontWeight: on ? 600 : 400 }}>
+                      {m.name}
+                      <div style={{ fontFamily: MONO, fontSize: 9, opacity: 0.75, marginTop: 1 }}>
+                        {dis ? "메모리 부족" : `활성 ${m.act}B · ${m.tier}`}
+                      </div>
+                    </button>
+                  );
+                })}
+                <button onClick={() => setModelKey("custom")} className="text-left px-2 py-1.5"
+                  style={{ background: modelKey === "custom" ? C.compute : "transparent",
+                    border: `1px solid ${modelKey === "custom" ? C.compute : C.rule}`,
+                    color: modelKey === "custom" ? "#fff" : C.ink2, fontSize: 11,
+                    fontWeight: modelKey === "custom" ? 600 : 400, cursor: "pointer", lineHeight: 1.2 }}>
+                  직접 지정
+                  <div style={{ fontFamily: MONO, fontSize: 9, opacity: 0.75, marginTop: 1 }}>총·활성 수동 입력</div>
+                </button>
+              </div>
+              {modelKey === "custom" && (
+                <div className="mt-3">
+                  <Slider label="총 파라미터" value={customTotal} onChange={setCustomTotal} min={7} max={3000} unit="B" />
+                  <Slider label="토큰당 활성 파라미터" value={Math.min(customAct, customTotal)} onChange={setCustomAct} min={1} max={Math.max(2, customTotal)} unit="B" />
+                </div>
+              )}
+              {svc.est && (
+                <div style={{ fontSize: 10.5, color: C.ink3, marginTop: 5 }}>· 활성 파라미터 공표치가 없는 모델은 추정값입니다</div>
+              )}
+            </div>
+            <div>
+              <Eyebrow>서비스 가정</Eyebrow>
+              <div className="mt-2">
+                <Slider label="1인당 일일 출력 토큰" value={tokPerUser} onChange={setTokPerUser} min={500} max={50000} step={500} unit="토큰"
+                  hint="대화형 5천~1만, 코딩 에이전트 10만 이상" />
+                <Slider label="입력 : 출력 토큰 비" value={inOut} onChange={setInOut} min={0.5} max={20} step={0.5} unit=": 1" dec={1}
+                  hint="상향 트래픽과 프리필 연산을 좌우" />
+                <Slider label="컨텍스트 길이" value={ctxK} onChange={setCtxK} min={4} max={256} step={4} unit="K 토큰"
+                  hint="길수록 세션당 KV 메모리가 커져 동시 세션이 줄어듦" />
+                <div style={{ fontSize: 12.5, color: C.ink2, fontWeight: 500, marginBottom: 6 }}>서비스 통신 유형 — 텍스트는 기본, 아래는 선택</div>
+                <label className="flex items-start gap-2 mb-1.5 cursor-pointer">
+                  <input type="checkbox" checked={webOn} onChange={(e) => setWebOn(e.target.checked)} style={{ accentColor: C.compute, marginTop: 2 }} />
+                  <span style={{ fontSize: 12.5, color: C.ink2 }}>인터넷 검색·브라우징 (에이전트 유입)</span>
+                </label>
+                {webOn && (
+                  <Slider label="웹 유입량" value={webKBper1k} onChange={setWebKBper1k} min={0} max={2000} step={10} unit="KB/1K토큰"
+                    hint="에이전트가 인터넷에서 가져오는 원문 데이터 — 지상→SDC 유입" />
+                )}
+                <label className="flex items-start gap-2 mb-1.5 cursor-pointer">
+                  <input type="checkbox" checked={mmOn} onChange={(e) => setMmOn(e.target.checked)} style={{ accentColor: C.compute, marginTop: 2 }} />
+                  <span style={{ fontSize: 12.5, color: C.ink2 }}>멀티미디어 출력 (이미지 등)</span>
+                </label>
+                {mmOn && (
+                  <Slider label="멀티미디어 출력량" value={mmKBper1k} onChange={setMmKBper1k} min={0} max={2000} step={10} unit="KB/1K토큰"
+                    hint="이미지·차트 등 비텍스트 산출물 — SDC→지상 하향" />
+                )}
+              </div>
+              <Details label="세부 가정 (MFU · 세션속도 · 피크비 · KV)">
+                <Slider label="유효 활용률 MFU" value={mfuPct} onChange={setMfuPct} min={15} max={70} unit="%" />
+                <Slider label="세션당 스트리밍 속도" value={sessTokS} onChange={setSessTokS} min={10} max={120} step={5} unit="tok/s" />
+                <Slider label="피크 / 평균 비" value={peakRatio} onChange={setPeakRatio} min={1} max={8} step={0.5} unit="배" dec={1} />
+                <Slider label="토큰당 KV 캐시" value={kvPerTok} onChange={setKvPerTok} min={2} max={120} step={2} unit="kB"
+                  hint="MLA 계열 2~8, 전통 GQA 30~100" />
+              </Details>
+              <div className="mt-2">
+                <Row k="연산 한계 동시 세션" v={fmt(svc.concCompute, 0)} accent={svc.bound === "연산" ? C.hot : undefined} dim={svc.bound !== "연산"} />
+                <Row k="메모리 한계 동시 세션" v={fmt(svc.concMem, 0)} accent={svc.bound === "메모리" ? C.hot : undefined} dim={svc.bound !== "메모리"} />
+              </div>
+            </div>
+            <div>
+              <Eyebrow color={C.computeLt}>남는 연산 채우기 (최적화)</Eyebrow>
+              <div className="mt-2">
+                <Choice cols={1} value={fillKey} onChange={setFillKey}
+                  options={Object.entries(FILLS).map(([k, f]) => ({ key: k, label: f.name, sub: f.desc }))} />
+                {fillKey === "train" && (
+                  <Slider label="학습에 묶는 SDC 수" value={clusterG} onChange={(v) => setClusterG(Math.round(v))} min={2} max={64} step={2} unit="기" />
+                )}
+                {fillKey === "eo" && (
+                  <Slider label="처리 강도 (연산/데이터)" value={eoIntensity} onChange={setEoIntensity} min={10} max={10000} step={10} unit="kFLOP/B"
+                    hint="높을수록 같은 연산으로 흡수하는 데이터가 적어짐" />
+                )}
+                {svc.fill.used > 0 && (
+                  <div className="p-3 mt-1" style={{ background: C.panelAlt, border: `1px dashed ${C.rule}` }}>
+                    <span style={{ fontSize: 11.5, color: C.ink2, lineHeight: 1.55 }}>
+                      {svc.fill.note}
+                      {svc.fill.islIn > 0 && <> — SDC 링 ISL 트래픽 <strong>{bw(svc.fill.islIn)}</strong> 발생 (③에 자동 합산)</>}
+                    </span>
+                  </div>
+                )}
+              </div>
+              <div className="grid grid-cols-2 gap-4 mt-4">
+                <Metric label="동시 세션" value={fmt(svc.conc, 0)} big color={svc.bound === "메모리" ? C.hot : C.compute} sub={`${svc.bound} 제약`} />
+                <Metric label="일일 활성 사용자" value={svc.dau >= 1e6 ? fmt(svc.dau / 1e6, 2) + "M" : fmt(svc.dau, 0)} big color={C.compute} />
+              </div>
+            </div>
+          </div>
+        </Panel>
+
+        {/* ═══ ③ 통신은 얼마나 필요한가 ═══ */}
+        <Panel eyebrow="③ 통신은 얼마나 필요한가" title="ISL 4터미널 기준 설계: 링 2기 + 릴레이 주·예비 2기"
+          flow="입력: ②의 트래픽 발생량 → 출력: ISL 터미널 충족 여부와 릴레이 위성 소요 → ④에서 성좌 규모로 확장"
+          accent={C.comm} style={{ marginBottom: 18 }}>
+          <div className="mb-5">
+            <Eyebrow color={C.comm}>종단 토폴로지 — 사용자 → 인터넷 → 관문국 → 릴레이 LEO → SDC</Eyebrow>
+            <div className="mt-2">
+              <TopologyDiagram cm={cm} con={con} relayLinks={relayLinks} relayIslPorts={relayIslPorts} ttcMbps={ttcMbps} nSats={nSats} />
+            </div>
+          </div>
+          <div className="grid gap-6 lg:grid-cols-3">
+            <div>
+              <Eyebrow>위성 1기의 트래픽 (②에서 자동 산출)</Eyebrow>
+              <div className="mt-2 mb-4">
+                <Band segments={trafSegs} total={cm.totalNeed / 1e9} unit="Gbps" />
+              </div>
+              <Row k="사용자 출력 하향 (실시간)" v={bw(cm.rtDl)} indent />
+              <Row k="사용자 입력 상향 (실시간)" v={bw(cm.rtUl)} indent />
+              {cm.webBps > 0 && <Row k="웹 검색·브라우징 유입" v={bw(cm.webBps)} indent accent={cm.webBps > cm.tokBps ? C.comm : undefined} />}
+              {cm.mmBps > 0 && <Row k="멀티미디어 출력 하향" v={bw(cm.mmBps)} indent />}
+              {(cm.batchDl > 0 || cm.batchUl > 0) && <Row k="배치 작업 상·하향" v={bw(cm.batchDl + cm.batchUl)} indent />}
+              {svc.fill.dlExtra > 0 && <Row k="채움 작업 산출물 하향" v={bw(svc.fill.dlExtra)} indent />}
+              <Row k="지상행 합계 → 릴레이 링크로" v={bw(cm.feeder)} accent={C.comm} />
+              <Row k="SDC 링 트래픽 (학습·관측)" v={bw(cm.inter)} accent={cm.inter > 0 ? C.hot : undefined} />
+              <Details label="트래픽 세부 가정 (프로토콜 배수 · TT&C)">
+                <Slider label="프로토콜 오버헤드 배수" value={protoOh} onChange={setProtoOh} min={1} max={10} step={0.5} unit="×" dec={1}
+                  hint="원시 토큰 바이트 대비 실제 API 트래픽 (TLS·JSON·재전송)" />
+                <Slider label="TT&C 직접 RF" value={ttcMbps} onChange={setTtcMbps} min={1} max={50} unit="Mbps"
+                  hint="관제 전용. 서비스 트래픽과 무관한 별도 소형 링크" />
+              </Details>
+            </div>
+            <div>
+              <Eyebrow color={C.hot}>ISL 구성 — 4터미널이 감당 가능한가</Eyebrow>
+              <div className="p-3 mt-2 mb-3" style={{ background: C.panelAlt, border: `1px solid ${C.rule}` }}>
+                <div style={{ fontFamily: MONO, fontSize: 11, color: C.ink2, lineHeight: 1.8 }}>
+                  릴레이 LEO ① ──── 터미널 1 · <span style={{ color: C.comm, fontWeight: 700 }}>오프로딩</span><br />
+                  릴레이 LEO ② ──── 터미널 2 · <span style={{ color: C.comm, fontWeight: 700 }}>오프로딩</span><br />
+                  SDC 링 (전방) ─── 터미널 3 · 학습·관측 전용<br />
+                  SDC 링 (후방) ─── 터미널 4 · 학습·관측 전용
+                </div>
+                <div style={{ fontSize: 10.5, color: C.ink3, marginTop: 6, lineHeight: 1.4 }}>
+                  앞뒤 위성과 잇는 링 2기는 오프로딩(지상행)에 쓰지 않습니다 — 지상행은 릴레이행 2기가 전담합니다.
+                </div>
+              </div>
+              <Slider label="ISL 터미널 1기 속도" value={islRate} onChange={setIslRate} min={1} max={200} step={1} unit="Gbps"
+                hint="일반 상용 광 ISL 10 Gbps급 (SDA 표준 2.5~10). 차세대 100+, Suncatcher 벤치 1,600" />
+              <LoadBar label={`릴레이행 오프로딩 (동시 ${relayLinks}회선)`} need={cm.feeder} cap={cm.feederCap} color={C.comm} />
+              <LoadBar label="SDC 링 (전·후 2회선 · 학습·관측)" need={cm.inter} cap={cm.interCap} color={C.hot} />
+              {!islOk && (
+                <div className="p-3" style={{ background: "#F6E3DE", border: `1px solid ${C.warn}` }}>
+                  <span style={{ fontSize: 11.5, color: C.warn, lineHeight: 1.5 }}>
+                    4터미널 구성으로는 부족합니다 — 터미널당 <strong>{fmt(cm.reqRate, 1)} Gbps</strong> 이상이 필요합니다.
+                    속도를 올리거나, ②의 채우기 작업(트래픽 원인)을 줄이세요.
+                  </span>
+                </div>
+              )}
+              <Details label="링크 여유 기준">
+                <Slider label="링크 목표 점유율" value={islTargetPct} onChange={setIslTargetPct} min={40} max={95} unit="%"
+                  hint="피크 여유를 위해 100% 설계는 피합니다" />
+              </Details>
+            </div>
+            <div>
+              <Eyebrow color={C.comm}>릴레이 저궤도 위성 — 몇 기가 받아줘야 하는가</Eyebrow>
+              <div className="mt-2">
+                <Slider label="릴레이 위성 1기 용량" value={relayCap} onChange={setRelayCap} min={0} max={100} step={0.1} unit="Gbps" dec={1}
+                  hint="0.1 Gbps(=100 Mbps) 단위 · 위성→지상 실제 서비스 가능 용량 (예: 50 Gbps급)" />
+                <Slider label="릴레이 실효율" value={relayEffPct} onChange={setRelayEffPct} min={40} max={95} unit="%"
+                  hint="가시성·핸드오버·경로 중첩 손실" />
+                <Choice label="릴레이행 ISL 2기의 동시 사용" cols={2} value={relayLinks} onChange={setRelayLinks}
+                  options={[
+                    { key: 1, label: "1개만 사용", sub: "1개는 예비 — 오프로딩 용량 절반" },
+                    { key: 2, label: "2개 모두 사용", sub: "릴레이 2기에 동시 접속" },
+                  ]} />
+                <Slider label="릴레이 1기당 수용 SDC 링크" value={relayIslPorts} onChange={(v) => setRelayIslPorts(Math.round(v))} min={1} max={24} unit="링크"
+                  hint="릴레이 위성이 동시에 받아줄 수 있는 ISL 접속 수 (릴레이 측 ISL 성능)" />
+              </div>
+              <div className="mt-2">
+                <Row k={`링크 1개가 나르는 트래픽 (지상행 ÷ ${relayLinks})`} v={bw(con.linkBps)} dim />
+                <Row k="용량이 허용하는 링크 수 (⌊실효용량 ÷ 링크 트래픽⌋)" v={fmt(con.portsByCap, 0)} u="링크" indent dim />
+                <Row k="릴레이 1기 실제 수용" v={`min(${relayIslPorts}, ${fmt(con.portsByCap, 0)}) = ${fmt(con.portsEff, 0)}링크`}
+                  accent={C.comm} />
+                <Row k="릴레이 1기가 담당하는 SDC" v={fmt(Math.floor(con.portsEff / relayLinks), 0)} u="기"
+                  accent={con.portsEff >= relayLinks ? C.good : C.warn} />
+                <Row k={`성좌 전체 지상행 (${nSats.toLocaleString("ko-KR")}기)`} v={bw(con.totalFeeder)} accent={C.comm} />
+                <Row k="필요 릴레이 위성 총수" v={`${isFinite(con.relayTotal) ? fmt(con.relayTotal, 0) : "—"}기 · ${con.relayBind} 제약`} accent={C.comm} />
+                {!con.linkFeasible && (
+                  <div className="p-3 mt-2" style={{ background: "#F6E3DE", border: `1px solid ${C.warn}` }}>
+                    <span style={{ fontSize: 11.5, color: C.warn, lineHeight: 1.5 }}>
+                      링크 1개 트래픽({bw(con.linkBps)})이 릴레이 실효 용량({bw(cm.relayEffCap)})을 초과합니다 —
+                      동시 링크를 늘리거나 릴레이 용량을 키우세요.
+                    </span>
+                  </div>
+                )}
+              </div>
+              <div style={{ height: 190, marginTop: 14 }}>
+                <Eyebrow>릴레이 용량별 소요 대수 (성좌 전체)</Eyebrow>
+                <ResponsiveContainer width="100%" height="88%">
+                  <LineChart data={relayCurve} margin={{ top: 12, right: 8, bottom: 4, left: -8 }}>
+                    <CartesianGrid stroke={C.rule} strokeDasharray="2 3" vertical={false} />
+                    <XAxis dataKey="cap" type="number" domain={[1, 100]} unit="G"
+                      tick={{ fontSize: 10, fontFamily: MONO, fill: C.ink3 }} stroke={C.rule} />
+                    <YAxis tick={{ fontSize: 10, fontFamily: MONO, fill: C.ink3 }} stroke={C.rule} />
+                    <Tooltip contentStyle={{ background: C.panel, border: `1px solid ${C.ink}`, borderRadius: 0, fontFamily: MONO, fontSize: 11 }}
+                      formatter={(v) => [fmt(v, 0) + "기", "필요 릴레이"]}
+                      labelFormatter={(v) => `릴레이 용량 ${v} Gbps`} />
+                    <Line type="monotone" dataKey="relays" stroke={C.comm} strokeWidth={2} dot={{ r: 2.5 }} />
+                    <ReferenceDot x={relayCap} y={isFinite(con.relayTotal) ? con.relayTotal : 0} r={5} fill={C.hot} stroke="#fff" strokeWidth={1.5} />
+                  </LineChart>
+                </ResponsiveContainer>
+              </div>
+            </div>
+          </div>
+        </Panel>
+
+        {/* ═══ ④ 위성이 몇 기면 되는가 ═══ */}
+        <Panel eyebrow="④ 위성이 몇 기면 되는가" title="성좌 규모를 바꿔가며 시뮬레이션"
+          flow="입력: 1기당 산출(①~③) × 성좌 규모 → 출력: 총 서비스 규모 · 총 통신 · 릴레이 소요"
+          accent={C.compute} style={{ marginBottom: 18 }}>
+          <div className="flex flex-wrap gap-2 mb-4">
+            {[
+              { l: "1면 × 81기 ◦", p: 1, n: 81 },
+              { l: "1면 × 1,000기", p: 1, n: 1000 },
+              { l: "7면 × 1,000기", p: 7, n: 1000 },
+              { l: "10면 × 1,000기", p: 10, n: 1000 },
+              { l: "10면 × 2,000기", p: 10, n: 2000 },
+            ].map((o) => {
+              const on = nPlanes === o.p && satsPerPlane === o.n;
+              return (
+                <button key={o.l} onClick={() => { setNPlanes(o.p); setSatsPerPlane(o.n); }} className="px-3 py-1.5"
+                  style={{ background: on ? C.compute : "transparent", border: `1px solid ${on ? C.compute : C.rule}`,
+                    color: on ? "#fff" : C.ink2, fontFamily: MONO, fontSize: 12, fontWeight: 600, cursor: "pointer" }}>
+                  {o.l}
+                </button>
+              );
+            })}
+            <span style={{ fontFamily: MONO, fontSize: 10, color: C.ink3, alignSelf: "center" }}>◦ Suncatcher 시범 규모</span>
+          </div>
+          <div className="grid gap-x-6 sm:grid-cols-2">
+            <Slider label="궤도면 수" value={nPlanes} onChange={(v) => setNPlanes(Math.round(v))} min={1} max={30} unit="면"
+              hint="SDC 링(전·후 ISL)은 같은 궤도면 안에서 이어집니다" />
+            <Slider label="궤도면당 위성 수" value={satsPerPlane} onChange={(v) => setSatsPerPlane(Math.round(v))} min={10} max={3000} step={10} unit="기" />
+          </div>
+          <Row k="성좌 규모" v={`${nPlanes}면 × ${satsPerPlane.toLocaleString("ko-KR")}기 = ${nSats.toLocaleString("ko-KR")}기`} accent={C.compute} />
+          <div className="grid gap-5 mt-2" style={{ gridTemplateColumns: "repeat(auto-fit,minmax(150px,1fr))" }}>
+            <Metric label="총 연산능력" value={flops(con.totalPF)} big color={C.compute} />
+            <Metric label="총 서비스 규모" value={users(con.totalDau)} big color={C.compute} />
+            <Metric label="총 지상행 트래픽" value={bw(con.totalFeeder)} big color={C.comm} />
+            <Metric label="필요 릴레이 위성" value={isFinite(con.relayTotal) ? fmt(con.relayTotal, 0) + "기" : "—"} big color={C.comm}
+              sub={`릴레이당 ${fmt(con.portsEff, 0)}링크 수용 · ${con.relayBind} 제약`} />
+            <Metric label="총 ISL 터미널" value={fmt(4 * nSats, 0)} unit="기" color={C.hot} sub="위성당 4기 고정" />
+            <Metric label="총 발전 (참고)" value={con.totalMW >= 1000 ? fmt(con.totalMW / 1000, 2) + " GW" : fmt(con.totalMW, 0) + " MW"} color={C.power} />
+          </div>
+        </Panel>
+
+        {/* ═══ 비교: SpaceX AI1 ═══ */}
+        <Panel eyebrow="비교 · 기준 위성" title="SpaceX AI1 (2026-06-09 공개) 대비 이 설계"
+          flow="①~⑤의 산출을 공개된 1세대 궤도 AI 데이터센터 위성과 나란히 — 공개 확정치는 진하게, 추정치는 흐리게"
+          accent={C.hot} style={{ marginBottom: 18 }}>
+          <div className="grid gap-6 lg:grid-cols-2">
+            <div>
+              <div className="grid items-baseline pb-1.5" style={{ gridTemplateColumns: "1.1fr 1fr 1.1fr", borderBottom: `1px solid ${C.ink}` }}>
+                <Eyebrow>항목</Eyebrow><Eyebrow color={C.compute}>이 설계</Eyebrow><Eyebrow color={C.hot}>AI1</Eyebrow>
+              </div>
+              <CmpRow k="궤도 고도" mine={`${alt} km`} refV="600 km" />
+              <CmpRow k="컴퓨트 페이로드 전력" mine={kW(comp.pCompCBE)} refV="평균 120 · 피크 150 kW" accent={C.power} />
+              <CmpRow k="등가 연산 (FP8 정격)" mine={flops(comp.peakPF)} refV={`~${AI1.est.pf8} PF`} refEst accent={C.compute} />
+              <CmpRow k="탑재 메모리" mine={fmt(comp.hbmTB, 1) + " TB"} refV={`~${AI1.est.hbmTB} TB`} refEst />
+              <CmpRow k="발사질량" mine={fmt(ms.wet / 1000, 1) + " t"} refV={`~${AI1.est.massT} t`} refEst />
+              <CmpRow k="효율 (컴퓨트 kW/t)" mine={fmt(kwPerTon, 1) + " kW/t"} refV="70 kW/t"
+                accent={kwPerTon >= 35 ? C.good : C.warn} />
+              <CmpRow k="전개 구조" mine={fmt(ms.deployed, 0) + " m²"} refV={`${AI1.wing} (~${AI1.est.areaM2} m²)`} refEst />
+              <CmpRow k="방열" mine="복사 열평형으로 산출" refV="배치형 액체 라디에이터" />
+              <CmpRow k="칩 구성" mine={comp.isSpec ? "제원 입력" : `${U.name} × ${nUnits}`} refV="교체형 (벤더 중립)" />
+            </div>
+            <div>
+              <p style={{ fontSize: 12.5, color: C.ink2, lineHeight: 1.7 }}>
+                가장 큰 간극은 <strong>효율(컴퓨트 kW/t)</strong>입니다. 이 워크시트는 ECSS 개념설계 마진(30~40%)과
+                보수적인 방열판 면밀도·구조 계수를 쓰므로 {fmt(kwPerTon, 1)} kW/t가 나오는 반면,
+                AI1 공개 목표는 70 kW/t입니다. 그 차이를 좁히는 손잡이는 ⑤에 있습니다 —
+                설계 성숙도를 Phase C/D로, 방열판 면밀도를 2 kg/m² 근처로, 어레이 비출력을 300 W/kg으로
+                올리면 이 설계도 AI1급 효율에 접근하는지 확인할 수 있습니다.
+              </p>
+              <p className="mt-3" style={{ fontSize: 12.5, color: C.ink2, lineHeight: 1.7 }}>
+                반대로 <strong>AI1 제원을 그대로 넣고</strong> 이 워크시트의 서비스·통신 계산(②·③)을 돌려보면,
+                120 kW급 위성 1기가 감당하는 사용자 규모와 필요한 ISL·릴레이가 나옵니다.
+              </p>
+              <button onClick={applyAI1} className="px-4 py-2.5 mt-4"
+                style={{ background: C.hot, border: `1px solid ${C.hot}`, color: "#fff",
+                  fontFamily: MONO, fontSize: 12, fontWeight: 700, cursor: "pointer" }}>
+                ⟳ AI1 제원으로 ①을 설정하고 계산
+              </button>
+            </div>
+          </div>
+        </Panel>
+
+        {/* ═══ ⑤ 참고: 전력·열·무게 ═══ */}
+        <Panel eyebrow="⑤ 참고: 전력 · 열 · 무게" title="이 설계가 물리적으로 성립하는가 (산출 결과만 참고)"
+          flow="입력: ①의 전력·③의 통신 구성 → 출력: 태양전지판·방열판·발사질량 — 위 결과의 성립 조건"
+          accent={C.bus} style={{ marginBottom: 18 }}>
+          <div className="grid gap-6 lg:grid-cols-3">
+            <div>
+              <Eyebrow color={C.power}>전력 예산 (CBE → MEV)</Eyebrow>
+              <div className="mt-2">
+                <BudgetTable rows={pw.items} unit="W" fmtV={(v) => fmt(v, 0)}
+                  total={{ k: "부하 소계", cbe: pw.cbeSum, mev: pw.mevSum }} />
+                <Row k={`시스템 마진 +${P.sys}% · 배전 손실`} v={fmt(pw.busInput, 0)} u="W" dim />
+                <Row k="태양전지판 요구출력" v={kW(pw.Psa)} accent={C.power} />
+                <Row k="어레이 면적 / 질량" v={`${fmt(pw.saArea, 0)} m² / ${fmt(pw.saMass, 0)} kg`} dim />
+                <Row k="배터리" v={`${fmt(pw.battWh / 1000, 1)} kWh / ${fmt(pw.battMass, 0)} kg`} dim />
+              </div>
+              <div className="mt-3">
+                <Choice label="설계 성숙도" cols={1} value={phase} onChange={setPhase}
+                  options={Object.entries(PHASES).map(([k, p]) => ({ key: k, label: p.name, sub: `장비 ${p.eqAB}/${p.eqC}/${p.eqD}% · 시스템 ${p.sys}%` }))} />
+              </div>
+            </div>
+            <div>
+              <Eyebrow color={C.hot}>열 · 궤도</Eyebrow>
+              <div className="mt-2">
+                <Row k="배출 열량 (= 소비 전력)" v={kW(th.Q)} accent={C.hot} />
+                <Row k="방열판 면적" v={fmt(th.area, 0)} u="m²" accent={C.hot} />
+                <Row k="방열계 질량" v={fmt(th.mass + th.loopMass, 0)} u="kg" dim />
+                <Row k="궤도 주기 / 일조율" v={`${fmt(orb.T, 0)}분 / ${fmt(orb.sunFrac * 100, 0)}%`} dim />
+              </div>
+              <div className="mt-3">
+                <Choice label="궤도 유형" cols={1} value={orbitType}
+                  onChange={(k) => { setOrbitType(k); setBetaAng(ORBIT_TYPES[k].beta); }}
+                  options={Object.entries(ORBIT_TYPES).map(([k, o]) => ({ key: k, label: o.name, sub: o.desc }))} />
+                <Slider label="고도" value={alt} onChange={setAlt} min={350} max={1200} step={10} unit="km" />
+                <Slider label="임무 수명" value={life} onChange={setLife} min={1} max={10} unit="년" />
+              </div>
+              {!isFinite(th.area) && (
+                <div className="p-3 mt-2" style={{ background: "#F6E3DE", border: `1px solid ${C.warn}` }}>
+                  <span style={{ fontSize: 12, color: C.warn }}>순 방열량 ≤ 0 — 방열판 작동 온도를 올리거나 자세를 바꾸세요.</span>
+                </div>
+              )}
+            </div>
+            <div>
+              <Eyebrow>질량 · 발사 (ECSS)</Eyebrow>
+              <div className="mt-2">
+                <Row k="장비 소계 (MEV)" v={fmt(ms.eqMEV, 0)} u="kg" dim />
+                <Row k="하네스 + 구조 + 시스템 마진" v={fmt(ms.dry - ms.eqMEV, 0)} u="kg" dim />
+                <Row k="건조질량" v={fmt(ms.dry, 0)} u="kg" accent={C.compute} />
+                <Row k={`추진제 (Δv ${fmt(ms.dV, 0)} m/s)`} v={fmt(ms.prop, 0)} u="kg" dim />
+                <Row k="발사질량" v={`${fmt(ms.wet, 0)} kg (${fmt(ms.wet / 1000, 1)} t)`} accent={C.compute} />
+                <Row k="전개 면적 (방열+어레이)" v={fmt(ms.deployed, 0)} u="m²" dim />
+                <Row k={`발사 (${con.L.name}, ${nSats.toLocaleString("ko-KR")}기)`}
+                  v={con.per >= 1 ? `${fmt(con.launches, 0)}회 · $${fmt(con.cost, 1)}B` : "1기가 발사능력 초과"} dim
+                  accent={con.per >= 1 ? undefined : C.warn} />
+              </div>
+              <Details label="세부 가정 조정 (질량표 · 발사체 · 셀 효율 등)">
+                <BudgetTable rows={ms.eq} unit="kg" fmtV={(v) => fmt(v, 0)}
+                  total={{ k: "장비 소계", cbe: ms.eqCBE, mev: ms.eqMEV }} />
+                <div className="mt-3">
+                  <Choice label="발사체" cols={2} value={launcherKey} onChange={setLauncherKey}
+                    options={Object.entries(LAUNCHERS).map(([k, l]) => ({ key: k, label: l.name, sub: `${(l.cap / 1000).toFixed(0)} t · $${l.kgCost}/kg` }))} />
+                  <Slider label="방열판 작동 온도" value={radT} onChange={setRadT} min={0} max={120} step={5} unit="°C" />
+                  <Choice label="방열판 자세" cols={1} value={radAtt} onChange={setRadAtt}
+                    options={Object.entries(RAD_ATT).map(([k, v]) => ({ key: k, label: v.name }))} />
+                  <label className="flex items-start gap-2 mb-3 cursor-pointer">
+                    <input type="checkbox" checked={shedLoad} onChange={(e) => setShedLoad(e.target.checked)} style={{ accentColor: C.compute, marginTop: 2 }} />
+                    <span style={{ fontSize: 12, color: C.ink2 }}>식(蝕) 구간 컴퓨트 차단 (배터리 절감 ↔ 가동률 하락)</span>
+                  </label>
+                  <Slider label="셀 효율" value={cellEff} onChange={setCellEff} min={20} max={35} unit="%" />
+                  <Slider label="연간 방사선 열화" value={degPerYr} onChange={setDegPerYr} min={0.5} max={5} step={0.25} unit="%/년" dec={2} />
+                  <Slider label="어레이 비출력" value={saWkg} onChange={setSaWkg} min={100} max={350} step={10} unit="W/kg" />
+                  <Slider label="방전심도 DOD" value={dod} onChange={setDod} min={10} max={60} unit="%" />
+                  <Slider label="배터리 비에너지" value={battWhKg} onChange={setBattWhKg} min={120} max={280} step={10} unit="Wh/kg" />
+                  <Slider label="PCDU 효율" value={pcduEff} onChange={setPcduEff} min={85} max={97} unit="%" />
+                  <Slider label="방열판 면밀도" value={radKgM2} onChange={setRadKgM2} min={1.5} max={10} step={0.5} unit="kg/m²" />
+                  <Slider label="핀 효율" value={finEff} onChange={setFinEff} min={60} max={95} unit="%" />
+                  <Slider label="전력-주파수 지수 α" value={alphaVF} onChange={setAlphaVF} min={1.8} max={3.2} step={0.1} unit="" dec={1} />
+                  <Slider label="정적 전력 비중" value={staticFrac} onChange={setStaticFrac} min={10} max={50} unit="%" />
+                  <Slider label="전개면 램 투영 비율" value={projFrac} onChange={setProjFrac} min={5} max={100} unit="%" />
+                  <Slider label="AOCS 기본 전력" value={aocsBase} onChange={setAocsBase} min={100} max={3000} step={50} unit="W" />
+                  <Slider label="OBDH 전력" value={obdhW} onChange={setObdhW} min={100} max={3000} step={50} unit="W" />
+                </div>
+              </Details>
+            </div>
+          </div>
+        </Panel>
+
+        {/* Method */}
+        <Panel eyebrow="Method" title="계산 체계 요약" accent={C.ink3}>
+          <div className="grid gap-x-8 gap-y-1 sm:grid-cols-2">
+            {[
+              ["활용률", "실시간 추론이 쓰는 연산 = 동시세션 × 세션속도 × 토큰당 연산. 남는 연산은 배치·학습·관측 처리로 채우거나 전력 캡 인하 근거로 사용"],
+              ["통신 구조", "TT&C만 RF 직접. 서비스 트래픽 = 토큰(출력+입력 × 3 B × 프로토콜 배수) + 에이전트 웹 검색 유입 + 멀티미디어 출력 → 광 ISL → 릴레이 LEO → 지상"],
+              ["ISL 기준 설계", "위성당 4터미널 고정: 릴레이행 2(오프로딩 전담) + SDC 링 전·후 2(학습·관측 전용). 판정 = 지상행 ≤ 릴레이행 2기 × 점유율, 링 트래픽 ≤ 링 2기 × 점유율"],
+              ["릴레이 사이징", "링크는 릴레이 간 분할 불가 → 릴레이 1기 수용 링크 = min(포트 수, ⌊실효용량 ÷ 링크당 트래픽⌋). 필요 릴레이 = ⌈SDC수 × 동시링크 ÷ 수용 링크⌉ — 용량·링크 제약이 결합된 산식"],
+              ["AI1 비교", "2026-06-09 공개치(120/150 kW, 600 km, 70 kW/t, 70 m 윙스팬, GB300 1랙 등가) 기준. 질량·연산·HBM은 등가 랙에서 추정"],
+              ["마진", "ECSS — 장비 성숙도별 + 시스템 20%, 컴퓨팅 마진 100% (개념설계 권고)"],
+              ["전력·열·질량", "SMAD 어레이 사이징, 복사 열평형(2εσT⁴ − 지구 IR·알베도), ECSS 질량 체계"],
+              ["미반영", "릴레이 성좌의 궤도 커버리지 기하, ISL 포인팅·획득 시간, 지연(latency), 페어링 체적, 궤도 조립"],
+            ].map(([k, v], i) => (
+              <div key={i} className="flex gap-3 py-1" style={{ borderBottom: `1px dotted ${C.rule}` }}>
+                <span style={{ fontFamily: MONO, fontSize: 10, color: C.ink3, minWidth: 68, paddingTop: 2 }}>{k}</span>
+                <span style={{ fontSize: 11.5, color: C.ink2, lineHeight: 1.5 }}>{v}</span>
+              </div>
+            ))}
+          </div>
+        </Panel>
+
+        <footer className="mt-6 pt-4" style={{ borderTop: `1px solid ${C.rule}`, fontFamily: MONO, fontSize: 10, color: C.ink3, letterSpacing: "0.08em" }}>
+          Phase 0/A 규모 산정용 · 서비스·통신 중심 재구성 v3 · 상세 설계 검증 대체 불가
+        </footer>
+      </div>
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<SDCServiceCommSimulator />);
+</script>
+</body>
+</html>
