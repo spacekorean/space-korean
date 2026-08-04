@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>위성 고도별 안테나 슬루율 계산기</title>
+<style>
+:root {
+  --bg: #f7f6f2; --surface: #ffffff; --card: #efede7;
+  --text: #1c1c1a; --text-2: #5f5e5a; --text-3: #898781;
+  --border: rgba(0,0,0,0.12);
+  --accent: #185FA5; --orbit: #534AB7; --orbit-dim: #AFA9EC;
+  --los: #D85A30; --los-dim: #F0997B; --los-dark: #993C1D;
+  --earth: #1D9E75; --geo: #0F6E56; --curve: #2a78d6;
+  --warn: #B3261E;
+  --beam: #BA7517; --beam-fill: #EF9F27; --beam-card: #FAEEDA; --beam-text: #633806; --beam-sub: #854F0B;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #191918; --surface: #222220; --card: #2b2b29;
+    --text: #f0efec; --text-2: #b5b4ac; --text-3: #898781;
+    --border: rgba(255,255,255,0.14);
+    --accent: #85B7EB; --orbit: #AFA9EC; --orbit-dim: #534AB7;
+    --los: #F0997B; --los-dim: #D85A30; --los-dark: #F5C4B3;
+    --earth: #5DCAA5; --geo: #9FE1CB; --curve: #3987e5;
+    --warn: #F2B8B5;
+    --beam: #FAC775; --beam-fill: #EF9F27; --beam-card: #412402; --beam-text: #FAEEDA; --beam-sub: #FAC775;
+  }
+}
+* { box-sizing: border-box; margin: 0; }
+body { background: var(--bg); color: var(--text); font-family: "Segoe UI","Malgun Gothic",-apple-system,sans-serif; line-height: 1.6; padding: 32px 16px 64px; }
+.wrap { max-width: 840px; margin: 0 auto; }
+h1 { font-size: 22px; font-weight: 600; margin-bottom: 4px; }
+.sub { font-size: 13px; color: var(--text-3); margin-bottom: 24px; }
+.row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 10px; }
+label { font-size: 13px; color: var(--text-2); white-space: nowrap; }
+input[type=range] { flex: 1; min-width: 100px; accent-color: var(--accent); }
+input[type=number], select { background: var(--surface); color: var(--text); border: 1px solid var(--border); border-radius: 8px; padding: 6px 10px; font-size: 14px; }
+input[type=number] { width: 78px; }
+button { background: var(--surface); color: var(--text); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px; font-size: 13px; cursor: pointer; }
+button:hover { border-color: var(--text-3); }
+button.on { border-color: var(--accent); color: var(--accent); }
+.grpLbl { font-size: 12px; font-weight: 600; color: var(--text-3); letter-spacing: 0.04em; margin: 14px 0 4px; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(112px, 1fr)); gap: 12px; margin: 16px 0 20px; }
+.card { background: var(--card); border-radius: 10px; padding: 14px 16px; }
+.card .k { font-size: 12px; color: var(--text-3); }
+.card .v { font-size: 22px; font-weight: 600; margin: 2px 0; }
+.card .u { font-size: 11px; color: var(--text-3); }
+.card.hl .v { color: var(--accent); }
+.card.trk .v { color: var(--los-dark); }
+.card.warnOn .v, .card.warnOn .u { color: var(--warn); }
+.card.beam { background: var(--beam-card); }
+.card.beam .k, .card.beam .u { color: var(--beam-sub); }
+.card.beam .v { color: var(--beam-text); }
+svg { width: 100%; display: block; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; }
+.chartTitle { font-size: 14px; font-weight: 600; margin: 28px 0 8px; }
+.legend { display: flex; gap: 16px; font-size: 12px; color: var(--text-2); margin-bottom: 8px; flex-wrap: wrap; }
+.legend span { display: flex; align-items: center; gap: 5px; }
+.sq { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
+.foot { font-size: 12px; color: var(--text-3); margin-top: 24px; line-height: 1.8; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>위성 고도별 지상 안테나 슬루율 계산기</h1>
+  <div class="sub">적도 상공 원형 순행 궤도 · 다중 위성/다중 안테나 · 연속 추적–복귀 선회 시뮬레이션</div>
+
+  <div class="row">
+    <label>고도 (km)</label>
+    <input type="range" id="alt" min="200" max="36000" step="10" value="550">
+    <input type="number" id="altNum" min="200" max="36000" step="10" value="550">
+  </div>
+
+  <div class="row">
+    <button onclick="setAlt(420)">ISS 420</button>
+    <button onclick="setAlt(550)">Starlink 550</button>
+    <button onclick="setAlt(1200)">LEO 1200</button>
+    <button onclick="setAlt(20200)">GPS 20,200</button>
+    <button onclick="setAlt(35786)">GEO 35,786</button>
+    <span style="margin-left:auto;display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+      <label>단위</label>
+      <select id="unitSel">
+        <option value="degs" selected>°/s</option>
+        <option value="degm">°/min</option>
+        <option value="mrads">mrad/s</option>
+        <option value="rads">rad/s</option>
+      </select>
+      <label style="display:flex;align-items:center;gap:6px;"><input type="checkbox" id="rot" checked> 지구 자전 보정</label>
+    </span>
+  </div>
+
+  <div class="row">
+    <span style="display:flex;gap:8px;align-items:center;">
+      <label>궤도면당 위성</label>
+      <input type="number" id="nSat" min="1" max="36" step="1" value="8">
+      <span style="font-size:13px;color:var(--text-2);">기</span>
+    </span>
+    <button id="beamBtn" onclick="toggleBeam()">📡 빔 표시</button>
+    <span id="beamCtrl" style="display:none;gap:6px;align-items:center;flex-wrap:wrap;">
+      <label>빔 전체각</label>
+      <input type="range" id="beam" min="1" max="180" step="1" value="10" style="max-width:110px;">
+      <input type="number" id="beamNum" min="1" max="180" step="1" value="10" style="width:64px;">
+      <span style="font-size:13px;color:var(--text-2);">°</span>
+    </span>
+    <span style="margin-left:auto;display:flex;gap:8px;align-items:center;">
+      <label>보기</label>
+      <select id="viewSel">
+        <option value="schematic" selected>개념도 (고도 과장)</option>
+        <option value="low">저왜곡 (수평각 정확)</option>
+        <option value="true">실제 축척 (각도 정확)</option>
+      </select>
+    </span>
+  </div>
+
+  <div class="grpLbl">지상 안테나 설정</div>
+  <div class="row">
+    <span style="display:flex;gap:8px;align-items:center;">
+      <label>안테나 수</label>
+      <input type="number" id="nAnt" min="1" max="6" step="1" value="2">
+      <span style="font-size:13px;color:var(--text-2);">대</span>
+    </span>
+    <span style="display:flex;gap:8px;align-items:center;">
+      <label>최대 슬루율</label>
+      <input type="number" id="slew" min="0.1" max="100" step="0.1" value="2">
+      <span style="font-size:13px;color:var(--text-2);">°/s</span>
+    </span>
+    <span style="display:flex;gap:8px;align-items:center;">
+      <label>최소 앙각</label>
+      <input type="number" id="elmin" min="0" max="45" step="1" value="10">
+      <span style="font-size:13px;color:var(--text-2);">°</span>
+    </span>
+  </div>
+
+  <div class="cards">
+    <div class="card"><div class="k">궤도 공전 속도</div><div class="v" id="vOrbOut">–</div><div class="u">km/s</div></div>
+    <div class="card"><div class="k">상대 지상 속도</div><div class="v" id="vOut">–</div><div class="u">km/s</div></div>
+    <div class="card"><div class="k">통과 시간</div><div class="v" id="passOut">–</div><div class="u" id="passUnit">분</div></div>
+    <div class="card"><div class="k">상대 각속도 ω</div><div class="v" id="wOut">–</div><div class="u unitLbl">°/s</div></div>
+    <div class="card hl"><div class="k">최대 슬루율 (천정)</div><div class="v" id="maxOut">–</div><div class="u unitLbl">°/s</div></div>
+    <div class="card" id="curCard"><div class="k">현재 슬루율</div><div class="v" id="curOut">–</div><div class="u" id="curNote">1번 안테나</div></div>
+    <div class="card"><div class="k">180° 복귀 시간</div><div class="v" id="retTOut">–</div><div class="u" id="retTUnit">초 (수평→수평)</div></div>
+    <div class="card"><div class="k">가시 위성</div><div class="v" id="visOut">–</div><div class="u" id="visNote">기 (앙각 ≥ 10°)</div></div>
+    <div class="card trk"><div class="k">추적 중</div><div class="v" id="trkOut">–</div><div class="u" id="trkNote">안테나 중</div></div>
+    <div class="card"><div class="k">복귀·선회 중</div><div class="v" id="slwOut">–</div><div class="u">대</div></div>
+    <div class="card" id="gapCard" style="display:none;"><div class="k">위성 간 지표 간격</div><div class="v" id="gapOut">–</div><div class="u">km</div></div>
+    <div class="card beam" id="fpCard" style="display:none;"><div class="k">빔 풋프린트</div><div class="v" id="fpOut">–</div><div class="u" id="fpNote">km</div></div>
+  </div>
+
+  <svg id="scene" viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="다중 안테나 위성 추적 단면도">
+    <clipPath id="clip"><rect x="0" y="0" width="800" height="420"/></clipPath>
+    <g clip-path="url(#clip)">
+      <circle id="earth" cx="400" cy="660" r="300" fill="var(--earth)" opacity="0.15"/>
+      <circle id="earthEdge" cx="400" cy="660" r="300" fill="none" stroke="var(--earth)" stroke-width="2"/>
+      <path id="orbitArc" fill="none" stroke="var(--orbit)" stroke-width="1.5" stroke-dasharray="6 5"/>
+      <g id="mask"></g>
+      <g id="beams"></g>
+      <g id="losLines"></g>
+      <g id="sats"></g>
+      <g id="rateLabels"></g>
+      <text id="geoBadge" x="400" y="70" font-size="13" font-weight="600" fill="var(--geo)" text-anchor="middle" visibility="hidden">정지궤도: 지상국 기준 정지</text>
+      <g id="antennas"></g>
+      <text id="stnLabel" x="414" y="372" font-size="12" fill="var(--text-2)">지상국</text>
+      <text id="scaleNote" x="16" y="24" font-size="12" fill="var(--text-3)"></text>
+    </g>
+  </svg>
+
+  <div class="row" style="margin-top:12px;">
+    <button id="playBtn" onclick="togglePlay()">⏸ 일시정지</button>
+    <label>재생 배속</label>
+    <input type="range" id="spd" min="1" max="600" step="1" value="60" style="max-width:180px;">
+    <span id="spdOut" style="font-size:13px;font-weight:600;min-width:52px;">×60</span>
+  </div>
+
+  <div class="chartTitle">통과 중 슬루율 변화 (위성 1기 기준 프로파일)</div>
+  <div class="legend">
+    <span><span class="sq" style="background:var(--curve)"></span>겉보기 슬루율 (지상국 기준)</span>
+    <span><span class="sq" style="background:var(--text-3)"></span>상대 궤도 각속도 ω (일정, 점선)</span>
+    <span><span class="sq" style="background:var(--warn)"></span>안테나 최대 슬루율 (초과 시 추적 지연)</span>
+    <span><span class="sq" style="background:var(--los)"></span>1번 안테나 추적 위성 위치</span>
+  </div>
+  <svg id="chart" viewBox="0 0 800 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="통과 경과 시간에 따른 슬루율 곡선">
+    <g id="chartGrid"></g>
+    <path id="curveOmega" fill="none" stroke="var(--text-3)" stroke-width="1.5" stroke-dasharray="5 4"/>
+    <line id="limitLine" stroke="var(--warn)" stroke-width="1.5" stroke-dasharray="7 4" visibility="hidden"/>
+    <text id="limitLbl" font-size="11" fill="var(--warn)" text-anchor="end" visibility="hidden">안테나 한계</text>
+    <path id="curveApp" fill="none" stroke="var(--curve)" stroke-width="2"/>
+    <circle id="chartDot" r="5" fill="var(--los)"/>
+    <text x="400" y="254" font-size="12" fill="var(--text-3)" text-anchor="middle">통과 경과 시간 (분)</text>
+    <text id="yLabel" x="14" y="16" font-size="12" fill="var(--text-3)">°/s</text>
+    <g id="chartTicks"></g>
+  </svg>
+
+  <div class="foot">
+    모델: 원형 궤도, ω_orbit = √(μ/r³), ω_rel = ω_orbit − ω_earth (적도 지상국·순행 궤도),
+    겉보기 슬루율 = |dα/dt| (α: 시선 앙각), 최대 슬루율 ≈ v_rel/h (천정).
+    가시 조건: 앙각 ≥ ε_min, 가시 반각 γ_vis = acos((R⊕/r)·cos ε_min) − ε_min. 통과 시간 = 2γ_vis/ω_rel.
+    빔 풋프린트: 반각 β에 대해 λ = asin((r/R⊕)sin β) − β, 호 길이 = 2λR⊕
+    (β ≥ asin(R⊕/r)이면 수평선 제한 λ = acos(R⊕/r)). 궤도면당 N기 배치 시 위성 간 지표 간격 = 2πR⊕/N.
+    <br>
+    안테나 운용 개념: 위성이 최소 앙각을 넘어 떠오르면 유휴 안테나 1대에 배정되고, 그 안테나는 위성이 질 때까지 계속 물고 간다
+    (중간 재배정·가로채기 없음). 추적 종료 후 최대 슬루율로 상승 지점(대기 위치)까지 복귀 선회하며, 복귀 중에는 새 위성을 잡지 못한다.
+    필요 슬루율이 안테나 최대치를 넘으면 추적이 지연되고 ⚠ 포화로 표시된다. 180° 복귀 시간 = (180° − 2ε_min)/최대 슬루율.
+    점선 시선 = 선회·대기 중 지향 방향, 실선 시선 = 추적(락) 중.
+    보기 모드 — 개념도: 고도 로그 과장 / 저왜곡: 수평각 정확 / 실제 축척: 완전 비례.
+    μ = 398,600.44 km³/s², R⊕ = 6,371 km, ω⊕ = 7.2921159×10⁻⁵ rad/s.
+    수치는 개념 검토용이며 실제 설계에는 궤도 전파, 방위/앙각 2축 짐벌 특성(천정 키홀), 국지 마스크 반영이 필요합니다.
+  </div>
+</div>
+
+<script>
+const MU = 398600.4418, RE = 6371, WE = 7.2921159e-5;
+const CX = 400, SY = 360;
+const UNITS = {
+  degs: { f: 1, s: '°/s' },
+  degm: { f: 60, s: '°/min' },
+  mrads: { f: Math.PI/180*1000, s: 'mrad/s' },
+  rads: { f: Math.PI/180, s: 'rad/s' }
+};
+let h = 550, playing = true, simT = 0, speed = 60, lastTs = null;
+let useRot = true, unit = 'degs', beamOn = false, beamDeg = 10, viewMode = 'schematic';
+let nSat = 8, nAnt = 2, maxSlew = 2, elMin = 10;
+let r, wOrb, wRel, gmax, gvis, passT, isGeo, lam, fpKm, fpLimited;
+let dRe, dRo, aScale;
+let satEls = [], losEls = [], rateEls = [], beamEls = [], ants = [];
+const $ = id => document.getElementById(id);
+const NS = 'http://www.w3.org/2000/svg';
+const mk = (tag, attrs, parent) => {
+  const e = document.createElementNS(NS, tag);
+  for (const k in attrs) e.setAttribute(k, attrs[k]);
+  parent.appendChild(e);
+  return e;
+};
+
+function fmt(d) {
+  const v = d * UNITS[unit].f;
+  if (v === 0) return '0';
+  if (v >= 100) return v.toFixed(1);
+  if (v >= 0.001) return v.toFixed(3);
+  return v.toExponential(2);
+}
+function uStr() { return UNITS[unit].s; }
+function pointing(g) { return Math.atan2(r*Math.cos(g) - RE, r*Math.sin(g)); }
+function appRate(g) {
+  const dg = 1e-5;
+  return Math.abs((pointing(g - dg) - pointing(g))/dg)*Math.abs(wRel)*180/Math.PI;
+}
+// 지상국 기준 천정각(부호 있음, + = 상승측): 위성 지심각 γ → φ
+function phiOf(g) { return Math.atan2(r*Math.sin(g), r*Math.cos(g) - RE); }
+// 역변환: 안테나 지향 천정각 φ → 궤도 셸 상 지심각 γ
+function gOf(phi) { return phi - Math.asin(Math.min(1, Math.max(-1, (RE/r)*Math.sin(phi)))); }
+function normAng(a) {
+  a = a % (2*Math.PI);
+  if (a > Math.PI) a -= 2*Math.PI;
+  if (a < -Math.PI) a += 2*Math.PI;
+  return a;
+}
+function parkPhi() {
+  const dir = wRel >= 0 ? 1 : -1;
+  return dir*(Math.PI/2 - elMin*Math.PI/180);
+}
+
+function rebuildEls() {
+  ['sats','losLines','rateLabels','beams','antennas'].forEach(id => $(id).innerHTML = '');
+  satEls = []; losEls = []; rateEls = []; beamEls = []; ants = [];
+  for (let i = 0; i < nSat; i++) {
+    satEls.push(mk('circle', { r: 6, fill: 'var(--orbit-dim)', opacity: 0.5 }, $('sats')));
+    beamEls.push([
+      mk('path', { fill: 'var(--beam-fill)', opacity: 0.1 }, $('beams')),
+      mk('path', { fill: 'none', stroke: 'var(--beam-fill)', 'stroke-width': 3, opacity: 0.4 }, $('beams'))
+    ]);
+  }
+  for (let i = 0; i < nAnt; i++) {
+    losEls.push(mk('line', { stroke: i === 0 ? 'var(--los)' : 'var(--los-dim)', 'stroke-width': i === 0 ? 1.6 : 1.2 }, $('losLines')));
+    rateEls.push(mk('text', { 'font-size': 12, 'font-weight': 600, fill: i === 0 ? 'var(--los-dark)' : 'var(--los-dim)' }, $('rateLabels')));
+    const bx = CX + (i - (nAnt-1)/2) * 26;
+    mk('line', { x1: bx, y1: SY, x2: bx, y2: SY - 14, stroke: 'var(--text)', 'stroke-width': 2 }, $('antennas'));
+    mk('path', { d: 'M ' + (bx-9) + ' ' + (SY-8) + ' Q ' + bx + ' ' + (SY-21) + ' ' + (bx+9) + ' ' + (SY-8), fill: 'none', stroke: 'var(--text)', 'stroke-width': 2 }, $('antennas'));
+    ants.push({ phi: parkPhi(), sat: null, locked: false, slewing: false });
+  }
+  $('stnLabel').setAttribute('x', CX + (nAnt-1)/2*26 + 18);
+}
+
+function recompute() {
+  r = RE + h;
+  wOrb = Math.sqrt(MU/(r*r*r));
+  wRel = wOrb - (useRot ? WE : 0);
+  gmax = Math.acos(RE/r);
+  const elR = elMin*Math.PI/180;
+  gvis = Math.acos(Math.min(1, (RE/r)*Math.cos(elR))) - elR;
+  isGeo = Math.abs(wRel) < 1e-7;
+  passT = isGeo ? Infinity : 2*gvis/Math.abs(wRel);
+  const vRel = Math.abs(wRel)*r;
+  $('vOrbOut').textContent = Math.sqrt(MU/r).toFixed(2);
+  $('vOut').textContent = vRel.toFixed(2);
+  $('wOut').textContent = fmt(Math.abs(wRel)*180/Math.PI);
+  $('maxOut').textContent = fmt((vRel/h)*180/Math.PI);
+  if (isGeo) { $('passOut').textContent = '∞'; $('passUnit').textContent = '항상 가시'; }
+  else {
+    const m = passT/60;
+    if (m > 5000) { $('passOut').textContent = (m/60).toFixed(1); $('passUnit').textContent = '시간'; }
+    else { $('passOut').textContent = m.toFixed(1); $('passUnit').textContent = '분'; }
+  }
+  const retT = (180 - 2*elMin)/maxSlew;
+  if (isGeo) { $('retTOut').textContent = '–'; $('retTUnit').textContent = '복귀 불필요'; }
+  else if (retT >= 120) { $('retTOut').textContent = (retT/60).toFixed(1); $('retTUnit').textContent = '분 (수평→수평)'; }
+  else { $('retTOut').textContent = retT.toFixed(0); $('retTUnit').textContent = '초 (수평→수평)'; }
+  $('visNote').textContent = '기 (앙각 ≥ ' + elMin + '°)';
+  $('geoBadge').setAttribute('visibility', isGeo ? 'visible' : 'hidden');
+  document.querySelectorAll('.unitLbl').forEach(el => el.textContent = uStr());
+
+  const beta = beamDeg/2*Math.PI/180;
+  const s = (r/RE)*Math.sin(beta);
+  if (s >= 1 || beta >= Math.PI/2) { lam = Math.acos(RE/r); fpLimited = true; }
+  else { lam = Math.asin(s) - beta; fpLimited = false; }
+  fpKm = 2*lam*RE;
+  $('fpOut').textContent = Math.round(fpKm).toLocaleString();
+  $('fpNote').textContent = fpLimited ? 'km (수평선 제한)' : 'km';
+  $('gapCard').style.display = nSat > 1 ? 'block' : 'none';
+  if (nSat > 1) $('gapOut').textContent = Math.round(2*Math.PI*RE/nSat).toLocaleString();
+  $('trkNote').textContent = nAnt + '대 안테나 중';
+
+  rebuildEls();
+  layoutScene();
+  drawChart();
+}
+
+function layoutScene() {
+  if (viewMode === 'true') {
+    const k = 290 / h;
+    dRe = RE*k; dRo = r*k; aScale = 1;
+    $('scaleNote').textContent = '실제 축척 · 각도 정확 · 1px = ' + (1/k).toFixed(1) + ' km';
+  } else if (viewMode === 'low') {
+    dRe = 620;
+    const hT = dRe*h/RE;
+    const E = hT < 80 ? 80/hT : (hT > 270 ? 270/hT : 1);
+    dRo = dRe + hT*E; aScale = 1;
+    $('scaleNote').textContent = '저왜곡 · 수평각 정확 · 고도 ' + (E >= 1 ? E.toFixed(1)+'× 과장' : E.toFixed(2)+'× 압축');
+  } else {
+    dRe = 320;
+    dRo = dRe + 60 + 150*Math.log10(h/200 + 1)/Math.log10(181);
+    aScale = Math.min(gmax, 1.15)/gmax;
+    $('scaleNote').textContent = '개념도 · 고도 과장 · 각도 왜곡 있음';
+  }
+  const ey = SY + dRe;
+  $('earth').setAttribute('cy', ey); $('earth').setAttribute('r', dRe);
+  $('earthEdge').setAttribute('cy', ey); $('earthEdge').setAttribute('r', dRe);
+  const p = [], N = 160;
+  if (nSat > 1) {
+    for (let i = 0; i <= N; i++) {
+      const a = 2*Math.PI*i/N;
+      p.push((i?'L':'M') + (CX + dRo*Math.sin(a)).toFixed(1) + ' ' + (ey - dRo*Math.cos(a)).toFixed(1));
+    }
+  } else {
+    const ga = gmax*aScale;
+    for (let i = 0; i <= N; i++) {
+      const a = -ga + 2*ga*i/N;
+      p.push((i?'L':'M') + (CX + dRo*Math.sin(a)).toFixed(1) + ' ' + (ey - dRo*Math.cos(a)).toFixed(1));
+    }
+  }
+  $('orbitArc').setAttribute('d', p.join(' '));
+  // 최소 앙각 마스크 (가시 한계선)
+  $('mask').innerHTML = '';
+  if (!isGeo || elMin > 0) {
+    [1, -1].forEach(sg => {
+      const gd = sg*gvis*aScale;
+      mk('line', {
+        x1: CX, y1: SY, x2: (CX + dRo*Math.sin(gd)).toFixed(1), y2: (ey - dRo*Math.cos(gd)).toFixed(1),
+        stroke: 'var(--text-3)', 'stroke-width': 1, 'stroke-dasharray': '3 5', opacity: 0.55
+      }, $('mask'));
+    });
+    const tl = mk('text', { x: CX + dRo*Math.sin(gvis*aScale) - 4, y: ey - dRo*Math.cos(gvis*aScale) - 6, 'font-size': 10, fill: 'var(--text-3)', 'text-anchor': 'end' }, $('mask'));
+    tl.textContent = 'ε_min ' + elMin + '°';
+  }
+}
+
+function surfPt(a, ey) { return [CX + dRe*Math.sin(a), ey - dRe*Math.cos(a)]; }
+
+function beamPaths(gd, sx, sy, ey) {
+  const lamD = lam*aScale;
+  const N = 40, pts = [];
+  for (let i = 0; i <= N; i++) {
+    const a = gd - lamD + 2*lamD*i/N;
+    pts.push(surfPt(a, ey));
+  }
+  const cone = ['M ' + sx.toFixed(1) + ' ' + sy.toFixed(1)];
+  pts.forEach(p => cone.push('L ' + p[0].toFixed(1) + ' ' + p[1].toFixed(1)));
+  cone.push('Z');
+  return [cone.join(' '), pts.map((p,i) => (i?'L':'M') + p[0].toFixed(1) + ' ' + p[1].toFixed(1)).join(' ')];
+}
+
+const CH = { x0: 56, x1: 780, y0: 224, y1: 24 };
+let chartMax = 1;
+function drawChart() {
+  const grid = $('chartGrid'), ticks = $('chartTicks');
+  grid.innerHTML = ''; ticks.innerHTML = '';
+  $('yLabel').textContent = uStr();
+  $('limitLine').setAttribute('visibility', 'hidden');
+  $('limitLbl').setAttribute('visibility', 'hidden');
+  if (isGeo) {
+    $('curveApp').setAttribute('d', '');
+    $('curveOmega').setAttribute('d', 'M ' + CH.x0 + ' ' + CH.y0 + ' L ' + CH.x1 + ' ' + CH.y0);
+    $('chartDot').setAttribute('visibility', 'hidden');
+    const t = mk('text', { x: 400, y: 120, 'text-anchor': 'middle', 'font-size': 13, fill: 'var(--geo)' }, ticks);
+    t.textContent = '정지궤도: 슬루율 0 (항상 천정 고정)';
+    return;
+  }
+  const N = 140, pts = [];
+  let curveMax = 0;
+  for (let i = 0; i <= N; i++) {
+    const t = passT*i/N;
+    const g = gvis - Math.abs(wRel)*t;
+    const rate = appRate(g);
+    pts.push([t, rate]);
+    if (rate > curveMax) curveMax = rate;
+  }
+  chartMax = curveMax*1.08;
+  if (maxSlew <= curveMax*2.5) chartMax = Math.max(chartMax, maxSlew*1.12);
+  const X = t => CH.x0 + (CH.x1 - CH.x0)*t/passT;
+  const Y = v => CH.y0 - (CH.y0 - CH.y1)*v/chartMax;
+  $('curveApp').setAttribute('d', pts.map((p,i) => (i?'L':'M') + X(p[0]).toFixed(1) + ' ' + Y(p[1]).toFixed(1)).join(' '));
+  const wDeg = Math.abs(wRel)*180/Math.PI;
+  if (wDeg <= chartMax) $('curveOmega').setAttribute('d', 'M ' + CH.x0 + ' ' + Y(wDeg).toFixed(1) + ' L ' + CH.x1 + ' ' + Y(wDeg).toFixed(1));
+  else $('curveOmega').setAttribute('d', '');
+  if (maxSlew <= chartMax) {
+    const yl = Y(maxSlew).toFixed(1);
+    $('limitLine').setAttribute('x1', CH.x0); $('limitLine').setAttribute('x2', CH.x1);
+    $('limitLine').setAttribute('y1', yl); $('limitLine').setAttribute('y2', yl);
+    $('limitLine').setAttribute('visibility', 'visible');
+    $('limitLbl').setAttribute('x', CH.x1 - 4); $('limitLbl').setAttribute('y', +yl - 5);
+    $('limitLbl').textContent = '안테나 한계 ' + fmt(maxSlew) + ' ' + uStr();
+    $('limitLbl').setAttribute('visibility', 'visible');
+  }
+  for (let i = 0; i <= 4; i++) {
+    const v = chartMax*i/4, y = Y(v);
+    mk('line', { x1: CH.x0, x2: CH.x1, y1: y, y2: y, stroke: 'var(--border)', 'stroke-width': 1 }, grid);
+    const tx = mk('text', { x: CH.x0 - 6, y: y + 4, 'text-anchor': 'end', 'font-size': 11, fill: 'var(--text-3)' }, ticks);
+    tx.textContent = fmt(v);
+  }
+  for (let i = 0; i <= 4; i++) {
+    const t = passT*i/4;
+    const tx = mk('text', { x: X(t), y: CH.y0 + 16, 'text-anchor': 'middle', 'font-size': 11, fill: 'var(--text-3)' }, ticks);
+    tx.textContent = (t/60).toFixed(1);
+  }
+}
+
+function frame(ts) {
+  if (lastTs === null) lastTs = ts;
+  const dt = Math.min((ts - lastTs)/1000, 0.1);
+  lastTs = ts;
+  const dts = (playing && !isGeo) ? dt*speed : 0;
+  if (!isGeo && playing) {
+    simT += dt*speed;
+    const period = 2*Math.PI/Math.abs(wRel);
+    if (simT > period) simT -= period;
+  }
+  const t = isGeo ? 0 : simT;
+  const dir = wRel >= 0 ? 1 : -1;
+  const g0 = isGeo ? 0 : dir*(gvis - Math.abs(wRel)*t);
+  const ey = SY + dRe;
+  const step = 2*Math.PI/nSat;
+
+  const info = [];
+  for (let i = 0; i < nSat; i++) {
+    const ga = normAng(g0 + i*step);
+    const gd = Math.abs(ga) <= gmax ? ga*aScale : ga;
+    const sx = CX + dRo*Math.sin(gd), sy = ey - dRo*Math.cos(gd);
+    const vis = Math.abs(ga) <= gvis;
+    info.push({ i, ga, sx, sy, vis });
+    satEls[i].setAttribute('cx', sx);
+    satEls[i].setAttribute('cy', sy);
+    const cone = beamEls[i][0], gr = beamEls[i][1];
+    const near = Math.abs(ga) < 1.4;
+    if (beamOn && near) {
+      const bp = beamPaths(gd, sx, sy, ey);
+      cone.setAttribute('d', bp[0]); gr.setAttribute('d', bp[1]);
+      cone.setAttribute('visibility', 'visible'); gr.setAttribute('visibility', 'visible');
+    } else {
+      cone.setAttribute('visibility', 'hidden'); gr.setAttribute('visibility', 'hidden');
+    }
+  }
+
+  // ── 안테나 상태 갱신 ──────────────────────────────
+  // 1) 진 위성 해제 (배정은 상승~하강까지 유지, 중간 재배정 없음)
+  for (const a of ants) if (a.sat !== null && !info[a.sat].vis) { a.sat = null; a.locked = false; }
+  // 2) 미배정 가시 위성 → 유휴 안테나(추적·복귀 중 아님)에 배정. 남은 통과 시간이 긴(방금 뜬) 위성 우선
+  const taken = new Set(ants.filter(a => a.sat !== null).map(a => a.sat));
+  const pool = info.filter(s => s.vis && !taken.has(s.i)).sort((x, y) => y.ga*dir - x.ga*dir);
+  for (const s of pool) {
+    let best = null, bd = Infinity;
+    for (const a of ants) {
+      if (a.sat !== null) continue;
+      if (a.slewing) continue; // 복귀 선회 중에는 새 위성 배정 불가
+      const d = Math.abs(phiOf(s.ga) - a.phi);
+      if (d < bd) { bd = d; best = a; }
+    }
+    if (best) { best.sat = s.i; taken.add(s.i); }
+  }
+  // 3) 최대 슬루율 제한 하에 지향 이동
+  const pPark = parkPhi();
+  const maxStep = maxSlew*Math.PI/180*dts;
+  const tol = 1.2*Math.PI/180;
+  let nLock = 0, nSlew = 0;
+  for (const a of ants) {
+    const target = a.sat !== null ? phiOf(info[a.sat].ga) : pPark;
+    if (isGeo) a.phi = target;
+    else {
+      const err = target - a.phi;
+      a.phi += Math.max(-maxStep, Math.min(maxStep, err));
+    }
+    const rem = Math.abs(target - a.phi);
+    a.locked = a.sat !== null && rem <= tol;
+    a.slewing = !a.locked && rem > tol;
+    if (a.locked) nLock++;
+    if (a.slewing) nSlew++;
+  }
+
+  const nVis = info.filter(s => s.vis).length;
+  $('visOut').textContent = nVis;
+  $('trkOut').textContent = nLock;
+  $('slwOut').textContent = nSlew;
+
+  info.forEach(s => {
+    const assigned = taken.has(s.i);
+    const lockedOn = ants.some(a => a.sat === s.i && a.locked);
+    satEls[s.i].setAttribute('fill', assigned ? 'var(--orbit)' : 'var(--orbit-dim)');
+    satEls[s.i].setAttribute('opacity', lockedOn ? 1 : assigned ? 0.85 : (s.vis ? 0.55 : 0.25));
+    satEls[s.i].setAttribute('r', assigned ? 7 : 5);
+  });
+
+  for (let ai = 0; ai < nAnt; ai++) {
+    const a = ants[ai];
+    const bx = CX + (ai - (nAnt-1)/2)*26;
+    let ex2, ey2;
+    if (a.locked) { ex2 = info[a.sat].sx; ey2 = info[a.sat].sy; }
+    else {
+      const gd = gOf(a.phi)*aScale;
+      ex2 = CX + dRo*Math.sin(gd); ey2 = ey - dRo*Math.cos(gd);
+    }
+    losEls[ai].setAttribute('x1', bx); losEls[ai].setAttribute('y1', SY - 14);
+    losEls[ai].setAttribute('x2', ex2); losEls[ai].setAttribute('y2', ey2);
+    losEls[ai].setAttribute('stroke-dasharray', a.locked ? '' : '5 5');
+    losEls[ai].setAttribute('opacity', a.locked ? (ai === 0 ? 1 : 0.7) : 0.4);
+    losEls[ai].setAttribute('visibility', 'visible');
+    if (a.locked) {
+      const req = appRate(info[a.sat].ga);
+      const sat9 = req > maxSlew + 1e-9;
+      rateEls[ai].textContent = (sat9 ? '⚠ ' : '') + fmt(Math.min(req, maxSlew)) + ' ' + uStr();
+      rateEls[ai].setAttribute('fill', sat9 ? 'var(--warn)' : (ai === 0 ? 'var(--los-dark)' : 'var(--los-dim)'));
+      rateEls[ai].setAttribute('x', Math.min(Math.max(ex2 + 10, 10), 640));
+      rateEls[ai].setAttribute('y', Math.max(ey2 - 10, 18));
+      rateEls[ai].setAttribute('visibility', 'visible');
+    } else if (a.slewing && !isGeo) {
+      rateEls[ai].textContent = (a.sat !== null ? '포착 선회' : '복귀') + ' ' + fmt(maxSlew) + ' ' + uStr();
+      rateEls[ai].setAttribute('fill', 'var(--text-3)');
+      rateEls[ai].setAttribute('x', Math.min(Math.max((bx + ex2)/2 + 8, 10), 640));
+      rateEls[ai].setAttribute('y', Math.max((SY - 14 + ey2)/2, 18));
+      rateEls[ai].setAttribute('visibility', 'visible');
+    } else {
+      rateEls[ai].setAttribute('visibility', 'hidden');
+    }
+  }
+
+  // 현재 슬루율 카드 (1번 안테나) + 차트 도트
+  const a0 = ants[0];
+  let curTxt = '0', note = '1번 안테나 · 대기', warn = false;
+  if (isGeo) { curTxt = '0'; note = '1번 안테나 · 천정 고정'; }
+  else if (a0.locked) {
+    const req = appRate(info[a0.sat].ga);
+    warn = req > maxSlew + 1e-9;
+    curTxt = fmt(Math.min(req, maxSlew));
+    note = '1번 안테나 · ' + (warn ? '⚠ 슬루율 포화' : '추적 중') + ' ' + uStr();
+  } else if (a0.slewing) {
+    curTxt = fmt(maxSlew);
+    note = '1번 안테나 · ' + (a0.sat !== null ? '포착 선회' : '복귀 선회') + ' ' + uStr();
+  } else note = '1번 안테나 · 대기 (' + uStr() + ')';
+  $('curOut').textContent = curTxt;
+  $('curNote').textContent = note;
+  $('curCard').classList.toggle('warnOn', warn);
+
+  if (!isGeo && a0.locked) {
+    const s = info[a0.sat];
+    const tSat = Math.min(Math.max((gvis - s.ga*dir)/Math.abs(wRel), 0), passT);
+    const rate = Math.min(appRate(s.ga), chartMax);
+    $('chartDot').setAttribute('visibility', 'visible');
+    $('chartDot').setAttribute('cx', CH.x0 + (CH.x1 - CH.x0)*tSat/passT);
+    $('chartDot').setAttribute('cy', CH.y0 - (CH.y0 - CH.y1)*rate/chartMax);
+  } else {
+    $('chartDot').setAttribute('visibility', 'hidden');
+  }
+  requestAnimationFrame(frame);
+}
+
+function setAlt(v) {
+  h = Math.min(36000, Math.max(200, v));
+  $('alt').value = h; $('altNum').value = h;
+  simT = 0;
+  recompute();
+}
+function setBeam(v) {
+  beamDeg = Math.min(180, Math.max(1, v));
+  $('beam').value = beamDeg; $('beamNum').value = beamDeg;
+  recompute();
+}
+function toggleBeam() {
+  beamOn = !beamOn;
+  $('beamCtrl').style.display = beamOn ? 'flex' : 'none';
+  $('fpCard').style.display = beamOn ? 'block' : 'none';
+  $('beamBtn').classList.toggle('on', beamOn);
+  recompute();
+}
+function togglePlay() {
+  playing = !playing;
+  $('playBtn').textContent = playing ? '⏸ 일시정지' : '▶ 재생';
+}
+$('alt').addEventListener('input', e => setAlt(+e.target.value));
+$('altNum').addEventListener('change', e => setAlt(+e.target.value || 200));
+$('beam').addEventListener('input', e => setBeam(+e.target.value));
+$('beamNum').addEventListener('change', e => setBeam(+e.target.value || 10));
+$('nSat').addEventListener('change', e => {
+  nSat = Math.min(36, Math.max(1, Math.round(+e.target.value || 1)));
+  e.target.value = nSat;
+  recompute();
+});
+$('nAnt').addEventListener('change', e => {
+  nAnt = Math.min(6, Math.max(1, Math.round(+e.target.value || 1)));
+  e.target.value = nAnt;
+  recompute();
+});
+$('slew').addEventListener('change', e => {
+  maxSlew = Math.min(100, Math.max(0.1, +e.target.value || 2));
+  e.target.value = maxSlew;
+  recompute();
+});
+$('elmin').addEventListener('change', e => {
+  elMin = Math.min(45, Math.max(0, Math.round(+e.target.value || 0)));
+  e.target.value = elMin;
+  recompute();
+});
+$('spd').addEventListener('input', e => {
+  speed = +e.target.value;
+  $('spdOut').textContent = '×' + speed;
+});
+$('rot').addEventListener('change', e => { useRot = e.target.checked; recompute(); });
+$('unitSel').addEventListener('change', e => { unit = e.target.value; recompute(); });
+$('viewSel').addEventListener('change', e => { viewMode = e.target.value; recompute(); });
+recompute();
+requestAnimationFrame(frame);
+</script>
+</body>
+</html>
