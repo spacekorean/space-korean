@@ -1044,8 +1044,8 @@ function SDCServiceCommSimulator() {
                 : `릴레이행 ${fmt(cm.reqRate, 1)} G · 링 ${fmt(cm.reqRingRate, 1)} G 필요`} />
             <Metric label="④ 릴레이 위성 소요" value={isFinite(con.relayTotal) ? fmt(con.relayTotal, 0) + "기" : "—"} big color={C.comm}
               sub={`릴레이당 ${fmt(con.portsEff, 0)}링크 수용 (링크당 ${bw(con.linkBps)}) · ${con.relayBind} 제약`} />
-            <Metric label="③ ISL 거리 (기하 참고)" value={`~${fmt(islGeo.spacing, 0)}`} unit="km" big color={C.hot}
-              sub={`링 이웃 간 거리 · 시선한계 ~${fmt(islGeo.losMax, 0)} km (카만라인 100 km 통과) @ 고도 ${alt} km`} />
+            <Metric label="③ ISL 거리 (기하 참고)" value={`~${fmt(islGeo.spacing, 0)} / ${fmt(islGeo.losMax, 0)}`} unit="km" big color={C.hot}
+              sub={`링 이웃 간 ~${fmt(islGeo.spacing, 0)} km · 시선한계(카만라인 100 km 통과) ~${fmt(islGeo.losMax, 0)} km @ 고도 ${alt} km`} />
           </div>
           <div className="mt-4 p-3" style={{ background: C.panelAlt, border: `1px dashed ${C.rule}` }}>
             <span style={{ fontSize: 11.5, color: C.ink2, lineHeight: 1.8 }}>
