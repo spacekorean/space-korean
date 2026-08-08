@@ -136,7 +136,7 @@ function setupRocket(spec){
   const mains = eng.filter(e => e.lift > 0.3).sort((a,b) => a.px - b.px);
   const MK = ['a','s','d','f','g'];
   mains.forEach((e,i) => { e.kind = 'main'; e.key = MK[i] || null; });
-  eng.filter(e => e.lift <= 0.3).forEach(e => { e.kind = 'side'; e.key = e.cd < 0 ? 'j' : 'k'; });
+  eng.filter(e => e.lift <= 0.3).forEach(e => { e.kind = 'side'; e.key = e.px < 0 ? 'j' : 'k'; });
   buildKeys();
   reset();
 }
@@ -234,7 +234,7 @@ function buildKeys(){
   eng.filter(e => e.kind === 'main' && e.key).forEach((e,i) => { e.btn = add(e.key, '엔진' + (i+1), (e.fmax/1000).toFixed(0) + 'kN'); });
   add(' ', '전체 메인', 'collective')._space = true;
   const sides = eng.filter(e => e.kind === 'side' && e.key);
-  sides.forEach(e => { e.btn = add(e.key, e.cd < 0 ? '좌 부스터' : '우 부스터', (e.fmax/1000).toFixed(1) + 'kN'); });
+  sides.forEach(e => { e.btn = add(e.key, e.px < 0 ? '좌 부스터' : '우 부스터', (e.fmax/1000).toFixed(1) + 'kN'); });
   if (!sides.length) add('j', '부스터 없음', 'RCS=0').style.opacity = .4;
   add('r', '리셋', '', 'reset');
   replayBtn = addAction('▶', '리플레이', startReplay);
