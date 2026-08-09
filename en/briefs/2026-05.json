@@ -13,7 +13,12 @@
         "url": "https://breakingdefense.com/2026/05/despite-peak-hype-orbital-data-centers-for-ai-not-yet-ready-for-natsec-prime-time/",
         "label": "breakingdefense.com"
       }
-    ]
+    ],
+    "video": {
+      "id": "wpzezCh21to",
+      "title": "미 국방·정보계 '궤도 데이터센터 시기상조'… 1분기 5.4억$ 유입",
+      "ko_audio": true
+    }
   },
   "2026-05-30": {
     "date": "2026-05-30",
@@ -37,7 +42,12 @@
         "url": "https://www.satellitetoday.com/technology/2026/05/28/orbital-data-centers-must-tackle-chip-lifespan-launch-availability-and-cybersecurity-challenges/",
         "label": "satellitetoday.com"
       }
-    ]
+    ],
+    "video": {
+      "id": "SyNS5wcn6z4",
+      "title": "스몰샛 유럽: '궤도 데이터센터 마지노선은 ㎏당 300달러'",
+      "ko_audio": true
+    }
   },
   "2026-05-29": {
     "date": "2026-05-29",
@@ -61,7 +71,12 @@
         "url": "https://payloadspace.com/observable-space-raises-90m-series-a/",
         "label": "Payload"
       }
-    ]
+    ],
+    "video": {
+      "id": "lK8Y26_FUm8",
+      "title": "에이텍, 우주 슈퍼컴퓨터 추론 성능 22배 도약",
+      "ko_audio": true
+    }
   },
   "2026-05-28": {
     "date": "2026-05-28",
@@ -101,7 +116,12 @@
         "url": "https://spacenews.com/european-space-industry-watching-spacex-ipo-plans/",
         "label": "SpaceNews"
       }
-    ]
+    ],
+    "video": {
+      "id": "0vMa9P7ImNo",
+      "title": "K-문샷, 우주 미션은 한국형 우주 데이터센터",
+      "ko_audio": true
+    }
   },
   "2026-05-27": {
     "date": "2026-05-27",
@@ -117,7 +137,12 @@
         "url": "https://spacenews.com/starcloud-orders-starlink-lasers-for-orbital-data-center-network/",
         "label": "SpaceNews"
       }
-    ]
+    ],
+    "video": {
+      "id": "qbidNoILK9Y",
+      "title": "스타클라우드, 스타링크 광통신 단말 50기 발주 — 궤도 데이터센터 통신망",
+      "ko_audio": true
+    }
   },
   "2026-05-26": {
     "date": "2026-05-26",
@@ -149,6 +174,11 @@
         "url": "https://spacenews.com/the-internet-was-too-expensive-too/",
         "label": "SpaceNews"
       }
-    ]
+    ],
+    "video": {
+      "id": "14PHAjpIuWs",
+      "title": "강충구 교수 — 한국 위성 두 기로 ITU 시한 못 맞춘다",
+      "ko_audio": true
+    }
   }
 }

@@ -330,7 +330,7 @@
         + '<div class="toggle-icon">▼</div></div>'
         + '<div class="card-body">'
         + (c.video ? '<a class="video-cta" href="https://youtube.com/shorts/' + esc(c.video.id) + '" target="_blank" rel="noopener">'
-            + '<span class="play">\u25B6</span><span><span class="vc-main">' + L.videoCta + '</span>'
+            + '<span class="play">\u25B6</span><span><span class="vc-main">' + L.videoCta + (c.video.ko_audio ? ' · เสียงภาษาเกาหลี' : '') + '</span>'
             + '<span class="vc-sub">' + esc(c.video.title || '') + '</span></span></a>' : '')
         + '<div class="section-title">' + L.section + '</div>'
         + '<ul class="headline-list">' + hls + '</ul>'

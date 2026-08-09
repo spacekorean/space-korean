@@ -12,7 +12,12 @@
       }
     ],
     "summary_html": "<strong>① Sophia Space (SpaceNews, 7/30)</strong> — Sophia Space and Caltech secured a joint patent for a modular, scalable architecture for space-based data centers. The patent was registered on July 14. Founder Leon Alkalai explained that it addresses the fundamental problem of &quot;taking in energy and shedding heat in space.&quot; At its core are compute modules called &quot;tiles&quot; — thin panels one meter square and one centimeter thick. They use passive heat rejection, radiating the heat they generate directly into the vacuum of space without any separate cooling equipment, draw power from sunlight, and collect energy via large deployable structures. Rather than beaming power down to the ground, the design sends only the computed result data back to Earth. The inventors include seven people, among them John Brophy, formerly of the Jet Propulsion Laboratory, and Caltech professor Sergio Pellegrino. Founded in 2023 and having raised $22 million, Sophia plans to put its first tile modules into orbit in 2027 aboard an Apex Nova bus.<br><br><strong>② K2 Space (SpaceNews, 7/30)</strong> — Large-satellite manufacturer K2 Space raised $500 million in a Series D, lifting its valuation to $6.8 billion. That is more than double its $3 billion valuation last December, achieved in just seven months, in a round led by Kleiner Perkins and Iconiq, bringing total funds raised to more than $1 billion. The capital will go toward building out mass-production capacity for 100 large satellites a year at a 54,000-square-meter factory in Torrance, California. The company currently operates a &quot;Mega&quot; platform delivering tens of kilowatts with a 3,000-kilogram payload capacity, and plans to unveil a next-generation &quot;Giga&quot; platform supplying about 100 kilowatts in the second half of 2028. Co-founder Neel Kunjur said the company is targeting that Giga platform at space-based data centers. K2 has already secured more than $1 billion in contracts, including SES&#x27;s medium-Earth-orbit communications network, Anduril&#x27;s Golden Dome interceptor satellites, and U.S. Space Force resilient tactical satellites. The satellites K2 builds are not themselves data centers, but the ability to mass-produce large, high-power satellites cheaply is the industrial foundation for actually fielding orbital data center constellations — and the 100-kilowatt-class Giga bus is a case of the company aiming directly at that link. Today&#x27;s two developments show orbital data centers descending from &quot;concept&quot; to &quot;design&quot; and &quot;industrial foundation&quot; at the same time. The Sophia-Caltech patent is a step forward in the intellectual-property layer, locking down as an architecture how to solve the field&#x27;s two physical bottlenecks — heat and power — suggesting that orbital compute is hardening from proof-of-concept into a defensible technology asset. K2&#x27;s $6.8 billion valuation and 100-a-year production, by contrast, signal that the capacity to supply the large, high-power satellites needed to actually populate those data centers in orbit has become an object of capital-market betting. If the patent is about &quot;how you build it,&quot; K2&#x27;s Giga platform is about &quot;what you put it on and how fast you launch it&quot; — one filling in design legitimacy, the other deployment scale, each covering a different axis of the orbital data center race.",
-    "sources": []
+    "sources": [],
+    "video": {
+      "id": "n_h9M0ovFbo",
+      "title": "소피아 스페이스, 우주 데이터센터 발열·전력 특허 취득",
+      "ko_audio": true
+    }
   },
   "2026-07-28": {
     "date": "2026-07-28",
@@ -36,7 +41,12 @@
         "url": "https://spacenews.com/amazon-files-application-for-direct-to-device-satellite-constellation/",
         "label": "SpaceNews"
       }
-    ]
+    ],
+    "video": {
+      "id": "rM94f7B6CdA",
+      "title": "인텔 우주 AI 칩 '스타파이어' 공개, 온궤도 컴퓨팅 새 길 연다",
+      "ko_audio": true
+    }
   },
   "2026-07-27": {
     "date": "2026-07-27",
@@ -60,7 +70,12 @@
         "url": "https://keeptrack.space/space-brief/space-brief-2026-07-25",
         "label": "keeptrack.space"
       }
-    ]
+    ],
+    "video": {
+      "id": "iP_53fMpKNw",
+      "title": "스타십 13호, 스타링크 V3 위성 20기 첫 실전 배치 — 궤도 DC 발사 능력 증명",
+      "ko_audio": true
+    }
   },
   "2026-07-25": {
     "date": "2026-07-25",
@@ -96,7 +111,12 @@
         "url": "https://spacenews.com/office-of-space-commerce-to-move-ahead-on-mission-authorization/",
         "label": "SpaceNews"
       }
-    ]
+    ],
+    "video": {
+      "id": "o_3kOsVLj4A",
+      "title": "중국 오비탈 천광, 컴퓨팅 위성 천광 일호 첫 궤도 진입",
+      "ko_audio": true
+    }
   },
   "2026-07-24": {
     "date": "2026-07-24",
@@ -120,7 +140,12 @@
         "url": "https://spacenews.com/mark-matossian-co-founds-whipsmart-ventures-for-space-and-deep-tech/",
         "label": "SpaceNews"
       }
-    ]
+    ],
+    "video": {
+      "id": "8f4z4bvzVBU",
+      "title": "달 DC 출신이 세운 궤도 컴퓨트 전문 펀드 등장 · 에어버스 위성 양산 확대",
+      "ko_audio": true
+    }
   },
   "2026-07-23": {
     "date": "2026-07-23",
@@ -156,7 +181,12 @@
         "url": "https://spacenews.com/gravity-1-sea-launch-off-shanghai-puts-9-satellites-into-orbit/",
         "label": "SpaceNews"
       }
-    ]
+    ],
+    "video": {
+      "id": "B0E1clMqmRY",
+      "title": "노스럽 궤도 정비 로봇, 위성 수명 여섯 해 연장 | 우주 DC",
+      "ko_audio": true
+    }
   },
   "2026-07-22": {
     "date": "2026-07-22",
@@ -171,7 +201,12 @@
       }
     ],
     "summary_html": "<strong>① ORiS (SpaceNews, 7/21)</strong> — ORiS, a 15-person startup based in Turin, Italy, announced it has raised €5 million (roughly $5.7 million) in a pre-seed round. The round was led by European venture-capital firm Earthbird and co-led by PitchDrive, with participation from Galaxia, Vento and the Piemonte Next Fund, plus a separate €500,000 in regional startup grants. What ORiS is developing is space wireless power transmission — beaming power between satellites via laser. The key point is that a receiving satellite can simply use the solar panels it already carries as its receiver, requiring no separate modifications. In ground testing, the company successfully transmitted power to a drone 100 meters away. Unlike Star Catcher, which concentrates sunlight itself onto a satellite&#x27;s solar panels, ORiS uses a compact laser approach. The company plans a first demonstration at a 10-meter range with D-Cubed in the first quarter of 2027, followed by a second mission later that same year, and then a third mission with an existing customer that operates a satellite-hosting service. It&#x27;s worth noting that ORiS is not a company aimed at orbital data centers — it envisions supplying power to smaller spacecraft through its own satellite network of tens to hundreds of units, and has drawn a line, saying it is not for data centers. Still, the technology to generate, store and move power between orbiting bodies is a prerequisite for orbital compute, which devours power in bulk, to become viable. Just as Korea&#x27;s Space Data Center Research Society singled out &quot;massive power generation&quot; as a core localization challenge, how electricity is secured and shared on orbit is a bottleneck for this entire industry — and ORiS is a new experiment entering on that power axis.<br><br><strong>② deltaVision (SpaceNews, 7/21)</strong> — deltaVision, based in Munich, Germany, raised €10.2 million (roughly $11.6 million) in its first formal funding round. The round was led by KT Ventures and Vsquared Ventures, with participation from Futury Capital and others. The company makes valves and propulsion-control components for spacecraft, with a particular focus on components that enable on-orbit refueling. It has stayed profitable since its founding in 2022, and with 125 employees it counts more than 60 customers, including major large-satellite manufacturers and government agencies. Through a Munich production line converted from a former Siemens factory and a newly established French subsidiary, it has set a target of 5,000 units of annual production capacity, and it is also taking part in ESA&#x27;s Argonaut lunar lander program. CEO Alex Pflüger said the company aims for &quot;an open, interoperable orbital-servicing ecosystem rather than a winner-take-all one.&quot; This news does not directly mention orbital data centers — deltaVision is a component and refueling company, not a compute operator. But constellations like SpaceX&#x27;s 1 million units and Orbital&#x27;s 100,000 units don&#x27;t end at putting satellites up in bulk; they only actually work if the satellites hold their attitude on orbit and refuel to extend their lifespans. The attempt to churn out propulsion components at a scale of thousands of units per year and to standardize orbital refueling shows that the servicing and component industrial base that will underpin orbital compute constellations is thickening. Today&#x27;s two stories are not about orbital data centers &quot;themselves,&quot; but cases of capital moving on each of the two underlying axes they will stand on — power and orbital servicing. Over the past ten days, the briefings have worked through the four axes of &quot;launch, manufacturing, capital and power&quot; in turn — a tripling of the launch-contract ceiling, Starship batch capacity, AI automation of rocket engines, and localization of satellite components — and today power (ORiS) and manufacturing/servicing (deltaVision) appeared side by side on the same day. It&#x27;s also striking that both come from Europe — the headline announcements in orbital compute come out of the United States and China, but Italian and German small startups and venture-capital firms are quietly funding the foundational technologies underneath, such as power transmission and components and refueling. Even though orbital data centers are still at a revenue-less conceptual stage, it&#x27;s a signal that real money and testing keep attaching to the underlying questions of &quot;how to carry electricity in space, and how to build and maintain satellites in bulk.&quot;",
-    "sources": []
+    "sources": [],
+    "video": {
+      "id": "24TLjklyQGU",
+      "title": "위성끼리 전기 전송 — 이탈리아 오리스, 레이저 기술로 첫 투자",
+      "ko_audio": true
+    }
   },
   "2026-07-21": {
     "date": "2026-07-21",
@@ -182,7 +217,12 @@
       }
     ],
     "summary_html": "<strong>① LegendSpace (SpaceNews, 7/20)</strong> — Chinese liquid rocket engine startup LegendSpace announced on July 16 that it had raised $29.5 million (about ¥200 million) in an angel round. The company describes itself as an &quot;AI-native&quot; engine developer and manufacturer, bundling AI-driven design, multiphysics simulation, 3D-printed manufacturing, and cold- and hot-fire testing into a single closed loop on a platform called &quot;Prime.&quot; According to the company, this closed loop compresses an engine iteration cycle that typically took years down to roughly two weeks. It is currently producing a prototype 2.5-ton-thrust liquid engine via 3D printing and has completed a full verification loop from design through simulation to testing — though it has yet to disclose its propellant combination, engine cycle, or customers. The round included participants such as VitalBridge, and the company unveiled the Prime platform in partnership with the Beijing Institute for AI Science (AISI) and Peking University. What&#x27;s notable is that this is not a data center company story — LegendSpace is an engine developer, not an orbital compute operator. But the core bottleneck for orbital data center concepts is launch. Constellations like SpaceX&#x27;s 1 million satellites, Orbital&#x27;s 100,000, and Blue Origin&#x27;s Sunrise at some 51,000 only work if satellites can be placed in orbit cheaply and frequently, and what governs that cost is the rocket engine. Automating engine development with AI to shorten the iteration cycle is, if successful, an upstream factor that could drive down both launch unit costs and development speed, changing the economics of mass satellite deployment. This week&#x27;s briefings kept returning not to orbital data centers &quot;themselves&quot; but to the industrial base that underpins them. Just last week, news of launch and manufacturing capacity kept coming — a tripling of the U.S. Space Force&#x27;s launch contract ceiling, domestic production of satellite cover glass, and Skyroot&#x27;s first commercial orbital insertion — and today&#x27;s LegendSpace touches the very top of that chain: the way rocket engines themselves are developed. Even though orbital data centers remain a revenue-less concept stage, capital and technical experimentation continue to flow into the four axes that are their prerequisites: launch cost, manufacturing at scale, and orbital power. That this particular bet comes out of China shows that the cost competition in the launch industry is accelerating on both the U.S. and Chinese sides at once. The decisive battleground of the orbital compute race will ultimately be who can put up more satellites, more cheaply and more quickly — and today&#x27;s news is a move happening upstream of that contest.",
-    "sources": []
+    "sources": [],
+    "video": {
+      "id": "3RKK_PXNckE",
+      "title": "수년 걸리던 로켓 엔진 개발, 중국 AI 스타트업이 2주로 압축",
+      "ko_audio": true
+    }
   },
   "2026-07-20": {
     "date": "2026-07-20",
@@ -201,7 +241,12 @@
       }
     ],
     "summary_html": "<strong>① U.S. Space Force (SpaceNews, 7/18)</strong> — The U.S. Space Force has raised the maximum ceiling of its National Security Space Launch (NSSL) Phase 3 Lane 1 contract more than threefold, from $5.6 billion to $17 billion. Through fiscal year 2029, it has identified 25 additional missions on top of the 54 launches originally planned over five years. Seven providers are competing: SpaceX, ULA, Blue Origin, Rocket Lab, Stoke Space, Impulse Space and Relativity. Orbital data centers are, in essence, large-scale constellations. SpaceX&#x27;s 1-million-satellite ODC and Blue Origin&#x27;s Project Sunrise, with 51,600 satellites, both presuppose enormous launch capacity. Military demand tripling the launch industry&#x27;s base means the launch corridor through which ODC constellations will actually ascend is widening.<br><br><strong>② Pentagon (SpaceNews, 7/18)</strong> — The Pentagon has awarded $7.1 million under Title III of the Defense Production Act to Martin Materials, a specialty-glass manufacturer in Twinsburg, Ohio. Cover glass is the thin, radiation-hardened glass that protects the photovoltaic cells of satellite solar panels from radiation and micrometeoroids, and only a handful of U.S. companies make it. The Pentagon aims to reduce the vulnerability of having limited domestic and foreign supply sources. ODC satellites are effectively giant slabs of solar panels. By Orbital Compute&#x27;s design alone, a single satellite carries a 100-kilowatt, 100-meter-scale solar array. If the supply chain for this small component wavers, the very deployment of mass satellites and ODCs is delayed.<br><br><strong>③ Skyroot (SpaceNews, 7/18)</strong> — Indian startup Skyroot succeeded in reaching a 450-kilometer low Earth orbit on the maiden flight of its Vikram-1 rocket. It is India&#x27;s first commercial rocket to reach orbit on its debut launch. It carried its own CubeSats alongside CubeSats from India&#x27;s Grahaa Space and additional hosted payloads. Vikram-1 lifts 350 kilograms to low Earth orbit, and an upgraded booster-equipped variant carries 550 kilograms. The company has secured $60 million to pursue mass production and development of the larger Vikram-2. While not an orbital data center itself, the emergence of a new launch nation broadens the base of cheap, abundant launch capacity that ODCs require. Today&#x27;s three stories all point the same way. The center of gravity in the ODC race is shifting from &quot;how many satellites did you file for with the FCC&quot; to &quot;who can actually build and launch them at scale.&quot; The United States is widening the launch corridor by tripling its launch contract ceiling, while at the same time shoring up the domestic supply chain down to end components like cover glass. On top of that, India has joined the ranks of launch nations, reaching orbit with its own commercial rocket. If the past few days&#x27; capital and design news (Blue Origin&#x27;s $10 billion raise, Orbital Compute&#x27;s 10-gigawatt filing) was about &quot;what they intend to build,&quot; today is a signal on a different level: &quot;is the industrial base to build it actually being laid down.&quot; Orbital data centers are ultimately a contest of launch, component and manufacturing capacity — and that base is now thickening rapidly on both fronts, national budgets and emerging launch nations alike.",
-    "sources": []
+    "sources": [],
+    "video": {
+      "id": "dnrAMdO21os",
+      "title": "미우주군, 발사 계약 3배 확대로 ODC 배치 통로도 커진다",
+      "ko_audio": true
+    }
   },
   "2026-07-18": {
     "date": "2026-07-18",
@@ -229,7 +274,12 @@
         "url": "https://www.electronicsforyou.biz/industry-buzz/takeme2space-partners-with-qosmic-to-build-indias-first-indigenous-oisl/",
         "label": "electronicsforyou.biz"
       }
-    ]
+    ],
+    "video": {
+      "id": "N2P8_i2TaDM",
+      "title": "레이저로 궤도 데이터 고속도로 개막 — 코스믹 $3.33M, 플렉셀 $20M",
+      "ko_audio": true
+    }
   },
   "2026-07-16": {
     "date": "2026-07-16",
@@ -240,7 +290,12 @@
       }
     ],
     "summary_html": "<strong>① SpaceNews (SpaceNews, 7/15)</strong> — Market-research tallies put the capital flowing into satellite companies in the first half of 2026 at $8.1 billion, exceeding the previous full-year record in just six months. The infrastructure segment hit a quarterly high of $20.7 billion in the second quarter alone, and the first-half total across infrastructure, distribution and applications reached $67.7 billion. The largest deal was the $12 billion Series B closed in June by Jeff Bezos&#x27;s new venture Prometheus, which brands itself as AI-driven industrial engineering and for which Bezos named Blue Origin&#x27;s orbital data center as its first flagship customer. Blue Origin is exploring orbital data centers as an alternative to bypass the power and cooling limits of ground-based AI computing. The top pure-play satellite deal was a $1.2 billion Series F by Finnish radar-imaging operator ICEYE, and the largest exit event of the first half was SpaceX&#x27;s June Nasdaq listing, which raised $85.7 billion at a roughly $1.8 trillion valuation — recorded as the largest liquidity event in venture history. Even though orbital data centers themselves remain a pre-revenue concept, capital is already flowing at record scale into their preconditions: mass satellite manufacturing, launch, and orbital power infrastructure. Where last week&#x27;s briefings tracked progress on the <strong>launch and manufacturing industrial base</strong> that would underpin orbital data centers — China&#x27;s booster recovery, the Starship Starlink V3 deployment and the like — today&#x27;s news is the <strong>capital axis</strong> of the same picture. No data center is yet generating revenue in orbit, but as Prometheus&#x27;s $12 billion and SpaceX&#x27;s listing exit show, money is already flowing at record scale into the preconditions: mass satellite manufacturing, low-cost launch, and orbital power and cooling. This week&#x27;s news throws the contrast into relief — the U.S. recirculating capital through public-market exits and mega-rounds, while China builds its industrial base through launch costs and constellation scale. That said, much of the satellite-imaging and broadband investment is communications and Earth-observation infrastructure rather than data centers, so today&#x27;s record is best read as a signal that orbital compute has taken hold as a promising narrative in capital markets — a story that must still be distinguished from verified orbital data center revenue.",
-    "sources": []
+    "sources": [],
+    "video": {
+      "id": "CKme2aCRiMs",
+      "title": "위성 투자 반년 만에 연간 신기록 — 블루 오리진 궤도 데이터센터가 첫 고객",
+      "ko_audio": true
+    }
   },
   "2026-07-15": {
     "date": "2026-07-15",
@@ -264,7 +319,12 @@
         "url": "https://spacenews.com/l3harris-sierra-space-to-build-36-satellites-to-expand-u-s-missile-tracking-network/",
         "label": "SpaceNews"
       }
-    ]
+    ],
+    "video": {
+      "id": "1dUQg8kHyxg",
+      "title": "스타십, 첫 실전 위성 배치 — 궤도 데이터센터의 진짜 병목",
+      "ko_audio": true
+    }
   },
   "2026-07-14": {
     "date": "2026-07-14",
@@ -284,7 +344,12 @@
         "url": "https://edition.cnn.com/2026/07/10/china/china-reusable-rockets-test-breakthrough-intl-hnk",
         "label": "edition.cnn.com"
       }
-    ]
+    ],
+    "video": {
+      "id": "FnkVtiUVlJU",
+      "title": "중국 첫 궤도 부스터 그물 회수 — 창정 텐씨 완전 재사용 확정",
+      "ko_audio": true
+    }
   },
   "2026-07-11": {
     "date": "2026-07-11",
@@ -316,7 +381,12 @@
         "url": "https://spacenews.com/china-becomes-second-country-to-recover-orbital-booster-with-long-march-10b/",
         "label": "SpaceNews"
       }
-    ]
+    ],
+    "video": {
+      "id": "bJZFklzJIKk",
+      "title": "궤도 데이터센터에 첫 환경 제동 — 환경단체, FCC에 인가 중단 청원",
+      "ko_audio": true
+    }
   },
   "2026-07-10": {
     "date": "2026-07-10",
@@ -340,7 +410,12 @@
         "url": "https://spacenews.com/space-force-awards-pulse-space-40-million-to-advance-laser-power-technology/",
         "label": "SpaceNews"
       }
-    ]
+    ],
+    "video": {
+      "id": "tBC4-JCYu1E",
+      "title": "블루 오리진, 25년 만에 외부 투자 개방 — 100억 달러에 선라이즈까지",
+      "ko_audio": true
+    }
   },
   "2026-07-09": {
     "date": "2026-07-09",
@@ -360,7 +435,12 @@
         "url": "https://finance.biggo.com/news/83a23cc2-b4ab-4fe3-82a9-455493765c32",
         "label": "finance.biggo.com"
       }
-    ]
+    ],
+    "video": {
+      "id": "gMO_Qeo339s",
+      "title": "스페이스 엑스, 3세대 스타링크 10만 기 신청 — 궤도 DC와 별개 병행 확인",
+      "ko_audio": true
+    }
   },
   "2026-07-06": {
     "date": "2026-07-06",
@@ -376,7 +456,12 @@
         "url": "https://spacenews.com/chinese-satellite-manufacturer-hongqing-raises-191-million/",
         "label": "SpaceNews"
       }
-    ]
+    ],
+    "video": {
+      "id": "L7DwcjzHF1M",
+      "title": "중국 훙칭, 1억 9천만 달러 투자 — 만 기급 위성 컨스텔레이션 레이스 가속",
+      "ko_audio": true
+    }
   },
   "2026-07-02": {
     "date": "2026-07-02",
@@ -392,7 +477,12 @@
         "url": "https://spacenews.com/blue-origin-outlines-new-launch-pad-approach-as-it-pushes-to-return-new-glenn-to-flight/",
         "label": "SpaceNews"
       }
-    ]
+    ],
+    "video": {
+      "id": "Z6PKKrrbWwg",
+      "title": "블루오리진, 발사대 방식 전환 후 뉴글렌 연내 복귀 — 프로젝트 선라이즈 일정 재개",
+      "ko_audio": true
+    }
   },
   "2026-07-01": {
     "date": "2026-07-01",
@@ -408,6 +498,11 @@
         "url": "https://spacenews.com/orbital-files-plans-for-100000-orbital-data-centers/",
         "label": "SpaceNews"
       }
-    ]
+    ],
+    "video": {
+      "id": "ZubcbUnAAmk",
+      "title": "오비탈, 직원 6명으로 궤도 데이터센터 10만 기 FCC 신청",
+      "ko_audio": true
+    }
   }
 }

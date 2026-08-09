@@ -13,7 +13,12 @@
         "url": "https://breakingdefense.com/2026/05/despite-peak-hype-orbital-data-centers-for-ai-not-yet-ready-for-natsec-prime-time/",
         "label": "breakingdefense.com"
       }
-    ]
+    ],
+    "video": {
+      "id": "wpzezCh21to",
+      "title": "미 국방·정보계 '궤도 데이터센터 시기상조'… 1분기 5.4억$ 유입",
+      "ko_audio": true
+    }
   },
   "2026-05-30": {
     "date": "2026-05-30",
@@ -37,7 +42,12 @@
         "url": "https://www.satellitetoday.com/technology/2026/05/28/orbital-data-centers-must-tackle-chip-lifespan-launch-availability-and-cybersecurity-challenges/",
         "label": "satellitetoday.com"
       }
-    ]
+    ],
+    "video": {
+      "id": "SyNS5wcn6z4",
+      "title": "스몰샛 유럽: '궤도 데이터센터 마지노선은 ㎏당 300달러'",
+      "ko_audio": true
+    }
   },
   "2026-05-29": {
     "date": "2026-05-29",
@@ -61,7 +71,12 @@
         "url": "https://payloadspace.com/observable-space-raises-90m-series-a/",
         "label": "Payload"
       }
-    ]
+    ],
+    "video": {
+      "id": "lK8Y26_FUm8",
+      "title": "에이텍, 우주 슈퍼컴퓨터 추론 성능 22배 도약",
+      "ko_audio": true
+    }
   },
   "2026-05-28": {
     "date": "2026-05-28",
@@ -121,7 +136,12 @@
         "url": "https://spacenews.com/starcloud-orders-starlink-lasers-for-orbital-data-center-network/",
         "label": "SpaceNews"
       }
-    ]
+    ],
+    "video": {
+      "id": "qbidNoILK9Y",
+      "title": "스타클라우드, 스타링크 광통신 단말 50기 발주 — 궤도 데이터센터 통신망",
+      "ko_audio": true
+    }
   },
   "2026-05-26": {
     "date": "2026-05-26",
@@ -153,7 +173,12 @@
         "url": "https://spacenews.com/the-internet-was-too-expensive-too/",
         "label": "SpaceNews"
       }
-    ]
+    ],
+    "video": {
+      "id": "14PHAjpIuWs",
+      "title": "강충구 교수 — 한국 위성 두 기로 ITU 시한 못 맞춘다",
+      "ko_audio": true
+    }
   },
   "2026-05-25": {
     "date": "2026-05-25",
@@ -185,7 +210,12 @@
         "url": "https://www.swfound.org/publications-and-reports/to-odc-or-not-to-odc-insight-2026",
         "label": "swfound.org"
       }
-    ]
+    ],
+    "video": {
+      "id": "EDdYAWaJEsE",
+      "title": "블루 오리진 뉴글렌 비행 재개 — 51,600기 프로젝트 선라이즈 발사 청신호",
+      "ko_audio": true
+    }
   },
   "2026-05-24": {
     "date": "2026-05-24",
@@ -209,7 +239,12 @@
         "url": "https://satnews.com/2026/05/20/leo-constellations-and-ground-infrastructure-scaling-position-optical-satcom-for-multi-billion-dollar-surge/",
         "label": "satnews.com"
       }
-    ]
+    ],
+    "video": {
+      "id": "Bac8t0grn1s",
+      "title": "스타십 V3 첫 비행 성공 — 궤도 데이터센터 2028 일정 한 칸 전진",
+      "ko_audio": true
+    }
   },
   "2026-05-23": {
     "date": "2026-05-23",
@@ -241,7 +276,12 @@
         "url": "https://www.digitaltoday.co.kr/en/view/57715/spacex-timelines-2027-starlink-mobile-2028-space-data-centers",
         "label": "디지털투데이"
       }
-    ]
+    ],
+    "video": {
+      "id": "t9vVDxnZf_U",
+      "title": "머스크 \"콜로서스, 다른 AI 기업에도 임대 협의 중\"",
+      "ko_audio": true
+    }
   },
   "2026-05-22": {
     "date": "2026-05-22",
@@ -273,7 +313,12 @@
         "url": "https://spacenews.com/the-internet-was-too-expensive-too/",
         "label": "SpaceNews"
       }
-    ]
+    ],
+    "video": {
+      "id": "R7ZUznri86o",
+      "title": "SpaceX, 2조 달러 IPO에 궤도 데이터센터 못박다",
+      "ko_audio": true
+    }
   },
   "2026-05-21": {
     "date": "2026-05-21",
@@ -305,7 +350,12 @@
         "url": "https://spacenews.com/u-s-more-prepared-for-next-wrc/",
         "label": "SpaceNews"
       }
-    ]
+    ],
+    "video": {
+      "id": "IpseHdfaZ2c",
+      "title": "베조스 '궤도 데이터센터 2~3년은 야심차다'…레드와이어 백서·WRC-27",
+      "ko_audio": true
+    }
   },
   "2026-05-20": {
     "date": "2026-05-20",
@@ -345,7 +395,12 @@
         "url": "https://www.prnewswire.com/news-releases/rooverse-and-lonestar-partner-to-protect-human-data-in-space-302774310.html",
         "label": "PR Newswire"
       }
-    ]
+    ],
+    "video": {
+      "id": "HhTxmmmKO-k",
+      "title": "밧스, 15kW 위성 버스 출시 — 엔비디아 베라 루빈 옵션",
+      "ko_audio": true
+    }
   },
   "2026-05-19": {
     "date": "2026-05-19",
@@ -377,7 +432,12 @@
         "url": "https://en.sedaily.com/society/2026/05/18/global-space-firms-to-converge-in-daejeon-for-iss-2026",
         "label": "sedaily.com"
       }
-    ]
+    ],
+    "video": {
+      "id": "CHJd-tgnT6A",
+      "title": "포토맥, 달 표면 데이터를 상품으로 — 업계 첫 시도",
+      "ko_audio": true
+    }
   },
   "2026-05-18": {
     "date": "2026-05-18",
@@ -401,7 +461,12 @@
         "url": "https://v.daum.net/v/20260513112539097",
         "label": "다음뉴스"
       }
-    ]
+    ],
+    "video": {
+      "id": "ayFWNay-siM",
+      "title": "삼성전자 \"우주 데이터센터 주도권, K-반도체가 가른다\"",
+      "ko_audio": true
+    }
   },
   "2026-05-17": {
     "date": "2026-05-17",
@@ -425,7 +490,12 @@
         "url": "https://therealdeal.com/national/2026/05/14/the-next-frontier-in-data-center-real-estate-space/",
         "label": "therealdeal.com"
       }
-    ]
+    ],
+    "video": {
+      "id": "imdtxsN9sY4",
+      "title": "우주 투자 450억 달러 사상 첫 돌파… '인터넷 모멘트' 진단",
+      "ko_audio": true
+    }
   },
   "2026-05-16": {
     "date": "2026-05-16",
@@ -461,7 +531,12 @@
         "url": "https://payloadspace.com/european-space-startups-jockey-for-infrastructure-financing/",
         "label": "Payload"
       }
-    ]
+    ],
+    "video": {
+      "id": "yHuR1F_8IdM",
+      "title": "인튜이티브 머신스, 구니힐리 4960만 달러에 인수… 달 통신망 통합",
+      "ko_audio": true
+    }
   },
   "2026-05-15": {
     "date": "2026-05-15",
@@ -493,6 +568,11 @@
         "url": "https://www.prnewswire.com/news-releases/lonestar-signs-nasa-space-act-agreement-to-advance-space-based-super-compute-data-storage-and-spectrum-for-resilient-space-infrastructure-302767759.html",
         "label": "PR Newswire"
       }
-    ]
+    ],
+    "video": {
+      "id": "WiLBBaDqFsY",
+      "title": "론스타-NASA 우주법 협정… 달 표면 데이터센터 시동",
+      "ko_audio": true
+    }
   }
 }

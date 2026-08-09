@@ -49,7 +49,12 @@
         "url": "https://spacenews.com/loft-orbital-to-test-ai-models-on-spacecraft-for-earth-observation/",
         "label": "SpaceNews"
       }
-    ]
+    ],
+    "video": {
+      "id": "lTZBfdldTvg",
+      "title": "소피아 스페이스, 첫 궤도 컴퓨팅 노드 2027년 실증",
+      "ko_audio": true
+    }
   },
   "2026-06-22": {
     "date": "2026-06-22",
@@ -81,7 +86,12 @@
         "url": "https://www.sciencedaily.com/releases/2026/06/260618041501.htm",
         "label": "sciencedaily.com"
       }
-    ]
+    ],
+    "video": {
+      "id": "XqqYmokQd90",
+      "title": "로이즈도 움직였다 — 궤도 데이터센터 보험 시장 태동",
+      "ko_audio": true
+    }
   },
   "2026-06-16": {
     "date": "2026-06-16",
@@ -109,7 +119,12 @@
         "url": "https://www.sedaily.com/article/20056031",
         "label": "sedaily.com"
       }
-    ]
+    ],
+    "video": {
+      "id": "Kd2dbGJe5C0",
+      "title": "키움 미국우주데이터센터인프라 ETF 출범… SpaceX 25%로 최대 비중",
+      "ko_audio": true
+    }
   },
   "2026-06-14": {
     "date": "2026-06-14",
@@ -145,7 +160,12 @@
         "url": "https://www.newspim.com/news/view/20260612001028",
         "label": "newspim.com"
       }
-    ]
+    ],
+    "video": {
+      "id": "_mX1xuWmvb0",
+      "title": "AI1 백만 기, 밤하늘 반달처럼 밝힌다… 천문학계 경고",
+      "ko_audio": true
+    }
   },
   "2026-06-13": {
     "date": "2026-06-13",
@@ -193,7 +213,12 @@
         "url": "https://www.bloomberg.com/news/articles/2026-06-12/spacex-rented-out-computing-after-own-teams-had-trouble-using-it",
         "label": "Bloomberg"
       }
-    ]
+    ],
+    "video": {
+      "id": "HrjUuEGGjas",
+      "title": "SpaceX 나스닥 첫날 25% 급등…SPCX 시총 2.2조 달러, 머스크 첫 1조달러 부자",
+      "ko_audio": true
+    }
   },
   "2026-06-12": {
     "date": "2026-06-12",
@@ -225,7 +250,12 @@
         "url": "https://biz.heraldcorp.com/article/10769020",
         "label": "biz.heraldcorp.com"
       }
-    ]
+    ],
+    "video": {
+      "id": "-tWbh6oS5IE",
+      "title": "심포니 스페이스, 임무 중 GPU 교체하는 100kW 궤도 데이터센터 'Adagio-XL' 공개",
+      "ko_audio": true
+    }
   },
   "2026-06-11": {
     "date": "2026-06-11",
@@ -253,7 +283,12 @@
         "url": "https://www.bloomberg.com/news/articles/2026-06-10/spacex-holder-sees-large-risk-on-orbital-data-centers",
         "label": "Bloomberg"
       }
-    ]
+    ],
+    "video": {
+      "id": "IpVm9d3X8F0",
+      "title": "오비탈, 5백만 달러 시드로 10만 기 궤도 데이터센터 경주 합류",
+      "ko_audio": true
+    }
   },
   "2026-06-10": {
     "date": "2026-06-10",
@@ -285,7 +320,12 @@
         "url": "https://www.edaily.co.kr/News/Read?newsId=03893366645480080&mediaCodeNo=257",
         "label": "edaily.co.kr"
       }
-    ]
+    ],
+    "video": {
+      "id": "MC6lYHaE1Uk",
+      "title": "머스크, AI1 위성 첫 설계 공개…한 기당 GB300 1랙 등가",
+      "ko_audio": true
+    }
   },
   "2026-06-09": {
     "date": "2026-06-09",
@@ -313,7 +353,12 @@
         "url": "https://www.aitimes.com/news/articleView.html?idxno=211421",
         "label": "aitimes.com"
       }
-    ]
+    ],
+    "video": {
+      "id": "4wyOljY0krY",
+      "title": "구글, SpaceX에 월 9억 2천만 달러…콜로서스 GPU 11만 기 임대",
+      "ko_audio": true
+    }
   },
   "2026-06-08": {
     "date": "2026-06-08",
@@ -337,7 +382,12 @@
         "url": "https://satnews.com/2026/06/06/spacex-ipo-will-all-that-glitters-turn-to/",
         "label": "satnews.com"
       }
-    ]
+    ],
+    "video": {
+      "id": "TSV3F0O2tns",
+      "title": "우주 유니콘 30개사 집계… ODC 자본 4층에 동시 베팅",
+      "ko_audio": true
+    }
   },
   "2026-06-06": {
     "date": "2026-06-06",
@@ -369,7 +419,12 @@
         "url": "https://payloadspace.com/us-commercial-space-stations-expand-to-europe/",
         "label": "Payload"
       }
-    ]
+    ],
+    "video": {
+      "id": "rkJ6g_S6VLM",
+      "title": "에이펙스 평가액 23억 달러…CEO \"코멧, 궤도 데이터센터 수요와 일치\"",
+      "ko_audio": true
+    }
   },
   "2026-06-05": {
     "date": "2026-06-05",
@@ -401,7 +456,12 @@
         "url": "https://payloadspace.com/nasa-reverts-to-original-cld-procurement-plan/",
         "label": "Payload"
       }
-    ]
+    ],
+    "video": {
+      "id": "fxvGALP7pSk",
+      "title": "중국 MIIT, 우주 컴퓨팅 산업위원회 출범… 100개 기관 가입",
+      "ko_audio": true
+    }
   },
   "2026-06-04": {
     "date": "2026-06-04",
@@ -429,7 +489,12 @@
         "url": "https://spacenews.com/blue-origin-seeks-to-resume-new-glenn-launches-by-years-end/",
         "label": "SpaceNews"
       }
-    ]
+    ],
+    "video": {
+      "id": "LZUCBAIW_P4",
+      "title": "뮤온 스페이스, 엔비디아 베라 루빈 얹은 ODC 전용 위성 '콘도르-울트라' 공개",
+      "ko_audio": true
+    }
   },
   "2026-06-03": {
     "date": "2026-06-03",
@@ -453,7 +518,12 @@
         "url": "https://spacenews.com/nasa-abandons-core-module-concept-for-commercial-space-station-development/",
         "label": "SpaceNews"
       }
-    ]
+    ],
+    "video": {
+      "id": "7rZzF2TAuN0",
+      "title": "ODC 첫 수익 모델은 '데이터 주권' — Via Satellite 7인 합의",
+      "ko_audio": true
+    }
   },
   "2026-06-02": {
     "date": "2026-06-02",
@@ -477,7 +547,12 @@
         "url": "https://spacenews.com/spaceport-facility-bonds-are-now-law-and-they-fundamentally-change-space-infrastructure-finance/",
         "label": "SpaceNews"
       }
-    ]
+    ],
+    "video": {
+      "id": "YQxfym8X7UM",
+      "title": "뉴 글렌 폭발, 프로젝트 선라이즈 51,600기 일정 흔들",
+      "ko_audio": true
+    }
   },
   "2026-06-01": {
     "date": "2026-06-01",
@@ -501,6 +576,11 @@
         "url": "https://spacenews.com/blue-origin-gets-national-security-launch-task-order-hours-before-new-glenn-explosion/",
         "label": "SpaceNews"
       }
-    ]
+    ],
+    "video": {
+      "id": "o6jaHjGSd_s",
+      "title": "뉴 글렌 폭발 — 블루 오리진 궤도 데이터센터 계획 반년 지연 위기",
+      "ko_audio": true
+    }
   }
 }

@@ -21,7 +21,12 @@
         "url": "https://spacenews.com/satellite-manufacturing-thrives-in-california-despite-cost-and-regulatory-pressures/",
         "label": "SpaceNews"
       }
-    ]
+    ],
+    "video": {
+      "id": "-P5MB4eP0jY",
+      "title": "유럽 궤도 데이터센터 종속 위험 — ESPI 경고",
+      "ko_audio": true
+    }
   },
   "2026-08-03": {
     "date": "2026-08-03",
@@ -45,7 +50,12 @@
         "url": "https://spacenews.com/space-force-awards-k2-space-22-9-million-for-orbital-laser-communications-demonstration/",
         "label": "SpaceNews"
       }
-    ]
+    ],
+    "video": {
+      "id": "NrTQcNuHxzU",
+      "title": "K2 스페이스, 미우주군 레이저 위성 광통신 계약 수주",
+      "ko_audio": true
+    }
   },
   "2026-08-01": {
     "date": "2026-08-01",
@@ -56,6 +66,11 @@
       }
     ],
     "summary_html": "<strong>① SpaceNews (SpaceNews, 7/30)</strong> — At a July 29 panel hosted by the Secure World Foundation in Washington, Starcloud co-founder and chief technology officer Ezra Feilden, along with officials from The Aerospace Corporation, Planet, and the U.S. Commerce Department&#x27;s Office of Space Commerce, raised the question of traffic management for orbital data center constellations. Starcloud has filed for 88,000 satellites and SpaceX for as many as 1 million, and the analysis warns that satellite avoidance maneuvers — currently running in the hundreds of thousands per year — could surge to roughly 500 million per year in a 1-million-satellite era. The dawn-dusk sun-synchronous orbits where data center satellites are expected to cluster are of particular concern, since every satellite must travel in the same direction; Feilden warned it would be &quot;like a highway where no one has decided which lane to drive in — the risk of head-on collisions would be enormous.&quot; Participants proposed that industry set its own standards ahead of government-mandated regulation, through the Commerce Department&#x27;s build-out of TraCSS, a space traffic coordination system modeled on air traffic control, and through the Space Commerce certification program, which is currently voluntary.",
-    "sources": []
+    "sources": [],
+    "video": {
+      "id": "UeZArWmQA30",
+      "title": "스타클라우드·스페이스X 위성 백만 기 시대, 우주에 교통법이 필요하다",
+      "ko_audio": true
+    }
   }
 }
