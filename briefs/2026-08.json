@@ -1,4 +1,36 @@
 {
+  "2026-08-08": {
+    "date": "2026-08-08",
+    "headlines": [
+      {
+        "date": "2026-08-07",
+        "html": "<a href=\"https://spacenews.com/europe-increases-size-and-cost-of-iris%c2%b2-constellation/\" target=\"_blank\" rel=\"noopener\"><strong>유럽 IRIS² 대폭 확대</strong>: 유럽의 주권형 위성망 IRIS²가 위성 수를 늘리고 사업비를 156억 유로(약 180억 달러)로 47% 상향 조정했습니다 — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-08-04",
+        "html": "<a href=\"https://spacenews.com/spacex-to-begin-starship-orbital-flights/\" target=\"_blank\" rel=\"noopener\"><strong>스페이스X 스타십 14호 발사 예고</strong>: 다음 스타십이 스타링크 브이스리를 운용 궤도에 처음 배치하고, 상단 우주선을 발사탑으로 처음 회수 시도합니다 — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① SpaceNews (SpaceNews, 8/7)</strong> — 유럽연합의 주권형 다층 위성망 IRIS²가 규모와 비용을 함께 키웠습니다. 저궤도 위성이 264기에서 330기로 66기 늘고, 중궤도 18기를 더해 최소 348기가 됩니다. 총사업비는 156억 유로, 약 180억 달러로 2024년 12월 추정치 106억 유로보다 47퍼센트 뛰었고, 최초 제안 60억 유로의 두 배를 넘어섰습니다. 스페이스라이즈 컨소시엄이 40억 유로, 유럽집행위원회와 유럽우주국이 116억 유로를 부담하며, 배치 완료 목표는 2029년입니다. 통신·안보용 주권 인프라로, 기사 자체는 궤도 데이터센터를 언급하지 않습니다.<br><br><strong>② SpaceNews (SpaceNews, 8/4)</strong> — 스페이스X가 스타십 14호를 8월 말 발사한다고 예고했습니다. 이번 비행에서 업그레이드된 스타링크 브이스리 위성을 처음으로 운용 궤도에 배치하고, 규제 승인 시 상단 우주선까지 발사탑 팔로 회수하는 첫 시도에 나섭니다. 7월 24일 13호는 브이스리 20기를 정상 배치하고 상단이 인도양에 착수해 회수됐으며, 머스크는 열차폐 문제가 사실상 해결됐다고 밝혔습니다. 목표는 1년 안에 하루 한 번 이상 발사로, 2025년 팰컨9 165회를 넘어서는 발사 리듬입니다. 브이스리 약 천 기의 임계 규모는 2027년 2분기로 잡혔습니다. 두 소식은 궤도 인프라 경쟁의 유럽·미국 축을 나란히 보여줍니다. 유럽은 180억 달러를 주권형 통신·안보 위성망에 쏟아 자립 역량을 키우지만, 이는 통신·군용 컨스텔레이션이지 궤도 데이터센터가 아닙니다. 바로 이 지점을 그제(8/6) 유럽우주정책연구소 보고서가 짚었습니다 — 유럽은 통신 주권에는 거액을 붓지만 정작 궤도 컴퓨트, 즉 우주 데이터센터에서는 미국과 중국에 뒤처지고 있다는 경고입니다. 반면 미국은 스페이스X가 발사 단가와 빈도를 하루 단위로 밀어붙이며, 스타클라우드·스타마인드 같은 궤도 데이터센터 컨스텔레이션을 실제로 궤도에 올릴 배치 엔진을 다지고 있습니다. 위성을 대량으로 값싸게 띄우는 능력과 그 위에서 연산을 돌리는 능력 — 유럽은 앞의 절반을, 미국은 양쪽을 함께 쥐어가는 구도입니다.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/europe-increases-size-and-cost-of-iris%c2%b2-constellation/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/spacex-to-begin-starship-orbital-flights/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/think-tank-warns-europes-orbital-compute-gap-is-widening/",
+        "label": "SpaceNews"
+      }
+    ],
+    "video": {
+      "id": "nqH3zZDfYfo",
+      "title": "스타십 14호, 스타링크 V3 첫 운용 배치·우주선 팔 회수 시도"
+    }
+  },
   "2026-08-07": {
     "date": "2026-08-07",
     "headlines": [
