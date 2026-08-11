@@ -1,4 +1,40 @@
 {
+  "2026-08-07": {
+    "date": "2026-08-07",
+    "headlines": [
+      {
+        "date": "2026-08-05",
+        "html": "<a href=\"https://interestingengineering.com/ai-robotics/spacex-nvidia-starmind-ai1-compute-payload\" target=\"_blank\" rel=\"noopener\"><strong>스페이스X, 궤도 AI 데이터센터 &#x27;스타마인드&#x27;에 엔비디아 독점 채택</strong>: 2분기 실적 발표에서 스타마인드 AI1 위성의 컴퓨트 탑재체를 엔비디아 베라 루빈으로 확정, 최대 100만 기 컨스텔레이션 계획을 재확인 — (SpaceX / SpaceNews·Motley Fool)</a>"
+      },
+      {
+        "date": "2026-08-06",
+        "html": "<a href=\"https://spacenews.com/chinese-launch-startup-orienspace-targets-ipo-secures-funding-for-reusable-gravity-2-rocket/\" target=\"_blank\" rel=\"noopener\"><strong>중국 오리엔스페이스, 재사용 &#x27;그래비티-2&#x27; 자금 확보하며 IPO 착수</strong>: 프리-C 라운드로 수억 위안을 조달하고 상하이 STAR 마켓 상장 준비 개시, LEO 21.5톤급 재사용 로켓으로 메가컨스텔레이션 배치 수요 겨냥 — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① 스페이스X × 엔비디아 (SpaceX / SpaceNews, 8/5)</strong> — 스페이스X가 첫 분기 실적 발표에서 궤도 AI 데이터센터 브랜드 &#x27;스타마인드(Starmind)&#x27;를 공개하고, 그 첫 위성 스타마인드 AI1의 컴퓨트 탑재체를 엔비디아와 공동 설계한다고 밝혔습니다. 각 위성에는 엔비디아 최신 베라 CPU와 루빈 GPU 기반 베라 루빈 NVL72 랙스케일이 실려 위성당 지속 120킬로와트, 피크 150킬로와트의 데이터센터급 연산을 제공합니다. 일론 머스크는 실적 콜에서 &quot;베라 루빈이 최고의 아키텍처&quot;라며 AI 인프라를 엔비디아로 독점 구축하겠다고 선언, 기존의 칩 벤더 중립 방침을 뒤집었습니다. FCC에 신청한 최대 100만 기 규모는 현 스타링크의 약 100배이며, 전개형 태양광과 액체 라디에이터 방열로 지상 데이터센터의 전력·냉각 한계를 우회합니다. 프로토타입은 2027년 초, 양산은 그해 후반 목표입니다.<br><br><strong>② 오리엔스페이스 그래비티-2 (SpaceNews, 8/6)</strong> — 중국 발사 스타트업 오리엔스페이스가 프리-C 라운드로 수억 위안(1억 위안 약 1,480만 달러)을 조달하고, 연내 지분 재편을 거쳐 상하이 STAR 마켓 IPO 준비에 들어갔습니다. 자금은 2단 재사용 로켓 그래비티-2 개발에 투입됩니다. 길이 70미터·직경 4.2미터에 포스-110 엔진 9기를 묶어 LEO에 최대 21,500킬로그램(1단 소모형)을, 1단 회수 시 17,000킬로그램을 올리며, 첫 발사는 2026년 4분기가 목표입니다. 회사는 이 대형 재사용 발사체를 중국의 메가컨스텔레이션 배치 수요에 대응할 수단으로 내세웠습니다. 궤도 데이터센터를 포함한 모든 대규모 컨스텔레이션은 값싼 대량 발사가 전제인 만큼, 재사용 발사 캐파 확장은 ODC 공급망의 하부 기반에 해당합니다. 오늘 두 소식은 궤도 데이터센터 경쟁이 &#x27;무엇을 올리나&#x27;와 &#x27;어떻게 올리나&#x27;라는 두 축으로 갈라지고 있음을 보여줍니다. 미국은 스페이스X가 엔비디아 실리콘부터 위성 버스·발사·컨스텔레이션까지 컴퓨트 수직 통합을 밀어붙이며 ODC 코어 자체를 장악하려 하고, 중국은 그 위성들을 실어 올릴 재사용 발사 대량공급 기반을 자본시장 상장으로 조달합니다. 어제 유럽정책연구소(ESPI)가 경고한 유럽의 궤도컴퓨트 격차와 겹쳐 보면, ODC 판도는 컴퓨트를 쥔 미국과 발사·양산 규모를 키우는 중국이 서로 다른 축에서 앞서가고 유럽은 표준으로 따라잡으려는 3자 구도로 굳어지고 있습니다.",
+    "sources": [
+      {
+        "url": "https://x.com/SpaceX/status/2084723854534951218",
+        "label": "x.com"
+      },
+      {
+        "url": "https://www.fool.com/investing/2026/08/06/just-announced-spacex-and-nvidia-teaming-up-on-new-orbital-ai-data-center/",
+        "label": "fool.com"
+      },
+      {
+        "url": "https://interestingengineering.com/ai-robotics/spacex-nvidia-starmind-ai1-compute-payload",
+        "label": "interestingengineering.com"
+      },
+      {
+        "url": "https://spacenews.com/chinese-launch-startup-orienspace-targets-ipo-secures-funding-for-reusable-gravity-2-rocket/",
+        "label": "SpaceNews"
+      }
+    ],
+    "video": {
+      "id": "7i6ntcDBXbg",
+      "title": "스페이스 엑스 × 엔비디아 독점 — 백만 기 궤도 AI 데이터센터 '스타마인드'"
+    }
+  },
   "2026-08-06": {
     "date": "2026-08-06",
     "headlines": [
