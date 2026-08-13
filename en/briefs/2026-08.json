@@ -1,4 +1,33 @@
 {
+  "2026-08-14": {
+    "date": "2026-08-14",
+    "headlines": [
+      {
+        "date": "2026-08-12",
+        "html": "<a href=\"https://spacenews.com/chinas-ispace-raises-first-batch-of-series-e-funding-for-reusable-rocketry/\" target=\"_blank\" rel=\"noopener\"><strong>China&#x27;s iSpace lands $148 million first tranche of Series E for reusable rocketry</strong>: Interstellar Glory (iSpace) has secured roughly 1 billion yuan for mass production of its Hyperbola-3 reusable launch vehicle and sea-recovery infrastructure — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-08-11",
+        "html": "<a href=\"https://spacenews.com/firefly-increases-vehicle-production-even-as-launches-lag/\" target=\"_blank\" rel=\"noopener\"><strong>Firefly pushes launch dates back even as rocket production hits an all-time high</strong>: Alpha production has climbed to record levels alongside development of the larger Eclipse, with &quot;launch capacity never in shorter supply&quot; — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① iSpace (SpaceNews, 8/12)</strong> — Chinese commercial launch firm Interstellar Glory has raised roughly $148 million, or 1 billion yuan, as the first tranche of its Series E round. The funds will go toward research and mass production of the Hyperbola-3 reusable launch vehicle, production capacity for its Focus-2 methane–liquid oxygen engine, launch and sea-recovery infrastructure, and preliminary research on a heavy-lift launch vehicle. The round was led by an asset manager affiliated with a major Chinese state-owned bank, directly reflecting the central government&#x27;s push to elevate commercial space to a strategic industry. Coming on the heels of a record $729 million raise this past February, Hyperbola-3 is reported to carry a low-Earth-orbit payload capacity in the 8,500-kilogram class.<br><br><strong>② Firefly Aerospace (SpaceNews, 8/11)</strong> — In its August 11 earnings report, Firefly said production of its small launch vehicle Alpha is at &quot;an all-time high.&quot; CEO Jason Kim said demand for launch capacity is &quot;exploding right now, and launch capability has never been this constrained,&quot; adding that both Alpha and the larger Eclipse in development are seeing strong demand. Actual launches, however, have not kept pace with production: Alpha has flown just seven times since 2021, and Flight 8 — the first flight of the stretched Block 2 upgrade — has slipped to the fourth quarter. Today was less about orbital data centers themselves than about the U.S. and China moving in parallel on the launch and manufacturing base that will carry them. An orbital data center is ultimately a constellation of thousands to tens of thousands of satellites, so the ability to launch satellites cheaply and in bulk is its precondition — reusable rockets and mass satellite production are not the ODC itself but the supply chain that makes it possible. China is pouring state-bank capital into reusable launch vehicles and sea recovery, laying the groundwork for domestic mega-constellations like Guowang, Qianfan and Honghu-3, and beyond that for orbital-compute ambitions such as Three-Body Computing and Star-Compute. America&#x27;s Firefly, meanwhile, has ramped production to record highs on overflowing commercial demand, yet exposes the opposite bottleneck, with its launch cadence unable to keep up. Each side, in its own way, showed that whoever first bends the cost and cycle time of launch is where the real contest of the orbital-compute era will be decided.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/chinas-ispace-raises-first-batch-of-series-e-funding-for-reusable-rocketry/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/firefly-increases-vehicle-production-even-as-launches-lag/",
+        "label": "SpaceNews"
+      }
+    ],
+    "video": {
+      "id": "2-EMXN2Wz5s",
+      "title": "아이스페이스, 국유은행 자본으로 재사용 로켓 일억 달러 확보",
+      "ko_audio": true
+    }
+  },
   "2026-08-13": {
     "date": "2026-08-13",
     "headlines": [

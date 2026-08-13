@@ -1,4 +1,32 @@
 {
+  "2026-08-14": {
+    "date": "2026-08-14",
+    "headlines": [
+      {
+        "date": "2026-08-12",
+        "html": "<a href=\"https://spacenews.com/chinas-ispace-raises-first-batch-of-series-e-funding-for-reusable-rocketry/\" target=\"_blank\" rel=\"noopener\"><strong>중국 아이스페이스, 재사용 로켓에 1차 시리즈E 1억 4,800만 달러</strong>: 인터스텔라 글로리(iSpace)가 하이퍼볼라-3 재사용 발사체 양산과 해상 회수 인프라에 약 10억 위안을 확보 — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-08-11",
+        "html": "<a href=\"https://spacenews.com/firefly-increases-vehicle-production-even-as-launches-lag/\" target=\"_blank\" rel=\"noopener\"><strong>파이어플라이, 발사는 밀리는데 로켓 생산은 사상 최고</strong>: 알파 생산이 역대 최고 수준으로 올라섰고 대형기 이클립스 개발 병행, &quot;발사 캐파가 이렇게 부족한 적이 없다&quot; — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① 아이스페이스(iSpace) (SpaceNews, 8/12)</strong> — 중국 상업 발사 기업 인터스텔라 글로리가 시리즈E 라운드의 1차분으로 약 1억 4,800만 달러, 즉 10억 위안을 조달했습니다. 자금은 하이퍼볼라-3 재사용 발사체의 연구·양산, 포커스-2 메탄·액체산소 엔진 생산 능력, 발사·해상 회수 인프라, 그리고 대형 발사체 사전 연구에 투입됩니다. 이번 라운드는 중국 주요 국유은행 계열 자산운용사가 주도했는데, 중앙 정부가 상업 우주를 전략 산업으로 밀어 준 신호를 그대로 반영합니다. 지난 2월 기록적인 7억 2,900만 달러 조달에 이은 후속으로, 하이퍼볼라-3의 저궤도 탑재량은 8,500킬로그램급으로 알려졌습니다.<br><br><strong>② 파이어플라이 에어로스페이스 (SpaceNews, 8/11)</strong> — 파이어플라이가 8월 11일 실적 발표에서 소형 발사체 알파의 생산이 &quot;사상 최고 수준&quot;이라고 밝혔습니다. 제이슨 김 대표는 &quot;발사 캐파 수요가 지금 폭발적이고, 이렇게 발사 능력이 제약된 적이 없다&quot;며 알파와 개발 중인 대형기 이클립스 모두 수요가 강하다고 말했습니다. 다만 실제 발사는 생산을 따라가지 못해, 알파는 2021년 이후 일곱 번 발사에 그쳤고 스트레치 개량형 블록2 첫 비행인 8호기는 4분기로 미뤄졌습니다. 오늘은 궤도 데이터센터 자체보다, 그것을 실을 발사·제조 산업 기반에서 미·중이 나란히 움직인 날입니다. 궤도 데이터센터는 결국 수천에서 수만 기 규모의 컨스텔레이션이라, 위성을 값싸게 대량으로 쏘아 올릴 발사 능력이 그 전제입니다 — 재사용 로켓과 위성 양산은 ODC 자체가 아니라 그것을 가능케 하는 공급망입니다. 중국은 국유은행 자본을 재사용 발사체와 해상 회수에 쏟아부으며 궈왕·첸판·훙후-3 같은 자국 메가컨스텔레이션, 나아가 삼체 컴퓨팅·천광 같은 궤도 컴퓨트 야심의 발밑을 다지고 있고, 미국의 파이어플라이는 상업 수요가 넘쳐 생산을 최고치로 끌어올렸지만 정작 발사 리듬이 이를 못 따라가는 정반대의 병목을 드러냈습니다. 누가 먼저 발사 비용과 주기를 꺾느냐가 궤도 컴퓨트 시대의 실질 승부처임을 양쪽이 각자 방식으로 보여 준 셈입니다.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/chinas-ispace-raises-first-batch-of-series-e-funding-for-reusable-rocketry/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/firefly-increases-vehicle-production-even-as-launches-lag/",
+        "label": "SpaceNews"
+      }
+    ],
+    "video": {
+      "id": "2-EMXN2Wz5s",
+      "title": "아이스페이스, 국유은행 자본으로 재사용 로켓 일억 달러 확보"
+    }
+  },
   "2026-08-13": {
     "date": "2026-08-13",
     "headlines": [
