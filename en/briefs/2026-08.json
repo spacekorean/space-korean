@@ -1,4 +1,41 @@
 {
+  "2026-08-15": {
+    "date": "2026-08-15",
+    "headlines": [
+      {
+        "date": "2026-08-14",
+        "html": "<a href=\"https://spacenews.com/blue-origin-outlines-plans-for-second-cape-canaveral-launch-pad/\" target=\"_blank\" rel=\"noopener\"><strong>Blue Origin&#x27;s second launch pad</strong>: Groundbreaking begins at Cape Canaveral on LC-36B, a pad dedicated to the new New Glenn 9x4 variant — a deployment foothold for the 51,600-satellite Project Sunrise orbital compute constellation (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-08-13",
+        "html": "<a href=\"https://spacenews.com/cesiumastro-buys-semiconductor-specialist-to-boost-constellation-plans/\" target=\"_blank\" rel=\"noopener\"><strong>CesiumAstro acquires a chipmaker</strong>: Buys RF beamforming chip designer Zariot Technologies, bringing silicon in-house for its 737-satellite constellation (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-08-14",
+        "html": "<a href=\"https://spacenews.com/cheaper-launch-has-moved-the-spacecraft-bottleneck-mass-is-out-surface-area-is-in/\" target=\"_blank\" rel=\"noopener\"><strong>The spacecraft-design bottleneck shifts</strong>: With launch costs falling, surface area, power, and heat rejection — not mass — become the new constraints, the very physics limits that orbital data centers face (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Blue Origin (SpaceNews, 8/14)</strong> — Blue Origin announced it will build a second launch pad, LC-36B, at Cape Canaveral Space Force Station. Dedicated to the new New Glenn 9x4 variant, it stacks nine BE-4 engines beneath four BE-3U engines, a configuration that dramatically increases thrust over the current LC-36A&#x27;s 7x2 layout. A vertical integration building and a payload processing facility will rise alongside it; the U.S. Space Force awarded a $78.2 million contract for the payload processing facility last October. The article makes no mention of data centers, but New Glenn is the only heavy-lift vehicle capable of carrying Blue Origin&#x27;s own 51,600-satellite Project Sunrise — an orbital compute constellation. The decision to double the pads and scale up the variant directly governs how fast that constellation can be deployed.<br><br><strong>② CesiumAstro (SpaceNews, 8/13)</strong> — Satellite communications firm CesiumAstro acquired chip designer Zariot Technologies. Founded in 2015, Zariot works on RF chips and digital beamforming technology for satellite communications, electronic warfare, and radar, and roughly 100 employees in the United States and Switzerland join CesiumAstro. The acquisition price was not disclosed. That silicon capability will feed CesiumAstro&#x27;s planned 737-satellite Synchronicity low-Earth-orbit constellation and its Element satellite platform, whose first launch is set for October. Following its acquisition of AI startup Vidrover late last year, the move is part of a vertical-integration push, reflecting a broader trend of the satellite industry taking control of the chip design that determines communications and compute performance.<br><br><strong>③ SpaceNews analysis (SpaceNews, 8/14)</strong> — The analysis argues that as launch costs fall, the spacecraft-design bottleneck has shifted from mass to surface area. Power now governs sensing, computation, communications, and thermal control alike, and every additional watt requires that much more collecting area and radiating area. Fairing volume, however, stays the same, increasing the burden and failure risk of the deployment mechanisms that fold in solar panels and radiators. Boeing&#x27;s Q4S chose a particular platform because of sustained power, and SES&#x27;s O3b mPOWER identified power as the limiting factor in the medium-Earth-orbit radiation environment. It is precisely the same power and heat-rejection constraint that orbital data centers face. Today&#x27;s three stories are not new announcements about any specific orbital data center, but rather illuminate all at once the <strong>three pillars of the industrial base</strong> — launch capacity, silicon, and physical design — that would actually build such a data center. Blue Origin buys orbital-insertion speed for its own megaconstellation by adding a launch pad, while CesiumAstro brings chip design in-house, joining the &quot;who holds the satellite silicon&quot; race that runs through Intel Starfire (8/11) and SpaceX-Nvidia (8/7). And the analysis that surface area, power, and heat rejection are the new bottleneck is a reminder that the fundamental constraint on orbital compute is, in the end, thermodynamics. Communications constellations and launch infrastructure are not data centers in themselves, but no orbital data center holds together without the premise of mass-producing and deploying low-cost satellites at scale. While core new announcements have been quiet this week, the competition is proceeding quietly at this supply-chain layer.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/blue-origin-outlines-plans-for-second-cape-canaveral-launch-pad/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/cesiumastro-buys-semiconductor-specialist-to-boost-constellation-plans/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/cheaper-launch-has-moved-the-spacecraft-bottleneck-mass-is-out-surface-area-is-in/",
+        "label": "SpaceNews"
+      }
+    ],
+    "video": {
+      "id": "uS1zX2PyJEI",
+      "title": "블루오리진 두 번째 발사대 착공 — 51,600기 궤도 컴퓨트 컨스텔레이션 배치 발판",
+      "ko_audio": true
+    }
+  },
   "2026-08-14": {
     "date": "2026-08-14",
     "headlines": [

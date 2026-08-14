@@ -1,4 +1,40 @@
 {
+  "2026-08-15": {
+    "date": "2026-08-15",
+    "headlines": [
+      {
+        "date": "2026-08-14",
+        "html": "<a href=\"https://spacenews.com/blue-origin-outlines-plans-for-second-cape-canaveral-launch-pad/\" target=\"_blank\" rel=\"noopener\"><strong>블루오리진 두 번째 발사대</strong>: 케이프커내버럴에 신형 뉴글렌 9x4 전용 LC-36B 발사대 착공 — 51,600기 규모 프로젝트 선라이즈 궤도 컴퓨트 컨스텔레이션의 배치 발판 (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-08-13",
+        "html": "<a href=\"https://spacenews.com/cesiumastro-buys-semiconductor-specialist-to-boost-constellation-plans/\" target=\"_blank\" rel=\"noopener\"><strong>세슘아스트로, 반도체 업체 인수</strong>: RF 빔포밍 칩 설계사 재리엇 테크놀로지스 인수, 737기 위성 컨스텔레이션용 실리콘 내재화 (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-08-14",
+        "html": "<a href=\"https://spacenews.com/cheaper-launch-has-moved-the-spacecraft-bottleneck-mass-is-out-surface-area-is-in/\" target=\"_blank\" rel=\"noopener\"><strong>위성 설계의 병목이 바뀌다</strong>: 발사비 하락으로 질량 대신 표면적·전력·방열이 새 제약 — 궤도 데이터센터가 마주한 바로 그 물리 한계 (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① 블루오리진 (SpaceNews, 8/14)</strong> — 블루오리진이 케이프커내버럴 우주군기지에 두 번째 발사대 LC-36B를 짓는다고 밝혔습니다. 신형 뉴글렌 9x4 변형 전용으로, 베이오포 엔진 아홉 기에 베이스리유 엔진 네 기를 얹어 현행 LC-36A의 7x2 구성보다 추력을 크게 키운 판입니다. 수직 통합동과 탑재체 처리동도 함께 들어서며, 미우주군은 지난해 시월 탑재체 처리동에 칠천팔백이십만 달러 계약을 부여했습니다. 기사는 데이터센터를 언급하지 않지만, 뉴글렌은 블루오리진 자사의 오만 천육백 기 프로젝트 선라이즈 — 궤도 컴퓨트 컨스텔레이션 — 을 실어 나를 유일한 대형 발사체입니다. 발사대를 둘로 늘리고 변형을 키우는 결정은 그 컨스텔레이션의 배치 속도를 직접 좌우합니다.<br><br><strong>② 세슘아스트로 (SpaceNews, 8/13)</strong> — 위성 통신 업체 세슘아스트로가 반도체 설계사 재리엇 테크놀로지스를 인수했습니다. 2015년 설립된 재리엇은 위성 통신·전자전·레이더용 RF 칩과 디지털 빔포밍 기술을 다루며, 미국과 스위스에서 약 백 명이 합류합니다. 인수액은 비공개입니다. 이 실리콘 역량은 세슘아스트로가 준비 중인 737기 규모 싱크로니시티 저궤도 컨스텔레이션과 시월 첫 발사를 앞둔 엘리먼트 위성 플랫폼에 투입됩니다. 지난해 말 AI 스타트업 비드로버 인수에 이은 수직 통합 행보로, 위성 산업이 통신·컴퓨트 성능을 좌우하는 칩 설계를 자기 손안에 넣으려는 흐름을 보여줍니다.<br><br><strong>③ SpaceNews 분석 (SpaceNews, 8/14)</strong> — 발사비가 떨어지면서 위성 설계의 병목이 질량에서 표면적으로 옮겨갔다는 분석입니다. 이제는 전력이 감지·연산·통신·열 제어를 모두 좌우하고, 와트 한 단위를 더 쓰려면 그만큼 더 넓은 집광 면적과 방열 면적이 필요합니다. 반면 페어링 부피는 그대로라 태양전지판과 라디에이터를 접어 넣는 전개 기구의 부담과 고장 위험이 커집니다. 보잉 Q4S는 지속 전력을 이유로 특정 플랫폼을 택했고, SES의 O3b 엠파워는 중궤도 방사선 환경에서 전력을 한계로 지목했습니다. 궤도 데이터센터가 마주한 전력·방열 제약과 정확히 같은 문제입니다. 오늘 세 소식은 특정 궤도 데이터센터의 신규 발표가 아니라, 그 데이터센터를 실제로 지어 올릴 <strong>산업 기반의 세 축</strong> — 발사 캐파, 실리콘, 물리 설계 — 을 동시에 비춥니다. 블루오리진은 발사대를 늘려 자사 메가컨스텔레이션의 궤도 진입 속도를 벌고, 세슘아스트로는 칩 설계를 내재화해 인텔 스타파이어(8/11)·스페이스X-엔비디아(8/7)로 이어진 &#x27;누가 위성 실리콘을 쥐느냐&#x27; 경쟁에 합류합니다. 그리고 표면적·전력·방열이 새 병목이라는 분석은 궤도 컴퓨트의 근본 제약이 결국 열역학임을 상기시킵니다. 통신 컨스텔레이션과 발사 인프라는 그 자체로 데이터센터가 아니지만, 대규모 저비용 위성 양산·배치라는 전제 없이는 어떤 궤도 데이터센터도 성립하지 않습니다. 이번 주 코어 신규 발표가 잠잠한 사이, 경쟁은 이 공급망 층위에서 조용히 진행되고 있습니다.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/blue-origin-outlines-plans-for-second-cape-canaveral-launch-pad/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/cesiumastro-buys-semiconductor-specialist-to-boost-constellation-plans/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/cheaper-launch-has-moved-the-spacecraft-bottleneck-mass-is-out-surface-area-is-in/",
+        "label": "SpaceNews"
+      }
+    ],
+    "video": {
+      "id": "uS1zX2PyJEI",
+      "title": "블루오리진 두 번째 발사대 착공 — 51,600기 궤도 컴퓨트 컨스텔레이션 배치 발판"
+    }
+  },
   "2026-08-14": {
     "date": "2026-08-14",
     "headlines": [
