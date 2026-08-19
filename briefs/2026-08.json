@@ -1,4 +1,32 @@
 {
+  "2026-08-20": {
+    "date": "2026-08-20",
+    "headlines": [
+      {
+        "date": "2026-08-18",
+        "html": "<a href=\"https://spacenews.com/chinas-landspace-recovers-booster-with-second-orbital-launch-of-zhuque-3-rocket/\" target=\"_blank\" rel=\"noopener\"><strong>랜드스페이스, 주췌-3 부스터 회수 성공</strong>: 중국 민간 랜드스페이스가 재사용 메탄 로켓 주췌-3의 1단을 다리로 착지시키며 두 번째 궤도 발사를 완수. 스페이스X·블루오리진에 이어 궤도급 부스터를 다리로 회수한 세계 세 번째 주체 — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-08-18",
+        "html": "<a href=\"https://spacenews.com/rocket-lab-to-test-space-force-data-network-connection-in-orbit-in-2027/\" target=\"_blank\" rel=\"noopener\"><strong>미우주군, 로켓랩과 궤도 데이터망 실증 계약</strong>: 스페이스 데이터 네트워크 다중 벤더 상호운용성을 2027년 궤도에서 시험. 스페이스X 백본과 타사 위성을 광링크로 연결 — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① 랜드스페이스 (SpaceNews, 8/18)</strong> — 중국 민간 발사업체 랜드스페이스가 8월 18일 주췌-3 로켓의 두 번째 궤도 발사에서 1단 부스터를 390킬로미터 떨어진 간쑤성 착륙장에 수직 착지시켰습니다. 스페이스X, 블루오리진에 이어 다리로 궤도급 부스터를 회수한 세계 세 번째 주체입니다. 직경 4.5미터, 이륙 중량 570톤급 스테인리스강 로켓으로 톈췌 메탄 엔진 9기를 달았고, 1단을 회수하면 저궤도 18.3톤 — 팰컨 9에 맞먹는 수송 능력입니다. 이번에 올린 훙후 3호 위성은 지난달 1억 9100만 달러를 조달한 랜드스페이스의 위성 제조 자회사 훙칭이 만들었습니다.<br><br><strong>② 로켓랩 (SpaceNews, 8/18)</strong> — 로켓랩이 미우주군의 스페이스 데이터 네트워크를 2027년 궤도에서 실증한다고 8월 18일 밝혔습니다. 1200만 달러 계약으로 포톤 위성에 광통신·네트워킹 장비를 실어, 스페이스X가 22억 9천만 달러에 구축 중인 백본과 타사 위성 간 상호운용성을 시험합니다. 미우주군은 로켓랩·아마존·록히드마틴·노스럽·요크 5개사에 각 1200만 달러씩 총 6천만 달러를 배정해, 단일 업체에 종속되지 않는 공통 인터페이스를 만들려 합니다. 데이터 네트워크는 위성 간 대용량 데이터를 광링크로 라우팅하는 군용 통신망입니다. 두 소식은 궤도 데이터센터를 떠받치는 두 전제 조건 — 위성을 싸게 많이 올리는 능력과 궤도에서 대용량 데이터를 실어 나르는 능력 — 의 진전입니다. 랜드스페이스의 재사용 성공은 메가컨스텔레이션 배치 비용을 끌어내리는 발사 인프라이며(주췌-3와 훙후 위성 자체는 데이터센터가 아니라 이를 가능케 하는 산업 기반입니다), 미우주군의 데이터 네트워크는 흩어진 위성들을 하나로 묶는 인터커넥트 계층입니다. 한쪽은 중국의 상업 발사 경쟁, 다른 쪽은 미국의 군용 표준화 — 궤도 컴퓨트 시대를 준비하는 미·중의 서로 다른 접근이 나란히 드러납니다.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/chinas-landspace-recovers-booster-with-second-orbital-launch-of-zhuque-3-rocket/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/rocket-lab-to-test-space-force-data-network-connection-in-orbit-in-2027/",
+        "label": "SpaceNews"
+      }
+    ],
+    "video": {
+      "id": "8J8hAaSggsQ",
+      "title": "미우주군, 궤도 광통신 실증에 5개사 선정 · 중국도 부스터 회수 성공"
+    }
+  },
   "2026-08-15": {
     "date": "2026-08-15",
     "headlines": [

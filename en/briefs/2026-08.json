@@ -1,4 +1,33 @@
 {
+  "2026-08-20": {
+    "date": "2026-08-20",
+    "headlines": [
+      {
+        "date": "2026-08-18",
+        "html": "<a href=\"https://spacenews.com/chinas-landspace-recovers-booster-with-second-orbital-launch-of-zhuque-3-rocket/\" target=\"_blank\" rel=\"noopener\"><strong>Landspace successfully recovers Zhuque-3 booster</strong>: China&#x27;s private Landspace completed its second orbital launch of the reusable methane rocket Zhuque-3, landing the first stage on its legs. It becomes the world&#x27;s third entity to recover an orbital-class booster on legs, after SpaceX and Blue Origin — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-08-18",
+        "html": "<a href=\"https://spacenews.com/rocket-lab-to-test-space-force-data-network-connection-in-orbit-in-2027/\" target=\"_blank\" rel=\"noopener\"><strong>U.S. Space Force signs orbital data-network demo deal with Rocket Lab</strong>: A 2027 in-orbit test of multi-vendor interoperability for a space data network, linking the SpaceX backbone and third-party satellites via optical links — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Landspace (SpaceNews, 8/18)</strong> — Chinese private launch provider Landspace vertically landed the first-stage booster of its Zhuque-3 rocket at a landing site in Gansu province, 390 kilometers downrange, during the vehicle&#x27;s second orbital launch on August 18. It is the world&#x27;s third entity, after SpaceX and Blue Origin, to recover an orbital-class booster on legs. The stainless-steel rocket measures 4.5 meters in diameter with a liftoff mass in the 570-ton class and is powered by nine Tianque methane engines; with first-stage recovery it lifts 18.3 tons to low Earth orbit — a payload capacity comparable to the Falcon 9. The Honghu-3 satellite carried on this flight was built by Hongqing, Landspace&#x27;s satellite-manufacturing subsidiary, which raised $191 million last month.<br><br><strong>② Rocket Lab (SpaceNews, 8/18)</strong> — Rocket Lab announced on August 18 that it will demonstrate the U.S. Space Force&#x27;s space data network in orbit in 2027. Under the $12 million contract, it will fly optical-communications and networking equipment on a Photon satellite to test interoperability between the backbone SpaceX is building for $2.29 billion and third-party satellites. The Space Force allocated $12 million each to five companies — Rocket Lab, Amazon, Lockheed Martin, Northrop and York — for a total of $60 million, aiming to create a common interface that avoids dependence on any single vendor. The data network is a military communications system that routes high-volume data between satellites over optical links. The two stories mark progress on the two preconditions underpinning orbital data centers — the ability to launch satellites cheaply and in bulk, and the ability to move high-volume data around in orbit. Landspace&#x27;s reusability success is launch infrastructure that drives down the cost of deploying megaconstellations (Zhuque-3 and the Honghu satellites are not data centers themselves, but the industrial foundation that makes them possible), while the Space Force&#x27;s data network is the interconnect layer that binds scattered satellites into one. One side is China&#x27;s commercial launch competition, the other America&#x27;s military standardization — two contrasting U.S. and Chinese approaches to preparing for the era of orbital compute, revealed side by side.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/chinas-landspace-recovers-booster-with-second-orbital-launch-of-zhuque-3-rocket/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/rocket-lab-to-test-space-force-data-network-connection-in-orbit-in-2027/",
+        "label": "SpaceNews"
+      }
+    ],
+    "video": {
+      "id": "8J8hAaSggsQ",
+      "title": "미우주군, 궤도 광통신 실증에 5개사 선정 · 중국도 부스터 회수 성공",
+      "ko_audio": true
+    }
+  },
   "2026-08-15": {
     "date": "2026-08-15",
     "headlines": [
