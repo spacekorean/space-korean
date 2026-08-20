@@ -1,4 +1,25 @@
 {
+  "2026-08-21": {
+    "date": "2026-08-21",
+    "headlines": [
+      {
+        "date": "2026-08-20",
+        "html": "<a href=\"https://spacenews.com/muon-space-raises-250-million-to-ramp-up-satellite-production/\" target=\"_blank\" rel=\"noopener\"><strong>Muon Space closes $250 million Series C</strong>: Smallsat manufacturer Muon Space enters unicorn status at a $1.5 billion valuation, investing in 500-satellites-per-year output at its new San Jose plant and in expanding a large satellite platform for orbital data centers — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Muon Space (SpaceNews, 8/20)</strong> — Muon Space, a Mountain View, California satellite manufacturer, closed a $250 million Series C round on August 20. The round was led by Eclipse Capital, which co-led True Anomaly&#x27;s $650 million round earlier this year, and according to people familiar with the matter the company was valued at $1.5 billion, joining this year&#x27;s run of &quot;space unicorns.&quot; Now in its fifth year, the company has launched 11 satellites to date and will scale its recently opened San Jose factory to 500 satellites per year by 2027 — a tenfold increase over its previous capacity. Total funding raised has now surpassed $386 million, and the company emphasized its vertically integrated &quot;Mission Foundry&quot; model, which handles 95% of production in-house. The key thread is the orbital data center connection: Muon said its Starship-class large platform &quot;Condor Ultra,&quot; unveiled in June, is designed with 20 kilowatts of baseline power and more than 18 square meters of nadir-facing payload area to meet &quot;emerging demand for orbital data centers,&quot; with a debut targeted for 2028. Muon&#x27;s latest round sits on the same axis as the recent trend of Apex Space (valued at $2.3 billion) and K2 Space ($6.8 billion) raising a combined $700 million. All three companies started from small buses and are moving up to larger satellites that carry more power and compute, and this competition to scale up and mass-produce is precisely the supply base that must be in place for orbital data centers to actually operate. Satellite manufacturers are not data centers themselves, but constellation concepts — SpaceX aiming for 100 times the scale of Starlink, Project Sunrise&#x27;s 51,600 satellites, and Orbital&#x27;s 100,000 — will ultimately be decided by &quot;who can churn out large compute satellites at scale.&quot; CEO Jonny Dyer&#x27;s remark that &quot;as industries increasingly rely on space-based intelligence, communications and compute, it accelerates next-generation space infrastructure&quot; shows that this capital is aimed beyond small satellites for observation and communications, at the hardware layer of the orbital compute era.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/muon-space-raises-250-million-to-ramp-up-satellite-production/",
+        "label": "SpaceNews"
+      }
+    ],
+    "video": {
+      "id": "FWLAYZKIOMw",
+      "title": "뮤온 스페이스, $250M 조달로 궤도 데이터센터 플랫폼 정조준",
+      "ko_audio": true
+    }
+  },
   "2026-08-20": {
     "date": "2026-08-20",
     "headlines": [
