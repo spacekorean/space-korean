@@ -1,4 +1,33 @@
 {
+  "2026-08-22": {
+    "date": "2026-08-22",
+    "headlines": [
+      {
+        "date": "2026-08-21",
+        "html": "<a href=\"https://spacenews.com/landspace-aims-to-refly-recovered-zhuque-3-booster-within-six-months/\" target=\"_blank\" rel=\"noopener\"><strong>China Mobile enters orbital edge computing</strong>: On August 18, China Mobile&#x27;s &quot;Space Intelligent Computing Payload 1.0&quot; flew alongside the Honghu-03 satellite on Landspace&#x27;s Zhuque-3 recovery flight, marking the Chinese telecom giant&#x27;s first demonstration of distributed computing in orbit. On the same flight, the Zhuque-3 first stage became the world&#x27;s third — after SpaceX and Blue Origin — to achieve a ground legged landing — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-08-20",
+        "html": "<a href=\"https://spacenews.com/new-space-transportation-policy-focuses-on-increased-launch-rates/\" target=\"_blank\" rel=\"noopener\"><strong>White House unveils first new space transportation policy in 13 years</strong>: Setting a goal of supporting 1,000 launches and reentries per year from U.S. facilities by 2030, the policy focuses on expanding launch and reentry infrastructure rather than launch vehicles themselves — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① China Mobile (SpaceNews, 8/21)</strong> — Landspace&#x27;s second Zhuque-3 flight on August 18 carried China Mobile&#x27;s &quot;Space Intelligent Computing Payload 1.0&quot; into orbit alongside the Honghu-03 satellite. Jointly developed by the Institute of Computing Technology of the Chinese Academy of Sciences and Hongqing Technology, Landspace&#x27;s satellite-manufacturing subsidiary, the payload runs a domestically built lightweight satellite-borne core network and onboard &quot;agent&quot; software. It is the first payload China Mobile has put into orbit targeting distributed edge computing, bringing the Chinese telecom giant into the orbital computing race alongside ADA Space&#x27;s Three-Body Constellation and Tianguang. On the same flight, the Zhuque-3 first stage touched down on its legs at the Minqin landing site in Gansu province, marking the first ground recovery by a Chinese company and the world&#x27;s third legged landing of an orbital-class booster. Landspace aims to conduct a reflight test of the recovered first stage within six months, with the stage designed for at least 20 reuses.<br><br><strong>② White House (SpaceNews, 8/20)</strong> — On August 20, the White House released its national space transportation policy, revised for the first time since 2013. It sets a goal of supporting 1,000 launches and reentries per year from U.S. facilities by 2030 — a fivefold increase over the fewer than 200 U.S.-based launches in 2025. The emphasis is on infrastructure rather than launch vehicles: it directs the Department of Defense and NASA to improve launch sites and pursue joint development with the private sector, and it orders a search for additional launch site candidates, the establishment of federal launch site scheduling criteria within 180 days, and the designation of priority airspace for launch corridors. Targeting the reentry bottleneck as well, it calls for identifying new federal reentry sites within 90 days. The measure builds on last year&#x27;s commercial space executive order and a July 30 FAA proposed rule that would exempt launch and launch site licensing from 13 environmental laws. The same day saw the United States and China pushing the foundations of orbital computing up from opposite ends. China is building from the bottom up — with a reusable launch vehicle and an actual on-orbit computing demonstration by a telecom giant — while the United States widens the deployment pipeline through top-down policy aimed at launch and reentry bottlenecks. China Mobile joining an orbital computing field previously dominated by startups (ADA Space, Tianguang) as a state-scale carrier signals that this competition is moving from the experimental stage to the industrial stage. The U.S. goal of 1,000 launches per year targets the launch capacity that future orbital data center constellations — Starcloud, Project Sunrise, SpaceX AI satellites — will ultimately have to rely on. To be honest, though, neither a reusable rocket nor a launch policy is itself an orbital data center — one is the launch economy that will carry orbital computing, the other is the real ODC core payload riding on top of it, and today&#x27;s center of gravity lies with China Mobile.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/landspace-aims-to-refly-recovered-zhuque-3-booster-within-six-months/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/new-space-transportation-policy-focuses-on-increased-launch-rates/",
+        "label": "SpaceNews"
+      }
+    ],
+    "video": {
+      "id": "fAoacbBcESg",
+      "title": "차이나모바일, 궤도 컴퓨팅 진입 — 중국 국가급 통신사 최초",
+      "ko_audio": true
+    }
+  },
   "2026-08-21": {
     "date": "2026-08-21",
     "headlines": [
