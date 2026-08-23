@@ -1,4 +1,33 @@
 {
+  "2026-08-24": {
+    "date": "2026-08-24",
+    "headlines": [
+      {
+        "date": "2026-08-21",
+        "html": "<a href=\"https://spacenews.com/nvidia-joins-starclouds-250-million-orbital-data-center-funding-round/\" target=\"_blank\" rel=\"noopener\"><strong>Starcloud raises $250 million, Nvidia joins</strong>: Orbital data center startup Starcloud raised $250 million in a Series A extension round, doubling its valuation to $2.3 billion, with Nvidia — also a SpaceX backer — coming on as a new investor — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-08-21",
+        "html": "<a href=\"https://spacenews.com/spacex-scales-back-plans-for-next-starship-launch/\" target=\"_blank\" rel=\"noopener\"><strong>SpaceX scales back and delays next Starship flight to September</strong>: Starship&#x27;s Flight 14, slated for late this month, has slipped to September, and the first attempt to catch the upper stage (ship) at the launch tower has been pushed back &quot;a few months&quot; — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Starcloud (SpaceNews, 8/21)</strong> — Redmond, Washington-based Starcloud raised $250 million in a Series A extension round led by Manhattan West. Its valuation doubled to $2.3 billion, bringing cumulative funding since its 2024 founding to $450 million. The new capital will go toward expanding manufacturing capacity, securing launches, and engineering collaboration with Nvidia. This past March, Nvidia unveiled the space-rated &quot;Space-1 Vera Rubin module,&quot; with up to 25 times the AI compute of the H100; Starcloud plans to mount it on its next satellite to run cloud workloads for customers such as Crusoe in orbit. The 60-kilogram Starcloud-1, launched by SpaceX last November, became the first to run an Nvidia H100 GPU in low Earth orbit, demonstrating AI model training and running Google Gemini. The 450-kilogram Starcloud-2, due to launch this coming January, will be 8 kilowatts, and the ultimate 3-ton-class Starcloud-3 will be in the 200-kilowatt class — the first step in a planned constellation of up to 88,000 units.<br><br><strong>② SpaceX Starship (SpaceNews, 8/21)</strong> — SpaceX&#x27;s Starship Flight 14 has been pushed to September, and the first attempt to catch the upper stage at the launch tower has been shelved. On the August 4 second-quarter earnings call, Musk said Flight 14 would be the first orbital flight, deploying Starlink satellites into an operational orbit and catching the upper stage back at the Starbase launch tower. But on August 20 he walked that back on social media, saying &quot;catching the ship with the launch tower will be a few months out.&quot; The launch date also slipped from late this month to early September, and then to September 15 per an air traffic control briefing. The Flight 13 upper stage, which launched July 24 and splashed down in the Indian Ocean, survived without exploding and is under tow, and NASA is hoping SpaceX will narrow the launch cadence to under a month — and eventually to every two weeks — to keep the Artemis schedule on track. Today&#x27;s two stories lay out the &quot;capital&quot; and &quot;transport&quot; axes of the orbital data center race side by side. Nvidia, having now invested in Starcloud on top of SpaceX, is cementing itself as the de facto standard supplier of space AI infrastructure, while both camps are betting their large-scale deployments on Starship — a point that collides head-on with news of Starship&#x27;s delay. Starcloud&#x27;s 88,000-unit plan, and SpaceX&#x27;s own vision of an orbital data center of up to 1 million units, both depend on Starship&#x27;s high-volume, low-cost launches to replace the Falcon 9. Capital is pouring in fast, but the actual pace at which the constellations that capital targets get deployed will ultimately be governed by launch capacity — the point that this week&#x27;s two stories point to together.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/nvidia-joins-starclouds-250-million-orbital-data-center-funding-round/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/spacex-scales-back-plans-for-next-starship-launch/",
+        "label": "SpaceNews"
+      }
+    ],
+    "video": {
+      "id": "8Q5lR8sbpRM",
+      "title": "엔비디아·스타클라우드 $250M 유치, 스타십 14호 발사 연기",
+      "ko_audio": true
+    }
+  },
   "2026-08-22": {
     "date": "2026-08-22",
     "headlines": [
