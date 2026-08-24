@@ -1,4 +1,33 @@
 {
+  "2026-08-25": {
+    "date": "2026-08-25",
+    "headlines": [
+      {
+        "date": "2026-08-24",
+        "html": "<a href=\"https://spacenews.com/beyond-reach-technologies-unveils-line-of-large-deployable-solar-arrays/\" target=\"_blank\" rel=\"noopener\"><strong>Beyond Reach unveils large deployable structures aimed at the orbital data center&#x27;s toughest challenge — power and heat</strong>: Startup Beyond Reach Technologies has unveiled its &quot;Flarewing&quot; line of large fold-out structures. The largest model deploys to 625 square meters and generates up to 200 kilowatts, and the company has secured $350 million in letters of intent for power generation and heat rejection — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-08-24",
+        "html": "<a href=\"https://spacenews.com/kepler-starts-commercial-optical-data-relay-service/\" target=\"_blank\" rel=\"noopener\"><strong>Kepler launches commercial optical data relay service, expands into orbital computing</strong>: Canada&#x27;s Kepler Communications has launched a commercial data relay service based on satellite-to-satellite laser links. Its first 10 satellites, launched in January, have entered commercial operation, and the company is using this as a springboard to expand into hosted payloads and an orbital computing platform business — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Beyond Reach (SpaceNews, 8/24)</strong> — U.S. startup Beyond Reach Technologies unveiled its &quot;Flarewing&quot; line of fold-out large structures on August 24. Stowed flat at launch, they deploy into a triangular truss form in orbit, growing stiffer as they unfold to maintain pointing precision. The smallest, Flarewing-S, is just one meter wide when folded but deploys to 30 square meters and produces 5–8 kilowatts, while the largest, Flarewing-L, deploys to 625 square meters and generates up to 200 kilowatts. The design traces back to NASA Innovative Advanced Concepts research that co-founder Mitch Fogelson took part in during his graduate studies at Carnegie Mellon University. Built from aluminum and a novel jointed structure alone — with no composite materials — it can be mass-produced, and the company says it is targeting &quot;companies proposing hundreds of thousands of satellites over the next five years.&quot; It went through Y Combinator this year and has secured $350 million in letters of intent for power generation and heat rejection. Power and thermal dissipation are the orbital data center&#x27;s biggest physical bottlenecks, and it is precisely structures of this power and heat-rejection scale that the 200-kilowatt-class Starcloud-3 and the 20-kilowatt-class Muon Condor-Ultra actually require.<br><br><strong>② Kepler (SpaceNews, 8/24)</strong> — Canada&#x27;s Kepler Communications announced on August 24 that it has launched a commercial optical data relay service. Having completed commissioning of its 10 roughly 300-kilogram satellites — placed in low Earth orbit by SpaceX this past January — the company has entered commercial operation. Using satellite-to-satellite laser links, it receives data directly in space, reducing the need for customers to wait for a ground station pass. The first tranche supports links of up to 2.5 gigabits per second and is compatible with the U.S. Space Development Agency&#x27;s optical communication standard. Moving beyond its decade-plus Internet of Things connectivity business, Kepler is using this relay network as a springboard to build up hosted payload and orbital computing platform businesses. Early customer Aurora Tech of Germany is leveraging not only the data relay but also Kepler&#x27;s orbital computing platform. Mina Mitry, co-founder and CEO, said, &quot;Reaching commercial operation scale is a decisive milestone for Kepler.&quot; Today&#x27;s two stories lay out, side by side, the two enabling infrastructures an orbital data center must have to actually run — &quot;power and heat&quot; and &quot;data movement.&quot; Over the past few weeks, capital has already rushed quickly into orbital compute itself (Starcloud&#x27;s $250 million, Muon Space&#x27;s $250 million), but to actually switch on GPUs in orbit you need kilowatt-class power and a matching amount of heat rejection, and to bring compute results down to the ground in real time you need a satellite-to-satellite optical relay network. Beyond Reach&#x27;s 200-kilowatt-class deployable structures and Kepler&#x27;s commercial optical relay network are each a signal that these two bottlenecks are maturing commercially. The center of gravity of the competition is shifting from &quot;who declares they will build an orbital data center&quot; to &quot;are the components to actually switch it on and connect it ready.&quot;",
+    "sources": [
+      {
+        "url": "https://spacenews.com/beyond-reach-technologies-unveils-line-of-large-deployable-solar-arrays/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/kepler-starts-commercial-optical-data-relay-service/",
+        "label": "SpaceNews"
+      }
+    ],
+    "video": {
+      "id": "jj7i8NJtvQY",
+      "title": "비욘드 리치, 200킬로와트 전개형 구조물로 궤도 데이터센터 전력 병목 겨냥",
+      "ko_audio": true
+    }
+  },
   "2026-08-24": {
     "date": "2026-08-24",
     "headlines": [
