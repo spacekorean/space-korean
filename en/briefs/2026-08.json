@@ -1,4 +1,33 @@
 {
+  "2026-08-26": {
+    "date": "2026-08-26",
+    "headlines": [
+      {
+        "date": "2026-08-24",
+        "html": "<a href=\"https://spacenews.com/star-catcher-signs-power-beaming-deal-with-aethero/\" target=\"_blank\" rel=\"noopener\"><strong>Beaming power to orbital data centers</strong>: Star Catcher has signed a power-supply agreement with space-computing firm Aethero, concentrating and transmitting sunlight to satellites carrying data centers — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-08-25",
+        "html": "<a href=\"https://spacenews.com/edge-aerospace-expands-u-s-manufacturing-through-licensing-pact-with-redwire/\" target=\"_blank\" rel=\"noopener\"><strong>Space computers, made in America</strong>: Edge Aerospace has struck a licensing deal with Redwire to contract-manufacture its data-processing units and network switches within the United States — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Star Catcher × Aethero (SpaceNews, 8/24)</strong> — Power-beaming company Star Catcher announced on August 24 that it had signed a power-purchase agreement with space-computing firm Aethero. Star Catcher uses a constellation of satellites to gather sunlight and concentrate it onto a customer satellite&#x27;s solar panels, generating additional power without modifying the satellite. Under the deal, Star Catcher will supply power to Aethero satellites carrying data centers and content-delivery networks. Terms, including the amount of power and the price, were not disclosed. Star Catcher CEO Andrew Rush said the infrastructure is &quot;the foundation for every future we imagine in space.&quot; Power is the biggest bottleneck for orbital data centers, and this is the first instance of an architecture that draws power from an external source materializing as an actual contract.<br><br><strong>② Edge Aerospace × Redwire (SpaceNews, 8/25)</strong> — Luxembourg-based space-computing firm Edge Aerospace announced at the SmallSat Conference on August 25 that it had signed a licensing agreement with Redwire to contract-manufacture its data-processing units and network switches in the United States. Redwire will build the products at its plant in Marlborough, Massachusetts. Edge said it aims to combine its high-performance space-computing technology with Redwire&#x27;s manufacturing capacity to supply U.S.-made computing systems and strengthen supply-chain resilience. With demand growing for edge computing that processes data directly aboard satellites, the move is a bid to expand the company&#x27;s U.S. customer base. Both stories, set against this week&#x27;s SmallSat Conference, show the center of gravity in the orbital data center debate shifting from &quot;who builds the data center&quot; to &quot;who supplies the power and the hardware.&quot; The Star Catcher–Aethero deal offers an alternative to the power and thermal-dissipation bottleneck flagged in story after story (Starcloud&#x27;s 200-kilowatt class, Muon&#x27;s Condor Ultra, Beyond Reach&#x27;s deployable solar arrays) — drawing power from an external grid rather than from the satellite itself. The Edge–Redwire pact reflects a push to mass-produce space-computing hardware within the United States and secure supply-chain sovereignty. After capital raising (Starcloud, Muon) and launch capacity (Starship, Zhuque-3), the infrastructure layer of power supply and semiconductor and computing manufacturing is now being filled in with concrete contracts.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/star-catcher-signs-power-beaming-deal-with-aethero/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/edge-aerospace-expands-u-s-manufacturing-through-licensing-pact-with-redwire/",
+        "label": "SpaceNews"
+      }
+    ],
+    "video": {
+      "id": "o1EVb2cr2MM",
+      "title": "우주 데이터센터에 외부 전력 최초 연결 — 스타 캐처·에테로 계약",
+      "ko_audio": true
+    }
+  },
   "2026-08-25": {
     "date": "2026-08-25",
     "headlines": [
