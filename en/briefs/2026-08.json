@@ -1,4 +1,33 @@
 {
+  "2026-08-27": {
+    "date": "2026-08-27",
+    "headlines": [
+      {
+        "date": "2026-08-26",
+        "html": "<a href=\"https://spacenews.com/spacex-to-develop-starship-launch-site-in-louisiana/\" target=\"_blank\" rel=\"noopener\"><strong>SpaceX to build a $100 billion Starship-only spaceport</strong>: SpaceX announced it will build &quot;Starbase Louisiana,&quot; a mega Starship launch site with ten launch pads in Louisiana, targeting thousands of launches per year as it phases down the Falcon 9 — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-08-26",
+        "html": "<a href=\"https://spacenews.com/miratlas-seeks-funds-to-expand-optical-ground-station-mapping-technology/\" target=\"_blank\" rel=\"noopener\"><strong>Bringing orbital data down to Earth: Miratlas maps optical ground stations</strong>: French startup Miratlas is raising $23 million to expand an atmospheric-monitoring network that finds the best ground-station sites for the laser links connecting satellites to the ground — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① SpaceX × Starbase Louisiana (SpaceNews, 8/26)</strong> — On August 25, SpaceX announced it will build a Starship-dedicated spaceport at Pecan Island on the Gulf Coast in Vermilion Parish, Louisiana. Spanning roughly 125,000 acres, the $100 billion development will ultimately house ten Starship launch pads. Construction is set to begin in 2027, with the first launch no earlier than 2029. President Gwynne Shotwell said the goal is a high-cadence launch site &quot;designed from a blank sheet of paper&quot; — a self-sufficient spaceport with its own propellant production, power generation, and deep-water shipping facilities. Just hours before the announcement, SpaceX launched its 100th Falcon 9 of the year, and the company said it will move all future Starlink missions from Florida onto Starship. SpaceX explained that it has been searching for roughly seven years for a high-cadence site capable of thousands of launches per year.<br><br><strong>② Miratlas (SpaceNews, 8/26)</strong> — At the Small Satellite Conference on August 26, French startup Miratlas announced it is raising €20 million, about $23 million. Founded in 2018, the company plans to grow its Sky Monitor sensor network — which measures clouds and atmospheric turbulence — from roughly 60 sites today to more than 150. Clouds and atmospheric turbulence are the two biggest obstacles to laser links between satellites and the ground, and Miratlas uses its Lamarck database of more than 20 terabytes to help operators compare the best optical ground-station sites. It is also developing software that reroutes laser links in real time as conditions change, with Viasat and Orange among its key customers. Revenue over the past year was €1.7 million. This week&#x27;s orbital data center news moved through capital (Starcloud, Muon), power (Star Catcher, Beyond Gravity), and hardware (Edge, Redwire) in turn, and today fills in the two remaining layers — launch capacity and the data downlink path. SpaceX&#x27;s $100 billion dedicated spaceport is a bet on pushing Starship&#x27;s launch cadence to the thousands-per-year range, providing the launch foundation to carry not just Starlink but large-scale orbital infrastructure like the AI1 orbital data center satellite, 20 meters tall with a 70-meter wingspan. Miratlas addresses the problem at the opposite end — bringing the results computed in orbit down to Earth requires high-bandwidth optical communications, yet optical ground stations are vulnerable to weather. It should be made clear, though, that neither story is itself an orbital data center; they are the surrounding infrastructure for launching satellites and receiving the data they send down. Following the capital and power to build a constellation, now comes the ability to put it into orbit and connect it to the ground — the full stack of orbital computing completed one full turn this week.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/spacex-to-develop-starship-launch-site-in-louisiana/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/miratlas-seeks-funds-to-expand-optical-ground-station-mapping-technology/",
+        "label": "SpaceNews"
+      }
+    ],
+    "video": {
+      "id": "foLmNeQg6pk",
+      "title": "스페이스X, 루이지애나에 천억 달러 스타십 우주항 건설 선언",
+      "ko_audio": true
+    }
+  },
   "2026-08-26": {
     "date": "2026-08-26",
     "headlines": [
