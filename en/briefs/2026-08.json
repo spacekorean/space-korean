@@ -1,4 +1,33 @@
 {
+  "2026-08-28": {
+    "date": "2026-08-28",
+    "headlines": [
+      {
+        "date": "2026-08-27",
+        "html": "<a href=\"https://www.benzinga.com/markets/tech/26/08/61453795/nasa-chief-jared-isaacman-wants-data-centers-in-space-as-ai-devours-electricity-says-us-should-tap-free-fusion-reactor-to-win-ai-race\" target=\"_blank\" rel=\"noopener\"><strong>NASA Chief: &quot;Data Centers to Orbit&quot;</strong>: NASA Administrator Jared Isaacman publicly proposed moving AI data centers into Earth orbit during a broadcast interview. His vision is to run them on solar power without burdening the terrestrial grid, winning the space race and the AI race at once — (Washington Times · Nexstar)</a>"
+      }
+    ],
+    "summary_html": "<strong>① NASA Administrator Jared Isaacman (Washington Times / Nexstar, 8/27)</strong> — The head of NASA has floated relocating data centers to orbit as a national strategy. In an August 27 Nexstar interview, Administrator Isaacman said, &quot;Let&#x27;s put our data centers up in Earth orbit and tap that free fusion reactor, the Sun,&quot; adding, &quot;That way we win not just the space race but the AI race too.&quot; His logic is that orbital facilities deliver &quot;enormous advantages&quot; by not competing for the same land and power grid as ground-based sites. The backdrop is environmental and electricity-cost pushback against terrestrial data centers. Lawrence Berkeley National Laboratory projects data centers could consume up to 11.8% of U.S. electricity by 2030 — ranging from 9.5% to 15.3% depending on the scenario. Isaacman also lent weight to Elon Musk&#x27;s argument that &quot;space is the only way to scale,&quot; backing the outlook that SpaceX could begin launching orbital data centers as early as next year, saying there is &quot;no reason it couldn&#x27;t exist.&quot; What makes these remarks weighty is that the speaker is not a startup founder but the top official of U.S. space policy. Over just the past week, orbital data centers have repeatedly raised the stakes in capital (Starcloud&#x27;s $250 million round, with Nvidia joining) and launch infrastructure (SpaceX&#x27;s $100 billion vision for a Louisiana Starbase); today a third axis — a &quot;government agenda&quot; — has been added. In other words, orbital compute is now being discussed in the language of national power, AI, and security strategy, beyond venture bets. To be sure, the administrator&#x27;s proposal is closer to setting a direction than to binding policy or budget, and the real challenges of heat dissipation, cost, and orbital congestion remain unchanged. Even so, at a moment when the power and permitting bottlenecks of terrestrial data centers are reaching a tipping point, the very fact that Washington is beginning to speak of &quot;orbit&quot; as an escape route shifts the political weight of this sector.",
+    "sources": [
+      {
+        "url": "https://www.washingtontimes.com/news/2026/aug/27/nasa-chief-revives-idea-moving-data-centers-orbit/",
+        "label": "washingtontimes.com"
+      },
+      {
+        "url": "https://www.benzinga.com/markets/tech/26/08/61453795/nasa-chief-jared-isaacman-wants-data-centers-in-space-as-ai-devours-electricity-says-us-should-tap-free-fusion-reactor-to-win-ai-race",
+        "label": "benzinga.com"
+      },
+      {
+        "url": "https://www.kron4.com/news/national/nasa-administrator-suggests-putting-data-centers-in-space/",
+        "label": "kron4.com"
+      }
+    ],
+    "video": {
+      "id": "zePv4fR64UI",
+      "title": "아이잭먼 NASA 청장 '데이터센터, 우주로 옮겨야 AI 경쟁에서 이긴다'",
+      "ko_audio": true
+    }
+  },
   "2026-08-27": {
     "date": "2026-08-27",
     "headlines": [

@@ -1,4 +1,32 @@
 {
+  "2026-08-28": {
+    "date": "2026-08-28",
+    "headlines": [
+      {
+        "date": "2026-08-27",
+        "html": "<a href=\"https://www.washingtontimes.com/news/2026/aug/27/nasa-chief-revives-idea-moving-data-centers-orbit/\" target=\"_blank\" rel=\"noopener\"><strong>NASA 청장, &quot;데이터센터를 궤도로&quot;</strong>: 재러드 아이잭먼 NASA 청장이 방송 인터뷰에서 AI 데이터센터를 지구 궤도로 옮기자고 공개 제안했습니다. 태양광으로 지상 전력망 부담 없이 가동해 우주 경쟁과 AI 경쟁을 동시에 잡자는 구상입니다 — (Washington Times · Nexstar)</a>"
+      }
+    ],
+    "summary_html": "<strong>① NASA 청장 재러드 아이잭먼 (Washington Times / Nexstar, 8/27)</strong> — 미항공우주국 수장이 데이터센터의 궤도 이전을 국가 전략으로 띄웠습니다. 8월 27일 넥스타 인터뷰에서 아이잭먼 청장은 &quot;우리 데이터센터를 지구 궤도에 올려, 저 무료 핵융합로인 태양을 활용하자&quot;며 &quot;그렇게 해서 우주 경쟁은 물론 AI 경쟁에서도 이기자&quot;고 말했습니다. 궤도 시설은 지상과 같은 땅·전력망을 두고 다투지 않으면서 &quot;막대한 이점&quot;을 준다는 논리입니다. 배경엔 지상 데이터센터를 향한 환경·전기료 반발이 있습니다. 로렌스버클리국립연구소는 데이터센터가 2030년 미국 전력의 11.8%까지 — 시나리오에 따라 9.5%에서 15.3%까지 — 쓸 것으로 봅니다. 아이잭먼 청장은 &quot;규모를 키우려면 우주가 유일한 길&quot;이라는 일론 머스크의 주장에도 힘을 실으며, 스페이스X가 내년부터 궤도 데이터센터를 쏘아 올릴 수 있다는 전망을 &quot;존재하지 않을 이유가 없다&quot;고 거들었습니다. 이번 발언이 무거운 이유는 화자가 스타트업 창업자가 아니라 미국 우주 정책의 최고 책임자라는 데 있습니다. 지난 한 주만 놓고 봐도 궤도 데이터센터는 자본(스타클라우드 2.5억 달러·엔비디아 합류)과 발사 인프라(스페이스X의 루이지애나 스타베이스 1000억 달러 구상)에서 잇달아 판을 키웠는데, 오늘은 여기에 &#x27;정부 어젠다&#x27;라는 세 번째 축이 붙었습니다. 즉 궤도 컴퓨트는 이제 벤처의 베팅을 넘어 국가 전력·AI·안보 전략의 언어로 논의되기 시작했습니다. 물론 청장의 제안은 구속력 있는 정책이나 예산이 아니라 방향 제시에 가깝고, 방열·비용·궤도 혼잡이라는 현실 난제는 그대로입니다. 그럼에도 지상 데이터센터의 전력·민원 병목이 임계점에 다다른 지금, 워싱턴이 &#x27;궤도&#x27;를 탈출구로 입에 올리기 시작했다는 사실 자체가 이 섹터의 정치적 무게를 바꿔 놓습니다.",
+    "sources": [
+      {
+        "url": "https://www.washingtontimes.com/news/2026/aug/27/nasa-chief-revives-idea-moving-data-centers-orbit/",
+        "label": "washingtontimes.com"
+      },
+      {
+        "url": "https://www.benzinga.com/markets/tech/26/08/61453795/nasa-chief-jared-isaacman-wants-data-centers-in-space-as-ai-devours-electricity-says-us-should-tap-free-fusion-reactor-to-win-ai-race",
+        "label": "benzinga.com"
+      },
+      {
+        "url": "https://www.kron4.com/news/national/nasa-administrator-suggests-putting-data-centers-in-space/",
+        "label": "kron4.com"
+      }
+    ],
+    "video": {
+      "id": "zePv4fR64UI",
+      "title": "아이잭먼 NASA 청장 '데이터센터, 우주로 옮겨야 AI 경쟁에서 이긴다'"
+    }
+  },
   "2026-08-27": {
     "date": "2026-08-27",
     "headlines": [
