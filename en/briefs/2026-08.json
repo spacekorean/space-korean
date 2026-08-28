@@ -1,4 +1,33 @@
 {
+  "2026-08-29": {
+    "date": "2026-08-29",
+    "headlines": [
+      {
+        "date": "2026-08-28",
+        "html": "<a href=\"https://spacenews.com/shanghai-starts-work-on-wharf-for-its-rocket-city/\" target=\"_blank\" rel=\"noopener\"><strong>Shanghai breaks ground on &#x27;Rocket City&#x27;</strong>: Shanghai&#x27;s Minhang District has begun building a dedicated rocket-shipping wharf on the banks of the Huangpu River, bringing online a 9.3-square-kilometer commercial space cluster that targets mass production of 150 rockets and 500 satellites per year by 2030 — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-08-28",
+        "html": "<a href=\"https://spacenews.com/esa-awards-first-european-launcher-challenge-contracts/\" target=\"_blank\" rel=\"noopener\"><strong>ESA awards first European Launcher Challenge contracts</strong>: The European Space Agency has allocated a combined €543.6 million to three launch startups — Isar, PLD and RFA — staking its bid to secure sovereign orbital launch capability by the end of 2027 — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① SpaceNews — Shanghai breaks ground on &#x27;Rocket Star City&#x27; wharf (SpaceNews, 8/28)</strong> — Shanghai&#x27;s Minhang District has broken ground on a dedicated wharf on the Huangpu River&#x27;s Lincang Road, where rockets will be rolled down, loaded and moved from river to sea. The wharf serves as the key logistics hub of the 9.3-square-kilometer &#x27;Rocket Star City&#x27; commercial space cluster announced this past January, coordinated by the China Aerospace Science and Technology Corporation (CASC) and hosting private launch firms such as Orienspace. Target output rises from 80 rockets and 200 satellites per year in 2027 to 150 rockets and 500 satellites per year by 2030, with the cluster as a whole aiming for 100 billion yuan — roughly $14.9 billion — by 2027. Completed launch vehicles will be sent to Shanghai&#x27;s own sea-launch platform or to the Haiyang, Wenchang and Yangjiang spaceports, and the complex will underpin the Qianfan megaconstellation that Shanghai is pushing. Construction permits were issued in early August, with completion slated for early 2027.<br><br><strong>② SpaceNews — ESA awards first three European Launcher Challenge contracts (SpaceNews, 8/28)</strong> — The European Space Agency has allocated a combined €543.6 million — roughly $632.9 million — to three startups as the first contracts of the European Launcher Challenge. Germany&#x27;s Isar Aerospace received €197.8 million, Germany&#x27;s Rocket Factory Augsburg €186.9 million, and Spain&#x27;s PLD Space €158.9 million, with all three conditioned on achieving orbital launch by the end of 2027. ESA&#x27;s director of space transportation said the aim is &quot;to support the development of Europe&#x27;s launch capabilities, strengthen competitiveness and broaden the range of launch service options.&quot; Still, the road ahead is long: only Isar has attempted orbit — a failed bid with its Spectrum rocket this past March — while PLD is preparing to launch its Miura 5 from French Guiana, and RFA, gearing up for a first flight from Shetland, has been delayed by a tank problem. This is a story about factories churning out rockets and satellites rather than data centers, but orbital data centers ultimately mean constellations tens of thousands to hundreds of thousands of units strong, so an industrial base that can build satellites at scale and launch them cheaply and often is the precondition for every ODC vision. This week, while the U.S. cemented its orbital-computing preparations along three axes — capital (Starcloud&#x27;s $250 million), launch infrastructure (SpaceX&#x27;s $100 billion Louisiana spaceport), and a government agenda (the NASA administrator&#x27;s proposal to move data centers into orbit) — today the other two camps answered in their own ways. China is physically erecting a rocket-and-satellite mass-production complex in Shanghai, driving the Qianfan megaconstellation&#x27;s supply chain at national scale, while Europe, for the first time, put money behind cultivating homegrown launch vehicles to close the launch-access gap at the root of the &#x27;orbital compute divide&#x27; that a think tank warned of in early August. If the orbital data center race is ultimately won or lost on who can build satellites more cheaply and launch them more often, today&#x27;s two developments map the terrain of that industrial base.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/shanghai-starts-work-on-wharf-for-its-rocket-city/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/esa-awards-first-european-launcher-challenge-contracts/",
+        "label": "SpaceNews"
+      }
+    ],
+    "video": {
+      "id": "MNFUlhWCGF4",
+      "title": "상하이 로켓 시티 착공 — 연 150기 생산, 첸판 공급망 국가 규모 구축",
+      "ko_audio": true
+    }
+  },
   "2026-08-28": {
     "date": "2026-08-28",
     "headlines": [
