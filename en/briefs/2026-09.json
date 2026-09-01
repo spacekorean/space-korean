@@ -1,0 +1,47 @@
+{
+  "2026-09-02": {
+    "date": "2026-09-02",
+    "headlines": [
+      {
+        "date": "2026-08-31",
+        "html": "<a href=\"https://spacenews.com/ohb-wins-contract-to-build-iris%c2%b2-medium-earth-orbit-satellites/\" target=\"_blank\" rel=\"noopener\"><strong>OHB Wins €1 Billion Contract to Build IRIS² Medium Earth Orbit Satellites</strong>: The SpaceRISE consortium led by SES has awarded OHB the first major contract for the EU secure connectivity network IRIS², tasking it with building 18 of the 2.6-tonne-class MEO platforms — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-09-01",
+        "html": "<a href=\"https://spacenews.com/pld-space-raises-an-additional-125-million/\" target=\"_blank\" rel=\"noopener\"><strong>PLD Space Raises an Additional $125 Million — Cumulative Total Tops $550 Million</strong>: The Spanish launch company has loaded up on capital for European sovereign launch capability ahead of the first orbital flight of Miura 5 — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-08-31",
+        "html": "<a href=\"https://spacenews.com/satellite-ground-services-startup-northwood-space-adds-factory-capacity/\" target=\"_blank\" rel=\"noopener\"><strong>Northwood Space Quintuples Its Ground Station Antenna Factory</strong>: The company is opening a new 185,000-square-foot headquarters and factory in Torrance, California, shifting to mass production of hundreds of phased-array antennas per year — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① OHB × SES (SpaceNews, 8/31)</strong> — European satellite manufacturer OHB has secured a contract worth roughly €1 billion from SES to develop and build 18 medium-earth-orbit satellite platforms for IRIS², the EU&#x27;s secure satellite communications network. It is the consortium&#x27;s first major contract since the program&#x27;s implementation phase kicked off on August 6, with SpaceRISE — made up of SES, Eutelsat and Hispasat — handling the MEO segment. Each satellite has a launch mass of about 2.6 tonnes, and IRIS², combining low- and medium-earth orbits, comprises 348 satellites, targeting a first launch in 2029 and service start in 2030. It is not an orbital data center in itself, but rather an expansion of the industrial base as Europe pushes sovereign satellite infrastructure into a mass-manufacturing stage.<br><br><strong>② PLD Space (SpaceNews, 9/1)</strong> — Spanish launch company PLD Space has raised an additional $125 million, bringing its cumulative funding past $550 million. The company is preparing for the first orbital launch of its small launch vehicle, Miura 5. Europe has long depended on U.S. rockets to deploy satellites because of a shortage of its own launch options, and this buildup of private launch capability shores up a precondition — low-cost, sovereign launch — for putting any future orbital computing concept into space.<br><br><strong>③ Northwood Space (SpaceNews, 8/31)</strong> — Ground station startup Northwood Space has opened a new 185,000-square-foot headquarters and factory in Torrance, California, expanding its manufacturing floor space more than fivefold from 25,000 to 135,000 square feet. At full capacity, the phased-array portal line will turn out more than one ground station&#x27;s worth of panels each month, while the parabolic prism line produces four antennas per week. Downlink throughput — bringing large volumes of orbit-computed data back to the ground — is the real bottleneck for orbital data centers, and mass-producing the ground segment is an infrastructure investment aimed squarely at widening that bottleneck. This week&#x27;s signals cluster not around new compute payloads in orbit but around the <strong>industrial-base triangle</strong> that underpins them — satellite manufacturing (OHB), launch (PLD) and ground downlink (Northwood). Europe in particular is building sovereign satellite and launch capability simultaneously with IRIS² MEO manufacturing and the Miura 5 launch, yet it still has no answer to the U.S. capital-and-policy offensive in orbital computing — Starcloud&#x27;s $250 million raise (8/24), SpaceX&#x27;s $100 billion Louisiana launch city (8/27) and NASA Administrator Isaacman&#x27;s proposal to move compute to orbit (8/28). For orbital data centers to reach economies of scale, all three legs — satellites, launch and ground stations — must thicken at once, and today&#x27;s news shows all three under construction — though the contrast is stark: Europe is building infrastructure muscle, while the U.S. is scaling compute itself.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/ohb-wins-contract-to-build-iris%c2%b2-medium-earth-orbit-satellites/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://www.satellitetoday.com/connectivity/2026/08/31/ohb-to-build-18-meo-satellites-for-iris%c2%b2-in-nearly-e1b-award/",
+        "label": "satellitetoday.com"
+      },
+      {
+        "url": "https://spacenews.com/pld-space-raises-an-additional-125-million/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/satellite-ground-services-startup-northwood-space-adds-factory-capacity/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://www.northwoodspace.io/blog/northwood-raises-100m-series-b",
+        "label": "northwoodspace.io"
+      }
+    ],
+    "video": {
+      "id": "GKT47hI7BCU",
+      "title": "OHB, IRIS² 위성 18기 수주 — 유럽 자립 위성망 시동",
+      "ko_audio": true
+    }
+  }
+}

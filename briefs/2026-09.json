@@ -1,0 +1,46 @@
+{
+  "2026-09-02": {
+    "date": "2026-09-02",
+    "headlines": [
+      {
+        "date": "2026-08-31",
+        "html": "<a href=\"https://spacenews.com/ohb-wins-contract-to-build-iris%c2%b2-medium-earth-orbit-satellites/\" target=\"_blank\" rel=\"noopener\"><strong>OHB, IRIS² 중궤도 위성 10억 유로 제조 계약 수주</strong>: SES가 이끄는 스페이스라이즈 컨소시엄이 EU 안보 연결망 IRIS²의 첫 대형 계약으로 OHB에 2.6톤급 중궤도 플랫폼 18기 제작을 맡겼습니다 — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-09-01",
+        "html": "<a href=\"https://spacenews.com/pld-space-raises-an-additional-125-million/\" target=\"_blank\" rel=\"noopener\"><strong>PLD 스페이스, 1억 2500만 달러 추가 조달 — 누적 5억 5000만 달러 돌파</strong>: 스페인 발사기업이 미우라 파이브의 첫 궤도 발사를 앞두고 유럽 자립 발사 역량에 실탄을 채웠습니다 — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-08-31",
+        "html": "<a href=\"https://spacenews.com/satellite-ground-services-startup-northwood-space-adds-factory-capacity/\" target=\"_blank\" rel=\"noopener\"><strong>노스우드 스페이스, 지상국 안테나 공장 5배 증설</strong>: 캘리포니아 토런스에 18만 5000제곱피트 신사옥·공장을 열고 위상배열 안테나 연 수백 기 양산 체제로 전환합니다 — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① OHB × SES (SpaceNews, 8/31)</strong> — 유럽 위성 제조사 OHB가 SES로부터 약 10억 유로 규모 계약을 따내 EU의 안보 위성통신망 IRIS²에 들어갈 중궤도 위성 플랫폼 18기를 개발·제작합니다. 8월 6일 사업 이행 단계 출범 이후 나온 컨소시엄 첫 대형 계약으로, SES·유텔샛·히스파샛으로 구성된 스페이스라이즈가 중궤도 구간을 맡습니다. 각 위성은 발사 질량 약 2.6톤이며, IRIS²는 저궤도·중궤도를 합쳐 348기 규모로 2029년 첫 발사, 2030년 서비스 개시를 목표로 합니다. 궤도 데이터센터 자체는 아니지만, 유럽이 자립형 위성 인프라를 대량 제조 단계로 밀어 올리는 산업 기반 확충입니다.<br><br><strong>② PLD 스페이스 (SpaceNews, 9/1)</strong> — 스페인 발사기업 PLD 스페이스가 1억 2500만 달러를 추가로 조달해 누적 조달액이 5억 5000만 달러를 넘겼습니다. 회사는 소형 발사체 미우라 파이브의 첫 궤도 발사를 앞두고 있습니다. 유럽은 그동안 자체 발사 수단 부족으로 위성 배치를 미국 로켓에 의존해 왔는데, 이런 민간 발사 역량 확충은 향후 어떤 궤도 컴퓨팅 구상이든 올려 보낼 저비용·자립 발사라는 전제 조건을 다지는 움직임입니다.<br><br><strong>③ 노스우드 스페이스 (SpaceNews, 8/31)</strong> — 지상국 스타트업 노스우드 스페이스가 캘리포니아 토런스에 18만 5000제곱피트 신사옥과 공장을 열고 제조 면적을 2만 5000에서 13만 5000제곱피트로 다섯 배 이상 키웠습니다. 위상배열 포털 라인은 완전 가동 시 매달 지상국 한 곳 분량 이상의 패널을, 포물면 프리즘 라인은 주당 안테나 4기를 뽑아냅니다. 궤도에서 연산한 대용량 데이터를 지상으로 내리는 다운링크 처리량은 궤도 데이터센터의 실질 병목인데, 지상 세그먼트 양산은 바로 그 병목을 넓히는 인프라 투자입니다. 이번 주 신호는 궤도 위 새 연산 탑재체가 아니라 그것을 떠받치는 <strong>산업 기반 삼각축</strong> — 위성 제조(OHB)·발사(PLD)·지상 다운링크(노스우드) — 에 몰려 있습니다. 특히 유럽은 IRIS² 중궤도 제조와 미우라 파이브 발사로 자립형 위성·발사 역량을 동시에 키우지만, 스타클라우드 2억 5000만 달러 조달(8/24)·스페이스X 루이지애나 발사 도시 1000억 달러(8/27)·아이잭먼 NASA 청장의 궤도 이전 제안(8/28)으로 이어진 미국의 궤도 컴퓨팅 자본·정책 공세에는 아직 대응 카드가 없습니다. 궤도 데이터센터가 규모의 경제에 도달하려면 위성·발사·지상국 세 다리가 동시에 굵어져야 하는데, 오늘 뉴스는 그 세 다리 모두가 공사 중이라는 것을 보여 줍니다 — 다만 유럽은 인프라 근육을, 미국은 연산 그 자체를 키우고 있다는 온도 차가 뚜렷합니다.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/ohb-wins-contract-to-build-iris%c2%b2-medium-earth-orbit-satellites/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://www.satellitetoday.com/connectivity/2026/08/31/ohb-to-build-18-meo-satellites-for-iris%c2%b2-in-nearly-e1b-award/",
+        "label": "satellitetoday.com"
+      },
+      {
+        "url": "https://spacenews.com/pld-space-raises-an-additional-125-million/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/satellite-ground-services-startup-northwood-space-adds-factory-capacity/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://www.northwoodspace.io/blog/northwood-raises-100m-series-b",
+        "label": "northwoodspace.io"
+      }
+    ],
+    "video": {
+      "id": "GKT47hI7BCU",
+      "title": "OHB, IRIS² 위성 18기 수주 — 유럽 자립 위성망 시동"
+    }
+  }
+}
