@@ -1,4 +1,29 @@
 {
+  "2026-09-07": {
+    "date": "2026-09-07",
+    "headlines": [
+      {
+        "date": "2026-09-05",
+        "html": "<a href=\"https://spacenews.com/isar-aerospace-reaches-orbit-on-second-spectrum-launch/\" target=\"_blank\" rel=\"noopener\"><strong>Europe reaches orbit under its own power</strong>: Germany&#x27;s Isar Aerospace launched its Spectrum rocket from Norway&#x27;s Andøya Spaceport and reached orbit. It marks the first time a commercial launch vehicle has attained orbit from continental European soil, delivering a first breakthrough on domestic launch access — the biggest bottleneck for European orbital compute — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Isar Aerospace Spectrum Flight 2 (SpaceNews, 9/5)</strong> — German startup Isar Aerospace launched the second Spectrum rocket from Norway&#x27;s Andøya Spaceport on September 5 and successfully reached orbit. It is the first time a privately built launch vehicle lifting off from continental Europe has attained orbit. Spectrum is a small-lift rocket standing 28 meters tall with 10 engines, capable of placing up to 1 metric ton into low Earth orbit; this &quot;Onward and Upward&quot; mission carried six commercial and educational cubesats plus a technology-demonstration payload, and was supported by ESA&#x27;s Boost! program. The maiden flight in March 2025 lost attitude control just 30 seconds after liftoff and crashed into the sea off Andøya, making this second attempt&#x27;s orbital success a watershed for European NewSpace. Isar raised €270 million in a Series D that included participants such as Porsche SE, earning a valuation of roughly €2 billion and making it the most heavily capitalized independent launch company in the EU. Isar&#x27;s orbital success is more than one launch company&#x27;s milestone — it fills in the missing half of the European orbital compute debate. When SpaceNews warned on August 5 that &quot;Europe&#x27;s orbital compute gap is widening,&quot; and when ESA signed its first three European Launcher Challenge contracts on August 29, the underlying concern was that for Europe to place space-data-center-class infrastructure in orbit, it ultimately needs domestic launch capability that does not depend on American rockets. A small-lift rocket reaching orbit is not itself a space data center — but it is the prerequisite infrastructure that determines whether Europe can sovereignly deploy orbital compute assets in the future. While the United States forges ahead with Starcloud&#x27;s fundraising and SpaceX&#x27;s large-scale launch infrastructure, Europe has only now arrived at the starting line of independent orbital access. It is a signal that the orbital data center race — over capital, policy, and compute — ultimately comes down to a logistics question: who can carry it to orbit.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/isar-aerospace-reaches-orbit-on-second-spectrum-launch/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/think-tank-warns-europes-orbital-compute-gap-is-widening/",
+        "label": "SpaceNews"
+      }
+    ],
+    "video": {
+      "id": "Vf2GWvOMyfg",
+      "title": "이자르 에어로스페이스, 유럽 최초 민간 궤도 발사 성공",
+      "ko_audio": true
+    }
+  },
   "2026-09-02": {
     "date": "2026-09-02",
     "headlines": [
