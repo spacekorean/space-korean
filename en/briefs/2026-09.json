@@ -1,4 +1,25 @@
 {
+  "2026-09-08": {
+    "date": "2026-09-08",
+    "headlines": [
+      {
+        "date": "2026-09-06",
+        "html": "<a href=\"https://spacenews.com/pixxel-raises-100-million-to-expand-satellite-production-across-india-and-us/\" target=\"_blank\" rel=\"noopener\"><strong>Pixxel raises $100 million — the largest-ever investment in an Indian space company</strong>: Pixxel, an Indian hyperspectral satellite startup, has secured $100 million in a Series C round and is expanding satellite mass-production lines in both India and the United States. It isn&#x27;t an orbital data center itself, but it signals that the manufacturing base for churning out satellites at scale is spreading to a new country — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Pixxel Series C, $100 million (SpaceNews, 9/6)</strong> — Pixxel, a hyperspectral satellite startup based in Bengaluru, India and Los Angeles, USA, has raised $100 million in a Series C round. The round was led by Singapore&#x27;s sovereign wealth fund Temasek and UK space-focused investor Seraphim, with existing investors Radical Ventures and GrowX joined by new backers 360 ONE Asset and IMM Investment, bringing cumulative funding to $195 million — the largest amount ever for an Indian space company. Pixxel already operates six of the world&#x27;s highest-resolution commercial hyperspectral satellites (Firefly), and it will put this capital toward expanding its Honeybee satellite network, advancing its Aurora analytics software, scaling up manufacturing facilities in India and the US, and leading the first public-private 12-satellite Earth-observation constellation being driven by India&#x27;s space agency IN-SPACe. Worth flagging — Pixxel is an Earth-observation (EO) company, not an orbital data center. But the premise of space data centers rests on an industrial base that can mass-produce satellites cheaply, and the spread of that manufacturing capacity beyond the US, China, and Europe into India is an event that widens the supply-chain and competitive landscape of the orbital-compute era. Set against the flow of the past two weeks, today&#x27;s news finds its place clearly. On the US side, capital (Starcloud&#x27;s $250 million), launch infrastructure (SpaceX&#x27;s $100 billion Louisiana site), and the government agenda (NASA Administrator Isaacman&#x27;s proposal to move compute into orbit) have been filling out the demand and policy axes of orbital compute, while Europe has been building manufacturing and launch muscle through IRIS² satellite mass production and its own launch vehicles. Pixxel adds a third dimension to this picture — a phase in which satellite manufacturing itself is no longer the preserve of a few great powers but is diffusing to emerging spacefaring nations like India. Given that orbital data centers ultimately mean constellations numbering in the tens of thousands, which country can produce satellites cheaply and quickly is the foundation of this competition — and today&#x27;s news signals that the foundation has widened.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/pixxel-raises-100-million-to-expand-satellite-production-across-india-and-us/",
+        "label": "SpaceNews"
+      }
+    ],
+    "video": {
+      "id": "MBMY2sdhRA8",
+      "title": "픽셀, 1억 달러 조달 — 인도 우주기업 사상 최대",
+      "ko_audio": true
+    }
+  },
   "2026-09-07": {
     "date": "2026-09-07",
     "headlines": [
