@@ -1,4 +1,33 @@
 {
+  "2026-09-09": {
+    "date": "2026-09-09",
+    "headlines": [
+      {
+        "date": "2026-09-08",
+        "html": "<a href=\"https://spacenews.com/stoke-space-raises-1-billion-and-unveils-larger-launch-vehicle/\" target=\"_blank\" rel=\"noopener\"><strong>Stoke Space raises $1 billion, unveils larger fully reusable rocket</strong>: A $1 billion Series E brings its cumulative total to $2.3 billion. Alongside the fully reusable Nova, which is nearing its first orbital launch, the company announced the larger Nova Block 2, capable of lifting 15 tons to LEO — a step-change in launch capacity that carries more satellites at once — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-09-08",
+        "html": "<a href=\"https://spacenews.com/the-exploration-company-raises-450-million/\" target=\"_blank\" rel=\"noopener\"><strong>The Exploration Company raises $450 million — the largest Series C for a European space company</strong>: The funding accelerates development of the reusable Nyx cargo vehicle and the Storm engine. Co-led by Bessemer, Atomico and the Scale Up Europe Fund, it brings the cumulative total to roughly $680 million. A major inflow of European capital into orbital logistics and transport infrastructure — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Stoke Space (SpaceNews, 9/8)</strong> — Stoke Space, which is developing a fully reusable launch vehicle, raised roughly $1 billion in a Series E, bringing its cumulative funding to $2.3 billion. The round was co-led by Point72 Ventures and Spark Capital, with participation from Y Combinator, Woven Capital and others. The funds will go toward the debut of Nova — the fully reusable rocket nearing its first orbital launch (slated for 2027) — and toward expanding production and launch capacity. At the same time, the company unveiled the larger Nova Block 2, capable of lifting 15 tons to LEO, which clusters 14 Zenith engines — double the number on Pioneer — with the goal of carrying more satellites at once. Orbital data centers are ultimately a business that only works if large numbers of satellites can be launched cheaply and frequently, and fully reusable heavy-lift vehicles are the step-change in launch capacity that underpins those constellations. The launch vehicle itself is not a data center, but no orbital compute constellation is possible without this transport capability.<br><br><strong>② The Exploration Company (SpaceNews, 9/8)</strong> — The Exploration Company, a European firm developing the reusable Nyx cargo spacecraft, raised $450 million in a Series C. The largest Series C ever for a European space company, it was co-led by Bessemer Venture Partners, Atomico and EQT&#x27;s Scale Up Europe Fund, with existing investors including Balderton, Plural and Cherry participating. Its cumulative funding since founding stands at roughly $680 million. The money will go toward Nyx — which will ferry cargo to commercial space stations in low Earth orbit — the reusable high-thrust Storm engine, and preliminary work on a future heavy-lift vehicle. This is not an orbital data center itself, but rather an investment in the logistics and transport layer that orbital infrastructure rides on — building up Europe&#x27;s self-sufficient transport muscle for carrying people, cargo and equipment to orbit. On the same day, two of the year&#x27;s largest orbital-infrastructure investments were announced side by side: America&#x27;s fully reusable heavy-lift vehicle (Stoke) and Europe&#x27;s reusable cargo and transport (The Exploration Company). It is a signal that capital is flowing not into orbital compute itself, but into the &quot;plumbing&quot; beneath it — launch and transport capacity. If last week&#x27;s flows split across compute capital (Starcloud&#x27;s $250 million on 8/24), launch infrastructure (SpaceX&#x27;s Louisiana on 8/27), government policy (Isaacman on 8/28) and European manufacturing (IRIS² on 9/2), this week&#x27;s axis is &quot;heavy, reusable transport capability,&quot; with the U.S. and Europe bulking up simultaneously. That said, it bears emphasizing that both deals are not orbital data centers but the access and transport layer that makes them possible. Meanwhile, the roadmap for a Korean orbital data center (K-Space DC) is expected to be approved at September&#x27;s ministerial meeting on science and technology, but it has not yet been finalized; if approved, it will be covered as a separate key story.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/stoke-space-raises-1-billion-and-unveils-larger-launch-vehicle/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/the-exploration-company-raises-450-million/",
+        "label": "SpaceNews"
+      }
+    ],
+    "video": {
+      "id": "T9jyON3f4Kc",
+      "title": "스토크 스페이스 십억 달러·노바 블록2 공개 — 유럽도 닉스에 $450M",
+      "ko_audio": true
+    }
+  },
   "2026-09-08": {
     "date": "2026-09-08",
     "headlines": [
