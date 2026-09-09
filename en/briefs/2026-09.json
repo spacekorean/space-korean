@@ -1,4 +1,37 @@
 {
+  "2026-09-10": {
+    "date": "2026-09-10",
+    "headlines": [
+      {
+        "date": "2026-09-09",
+        "html": "<a href=\"https://www.satellitetoday.com/connectivity/2026/09/09/new-eclipse-satellite-platforms-target-d2d-broadband-and-computing/\" target=\"_blank\" rel=\"noopener\"><strong>Eclipse Space unveils &quot;SurgeSat,&quot; a satellite built for orbital data centers</strong>: A satellite-platform startup founded by former SpaceX engineers announced a 100 kW-class compute satellite platform and a solar partnership with Gama — (SpaceNews / Business Wire)</a>"
+      },
+      {
+        "date": "2026-09-08",
+        "html": "<a href=\"https://spacenews.com/fcc-to-draw-line-under-constellation-environmental-review-exemption/\" target=\"_blank\" rel=\"noopener\"><strong>FCC moves to formalize exemption of constellations from environmental review</strong>: With applications for more than one million orbital data center satellites pouring in, the agency will enshrine in rule its longstanding practice of excluding satellite constellations from environmental review — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Eclipse Space (SpaceNews / Business Wire, 9/9)</strong> — Eclipse Space, a satellite-manufacturing startup founded by former SpaceX engineers, emerged from stealth to unveil three satellite platforms. CitraSat targets direct-to-device (D2D) service that connects to handsets without a terminal (S-band phased array, 6 kW peak); SliceSat targets high-speed broadband (Ku-band, 8 kW); and the flagship SurgeSat is built for large-scale AI and orbital compute, pairing dual solar arrays rated at 100 kW peak power with a 400-square-meter radiator to dump heat. The model is distinctive in that customers own and operate their own constellations, and the company will co-develop a power system scalable beyond 100 kW with the solar firm Gama. It is a productization aimed squarely at power and heat rejection — the biggest bottlenecks for orbital data centers.<br><br><strong>② FCC (SpaceNews, 9/8)</strong> — The U.S. Federal Communications Commission plans to formalize as rule its longstanding practice of exempting satellite constellations from environmental review. The decision comes as applications for more than one million orbital data center satellites flood in at an unprecedented pace, with SpaceX&#x27;s orbital data center satellite concept frequently cited as a leading example. The move runs directly counter to a petition filed this past July by environmental groups including Earthjustice, which demanded a programmatic environmental impact statement (PEIS). For ODC constellations facing mass launch and deployment, it amounts to a regulatory green light that removes uncertainty from the licensing process. The two developments show that orbital data centers have moved past the &quot;concept&quot; stage into a phase where &quot;products and policy&quot; are being put in place together. On one side, newcomer manufacturers like Eclipse are diversifying the supply side by offering 100 kW-class dedicated compute satellites as catalog products; on the other, regulators are moving to remove the environmental-review uncertainty that had been an obstacle to mass deployment. The physical bottlenecks of power and heat rejection and the institutional bottlenecks of orbital congestion and the environment are being addressed at the same time. The United States is pushing the proliferation of private platforms and regulatory streamlining in parallel, while South Korea remains at the stage of trying to finalize its K-Space Data Center roadmap through a September resolution of the science and technology ministers&#x27; meeting — a gap in pace that is becoming apparent.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/eclipse-space-unveils-three-satellite-platforms-and-gama-power-partnership/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://www.satellitetoday.com/connectivity/2026/09/09/new-eclipse-satellite-platforms-target-d2d-broadband-and-computing/",
+        "label": "satellitetoday.com"
+      },
+      {
+        "url": "https://spacenews.com/fcc-to-draw-line-under-constellation-environmental-review-exemption/",
+        "label": "SpaceNews"
+      }
+    ],
+    "video": {
+      "id": "NbPoztBMEy0",
+      "title": "이클립스 스페이스, 100kW 궤도 AI 위성 '서지샛' 공개",
+      "ko_audio": true
+    }
+  },
   "2026-09-09": {
     "date": "2026-09-09",
     "headlines": [
