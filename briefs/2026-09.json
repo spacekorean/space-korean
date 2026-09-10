@@ -1,4 +1,40 @@
 {
+  "2026-09-11": {
+    "date": "2026-09-11",
+    "headlines": [
+      {
+        "date": "2026-09-10",
+        "html": "<a href=\"https://spacenews.com/consortium-announces-plans-for-billion-dollar-ai-enabled-satellite-imaging-constellation/\" target=\"_blank\" rel=\"noopener\"><strong>궤도 위 연산, 10억 달러 규모로</strong>: 로프트 오비탈과 아부다비 마를란 스페이스가 미스트랄 AI를 태운 오십 기 위성 컨스텔레이션에 10억 달러를 투입해, 이미지를 지상으로 내리지 않고 궤도에서 직접 분석합니다 — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-09-10",
+        "html": "<a href=\"https://spacenews.com/navigation-startup-trustpoint-orders-40-satellites-from-endurosat/\" target=\"_blank\" rel=\"noopener\"><strong>트러스트포인트, 위성 사십 기 양산 발주</strong>: LEO 항법 스타트업 트러스트포인트가 엔듀로샛 US에 C-밴드 항법 위성 사십 기 제조를 맡기며 시연 단계에서 대량 배치로 넘어갑니다 — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① 로프트 오비탈 × 마를란 스페이스 × 미스트랄 (SpaceNews, 9/10)</strong> — 아부다비 로열 그룹이 10억 달러를 대며, 로프트 오비탈과 마를란 스페이스가 AI 위성 컨스텔레이션 알테어를 열 기에서 오십 기로 확장합니다. 핵심은 궤도 위 연산입니다. 원본 이미지를 지상국으로 내려받아 처리하는 대신, 프랑스 미스트랄의 AI 모델을 위성에 실어 궤도에서 곧바로 분석하고 수 초 안에 경보를 내보냅니다. 해양 감시, 산불·재난 탐지, 항만·주요 시설 보안이 대상입니다. 위성은 아부다비 오빗웍스가 제작하며 첫 발사는 시월, 지난 화요일 파리 국제우주정상회의에서 공개됐습니다.<br><br><strong>② 트러스트포인트 × 엔듀로샛 US (SpaceNews, 9/10)</strong> — 저궤도 위치·항법·시각(PNT) 사업자 트러스트포인트가 엔듀로샛 US에 상용 위성 사십 기 제조를 발주했습니다. C-밴드 GNSS 컨스텔레이션을 세 차례 양산 트랜치로 나눠 만들며, 첫 발사는 2027년, 완전 가동은 앞으로 이십사~삼십 개월 안이 목표입니다. 2023년 기술시연 두 기와 2025년 풀스택 시연 한 기를 거쳐, 이번 발주로 시연에서 상용 운영으로 졸업하는 셈입니다. 두 소식은 궤도 컴퓨트 경쟁이 스타클라우드·스페이스X 같은 전용 데이터센터 위성 밖에서도 진행되고 있음을 보여줍니다. 로프트 오비탈은 지구관측 위성에 AI 추론을 얹어 &quot;궤도에서 처리하고 결론만 내려보낸다&quot;는 엣지 연산 모델을 10억 달러 규모로 밀어붙이는데, 이는 데이터센터 위성만큼 노골적이진 않아도 연산을 우주로 올린다는 같은 논리 위에 서 있습니다. 트러스트포인트의 사십 기 양산 계약은 그 아래층 — 어떤 궤도 컴퓨트 컨스텔레이션이든 전제가 되는 위성 대량 제조 능력 — 이 미국·유럽·중동으로 넓어지고 있음을 보여줍니다. 자본은 아부다비, 연산 모델은 프랑스, 제조 라인은 불가리아계 미국 기업으로 흩어진 이번 딜은 궤도 인프라의 공급망이 이미 다국적으로 재편되고 있다는 신호입니다.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/consortium-announces-plans-for-billion-dollar-ai-enabled-satellite-imaging-constellation/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://www.satellitetoday.com/earth-observation/2026/09/09/loft-orbital-marlan-space-to-build-ai-constellation-to-serve-france-europe-and-uae/",
+        "label": "satellitetoday.com"
+      },
+      {
+        "url": "https://spacenews.com/navigation-startup-trustpoint-orders-40-satellites-from-endurosat/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://satnews.com/2026/09/10/trustpoint-contracts-endurosat-us-to-manufacture-40-satellites-for-c-band-pnt-constellation/",
+        "label": "satnews.com"
+      }
+    ],
+    "video": {
+      "id": "hoScIzHI8jw",
+      "title": "로프트 오비탈, 미스트랄 AI 위성 오십 기에 십억 달러 투자"
+    }
+  },
   "2026-09-10": {
     "date": "2026-09-10",
     "headlines": [

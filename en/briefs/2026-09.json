@@ -1,4 +1,41 @@
 {
+  "2026-09-11": {
+    "date": "2026-09-11",
+    "headlines": [
+      {
+        "date": "2026-09-10",
+        "html": "<a href=\"https://spacenews.com/consortium-announces-plans-for-billion-dollar-ai-enabled-satellite-imaging-constellation/\" target=\"_blank\" rel=\"noopener\"><strong>On-orbit compute goes billion-dollar</strong>: Loft Orbital and Abu Dhabi&#x27;s Marlan Space are investing $1 billion in a 50-satellite constellation carrying Mistral AI, analyzing imagery directly in orbit rather than downlinking it to the ground — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-09-10",
+        "html": "<a href=\"https://spacenews.com/navigation-startup-trustpoint-orders-40-satellites-from-endurosat/\" target=\"_blank\" rel=\"noopener\"><strong>TrustPoint orders 40 satellites into production</strong>: LEO navigation startup TrustPoint has tapped EnduroSat US to build 40 C-band navigation satellites, moving from the demonstration phase to mass deployment — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Loft Orbital × Marlan Space × Mistral (SpaceNews, 9/10)</strong> — With Abu Dhabi&#x27;s Royal Group putting up $1 billion, Loft Orbital and Marlan Space are expanding their AI satellite constellation, Altair, from ten to 50 satellites. The core is on-orbit compute. Instead of downlinking raw imagery to ground stations for processing, France&#x27;s Mistral AI models ride aboard the satellites, analyzing directly in orbit and issuing alerts within seconds. Targets include maritime surveillance, wildfire and disaster detection, and security for ports and critical facilities. The satellites will be built by Abu Dhabi&#x27;s Orbit Works, with the first launch set for October; the plan was unveiled last Tuesday at the World Space Business Week summit in Paris.<br><br><strong>② TrustPoint × EnduroSat US (SpaceNews, 9/10)</strong> — Low-Earth-orbit positioning, navigation and timing (PNT) operator TrustPoint has ordered 40 commercial satellites from EnduroSat US. The C-band GNSS constellation will be built across three production tranches, with the first launch targeted for 2027 and full operation aimed for within the next 24 to 36 months. Following two technology-demonstration satellites in 2023 and a single full-stack demonstrator in 2025, this order marks the graduation from demonstration to commercial operations. The two developments show that the orbital-compute race is advancing beyond dedicated data-center satellites like Starcloud and SpaceX. Loft Orbital is pushing a $1 billion edge-computing model — layering AI inference onto Earth-observation satellites to &quot;process in orbit and downlink only the conclusions&quot; — and while it is less overt than data-center satellites, it rests on the same logic of moving computation into space. TrustPoint&#x27;s 40-satellite production contract reveals the layer beneath it: the satellite mass-manufacturing capacity that any orbital-compute constellation presupposes is spreading across the US, Europe, and the Middle East. With capital from Abu Dhabi, the compute model from France, and the manufacturing line at a Bulgarian-founded US company, this deal signals that the supply chain for orbital infrastructure is already being reshaped along multinational lines.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/consortium-announces-plans-for-billion-dollar-ai-enabled-satellite-imaging-constellation/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://www.satellitetoday.com/earth-observation/2026/09/09/loft-orbital-marlan-space-to-build-ai-constellation-to-serve-france-europe-and-uae/",
+        "label": "satellitetoday.com"
+      },
+      {
+        "url": "https://spacenews.com/navigation-startup-trustpoint-orders-40-satellites-from-endurosat/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://satnews.com/2026/09/10/trustpoint-contracts-endurosat-us-to-manufacture-40-satellites-for-c-band-pnt-constellation/",
+        "label": "satnews.com"
+      }
+    ],
+    "video": {
+      "id": "hoScIzHI8jw",
+      "title": "로프트 오비탈, 미스트랄 AI 위성 오십 기에 십억 달러 투자",
+      "ko_audio": true
+    }
+  },
   "2026-09-10": {
     "date": "2026-09-10",
     "headlines": [

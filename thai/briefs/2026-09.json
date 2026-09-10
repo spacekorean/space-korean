@@ -1,4 +1,41 @@
 {
+  "2026-09-11": {
+    "date": "2026-09-11",
+    "headlines": [
+      {
+        "date": "2026-09-10",
+        "html": "<a href=\"https://spacenews.com/consortium-announces-plans-for-billion-dollar-ai-enabled-satellite-imaging-constellation/\" target=\"_blank\" rel=\"noopener\"><strong>การประมวลผลในวงโคจร ก้าวสู่ระดับพันล้านดอลลาร์</strong>: Loft Orbital และ Marlan Space แห่งอาบูดาบี ทุ่มเงิน 1 พันล้านดอลลาร์ให้กับกลุ่มดาวเทียม (constellation) 50 ดวงที่ติดตั้ง AI ของ Mistral เพื่อวิเคราะห์ภาพในวงโคจรโดยตรงโดยไม่ต้องส่งข้อมูลลงมายังพื้นดิน — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-09-10",
+        "html": "<a href=\"https://spacenews.com/navigation-startup-trustpoint-orders-40-satellites-from-endurosat/\" target=\"_blank\" rel=\"noopener\"><strong>Trustpoint สั่งผลิตดาวเทียม 40 ดวงเข้าสายการผลิต</strong>: Trustpoint สตาร์ทอัพด้านการนำร่องในวงโคจรต่ำ (LEO) มอบหมายให้ EnduroSat US ผลิตดาวเทียมนำร่องย่านความถี่ C-band จำนวน 40 ดวง ก้าวจากขั้นสาธิตสู่การติดตั้งจริงในปริมาณมาก — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Loft Orbital × Marlan Space × Mistral (SpaceNews, 9/10)</strong> — Royal Group แห่งอาบูดาบีลงทุน 1 พันล้านดอลลาร์ ให้ Loft Orbital และ Marlan Space ขยายกลุ่มดาวเทียม AI ชื่อ Altair จาก 10 ดวงเป็น 50 ดวง หัวใจสำคัญคือการประมวลผลในวงโคจร แทนที่จะดาวน์โหลดภาพต้นฉบับลงมายังสถานีภาคพื้นดินเพื่อประมวลผล จะนำโมเดล AI ของ Mistral จากฝรั่งเศสขึ้นไปติดตั้งบนดาวเทียมเพื่อวิเคราะห์ในวงโคจรทันทีและส่งการแจ้งเตือนภายในไม่กี่วินาที เป้าหมายครอบคลุมการเฝ้าระวังทางทะเล การตรวจจับไฟป่าและภัยพิบัติ ตลอดจนการรักษาความปลอดภัยท่าเรือและสิ่งอำนวยความสะดวกสำคัญ ดาวเทียมผลิตโดย OrbitWorks แห่งอาบูดาบี โดยการปล่อยครั้งแรกกำหนดในเดือนตุลาคม และเปิดตัวเมื่อวันอังคารที่ผ่านมาในการประชุมสุดยอดอวกาศนานาชาติที่กรุงปารีส<br><br><strong>② Trustpoint × EnduroSat US (SpaceNews, 9/10)</strong> — Trustpoint ผู้ให้บริการด้านตำแหน่ง การนำร่อง และเวลา (PNT) ในวงโคจรต่ำ สั่งผลิตดาวเทียมเชิงพาณิชย์ 40 ดวงจาก EnduroSat US โดยจะผลิตกลุ่มดาวเทียม GNSS ย่าน C-band แบ่งออกเป็น 3 รอบการผลิต การปล่อยครั้งแรกกำหนดในปี 2027 และตั้งเป้าให้บริการเต็มรูปแบบภายใน 24 ถึง 30 เดือนข้างหน้า หลังจากผ่านการสาธิตเทคโนโลยี 2 ดวงในปี 2023 และการสาธิตแบบครบชุด 1 ดวงในปี 2025 การสั่งผลิตครั้งนี้ถือเป็นการก้าวจากขั้นสาธิตสู่การดำเนินงานเชิงพาณิชย์ ข่าวทั้งสองแสดงให้เห็นว่าการแข่งขันด้านการประมวลผลในวงโคจรกำลังดำเนินไปนอกเหนือจากดาวเทียมศูนย์ข้อมูลเฉพาะทางอย่าง Starcloud หรือ SpaceX เช่นกัน Loft Orbital ผลักดันโมเดลการประมวลผลแบบเอดจ์ที่ &quot;ประมวลผลในวงโคจรแล้วส่งลงมาเฉพาะข้อสรุป&quot; ด้วยการนำการอนุมานของ AI ขึ้นไปไว้บนดาวเทียมสำรวจโลกในระดับเงินลงทุน 1 พันล้านดอลลาร์ ซึ่งแม้จะไม่โจ่งแจ้งเท่าดาวเทียมศูนย์ข้อมูล แต่ก็ตั้งอยู่บนตรรกะเดียวกันคือการยกการประมวลผลขึ้นสู่อวกาศ ส่วนสัญญาผลิต 40 ดวงของ Trustpoint สะท้อนถึงชั้นที่อยู่ล่างลงไป — ขีดความสามารถในการผลิตดาวเทียมจำนวนมากซึ่งเป็นเงื่อนไขเบื้องต้นของกลุ่มดาวเทียมประมวลผลในวงโคจรทุกรูปแบบ — กำลังขยายไปสู่สหรัฐฯ ยุโรป และตะวันออกกลาง ดีลครั้งนี้ที่กระจายทุนไว้ที่อาบูดาบี โมเดลประมวลผลที่ฝรั่งเศส และสายการผลิตที่บริษัทสัญชาติอเมริกันเชื้อสายบัลแกเรีย เป็นสัญญาณว่าห่วงโซ่อุปทานของโครงสร้างพื้นฐานในวงโคจรกำลังถูกจัดระเบียบใหม่ในเชิงข้ามชาติแล้ว",
+    "sources": [
+      {
+        "url": "https://spacenews.com/consortium-announces-plans-for-billion-dollar-ai-enabled-satellite-imaging-constellation/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://www.satellitetoday.com/earth-observation/2026/09/09/loft-orbital-marlan-space-to-build-ai-constellation-to-serve-france-europe-and-uae/",
+        "label": "satellitetoday.com"
+      },
+      {
+        "url": "https://spacenews.com/navigation-startup-trustpoint-orders-40-satellites-from-endurosat/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://satnews.com/2026/09/10/trustpoint-contracts-endurosat-us-to-manufacture-40-satellites-for-c-band-pnt-constellation/",
+        "label": "satnews.com"
+      }
+    ],
+    "video": {
+      "id": "hoScIzHI8jw",
+      "title": "로프트 오비탈, 미스트랄 AI 위성 오십 기에 십억 달러 투자",
+      "ko_audio": true
+    }
+  },
   "2026-09-10": {
     "date": "2026-09-10",
     "headlines": [
