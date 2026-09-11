@@ -1,4 +1,41 @@
 {
+  "2026-09-12": {
+    "date": "2026-09-12",
+    "headlines": [
+      {
+        "date": "2026-09-11",
+        "html": "<a href=\"https://spacenews.com/spacex-confirms-plans-to-launch-starlink-satellites-on-next-starship-mission/\" target=\"_blank\" rel=\"noopener\"><strong>SpaceX to fly first orbital payload on next Starship</strong>: A SpaceX executive confirmed at World Satellite Business Week in Paris that the next Starship flight will carry the next-generation Starlink V3 as its first orbital payload, framing it as the foundation for building out direct-to-device and orbital data center systems — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-09-11",
+        "html": "<a href=\"https://spacenews.com/china-details-satellite-network-buildout-in-new-telecom-five-year-plan/\" target=\"_blank\" rel=\"noopener\"><strong>China names satellite internet a strategic industry in five-year telecom plan</strong>: Chinese regulators designated satellite internet as a strategic emerging industry in their 15th Five-Year information and communications roadmap through 2030, treating space-based data centers as related infrastructure — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-09-10",
+        "html": "<a href=\"https://spacenews.com/amazon-leo-planning-to-begin-initial-services-by-end-of-the-year/\" target=\"_blank\" rel=\"noopener\"><strong>Amazon Leo plans to begin initial commercial service by year-end</strong>: Amazon said it plans to launch limited commercial service of its low-Earth-orbit constellation Amazon Leo late this year despite launch-vehicle delays — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① SpaceX (SpaceNews, 9/11)</strong> — At World Satellite Business Week in Paris, a SpaceX executive confirmed that the next Starship flight (Flight 14, slated for September 15) will carry the company&#x27;s first-ever orbital payload. The payload is the next-generation Starlink V3, featuring up to 1 Tbps of downlink per satellite and inter-satellite laser links. SpaceX framed this first orbital launch as the starting point for developing direct-to-device and orbital data center systems, and set a target of deploying 60 V3 satellites per Starship launch going forward. Following the August unveiling of the Starmind AI1 design, this now fixes the actual debut schedule for the launch vehicle that will carry those satellites.<br><br><strong>② China (SpaceNews, 9/11)</strong> — China&#x27;s Ministry of Industry and Information Technology released its 15th Five-Year (2026-2030) plan for the information and communications industry, designating satellite internet a strategic emerging industry; according to SpaceNews, the plan also treats space-based data centers as related infrastructure. The state-level constellation Guowang aims to deploy 310 satellites in 2026, 900 in 2027, and 3,600 per year from 2028, and is under pressure to place 10% of its planned volume in orbit by year-end to secure ITU spectrum. It marks a case of a national industrial strategy document addressing orbital compute head-on.<br><br><strong>③ Amazon (SpaceNews, 9/10)</strong> — Amazon said it plans to begin limited commercial service of its low-Earth-orbit broadband constellation Amazon Leo late this year, even though deployment has been delayed by launch-vehicle problems. Approved for more than 3,200 satellites, the constellation is the largest Western challenger to Starlink. A broadband constellation is not itself an orbital data center, but its capacity for mass satellite deployment and ground-network integration matters as a supply base that could underpin orbital compute infrastructure down the road. The three developments show orbital compute moving beyond experiments by individual startups and being absorbed into the national strategy of a superpower and the roadmaps of dominant launch and satellite operators. If NASA Administrator Isaacman raised orbital relocation as part of America&#x27;s AI and power-security agenda in August, this week China wrote it into a five-year industrial plan — sharpening a symmetrical U.S.-China dynamic on the policy axis. At the same time, the mass constellation deployments by SpaceX and Amazon are the satellite and launch supply base that would actually implement that policy, showing policy, capital, and infrastructure aligning in the same direction.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/spacex-confirms-plans-to-launch-starlink-satellites-on-next-starship-mission/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/china-details-satellite-network-buildout-in-new-telecom-five-year-plan/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/amazon-leo-planning-to-begin-initial-services-by-end-of-the-year/",
+        "label": "SpaceNews"
+      }
+    ],
+    "video": {
+      "id": "jvSh66NedFQ",
+      "title": "스타십, 사상 첫 궤도 데이터센터 탑재체 싣는다",
+      "ko_audio": true
+    }
+  },
   "2026-09-11": {
     "date": "2026-09-11",
     "headlines": [

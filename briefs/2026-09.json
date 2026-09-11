@@ -1,4 +1,40 @@
 {
+  "2026-09-12": {
+    "date": "2026-09-12",
+    "headlines": [
+      {
+        "date": "2026-09-11",
+        "html": "<a href=\"https://spacenews.com/spacex-confirms-plans-to-launch-starlink-satellites-on-next-starship-mission/\" target=\"_blank\" rel=\"noopener\"><strong>스페이스X, 다음 스타십에 첫 궤도 탑재체</strong>: 스페이스X 임원이 파리 세계위성비즈니스위크에서 다음 스타십 비행이 첫 궤도 탑재체로 차세대 스타링크 V3를 싣고, 이를 다이렉트-투-디바이스·궤도 데이터센터 구축의 토대로 규정했다고 확인 — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-09-11",
+        "html": "<a href=\"https://spacenews.com/china-details-satellite-network-buildout-in-new-telecom-five-year-plan/\" target=\"_blank\" rel=\"noopener\"><strong>중국, 5개년 정보통신 계획에 위성인터넷 전략산업 지정</strong>: 중국 규제당국이 2030년까지의 15차 5개년 정보통신 로드맵에서 위성인터넷을 전략신흥산업으로 지정하고, 우주 기반 데이터센터를 관련 인프라로 다룸 — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-09-10",
+        "html": "<a href=\"https://spacenews.com/amazon-leo-planning-to-begin-initial-services-by-end-of-the-year/\" target=\"_blank\" rel=\"noopener\"><strong>아마존 리오, 연내 초기 상용 서비스 개시 계획</strong>: 아마존이 발사체 지연에도 저궤도 컨스텔레이션 아마존 리오의 제한적 상용 서비스를 올해 말 시작할 계획이라고 밝힘 — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① 스페이스X (SpaceNews, 9/11)</strong> — 파리 세계위성비즈니스위크에서 스페이스X 임원이 다음 스타십 비행(플라이트 14, 9월 15일 예정)이 회사 사상 첫 궤도 탑재체를 싣는다고 확인했습니다. 탑재체는 차세대 스타링크 V3로, 위성당 최대 1Tbps 다운링크와 위성 간 레이저 링크를 갖춥니다. 스페이스X는 이 첫 궤도 발사를 다이렉트-투-디바이스와 궤도 데이터센터 시스템 개발의 출발점으로 규정했고, 앞으로 스타십 1회 발사당 V3 60기 배치를 목표로 제시했습니다. 8월 스타마인드 AI1 설계 공개에 이어, 이번엔 그 위성을 실어 나를 발사체의 실제 데뷔 일정이 확정된 셈입니다.<br><br><strong>② 중국 (SpaceNews, 9/11)</strong> — 중국 산업정보화부가 15차 5개년(2026-2030) 정보통신 산업 발전계획을 공개하며 위성인터넷을 전략신흥산업으로 지정했고, SpaceNews에 따르면 이 계획은 우주 기반 데이터센터도 관련 인프라로 다룹니다. 국가급 컨스텔레이션 궈왕은 2026년 310기, 2027년 900기, 2028년부터 매년 3,600기 배치를 목표로 하며, ITU 주파수 확보를 위해 연말까지 계획 물량의 10%를 궤도에 올려야 하는 압박을 받고 있습니다. 한 국가의 산업전략 문서가 궤도 컴퓨트를 정면으로 담은 사례입니다.<br><br><strong>③ 아마존 (SpaceNews, 9/10)</strong> — 아마존은 발사체 문제로 배치가 늦어졌음에도 저궤도 광대역 컨스텔레이션 아마존 리오의 제한적 상용 서비스를 올해 말 개시할 계획이라고 밝혔습니다. 3,200기 이상 규모로 승인된 이 컨스텔레이션은 스타링크에 맞서는 서방권 최대 대항마입니다. 광대역 컨스텔레이션 자체는 궤도 데이터센터가 아니지만, 위성 대량 배치와 지상망 연동 역량은 향후 궤도 컴퓨트 인프라를 뒷받침할 공급 기반이라는 점에서 의미가 있습니다. 세 소식은 궤도 컴퓨트가 개별 스타트업의 실험을 넘어 초강대국의 국가전략과 지배적 발사·위성 사업자의 로드맵으로 편입되는 국면을 보여줍니다. 8월 아이잭먼 NASA청장이 궤도 이전을 미국의 AI·전력 안보 어젠다로 띄웠다면, 이번 주 중국은 이를 5개년 산업계획에 담아 정책 축에서 미·중 대칭 구도가 뚜렷해집니다. 동시에 스페이스X와 아마존의 컨스텔레이션 대량 배치는 그 정책을 실제로 구현할 위성·발사 공급 기반이며, 정책·자본·인프라가 같은 방향으로 정렬되고 있음을 보여줍니다.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/spacex-confirms-plans-to-launch-starlink-satellites-on-next-starship-mission/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/china-details-satellite-network-buildout-in-new-telecom-five-year-plan/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/amazon-leo-planning-to-begin-initial-services-by-end-of-the-year/",
+        "label": "SpaceNews"
+      }
+    ],
+    "video": {
+      "id": "jvSh66NedFQ",
+      "title": "스타십, 사상 첫 궤도 데이터센터 탑재체 싣는다"
+    }
+  },
   "2026-09-11": {
     "date": "2026-09-11",
     "headlines": [
