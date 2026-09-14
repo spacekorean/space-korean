@@ -1,4 +1,33 @@
 {
+  "2026-09-15": {
+    "date": "2026-09-15",
+    "headlines": [
+      {
+        "date": "2026-09-14",
+        "html": "<a href=\"https://spacenews.com/sophia-space-and-sli-agree-on-300-million-financing-for-10-satellite-edge-computing-constellation/\" target=\"_blank\" rel=\"noopener\"><strong>Sophia Space raises $300 million</strong>: Signed a financing framework with aerospace leasing specialist SLI for a 10-satellite orbital edge-computing constellation — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-09-14",
+        "html": "<a href=\"https://spacenews.com/u-s-air-force-awards-antares-161-million-to-advance-nuclear-reactor-for-space/\" target=\"_blank\" rel=\"noopener\"><strong>Antares wins $161 million from U.S. Air Force</strong>: A nuclear microreactor contract to develop and demonstrate a reactor for spacecraft — targeting the power wall of orbital compute — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Sophia Space × SLI (SpaceNews, 9/14)</strong> — Orbital edge-computing startup Sophia Space announced a $300 million financing framework with aerospace leasing specialist SLI on September 14 at World Space Business Week in Paris. The constellation consists of 10 satellites, each carrying independently operating compute tiles that process computation directly in space. What sets it apart is a financing structure involving an aerospace leasing firm rather than traditional venture capital — another instance of large-deal capital flowing toward orbital compute, following Starcloud, Eclipse&#x27;s Surge-Sat (9/10), and Loft Orbital (9/11). It shares the same logic: processing in orbit rather than sending data down to ground data centers.<br><br><strong>② Antares (SpaceNews, 9/14)</strong> — Nuclear microreactor startup Antares received a contract worth $161 million from the U.S. Air Force to develop and demonstrate a reactor for spacecraft. Though it is a power source originating from defense demand, the hardest bottleneck facing orbital data centers is precisely power and heat. Orbital compute scaling from 100 kilowatts to the megawatt class is difficult to sustain with solar panels and radiators alone, and space nuclear power is a leading candidate technology to raise that ceiling. The satellite itself is not a data center, but it is one pillar of the supply foundation that makes large-scale orbital compute actually possible. Building an orbital data center in practice requires two things to be solved at once — putting compute hardware into orbit, and securing the power to run it. On the same day at World Space Business Week in Paris, both axes drew capital side by side. Sophia Space pulled in $300 million on the compute side through a novel financing structure built around aerospace leasing, while Antares launched into a space reactor on the power side with U.S. Air Force funding. If Sophia extends September&#x27;s trend of private capital rushing into orbital compute, Antares shows how defense budgets are pushing up the power technology that is its precondition. As compute demand grows, the bottleneck ultimately shifts to power — and the two stories showcased that shift simultaneously on the same day.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/sophia-space-and-sli-agree-on-300-million-financing-for-10-satellite-edge-computing-constellation/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/u-s-air-force-awards-antares-161-million-to-advance-nuclear-reactor-for-space/",
+        "label": "SpaceNews"
+      }
+    ],
+    "video": {
+      "id": "MsBR9TkXV3Y",
+      "title": "소피아 스페이스 삼억 달러 위성 컴퓨팅, 미공군 우주 원자로 계약",
+      "ko_audio": true
+    }
+  },
   "2026-09-12": {
     "date": "2026-09-12",
     "headlines": [

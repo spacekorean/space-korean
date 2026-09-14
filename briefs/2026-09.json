@@ -1,4 +1,32 @@
 {
+  "2026-09-15": {
+    "date": "2026-09-15",
+    "headlines": [
+      {
+        "date": "2026-09-14",
+        "html": "<a href=\"https://spacenews.com/sophia-space-and-sli-agree-on-300-million-financing-for-10-satellite-edge-computing-constellation/\" target=\"_blank\" rel=\"noopener\"><strong>소피아 스페이스, 3억 달러 조달</strong>: 항공우주 리스 전문기업 SLI와 손잡고 위성 10기 규모 궤도 엣지컴퓨팅 컨스텔레이션에 자금 프레임워크 체결 — (SpaceNews)</a>"
+      },
+      {
+        "date": "2026-09-14",
+        "html": "<a href=\"https://spacenews.com/u-s-air-force-awards-antares-161-million-to-advance-nuclear-reactor-for-space/\" target=\"_blank\" rel=\"noopener\"><strong>안타레스, 미공군 1억 6100만 달러 수주</strong>: 우주선용 원자로를 개발·실증하는 원자력 마이크로원자로 계약 — 궤도 컴퓨트의 전력 벽을 겨냥 — (SpaceNews)</a>"
+      }
+    ],
+    "summary_html": "<strong>① 소피아 스페이스 × SLI (SpaceNews, 9/14)</strong> — 궤도 엣지컴퓨팅 스타트업 소피아 스페이스가 항공우주 리스 전문기업 SLI와 9월 14일 파리 세계우주비즈니스위크에서 3억 달러 자금 프레임워크를 발표했습니다. 위성 10기로 구성된 컨스텔레이션이며, 각 위성은 독립 동작하는 컴퓨트 타일을 실어 우주에서 직접 연산을 처리합니다. 전통적 벤처 투자가 아니라 항공우주 리스사가 참여한 금융 구조라는 점이 특징으로, 스타클라우드·이클립스 서지샛(9/10)·로프트오비탈(9/11)에 이어 궤도 위 연산을 겨냥한 자본이 또 한 번 대형 딜로 들어온 사례입니다. 지상 데이터센터로 내려보내지 않고 궤도에서 처리한다는 같은 논리를 공유합니다.<br><br><strong>② 안타레스 (SpaceNews, 9/14)</strong> — 원자력 마이크로원자로 스타트업 안타레스가 미공군으로부터 1억 6100만 달러 규모 계약을 받아 우주선용 원자로를 개발·실증합니다. 국방 수요에서 출발한 전력원이지만, 궤도 데이터센터가 부딪히는 가장 단단한 병목이 바로 전력과 열입니다. 100킬로와트에서 메가와트급으로 올라가는 궤도 연산은 태양광 패널과 방열판만으로는 감당이 어렵고, 우주 원자력은 그 상한을 끌어올리는 유력한 후보 기술입니다. 위성 자체가 데이터센터는 아니지만, 대규모 궤도 컴퓨트를 실제로 가능하게 만드는 공급 기반의 한 축입니다. 궤도 데이터센터를 실제로 세우려면 두 가지가 동시에 풀려야 합니다 — 연산 장치를 궤도에 띄우는 일과, 그 장치를 돌릴 전력을 확보하는 일입니다. 오늘 같은 날 파리 세계우주비즈니스위크에서 두 축이 나란히 자본을 받았습니다. 소피아 스페이스는 연산 쪽에서 항공우주 리스라는 새로운 금융 구조로 3억 달러를 끌어왔고, 안타레스는 전력 쪽에서 미공군 자금으로 우주 원자로에 착수했습니다. 소피아가 민간 자본이 궤도 컴퓨트로 몰리는 9월의 흐름을 잇는다면, 안타레스는 국방 예산이 그 전제 조건인 전력 기술을 밀어 올리는 대비를 보여줍니다. 연산 수요가 커질수록 병목은 결국 전력으로 이동하며, 두 소식은 그 이동을 같은 날 동시에 보여준 셈입니다.",
+    "sources": [
+      {
+        "url": "https://spacenews.com/sophia-space-and-sli-agree-on-300-million-financing-for-10-satellite-edge-computing-constellation/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/u-s-air-force-awards-antares-161-million-to-advance-nuclear-reactor-for-space/",
+        "label": "SpaceNews"
+      }
+    ],
+    "video": {
+      "id": "MsBR9TkXV3Y",
+      "title": "소피아 스페이스 삼억 달러 위성 컴퓨팅, 미공군 우주 원자로 계약"
+    }
+  },
   "2026-09-12": {
     "date": "2026-09-12",
     "headlines": [
