@@ -1,0 +1,55 @@
+{
+  "2026-10-03": {
+    "date": "2026-10-03",
+    "headlines": [
+      {
+        "date": "2026-10-01",
+        "html": "<a href=\"https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-prototype/\" target=\"_blank\" rel=\"noopener\"><strong>구글 선캐처, 첫 시험위성 궤도 진입</strong>: 플래닛과 개발한 시제품 발사와 교신을 확인했습니다 — (Google)</a>"
+      },
+      {
+        "date": "2026-09-30",
+        "html": "<a href=\"https://fireflyspace.com/news/firefly-aerospace-signs-starcloud-as-commercial-customer-demonstrating-data-center-capabilities-around-the-moon/\" target=\"_blank\" rel=\"noopener\"><strong>스타클라우드, 달 궤도 AI 실증 계약</strong>: 파이어플라이 엘리트라에 컴퓨팅 장비를 싣고 2028년 이후 임무를 추진합니다 — (Firefly Aerospace)</a>"
+      },
+      {
+        "date": "2026-09-30",
+        "html": "<a href=\"https://sophia.space/news/sophia-space-and-redwire-team-up-to-advance-orbital-data-center-infrastructure\" target=\"_blank\" rel=\"noopener\"><strong>소피아 스페이스·레드와이어, 궤도 데이터센터 협력</strong>: 연산 모듈에 전력·방열·전개 구조를 결합하는 MOU를 체결했습니다 — (Sophia Space)</a>"
+      },
+      {
+        "date": "2026-09-21",
+        "html": "<a href=\"https://www.beijing.gov.cn/fuwu/lqfw/gggs/202609/t20260921_4873224.html\" target=\"_blank\" rel=\"noopener\"><strong>[공백기 회고] 중국 차오즈쏸 1호 발사</strong>: 지구관측 데이터를 궤도에서 처리하는 AI 연산 위성이 9월 20일 우주로 향했습니다 — (베이징시·베이징일보)</a>"
+      },
+      {
+        "date": "2026-09-21",
+        "html": "<a href=\"https://www.advanced-television.com/2026/09/21/fcc-accepts-starlink-100000-satellite-plan-for-filing/\" target=\"_blank\" rel=\"noopener\"><strong>[공백기 회고] 스페이스 엑스 스타마인드 신청 접수 보도</strong>: AI 위성 10만 기 계획의 의견수렴 절차 진전으로, 발사 승인을 뜻하지는 않습니다 — (Advanced Television)</a>"
+      }
+    ],
+    "summary_html": "<strong>① 구글(Google, 10/1)</strong> — (2026-10-01) 구글은 플래닛과 만든 선캐처 시험위성이 트랜스포터 18 임무로 궤도에 진입했고 교신도 확인했다고 발표했습니다. 앞으로 TPU의 방사선·열환경 대응을 시험합니다. 상용 데이터센터 가동이나 궤도 AI 성능 입증은 아직 아닙니다.<br><br><strong>② 파이어플라이(Firefly Aerospace, 9/30)</strong> — (2026-09-30) 스타클라우드의 SC-1L을 엘리트라에 탑재하는 상업 계약을 발표했습니다. 솔럭스 영상 데이터를 달 궤도에서 AI로 처리할 계획입니다. 블루 고스트 3호 임무는 빨라도 2028년이며, 계약 금액과 연산 성능은 공개하지 않았습니다.<br><br><strong>③ 소피아 스페이스(Sophia Space, 9/30)</strong> — (2026-09-30) 소피아의 TILE 연산·태양광·복사 방열 모듈에 레드와이어의 전개 구조와 우주선 통합 역량을 결합합니다. 단기 실증과 장기 확장형 데이터센터를 함께 검토하는 MOU입니다. 정부 고객을 공동 공략할 계획이며 수주 확정은 아닙니다. <strong>④ 베이징시(베이징일보, 9/21)</strong> — (2026-09-21) 공백기에 놓친 실제 발사입니다. 차오즈쏸 1호가 9월 20일 리젠 1호에 실려 궤도에 진입했습니다. 원격탐사 데이터 처리와 AI 추론을 수행하고 중요 데이터만 내려보내도록 설계됐습니다. 처리시간을 수시간에서 수분으로 줄인다는 설명은 사업자 주장입니다. <strong>⑤ 스페이스 엑스(Advanced Television, 9/21)</strong> — (2026-09-21) 공백기 규제 소식입니다. 매체는 FCC가 9월 18일 스타마인드 AI 위성 10만 기 계획을 정식 신청으로 접수하고 의견수렴 절차에 올렸다고 보도했습니다. 심사에 필요한 서류가 갖춰졌다는 의미로, 구축 허가나 위성 발사 승인이 아닙니다. 이번 공백기에 확인되는 변화는 궤도 연산이 계획 설명에서 실제 하드웨어와 임무 계약으로 옮겨가고 있다는 점입니다. 구글과 중국 사업자는 우주에서 시험할 장비를 올렸고, 달 궤도까지 연산 수요를 연결하는 계약도 등장했습니다. 다만 발사 성공, 협력 양해각서, 규제 신청 접수는 서로 다른 단계입니다. 앞으로는 위성 수 계획보다 궤도에서 공개되는 연산 결과와 열관리 성능, 실제 고객의 사용 실적이 상용화 가능성을 가를 것으로 봅니다.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-prototype/",
+        "label": "blog.google"
+      },
+      {
+        "url": "https://fireflyspace.com/news/firefly-aerospace-signs-starcloud-as-commercial-customer-demonstrating-data-center-capabilities-around-the-moon/",
+        "label": "fireflyspace.com"
+      },
+      {
+        "url": "https://sophia.space/news/sophia-space-and-redwire-team-up-to-advance-orbital-data-center-infrastructure",
+        "label": "sophia.space"
+      },
+      {
+        "url": "https://www.beijing.gov.cn/fuwu/lqfw/gggs/202609/t20260921_4873224.html",
+        "label": "beijing.gov.cn"
+      },
+      {
+        "url": "https://www.advanced-television.com/2026/09/21/fcc-accepts-starlink-100000-satellite-plan-for-filing/",
+        "label": "advanced-television.com"
+      }
+    ],
+    "video": {
+      "id": "sNve3U5mJUw",
+      "title": "구글 선캐처 시험위성 궤도 진입…달 궤도 AI 실증 계약도"
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  }
+}
