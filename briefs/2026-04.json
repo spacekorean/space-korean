@@ -12,7 +12,7 @@
       },
       {
         "date": null,
-        "html": "<strong>플래닛(Planet) × 구글, Project Suncatcher</strong> — TPU 탐재 AI 위성 2027년 발사 예정"
+        "html": "<a href=\"https://www.planet.com/pulse/planet-to-build-and-operate-advanced-space-platform-for-google-s-project-suncatcher-moonshot/\" target=\"_blank\" rel=\"noopener\"><strong>플래닛(Planet) × 구글, Project Suncatcher</strong> — TPU 탐재 AI 위성 2027년 발사 예정</a>"
       },
       {
         "date": null,
@@ -26,15 +26,23 @@
     "summary_html": "4월 29일은 구도 데이터센터 경쟁이 본격적으로 공식화된 날입니다.",
     "sources": [
       {
-        "url": "https://spacenews.com/spacex-1m-satellite-fcc",
+        "url": "https://spacenews.com/spacex-offers-details-on-orbital-data-center-satellites/",
         "label": "SpaceNews"
       },
       {
-        "url": "https://spacenews.com/blue-origin-project-sunrise",
+        "url": "https://spacenews.com/blue-origin-joins-the-orbital-data-center-race/",
         "label": "SpaceNews"
       },
       {
-        "url": "https://spacenews.com/planet-google-suncatcher",
+        "url": "https://www.planet.com/pulse/planet-to-build-and-operate-advanced-space-platform-for-google-s-project-suncatcher-moonshot/",
+        "label": "Planet"
+      },
+      {
+        "url": "https://spacenews.com/china-backs-orbital-data-center-startup-with-8-4-billion-in-credit-lines/",
+        "label": "SpaceNews"
+      },
+      {
+        "url": "https://spacenews.com/the-race-to-build-orbital-data-centers-is-missing-its-biggest-variable-power/",
         "label": "SpaceNews"
       }
     ]

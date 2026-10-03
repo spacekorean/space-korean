@@ -752,15 +752,15 @@
       },
       {
         "date": null,
-        "html": "<strong>다리오 아모데이(Dario Amodei) 대표</strong> — \"지난해 대비 80배 속도로 성장 중\", 컴퓨팅 부족 해결이 협력의 핵심 동기."
+        "html": "<a href=\"https://spacenews.com/anthropic-to-consider-using-spacex-orbital-data-center-satellites/\" target=\"_blank\" rel=\"noopener\"><strong>다리오 아모데이(Dario Amodei) 대표</strong> — \"지난해 대비 80배 속도로 성장 중\", 컴퓨팅 부족 해결이 협력의 핵심 동기.</a>"
       },
       {
         "date": null,
-        "html": "<strong>지상 단계: 콜로서스 1 3백 메가와트(MW) 이상</strong> — 앤트로픽이 단일 데이터센터 컴퓨팅 용량을 통째 확보하는 형식."
+        "html": "<a href=\"https://spacenews.com/anthropic-to-consider-using-spacex-orbital-data-center-satellites/\" target=\"_blank\" rel=\"noopener\"><strong>지상 단계: 콜로서스 1 3백 메가와트(MW) 이상</strong> — 앤트로픽이 단일 데이터센터 컴퓨팅 용량을 통째 확보하는 형식.</a>"
       },
       {
         "date": null,
-        "html": "<strong>궤도 단계: 수십억 와트(W) 인공지능 컴퓨팅</strong> — 스페이스 엑스가 그리는 1백만 개 규모 태양광 위성 인프라와 연결되는 그림."
+        "html": "<a href=\"https://spacenews.com/anthropic-to-consider-using-spacex-orbital-data-center-satellites/\" target=\"_blank\" rel=\"noopener\"><strong>궤도 단계: 수십억 와트(W) 인공지능 컴퓨팅</strong> — 스페이스 엑스가 그리는 1백만 개 규모 태양광 위성 인프라와 연결되는 그림.</a>"
       }
     ],
     "summary_html": "<strong>(2026-05-06) SpaceNews — 인공지능 컴퓨팅이 궤도로 향한다.</strong> 인공지능 기업 <strong>앤트로픽(Anthropic)</strong>이 <strong>스페이스 엑스(SpaceX)</strong>와 협력하여 지상 데이터센터뿐 아니라 우주 궤도 데이터센터의 활용 가능성을 검토하기로 했습니다. 단기적으로 앤트로픽은 스페이스 엑스의 지상 데이터센터인 <strong>콜로서스 1(Colossus 1)</strong>의 컴퓨팅 용량 <strong>3백 메가와트(MW) 이상</strong>을 확보하고, 중장기적으로 <strong>수십억 와트(W)</strong> 규모의 우주 인공지능 컴퓨팅 용량 개발에 합류할 예정입니다.",
@@ -788,15 +788,15 @@
       },
       {
         "date": null,
-        "html": "<strong>Star Catcher (광학 빔잉)</strong> — 같은 질량·부피로 60kW 운용을 가능케 해 데이터센터 페이로드의 100퍼센트(%) 가동률을 노립니다."
+        "html": "<a href=\"https://spacenews.com/riding-the-orbital-data-center-wave/\" target=\"_blank\" rel=\"noopener\"><strong>Star Catcher (광학 빔잉)</strong> — 같은 질량·부피로 60kW 운용을 가능케 해 데이터센터 페이로드의 100퍼센트(%) 가동률을 노립니다.</a>"
       },
       {
         "date": null,
-        "html": "<strong>Lux Aeterna (재사용 위성)</strong> — 창업자 브라이언 테일러: \"궤도 데이터센터는 동적 시스템이며, 모듈 교체와 회수가 필수\"."
+        "html": "<a href=\"https://spacenews.com/riding-the-orbital-data-center-wave/\" target=\"_blank\" rel=\"noopener\"><strong>Lux Aeterna (재사용 위성)</strong> — 창업자 브라이언 테일러: \"궤도 데이터센터는 동적 시스템이며, 모듈 교체와 회수가 필수\".</a>"
       },
       {
         "date": null,
-        "html": "<strong>Lonestar·Loft Orbital (응용 레이어)</strong> — 로프트 오비탈 공동 창업자 알렉스 그린버그: \"활기 있는 응용 생태계 없이는 어떤 인프라도 의미가 없다\"."
+        "html": "<a href=\"https://spacenews.com/riding-the-orbital-data-center-wave/\" target=\"_blank\" rel=\"noopener\"><strong>Lonestar·Loft Orbital (응용 레이어)</strong> — 로프트 오비탈 공동 창업자 알렉스 그린버그: \"활기 있는 응용 생태계 없이는 어떤 인프라도 의미가 없다\".</a>"
       }
     ],
     "summary_html": "<strong>① (2026-05-06) SpaceNews — 동력·재사용·응용 분야가 새 무대.</strong> 스페이스 엑스(SpaceX)·스타클라우드(Starcloud) 등 메가 컨스털레이션 거인들이 시장을 점령할 듯 보였지만, 5월 매거진 기사는 그 주변부에서 자라는 새 사업 기회를 짚습니다. 핵심 축은 셋 — 광학 빔잉으로 위성 사이 전력을 공급하는 <strong>Star Catcher</strong>, 재사용 위성 <strong>Lux Aeterna</strong>, 그리고 우주 저장 <strong>Lonestar</strong>·인프라 운용 <strong>Loft Orbital</strong>의 응용 레이어 진영입니다.",
@@ -942,11 +942,11 @@
         "label": "SpaceNews"
       },
       {
-        "url": "https://spacenews.com/founders-fund-orbital-infrastructure",
+        "url": "https://spacenews.com/the-opportunity-beyond-orbital-data-centers/",
         "label": "SpaceNews"
       },
       {
-        "url": "https://spacenews.com/takeme2space-55m",
+        "url": "https://spacenews.com/indias-takeme2space-sets-sights-on-50-kilowatt-data-center/",
         "label": "SpaceNews"
       }
     ]
@@ -982,7 +982,7 @@
         "label": "SpaceNews"
       },
       {
-        "url": "https://spacenews.com/orbital-chenguang-8b",
+        "url": "https://spacenews.com/china-backs-orbital-data-center-startup-with-8-4-billion-in-credit-lines/",
         "label": "SpaceNews"
       }
     ]
