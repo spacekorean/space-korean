@@ -1,0 +1,32 @@
+{
+  "2026-10-05": {
+    "date": "2026-10-05",
+    "headlines": [
+      {
+        "date": "2026-10-01",
+        "html": "<a href=\"https://spaceinafrica.com/2026/10/01/satlyt-raises-usd-8-million-seed-to-turn-satellites-into-virtual-ai-data-centers/\" target=\"_blank\" rel=\"noopener\"><strong>Satlyt raises $8 million for orbital AI software</strong>: The company is expanding deployment of software that processes data aboard other operators’ satellites — (Space in Africa·Company announcement)</a>"
+      },
+      {
+        "date": "2026-10-01",
+        "html": "<a href=\"https://www.edaily.co.kr/News/Read?mediaCodeNo=257&amp;newsId=02069686645608656\" target=\"_blank\" rel=\"noopener\"><strong>South Korea targets 2028 demonstration of a 100 kg-class space data center</strong>: The K-Moonshot program director outlined plans to use Nuri’s seventh launch and test domestically developed AI chips — (Edaily)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Satlyt (Space in Africa, 10/1)</strong> — (2026-10-01) Satlyt raised $8 million in seed funding led by Non Sibi Ventures. The company deploys AI software aboard other operators’ satellites to reduce the volume of data transmitted to the ground. Its next demonstration will run two applications for research and image processing on a single satellite, with pooling computing resources across multiple satellites a longer-term goal.<br><br><strong>② K-Moonshot (Edaily, 10/1)</strong> — (2026-10-01) Lee Chun-woo, program director for space, said South Korea plans to develop a 100 kg-class small data center by 2028 and demonstrate it on Nuri’s seventh launch. The initiative aims to test domestically developed AI inference chips and solar cells, then scale up to a medium-sized system in 2031. Only part of the development budget has been allocated, leaving additional funding to be secured. The two developments suggest that software and component demonstrations are opening more routes into the orbital data center market. Opportunities could emerge not only for companies building entire satellites, but also for developers using onboard computers and suppliers whose components have proven their performance in space. Future orbital operating results will determine whether these funding rounds and development targets translate into services for customers.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://spaceinafrica.com/2026/10/01/satlyt-raises-usd-8-million-seed-to-turn-satellites-into-virtual-ai-data-centers/",
+        "label": "spaceinafrica.com"
+      },
+      {
+        "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02069686645608656",
+        "label": "edaily.co.kr"
+      }
+    ],
+    "video": {
+      "id": "QYlGxluLOeU",
+      "title": "Satlyt, 궤도 AI에 800만 달러 유치…한국은 2028년 실증 목표",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  }
+}
