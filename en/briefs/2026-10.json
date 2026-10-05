@@ -1,4 +1,26 @@
 {
+  "2026-10-06": {
+    "date": "2026-10-06",
+    "headlines": [
+      {
+        "date": "2026-10-01",
+        "html": "<a href=\"https://finance.yahoo.com/technology/articles/cowboy-space-launches-reason-1-194400031.html\" target=\"_blank\" rel=\"noopener\"><strong>Cowboy Space launches Reason-1 to test optical and thermal management technologies for orbital data centers</strong>: — Cowboy Space / Business Wire</a>"
+      }
+    ],
+    "summary_html": "<strong>① Cowboy Space (Business Wire, 10/1)</strong> — (2026-10-01) The company announced the launch of its first satellite, Reason-1. The mission aims to beam solar energy to Earth using a kilowatt-class laser and test optical and thermal management technologies for future orbital data centers. The announcement does not yet confirm successful power transmission. The mission can be viewed as a step toward validating communications and power designs for the company’s proposed 1 MW data center, rather than the start of data center operations.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://finance.yahoo.com/technology/articles/cowboy-space-launches-reason-1-194400031.html",
+        "label": "finance.yahoo.com"
+      }
+    ],
+    "video": {
+      "id": "fLyCJU857Ak",
+      "title": "카우보이 스페이스, Reason-1 발사…우주 데이터센터 기술 시험",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-10-05": {
     "date": "2026-10-05",
     "headlines": [

@@ -1,4 +1,26 @@
 {
+  "2026-10-06": {
+    "date": "2026-10-06",
+    "headlines": [
+      {
+        "date": "2026-10-01",
+        "html": "<a href=\"https://finance.yahoo.com/technology/articles/cowboy-space-launches-reason-1-194400031.html\" target=\"_blank\" rel=\"noopener\"><strong>Cowboy Space ส่ง Reason-1 ขึ้นสู่อวกาศ…เริ่มทดสอบเทคโนโลยีเชิงแสงและการจัดการความร้อนสำหรับศูนย์ข้อมูลในวงโคจร</strong>: — Cowboy Space / Business Wire</a>"
+      }
+    ],
+    "summary_html": "<strong>① Cowboy Space (Business Wire, 1 ตุลาคม)</strong> — (2026-10-01) บริษัทประกาศว่าได้ส่ง Reason-1 ดาวเทียมดวงแรกขึ้นสู่อวกาศแล้ว ภารกิจนี้มีเป้าหมายส่งพลังงานแสงอาทิตย์มายังพื้นโลกด้วยเลเซอร์ระดับกิโลวัตต์ พร้อมทดสอบเทคโนโลยีเชิงแสงและการจัดการความร้อนสำหรับศูนย์ข้อมูลในวงโคจรในอนาคต ทั้งนี้ ยังไม่ได้ประกาศว่าส่งพลังงานสำเร็จแล้ว ในเชิงวิเคราะห์ ภารกิจครั้งนี้เป็นขั้นตอนทดสอบยืนยันการออกแบบระบบสื่อสารและระบบพลังงานสำหรับศูนย์ข้อมูลขนาด 1 เมกะวัตต์ที่บริษัทวางแผนไว้ ยังไม่ได้หมายความว่าศูนย์ข้อมูลดังกล่าวเริ่มดำเนินงานแล้ว<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://finance.yahoo.com/technology/articles/cowboy-space-launches-reason-1-194400031.html",
+        "label": "finance.yahoo.com"
+      }
+    ],
+    "video": {
+      "id": "fLyCJU857Ak",
+      "title": "카우보이 스페이스, Reason-1 발사…우주 데이터센터 기술 시험",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-10-05": {
     "date": "2026-10-05",
     "headlines": [

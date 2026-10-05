@@ -1,4 +1,25 @@
 {
+  "2026-10-06": {
+    "date": "2026-10-06",
+    "headlines": [
+      {
+        "date": "2026-10-01",
+        "html": "<a href=\"https://finance.yahoo.com/technology/articles/cowboy-space-launches-reason-1-194400031.html\" target=\"_blank\" rel=\"noopener\"><strong>카우보이 스페이스, Reason-1 발사…궤도 데이터센터용 광학·열관리 시험 착수</strong>: — Cowboy Space / Business Wire</a>"
+      }
+    ],
+    "summary_html": "<strong>① 카우보이 스페이스(Business Wire, 10/1)</strong> — (2026-10-01) 회사는 첫 위성 Reason-1을 발사했다고 발표했습니다. 킬로와트급 레이저로 태양에너지를 지상에 보내고, 향후 궤도 데이터센터에 쓸 광학·열관리 기술을 시험합니다. 아직 전력 전송 성공 발표는 아닙니다. 분석상 이번 임무는 회사가 구상하는 1MW 데이터센터의 통신·전력 설계를 검증하는 단계이며, 데이터센터 자체의 가동을 뜻하지는 않습니다.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://finance.yahoo.com/technology/articles/cowboy-space-launches-reason-1-194400031.html",
+        "label": "finance.yahoo.com"
+      }
+    ],
+    "video": {
+      "id": "fLyCJU857Ak",
+      "title": "카우보이 스페이스, Reason-1 발사…우주 데이터센터 기술 시험"
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-10-05": {
     "date": "2026-10-05",
     "headlines": [
