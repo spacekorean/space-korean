@@ -1,4 +1,25 @@
 {
+  "2026-10-07": {
+    "date": "2026-10-07",
+    "headlines": [
+      {
+        "date": "2026-10-06",
+        "html": "<a href=\"https://axiomspace.com/release/axiom-space-kepler-ready-orbital-computing-for-quantum-era\" target=\"_blank\" rel=\"noopener\"><strong>액시엄·케플러, 궤도 컴퓨팅 노드 간 통신 확인</strong>: ARC 노드 2기 운용 현황과 지상 양자내성암호 실증을 공개했습니다. 다음 목표는 암호 기능의 궤도 실증입니다. — 액시엄 스페이스</a>"
+      }
+    ],
+    "summary_html": "<strong>① 액시엄 스페이스(Axiom Space, 10/6)</strong> — (2026-10-06) 액시엄은 케플러 위성에 실린 ARC 노드 2기 사이와 지상 간 통신을 확인했다고 밝혔습니다. 2.5Gbps 광통신 링크를 쓰며, 양자내성암호로 암호화한 연산 작업의 이전은 별도 지상 시험에서 성공했습니다. 해당 암호 기능의 궤도 실증은 다음 목표입니다.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://axiomspace.com/release/axiom-space-kepler-ready-orbital-computing-for-quantum-era",
+        "label": "axiomspace.com"
+      }
+    ],
+    "video": {
+      "id": "pj6bqku8SEk",
+      "title": "액시엄·케플러, 궤도 연산 노드 2기 통신 확인"
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-10-06": {
     "date": "2026-10-06",
     "headlines": [

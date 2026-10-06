@@ -1,4 +1,26 @@
 {
+  "2026-10-07": {
+    "date": "2026-10-07",
+    "headlines": [
+      {
+        "date": "2026-10-06",
+        "html": "<a href=\"https://axiomspace.com/release/axiom-space-kepler-ready-orbital-computing-for-quantum-era\" target=\"_blank\" rel=\"noopener\"><strong>Axiom and Kepler confirm communications between orbital computing nodes</strong>: The companies provided an operational update on two ARC nodes and disclosed a ground demonstration of post-quantum cryptography. Their next goal is to demonstrate the encryption capability in orbit. — Axiom Space</a>"
+      }
+    ],
+    "summary_html": "<strong>① Axiom Space (10/6)</strong> — (2026-10-06) Axiom said it had confirmed communications between two ARC nodes hosted on Kepler satellites and with the ground. The nodes use 2.5 Gbps optical links. In a separate ground test, the company successfully transferred computing workloads encrypted using post-quantum cryptography. Demonstrating that encryption capability in orbit is the next goal.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://axiomspace.com/release/axiom-space-kepler-ready-orbital-computing-for-quantum-era",
+        "label": "axiomspace.com"
+      }
+    ],
+    "video": {
+      "id": "pj6bqku8SEk",
+      "title": "액시엄·케플러, 궤도 연산 노드 2기 통신 확인",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-10-06": {
     "date": "2026-10-06",
     "headlines": [
