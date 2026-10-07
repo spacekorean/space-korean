@@ -1,4 +1,30 @@
 {
+  "2026-10-08": {
+    "date": "2026-10-08",
+    "headlines": [
+      {
+        "date": "2026-10-06",
+        "html": "<a href=\"https://www.teslarati.com/spacex-starmind-space-safety/\" target=\"_blank\" rel=\"noopener\"><strong>SpaceX unveils Starmind formation concept</strong>: The company outlined an architecture linking about 10 AI satellites over high-bandwidth connections for shared computing. Up to 1 million satellites is a deployment target, and the newly released video depicts a concept rather than a finalized design. — (TESLARATI·PCMag)</a>"
+      }
+    ],
+    "summary_html": "<strong>① SpaceX (TESLARATI·PCMag, 10/6)</strong> — (2026-10-06) Michael Nicolls described a concept involving about 10 Starmind satellites flying in close formation, linked at roughly 10 Tbps. The plan is to pool their computing resources to run AI models jointly. The new video illustrates a concept subject to change, and the application for up to 1 million satellites remains under FCC review. The announcement does not constitute an orbital demonstration or deployment approval. The significance of this announcement lies less in the satellite count than in the approach to combining multiple satellites into a single computing resource. For the concept to work, the satellites must maintain both high-speed links and precise formation flying. SpaceX’s accompanying emphasis on sharing orbital and maneuver data can also be seen as a prerequisite for operations at this scale. The next question is whether orbital testing validates the concept and its target bandwidth.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.teslarati.com/spacex-starmind-space-safety/",
+        "label": "teslarati.com"
+      },
+      {
+        "url": "https://tech.yahoo.com/science/articles/bigger-starlink-spacex-provides-look-212039193.html",
+        "label": "tech.yahoo.com"
+      }
+    ],
+    "video": {
+      "id": "OMgQ_zk9ZAk",
+      "title": "SpaceX 스타마인드, AI 위성 10기를 묶어 공동 연산 구상",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-10-07": {
     "date": "2026-10-07",
     "headlines": [

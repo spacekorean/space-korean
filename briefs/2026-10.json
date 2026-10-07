@@ -1,4 +1,29 @@
 {
+  "2026-10-08": {
+    "date": "2026-10-08",
+    "headlines": [
+      {
+        "date": "2026-10-06",
+        "html": "<a href=\"https://www.teslarati.com/spacex-starmind-space-safety/\" target=\"_blank\" rel=\"noopener\"><strong>스페이스 엑스, 스타마인드 편대 구상 공개</strong>: AI 위성 약 10기를 고대역폭으로 연결해 공동 연산하는 구조를 설명했습니다. 최대 100만 기는 배치 목표이며, 공개 영상도 확정 설계가 아닌 개념도입니다. — (TESLARATI·PCMag)</a>"
+      }
+    ],
+    "summary_html": "<strong>① 스페이스 엑스(TESLARATI·PCMag, 10/6)</strong> — (2026-10-06) 마이클 니콜스는 스타마인드 위성 약 10기를 가까이 비행시키고 약 10Tbps급 대역폭으로 연결하는 구상을 설명했습니다. AI 모델을 함께 처리할 연산 묶음을 만든다는 계획입니다. 새 영상은 바뀔 수 있는 개념도이며, 최대 100만 기 신청은 FCC 심사 중입니다. 궤도 실증이나 배치 승인을 발표한 것은 아닙니다. 이번 공개의 의미는 위성 숫자보다 여러 위성을 하나의 연산 자원으로 묶는 방식에 있습니다. 이 구상이 작동하려면 고속 연결과 정밀한 편대 비행을 동시에 유지해야 합니다. 스페이스 엑스가 함께 강조한 궤도·기동 정보 공유도 이런 대규모 운용을 위한 조건으로 볼 수 있습니다. 앞으로는 개념도와 목표 대역폭이 실제 궤도 시험에서 검증되는지 살펴봐야 합니다.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.teslarati.com/spacex-starmind-space-safety/",
+        "label": "teslarati.com"
+      },
+      {
+        "url": "https://tech.yahoo.com/science/articles/bigger-starlink-spacex-provides-look-212039193.html",
+        "label": "tech.yahoo.com"
+      }
+    ],
+    "video": {
+      "id": "OMgQ_zk9ZAk",
+      "title": "SpaceX 스타마인드, AI 위성 10기를 묶어 공동 연산 구상"
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-10-07": {
     "date": "2026-10-07",
     "headlines": [
