@@ -1,4 +1,26 @@
 {
+  "2026-10-09": {
+    "date": "2026-10-09",
+    "headlines": [
+      {
+        "date": "2026-10-08",
+        "html": "<a href=\"https://www.aboutamazon.com/stories/how-amazon-leo-builds-satellites\" target=\"_blank\" rel=\"noopener\"><strong>Amazon Leo has built more than 1,000 satellites</strong>: Amazon said it now produces at least 3–4 satellites a day, with factory capacity of five per day. The communications constellation’s production milestone demonstrates the manufacturing capabilities needed to build orbital data centers at scale. — (Amazon)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Amazon (Amazon, 10/8)</strong> — (2026-10-08) Amazon said it has built more than 1,000 Leo satellites. Production has risen from 3–4 satellites per month before the first mission to at least 3–4 per day. Leo is a communications network. Still, orbital data centers would also require large numbers of satellites to be manufactured repeatedly, making the milestone an illustration of the importance of scaled production, testing and supply chains. Satellite manufacturing capacity must be matched by launch capacity. Amazon said hundreds of completed satellites are ready and awaiting launch. Scaling orbital data centers may likewise depend on coordinating production, verification and launch schedules, alongside computing hardware performance. These are lessons from communications satellite manufacturing; Amazon has not announced plans to build an orbital data center.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6.1 Sol</div>",
+    "sources": [
+      {
+        "url": "https://www.aboutamazon.com/stories/how-amazon-leo-builds-satellites",
+        "label": "aboutamazon.com"
+      }
+    ],
+    "video": {
+      "id": "V26VOmGifog",
+      "title": "아마존 리오 위성 1,000기 제작, 하루 3~4기 양산",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6.1 Sol"
+  },
   "2026-10-08": {
     "date": "2026-10-08",
     "headlines": [

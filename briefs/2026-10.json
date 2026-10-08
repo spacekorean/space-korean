@@ -1,4 +1,25 @@
 {
+  "2026-10-09": {
+    "date": "2026-10-09",
+    "headlines": [
+      {
+        "date": "2026-10-08",
+        "html": "<a href=\"https://www.aboutamazon.com/stories/how-amazon-leo-builds-satellites\" target=\"_blank\" rel=\"noopener\"><strong>아마존 리오, 위성 1,000기 이상 제작</strong>: 현재 하루 최소 3~4기를 만들고, 공장의 생산능력은 하루 5기라고 밝혔습니다. 통신 컨스텔레이션의 양산 성과로, 궤도 데이터센터에도 필요한 대량생산 기반을 보여줍니다. — (아마존)</a>"
+      }
+    ],
+    "summary_html": "<strong>① 아마존(Amazon, 10/8)</strong> — (2026-10-08) 아마존은 리오 위성 1,000기 이상을 제작했다고 밝혔습니다. 첫 임무 전 월 3~4기였던 생산량은 현재 하루 최소 3~4기로 늘었습니다. 리오는 통신망입니다. 다만 궤도 데이터센터도 수많은 위성을 반복 제작해야 한다는 점에서, 이번 성과는 양산·시험·공급망의 중요성을 보여준다는 분석입니다. 위성을 만드는 능력과 발사할 수 있는 능력은 함께 갖춰져야 합니다. 아마존은 완성된 위성 수백 기를 발사 대기 상태로 준비했다고 설명합니다. 궤도 데이터센터 역시 연산 장비의 성능뿐 아니라 생산·검증·발사 일정을 맞추는 일이 규모 확대의 조건이 될 수 있습니다. 이는 통신 위성 양산에서 얻는 시사점이며, 아마존이 궤도 데이터센터를 구축한다는 발표는 아닙니다.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6.1 Sol</div>",
+    "sources": [
+      {
+        "url": "https://www.aboutamazon.com/stories/how-amazon-leo-builds-satellites",
+        "label": "aboutamazon.com"
+      }
+    ],
+    "video": {
+      "id": "V26VOmGifog",
+      "title": "아마존 리오 위성 1,000기 제작, 하루 3~4기 양산"
+    },
+    "ai_credit": "AI 제작 · GPT-6.1 Sol"
+  },
   "2026-10-08": {
     "date": "2026-10-08",
     "headlines": [
