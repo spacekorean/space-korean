@@ -1,4 +1,26 @@
 {
+  "2026-10-10": {
+    "date": "2026-10-10",
+    "headlines": [
+      {
+        "date": "2026-10-08",
+        "html": "<a href=\"https://star.vision/zh-CN/newsroom/4520261008\" target=\"_blank\" rel=\"noopener\"><strong>STAR.VISION unveils two computing satellites with distinct roles</strong>: Marco Polo will handle AI inference and decision-making, while Ibn Battuta will perform large-scale computation, under an orbital data center concept linking the satellites via optical communications. — (STAR.VISION)</a>"
+      }
+    ],
+    "summary_html": "<strong>① STAR.VISION(STAR.VISION, 10/8)</strong> — (2026-10-08) China&#x27;s STAR.VISION unveiled two computing satellites at the International Astronautical Congress on October 5. Marco Polo will handle AI inference and decision-making, while Ibn Battuta will process data using a 10 POPS computing platform and the 021 scientific foundation model. The company said it would connect the satellites through optical links exceeding 100 Gbps to enable distributed processing and shared tasks. These are company-reported design specifications and performance claims; launch dates for the individual satellites and independent measurements of their in-orbit performance have not been confirmed. The announcement illustrates an approach to orbital data centers that connects satellites with distinct roles rather than relying on a single powerful computer. The next key test appears to be less about raw computing capacity than how reliably the two satellites can divide actual workloads despite communications latency and power and thermal constraints. In-orbit demonstrations will be needed to bridge the gap between the announced hardware specifications and computing services that can be delivered to customers.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6.1 Sol</div>",
+    "sources": [
+      {
+        "url": "https://star.vision/zh-CN/newsroom/4520261008",
+        "label": "star.vision"
+      }
+    ],
+    "video": {
+      "id": "655QPrsyuvo",
+      "title": "STAR.VISION, 연산위성 2기로 궤도 데이터센터 구상 공개",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6.1 Sol"
+  },
   "2026-10-09": {
     "date": "2026-10-09",
     "headlines": [

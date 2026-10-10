@@ -1,4 +1,25 @@
 {
+  "2026-10-10": {
+    "date": "2026-10-10",
+    "headlines": [
+      {
+        "date": "2026-10-08",
+        "html": "<a href=\"https://star.vision/zh-CN/newsroom/4520261008\" target=\"_blank\" rel=\"noopener\"><strong>STAR.VISION, 역할을 나눈 연산위성 2기 공개</strong>: 마르코 폴로는 AI 추론·의사결정, 이븐 바투타는 대규모 연산을 담당하며 광통신으로 연결하는 궤도 데이터센터 구상을 제시했습니다. — (STAR.VISION)</a>"
+      }
+    ],
+    "summary_html": "<strong>① STAR.VISION(STAR.VISION, 10/8)</strong> — (2026-10-08) 중국 STAR.VISION은 10월 5일 국제우주대회에서 연산위성 2기를 공개했습니다. 마르코 폴로는 AI 추론과 의사결정을, 이븐 바투타는 10 POPS 연산 플랫폼과 021 과학 기반 모델을 이용한 데이터 처리를 맡습니다. 회사는 100 Gbps 이상 광통신으로 두 위성을 연결해 분산 처리와 임무 공유를 구현한다고 설명했습니다. 이는 회사가 공개한 설계·성능 주장으로, 개별 발사일과 독립적인 궤도 성능 측정치는 확인되지 않았습니다. 이번 발표는 궤도 데이터센터를 한 기의 강력한 컴퓨터로 만드는 대신, 서로 다른 역할의 위성을 연결해 구성하려는 접근을 보여줍니다. 분석상 다음 관건은 연산량 자체보다 통신 지연과 전력·열 제약 속에서도 두 위성이 실제 작업을 얼마나 안정적으로 나눌 수 있느냐입니다. 발표된 하드웨어 사양과 고객에게 제공할 수 있는 연산 서비스 사이의 간극을 좁히려면 궤도 실증 결과가 필요합니다.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6.1 Sol</div>",
+    "sources": [
+      {
+        "url": "https://star.vision/zh-CN/newsroom/4520261008",
+        "label": "star.vision"
+      }
+    ],
+    "video": {
+      "id": "655QPrsyuvo",
+      "title": "STAR.VISION, 연산위성 2기로 궤도 데이터센터 구상 공개"
+    },
+    "ai_credit": "AI 제작 · GPT-6.1 Sol"
+  },
   "2026-10-09": {
     "date": "2026-10-09",
     "headlines": [
