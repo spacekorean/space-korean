@@ -1,4 +1,30 @@
 {
+  "2026-10-12": {
+    "date": "2026-10-12",
+    "headlines": [
+      {
+        "date": "2026-10-08",
+        "html": "<a href=\"https://www.blueorigin.com/news/blue-origin-announces-new-texas-manufacturing-campus\" target=\"_blank\" rel=\"noopener\"><strong>Blue Origin plans $554.78 million satellite manufacturing campus in Texas</strong>: The roughly 120,000-square-meter “Constellation Park” will expand production for the TeraWave satellite network, Quartz ground communications equipment, solar cells and avionics. — (Blue Origin·Office of the Texas Governor)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Blue Origin (Blue Origin·Office of the Texas Governor, 10/8)</strong> — (2026-10-08) The company plans a roughly 120,000-square-meter manufacturing campus in Hutto, Texas. The $554.78 million investment is expected to create more than 2,000 jobs over the next 10 years. Mass production of satellites, power systems and communications equipment provides a supply base for expanding orbital data centers. However, the announcement identifies TeraWave and Quartz as the intended applications; it does not indicate a dedicated Sunrise factory or the launch of orbital computing services. For orbital data centers to grow into large-scale constellations, the industry must be able to manufacture satellite buses, solar cells and communications equipment at scale, alongside computing chips. This announcement can be viewed as a step toward expanding that industrial base. Investment in communications networks cannot automatically be counted as data center development; the connection must be established through actual production volumes and supply contracts for orbital computing programs.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6.1 Sol</div>",
+    "sources": [
+      {
+        "url": "https://www.blueorigin.com/news/blue-origin-announces-new-texas-manufacturing-campus",
+        "label": "blueorigin.com"
+      },
+      {
+        "url": "https://gov.texas.gov/news/post/governor-abbott-announces-blue-origin-expansion-in-hutto",
+        "label": "gov.texas.gov"
+      }
+    ],
+    "video": {
+      "id": "Ea61xwryzr4",
+      "title": "블루오리진, 텍사스에 5억 5,478만 달러 위성 생산시설 추진",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6.1 Sol"
+  },
   "2026-10-10": {
     "date": "2026-10-10",
     "headlines": [

@@ -1,4 +1,29 @@
 {
+  "2026-10-12": {
+    "date": "2026-10-12",
+    "headlines": [
+      {
+        "date": "2026-10-08",
+        "html": "<a href=\"https://www.blueorigin.com/news/blue-origin-announces-new-texas-manufacturing-campus\" target=\"_blank\" rel=\"noopener\"><strong>블루오리진, 텍사스에 5억 5,478만 달러 위성 생산 캠퍼스 추진</strong>: 약 12만㎡ 규모의 ‘Constellation Park’에서 TeraWave 위성망과 Quartz 지상통신 장비, 태양전지·항전장비 생산을 확대합니다. — (Blue Origin·텍사스 주지사실)</a>"
+      }
+    ],
+    "summary_html": "<strong>① 블루오리진(Blue Origin·텍사스 주지사실, 10/8)</strong> — (2026-10-08) 텍사스 허토에 약 12만㎡ 생산 캠퍼스를 추진합니다. 투자액은 5억 5,478만 달러이며, 향후 10년간 2,000개 이상 일자리를 만들 계획입니다. 위성·전력·통신장비 양산은 궤도 데이터센터 확장의 공급 기반입니다. 다만 발표가 지목한 용도는 TeraWave·Quartz로, Sunrise 전용 공장이나 궤도 연산 서비스 가동을 뜻하지 않습니다. 우주 데이터센터가 대규모 컨스텔레이션으로 성장하려면 연산칩뿐 아니라 위성 본체, 태양전지, 통신장비를 반복 생산할 수 있어야 합니다. 이번 발표는 그 산업 기반을 늘리는 움직임으로 해석할 수 있습니다. 통신망 투자를 곧바로 데이터센터 구축으로 셀 수는 없으며, 실제 생산량과 궤도 연산 프로그램에 대한 공급 계약을 통해 연결이 확인되어야 합니다.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6.1 Sol</div>",
+    "sources": [
+      {
+        "url": "https://www.blueorigin.com/news/blue-origin-announces-new-texas-manufacturing-campus",
+        "label": "blueorigin.com"
+      },
+      {
+        "url": "https://gov.texas.gov/news/post/governor-abbott-announces-blue-origin-expansion-in-hutto",
+        "label": "gov.texas.gov"
+      }
+    ],
+    "video": {
+      "id": "Ea61xwryzr4",
+      "title": "블루오리진, 텍사스에 5억 5,478만 달러 위성 생산시설 추진"
+    },
+    "ai_credit": "AI 제작 · GPT-6.1 Sol"
+  },
   "2026-10-10": {
     "date": "2026-10-10",
     "headlines": [
