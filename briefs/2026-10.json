@@ -1,4 +1,29 @@
 {
+  "2026-10-13": {
+    "date": "2026-10-13",
+    "headlines": [
+      {
+        "date": "2026-10-08",
+        "html": "<a href=\"https://resiliencemedia.co/estonias-golbriak-space-raises-e4m/\" target=\"_blank\" rel=\"noopener\"><strong>골브리아크, 레이저 통신 단말 양산에 400만 유로 유치</strong>: 위성·항공기용 단말을 만드는 에스토니아 기업이 연간 수십 대에서 월 200대로 생산을 늘리는 목표를 제시했습니다. — (Resilience Media·Tech.eu)</a>"
+      }
+    ],
+    "summary_html": "<strong>① 골브리아크 스페이스(Resilience Media·Tech.eu, 10/8)</strong> — (2026-10-08) Join Capital·PhotonVentures 주도로 400만 유로를 유치했습니다. 위성·항공기용 레이저 단말의 현재 생산량은 연간 수십 대이며, 월 200대를 목표로 합니다. 수천 대 규모 사업은 협상 중입니다. 위성 간 데이터 연결 부품의 양산 확대는 궤도 데이터센터 공급 기반을 넓힐 수 있다는 분석입니다. 특정 데이터센터 공급 계약이나 목표 생산량 달성은 확인되지 않았습니다. 여러 위성을 하나의 연산망으로 묶으려면 연산칩뿐 아니라 위성 사이에서 데이터를 주고받는 장비도 충분히 공급해야 합니다. 광통신 단말을 규격화해 반복 생산할 수 있다면 궤도 연산망의 조달 부담을 낮출 여지가 있습니다. 이번 소식은 그 산업 기반에 관한 것으로 해석합니다. 기사에서 확인된 수요는 위성망과 항공 플랫폼 전반이므로, 투자액을 데이터센터 전용 자금이나 새로 가동된 궤도 연산 용량으로 집계할 수는 없습니다.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://resiliencemedia.co/estonias-golbriak-space-raises-e4m/",
+        "label": "resiliencemedia.co"
+      },
+      {
+        "url": "https://tech.eu/2026/10/08/golbriak-space-raises-eur4m-to-scale-laser-communications-for-satellite-constellations",
+        "label": "tech.eu"
+      }
+    ],
+    "video": {
+      "id": "iNtAw6AVEio",
+      "title": "골브리아크, 레이저 통신 단말 양산에 400만 유로 유치"
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-10-12": {
     "date": "2026-10-12",
     "headlines": [

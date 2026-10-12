@@ -1,4 +1,30 @@
 {
+  "2026-10-13": {
+    "date": "2026-10-13",
+    "headlines": [
+      {
+        "date": "2026-10-08",
+        "html": "<a href=\"https://tech.eu/2026/10/08/golbriak-space-raises-eur4m-to-scale-laser-communications-for-satellite-constellations\" target=\"_blank\" rel=\"noopener\"><strong>Golbriak raises €4 million to scale production of laser communications terminals</strong>: The Estonian manufacturer of terminals for satellites and aircraft aims to increase output from dozens per year to 200 per month. — (Resilience Media·Tech.eu)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Golbriak Space (Resilience Media·Tech.eu, Oct. 8)</strong> — (2026-10-08) The company raised €4 million in a funding round led by Join Capital and PhotonVentures. It currently produces dozens of laser communications terminals for satellites and aircraft annually and is targeting 200 per month. Deals involving thousands of terminals are under negotiation. Expanding production of inter-satellite data-link components could broaden the supply base for orbital data centers. No supply contract for a specific data center has been confirmed, nor has the production target been reached. Connecting multiple satellites into a single computing network requires an adequate supply of both computing chips and equipment that exchanges data between satellites. Standardizing optical communications terminals for repeatable production could ease procurement constraints for orbital computing networks. This development points to progress in that industrial base. The demand identified in the reports spans satellite networks and airborne platforms, so the funding cannot be counted as dedicated data center investment or newly operational orbital computing capacity.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://resiliencemedia.co/estonias-golbriak-space-raises-e4m/",
+        "label": "resiliencemedia.co"
+      },
+      {
+        "url": "https://tech.eu/2026/10/08/golbriak-space-raises-eur4m-to-scale-laser-communications-for-satellite-constellations",
+        "label": "tech.eu"
+      }
+    ],
+    "video": {
+      "id": "iNtAw6AVEio",
+      "title": "골브리아크, 레이저 통신 단말 양산에 400만 유로 유치",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-10-12": {
     "date": "2026-10-12",
     "headlines": [
