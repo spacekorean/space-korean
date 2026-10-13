@@ -1,4 +1,46 @@
 {
+  "2026-10-14": {
+    "date": "2026-10-14",
+    "headlines": [
+      {
+        "date": "2026-10-12",
+        "html": "<a href=\"https://loftorbital.com/orbitworks-launches-first-spacecraft-of-the-largest-ai-powered-satellite-constellation-with-nvidia-edge-ai-onboard/\" target=\"_blank\" rel=\"noopener\"><strong>Orbitworks and Loft Orbital detail computing hardware aboard first AI satellite</strong>: First satellite in a planned 50-satellite constellation carries two NVIDIA modules and a Mistral model — (Loft Orbital·NVIDIA)</a>"
+      },
+      {
+        "date": "2026-10-13",
+        "html": "<a href=\"https://unibap.com/news/unibap-first-contract-for-edge-computing-for-satellites-in-a-sigint-mission/\" target=\"_blank\" rel=\"noopener\"><strong>Unibap secures first computer supply contract for signals intelligence satellites</strong>: Initial deliveries to a European defense customer will be limited; contract value and mission name remain undisclosed — (Unibap)</a>"
+      },
+      {
+        "date": "2026-10-12",
+        "html": "<a href=\"https://blog.spacecomputer.io/kms-architecture-beta-launch/\" target=\"_blank\" rel=\"noopener\"><strong>SpaceComputer unveils security architecture requiring joint authorization from ground and orbital systems</strong>: Cryptographic key management service under development on the ground is intended to expand into space over the longer term — (SpaceComputer)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Orbitworks and Loft Orbital (Loft Orbital·NVIDIA, 10/12)</strong> — (2026-10-12) The company said its first satellite, launched October 1, carries two NVIDIA Jetson AGX Orin modules and Mistral’s Ministral 3 model. The spacecraft is the first in a planned 50-satellite constellation designed to analyze imagery in orbit and transmit the information needed. The company is pursuing a service that hosts applications from multiple operators. The announcement details the first spacecraft’s configuration and operations, rather than the completion of the constellation.<br><br><strong>② Unibap (Unibap, 10/13)</strong> — (2026-10-13) Unibap said it had signed its first contract to supply edge computers for a signals intelligence mission with a European space and defense company. Initial quantities are small, and neither the customer’s name nor the contract value was disclosed. The computers are intended to analyze radio signals aboard satellites, reducing storage and downlink requirements. No large follow-on orders or in-orbit performance demonstrations have yet been confirmed.<br><br><strong>③ SpaceComputer (SpaceComputer, 10/12)</strong> — (2026-10-12) The company unveiled the ground-based implementation of its cryptographic key management service and a longer-term architecture for extending it into space. The system uses Intel TDX and OpenBao, with the service and key management functions currently operating within the same trust domain. The proposed architecture would require independent ground and orbital systems to jointly authorize sensitive operations. The announcement does not mark the launch of an orbital service or the award of security certification. Taken together, the announcements suggest that business models for space-based computing are taking shape around more than processing capacity: the tasks systems will perform, the customers who will buy their services, and how access rights will be divided. Imagery analysis and signals intelligence processing address demand to reduce data volumes generated in orbit, while cryptographic key management seeks to make use of physically separated systems. The initiatives are at different stages, however: first-satellite operations, an initial supply contract, and a long-term design. Actual customer use and demonstrated performance will be the basis for assessing their commercial viability.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://loftorbital.com/orbitworks-launches-first-spacecraft-of-the-largest-ai-powered-satellite-constellation-with-nvidia-edge-ai-onboard/",
+        "label": "loftorbital.com"
+      },
+      {
+        "url": "https://blogs.nvidia.com/blog/france-ecosystem-agentic-computing/",
+        "label": "blogs.nvidia.com"
+      },
+      {
+        "url": "https://unibap.com/news/unibap-first-contract-for-edge-computing-for-satellites-in-a-sigint-mission/",
+        "label": "unibap.com"
+      },
+      {
+        "url": "https://blog.spacecomputer.io/kms-architecture-beta-launch/",
+        "label": "blog.spacecomputer.io"
+      }
+    ],
+    "video": {
+      "id": "rS1-RXs4Bkg",
+      "title": "오비트웍스, 50기 계획의 첫 AI 위성 연산 구성 공개",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-10-13": {
     "date": "2026-10-13",
     "headlines": [

@@ -1,4 +1,45 @@
 {
+  "2026-10-14": {
+    "date": "2026-10-14",
+    "headlines": [
+      {
+        "date": "2026-10-12",
+        "html": "<a href=\"https://loftorbital.com/orbitworks-launches-first-spacecraft-of-the-largest-ai-powered-satellite-constellation-with-nvidia-edge-ai-onboard/\" target=\"_blank\" rel=\"noopener\"><strong>오비트웍스·로프트 오비탈, AI 위성 첫 기체의 연산 구성 공개</strong>: 50기 컨스텔레이션의 첫 위성에 엔비디아 모듈 2개와 미스트랄 모델 탑재 — (Loft Orbital·NVIDIA)</a>"
+      },
+      {
+        "date": "2026-10-13",
+        "html": "<a href=\"https://unibap.com/news/unibap-first-contract-for-edge-computing-for-satellites-in-a-sigint-mission/\" target=\"_blank\" rel=\"noopener\"><strong>유니밥, 신호정보 위성용 컴퓨터 첫 공급 계약</strong>: 유럽 방산 고객에 소량 공급으로 시작…계약 금액·임무명은 비공개 — (Unibap)</a>"
+      },
+      {
+        "date": "2026-10-12",
+        "html": "<a href=\"https://blog.spacecomputer.io/kms-architecture-beta-launch/\" target=\"_blank\" rel=\"noopener\"><strong>스페이스컴퓨터, 지상·궤도 공동 승인 보안 설계 공개</strong>: 현재 지상에서 개발 중인 암호키 관리 서비스를 장기적으로 우주까지 확장 — (SpaceComputer)</a>"
+      }
+    ],
+    "summary_html": "<strong>① 오비트웍스·로프트 오비탈(Loft Orbital·NVIDIA, 10/12)</strong> — (2026-10-12) 회사는 10월 1일 발사한 첫 위성에 엔비디아 Jetson AGX Orin 모듈 2개와 미스트랄의 Ministral 3를 탑재했다고 발표했습니다. 50기 계획의 첫 위성으로, 관측 영상을 궤도에서 분석해 필요한 정보를 보내는 구조입니다. 여러 사업자의 앱을 함께 운용하는 서비스를 추진하며, 이번 공개는 전체 위성망 완성이 아닌 첫 기체의 구성과 운용에 관한 소식입니다.<br><br><strong>② 유니밥(Unibap, 10/13)</strong> — (2026-10-13) 유니밥은 유럽 우주 방산기업과 신호정보 임무용 엣지 컴퓨터 공급 계약을 처음 체결했다고 밝혔습니다. 초기 물량은 소수이며 고객명과 계약 금액은 공개하지 않았습니다. 전파 신호를 위성 안에서 분석해 저장·다운링크 부담을 줄이는 용도입니다. 대규모 후속 발주나 궤도 성능 실증은 아직 확인되지 않았습니다.<br><br><strong>③ 스페이스컴퓨터(SpaceComputer, 10/12)</strong> — (2026-10-12) 회사는 암호키 관리 서비스의 지상 구현과 장기 우주 확장 설계를 공개했습니다. Intel TDX와 OpenBao를 활용하며 현재 서비스와 키 관리 기능은 같은 신뢰 영역에서 작동합니다. 향후 지상과 궤도의 독립된 시스템이 함께 승인해야 민감한 작업을 실행하는 구조를 구상합니다. 이번 발표는 궤도 서비스 개통이나 보안 인증 획득을 뜻하지 않습니다. 세 발표를 종합하면 우주 연산의 사업 모델은 처리량 확대뿐 아니라 어떤 일을 맡길지, 누가 서비스를 구매할지, 접근 권한을 어떻게 나눌지로 구체화되고 있다고 볼 수 있습니다. 관측 분석과 신호정보 처리는 궤도에서 발생한 데이터를 줄이는 수요에, 암호키 관리는 물리적으로 분리된 시스템을 활용하려는 수요에 대응합니다. 다만 공개된 단계는 첫 위성 운용, 초기 공급 계약, 장기 설계로 서로 다릅니다. 앞으로는 고객의 실제 이용과 검증된 성능이 사업성을 판단할 기준이 됩니다.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://loftorbital.com/orbitworks-launches-first-spacecraft-of-the-largest-ai-powered-satellite-constellation-with-nvidia-edge-ai-onboard/",
+        "label": "loftorbital.com"
+      },
+      {
+        "url": "https://blogs.nvidia.com/blog/france-ecosystem-agentic-computing/",
+        "label": "blogs.nvidia.com"
+      },
+      {
+        "url": "https://unibap.com/news/unibap-first-contract-for-edge-computing-for-satellites-in-a-sigint-mission/",
+        "label": "unibap.com"
+      },
+      {
+        "url": "https://blog.spacecomputer.io/kms-architecture-beta-launch/",
+        "label": "blog.spacecomputer.io"
+      }
+    ],
+    "video": {
+      "id": "rS1-RXs4Bkg",
+      "title": "오비트웍스, 50기 계획의 첫 AI 위성 연산 구성 공개"
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-10-13": {
     "date": "2026-10-13",
     "headlines": [
