@@ -1,4 +1,38 @@
 {
+  "2026-10-15": {
+    "date": "2026-10-15",
+    "headlines": [
+      {
+        "date": "2026-10-13",
+        "html": "<a href=\"https://m.korea.kr/briefing/pressReleaseView.do?newsId=156784938\" target=\"_blank\" rel=\"noopener\"><strong>Two-way communications confirmed with SD-1 SAT carrying AI execution verification payload</strong>: Communications results released for Space &amp; Bean satellite launched aboard Nuri…ArbaEdge in-orbit demonstration results remain undisclosed — (Korea AeroSpace Administration·SatNews)</a>"
+      },
+      {
+        "date": "2026-10-14",
+        "html": "<a href=\"https://www.faa.gov/space/stakeholder_engagement/spacex_starship\" target=\"_blank\" rel=\"noopener\"><strong>FAA begins environmental review of proposal for up to 456 Starship launches annually</strong>: Proposal would expand Starbase operations in two phases…a step toward launch infrastructure for large-scale satellite deployment — (FAA)</a>"
+      }
+    ],
+    "summary_html": "<strong>① SD-1 SAT·ArbaEdge (Korea AeroSpace Administration, 10/13)</strong> — (2026-10-13) The Korea AeroSpace Administration announced that Space &amp; Bean’s SD-1 SAT established two-way communications on its first attempt on October 7 and transmitted GPS records and other data. The satellite carries an AI execution verification payload developed by ArbaLabs. According to the [company’s mission overview](https://www.arbalabs.com/orbital-mission), the mission is testing technology that records AI execution without a ground connection. Results have not yet been released. Successful communications should be distinguished from successful AI verification.<br><br><strong>② Starship operations expansion (FAA, 10/14)</strong> — (2026-10-14) The FAA has begun the environmental impact assessment process for a proposed expansion of launch operations at Starbase. The proposal would increase annual operations to 100 launches and 200 landings in the first phase, then to as many as 456 launches and 912 landings. Public comments are open through November 30, and the expansion has not yet been approved. For orbital data centers, the review can be seen as a step toward expanding the launch infrastructure needed to deploy large numbers of computing satellites. It does not establish actual launch capacity or demonstrate cost reductions. The two developments highlight distinct requirements for expanding computing in space. Satellites need reliable technology to verify what AI systems have executed, while ground operations need launch systems capable of sustaining large-scale satellite deployment. Small demonstration missions and large launch expansion plans both warrant attention, but assessing the industry’s progress requires separate scrutiny of performance test results, regulatory approvals and operational track records.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://m.korea.kr/briefing/pressReleaseView.do?newsId=156784938",
+        "label": "korea.kr"
+      },
+      {
+        "url": "https://satnews.com/2026/10/13/arbalabs-validates-in-orbit-ai-verification-payload-aboard-south-koreas-nuri-rocket/",
+        "label": "satnews.com"
+      },
+      {
+        "url": "https://www.faa.gov/space/stakeholder_engagement/spacex_starship",
+        "label": "faa.gov"
+      }
+    ],
+    "video": {
+      "id": "9p_XWOSaT7c",
+      "title": "SD-1 SAT 교신 성공…궤도 AI 검증 결과는 미공개",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-10-14": {
     "date": "2026-10-14",
     "headlines": [

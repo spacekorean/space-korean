@@ -1,4 +1,37 @@
 {
+  "2026-10-15": {
+    "date": "2026-10-15",
+    "headlines": [
+      {
+        "date": "2026-10-13",
+        "html": "<a href=\"https://m.korea.kr/briefing/pressReleaseView.do?newsId=156784938\" target=\"_blank\" rel=\"noopener\"><strong>AI 실행 검증 장치 실은 SD-1 SAT, 양방향 교신 확인</strong>: 누리호로 발사된 스페이스앤빈 위성의 교신 결과 공개…아르바엣지 궤도 실증 결과는 아직 미공개 — (우주항공청·SatNews)</a>"
+      },
+      {
+        "date": "2026-10-14",
+        "html": "<a href=\"https://www.faa.gov/space/stakeholder_engagement/spacex_starship\" target=\"_blank\" rel=\"noopener\"><strong>FAA, 스타십 연간 최대 456회 발사안 환경검토 착수</strong>: 스타베이스 운용을 2단계로 확대하는 제안…대규모 위성 배치의 수송 기반과 연결 — (FAA)</a>"
+      }
+    ],
+    "summary_html": "<strong>① SD-1 SAT·아르바엣지(우주항공청, 10/13)</strong> — (2026-10-13) 우주항공청은 스페이스앤빈의 SD-1 SAT가 10월 7일 첫 시도에 양방향 교신을 하고 GPS 기록 등을 보냈다고 발표했습니다. 이 위성에는 아르바랩스의 AI 실행 검증 장치가 실려 있습니다. [회사 임무 안내](https://www.arbalabs.com/orbital-mission)에 따르면 지상 연결 없이 AI 실행 기록을 남기는 기술을 시험 중이며, 결과는 아직 공개하지 않았습니다. 교신 성공과 AI 검증 성공은 구분해야 합니다.<br><br><strong>② 스타십 운용 확대(FAA, 10/14)</strong> — (2026-10-14) FAA는 스타베이스의 발사 확대안에 대한 환경영향평가 절차를 시작했습니다. 제안은 연간 발사 100회·착륙 200회를 거쳐 최대 456회·912회로 늘리는 내용입니다. 의견 수렴은 11월 30일까지이며 확대 승인은 아직 나지 않았습니다. 궤도 데이터센터 관점에서는 많은 연산위성을 배치할 수송 기반을 넓히는 절차로 해석할 수 있습니다. 실제 발사 능력이나 비용 절감이 입증된 것은 아닙니다. 두 소식은 우주 연산의 확대에 서로 다른 조건이 필요함을 보여줍니다. 위성 안에서는 AI가 무엇을 실행했는지 확인할 신뢰성 기술이, 지상에서는 많은 위성을 지속적으로 보낼 수송 체계가 필요합니다. 작은 실증 임무와 대규모 발사 계획을 함께 보되, 성능 시험 결과와 허가·운용 실적을 각각 확인해야 산업의 진전을 판단할 수 있습니다.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://m.korea.kr/briefing/pressReleaseView.do?newsId=156784938",
+        "label": "korea.kr"
+      },
+      {
+        "url": "https://satnews.com/2026/10/13/arbalabs-validates-in-orbit-ai-verification-payload-aboard-south-koreas-nuri-rocket/",
+        "label": "satnews.com"
+      },
+      {
+        "url": "https://www.faa.gov/space/stakeholder_engagement/spacex_starship",
+        "label": "faa.gov"
+      }
+    ],
+    "video": {
+      "id": "9p_XWOSaT7c",
+      "title": "SD-1 SAT 교신 성공…궤도 AI 검증 결과는 미공개"
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-10-14": {
     "date": "2026-10-14",
     "headlines": [
