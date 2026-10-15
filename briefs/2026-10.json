@@ -1,4 +1,37 @@
 {
+  "2026-10-16": {
+    "date": "2026-10-16",
+    "headlines": [
+      {
+        "date": "2026-10-14",
+        "html": "<a href=\"https://embedl.com/news/embedl-and-space-cargo-unlimited-bring-ai-autonomy-to-the-space-edge\" target=\"_blank\" rel=\"noopener\"><strong>중국 ADA Space, 궤도 연산 위성 8기 발사</strong>: 연산·레이저 통신·방열 기술 시험 예정…15일에는 위성 6기에 실린 연산 장비 사양도 공개 — (LandSpace·둥팡톈쑤안)</a>"
+      },
+      {
+        "date": "2026-10-15",
+        "html": "<a href=\"https://shkjdw.gov.cn/c/2026-10-15/534680.shtml\" target=\"_blank\" rel=\"noopener\"><strong>Embedl·스페이스 카고 언리미티드, 우주 실험용 AI 시제품 공개</strong>: Jetson 모듈 하나로 단백질 결정 영상을 분석하고 대응 방안 제시 — (Embedl)</a>"
+      }
+    ],
+    "summary_html": "<strong>① ADA Space·둥팡톈쑤안(LandSpace, 10/14; 상하이 과학기술 당위원회, 10/15)</strong> — (2026-10-14) 주췌 2E가 위성 10기를 발사했고, 그중 ADA Space의 연산 위성은 8기입니다. 연산·레이저 통신·방열판 시험을 진행할 예정입니다. 둥팡톈쑤안은 후속 발표(2026-10-15)에서 이 중 6기에 자사 장비가 실렸으며, 장비당 최대 연산성능 약 2PFLOPS와 저장공간 16TB를 갖췄다고 밝혔습니다. 이는 탑재 사양이며 궤도 성능 검증 결과는 아닙니다.<br><br><strong>② Embedl·스페이스 카고 언리미티드(Embedl, 10/15)</strong> — (2026-10-15) 두 회사가 향후 BentoBox 우주 실험 임무에 사용할 AI 시제품을 공개했습니다. Jetson Orin NX 16GB 모듈 하나에서 단백질 결정 영상을 분석하고, 이상 징후를 찾으면 추론 모델이 원인과 대응 방안을 제시합니다. 지상과 계속 연결하지 않아도 판단하도록 설계됐습니다. 이번 발표는 시제품 개발에 관한 것으로, 실제 궤도 시험 결과나 발사 일정은 공개하지 않았습니다. 두 발표를 함께 보면 우주 연산은 처리 장비를 궤도에 배치하는 일과 그 장비에 맡길 작업을 개발하는 일이 병행되고 있다고 해석할 수 있습니다. 위성이 모은 자료나 우주 실험 영상을 현장에서 분석하면 지상에는 필요한 결과를 골라 보낼 수 있습니다. 앞으로는 공개된 최대 연산성능뿐 아니라 전력·열·통신 제약 아래에서 실제 임무를 얼마나 안정적으로 처리하는지가 우주 데이터센터의 활용 가치를 가늠할 기준이 됩니다.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.landspace.com/news-detail.html?itemid=78",
+        "label": "landspace.com"
+      },
+      {
+        "url": "https://shkjdw.gov.cn/c/2026-10-15/534680.shtml",
+        "label": "shkjdw.gov.cn"
+      },
+      {
+        "url": "https://embedl.com/news/embedl-and-space-cargo-unlimited-bring-ai-autonomy-to-the-space-edge",
+        "label": "embedl.com"
+      }
+    ],
+    "video": {
+      "id": "RbnP2_c706g",
+      "title": "ADA Space, 연산 위성 8기 발사…궤도 성능 검증은 앞으로"
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-10-15": {
     "date": "2026-10-15",
     "headlines": [

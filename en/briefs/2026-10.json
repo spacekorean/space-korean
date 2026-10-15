@@ -1,4 +1,38 @@
 {
+  "2026-10-16": {
+    "date": "2026-10-16",
+    "headlines": [
+      {
+        "date": "2026-10-14",
+        "html": "<a href=\"https://embedl.com/news/embedl-and-space-cargo-unlimited-bring-ai-autonomy-to-the-space-edge\" target=\"_blank\" rel=\"noopener\"><strong>China’s ADA Space launches eight orbital computing satellites</strong>: Spacecraft will test computing, laser communications and heat dissipation technologies…Specifications for computing equipment aboard six satellites were also disclosed on October 15 — (LandSpace·Dongfang Tianxuan)</a>"
+      },
+      {
+        "date": "2026-10-15",
+        "html": "<a href=\"https://shkjdw.gov.cn/c/2026-10-15/534680.shtml\" target=\"_blank\" rel=\"noopener\"><strong>Embedl and Space Cargo Unlimited unveil AI prototype for space experiments</strong>: A single Jetson module analyzes protein crystal images and recommends responses — (Embedl)</a>"
+      }
+    ],
+    "summary_html": "<strong>① ADA Space·Dongfang Tianxuan (LandSpace, 10/14; Shanghai Science and Technology Party Committee, 10/15)</strong> — (2026-10-14) A Zhuque-2E rocket launched 10 satellites, including eight ADA Space computing satellites. The spacecraft will conduct computing, laser communications and radiator tests. In a follow-up announcement (2026-10-15), Dongfang Tianxuan said six of the satellites carried its equipment, each unit offering peak computing performance of approximately 2 PFLOPS and 16 TB of storage. These are onboard hardware specifications, not verified in-orbit performance results.<br><br><strong>② Embedl·Space Cargo Unlimited (Embedl, 10/15)</strong> — (2026-10-15) The two companies unveiled an AI prototype for a future BentoBox space experiment mission. Running on a single Jetson Orin NX 16GB module, the system analyzes protein crystal images. When it detects anomalies, a reasoning model identifies potential causes and recommends responses. It is designed to make decisions without continuous connectivity to the ground. The announcement concerned prototype development; no in-orbit test results or launch schedule were disclosed. Taken together, the announcements suggest that space computing is advancing on two fronts: deploying computing hardware in orbit and developing the tasks it will perform. Analyzing satellite data or images from space experiments onboard could allow operators to transmit only selected results to the ground. The value of orbital data centers will increasingly depend not just on advertised peak computing performance, but on how reliably they execute real mission workloads under power, thermal and communications constraints.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.landspace.com/news-detail.html?itemid=78",
+        "label": "landspace.com"
+      },
+      {
+        "url": "https://shkjdw.gov.cn/c/2026-10-15/534680.shtml",
+        "label": "shkjdw.gov.cn"
+      },
+      {
+        "url": "https://embedl.com/news/embedl-and-space-cargo-unlimited-bring-ai-autonomy-to-the-space-edge",
+        "label": "embedl.com"
+      }
+    ],
+    "video": {
+      "id": "RbnP2_c706g",
+      "title": "ADA Space, 연산 위성 8기 발사…궤도 성능 검증은 앞으로",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-10-15": {
     "date": "2026-10-15",
     "headlines": [
