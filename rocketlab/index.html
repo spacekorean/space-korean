@@ -34,6 +34,11 @@
  .key.reset{background:#3a1c2c;border-color:#7a3a50}
  .key.act{background:#163057;border-color:#2f5a9a}
  .key.act:hover{background:#1d3f72}
+ .key.auto.on{background:#125c49;border-color:#5dde8f}
+ button.key{color:inherit;font:inherit;touch-action:none}
+ .key:focus-visible{outline:2px solid #ffd34d;outline-offset:3px}
+ #h_auto{max-width:210px;white-space:normal!important}
+ #top.auto{border-color:#429b7a;color:#91efc0}
  #cfg{bottom:14px;left:14px;max-width:184px}
  #cfgToggle{cursor:pointer;color:#9fc1ff;font-size:12px;font-weight:600}
  #cfgBody{margin-top:8px}
@@ -44,6 +49,13 @@
  #cfg button{width:100%;margin-top:6px;background:#16224a;border:1px solid #34509a;color:#cdddff;
    border-radius:7px;padding:6px;font-size:11.5px;cursor:pointer}
  #cfg button:hover{background:#1b2c5e}
+ @media(max-width:760px){
+   #help{display:none} #hud{top:58px;left:8px;padding:7px;min-width:160px;font-size:11px}
+   #top{top:8px;width:calc(100% - 16px);font-size:11px;padding:6px}
+   #top b{font-size:12px} #keys{bottom:8px;width:98%;max-width:98%;gap:4px}
+   .key{min-width:44px;min-height:44px;padding:4px} .key em{display:none}
+   #cfg{left:auto;right:8px;bottom:180px;padding:7px;max-width:175px}
+ }
 </style></head><body>
 <canvas id="cv"></canvas>
 <div class="panel" id="hud">
@@ -54,9 +66,11 @@
   <tr><td>수평 위치</td><td id="h_x"></td></tr>
   <tr><td>속도</td><td id="h_v"></td></tr>
   <tr><td>수직 속도</td><td id="h_vy"></td></tr>
+  <tr><td>수평 속도</td><td id="h_vx"></td></tr>
   <tr><td>기울기</td><td id="h_th"></td></tr>
   <tr><td>연료</td><td id="h_f"></td></tr>
   <tr><td>최고 고도</td><td id="h_max"></td></tr>
+  <tr><td>자동 착륙</td><td id="h_auto" aria-live="polite"></td></tr>
  </table>
 </div>
 <div class="panel" id="top"><span id="top_txt">엔진을 점화해 이륙하세요</span></div>
@@ -65,6 +79,7 @@
  <div><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd><kbd>F</kbd><kbd>G</kbd> 메인 엔진 (좌→우)</div>
  <div><kbd>J</kbd><kbd>K</kbd> 사이드 부스터 (좌·우)</div>
  <div><kbd>SPACE</kbd> 전체 메인 · <kbd>R</kbd> 리셋 · <kbd>M</kbd> 음소거</div>
+ <div><kbd>L</kbd> 자동 착륙 시작/취소 · 수동 엔진 입력 시 취소</div>
  <div style="margin-top:5px;color:#5f72a3">부드럽게(≤4 m/s, 수직) 접지하면 착륙 성공 · ▶ 리플레이</div>
 </div>
 <div class="panel" id="keys"></div>
@@ -92,6 +107,8 @@ window.keys = keys; // 디버그/테스트 훅
 // 리플레이 / 궤적 + 사운드 상태
 let trail = [], mode = 'live', rfi = 0, recording = true, lastStatus = 0, replayEnded = false;
 let replayBtn = null, muteBtn = null;
+let autoBtn = null;
+const autopilot = {active:false, phase:'대기 · L', warning:'', targetX:0, used:false};
 let audio = null, boostGain = null, muted = false;   // Web Audio 합성 (외부 파일 없음)
 
 function wrap(a){ let r = (a + Math.PI) % (2 * Math.PI); if (r < 0) r += 2 * Math.PI; return r - Math.PI; }
@@ -152,6 +169,9 @@ function init(){
 }
 
 function reset(){
+  clearInputs();
+  Object.assign(autopilot, {active:false, phase:'대기 · L', warning:'', targetX:0, used:false});
+  eng.forEach(e => e.u = 0);
   st = {x:0, y:H2, vx:0, vy:0, th:0, om:0, fuel:fuelCap, status:0, lifted:false, rot:0, t:0, imp:0, maxAlt:H2};
   trail = []; mode = 'live'; rfi = 0; recording = true; lastStatus = 0; replayEnded = false;
 }
@@ -159,10 +179,76 @@ window.getState = () => st;
 
 // ---- 프레임 / 리플레이 ----
 function liveFrame(){
-  return {x:st.x, y:st.y, th:st.th, vx:st.vx, vy:st.vy, fuel:st.fuel, status:st.status, t:st.t, u:eng.map(e => e.u)};
+  return {x:st.x, y:st.y, th:st.th, vx:st.vx, vy:st.vy, fuel:st.fuel, status:st.status, t:st.t, u:eng.map(e => e.u), auto:{...autopilot}};
 }
 function shownFrame(){ return (mode === 'replay' && trail.length) ? trail[Math.min(rfi, trail.length - 1)] : liveFrame(); }
-function startReplay(){ if (trail.length > 1){ mode = 'replay'; rfi = 0; acc = 0; replayEnded = false; } }
+function startReplay(){ if (trail.length > 1){ cancelAuto('리플레이'); clearInputs(); mode = 'replay'; rfi = 0; acc = 0; replayEnded = false; } }
+
+// ---- 자동 착륙: 기존 물리 적분기에 엔진별 0..1 스로틀만 전달 ----
+const clamp = (v, lo, hi) => Math.max(lo, Math.min(hi, v));
+function clearInputs(){ for (const k in keys) keys[k] = false; }
+function cancelAuto(reason = '취소 · 수동 조종'){
+  if (!autopilot.active) return;
+  autopilot.active = false; autopilot.phase = reason; autopilot.warning = '';
+  eng.forEach(e => e.u = 0);
+}
+function toggleAuto(){
+  if (autopilot.active){ cancelAuto(); return; }
+  if (mode !== 'live' || st.status !== 0){ autopilot.phase = 'R로 리셋 후 사용'; return; }
+  if (!st.lifted){ autopilot.phase = '이륙 후 L을 누르세요'; return; }
+  if (st.fuel <= 0){ autopilot.phase = '사용 불가 · 연료 소진'; return; }
+  const m = dry + st.fuel;
+  const lift = eng.reduce((sum,e) => sum + (e.kind === 'main' ? e.fmax*e.sd : 0), 0) / m;
+  // 평평한 지면 위의 예상 제동 지점을 선택한다. 발사대로 무리하게 회항하지 않는다.
+  const lateralBrake = Math.max(0.4, Math.min(3, lift * Math.sin(0.32)));
+  autopilot.targetX = clamp(st.x + st.vx*Math.abs(st.vx)/(2*lateralBrake), -XMAX+30, XMAX-30);
+  Object.assign(autopilot, {active:true, used:true, phase:'자세 정렬', warning:''});
+  clearInputs();
+}
+
+function autoControls(){
+  const m = dry + st.fuel, I = m * (3*Rr*Rr + H*H) / 12;
+  const h = Math.max(0, st.y - lowest(st.th));
+  const tilt = wrap(st.th), c = Math.cos(st.th), s = Math.sin(st.th);
+  const maxLift = eng.reduce((sum,e) => sum + (e.kind === 'main' ? e.fmax*e.sd : 0), 0) / m;
+  const reserve = maxLift*Math.cos(0.4) - G;
+  const brake = Math.max(0.15, reserve * 0.55);
+  const down = Math.max(0, -st.vy);
+  const stoppingHeight = down*down/(2*Math.max(0.05, maxLift-G));
+  const positionError = autopilot.targetX - st.x;
+  const horizontalReady = Math.abs(st.vx) < 0.8 && Math.abs(positionError) < 2;
+  const aligned = Math.abs(tilt) < 0.12 && Math.abs(st.om) < 0.15;
+  // 고도별 안전 하강 속도에 맞춰 미리 감속하고, 횡속도가 남으면 접지 전에 고도를 유지한다.
+  let desiredVy = -Math.min(18, Math.sqrt(2*brake*Math.max(0, h-1.5)) + 0.65, 0.65+h*0.4);
+  if ((!horizontalReady || !aligned) && reserve > 0.3){
+    const holdHeight = 12 + Math.min(35, st.vx*st.vx/6);
+    desiredVy = clamp((holdHeight-h)*0.6, -6, 4);
+  }
+  const ay = clamp((desiredVy-st.vy)*1.8, -G, Math.max(0, maxLift-G));
+  const ax = clamp(0.12*positionError - 0.8*st.vx, -3, 3);
+  const targetTilt = clamp(-Math.atan2(ax, Math.max(4, G+ay)), -0.4, 0.4);
+  const angularAcceleration = 3.2*wrap(targetTilt-tilt) - 3.4*st.om;
+
+  autopilot.phase = !aligned ? '자세 정렬' : !horizontalReady ? '수평 감속' : h < 8 ? '최종 하강' : '하강 감속';
+  autopilot.warning = st.fuel <= 0 ? '연료 소진' : maxLift <= G ? '추력 부족 · 착륙 보장 불가' :
+    h < stoppingHeight*1.1 && down > VMAX ? '제동 고도 부족 · 최대 감속' :
+    Math.abs(tilt) > 1.1 ? '큰 기울기 · 자세 회복 중' : '';
+
+  // 제한된 최소제곱 배분: 수직 가속도와 회전 제어를 우선하며, RCS의 횡력도 반영한다.
+  // 실제 엔진 위치/추력/관성으로 계산하므로 엔진 수와 Hopper 설정에도 적용된다.
+  const target = [ax*0.3, (G+ay), angularAcceleration*12];
+  const columns = eng.map(e => [(c*e.cd-s*e.sd)*e.fmax/m*0.3,
+    (s*e.cd+c*e.sd)*e.fmax/m, e.tarm*e.fmax/I*12]);
+  const u = eng.map(e => clamp(e.u, 0, 1));
+  const residual = target.map((v,j) => v - columns.reduce((sum,col,i) => sum+col[j]*u[i], 0));
+  for (let pass = 0; pass < 32; pass++) for (let i = 0; i < eng.length; i++){
+    const col = columns[i], norm = col.reduce((sum,v) => sum+v*v, 0) + 0.002;
+    const delta = clamp(u[i] + (col.reduce((sum,v,j) => sum+v*residual[j], 0)-0.002*u[i])/norm, 0, 1) - u[i];
+    u[i] += delta;
+    col.forEach((v,j) => residual[j] -= v*delta);
+  }
+  return u;
+}
 
 // ---- 사운드 (Web Audio 합성: 외부 음원 없음 → 정적 배포 유지) ----
 function initAudio(){            // 자동재생 정책: 첫 사용자 입력에서 생성/재개
@@ -218,15 +304,20 @@ function toggleMute(){
 function buildKeys(){
   const box = gid('keys'); box.innerHTML = '';
   function add(key, label, sub, cls){
-    const b = document.createElement('div'); b.className = 'key' + (cls ? ' ' + cls : '');
+    const b = document.createElement('button'); b.type = 'button'; b.className = 'key' + (cls ? ' ' + cls : '');
     b.innerHTML = '<kbd>' + (key === ' ' ? 'SPACE' : key.toUpperCase()) + '</kbd><span>' + label + '</span>' + (sub ? '<em>' + sub + '</em>' : '');
-    b.onpointerdown = ev => { ev.preventDefault(); initAudio(); b.setPointerCapture(ev.pointerId); if (key === 'r') reset(); else keys[key] = true; };
+    const press = () => { initAudio(); if (key === 'r') reset(); else { cancelAuto(); keys[key] = true; } };
+    b.onpointerdown = ev => { ev.preventDefault(); b.setPointerCapture(ev.pointerId); press(); };
     b.onpointerup = () => { keys[key] = false; };
     b.onpointercancel = () => { keys[key] = false; };
+    b.onlostpointercapture = () => { keys[key] = false; };
+    b.onkeydown = ev => { if (ev.key === 'Enter' || ev.key === ' '){ ev.preventDefault(); ev.stopPropagation(); if (!ev.repeat) press(); } };
+    b.onkeyup = ev => { if (ev.key === 'Enter' || ev.key === ' '){ ev.preventDefault(); ev.stopPropagation(); keys[key] = false; } };
+    b.onblur = () => { keys[key] = false; };
     box.appendChild(b); return b;
   }
   function addAction(label, sub, fn){
-    const b = document.createElement('div'); b.className = 'key act';
+    const b = document.createElement('button'); b.type = 'button'; b.className = 'key act';
     b.innerHTML = '<kbd>' + label + '</kbd><span>' + sub + '</span>';
     b.onclick = () => { initAudio(); fn(); };
     box.appendChild(b); return b;
@@ -237,21 +328,33 @@ function buildKeys(){
   sides.forEach(e => { e.btn = add(e.key, e.px < 0 ? '좌 부스터' : '우 부스터', (e.fmax/1000).toFixed(1) + 'kN'); });
   if (!sides.length) add('j', '부스터 없음', 'RCS=0').style.opacity = .4;
   add('r', '리셋', '', 'reset');
+  autoBtn = addAction('L', '자동 착륙', toggleAuto);
+  autoBtn.classList.add('auto'); autoBtn.id = 'autoLanding';
+  autoBtn.setAttribute('aria-pressed', 'false');
   replayBtn = addAction('▶', '리플레이', startReplay);
   muteBtn = addAction('🔊', '소리', toggleMute);
 }
 
 function step(){
   if (st.status !== 0) return;
+  const commands = autopilot.active ? autoControls() : null;
   let fxb = 0, fyb = 0, tau = 0, burn = 0;
-  for (const e of eng){
+  for (let i = 0; i < eng.length; i++){
+    const e = eng[i];
     let on = (e.key && keys[e.key]) ? 1 : 0;
     if (e.kind === 'main' && keys[' ']) on = 1;
+    if (commands) on = commands[i];
     let u = (on >= e.minth) ? Math.min(Math.max(on, 0), 1) : 0;
     if (st.fuel <= 0) u = 0;
     e.u = u;
     const F = u * e.fmax;
     fxb += F * e.cd; fyb += F * e.sd; tau += F * e.tarm; burn += F / (e.isp * G0);
+  }
+  // 마지막 연료도 실제 남은 질량까지만 사용한다.
+  if (burn*DT > st.fuel){
+    const fraction = st.fuel/(burn*DT);
+    fxb *= fraction; fyb *= fraction; tau *= fraction; burn *= fraction;
+    eng.forEach(e => e.u *= fraction);
   }
   const c = Math.cos(st.th), s = Math.sin(st.th);
   let fxw = c * fxb - s * fyb, fyw = s * fxb + c * fyb;
@@ -276,6 +379,10 @@ function step(){
     st.vx = 0; st.vy = 0; st.om = 0; st.y = lowest(st.th);
   }
   if (Math.abs(st.x) > XMAX || st.y > YMAX) st.status = 3;
+  if (st.status !== 0){
+    if (autopilot.active) cancelAuto(st.status === 1 ? '완료 · 착륙 성공' : '실패 · ' + (st.status === 2 ? '추락' : '구역 이탈'));
+    clearInputs(); eng.forEach(e => e.u = 0);
+  }
 }
 
 // ---- 카메라 + 렌더 (지면~로켓+여유가 항상 보이도록 줌, x는 로켓 추종) ----
@@ -326,6 +433,13 @@ function draw(){
   ctx.strokeStyle = '#3d5494'; ctx.lineWidth = 2;
   ctx.beginPath(); ctx.moveTo(0, SY(0)); ctx.lineTo(W, SY(0)); ctx.stroke();
   ctx.fillStyle = '#2c3c72'; ctx.fillRect(SX(-Rr*2.2), SY(0), Rr*4.4*scale, 4);
+  if (fr.auto && fr.auto.used){
+    const tx = SX(fr.auto.targetX);
+    ctx.strokeStyle = '#5dde8f'; ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.moveTo(tx-18, SY(0)-5); ctx.lineTo(tx+18, SY(0)-5); ctx.stroke();
+    ctx.font = '11px sans-serif'; ctx.textAlign = 'center'; ctx.fillStyle = '#91efc0';
+    ctx.fillText('AUTO 착륙 목표', tx, SY(0)-12); ctx.textAlign = 'left';
+  }
 
   // 궤적 (trail) — 라이브는 지나온 전체, 리플레이는 현재 프레임까지
   if (trail.length > 1){
@@ -372,6 +486,10 @@ function hud(){
   f('h_y', fr.y.toFixed(1) + ' m');
   f('h_x', fr.x.toFixed(1) + ' m');
   f('h_v', Math.hypot(fr.vx, fr.vy).toFixed(1) + ' m/s');
+  f('h_vx', fr.vx.toFixed(1) + ' m/s');
+  const ap = fr.auto || autopilot;
+  f('h_auto', (ap.active ? 'ON · ' : '') + ap.phase + (ap.warning ? ' · ' + ap.warning : ''));
+  gid('h_auto').style.color = ap.warning ? '#ffb24d' : ap.active ? '#91efc0' : '#fff';
   const vy = gid('h_vy'); vy.textContent = fr.vy.toFixed(1) + ' m/s';
   vy.style.color = (fr.vy < -VMAX) ? '#ff8a8a' : '#fff';
   f('h_th', (wrap(fr.th)*180/Math.PI).toFixed(0) + '°');
@@ -380,13 +498,19 @@ function hud(){
   fl.style.color = pct < 12 ? '#ff8a8a' : '#fff';
   f('h_max', st.maxAlt.toFixed(1) + ' m');
   const top = gid('top'), tt = gid('top_txt');
-  top.className = 'panel' + (fr.status === 1 ? ' ok' : (fr.status >= 2 ? ' err' : ''));
+  top.className = 'panel' + (fr.status === 1 ? ' ok' : (fr.status >= 2 ? ' err' : (ap.active ? ' auto' : '')));
   if (mode === 'replay') tt.innerHTML = '<b>리플레이 ▶</b> ' + fr.t.toFixed(1) + ' s · <kbd>R</kbd> 라이브로';
-  else if (fr.status === 0) tt.innerHTML = st.lifted ? '비행 중' : '엔진을 점화해 이륙하세요';
+  else if (fr.status === 0) tt.innerHTML = ap.active ? '<b>AUTO LANDING · ' + ap.phase + '</b><br>' + (ap.warning || 'L 또는 수동 엔진 입력으로 취소') : st.lifted ? '비행 중 · <kbd>L</kbd> 자동 착륙' : '엔진을 점화해 이륙하세요 · <kbd>L</kbd> 자동 착륙';
   else if (fr.status === 1) tt.innerHTML = '<b>착륙 성공 ✅</b> · 접지 ' + st.imp.toFixed(2) + ' m/s · ▶ 리플레이 · <kbd>R</kbd> 다시';
   else tt.innerHTML = '<b>' + STATUS_TXT[fr.status] + '</b> · ▶ 리플레이 · <kbd>R</kbd> 다시';
   eng.forEach((e,k) => { if (e.btn) e.btn.classList.toggle('on', ((mode === 'replay' ? fr.u[k] : e.u) || 0) > 0.001); });
   for (const b of document.querySelectorAll('.key')) if (b._space) b.classList.toggle('on', !!keys[' ']);
+  if (autoBtn){
+    autoBtn.classList.toggle('on', mode === 'live' && autopilot.active);
+    autoBtn.setAttribute('aria-pressed', String(mode === 'live' && autopilot.active));
+    autoBtn.querySelector('span').textContent = autopilot.active ? '자동 착륙 취소' : '자동 착륙';
+    autoBtn.disabled = mode !== 'live' || st.status !== 0;
+  }
 }
 
 let last = null, acc = 0;
@@ -417,17 +541,27 @@ function loop(now){
   requestAnimationFrame(loop);
 }
 
-const TRACK = ['a','s','d','f','g','j','k',' ','r'];
+const MANUAL = ['a','s','d','f','g','j','k',' '];
+const TRACK = [...MANUAL,'r','l','m'];
+function inputKey(e){ return e.code === 'Space' ? ' ' : /^Key[A-Z]$/.test(e.code || '') ? e.code.slice(3).toLowerCase() : e.key.toLowerCase(); }
 addEventListener('keydown', e => {
-  const k = e.key.toLowerCase();
+  if (e.target && (e.target.matches('input,textarea,select') || e.target.isContentEditable)) return;
+  if (e.ctrlKey || e.metaKey || e.altKey) return;
+  const k = inputKey(e);
+  if (e.target && e.target.matches('button') && (k === ' ' || e.key === 'Enter')) return;
   if (TRACK.includes(k)) e.preventDefault();
+  if (!TRACK.includes(k)) return;
   initAudio();                       // 첫 입력에서 오디오 활성화 (자동재생 정책)
+  if (e.repeat && ['r','m','l'].includes(k)) return;
   if (k === 'r'){ reset(); return; }
   if (k === 'm'){ toggleMute(); return; }
+  if (k === 'l'){ toggleAuto(); return; }
+  if (MANUAL.includes(k)) cancelAuto();
   keys[k] = true;
 });
-addEventListener('keyup', e => { keys[e.key.toLowerCase()] = false; });
-addEventListener('blur', () => { for (const k in keys) keys[k] = false; });
+addEventListener('keyup', e => { keys[inputKey(e)] = false; });
+addEventListener('blur', clearInputs);
+document.addEventListener('visibilitychange', () => { if (document.hidden) clearInputs(); });
 
 // 로켓 설정 패널 (정적 페이지에서도 방문자가 로켓을 바꿔볼 수 있게)
 gid('cfgToggle').onclick = () => {
