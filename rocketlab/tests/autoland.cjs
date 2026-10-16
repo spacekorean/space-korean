@@ -141,4 +141,23 @@ test('HUD exposes active and completed state',()=>{
   assert.equal(run('autoBtn.getAttribute("aria-pressed")'),'true');
   simulate(); run('hud()'); assert.match(elements.get('h_auto').textContent,/착륙 성공/);
 });
+test('booster level changes flight response without resetting flight',()=>{
+  const response = [];
+  for (const level of [1,2,3]){
+    flight(); run(`setBoosterLevel(${level})`); key('j'); run('step()');
+    response.push(run('st.om'));
+  }
+  assert.ok(Math.abs(response[1]-2*response[0])<1e-10);
+  assert.ok(Math.abs(response[2]-3*response[0])<1e-10);
+  const before = run('JSON.stringify(st)');
+  run('setBoosterLevel(1)'); assert.equal(run('JSON.stringify(st)'),before);
+});
+test('autopilot handles each booster level and an in-flight strength change',()=>{
+  for (const level of [1,2,3]){
+    flight({vx:6,th:0.4,om:0.2,vy:-8}); key('l');
+    run(`for(let i=0;i<50;i++) step(); setBoosterLevel(${level});`);
+    assert.equal(run('autopilot.active'),true);
+    assert.equal(simulate().status,1,'level '+level);
+  }
+});
 console.log(`${count} checks passed.`);

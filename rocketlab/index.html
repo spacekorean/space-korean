@@ -39,13 +39,16 @@
  .key:focus-visible{outline:2px solid #ffd34d;outline-offset:3px}
  #h_auto{max-width:210px;white-space:normal!important}
  #top.auto{border-color:#429b7a;color:#91efc0}
- #cfg{bottom:14px;left:14px;max-width:184px}
+ #cfg{bottom:14px;left:14px;max-width:218px}
  #cfgToggle{cursor:pointer;color:#9fc1ff;font-size:12px;font-weight:600}
  #cfgBody{margin-top:8px}
  #cfg .crow{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:4px 0}
- #cfg label{color:var(--mut);font-size:11px}
+ #cfg label{color:var(--mut);font-size:11px;white-space:nowrap}
  #cfg input{width:80px;background:#0c1530;border:1px solid #33508f;color:var(--ink);
    border-radius:6px;padding:4px 6px;font-size:12px}
+ #cfg select{width:110px;background:#0c1530;border:1px solid #33508f;color:var(--ink);
+   border-radius:6px;padding:4px;font-size:11px}
+ #c_rcs_value{color:var(--mut);font-size:10px;text-align:right}
  #cfg button{width:100%;margin-top:6px;background:#16224a;border:1px solid #34509a;color:#cdddff;
    border-radius:7px;padding:6px;font-size:11.5px;cursor:pointer}
  #cfg button:hover{background:#1b2c5e}
@@ -54,7 +57,7 @@
    #top{top:8px;width:calc(100% - 16px);font-size:11px;padding:6px}
    #top b{font-size:12px} #keys{bottom:8px;width:98%;max-width:98%;gap:4px}
    .key{min-width:44px;min-height:44px;padding:4px} .key em{display:none}
-   #cfg{left:auto;right:8px;bottom:180px;padding:7px;max-width:175px}
+   #cfg{left:auto;right:8px;bottom:180px;padding:7px;max-width:205px}
  }
 </style></head><body>
 <canvas id="cv"></canvas>
@@ -89,7 +92,10 @@
   <div class="crow"><label>메인 엔진</label><input id="c_engines" type="number" min="1" max="5" value="3"></div>
   <div class="crow"><label>추력 N</label><input id="c_thrust" type="number" step="500" value="10000"></div>
   <div class="crow"><label>연료 kg</label><input id="c_fuel" type="number" step="50" value="800"></div>
-  <div class="crow"><label>RCS N</label><input id="c_rcs" type="number" step="100" value="1500"></div>
+  <div class="crow"><label for="c_rcs">좌우 부스터</label><select id="c_rcs">
+   <option value="1">1단계</option><option value="2" selected>2단계 (기본)</option><option value="3">3단계</option>
+  </select></div>
+  <div id="c_rcs_value">각 3.0 kN · 즉시 적용</div>
   <button id="c_apply">재구성 &amp; 리셋</button>
   <button id="c_hopper">Hopper 프리셋</button>
  </div>
@@ -120,8 +126,8 @@ const HOPPER = {name:'hopper', body:{height:12, radius:1.0, dry_mass:1100, fuel_
   engines:[{pos:[-0.75,-6],dir_deg:90,max_thrust:10000,isp:285},
            {pos:[0,-6],dir_deg:90,max_thrust:10000,isp:285},
            {pos:[0.75,-6],dir_deg:90,max_thrust:10000,isp:285},
-           {pos:[1,4.2],dir_deg:180,max_thrust:1200,isp:240},
-           {pos:[-1,4.2],dir_deg:0,max_thrust:1200,isp:240}]};
+           {pos:[1,4.2],dir_deg:180,max_thrust:2400,isp:240},
+           {pos:[-1,4.2],dir_deg:0,max_thrust:2400,isp:240}]};
 
 function buildQuick(c){
   const n = Math.max(1, Math.min(5, c.engines | 0)), r = c.radius;
@@ -137,32 +143,45 @@ function configFromURL(){
   const q = new URLSearchParams(location.search), g = (k,d) => q.has(k) ? parseFloat(q.get(k)) : d;
   return {source:q.get('source') || 'quick', engines:g('engines',3), thrust:g('thrust',10000),
           isp:g('isp',280), dry_mass:g('dry_mass',1200), fuel:g('fuel',800),
-          height:g('height',12), radius:g('radius',1), rcs:g('rcs',1500)};
+          height:g('height',12), radius:g('radius',1), rcs:g('rcs',3000)};
 }
 function buildRocket(c){ return c.source === 'hopper' ? HOPPER : buildQuick(c); }
 
-function setupRocket(spec){
+function setupRocket(spec, boosterLevel = 2){
   R = spec; H = R.body.height; Rr = R.body.radius; H2 = H/2; dry = R.body.dry_mass; fuelCap = R.body.fuel_mass;
   document.getElementById('rname').textContent = R.name;
   eng = R.engines.map(e => {
     const d = e.dir_deg * Math.PI / 180, cd = Math.cos(d), sd = Math.sin(d);
     return {px:e.pos[0], py:e.pos[1], cd, sd, fmax:e.max_thrust, isp:e.isp,
             minth:e.min_throttle || 0, dir_deg:e.dir_deg, tarm:e.pos[0]*sd - e.pos[1]*cd,
-            lift:sd, u:0, key:null, kind:null};
+            lift:sd, u:0, key:null, kind:null, baseThrust:e.max_thrust/boosterLevel};
   });
   const mains = eng.filter(e => e.lift > 0.3).sort((a,b) => a.px - b.px);
   const MK = ['a','s','d','f','g'];
   mains.forEach((e,i) => { e.kind = 'main'; e.key = MK[i] || null; });
   eng.filter(e => e.lift <= 0.3).forEach(e => { e.kind = 'side'; e.key = e.px < 0 ? 'j' : 'k'; });
   buildKeys();
+  gid('c_rcs').value = String(boosterLevel);
+  setBoosterLevel(boosterLevel);
   reset();
+}
+
+function setBoosterLevel(level){
+  level = Math.max(1, Math.min(3, Number(level) || 2));
+  const sides = eng.filter(e => e.kind === 'side');
+  for (const e of sides){
+    e.fmax = e.baseThrust * level;
+    if (e.btn) e.btn.querySelector('em').textContent = (e.fmax/1000).toFixed(1) + 'kN';
+  }
+  gid('c_rcs').disabled = !sides.length;
+  gid('c_rcs_value').textContent = sides.length ? '각 ' + (sides[0].fmax/1000).toFixed(1) + ' kN · 즉시 적용' : '부스터 없음';
 }
 
 const gid = id => document.getElementById(id);
 function init(){
   const c = configFromURL();
   gid('c_engines').value = c.engines; gid('c_thrust').value = c.thrust;
-  gid('c_fuel').value = c.fuel; gid('c_rcs').value = c.rcs;
+  gid('c_fuel').value = c.fuel;
   setupRocket(buildRocket(c));
   addEventListener('resize', fit); fit();
   requestAnimationFrame(loop);
@@ -324,7 +343,7 @@ function buildKeys(){
   }
   eng.filter(e => e.kind === 'main' && e.key).forEach((e,i) => { e.btn = add(e.key, '엔진' + (i+1), (e.fmax/1000).toFixed(0) + 'kN'); });
   add(' ', '전체 메인', 'collective')._space = true;
-  const sides = eng.filter(e => e.kind === 'side' && e.key);
+  const sides = eng.filter(e => e.kind === 'side' && e.key).sort((a,b) => a.px - b.px);
   sides.forEach(e => { e.btn = add(e.key, e.px < 0 ? '좌 부스터' : '우 부스터', (e.fmax/1000).toFixed(1) + 'kN'); });
   if (!sides.length) add('j', '부스터 없음', 'RCS=0').style.opacity = .4;
   add('r', '리셋', '', 'reset');
@@ -407,9 +426,11 @@ function draw(){
   const tTop = Math.max(fr.y + 16, 45);
   viewTop += (tTop - viewTop) * 0.07;
   camX += (fr.x - camX) * 0.10;
-  const vb = -3, vt = viewTop;
-  scale = (Hc - 30) / (vt - vb);
-  oy = (Hc - 15) + vb * scale;
+  // 조작 패널의 실제 높이(모바일 줄바꿈·설정 펼침 포함) 위에 지면을 둔다.
+  const controlsTop = Math.min(gid('keys').getBoundingClientRect().top, gid('cfg').getBoundingClientRect().top);
+  const vt = viewTop;
+  oy = Math.min(Hc - 30, controlsTop - 18);
+  scale = Math.max(0.1, (oy - 15) / vt);
   ox = W/2 - camX * scale;
   const xmin = (0 - ox)/scale, xmax = (W - ox)/scale;
 
@@ -417,7 +438,7 @@ function draw(){
   bg.addColorStop(0,'#070b1c'); bg.addColorStop(1,'#101a3a');
   ctx.fillStyle = bg; ctx.fillRect(0,0,W,Hc);
 
-  const gs = gridStep(vt - vb);
+  const gs = gridStep(vt);
   ctx.strokeStyle = 'rgba(90,120,200,.13)'; ctx.fillStyle = 'rgba(140,165,220,.45)';
   ctx.font = '10px sans-serif'; ctx.lineWidth = 1;
   for (let gx = Math.ceil(xmin/gs)*gs; gx <= xmax; gx += gs){
@@ -567,9 +588,10 @@ document.addEventListener('visibilitychange', () => { if (document.hidden) clear
 gid('cfgToggle').onclick = () => {
   const b = gid('cfgBody'); b.style.display = b.style.display === 'none' ? 'block' : 'none';
 };
+gid('c_rcs').onchange = () => setBoosterLevel(gid('c_rcs').value);
 gid('c_apply').onclick = () => setupRocket(buildQuick({
   engines:+gid('c_engines').value, thrust:+gid('c_thrust').value, fuel:+gid('c_fuel').value,
-  rcs:+gid('c_rcs').value, isp:280, dry_mass:1200, height:12, radius:1}));
+  rcs:1500*Number(gid('c_rcs').value), isp:280, dry_mass:1200, height:12, radius:1}), Number(gid('c_rcs').value));
 gid('c_hopper').onclick = () => setupRocket(HOPPER);
 
 init();
