@@ -1,4 +1,42 @@
 {
+  "2026-10-19": {
+    "date": "2026-10-19",
+    "headlines": [
+      {
+        "date": "2026-10-16",
+        "html": "<a href=\"https://paper.cnstock.com/html/2026-10/16/content_2277955.htm\" target=\"_blank\" rel=\"noopener\"><strong>16 Chinese companies and institutions plan 1.5 billion yuan space computing joint venture</strong>: Geovis, Sugon and Hygon Information are among the participants developing space-based information infrastructure and computing services. — (Corporate filings published in Shanghai Securities News)</a>"
+      },
+      {
+        "date": "2026-10-16",
+        "html": "<a href=\"https://www.taibo.cn/p/99794\" target=\"_blank\" rel=\"noopener\"><strong>UniInfoLink raises hundreds of millions of yuan to advance connectivity for orbital computing</strong>: The funding will support mass production of laser communications components and development of technology linking computing resources across satellites. — (Taibo·Longding Investment)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Geovis·Sugon (Shanghai Securities News filings, 10/16)</strong> — (2026-10-16) 16 companies and investment institutions plan to establish a joint venture in Hefei, China, to design, manufacture and operate space-based information infrastructure and provide computing services. The venture will have registered capital of 1.5 billion yuan, with an initial 40% contribution planned once the funding conditions are met. The company has yet to be incorporated, and key technologies still require large-scale in-orbit validation. [Original filing](https://paper.cnstock.com/html/2026-10/16/content_2277955.htm)<br><br><strong>② UniInfoLink (Taibo, 10/16)</strong> — (2026-10-16) Chinese laser communications component supplier UniInfoLink announced that it had raised hundreds of millions of yuan. The exact amount was not disclosed. Investors included Longding Investment, and the proceeds will fund mass-production facilities, space environment testing and development of connectivity technology for orbital computing. The technology targets infrastructure that distributes computing workloads across multiple satellites; the announcement does not mark the launch of data center operations. [Announcement details](https://www.taibo.cn/p/99794) The two announcements show parallel investment in establishing a space computing operator and building the component supply chain needed to connect orbital computing resources. The central question extends beyond individual satellites’ processing capabilities to whether interconnected satellites can deliver reliable services. No supply agreement between the companies has been confirmed, however. The next milestones to watch are whether the joint venture receives its pledged capital and whether the connectivity equipment passes performance validation.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://paper.cnstock.com/html/2026-10/16/content_2277955.htm",
+        "label": "paper.cnstock.com"
+      },
+      {
+        "url": "https://paper.cnstock.com/html/2026-10/16/content_2277971.htm",
+        "label": "paper.cnstock.com"
+      },
+      {
+        "url": "https://www.taibo.cn/p/99794",
+        "label": "taibo.cn"
+      },
+      {
+        "url": "https://longding.fund/",
+        "label": "longding.fund"
+      }
+    ],
+    "video": {
+      "id": "yXsigRv-jbA",
+      "title": "중커싱투, 15억 위안 우주 연산 합작사 추진",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-10-16": {
     "date": "2026-10-16",
     "headlines": [

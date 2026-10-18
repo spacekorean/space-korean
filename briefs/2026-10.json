@@ -1,4 +1,41 @@
 {
+  "2026-10-19": {
+    "date": "2026-10-19",
+    "headlines": [
+      {
+        "date": "2026-10-16",
+        "html": "<a href=\"https://paper.cnstock.com/html/2026-10/16/content_2277955.htm\" target=\"_blank\" rel=\"noopener\"><strong>중국 16개 기업·기관, 15억 위안 우주 연산 합작사 추진</strong>: 중커싱투·중커수광·하이광정보 등이 우주 정보 인프라와 연산 서비스 개발에 참여합니다. — (상하이증권보 기업 공시)</a>"
+      },
+      {
+        "date": "2026-10-16",
+        "html": "<a href=\"https://www.taibo.cn/p/99794\" target=\"_blank\" rel=\"noopener\"><strong>유니인포링크, 억 위안대 투자 유치…궤도 연산 연결 기술 확대</strong>: 레이저통신 부품 양산과 위성 간 연산 연결 기술 개발에 자금을 투입할 계획입니다. — (타이보망·룽딩투자)</a>"
+      }
+    ],
+    "summary_html": "<strong>① 중커싱투·중커수광 (상하이증권보 공시, 10/16)</strong> — (2026-10-16) 16개 기업·투자기관이 중국 허페이에 우주 정보 인프라를 설계·제조·운영하고 연산 서비스를 제공할 합작사를 추진합니다. 등록자본은 15억 위안으로, 출자 조건 충족 후 40%를 먼저 납입할 계획입니다. 아직 법인 설립 전이며 핵심 기술의 대규모 궤도 검증도 남아 있습니다. [공시 원문](https://paper.cnstock.com/html/2026-10/16/content_2277955.htm)<br><br><strong>② 유니인포링크 (타이보망, 10/16)</strong> — (2026-10-16) 중국 레이저통신 부품 업체 유니인포링크가 억 위안대 투자를 유치했다고 발표했습니다. 정확한 금액은 공개하지 않았습니다. 룽딩투자 등이 참여했으며, 자금은 양산 설비와 우주 환경 시험, 궤도 연산 연결 기술 개발에 쓰입니다. 여러 위성을 연결해 연산을 나누는 인프라가 대상이며, 데이터센터 운영 개시 발표는 아닙니다. [발표 내용](https://www.taibo.cn/p/99794) 두 소식은 우주 연산의 사업 주체를 세우는 투자와 이를 연결할 부품 공급망 투자가 함께 진행되고 있음을 보여줍니다. 브리핑의 관점에서 보면, 관건은 개별 위성의 처리 성능을 넘어 여러 위성을 묶어 안정적인 서비스를 제공할 수 있느냐입니다. 다만 두 회사 사이의 공급계약은 확인되지 않았습니다. 합작사의 실제 출자 이행과 연결 장비의 성능 검증이 앞으로 확인할 단계입니다.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://paper.cnstock.com/html/2026-10/16/content_2277955.htm",
+        "label": "paper.cnstock.com"
+      },
+      {
+        "url": "https://paper.cnstock.com/html/2026-10/16/content_2277971.htm",
+        "label": "paper.cnstock.com"
+      },
+      {
+        "url": "https://www.taibo.cn/p/99794",
+        "label": "taibo.cn"
+      },
+      {
+        "url": "https://longding.fund/",
+        "label": "longding.fund"
+      }
+    ],
+    "video": {
+      "id": "yXsigRv-jbA",
+      "title": "중커싱투, 15억 위안 우주 연산 합작사 추진"
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-10-16": {
     "date": "2026-10-16",
     "headlines": [
