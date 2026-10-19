@@ -1,4 +1,33 @@
 {
+  "2026-10-20": {
+    "date": "2026-10-20",
+    "headlines": [
+      {
+        "date": "2026-10-18",
+        "html": "<a href=\"https://www.stdaily.com/web/gdxw/2026-10/18/content_598379.html\" target=\"_blank\" rel=\"noopener\"><strong>중국 OpenSpace, 연산위성 2600기 컨스텔레이션 계획 공개</strong>: 9개 기관이 참여해 공통 규격과 개발 환경을 추진합니다. 위성 수는 1단계 계획이며 발사 일정은 제시되지 않았습니다. — (과기일보)</a>"
+      },
+      {
+        "date": "2026-10-20",
+        "html": "<a href=\"https://www.mt.co.kr/index.php/amp/future/2026/10/20/2026101919453092343\" target=\"_blank\" rel=\"noopener\"><strong>한화, 관측위성·우주 AI 데이터센터·통신망을 잇는 3층 구조 구상</strong>: 위성 자료를 궤도에서 분석하고 결과만 지상에 보내는 방식을 제시했습니다. — (머니투데이 인터뷰)</a>"
+      }
+    ],
+    "summary_html": "<strong>① OpenSpace(과기일보, 10/18)</strong> — (2026-10-18) 카이윈항톈·오리엔스페이스·갤럭시스페이스 등 9개 기관이 17일 연산위성 컨스텔레이션 계획을 공개했습니다. 1단계는 범용 연산 1000기, AI·슈퍼컴퓨팅 1000기, 엣지 연산 500기, 양자 연산 100기 등 2600기입니다. 공통 규격과 개발 도구를 함께 만드는 방식입니다. 모두 계획 수치로, 발사 일정과 투자 규모는 보도에 제시되지 않았습니다. [발표 보도](https://www.stdaily.com/web/gdxw/2026-10/18/content_598379.html)<br><br><strong>② 한화(머니투데이, 10/20)</strong> — (2026-10-20) 김선 한화그룹 우주사업총괄 부사장이 관측위성 위에 우주 AI 데이터센터를, 그 위에 통신망을 두는 3층 구조를 설명했습니다. 위성 자료를 궤도에서 통합 분석해 결과만 지상에 보내는 구상입니다. 2028년 첫 발사 목표는 초저궤도 관측위성에 해당하며, 데이터센터의 가동 일정이나 연산 성능은 제시하지 않았습니다. [인터뷰 원문](https://www.mt.co.kr/index.php/amp/future/2026/10/20/2026101919453092343) 두 구상은 우주 연산을 개별 위성의 기능에서 여러 위성이 함께 쓰는 기반 시설로 넓히려는 시도로 해석할 수 있습니다. 앞으로는 계획한 위성 수뿐 아니라 서로 다른 장비가 연결되는지, 전력·방열 제약 속에서 어떤 작업을 얼마나 처리하는지, 실제 고객이 비용을 지불할 서비스가 있는지를 확인해야 합니다. 이번 발표들은 그 방향을 보여주지만, 궤도에서 검증된 성능이나 상용 서비스 개시를 뜻하지는 않습니다.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.stdaily.com/web/gdxw/2026-10/18/content_598379.html",
+        "label": "stdaily.com"
+      },
+      {
+        "url": "https://www.mt.co.kr/index.php/amp/future/2026/10/20/2026101919453092343",
+        "label": "머니투데이"
+      }
+    ],
+    "video": {
+      "id": "XWP9y4mM_EM",
+      "title": "OpenSpace, 연산위성 2,600기 계획 공개"
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-10-19": {
     "date": "2026-10-19",
     "headlines": [

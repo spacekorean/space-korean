@@ -1,4 +1,34 @@
 {
+  "2026-10-20": {
+    "date": "2026-10-20",
+    "headlines": [
+      {
+        "date": "2026-10-18",
+        "html": "<a href=\"https://www.stdaily.com/web/gdxw/2026-10/18/content_598379.html\" target=\"_blank\" rel=\"noopener\"><strong>China’s OpenSpace unveils plans for a 2,600-satellite computing constellation</strong>: Nine organizations are collaborating on common standards and a shared development environment. The satellite count covers the first phase; no launch schedule was disclosed. — (Science and Technology Daily)</a>"
+      },
+      {
+        "date": "2026-10-20",
+        "html": "<a href=\"https://www.mt.co.kr/index.php/amp/future/2026/10/20/2026101919453092343\" target=\"_blank\" rel=\"noopener\"><strong>Hanwha outlines a three-tier architecture linking observation satellites, orbital AI data centers and communications networks</strong>: The concept calls for analyzing satellite data in orbit and transmitting only the results to Earth. — (MoneyToday interview)</a>"
+      }
+    ],
+    "summary_html": "<strong>① OpenSpace (Science and Technology Daily, Oct. 18)</strong> — (2026-10-18) Nine organizations, including Kaiyun Aerospace, Orienspace and GalaxySpace, unveiled plans for a computing satellite constellation on October 17. The first phase would comprise 2,600 satellites: 1,000 for general-purpose computing, 1,000 for AI and supercomputing, 500 for edge computing and 100 for quantum computing. Participants plan to jointly develop common standards and development tools. All figures are planning targets; the report provided neither a launch schedule nor an investment amount. [Announcement coverage](https://www.stdaily.com/web/gdxw/2026-10/18/content_598379.html)<br><br><strong>② Hanwha (MoneyToday, Oct. 20)</strong> — (2026-10-20) Kim Sun, the vice president overseeing Hanwha Group’s space business, described a three-tier architecture with observation satellites at its base, orbital AI data centers in the middle and a communications network at the top. The concept calls for integrating and analyzing satellite data in orbit, then transmitting only the results to Earth. The 2028 first-launch target applies to very-low-Earth-orbit observation satellites; no operational timeline or computing performance specifications were provided for the data centers. [Full interview](https://www.mt.co.kr/index.php/amp/future/2026/10/20/2026101919453092343) Both concepts can be seen as efforts to expand space-based computing from a capability aboard individual satellites into infrastructure shared across multiple spacecraft. Assessing their progress will require looking beyond planned satellite counts to whether different systems can interoperate, what workloads they can process within power and heat-dissipation constraints, and whether they can offer services customers will pay for. These announcements indicate a direction of development, but do not establish demonstrated performance in orbit or the start of commercial services.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.stdaily.com/web/gdxw/2026-10/18/content_598379.html",
+        "label": "stdaily.com"
+      },
+      {
+        "url": "https://www.mt.co.kr/index.php/amp/future/2026/10/20/2026101919453092343",
+        "label": "머니투데이"
+      }
+    ],
+    "video": {
+      "id": "XWP9y4mM_EM",
+      "title": "OpenSpace, 연산위성 2,600기 계획 공개",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-10-19": {
     "date": "2026-10-19",
     "headlines": [
