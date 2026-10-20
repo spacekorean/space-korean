@@ -1,4 +1,50 @@
 {
+  "2026-10-21": {
+    "date": "2026-10-21",
+    "headlines": [
+      {
+        "date": "2026-10-20",
+        "html": "<a href=\"https://www.hpe.com/us/en/newsroom/press-release/2026/10/hpe-spaceborne-computer-to-power-high-performance-computing-and-ai-on-the-moon.html\" target=\"_blank\" rel=\"noopener\"><strong>HPE เปิดตัวคอมพิวเตอร์สำหรับทดสอบ AI และการประมวลผลสมรรถนะสูงบนพื้นผิวดวงจันทร์</strong>: เตรียมติดตั้ง Spaceborne Computer-4 บนรถสำรวจ FLIP ของ Astrolab โดยตั้งเป้าปล่อยสู่ห้วงอวกาศในช่วงปลายปี 2026 — (HPE)</a>"
+      },
+      {
+        "date": "2026-10-20",
+        "html": "<a href=\"https://www.prnewswire.com/news-releases/sophia-space-and-mit-lincoln-laboratory-announce-research-collaboration-on-space-based-weather-modeling-302913439.html\" target=\"_blank\" rel=\"noopener\"><strong>Sophia Space และ MIT Lincoln Laboratory ร่วมศึกษาแบบจำลองสภาพอากาศด้วยการประมวลผลในอวกาศ</strong>: ทั้งสองฝ่ายลงนามข้อตกลงวิจัยและพัฒนาร่วมกัน เพื่อประเมินประสิทธิภาพการประมวลผลข้อมูลสังเกตการณ์และการส่งต่อข้อมูล — (Sophia Space·PR Newswire)</a>"
+      },
+      {
+        "date": "2026-10-20",
+        "html": "<a href=\"https://www.stcn.com/article/detail/4229054.html\" target=\"_blank\" rel=\"noopener\"><strong>Beijing Space Computing Innovation Center เปิดตัวแพลตฟอร์มซื้อขายบริการประมวลผลในอวกาศรุ่นทดลอง</strong>: เริ่มทดลองให้บริการ โดยนำเสนอทรัพยากรประมวลผล ข้อมูล และโมเดล AI พร้อมเชื่อมโยงผู้ให้บริการกับผู้ต้องการใช้งาน — (Renmin Caixun·Securities Times)</a>"
+      },
+      {
+        "date": "2026-10-19",
+        "html": "<a href=\"https://www.reflexaerospace.com/press-releases/reflex-aerospace-scales-european-satellite-production-backed-by-planned-nvidia-investment\" target=\"_blank\" rel=\"noopener\"><strong>Reflex เดินหน้าขยายการผลิตดาวเทียม รองรับแผนการลงทุนจาก NVIDIA</strong>: บริษัทมีแผนขยายฐานการผลิตในรัฐบาวาเรีย ประเทศเยอรมนี และพัฒนาขีดความสามารถด้านการประมวลผลบนดาวเทียม โดยไม่เปิดเผยมูลค่าการลงทุน — (Reflex Aerospace)</a>"
+      }
+    ],
+    "summary_html": "<strong>① HPE(HPE, 10/20)</strong> — (2026-10-20) HPE เปิดตัว Spaceborne Computer-4 สำหรับติดตั้งบนรถสำรวจดวงจันทร์ FLIP ระบบประกอบด้วย CPU และ GPU ที่ใช้พลังงานต่ำ พร้อม SSD จาก Kioxia โดยมีแผนทดสอบการอนุมานด้วย AI และการประมวลผลสมรรถนะสูงบนดวงจันทร์ NASA และ Deloitte จะร่วมดำเนินการทดลอง โดยตั้งเป้าปล่อยในช่วงปลายปี 2026 ทั้งนี้ ยังไม่มีการพิสูจน์สมรรถนะบนดวงจันทร์ [ประกาศอย่างเป็นทางการ](https://www.hpe.com/us/en/newsroom/press-release/2026/10/hpe-spaceborne-computer-to-power-high-performance-computing-and-ai-on-the-moon.html)<br><br><strong>② Sophia Space(PR Newswire, 10/20)</strong> — (2026-10-20) Sophia Space ประกาศข้อตกลงวิจัยและพัฒนาร่วมกับ MIT Lincoln Laboratory โดยห้องปฏิบัติการจะจัดหาแบบจำลองสภาพอากาศและข้อมูลสำหรับการประเมิน ส่วน Sophia Space จะจัดเตรียมสภาพแวดล้อมสำหรับการอนุมานด้วย AI งานวิจัยจะศึกษาว่าการประมวลผลข้อมูลสังเกตการณ์ในอวกาศสามารถลดภาระการส่งข้อมูลและระยะเวลาที่ข้อมูลจะถึงผู้ใช้ได้หรือไม่ ขณะนี้อยู่ในขั้นทดสอบภาคพื้นดินและพิจารณารูปแบบระบบประมวลผลในอวกาศ ยังไม่ใช่การประกาศผลสาธิตในวงโคจร [ประกาศจากบริษัท](https://www.prnewswire.com/news-releases/sophia-space-and-mit-lincoln-laboratory-announce-research-collaboration-on-space-based-weather-modeling-302913439.html)<br><br><strong>③ Beijing Space Computing Innovation Center(Renmin Caixun·Securities Times, 10/20)</strong> — (2026-10-20) Beijing Space Computing Innovation Center เปิดตัวแพลตฟอร์มซื้อขายบริการประมวลผลในอวกาศรุ่นทดลอง แพลตฟอร์มนี้นำเสนอทรัพยากรประมวลผล ข้อมูล และโมเดล AI ทางออนไลน์ เพื่อเชื่อมโยงผู้ให้บริการกับผู้ต้องการใช้งาน หน่วยงานที่เข้าร่วมในระยะแรก ได้แก่ Tianyi Research Institute และ Sun Yat-sen University ข่าวนี้เป็นการรายงานการเปิดแพลตฟอร์มรุ่นทดลอง โดยไม่ได้ระบุปริมาณธุรกรรมที่เกิดขึ้นจริงหรือสมรรถนะการประมวลผลที่ให้บริการจากวงโคจร [รายงานต้นฉบับ](https://www.stcn.com/article/detail/4229054.html) <strong>④ Reflex Aerospace(Reflex, 10/19)</strong> — (2026-10-19) Reflex เดินหน้าขยายการผลิตดาวเทียมในรัฐบาวาเรียและพัฒนาขีดความสามารถด้านการประมวลผลบนดาวเทียม โดยมีแผนการเข้าลงทุนถือหุ้นส่วนน้อยของ NVIDIA เป็นแรงสนับสนุน บริษัทยังระบุว่ากำลังออกแบบแพลตฟอร์มดาวเทียมสำหรับศูนย์ข้อมูลในวงโคจรด้วย ความเคลื่อนไหวนี้อาจมองได้ว่าเป็นการขยายฐานการผลิตเพื่อรองรับอุปกรณ์ประมวลผลในอวกาศ อย่างไรก็ตาม บริษัทยังไม่เปิดเผยมูลค่าการลงทุน กำหนดเวลาที่การลงทุนจะเสร็จสิ้น หรือปริมาณการผลิตที่จัดสรรเฉพาะสำหรับศูนย์ข้อมูล [ประกาศอย่างเป็นทางการ](https://www.reflexaerospace.com/press-releases/reflex-aerospace-scales-european-satellite-production-backed-by-planned-nvidia-investment) การพิสูจน์ความเป็นไปได้ทางธุรกิจของการประมวลผลในอวกาศต้องทำควบคู่กันทั้งการส่งอุปกรณ์ขึ้นไป การตรวจสอบว่าอุปกรณ์เหล่านั้นทำงานที่เป็นประโยชน์ได้จริง และการยืนยันว่าลูกค้าสามารถเข้าถึงบริการได้ ข่าวในครั้งนี้สะท้อนโจทย์ที่แตกต่างกัน ทั้งอุปกรณ์ทดลอง การวิจัยการใช้งาน การเชื่อมโยงบริการ และฐานการผลิต หากจะประเมินว่าเป็นความคืบหน้าสู่การใช้งานเชิงพาณิชย์ จำเป็นต้องพิจารณาสมรรถนะการประมวลผลจริง ภาระด้านการสื่อสาร และข้อมูลการใช้งานที่จะเปิดเผยต่อไปประกอบกัน<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.hpe.com/us/en/newsroom/press-release/2026/10/hpe-spaceborne-computer-to-power-high-performance-computing-and-ai-on-the-moon.html",
+        "label": "hpe.com"
+      },
+      {
+        "url": "https://www.prnewswire.com/news-releases/sophia-space-and-mit-lincoln-laboratory-announce-research-collaboration-on-space-based-weather-modeling-302913439.html",
+        "label": "PR Newswire"
+      },
+      {
+        "url": "https://www.stcn.com/article/detail/4229054.html",
+        "label": "stcn.com"
+      },
+      {
+        "url": "https://www.reflexaerospace.com/press-releases/reflex-aerospace-scales-european-satellite-production-backed-by-planned-nvidia-investment",
+        "label": "reflexaerospace.com"
+      }
+    ],
+    "video": {
+      "id": "Hggmog2vegU",
+      "title": "HPE, 달 AI 컴퓨터 공개…올해 말 발사 목표",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-10-20": {
     "date": "2026-10-20",
     "headlines": [

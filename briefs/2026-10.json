@@ -1,4 +1,49 @@
 {
+  "2026-10-21": {
+    "date": "2026-10-21",
+    "headlines": [
+      {
+        "date": "2026-10-20",
+        "html": "<a href=\"https://www.hpe.com/us/en/newsroom/press-release/2026/10/hpe-spaceborne-computer-to-power-high-performance-computing-and-ai-on-the-moon.html\" target=\"_blank\" rel=\"noopener\"><strong>HPE, 달 표면에서 AI·고성능 연산 시험할 컴퓨터 공개</strong>: Spaceborne Computer-4를 아스트로랩의 FLIP 탐사차에 탑재해 2026년 말 발사를 목표로 합니다. — (HPE)</a>"
+      },
+      {
+        "date": "2026-10-20",
+        "html": "<a href=\"https://www.prnewswire.com/news-releases/sophia-space-and-mit-lincoln-laboratory-announce-research-collaboration-on-space-based-weather-modeling-302913439.html\" target=\"_blank\" rel=\"noopener\"><strong>소피아 스페이스·MIT 링컨연구소, 우주 연산으로 기상 모델 연구</strong>: 공동 연구개발 협약을 맺고 관측 자료 처리와 정보 전달 효율을 평가합니다. — (소피아 스페이스·PR Newswire)</a>"
+      },
+      {
+        "date": "2026-10-20",
+        "html": "<a href=\"https://www.stcn.com/article/detail/4229054.html\" target=\"_blank\" rel=\"noopener\"><strong>베이징 우주연산혁신센터, 우주 연산 거래 플랫폼 시험판 공개</strong>: 연산 자원·데이터·AI 모델을 소개하고 공급자와 수요자를 연결하는 시범 운영을 시작했습니다. — (인민재신·증권시보)</a>"
+      },
+      {
+        "date": "2026-10-19",
+        "html": "<a href=\"https://www.reflexaerospace.com/press-releases/reflex-aerospace-scales-european-satellite-production-backed-by-planned-nvidia-investment\" target=\"_blank\" rel=\"noopener\"><strong>리플렉스, NVIDIA 투자 계획 바탕으로 위성 생산 확대 추진</strong>: 독일 바이에른 생산 시설과 위성 내 연산 기능을 강화할 계획이며 투자 금액은 공개하지 않았습니다. — (리플렉스 에어로스페이스)</a>"
+      }
+    ],
+    "summary_html": "<strong>① HPE(HPE, 10/20)</strong> — (2026-10-20) HPE가 달 탐사차 FLIP에 실을 Spaceborne Computer-4를 공개했습니다. 저전력 CPU·GPU와 키옥시아 SSD를 갖추고, 달에서 AI 추론과 고성능 연산 시험을 수행할 계획입니다. NASA·딜로이트가 실험에 참여하며, 2026년 말 발사를 목표로 합니다. 달에서 성능을 입증한 단계는 아닙니다. [공식 발표](https://www.hpe.com/us/en/newsroom/press-release/2026/10/hpe-spaceborne-computer-to-power-high-performance-computing-and-ai-on-the-moon.html)<br><br><strong>② 소피아 스페이스(PR Newswire, 10/20)</strong> — (2026-10-20) 소피아 스페이스가 MIT 링컨연구소와 공동 연구개발 협약을 발표했습니다. 연구소는 기상 모델과 평가 자료를, 소피아는 AI 추론 환경을 제공합니다. 관측 자료를 우주에서 처리해 전송 부담과 정보 전달 시간을 줄일 수 있는지 연구합니다. 지상 시험과 우주 연산 구성을 검토하는 단계로, 궤도 실증 성과 발표는 아닙니다. [회사 발표](https://www.prnewswire.com/news-releases/sophia-space-and-mit-lincoln-laboratory-announce-research-collaboration-on-space-based-weather-modeling-302913439.html)<br><br><strong>③ 베이징 우주연산혁신센터(인민재신·증권시보, 10/20)</strong> — (2026-10-20) 베이징 우주연산혁신센터가 우주 연산 거래 플랫폼 시험판을 공개했습니다. 연산 자원·데이터·AI 모델을 온라인으로 소개하고 공급자와 수요자를 연결하는 방식입니다. 초기 참여 기관에는 톈이연구원과 중산대 등이 포함됐습니다. 시험판 개설 소식이며, 실제 거래 규모나 궤도에서 제공한 연산 성능은 보도에 제시되지 않았습니다. [원보도](https://www.stcn.com/article/detail/4229054.html) <strong>④ 리플렉스 에어로스페이스(리플렉스, 10/19)</strong> — (2026-10-19) 리플렉스가 NVIDIA의 소수 지분 투자 계획을 바탕으로 바이에른 위성 생산 확대와 위성 내 연산 기능 개발을 추진합니다. 회사는 궤도 데이터센터용 위성 플랫폼도 설계한다고 밝혔습니다. 우주 연산 장비를 실을 제조 기반을 넓히는 움직임으로 해석할 수 있습니다. 투자 금액과 완료 시점, 데이터센터 전용 생산 물량은 공개하지 않았습니다. [공식 발표](https://www.reflexaerospace.com/press-releases/reflex-aerospace-scales-european-satellite-production-backed-by-planned-nvidia-investment) 우주 연산의 사업성을 확인하려면 장비를 보내는 일과 함께, 그 장비에서 유용한 작업이 돌아가는지와 고객이 서비스를 이용할 수 있는지도 검증해야 합니다. 이번 소식들은 실험 장비, 활용 연구, 서비스 연결, 제조 기반이라는 서로 다른 과제를 다룹니다. 이를 상용화 진전으로 평가하려면 앞으로 공개될 실제 처리 성능과 통신 부담, 이용 실적을 함께 살펴봐야 합니다.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.hpe.com/us/en/newsroom/press-release/2026/10/hpe-spaceborne-computer-to-power-high-performance-computing-and-ai-on-the-moon.html",
+        "label": "hpe.com"
+      },
+      {
+        "url": "https://www.prnewswire.com/news-releases/sophia-space-and-mit-lincoln-laboratory-announce-research-collaboration-on-space-based-weather-modeling-302913439.html",
+        "label": "PR Newswire"
+      },
+      {
+        "url": "https://www.stcn.com/article/detail/4229054.html",
+        "label": "stcn.com"
+      },
+      {
+        "url": "https://www.reflexaerospace.com/press-releases/reflex-aerospace-scales-european-satellite-production-backed-by-planned-nvidia-investment",
+        "label": "reflexaerospace.com"
+      }
+    ],
+    "video": {
+      "id": "Hggmog2vegU",
+      "title": "HPE, 달 AI 컴퓨터 공개…올해 말 발사 목표"
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-10-20": {
     "date": "2026-10-20",
     "headlines": [

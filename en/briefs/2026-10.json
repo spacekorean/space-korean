@@ -1,4 +1,50 @@
 {
+  "2026-10-21": {
+    "date": "2026-10-21",
+    "headlines": [
+      {
+        "date": "2026-10-20",
+        "html": "<a href=\"https://www.hpe.com/us/en/newsroom/press-release/2026/10/hpe-spaceborne-computer-to-power-high-performance-computing-and-ai-on-the-moon.html\" target=\"_blank\" rel=\"noopener\"><strong>HPE unveils computer to test AI and high-performance computing on the lunar surface</strong>: Spaceborne Computer-4 will fly aboard Astrolab’s FLIP rover, targeting launch in late 2026. — (HPE)</a>"
+      },
+      {
+        "date": "2026-10-20",
+        "html": "<a href=\"https://www.prnewswire.com/news-releases/sophia-space-and-mit-lincoln-laboratory-announce-research-collaboration-on-space-based-weather-modeling-302913439.html\" target=\"_blank\" rel=\"noopener\"><strong>Sophia Space and MIT Lincoln Laboratory to study weather modeling using space-based computing</strong>: A joint research and development agreement will assess observational data processing and the efficiency of information delivery. — (Sophia Space · PR Newswire)</a>"
+      },
+      {
+        "date": "2026-10-20",
+        "html": "<a href=\"https://www.stcn.com/article/detail/4229054.html\" target=\"_blank\" rel=\"noopener\"><strong>Beijing Space Computing Innovation Center launches trial space computing marketplace</strong>: The pilot platform lists computing resources, data and AI models, connecting providers with prospective customers. — (Renmin Caixun · Securities Times)</a>"
+      },
+      {
+        "date": "2026-10-19",
+        "html": "<a href=\"https://www.reflexaerospace.com/press-releases/reflex-aerospace-scales-european-satellite-production-backed-by-planned-nvidia-investment\" target=\"_blank\" rel=\"noopener\"><strong>Reflex seeks to expand satellite production with planned NVIDIA investment</strong>: The company plans to expand its manufacturing facilities in Bavaria, Germany, and enhance onboard computing capabilities. The investment amount was not disclosed. — (Reflex Aerospace)</a>"
+      }
+    ],
+    "summary_html": "<strong>① HPE (HPE, 10/20)</strong> — (2026-10-20) HPE unveiled Spaceborne Computer-4 for the FLIP lunar rover. Equipped with low-power CPUs and GPUs and Kioxia SSDs, the computer is intended to test AI inference and high-performance computing on the moon. NASA and Deloitte will participate in the experiments, with launch targeted for late 2026. Its performance on the lunar surface has yet to be demonstrated. [Official announcement](https://www.hpe.com/us/en/newsroom/press-release/2026/10/hpe-spaceborne-computer-to-power-high-performance-computing-and-ai-on-the-moon.html)<br><br><strong>② Sophia Space (PR Newswire, 10/20)</strong> — (2026-10-20) Sophia Space announced a joint research and development agreement with MIT Lincoln Laboratory. The laboratory will provide weather models and evaluation data, while Sophia will supply an AI inference environment. The research will examine whether processing observational data in space can reduce transmission requirements and information delivery times. The work remains at the stage of evaluating ground tests and space computing configurations; the announcement does not report results from an orbital demonstration. [Company announcement](https://www.prnewswire.com/news-releases/sophia-space-and-mit-lincoln-laboratory-announce-research-collaboration-on-space-based-weather-modeling-302913439.html)<br><br><strong>③ Beijing Space Computing Innovation Center (Renmin Caixun · Securities Times, 10/20)</strong> — (2026-10-20) The Beijing Space Computing Innovation Center launched a trial space computing marketplace. The platform lists computing resources, data and AI models online, connecting providers with prospective customers. Initial participants include the Tianyi Research Institute and Sun Yat-sen University. The report covers the trial platform’s launch but provides no figures on actual transaction volumes or computing performance delivered in orbit. [Original report](https://www.stcn.com/article/detail/4229054.html) <strong>④ Reflex Aerospace (Reflex, 10/19)</strong> — (2026-10-19) Reflex plans to expand satellite production in Bavaria and develop onboard computing capabilities, backed by a planned minority equity investment from NVIDIA. The company said it is also designing satellite platforms for orbital data centers. The move could broaden the manufacturing base for spacecraft carrying space computing hardware. The investment amount, completion timeline and production volumes dedicated to data centers were not disclosed. [Official announcement](https://www.reflexaerospace.com/press-releases/reflex-aerospace-scales-european-satellite-production-backed-by-planned-nvidia-investment) Establishing the commercial viability of space computing requires more than sending hardware into space. Developers must also demonstrate that it can run useful workloads and that customers can access the resulting services. These announcements address distinct challenges: experimental hardware, applications research, connecting service providers with customers, and manufacturing capacity. Assessing their contribution to commercialization will require evidence of actual processing performance, communications requirements and service usage as those results become available.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.hpe.com/us/en/newsroom/press-release/2026/10/hpe-spaceborne-computer-to-power-high-performance-computing-and-ai-on-the-moon.html",
+        "label": "hpe.com"
+      },
+      {
+        "url": "https://www.prnewswire.com/news-releases/sophia-space-and-mit-lincoln-laboratory-announce-research-collaboration-on-space-based-weather-modeling-302913439.html",
+        "label": "PR Newswire"
+      },
+      {
+        "url": "https://www.stcn.com/article/detail/4229054.html",
+        "label": "stcn.com"
+      },
+      {
+        "url": "https://www.reflexaerospace.com/press-releases/reflex-aerospace-scales-european-satellite-production-backed-by-planned-nvidia-investment",
+        "label": "reflexaerospace.com"
+      }
+    ],
+    "video": {
+      "id": "Hggmog2vegU",
+      "title": "HPE, 달 AI 컴퓨터 공개…올해 말 발사 목표",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-10-20": {
     "date": "2026-10-20",
     "headlines": [
