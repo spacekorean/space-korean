@@ -1,4 +1,41 @@
 {
+  "2026-10-22": {
+    "date": "2026-10-22",
+    "headlines": [
+      {
+        "date": "2026-10-21",
+        "html": "<a href=\"https://www.mt.co.kr/industry/2026/10/21/2026102109022345660\" target=\"_blank\" rel=\"noopener\"><strong>KAI, 위성 내부 AI로 모의 고장 분석·대응 보고서 생성</strong>: BEE-1012 큐브위성에서 국산 NPU를 활용한 시범 임무를 마쳤으며, 12월 추가 실증을 계획합니다. — (머니투데이·KAI 발표)</a>"
+      },
+      {
+        "date": "2026-10-20",
+        "html": "<a href=\"https://www.businesswire.com/news/home/20261016907221/en/Planet-Launches-Pelican-12-Satellite\" target=\"_blank\" rel=\"noopener\"><strong>플래닛, 궤도 AI 추론 시험할 펠리컨 12호 발사</strong>: NVIDIA Jetson과 위성 간 영상 중계 시험 장비를 탑재했으며 첫 교신을 확인했습니다. — (플래닛·Business Wire)</a>"
+      },
+      {
+        "date": "2026-10-20",
+        "html": "<a href=\"https://www.globenewswire.com/news-release/2026/10/20/3384357/0/en/wisesat-space-and-sealsq-advance-satellite-cybersecurity-hardening-as-fossa-launches-new-6u-satellite-aboard-spacex-falcon-9.html\" target=\"_blank\" rel=\"noopener\"><strong>와이즈샛·SEALSQ, FOSSA 위성으로 보안칩 궤도 시험 확대</strong>: VaultIC를 탑재한 위성 발사를 발표했으며, 향후 궤도 클라우드의 보안 기반을 검증할 계획입니다. — (와이즈샛·GlobeNewswire)</a>"
+      }
+    ],
+    "summary_html": "<strong>① KAI(머니투데이, 10/21)</strong> — (2026-10-21) KAI는 20일 BEE-1012 큐브위성에서 모의 고장 신호를 분석하고 대응 보고서를 지상으로 보내는 AI 시험을 마쳤다고 밝혔습니다. 펀진과 협력한 모듈에 모빌린트 NPU를 적용했습니다. 실제 고장을 자동 수리한 시험은 아니며, 12월 본격 실증을 이어갈 계획입니다. [발표 보도](https://www.mt.co.kr/industry/2026/10/21/2026102109022345660)<br><br><strong>② 플래닛(Business Wire, 10/20)</strong> — (2026-10-20) 플래닛이 NVIDIA Jetson을 실은 펠리컨 12호를 발사하고 첫 교신을 확인했습니다. 위성 안에서 AI 추론을 시험하며, SES의 O3b mPOWER 위성을 경유하는 영상 중계 장비도 탑재했습니다. 현재 초기 운용 점검 단계로, AI 처리 속도나 중계 지연 개선 실측값은 발표하지 않았습니다. [회사 발표](https://www.businesswire.com/news/home/20261016907221/en/Planet-Launches-Pelican-12-Satellite)<br><br><strong>③ 와이즈샛·SEALSQ(GlobeNewswire, 10/20)</strong> — (2026-10-20) 와이즈샛은 SEALSQ의 VaultIC 보안칩을 실은 FOSSASAT-2E27의 발사를 발표했습니다. 최대 6개 임무에서 반복 시험을 추진하고 일부는 6개월간 관찰할 계획입니다. 차세대 QS7001 탑재·검증은 준비 상황에 달려 있습니다. 향후 QSOC 궤도 클라우드를 위한 보안 검증이며, 서비스 개통 발표는 아닙니다. [회사 발표](https://www.globenewswire.com/news-release/2026/10/20/3384357/0/en/wisesat-space-and-sealsq-advance-satellite-cybersecurity-hardening-as-fossa-launches-new-6u-satellite-aboard-spacex-falcon-9.html) 세 소식은 우주 연산의 가치를 실제 임무에서 확인하려는 움직임으로 해석할 수 있습니다. 위성 안에서 분석을 끝내고, 결과를 빠르게 전달하며, 그 과정의 보안을 확보해야 지상 관제의 부담을 줄일 수 있습니다. 이번 사례는 개별 위성의 연산과 보안 시험 단계입니다. 여러 고객이 함께 쓰는 대규모 우주 데이터센터로 확장하려면 처리 성능뿐 아니라 장기 운용의 신뢰성과 서비스 비용도 검증해야 합니다.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.mt.co.kr/industry/2026/10/21/2026102109022345660",
+        "label": "머니투데이"
+      },
+      {
+        "url": "https://www.businesswire.com/news/home/20261016907221/en/Planet-Launches-Pelican-12-Satellite",
+        "label": "businesswire.com"
+      },
+      {
+        "url": "https://www.globenewswire.com/news-release/2026/10/20/3384357/0/en/wisesat-space-and-sealsq-advance-satellite-cybersecurity-hardening-as-fossa-launches-new-6u-satellite-aboard-spacex-falcon-9.html",
+        "label": "globenewswire.com"
+      }
+    ],
+    "video": {
+      "id": "ICCqhZYyo6k",
+      "title": "KAI, 위성 안에서 AI로 모의 고장 분석…12월 추가 실증"
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-10-21": {
     "date": "2026-10-21",
     "headlines": [

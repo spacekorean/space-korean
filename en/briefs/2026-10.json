@@ -1,4 +1,42 @@
 {
+  "2026-10-22": {
+    "date": "2026-10-22",
+    "headlines": [
+      {
+        "date": "2026-10-21",
+        "html": "<a href=\"https://www.mt.co.kr/industry/2026/10/21/2026102109022345660\" target=\"_blank\" rel=\"noopener\"><strong>KAI uses onboard AI to analyze simulated satellite faults and generate response reports</strong>: The company completed a demonstration mission using a South Korean-developed NPU aboard the BEE-1012 CubeSat, with further testing planned for December. — (Money Today·KAI announcement)</a>"
+      },
+      {
+        "date": "2026-10-20",
+        "html": "<a href=\"https://www.businesswire.com/news/home/20261016907221/en/Planet-Launches-Pelican-12-Satellite\" target=\"_blank\" rel=\"noopener\"><strong>Planet launches Pelican-12 to test AI inference in orbit</strong>: The satellite carries NVIDIA Jetson hardware and equipment for intersatellite imagery relay tests. Initial contact has been confirmed. — (Planet·Business Wire)</a>"
+      },
+      {
+        "date": "2026-10-20",
+        "html": "<a href=\"https://www.globenewswire.com/news-release/2026/10/20/3384357/0/en/wisesat-space-and-sealsq-advance-satellite-cybersecurity-hardening-as-fossa-launches-new-6u-satellite-aboard-spacex-falcon-9.html\" target=\"_blank\" rel=\"noopener\"><strong>WISeSat and SEALSQ expand orbital security chip testing with FOSSA satellites</strong>: The companies announced the launch of a satellite carrying VaultIC, with plans to validate security technology for a future orbital cloud. — (WISeSat·GlobeNewswire)</a>"
+      }
+    ],
+    "summary_html": "<strong>① KAI(Money Today, 10/21)</strong> — (2026-10-21) KAI said on October 20 that it had completed an AI test aboard the BEE-1012 CubeSat, analyzing simulated fault signals and transmitting a response report to the ground. The module, developed in collaboration with Funzin, uses a Mobilint NPU. The test did not involve automatically repairing an actual fault. More extensive demonstrations are planned for December. [Report on the announcement](https://www.mt.co.kr/industry/2026/10/21/2026102109022345660)<br><br><strong>② Planet(Business Wire, 10/20)</strong> — (2026-10-20) Planet launched Pelican-12 carrying NVIDIA Jetson hardware and confirmed initial contact. The satellite will test onboard AI inference and carries equipment to relay imagery through SES’s O3b mPOWER satellites. It is currently undergoing initial operational checks. No measurements of AI processing speed or improvements in relay latency have been released. [Company announcement](https://www.businesswire.com/news/home/20261016907221/en/Planet-Launches-Pelican-12-Satellite)<br><br><strong>③ WISeSat·SEALSQ(GlobeNewswire, 10/20)</strong> — (2026-10-20) WISeSat announced the launch of FOSSASAT-2E27 carrying SEALSQ’s VaultIC security chip. The companies plan repeated testing across up to 6 missions, with some tests monitored over 6 months. Integration and validation of the next-generation QS7001 will depend on readiness. The work aims to validate security for the future QSOC orbital cloud; it does not mark the launch of a service. [Company announcement](https://www.globenewswire.com/news-release/2026/10/20/3384357/0/en/wisesat-space-and-sealsq-advance-satellite-cybersecurity-hardening-as-fossa-launches-new-6u-satellite-aboard-spacex-falcon-9.html) The three developments suggest a push to demonstrate the value of space-based computing in actual missions. Reducing the burden on ground control requires completing analysis onboard, delivering results quickly and securing the entire process. These projects remain at the stage of testing computing and security capabilities on individual satellites. Scaling up to large orbital data centers serving multiple customers will require validation of long-term operational reliability and service costs, as well as processing performance.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.mt.co.kr/industry/2026/10/21/2026102109022345660",
+        "label": "머니투데이"
+      },
+      {
+        "url": "https://www.businesswire.com/news/home/20261016907221/en/Planet-Launches-Pelican-12-Satellite",
+        "label": "businesswire.com"
+      },
+      {
+        "url": "https://www.globenewswire.com/news-release/2026/10/20/3384357/0/en/wisesat-space-and-sealsq-advance-satellite-cybersecurity-hardening-as-fossa-launches-new-6u-satellite-aboard-spacex-falcon-9.html",
+        "label": "globenewswire.com"
+      }
+    ],
+    "video": {
+      "id": "ICCqhZYyo6k",
+      "title": "KAI, 위성 안에서 AI로 모의 고장 분석…12월 추가 실증",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-10-21": {
     "date": "2026-10-21",
     "headlines": [

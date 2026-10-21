@@ -1,4 +1,42 @@
 {
+  "2026-10-22": {
+    "date": "2026-10-22",
+    "headlines": [
+      {
+        "date": "2026-10-21",
+        "html": "<a href=\"https://www.mt.co.kr/industry/2026/10/21/2026102109022345660\" target=\"_blank\" rel=\"noopener\"><strong>KAI ใช้ AI บนดาวเทียมวิเคราะห์เหตุขัดข้องจำลองและจัดทำรายงานแนวทางรับมือ</strong>: เสร็จสิ้นภารกิจสาธิตบนดาวเทียมคิวบ์แซต BEE-1012 โดยใช้ NPU ที่พัฒนาในเกาหลีใต้ และวางแผนทดสอบเพิ่มเติมในเดือนธันวาคม — (MoneyToday·ประกาศจาก KAI)</a>"
+      },
+      {
+        "date": "2026-10-20",
+        "html": "<a href=\"https://www.businesswire.com/news/home/20261016907221/en/Planet-Launches-Pelican-12-Satellite\" target=\"_blank\" rel=\"noopener\"><strong>Planet ส่งดาวเทียม Pelican 12 ขึ้นสู่วงโคจรเพื่อทดสอบการอนุมานด้วย AI</strong>: ดาวเทียมติดตั้ง NVIDIA Jetson และอุปกรณ์ทดสอบการส่งต่อภาพระหว่างดาวเทียม พร้อมยืนยันการติดต่อสื่อสารครั้งแรกแล้ว — (Planet·Business Wire)</a>"
+      },
+      {
+        "date": "2026-10-20",
+        "html": "<a href=\"https://www.globenewswire.com/news-release/2026/10/20/3384357/0/en/wisesat-space-and-sealsq-advance-satellite-cybersecurity-hardening-as-fossa-launches-new-6u-satellite-aboard-spacex-falcon-9.html\" target=\"_blank\" rel=\"noopener\"><strong>WISeSat·SEALSQ ขยายการทดสอบชิปรักษาความปลอดภัยในวงโคจรผ่านดาวเทียม FOSSA</strong>: ประกาศการส่งดาวเทียมที่ติดตั้ง VaultIC ขึ้นสู่วงโคจร เพื่อทดสอบเทคโนโลยีพื้นฐานด้านความปลอดภัยสำหรับระบบคลาวด์ในวงโคจรในอนาคต — (WISeSat·GlobeNewswire)</a>"
+      }
+    ],
+    "summary_html": "<strong>① KAI(MoneyToday, 10/21)</strong> — (2026-10-21) เมื่อวันที่ 20 KAI เปิดเผยว่าได้เสร็จสิ้นการทดสอบ AI บนดาวเทียมคิวบ์แซต BEE-1012 เพื่อวิเคราะห์สัญญาณเหตุขัดข้องจำลองและส่งรายงานแนวทางรับมือกลับมายังภาคพื้นดิน โดยใช้ NPU ของ Mobilint ในโมดูลที่พัฒนาร่วมกับ Funzin การทดสอบนี้ไม่ได้เป็นการซ่อมแซมความขัดข้องจริงโดยอัตโนมัติ และมีแผนดำเนินการทดสอบสาธิตอย่างเต็มรูปแบบต่อในเดือนธันวาคม [รายงานข่าวการประกาศ](https://www.mt.co.kr/industry/2026/10/21/2026102109022345660)<br><br><strong>② Planet(Business Wire, 10/20)</strong> — (2026-10-20) Planet ส่งดาวเทียม Pelican 12 ที่ติดตั้ง NVIDIA Jetson ขึ้นสู่วงโคจร และยืนยันการติดต่อสื่อสารครั้งแรกแล้ว ดาวเทียมจะทดสอบการอนุมานด้วย AI บนตัวดาวเทียมเอง และยังติดตั้งอุปกรณ์ส่งต่อภาพผ่านดาวเทียม O3b mPOWER ของ SES ขณะนี้อยู่ในขั้นตรวจสอบการทำงานช่วงเริ่มต้น โดยยังไม่ได้เปิดเผยผลการวัดความเร็วในการประมวลผล AI หรือการลดความหน่วงในการส่งต่อข้อมูล [ประกาศจากบริษัท](https://www.businesswire.com/news/home/20261016907221/en/Planet-Launches-Pelican-12-Satellite)<br><br><strong>③ WISeSat·SEALSQ(GlobeNewswire, 10/20)</strong> — (2026-10-20) WISeSat ประกาศการส่งดาวเทียม FOSSASAT-2E27 ที่ติดตั้งชิปรักษาความปลอดภัย VaultIC ของ SEALSQ ขึ้นสู่วงโคจร โดยมีแผนทดสอบซ้ำในภารกิจสูงสุด 6 ภารกิจ และติดตามผลบางภารกิจเป็นเวลา 6 เดือน ส่วนการติดตั้งและทดสอบชิปรุ่นถัดไป QS7001 จะขึ้นอยู่กับความพร้อม โครงการนี้เป็นการทดสอบด้านความปลอดภัยสำหรับระบบคลาวด์ในวงโคจร QSOC ในอนาคต ยังไม่ใช่การประกาศเปิดให้บริการ [ประกาศจากบริษัท](https://www.globenewswire.com/news-release/2026/10/20/3384357/0/en/wisesat-space-and-sealsq-advance-satellite-cybersecurity-hardening-as-fossa-launches-new-6u-satellite-aboard-spacex-falcon-9.html) ข่าวทั้ง 3 เรื่องอาจมองได้ว่าเป็นความพยายามพิสูจน์ประโยชน์ของการประมวลผลในอวกาศผ่านภารกิจจริง การลดภาระของศูนย์ควบคุมภาคพื้นดินต้องอาศัยทั้งการวิเคราะห์ให้เสร็จบนดาวเทียม การส่งผลลัพธ์อย่างรวดเร็ว และการรักษาความปลอดภัยตลอดกระบวนการ กรณีเหล่านี้ยังอยู่ในขั้นทดสอบการประมวลผลและความปลอดภัยบนดาวเทียมแต่ละดวง หากจะขยายสู่ศูนย์ข้อมูลขนาดใหญ่ในอวกาศที่รองรับลูกค้าหลายรายร่วมกัน ยังต้องพิสูจน์ทั้งประสิทธิภาพการประมวลผล ความน่าเชื่อถือในการทำงานระยะยาว และต้นทุนการให้บริการ<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.mt.co.kr/industry/2026/10/21/2026102109022345660",
+        "label": "머니투데이"
+      },
+      {
+        "url": "https://www.businesswire.com/news/home/20261016907221/en/Planet-Launches-Pelican-12-Satellite",
+        "label": "businesswire.com"
+      },
+      {
+        "url": "https://www.globenewswire.com/news-release/2026/10/20/3384357/0/en/wisesat-space-and-sealsq-advance-satellite-cybersecurity-hardening-as-fossa-launches-new-6u-satellite-aboard-spacex-falcon-9.html",
+        "label": "globenewswire.com"
+      }
+    ],
+    "video": {
+      "id": "ICCqhZYyo6k",
+      "title": "KAI, 위성 안에서 AI로 모의 고장 분석…12월 추가 실증",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-10-21": {
     "date": "2026-10-21",
     "headlines": [
