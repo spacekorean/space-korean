@@ -1,4 +1,34 @@
 {
+  "2026-10-23": {
+    "date": "2026-10-23",
+    "headlines": [
+      {
+        "date": "2026-10-20",
+        "html": "<a href=\"https://www.nesdis.noaa.gov/news/noaa-and-cowboy-space-corporation-test-faster-satellite-data-processing\" target=\"_blank\" rel=\"noopener\"><strong>NOAA และ Cowboy Space ลงนามข้อตกลงวิจัยระยะ 2 ปีเพื่อประมวลผลข้อมูลอุตุนิยมวิทยาบนดาวเทียม</strong>: มีแผนใช้ GPU ของ NVIDIA ประมวลผลข้อมูลการสังเกตการณ์ย้อนหลังบนดาวเทียม Reason 2 ซึ่งมีกำหนดปล่อยในปี 2027 — (NOAA NESDIS·Cowboy Space)</a>"
+      },
+      {
+        "date": "2026-10-21",
+        "html": "<a href=\"https://rdw.com/newsroom/redwire-and-endurosat-sign-mou-to-strengthen-european-space-infrastructure/\" target=\"_blank\" rel=\"noopener\"><strong>Redwire และ EnduroSat ลงนาม MOU ด้านโครงสร้างพื้นฐาน ครอบคลุมศูนย์ข้อมูลในวงโคจรของยุโรป</strong>: ทั้งสองบริษัทจะร่วมพิจารณาโอกาสทางธุรกิจในยุโรป โดยผสานขีดความสามารถด้านการผลิตดาวเทียมจำนวนมากเข้ากับระบบพลังงาน — (Redwire)</a>"
+      }
+    ],
+    "summary_html": "<strong>① NOAA และ Cowboy Space(NOAA NESDIS·Cowboy Space, 10/20)</strong> — (2026-10-20) NOAA ลงนามข้อตกลงวิจัยระยะ 2 ปีกับ Cowboy Space โดยบริษัทจะรับผิดชอบค่าใช้จ่ายทั้งหมด และมีแผนใช้ GPU ของ NVIDIA ประมวลผลข้อมูลอุตุนิยมวิทยาบนดาวเทียม Reason 2 ที่จะปล่อยในปี 2027 NOAA จะจัดหาแบบจำลองที่เปิดเผยต่อสาธารณะและข้อมูลการสังเกตการณ์ย้อนหลังจาก VIIRS การทดสอบมีเป้าหมายเพิ่มความเร็วในการประมวลผลและส่งข้อมูล โดยใช้ร่วมกับระบบสื่อสารด้วยแสงความเร็ว 25 กิกะบิตต่อวินาที ข้อมูลจากการทดสอบจะไม่นำไปใช้ในการพยากรณ์อากาศจริง<br><br><strong>② Redwire และ EnduroSat(Redwire, 10/21)</strong> — (2026-10-21) Redwire และ EnduroSat ตกลงผสานขีดความสามารถด้านการผลิตดาวเทียมจำนวนมากเข้ากับระบบพลังงานและประสบการณ์ในการบริหารภารกิจโดยรวม ความร่วมมือครอบคลุมศูนย์ข้อมูลในวงโคจรของยุโรป ภารกิจด้านกลาโหมในวงโคจรต่ำมาก และกลุ่มดาวเทียมนำทางรุ่นใหม่ ขณะนี้ยังอยู่ในขั้น MOU เพื่อร่วมพิจารณาโอกาสทางธุรกิจ โดยยังไม่มีการเปิดเผยมูลค่าสัญญาสำหรับศูนย์ข้อมูลหรือกำหนดการปล่อยดาวเทียม เมื่อพิจารณาประกาศทั้งสองร่วมกัน จะเห็นว่าธุรกิจศูนย์ข้อมูลในวงโคจรกำลังเดินหน้าควบคู่กันทั้งการจัดหาข้อมูลที่จะนำมาประมวลผลจริง และการพัฒนาขีดความสามารถด้านการผลิตและระบบพลังงานเพื่อรองรับการดำเนินงานในอวกาศ ข่าวครั้งนี้สะท้อนความคืบหน้าในระดับข้อตกลงวิจัยและความร่วมมือภาคอุตสาหกรรม ส่วนการประเมินความคุ้มค่าทางธุรกิจยังต้องรอผลการทดสอบจริง ทั้งคุณภาพของผลลัพธ์การประมวลผล ระยะเวลาจนข้อมูลส่งถึงภาคพื้นดิน และต้นทุน<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.nesdis.noaa.gov/news/noaa-and-cowboy-space-corporation-test-faster-satellite-data-processing",
+        "label": "nesdis.noaa.gov"
+      },
+      {
+        "url": "https://rdw.com/newsroom/redwire-and-endurosat-sign-mou-to-strengthen-european-space-infrastructure/",
+        "label": "rdw.com"
+      }
+    ],
+    "video": {
+      "id": "LSZiDLb27vs",
+      "title": "카우보이 스페이스, 2027년 궤도에서 기상자료 처리 시험",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-10-22": {
     "date": "2026-10-22",
     "headlines": [

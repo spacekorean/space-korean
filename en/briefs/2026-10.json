@@ -1,4 +1,34 @@
 {
+  "2026-10-23": {
+    "date": "2026-10-23",
+    "headlines": [
+      {
+        "date": "2026-10-20",
+        "html": "<a href=\"https://www.nesdis.noaa.gov/news/noaa-and-cowboy-space-corporation-test-faster-satellite-data-processing\" target=\"_blank\" rel=\"noopener\"><strong>NOAA, Cowboy Space sign two-year research agreement to process weather data aboard a satellite</strong>: The project will use NVIDIA GPUs to process historical observations aboard Reason 2, scheduled for launch in 2027. — (NOAA NESDIS·Cowboy Space)</a>"
+      },
+      {
+        "date": "2026-10-21",
+        "html": "<a href=\"https://rdw.com/newsroom/redwire-and-endurosat-sign-mou-to-strengthen-european-space-infrastructure/\" target=\"_blank\" rel=\"noopener\"><strong>Redwire, EnduroSat sign infrastructure cooperation MOU covering European orbital data centers</strong>: The companies will jointly explore European business opportunities by combining satellite mass-production capabilities with power systems expertise. — (Redwire)</a>"
+      }
+    ],
+    "summary_html": "<strong>① NOAA and Cowboy Space (NOAA NESDIS·Cowboy Space, 10/20)</strong> — (2026-10-20) NOAA has signed a two-year research agreement with Cowboy Space. Fully funded by the company, the project will process weather data using NVIDIA GPUs aboard the Reason 2 satellite, scheduled for launch in 2027. NOAA will provide publicly available models and historical VIIRS observations. The experiment aims to improve processing and transmission speeds by incorporating 25 Gbps optical communications. Test data will not be used for operational weather forecasts.<br><br><strong>② Redwire and EnduroSat (Redwire, 10/21)</strong> — (2026-10-21) Redwire and EnduroSat have agreed to combine satellite mass-production capabilities with power systems expertise and mission management experience. Areas of cooperation include European orbital data centers, defense missions in very low Earth orbit, and next-generation navigation constellations. The MOU provides a framework for jointly exploring business opportunities; no data center contract values or launch schedules were disclosed. Together, the announcements show that orbital data center ventures are pursuing two parallel priorities: securing data to process and developing the manufacturing and power capabilities needed to operate the infrastructure in space. These developments mark progress at the research agreement and industry cooperation stages. Assessing commercial viability will require actual test results on processing quality, the time needed to deliver results to the ground, and costs.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.nesdis.noaa.gov/news/noaa-and-cowboy-space-corporation-test-faster-satellite-data-processing",
+        "label": "nesdis.noaa.gov"
+      },
+      {
+        "url": "https://rdw.com/newsroom/redwire-and-endurosat-sign-mou-to-strengthen-european-space-infrastructure/",
+        "label": "rdw.com"
+      }
+    ],
+    "video": {
+      "id": "LSZiDLb27vs",
+      "title": "카우보이 스페이스, 2027년 궤도에서 기상자료 처리 시험",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-10-22": {
     "date": "2026-10-22",
     "headlines": [

@@ -1,4 +1,33 @@
 {
+  "2026-10-23": {
+    "date": "2026-10-23",
+    "headlines": [
+      {
+        "date": "2026-10-20",
+        "html": "<a href=\"https://www.nesdis.noaa.gov/news/noaa-and-cowboy-space-corporation-test-faster-satellite-data-processing\" target=\"_blank\" rel=\"noopener\"><strong>NOAA·카우보이 스페이스, 위성에서 기상자료 처리하는 2년 연구협약</strong>: 2027년 발사 예정인 리즌 2에서 NVIDIA GPU로 과거 관측자료를 처리할 계획입니다. — (NOAA NESDIS·Cowboy Space)</a>"
+      },
+      {
+        "date": "2026-10-21",
+        "html": "<a href=\"https://rdw.com/newsroom/redwire-and-endurosat-sign-mou-to-strengthen-european-space-infrastructure/\" target=\"_blank\" rel=\"noopener\"><strong>레드와이어·엔듀로샛, 유럽 궤도 데이터센터 포함한 인프라 협력 MOU</strong>: 위성 양산과 전력 시스템을 결합해 유럽 사업 기회를 함께 검토합니다. — (Redwire)</a>"
+      }
+    ],
+    "summary_html": "<strong>① NOAA·카우보이 스페이스(NOAA NESDIS·Cowboy Space, 10/20)</strong> — (2026-10-20) NOAA는 카우보이 스페이스와 2년 연구협약을 맺었습니다. 회사가 비용을 전액 부담해 2027년 발사할 리즌 2 위성에서 NVIDIA GPU로 기상자료를 처리할 계획입니다. NOAA는 공개 모델과 과거 VIIRS 관측자료를 제공합니다. 25Gbps 광통신을 결합한 처리·전송 속도 개선은 시험 목표이며, 시험 자료는 실제 기상예보에 사용하지 않습니다.<br><br><strong>② 레드와이어·엔듀로샛(Redwire, 10/21)</strong> — (2026-10-21) 레드와이어와 엔듀로샛이 위성 양산 역량과 전력 시스템·임무 총괄 경험을 결합하기로 했습니다. 유럽 궤도 데이터센터와 초저궤도 국방 임무, 차세대 항법 컨스텔레이션이 협력 대상입니다. 사업 기회를 함께 검토하는 MOU 단계로, 데이터센터 발주 금액이나 발사 일정은 공개하지 않았습니다. 두 발표를 함께 보면, 궤도 데이터센터 사업은 실제로 처리할 자료를 확보하는 일과 이를 우주에서 운용할 제조·전력 역량을 갖추는 일을 병행하고 있습니다. 이번 소식은 연구협약과 산업 협력 단계의 진전입니다. 사업성을 판단하려면 앞으로 처리 결과의 품질, 지상 전달까지 걸리는 시간, 비용이 실제 시험에서 어떻게 나오는지 확인해야 합니다.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.nesdis.noaa.gov/news/noaa-and-cowboy-space-corporation-test-faster-satellite-data-processing",
+        "label": "nesdis.noaa.gov"
+      },
+      {
+        "url": "https://rdw.com/newsroom/redwire-and-endurosat-sign-mou-to-strengthen-european-space-infrastructure/",
+        "label": "rdw.com"
+      }
+    ],
+    "video": {
+      "id": "LSZiDLb27vs",
+      "title": "카우보이 스페이스, 2027년 궤도에서 기상자료 처리 시험"
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-10-22": {
     "date": "2026-10-22",
     "headlines": [
