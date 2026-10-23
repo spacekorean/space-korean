@@ -1,4 +1,37 @@
 {
+  "2026-10-24": {
+    "date": "2026-10-24",
+    "headlines": [
+      {
+        "date": "2026-10-22",
+        "html": "<a href=\"https://cj.sina.com.cn/articles/view/2311077472/89c03e6002002p5oa\" target=\"_blank\" rel=\"noopener\"><strong>싱처웨이라이·차이나라이프 손해보험, 궤도 AI로 보험 위험 평가 협력</strong>: 위성 내부에서 분석한 정보를 재난 감시와 피해 평가에 활용하는 전략협약을 맺었습니다. — (증권일보)</a>"
+      },
+      {
+        "date": "2026-10-23",
+        "html": "<a href=\"https://kw.beijing.gov.cn/zwgk/zcwj/202610/t20261023_4916713.html\" target=\"_blank\" rel=\"noopener\"><strong>베이징시, AI 칩 연구과제 공모에 궤도 연산 포함</strong>: 우주 연산을 적용 분야 중 하나로 제시하고, 최소 2개 실제 수요기관의 검증을 요구했습니다. — (베이징시 과학기술위원회·중관춘 관리위원회)</a>"
+      }
+    ],
+    "summary_html": "<strong>① 싱처웨이라이·차이나라이프 손해보험(증권일보, 10/22)</strong> — (2026-10-22) 중국 우주 연산 기업 싱처웨이라이가 차이나라이프 손해보험 베이징 지사와 전략협약을 맺었습니다. 위성 안에서 AI로 영상을 분석해 농업·에너지 시설의 위험을 감시하고 재난 피해를 평가할 계획입니다. 위성 운용 자료를 활용한 우주보험 위험 평가도 추진합니다. 계약 금액과 상용화 일정은 공개하지 않았습니다.<br><br><strong>② 베이징시 과학기술위원회(공식 공고, 10/23)</strong> — (2026-10-23) 베이징시가 AI 연구과제 공모에서 궤도 연산을 차세대 칩 개발의 적용 분야 중 하나로 제시했습니다. 칩·소프트웨어·응용 환경을 함께 개발하고, 최소 2개 실제 수요기관에서 검증하도록 했습니다. 접수는 11월 2일까지입니다. 여러 AI 분야를 대상으로 한 후보 과제 공모이며, 지원 과제 선정 결과는 아직 제시하지 않았습니다. 두 소식은 우주 연산의 경쟁이 장비 개발과 함께 실제 사용처를 찾는 방향으로 넓어지는 움직임으로 해석할 수 있습니다. 앞으로 사업성을 판단하려면 연산 성능만이 아니라 고객의 업무에 필요한 정확도와 처리 시간, 비용을 함께 확인해야 합니다. 이번 협약과 공모가 실제 수요기관의 검증으로 이어지는지가 다음 관전점입니다.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://cj.sina.com.cn/articles/view/2311077472/89c03e6002002p5oa",
+        "label": "cj.sina.com.cn"
+      },
+      {
+        "url": "https://www.taibo.cn/newsflashes/31616433",
+        "label": "taibo.cn"
+      },
+      {
+        "url": "https://kw.beijing.gov.cn/zwgk/zcwj/202610/t20261023_4916713.html",
+        "label": "kw.beijing.gov.cn"
+      }
+    ],
+    "video": {
+      "id": "wEUx9lzj4H8",
+      "title": "싱처웨이라이, 궤도 AI로 보험 위험 평가 협력"
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-10-23": {
     "date": "2026-10-23",
     "headlines": [

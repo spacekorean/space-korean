@@ -1,4 +1,38 @@
 {
+  "2026-10-24": {
+    "date": "2026-10-24",
+    "headlines": [
+      {
+        "date": "2026-10-22",
+        "html": "<a href=\"https://cj.sina.com.cn/articles/view/2311077472/89c03e6002002p5oa\" target=\"_blank\" rel=\"noopener\"><strong>Xingce Weilai and China Life P&amp;C Insurance partner on orbital AI for insurance risk assessment</strong>: The companies signed a strategic agreement to use data analyzed aboard satellites for disaster monitoring and damage assessment. — (Securities Daily)</a>"
+      },
+      {
+        "date": "2026-10-23",
+        "html": "<a href=\"https://kw.beijing.gov.cn/zwgk/zcwj/202610/t20261023_4916713.html\" target=\"_blank\" rel=\"noopener\"><strong>Beijing includes orbital computing in call for AI chip research proposals</strong>: The city identified space-based computing as an application area and requires validation by at least two end-user organizations. — (Beijing Municipal Science and Technology Commission and Administrative Commission of Zhongguancun Science Park)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Xingce Weilai and China Life P&amp;C Insurance (Securities Daily, 10/22)</strong> — (2026-10-22) Chinese space-based computing company Xingce Weilai signed a strategic agreement with China Life P&amp;C Insurance’s Beijing branch. The partners plan to use onboard AI to analyze satellite imagery, monitor risks to agricultural and energy facilities, and assess disaster damage. They also plan to use satellite operational data to assess space insurance risks. Financial terms and a commercialization timeline were not disclosed.<br><br><strong>② Beijing Municipal Science and Technology Commission (official notice, 10/23)</strong> — (2026-10-23) Beijing identified orbital computing as an application area for next-generation chip development in a call for AI research proposals. The call requires coordinated development of chips, software and application environments, with validation by at least two end-user organizations. Applications close on November 2. The call seeks candidate projects across several AI fields; no funding selections have been announced. The two developments suggest that competition in space-based computing is expanding beyond hardware development to identifying practical applications. Assessing commercial viability will require examining not only computing performance but also the accuracy, processing times and costs needed to meet customers’ operational requirements. The next development to watch is whether the agreement and research call lead to validation by end users.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://cj.sina.com.cn/articles/view/2311077472/89c03e6002002p5oa",
+        "label": "cj.sina.com.cn"
+      },
+      {
+        "url": "https://www.taibo.cn/newsflashes/31616433",
+        "label": "taibo.cn"
+      },
+      {
+        "url": "https://kw.beijing.gov.cn/zwgk/zcwj/202610/t20261023_4916713.html",
+        "label": "kw.beijing.gov.cn"
+      }
+    ],
+    "video": {
+      "id": "wEUx9lzj4H8",
+      "title": "싱처웨이라이, 궤도 AI로 보험 위험 평가 협력",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-10-23": {
     "date": "2026-10-23",
     "headlines": [
