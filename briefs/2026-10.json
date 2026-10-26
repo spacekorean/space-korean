@@ -1,4 +1,25 @@
 {
+  "2026-10-26": {
+    "date": "2026-10-26",
+    "headlines": [
+      {
+        "date": "2026-10-22",
+        "html": "<a href=\"https://www.cctime.com/html/2026-10-22/1745085.htm\" target=\"_blank\" rel=\"noopener\"><strong>상하이, 우주 연산과 위성 데이터를 연결하는 AI 에이전트 플랫폼 공개</strong>: 산업별 위성 분석 서비스를 적은 코드로 개발하도록 지원합니다. — (페이샹왕·펑파이신문)</a>"
+      }
+    ],
+    "summary_html": "<strong>① 상하이 위성 AI 플랫폼 (페이샹왕·펑파이신문, 10/22)</strong> — (2026-10-22) 상하이에서 10월 20일 공개한 플랫폼은 위성 AI 에이전트 개발에 대규모 모델 서비스와 위성 데이터 서비스를 연결합니다. 산업별 개발자가 적은 코드로 분석 서비스를 만들도록 돕는 구상입니다. 우주 연산을 이용하는 창구를 넓히려는 시도지만, 실제 궤도 연산 처리량이나 유료 이용 실적은 보도에 제시되지 않았습니다.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.cctime.com/html/2026-10-22/1745085.htm",
+        "label": "cctime.com"
+      }
+    ],
+    "video": {
+      "id": "vGa0NOObVgg",
+      "title": "상하이, 위성 데이터와 AI 연결하는 플랫폼 공개"
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-10-24": {
     "date": "2026-10-24",
     "headlines": [

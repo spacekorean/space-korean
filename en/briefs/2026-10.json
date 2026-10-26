@@ -1,4 +1,26 @@
 {
+  "2026-10-26": {
+    "date": "2026-10-26",
+    "headlines": [
+      {
+        "date": "2026-10-22",
+        "html": "<a href=\"https://www.cctime.com/html/2026-10-22/1745085.htm\" target=\"_blank\" rel=\"noopener\"><strong>Shanghai unveils AI agent platform linking space-based computing with satellite data</strong>: The platform supports low-code development of satellite analytics services tailored to specific industries. — (CCTIME·The Paper)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Shanghai satellite AI platform (CCTIME·The Paper, 10/22)</strong> — (2026-10-22) The platform, unveiled in Shanghai on October 20, integrates large AI model services and satellite data services to support the development of satellite AI agents. It is designed to help developers across industries build analytics services with minimal coding. The initiative seeks to broaden access to space-based computing, but the report provided no figures on actual in-orbit computing throughput or paid usage.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.cctime.com/html/2026-10-22/1745085.htm",
+        "label": "cctime.com"
+      }
+    ],
+    "video": {
+      "id": "vGa0NOObVgg",
+      "title": "상하이, 위성 데이터와 AI 연결하는 플랫폼 공개",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-10-24": {
     "date": "2026-10-24",
     "headlines": [
