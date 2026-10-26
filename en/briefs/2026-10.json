@@ -1,4 +1,30 @@
 {
+  "2026-10-27": {
+    "date": "2026-10-27",
+    "headlines": [
+      {
+        "date": "2026-10-26",
+        "html": "<a href=\"https://www.mt.co.kr/amp/future/2026/10/26/2026102609264544096\" target=\"_blank\" rel=\"noopener\"><strong>Dunamu &amp; Partners discloses investment in Starcloud</strong>: The firm was the sole Korean investor in the orbital data center company&#x27;s $250 million funding round and is exploring opportunities for collaboration with Korean companies. — (The Asia Business Daily·MoneyToday)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Dunamu &amp; Partners (The Asia Business Daily·MoneyToday, 10/26)</strong> — (2026-10-26) Dunamu &amp; Partners announced its participation in Starcloud&#x27;s funding round. The round totaled $250 million; Dunamu&#x27;s individual investment was not disclosed. The announcement identifies a Korean investor in the previously announced round and outlines plans to explore collaboration with Korean companies. The firm sees potential opportunities for Korean companies to supply technology, but no specific supply contracts were announced.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://view.asiae.co.kr/en/article/2026102609164385918",
+        "label": "아시아경제"
+      },
+      {
+        "url": "https://www.mt.co.kr/amp/future/2026/10/26/2026102609264544096",
+        "label": "머니투데이"
+      }
+    ],
+    "video": {
+      "id": "7w5kcrUXQ5o",
+      "title": "두나무앤파트너스, 스타클라우드 투자 참여 공개",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-10-26": {
     "date": "2026-10-26",
     "headlines": [

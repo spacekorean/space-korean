@@ -1,4 +1,29 @@
 {
+  "2026-10-27": {
+    "date": "2026-10-27",
+    "headlines": [
+      {
+        "date": "2026-10-26",
+        "html": "<a href=\"https://view.asiae.co.kr/en/article/2026102609164385918\" target=\"_blank\" rel=\"noopener\"><strong>두나무앤파트너스, 스타클라우드 투자 참여 공개</strong>: 우주 데이터센터 기업의 2억 5천만 달러 투자 라운드에 한국 투자자로 유일하게 참여했으며, 국내 기업과의 협력 기회를 모색합니다. — (아시아경제·머니투데이)</a>"
+      }
+    ],
+    "summary_html": "<strong>① 두나무앤파트너스 (아시아경제·머니투데이, 10/26)</strong> — (2026-10-26) 두나무앤파트너스가 스타클라우드 투자 참여를 발표했습니다. 전체 라운드는 2억 5천만 달러이며 두나무의 개별 투자액은 공개되지 않았습니다. 이번 소식은 기존 라운드의 한국 투자자 참여와 국내 협력 구상 공개입니다. 한국 기업의 기술 공급 기회를 기대하지만, 구체적인 공급 계약 체결은 발표하지 않았습니다.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://view.asiae.co.kr/en/article/2026102609164385918",
+        "label": "아시아경제"
+      },
+      {
+        "url": "https://www.mt.co.kr/amp/future/2026/10/26/2026102609264544096",
+        "label": "머니투데이"
+      }
+    ],
+    "video": {
+      "id": "7w5kcrUXQ5o",
+      "title": "두나무앤파트너스, 스타클라우드 투자 참여 공개"
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-10-26": {
     "date": "2026-10-26",
     "headlines": [
