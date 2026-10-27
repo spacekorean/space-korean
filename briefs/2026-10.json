@@ -1,4 +1,25 @@
 {
+  "2026-10-28": {
+    "date": "2026-10-28",
+    "headlines": [
+      {
+        "date": "2026-10-26",
+        "html": "<a href=\"https://www.streetinsider.com/Business%2BWire/Cowboy%2BSpace%2BReveals%2BBig%2BIron%2C%2BIts%2BData%2BCenter%2BRocket%2C%2Band%2BOpens%2BCommercial%2BLaunch%2Bto%2BGovernment%2Band%2BThird-Party%2BPayloads/27235370.html\" target=\"_blank\" rel=\"noopener\"><strong>카우보이 스페이스, 로켓 상단이 데이터센터가 되는 ‘빅 아이언’ 설계 공개</strong>: 메가와트급 궤도 연산과 외부 고객 발사를 함께 추진하며, 첫 비행은 2028년을 목표로 합니다. — (Cowboy Space·Business Wire, 미국 동부시간)</a>"
+      }
+    ],
+    "summary_html": "<strong>① 카우보이 스페이스 (Business Wire, 10/26)</strong> — (2026-10-26) 빅 아이언은 궤도에 남은 로켓 상단을 메가와트급 데이터센터로 쓰는 설계입니다. 펼치면 132×73m이며 NVIDIA 베라 루빈 GPU 랙 5개를 싣도록 설계했습니다. 로켓 외피는 방열판으로, 암모니아 추진제는 냉각재로 활용합니다. 태양동기궤도에 15톤 넘게 운반하고 외부 고객에게도 발사 서비스를 제공할 계획입니다. 첫 비행 목표는 2028년으로, 실제 운용 성과나 지상 대비 비용 우위가 검증된 단계는 아닙니다. 발사체와 데이터센터를 함께 설계해 부품을 두 용도로 쓰는 접근은 궤도 연산의 비용을 줄이려는 시도입니다. 다만 부품 통합이 개발·운용 비용 절감으로 이어지는지는 비행 시험으로 확인해야 합니다. 앞으로 볼 지점은 설계 규모 자체보다 발사와 전력 공급, 열 배출을 하나의 시스템으로 입증하는 과정입니다.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.streetinsider.com/Business%2BWire/Cowboy%2BSpace%2BReveals%2BBig%2BIron%2C%2BIts%2BData%2BCenter%2BRocket%2C%2Band%2BOpens%2BCommercial%2BLaunch%2Bto%2BGovernment%2Band%2BThird-Party%2BPayloads/27235370.html",
+        "label": "streetinsider.com"
+      }
+    ],
+    "video": {
+      "id": "TGqrGEx4S4c",
+      "title": "카우보이 스페이스, 로켓 상단을 데이터센터로…2028년 첫 비행 목표"
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-10-27": {
     "date": "2026-10-27",
     "headlines": [

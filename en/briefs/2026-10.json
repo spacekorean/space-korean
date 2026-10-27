@@ -1,4 +1,26 @@
 {
+  "2026-10-28": {
+    "date": "2026-10-28",
+    "headlines": [
+      {
+        "date": "2026-10-26",
+        "html": "<a href=\"https://www.streetinsider.com/Business%2BWire/Cowboy%2BSpace%2BReveals%2BBig%2BIron%2C%2BIts%2BData%2BCenter%2BRocket%2C%2Band%2BOpens%2BCommercial%2BLaunch%2Bto%2BGovernment%2Band%2BThird-Party%2BPayloads/27235370.html\" target=\"_blank\" rel=\"noopener\"><strong>Cowboy Space unveils “Big Iron,” a rocket whose upper stage doubles as a data center</strong>: The company plans to offer megawatt-scale orbital computing and launch services for external customers, targeting a first flight in 2028. — (Cowboy Space·Business Wire, U.S. Eastern Time)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Cowboy Space (Business Wire, 10/26)</strong> — (2026-10-26) Big Iron is designed to use a rocket upper stage that remains in orbit as a megawatt-scale data center. Measuring 132 × 73 meters when deployed, it is designed to carry five NVIDIA Vera Rubin GPU racks. The rocket’s outer shell would serve as a radiator, while its ammonia propellant would double as a coolant. The company plans to deliver more than 15 metric tons to sun-synchronous orbit and offer launch services to external customers. The first flight is targeted for 2028; operational performance and any cost advantage over terrestrial data centers remain unproven. Designing a launch vehicle and data center together so that components serve dual purposes is an attempt to reduce the cost of orbital computing. Flight testing will be needed to determine whether that integration translates into lower development and operating costs. The key milestone ahead is demonstrating launch, power supply and heat rejection as an integrated system, rather than the scale of the design itself.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.streetinsider.com/Business%2BWire/Cowboy%2BSpace%2BReveals%2BBig%2BIron%2C%2BIts%2BData%2BCenter%2BRocket%2C%2Band%2BOpens%2BCommercial%2BLaunch%2Bto%2BGovernment%2Band%2BThird-Party%2BPayloads/27235370.html",
+        "label": "streetinsider.com"
+      }
+    ],
+    "video": {
+      "id": "TGqrGEx4S4c",
+      "title": "카우보이 스페이스, 로켓 상단을 데이터센터로…2028년 첫 비행 목표",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-10-27": {
     "date": "2026-10-27",
     "headlines": [

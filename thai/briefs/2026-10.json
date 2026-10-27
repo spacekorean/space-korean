@@ -1,4 +1,26 @@
 {
+  "2026-10-28": {
+    "date": "2026-10-28",
+    "headlines": [
+      {
+        "date": "2026-10-26",
+        "html": "<a href=\"https://www.streetinsider.com/Business%2BWire/Cowboy%2BSpace%2BReveals%2BBig%2BIron%2C%2BIts%2BData%2BCenter%2BRocket%2C%2Band%2BOpens%2BCommercial%2BLaunch%2Bto%2BGovernment%2Band%2BThird-Party%2BPayloads/27235370.html\" target=\"_blank\" rel=\"noopener\"><strong>Cowboy Space เผยแบบ “Big Iron” เปลี่ยนจรวดท่อนบนให้เป็นศูนย์ข้อมูล</strong>: บริษัทเดินหน้าพัฒนาระบบประมวลผลในวงโคจรระดับเมกะวัตต์ควบคู่กับบริการปล่อยจรวดให้ลูกค้าภายนอก โดยตั้งเป้าบินครั้งแรกในปี 2028 — (Cowboy Space·Business Wire, ตามเวลาฝั่งตะวันออกของสหรัฐฯ)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Cowboy Space (Business Wire, 10/26)</strong> — (2026-10-26) Big Iron เป็นแนวคิดการออกแบบที่ใช้จรวดท่อนบนซึ่งคงอยู่ในวงโคจรเป็นศูนย์ข้อมูลระดับเมกะวัตต์ เมื่อกางออกจะมีขนาด 132×73 เมตร และออกแบบให้บรรทุกแร็ก GPU NVIDIA Vera Rubin จำนวน 5 แร็ก เปลือกจรวดทำหน้าที่เป็นแผงระบายความร้อน ส่วนแอมโมเนียที่ใช้เป็นสารขับดันจะทำหน้าที่เป็นสารหล่อเย็นด้วย บริษัทวางแผนขนส่งน้ำหนักบรรทุกมากกว่า 15 ตันสู่วงโคจรสัมพันธ์กับดวงอาทิตย์ และให้บริการปล่อยจรวดแก่ลูกค้าภายนอก โดยตั้งเป้าบินครั้งแรกในปี 2028 ขณะนี้ยังไม่มีการพิสูจน์ประสิทธิภาพในการใช้งานจริงหรือความได้เปรียบด้านต้นทุนเมื่อเทียบกับศูนย์ข้อมูลภาคพื้นดิน การออกแบบจรวดและศูนย์ข้อมูลร่วมกันเพื่อให้ชิ้นส่วนทำหน้าที่ได้ 2 อย่าง เป็นความพยายามลดต้นทุนการประมวลผลในวงโคจร อย่างไรก็ตาม ต้องอาศัยการทดสอบบินเพื่อยืนยันว่าการรวมหน้าที่ของชิ้นส่วนจะช่วยลดต้นทุนการพัฒนาและการดำเนินงานได้จริงหรือไม่ ประเด็นที่ต้องติดตามต่อไปจึงอยู่ที่กระบวนการพิสูจน์ว่าการปล่อยจรวด การจ่ายพลังงาน และการระบายความร้อนสามารถทำงานร่วมกันเป็นระบบเดียวได้ มากกว่าขนาดของระบบตามแบบเพียงอย่างเดียว<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.streetinsider.com/Business%2BWire/Cowboy%2BSpace%2BReveals%2BBig%2BIron%2C%2BIts%2BData%2BCenter%2BRocket%2C%2Band%2BOpens%2BCommercial%2BLaunch%2Bto%2BGovernment%2Band%2BThird-Party%2BPayloads/27235370.html",
+        "label": "streetinsider.com"
+      }
+    ],
+    "video": {
+      "id": "TGqrGEx4S4c",
+      "title": "카우보이 스페이스, 로켓 상단을 데이터센터로…2028년 첫 비행 목표",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-10-27": {
     "date": "2026-10-27",
     "headlines": [
