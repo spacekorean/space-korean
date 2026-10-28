@@ -1,4 +1,30 @@
 {
+  "2026-10-29": {
+    "date": "2026-10-29",
+    "headlines": [
+      {
+        "date": "2026-10-27",
+        "html": "<a href=\"https://api3.cls.cn/share/article/2516536?app=&amp;os=android&amp;sv=842\" target=\"_blank\" rel=\"noopener\"><strong>Shanghai’s “Xingshu Plan” outlines deployment of 1,000 computing and edge satellites by 2032</strong>: Fudan University Vice President Chi Nan unveiled a phased plan to build an orbital computing network. The plan calls for launching 50 computing satellites and 100 edge-computing satellites between 2028 and 2030. — (Jiemian News·Cailian Press)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Fudan University·Xingshu Plan (Jiemian News·Cailian Press, 10/27)</strong> — (2026-10-27) Vice President Chi Nan unveiled the new deployment roadmap at a satellite internet industry ecosystem conference. Initial targets include Chinese-made GPUs and 200 Gbps inter-satellite communications. The plan envisions deploying 800 computing satellites and 200 edge satellites by 2032 to build a data center connecting ground and space infrastructure. These remain future targets; the reports provided no launch contracts or in-orbit performance validation results.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://finance.eastmoney.com/a/202610273909816535.html",
+        "label": "finance.eastmoney.com"
+      },
+      {
+        "url": "https://api3.cls.cn/share/article/2516536?app=&os=android&sv=842",
+        "label": "api3.cls.cn"
+      }
+    ],
+    "video": {
+      "id": "ko1DsqqBh1A",
+      "title": "푸단대 싱수 계획, 2032년 위성 1,000기로 우주 데이터센터 구상",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-10-28": {
     "date": "2026-10-28",
     "headlines": [

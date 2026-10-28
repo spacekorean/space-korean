@@ -1,4 +1,29 @@
 {
+  "2026-10-29": {
+    "date": "2026-10-29",
+    "headlines": [
+      {
+        "date": "2026-10-27",
+        "html": "<a href=\"https://finance.eastmoney.com/a/202610273909816535.html\" target=\"_blank\" rel=\"noopener\"><strong>상하이 ‘싱수 계획’, 2032년 연산·엣지 위성 1,000기 배치 로드맵 공개</strong>: 푸단대 츠난 부총장이 단계별 우주 연산망 구축 계획을 발표했습니다. 2028~2030년에는 연산 위성 50기와 엣지컴퓨팅 위성 100기 발사를 추진합니다. — (계면신문·재련사)</a>"
+      }
+    ],
+    "summary_html": "<strong>① 푸단대·싱수 계획 (계면신문·재련사, 10/27)</strong> — (2026-10-27) 츠난 부총장은 위성인터넷 산업 생태계 대회에서 새 배치 로드맵을 공개했습니다. 중국산 GPU와 위성 간 200Gbps 통신을 초기 목표로 삼고, 2032년까지 연산 위성 800기와 엣지 위성 200기로 지상과 우주를 잇는 데이터센터를 구축한다는 구상입니다. 모두 향후 목표이며, 이번 보도에서 발사 계약이나 궤도 성능 검증 결과는 제시되지 않았습니다.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://finance.eastmoney.com/a/202610273909816535.html",
+        "label": "finance.eastmoney.com"
+      },
+      {
+        "url": "https://api3.cls.cn/share/article/2516536?app=&os=android&sv=842",
+        "label": "api3.cls.cn"
+      }
+    ],
+    "video": {
+      "id": "ko1DsqqBh1A",
+      "title": "푸단대 싱수 계획, 2032년 위성 1,000기로 우주 데이터센터 구상"
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-10-28": {
     "date": "2026-10-28",
     "headlines": [
