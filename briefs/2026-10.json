@@ -1,4 +1,25 @@
 {
+  "2026-10-30": {
+    "date": "2026-10-30",
+    "headlines": [
+      {
+        "date": "2026-10-28",
+        "html": "<a href=\"https://www.edgx.space/blog/edgx-launches-ai-computing-platform-in-orbit-on-spacex-transporter-16-using-nvidia-accelerated-computing\" target=\"_blank\" rel=\"noopener\"><strong>EDGX, 2027년 궤도 AI 실증 2건 예약</strong>: Sterna 성능 확장과 Jetson Thor 기반 Morus 시험 계획을 공개했습니다. 지난 3월 발사한 탑재체의 운용 현황도 알렸습니다. — (EDGX)</a>"
+      }
+    ],
+    "summary_html": "<strong>① EDGX (EDGX, 10/28)</strong> — (2026-10-28) 벨기에 EDGX가 2027년 추가 실증 2건을 예약했다고 밝혔습니다. 첫 임무는 Sterna의 Jetson Orin NX 슈퍼 모드, 두 번째는 Jetson Thor 기반 Morus를 시험합니다. 지난 3월 발사한 탑재체 2개 중 하나는 2주 안에 운용 데이터를 보냈고, 다른 하나는 위성 초기 점검을 기다리고 있습니다. 이는 회사 발표이며, 실제 궤도 AI 처리량은 공개하지 않았습니다.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.edgx.space/blog/edgx-launches-ai-computing-platform-in-orbit-on-spacex-transporter-16-using-nvidia-accelerated-computing",
+        "label": "edgx.space"
+      }
+    ],
+    "video": {
+      "id": "F_N8aLNtSLQ",
+      "title": "EDGX, 2027년 궤도 AI 실증 2건 예약"
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-10-29": {
     "date": "2026-10-29",
     "headlines": [
