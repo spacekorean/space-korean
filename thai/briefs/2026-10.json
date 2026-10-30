@@ -1,4 +1,26 @@
 {
+  "2026-10-31": {
+    "date": "2026-10-31",
+    "headlines": [
+      {
+        "date": "2026-10-30",
+        "html": "<a href=\"https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/\" target=\"_blank\" rel=\"noopener\"><strong>Google Suncatcher สร้างคำตอบจาก AI ครั้งแรกด้วย TPU ในวงโคจร</strong>: Gemma 4 บนดาวเทียมแต่งบทกวีตามคำขอที่ส่งจากภาคพื้นดิน และส่งผลงานกลับมายังโลก — (Google)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Google Suncatcher (Google, 10/30)</strong> — (2026-10-30) Google เปิดเผยว่าได้รับคำตอบจาก AI ครั้งแรก หลังรัน Gemma 4 บน TPU ของดาวเทียมทดสอบ Suncatcher ดาวเทียมตอบคำขอให้แต่งบทกวีเกี่ยวกับอวกาศ และส่งผลลัพธ์ลงมายังโลกขณะโคจรเหนือ Svalbard ประเทศนอร์เวย์ นอกจากนี้ ยังทดสอบคำขอให้รายงานสถานะของเพย์โหลดด้วย ขั้นต่อไปคือการตรวจสอบความน่าเชื่อถือภายใต้สภาวะความร้อนและรังสี และการสาธิตการเชื่อมต่อดาวเทียม 2 ดวงในปี 2027 การประกาศครั้งนี้เป็นผลสำเร็จของการสาธิตขั้นต้น โดยยังไม่ได้แสดงผลการทดสอบขีดความสามารถในการประมวลผลเชิงพาณิชย์หรือความคุ้มค่าทางเศรษฐกิจ<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/",
+        "label": "blog.google"
+      }
+    ],
+    "video": {
+      "id": "7ZWXjdbY0zE",
+      "title": "구글 선캐처, 궤도 TPU에서 첫 AI 응답 생성",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-10-30": {
     "date": "2026-10-30",
     "headlines": [

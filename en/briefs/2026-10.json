@@ -1,4 +1,26 @@
 {
+  "2026-10-31": {
+    "date": "2026-10-31",
+    "headlines": [
+      {
+        "date": "2026-10-30",
+        "html": "<a href=\"https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/\" target=\"_blank\" rel=\"noopener\"><strong>Google’s Suncatcher generates first AI response using a TPU in orbit</strong>: Gemma 4 running aboard a satellite generated a poem in response to a request from the ground and transmitted it back to Earth. — (Google)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Google Suncatcher (Google, 10/30)</strong> — (2026-10-30) Google said it had received the first AI response from Gemma 4 running on a TPU aboard a Suncatcher test satellite. The satellite responded to a request to write a poem about space and downlinked the output while passing over Svalbard, Norway. Google also tested requests for payload status reports. Next steps include validating reliability under thermal and radiation conditions in space and demonstrating a link between two satellites in 2027. The announcement marks an early demonstration milestone; it did not provide results validating commercial throughput or economic viability.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/",
+        "label": "blog.google"
+      }
+    ],
+    "video": {
+      "id": "7ZWXjdbY0zE",
+      "title": "구글 선캐처, 궤도 TPU에서 첫 AI 응답 생성",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-10-30": {
     "date": "2026-10-30",
     "headlines": [

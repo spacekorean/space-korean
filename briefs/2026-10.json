@@ -1,4 +1,25 @@
 {
+  "2026-10-31": {
+    "date": "2026-10-31",
+    "headlines": [
+      {
+        "date": "2026-10-30",
+        "html": "<a href=\"https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/\" target=\"_blank\" rel=\"noopener\"><strong>구글 선캐처, 궤도 TPU로 첫 AI 응답 생성</strong>: 위성에 탑재한 Gemma 4가 지상에서 보낸 요청에 따라 시를 만들고 지구로 전송했습니다. — (Google)</a>"
+      }
+    ],
+    "summary_html": "<strong>① 구글 선캐처 (Google, 10/30)</strong> — (2026-10-30) 구글은 선캐처 시험 위성의 TPU에서 Gemma 4를 실행해 첫 AI 응답을 받았다고 밝혔습니다. 우주에 관한 시를 써 달라는 요청에 위성이 답했고, 노르웨이 스발바르 상공에서 결과를 내려보냈습니다. 탑재체 상태를 보고하는 요청도 시험했습니다. 다음은 열·방사선 환경에서의 신뢰성 검증과 2027년 위성 2기 연결 실증입니다. 이번 발표는 초기 실증 성과이며 상용 처리량이나 경제성 검증 결과는 제시하지 않았습니다.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/",
+        "label": "blog.google"
+      }
+    ],
+    "video": {
+      "id": "7ZWXjdbY0zE",
+      "title": "구글 선캐처, 궤도 TPU에서 첫 AI 응답 생성"
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-10-30": {
     "date": "2026-10-30",
     "headlines": [
