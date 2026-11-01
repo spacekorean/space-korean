@@ -1,0 +1,32 @@
+{
+  "2026-11-02": {
+    "date": "2026-11-02",
+    "headlines": [
+      {
+        "date": "2026-10-28",
+        "html": "<a href=\"https://quindar.space/starcloud-and-quindar-partner-to-advance-operations-for-orbital-data-centers/\" target=\"_blank\" rel=\"noopener\"><strong>Starcloud and Quindar partner on orbital data center operations</strong>: The companies are developing software to manage missions aboard satellites even when ground connectivity is lost. — (Quindar)</a>"
+      },
+      {
+        "date": "2026-10-30",
+        "html": "<a href=\"https://techcrunch.com/2026/10/30/satlyt-takes-another-step-toward-turning-satellites-into-space-data-centers/\" target=\"_blank\" rel=\"noopener\"><strong>Satlyt tests workload allocation in orbit</strong>: — (TechCrunch)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Starcloud and Quindar (Quindar, 10/28)</strong> — (2026-10-28) The companies plan to deploy Quindar’s mission management platform aboard Starcloud satellites. They will test operational continuity between ground and orbital clouds, onboard data processing, and real-time decision-making based on satellite health. The work will use Starcloud-1 and Starcloud-2; measured uptime figures and a service launch date have not been disclosed.<br><br><strong>② Satlyt (TechCrunch, 10/30)</strong> — (2026-10-30) Satlyt tested workload allocation across a virtual network running on a single computer in orbit. Connectivity between multiple physical computers has yet to be validated. The company’s vision for software collaboration between satellites is also outlined on its [official website](https://satlyt.ai/). This briefing’s assessment is that progress should be evaluated by distinguishing between putting hardware in orbit and operating multiple systems together. These developments suggest that competition in orbital data centers is expanding from computing hardware to operational software. In this briefing’s analysis, decisions about where to assign workloads and how to respond to failures when communications are unreliable will determine service reliability. The next milestone is whether partnerships and limited tests can translate into sustained commercial operations.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://quindar.space/starcloud-and-quindar-partner-to-advance-operations-for-orbital-data-centers/",
+        "label": "quindar.space"
+      },
+      {
+        "url": "https://techcrunch.com/2026/10/30/satlyt-takes-another-step-toward-turning-satellites-into-space-data-centers/",
+        "label": "TechCrunch"
+      }
+    ],
+    "video": {
+      "id": "dMdfczU5Zp8",
+      "title": "Starcloud·Quindar, 지상 연결 끊겨도 궤도 임무관리 추진",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  }
+}

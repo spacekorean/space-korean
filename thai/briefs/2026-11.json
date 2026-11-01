@@ -1,0 +1,32 @@
+{
+  "2026-11-02": {
+    "date": "2026-11-02",
+    "headlines": [
+      {
+        "date": "2026-10-28",
+        "html": "<a href=\"https://quindar.space/starcloud-and-quindar-partner-to-advance-operations-for-orbital-data-centers/\" target=\"_blank\" rel=\"noopener\"><strong>Starcloud และ Quindar บรรลุข้อตกลงด้านการปฏิบัติการศูนย์ข้อมูลในวงโคจร</strong>: เดินหน้าพัฒนาซอฟต์แวร์ที่จัดการภารกิจบนดาวเทียมได้แม้ขาดการเชื่อมต่อกับภาคพื้นดิน — (Quindar)</a>"
+      },
+      {
+        "date": "2026-10-30",
+        "html": "<a href=\"https://techcrunch.com/2026/10/30/satlyt-takes-another-step-toward-turning-satellites-into-space-data-centers/\" target=\"_blank\" rel=\"noopener\"><strong>Satlyt ทดสอบการจัดสรรงานในวงโคจร</strong>: — (TechCrunch)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Starcloud และ Quindar(Quindar, 10/28)</strong> — (2026-10-28) ทั้ง 2 บริษัทมีแผนนำแพลตฟอร์มจัดการภารกิจของ Quindar ไปติดตั้งบนดาวเทียม Starcloud เพื่อทดสอบความต่อเนื่องในการปฏิบัติการระหว่างคลาวด์ภาคพื้นดินกับคลาวด์ในวงโคจร การประมวลผลข้อมูลบนดาวเทียม และการตัดสินใจแบบเรียลไทม์ตามสถานะของดาวเทียม โดยจะใช้ดาวเทียม Starcloud 1 และ 2 แต่ยังไม่เปิดเผยสัดส่วนเวลาที่ระบบพร้อมใช้งานจากการวัดจริงหรือวันเริ่มให้บริการ<br><br><strong>② Satlyt(TechCrunch, 10/30)</strong> — (2026-10-30) บริษัททดสอบการจัดสรรงานในเครือข่ายเสมือนบนคอมพิวเตอร์ 1 เครื่องในวงโคจร ส่วนการทดสอบยืนยันการเชื่อมต่อระหว่างคอมพิวเตอร์หลายเครื่องจริงยังต้องดำเนินการต่อ แนวทางการทำงานร่วมกันระหว่างดาวเทียมผ่านซอฟต์แวร์ที่บริษัทมุ่งพัฒนาปรากฏอยู่ใน[ข้อมูลแนะนำอย่างเป็นทางการ](https://satlyt.ai/) เช่นกัน บรีฟฉบับนี้ประเมินว่า ในขั้นนี้ควรแยกพิจารณาความสำเร็จในการส่งอุปกรณ์ขึ้นสู่วงโคจรออกจากความสำเร็จในการทำให้อุปกรณ์หลายเครื่องทำงานร่วมกัน ข่าวทั้ง 2 เรื่องสะท้อนว่าการแข่งขันด้านศูนย์ข้อมูลในวงโคจรกำลังขยายจากอุปกรณ์ประมวลผลไปสู่ซอฟต์แวร์ปฏิบัติการ บรีฟฉบับนี้วิเคราะห์ว่า การเลือกว่าจะจัดสรรงานไปที่ใดและรับมือกับความขัดข้องอย่างไรในภาวะที่การสื่อสารไม่เสถียร จะเป็นตัวกำหนดความน่าเชื่อถือของบริการ ประเด็นที่ต้องติดตามต่อไปคือ ข้อตกลงและการทดสอบในขอบเขตจำกัดเหล่านี้จะนำไปสู่ผลสำเร็จในการให้บริการเชิงพาณิชย์อย่างต่อเนื่องได้หรือไม่<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://quindar.space/starcloud-and-quindar-partner-to-advance-operations-for-orbital-data-centers/",
+        "label": "quindar.space"
+      },
+      {
+        "url": "https://techcrunch.com/2026/10/30/satlyt-takes-another-step-toward-turning-satellites-into-space-data-centers/",
+        "label": "TechCrunch"
+      }
+    ],
+    "video": {
+      "id": "dMdfczU5Zp8",
+      "title": "Starcloud·Quindar, 지상 연결 끊겨도 궤도 임무관리 추진",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  }
+}
