@@ -1,4 +1,45 @@
 {
+  "2026-11-04": {
+    "date": "2026-11-04",
+    "headlines": [
+      {
+        "date": "2026-11-02",
+        "html": "<a href=\"https://www.fnnews.com/news/202611021803043451\" target=\"_blank\" rel=\"noopener\"><strong>한국, 2028년 누리호로 100kg급 우주 데이터센터 실증 추진</strong>: 국산 AI 반도체·전력·방열 기술을 검증할 계획이며, 약 140억원의 사업비 확보가 과제입니다. — (뉴시스·파이낸셜뉴스)</a>"
+      },
+      {
+        "date": "2026-11-03",
+        "html": "<a href=\"https://coinlab.edaily.co.kr/News/Read?mediaCodeNo=257&amp;newsId=02607606645642112\" target=\"_blank\" rel=\"noopener\"><strong>KT SAT, 우주 AI 데이터센터용 위성 7000기 국제 등록 신청 사실 공개</strong>: 올해 초 ITU에 신청해 조정 중이라고 밝혔으며, 승인이나 발사 확정을 뜻하지는 않습니다. — (이데일리)</a>"
+      },
+      {
+        "date": "2026-11-03",
+        "html": "<a href=\"https://kw.beijing.gov.cn/xwdt/kcyx/xwdtkjqy/202611/t20261103_4929676.html\" target=\"_blank\" rel=\"noopener\"><strong>베이징, 위성 40여 기의 연산 자원을 지상과 묶는 클라우드 발표</strong>: 10월 30일 공개한 플랫폼의 핵심 기능 구축과 통합 자원 관리를 발표했습니다. — (베이징시 과학기술위원회·베이징 경제정보 부문)</a>"
+      }
+    ],
+    "summary_html": "<strong>① K-문샷·한국항공우주연구원(뉴시스·파이낸셜뉴스, 11/2)</strong> — (2026-11-02) 국회 토론회에서 2028년 11월 누리호 7차에 100kg급 실증 위성 1기를 싣는 계획을 공개했습니다. 국산 AI 반도체와 전력·방열 기술을 시험하고 2034년 대형화로 이어간다는 구상입니다. 첫 실증에 약 140억원이 필요하며 예산 확보가 남아 있습니다.<br><br><strong>② KT SAT(이데일리, 11/3)</strong> — (2026-11-03) 최경일 대표는 전날 토론회에서 우주 AI 데이터센터용 위성 7000기의 주파수·궤도 국제 등록을 올해 초 ITU에 신청했다고 밝혔습니다. 현재 조정 단계이며 배치 승인은 아닙니다. 2035년 상용 인프라를 위해 정부가 첫 고객이 되는 방안도 제안했습니다.<br><br><strong>③ 베이징 태공연산혁신센터(베이징시 과학기술위원회, 11/3)</strong> — (2026-11-03) 10월 30일 공개한 플랫폼은 위성 40여 기의 연산 자원과 지상 CPU·GPU·NPU를 통합 관리한다고 설명합니다. 바이두 클라우드의 모델·데이터 인터페이스도 연결했습니다. 기존 자원을 모으는 방식으로, 위성 40여 기를 새로 발사했다는 뜻은 아닙니다. 처리량 실측치는 제시하지 않았습니다. 오늘 발표들을 종합하면, 우주 데이터센터 경쟁에는 부품의 우주 검증, 주파수·궤도 조정, 여러 연산 자원을 서비스로 묶는 운영 기술이 함께 필요합니다. 한국의 실증 로드맵과 민간의 상용화 제안은 아직 예산·고객·운영 주체를 연결해야 합니다. 중국의 플랫폼 발표도 자원 수만으로 상용 성능을 판단할 수 없어, 실제 작업 처리량과 안정적인 서비스 제공 여부가 다음 확인 지점입니다.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.fnnews.com/news/202611021803043451",
+        "label": "fnnews.com"
+      },
+      {
+        "url": "https://www2.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=01597366645642112",
+        "label": "www2.edaily.co.kr"
+      },
+      {
+        "url": "https://coinlab.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02607606645642112",
+        "label": "coinlab.edaily.co.kr"
+      },
+      {
+        "url": "https://kw.beijing.gov.cn/xwdt/kcyx/xwdtkjqy/202611/t20261103_4929676.html",
+        "label": "kw.beijing.gov.cn"
+      }
+    ],
+    "video": {
+      "id": "RjVKHX6Mflc",
+      "title": "누리호로 2028년 우주 데이터센터 실증 추진…예산 확보 과제"
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-02": {
     "date": "2026-11-02",
     "headlines": [

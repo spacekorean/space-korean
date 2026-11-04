@@ -1,4 +1,46 @@
 {
+  "2026-11-04": {
+    "date": "2026-11-04",
+    "headlines": [
+      {
+        "date": "2026-11-02",
+        "html": "<a href=\"https://www.fnnews.com/news/202611021803043451\" target=\"_blank\" rel=\"noopener\"><strong>South Korea plans 100 kg-class orbital data center demonstration aboard Nuri in 2028</strong>: The mission would test domestically developed AI chips, power systems and thermal management technologies, with approximately ₩14 billion in funding still to be secured. — (Newsis·Financial News)</a>"
+      },
+      {
+        "date": "2026-11-03",
+        "html": "<a href=\"https://coinlab.edaily.co.kr/News/Read?mediaCodeNo=257&amp;newsId=02607606645642112\" target=\"_blank\" rel=\"noopener\"><strong>KT SAT discloses international registration filing for 7,000 satellites for orbital AI data centers</strong>: The company said it submitted the filing to the ITU early this year and coordination is underway; the filing does not constitute approval or a confirmed launch plan. — (Edaily)</a>"
+      },
+      {
+        "date": "2026-11-03",
+        "html": "<a href=\"https://kw.beijing.gov.cn/xwdt/kcyx/xwdtkjqy/202611/t20261103_4929676.html\" target=\"_blank\" rel=\"noopener\"><strong>Beijing announces cloud platform linking computing resources on some 40 satellites with ground infrastructure</strong>: Authorities announced the implementation of core functions and integrated resource management for the platform unveiled on October 30. — (Beijing Municipal Science and Technology Commission·Beijing economic and information technology authorities)</a>"
+      }
+    ],
+    "summary_html": "<strong>① K-Moonshot·Korea Aerospace Research Institute (Newsis·Financial News, 11/2)</strong> — (2026-11-02) Plans presented at a National Assembly forum call for a single 100 kg-class demonstration satellite to fly on Nuri’s seventh launch in November 2028. The mission would test domestically developed AI chips, power systems and thermal management technologies, paving the way for a larger-scale system in 2034. The initial demonstration requires approximately ₩14 billion, with funding yet to be secured.<br><br><strong>② KT SAT (Edaily, 11/3)</strong> — (2026-11-03) CEO Choi Kyung-il said at the previous day’s forum that the company had submitted an international frequency and orbital registration filing to the ITU early this year for 7,000 satellites intended for orbital AI data centers. The filing is in the coordination phase and does not constitute deployment approval. He also proposed that the government serve as an anchor customer to support commercial infrastructure targeted for 2035.<br><br><strong>③ Beijing Space Computing Innovation Center (Beijing Municipal Science and Technology Commission, 11/3)</strong> — (2026-11-03) The platform unveiled on October 30 is described as providing integrated management of computing resources on some 40 satellites and ground-based CPUs, GPUs and NPUs. It also connects to Baidu Cloud’s model and data interfaces. The platform pools existing resources; the announcement does not mean that some 40 new satellites have been launched. No measured throughput figures were provided. Taken together, these announcements show that competition in orbital data centers requires space qualification of components, frequency and orbital coordination, and the operational capability to combine distributed computing resources into services. South Korea’s demonstration roadmap and private-sector commercialization proposals still need to bring funding, customers and operators together. The number of resources connected to China’s platform likewise does not establish its commercial performance. Actual workload throughput and reliable service delivery will be the next benchmarks to assess.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.fnnews.com/news/202611021803043451",
+        "label": "fnnews.com"
+      },
+      {
+        "url": "https://www2.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=01597366645642112",
+        "label": "www2.edaily.co.kr"
+      },
+      {
+        "url": "https://coinlab.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02607606645642112",
+        "label": "coinlab.edaily.co.kr"
+      },
+      {
+        "url": "https://kw.beijing.gov.cn/xwdt/kcyx/xwdtkjqy/202611/t20261103_4929676.html",
+        "label": "kw.beijing.gov.cn"
+      }
+    ],
+    "video": {
+      "id": "RjVKHX6Mflc",
+      "title": "누리호로 2028년 우주 데이터센터 실증 추진…예산 확보 과제",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-02": {
     "date": "2026-11-02",
     "headlines": [
