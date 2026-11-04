@@ -1,4 +1,26 @@
 {
+  "2026-11-05": {
+    "date": "2026-11-05",
+    "headlines": [
+      {
+        "date": "2026-11-02",
+        "html": "<a href=\"https://lonestar.space/press-releases/Coral-Gables-Founding-City-Partner-Announcement\" target=\"_blank\" rel=\"noopener\"><strong>Lonestar and Coral Gables launch space-based data backup pilot</strong>: The 12-month program will test storage of municipal recovery data and historical records, with the storage system scheduled to launch in April 2027. — (Lonestar)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Lonestar (11/2)</strong> — (2026-11-02) The U.S. city of Coral Gables is joining StarVault as a founding city partner. The 12-month pilot will supplement existing backups with space-based storage to protect municipal recovery data, security keys and historical records. The city will retain access to its data and is preparing materials ahead of the April 2027 launch. No operational results from the space-based backup system have been announced. Demand for orbital data centers is emerging not only for large-scale AI computing but also for disaster recovery storage. This pilot offers a test of the value of physically remote storage while the city maintains its existing backups. Beyond the launch itself, the key measures will be whether data can be successfully recovered, how long recovery takes and how much the service costs to operate.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://lonestar.space/press-releases/Coral-Gables-Founding-City-Partner-Announcement",
+        "label": "lonestar.space"
+      }
+    ],
+    "video": {
+      "id": "FKrNYrd4wbg",
+      "title": "론스타, 도시 기록 우주 백업 추진…2027년 4월 발사 예정",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-04": {
     "date": "2026-11-04",
     "headlines": [

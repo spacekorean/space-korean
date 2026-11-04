@@ -1,4 +1,25 @@
 {
+  "2026-11-05": {
+    "date": "2026-11-05",
+    "headlines": [
+      {
+        "date": "2026-11-02",
+        "html": "<a href=\"https://lonestar.space/press-releases/Coral-Gables-Founding-City-Partner-Announcement\" target=\"_blank\" rel=\"noopener\"><strong>론스타·코럴게이블스시, 우주 데이터 백업 시범사업 추진</strong>: 12개월간 도시 복구 정보와 역사 기록 보관을 시험하며, 저장 시스템은 2027년 4월 발사 예정입니다. — (Lonestar)</a>"
+      }
+    ],
+    "summary_html": "<strong>① 론스타(Lonestar, 11/2)</strong> — (2026-11-02) 미국 코럴게이블스시가 스타볼트의 초기 도시 파트너로 참여합니다. 12개월 시범사업은 기존 백업에 우주 저장소를 더해 행정 복구 정보·보안 키·역사 기록을 보호하는 계획입니다. 시가 데이터 접근권을 유지하며, 2027년 4월 발사를 앞두고 자료를 준비 중입니다. 실제 우주 백업 운영 성과는 아직 발표되지 않았습니다. 우주 데이터센터의 수요는 대규모 AI 연산뿐 아니라 재난 복구용 보관에서도 형성되고 있습니다. 이번 시범사업은 도시가 기존 백업을 유지하면서 물리적으로 떨어진 저장소의 효용을 평가한다는 점에 의미가 있습니다. 향후 판단의 기준은 발사 자체를 넘어 실제 자료 복구의 성공 여부와 소요 시간, 운영 비용이 될 것입니다.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://lonestar.space/press-releases/Coral-Gables-Founding-City-Partner-Announcement",
+        "label": "lonestar.space"
+      }
+    ],
+    "video": {
+      "id": "FKrNYrd4wbg",
+      "title": "론스타, 도시 기록 우주 백업 추진…2027년 4월 발사 예정"
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-04": {
     "date": "2026-11-04",
     "headlines": [
