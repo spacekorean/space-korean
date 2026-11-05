@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>반응속도 게임 — Space Korean</title>
+<style>
+  :root {
+    --bg: #f4f6fa;
+    --card: #ffffff;
+    --ink: #1e2340;
+    --sub: #8a90a8;
+    --blue: #4285f4;
+    --green: #10b981;
+    --red: #ef4444;
+    --yellow: #f59e0b;
+    --radius: 20px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+  html, body { height: 100%; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+    background: var(--bg); color: var(--ink);
+    display: flex; flex-direction: column; align-items: center;
+    min-height: 100vh; padding: 24px 16px;
+  }
+  .screen { display: none; width: 100%; max-width: 560px; flex-direction: column; gap: 16px; }
+  .screen.active { display: flex; }
+  h1 { font-size: 28px; text-align: center; letter-spacing: -0.5px; }
+  h1 .bolt { color: var(--yellow); }
+  .tagline { text-align: center; color: var(--sub); font-size: 14px; margin-top: -8px; }
+  .card {
+    background: var(--card); border-radius: var(--radius);
+    padding: 24px; box-shadow: 0 6px 24px rgba(30,35,64,.07);
+  }
+  input[type=text] {
+    width: 100%; padding: 14px 16px; font-size: 16px;
+    border: 2px solid #e3e7f0; border-radius: 12px; outline: none;
+    transition: border-color .15s;
+  }
+  input[type=text]:focus { border-color: var(--blue); }
+  .btn {
+    display: block; width: 100%; padding: 15px; font-size: 16px; font-weight: 700;
+    border: none; border-radius: 12px; cursor: pointer; color: #fff;
+    background: var(--blue); transition: transform .06s, opacity .15s;
+  }
+  .btn:active { transform: scale(.98); }
+  .btn.green { background: var(--green); }
+  .btn.ghost { background: #eef1f7; color: var(--ink); }
+  .btn:disabled { opacity: .45; cursor: default; }
+  .row { display: flex; gap: 10px; }
+  .row > * { flex: 1; }
+  .stack { display: flex; flex-direction: column; gap: 12px; }
+  .divider { display: flex; align-items: center; gap: 12px; color: var(--sub); font-size: 13px; }
+  .divider::before, .divider::after { content: ""; flex: 1; height: 1px; background: #e3e7f0; }
+
+  /* ---- Arena ---- */
+  #arena {
+    height: 380px; border-radius: var(--radius); cursor: pointer; user-select: none;
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px;
+    color: #fff; text-align: center; padding: 24px;
+    background: var(--blue); transition: background .1s;
+  }
+  #arena.waiting { background: var(--red); }
+  #arena.go { background: var(--green); }
+  #arena.done { background: var(--ink); }
+  #arena .big { font-size: 44px; font-weight: 800; letter-spacing: -1px; }
+  #arena .small { font-size: 15px; opacity: .85; }
+  #roundBadge {
+    align-self: center; background: var(--card); color: var(--sub);
+    padding: 6px 16px; border-radius: 999px; font-size: 13px; font-weight: 700;
+  }
+  #liveBoard { font-size: 14px; }
+  #liveBoard table { width: 100%; border-collapse: collapse; }
+  #liveBoard td { padding: 6px 4px; border-bottom: 1px solid #eef1f7; }
+  #liveBoard td:last-child { text-align: right; font-variant-numeric: tabular-nums; font-weight: 700; }
+
+  /* ---- Lobby ---- */
+  .room-name {
+    text-align: center; font-size: 34px; font-weight: 800; letter-spacing: -0.5px;
+    color: var(--blue); padding: 8px 0 4px; cursor: pointer; word-break: break-all;
+  }
+  .hint { font-size: 13px; color: var(--sub); text-align: center; line-height: 1.5; }
+
+  /* ---- Chat ---- */
+  .chat-card { display: flex; flex-direction: column; }
+  .chat-log {
+    max-height: 190px; min-height: 90px; overflow-y: auto;
+    display: flex; flex-direction: column; gap: 7px; padding-right: 4px; margin-bottom: 10px;
+  }
+  .chat-log:empty::after {
+    content: "아직 메시지가 없어요."; color: var(--sub); font-size: 13px; margin: auto;
+  }
+  .chat-msg { font-size: 14px; line-height: 1.45; word-break: break-word; }
+  .chat-msg .who { font-weight: 800; margin-right: 6px; }
+  .chat-msg.mine .who { color: var(--blue); }
+  .chat-msg.sys { color: var(--sub); font-size: 13px; text-align: center; font-style: italic; }
+  .chat-input input { flex: 1; padding: 12px 14px; font-size: 15px; }
+  .chat-send { flex: 0 0 68px; padding: 12px 0; font-size: 15px; }
+
+  .code-display {
+    text-align: center; font-size: 52px; font-weight: 800; letter-spacing: 12px;
+    color: var(--blue); padding: 8px 0 4px; cursor: pointer;
+  }
+  .code-hint { text-align: center; color: var(--sub); font-size: 13px; }
+  .player-list { display: flex; flex-direction: column; gap: 8px; margin-top: 8px; }
+  .player-chip {
+    display: flex; align-items: center; gap: 10px; padding: 12px 16px;
+    background: #f4f6fa; border-radius: 12px; font-weight: 600; font-size: 15px;
+  }
+  .player-chip .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--green); }
+  .player-chip .tag { margin-left: auto; font-size: 12px; color: var(--blue); font-weight: 700; }
+
+  /* ---- Results ---- */
+  .result-avg { font-size: 72px; font-weight: 800; letter-spacing: -2px; line-height: 1; }
+  .result-avg span { font-size: 24px; color: var(--sub); font-weight: 600; margin-left: 4px; }
+  .stars {
+    display: inline-block; background: var(--green); color: #fff;
+    padding: 8px 18px; border-radius: 999px; font-size: 18px; letter-spacing: 3px; margin: 14px 0;
+  }
+  .stat-row { display: flex; gap: 28px; margin-top: 6px; }
+  .stat-row .label { font-size: 13px; color: var(--sub); }
+  .stat-row .val { font-size: 20px; font-weight: 800; margin-top: 2px; font-variant-numeric: tabular-nums; }
+  .val.best { color: var(--green); } .val.worst { color: var(--red); }
+  #chartBox svg, #mChartBox svg { width: 100%; height: auto; display: block; }
+  .rank-table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  .rank-table td, .rank-table th { padding: 10px 8px; border-bottom: 1px solid #eef1f7; text-align: left; }
+  .rank-table td.num, .rank-table th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .rank-table tr.me { background: #eef5ff; }
+  .medal { font-size: 18px; }
+  /* results extras */
+  .grade-title { font-size: 20px; font-weight: 800; margin-top: 2px; }
+  .grade-sub { font-size: 14px; color: var(--sub); margin: 4px 0 14px; }
+  .new-best {
+    display: inline-block; background: #fff7e6; color: #b45309; font-weight: 800;
+    font-size: 14px; padding: 8px 16px; border-radius: 999px; margin-bottom: 14px;
+  }
+  .place { font-size: 56px; font-weight: 800; line-height: 1.1; }
+  .place-sub { font-size: 15px; color: var(--sub); margin-top: 6px; }
+  .stat-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px 12px; }
+  .stat-grid .label { font-size: 13px; color: var(--sub); }
+  .stat-grid .val { font-size: 19px; font-weight: 800; margin-top: 2px; font-variant-numeric: tabular-nums; }
+  .table-scroll { overflow-x: auto; }
+  .rank-table th { font-size: 13px; color: var(--sub); font-weight: 700; white-space: nowrap; }
+  .rank-table td { white-space: nowrap; }
+  .rank-table td.best { color: var(--green); font-weight: 700; }
+  .rank-table td.worst { color: var(--red); }
+  .rank-table .me-col { background: #f7faff; }
+  .warn { color: var(--yellow); font-size: 12px; font-weight: 700; }
+  .legend { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px; justify-content: center; }
+  .legend .lg { display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--sub); font-weight: 600; }
+  .legend i { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
+  .toast {
+    position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%);
+    background: var(--ink); color: #fff; padding: 12px 22px; border-radius: 999px;
+    font-size: 14px; opacity: 0; transition: opacity .25s; pointer-events: none; z-index: 10;
+  }
+  .toast.show { opacity: 1; }
+  .section-title { font-size: 15px; font-weight: 800; color: var(--sub); }
+  .site-back { color: var(--blue); font-size: 14px; margin-bottom: 20px; }
+  #arena { touch-action: manipulation; transition: none; }
+  @media (max-width: 400px) {
+    .card { padding: 20px 16px; }
+    .rank-table td, .rank-table th { padding: 10px 4px; font-size: 13px; }
+  }
+</style>
+</head>
+<body>
+
+<a class="site-back" href="../">← 스페이스 코리안</a>
+<div class="screen active" id="scr-home">
+  <h1><span class="bolt">⚡</span> 반응속도 테스트</h1>
+  <p class="tagline">초록색으로 바뀌는 순간 클릭! 5라운드에 도전해요.</p>
+  <div class="card stack">
+    <button class="btn green" id="btnSolo">🏃 혼자 시작하기</button>
+    <p class="hint">마우스 클릭 · 화면 터치 · 스페이스바로 플레이하세요.<br>빨간색일 때는 기다리고, 초록색이 되면 누르세요.</p>
+    <p class="hint">내 최고 기록 TOP 5는 이 브라우저에 저장됩니다.</p>
+  </div>
+</div>
+<!-- GAME -->
+<div class="screen" id="scr-game">
+  <div id="roundBadge">라운드 1 / 5</div>
+  <div id="arena" role="button" tabindex="0" aria-label="반응속도 측정 영역">
+    <div class="big" id="arenaBig">준비</div>
+    <div class="small" id="arenaSmall"></div>
+  </div>
+  <button class="btn ghost" id="btnCancel">처음으로</button>
+</div>
+
+<!-- SOLO RESULTS -->
+<div class="screen" id="scr-result">
+  <h1>📊 결과</h1>
+  <div class="card" style="text-align:center">
+    <div id="newBestBadge" class="new-best" style="display:none">🎉 개인 최고 기록 경신!</div>
+    <div class="result-avg" id="rAvg">0<span>ms</span></div>
+    <div class="stars" id="rStars"></div>
+    <div id="rGrade"></div>
+    <div class="stat-row" style="justify-content:center">
+      <div><div class="label">최고</div><div class="val best" id="rBest"></div></div>
+      <div><div class="label">평균</div><div class="val" id="rMean"></div></div>
+      <div><div class="label">최저</div><div class="val worst" id="rWorst"></div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="section-title" style="margin-bottom:10px">라운드별 기록</div>
+    <div id="chartBox"></div>
+  </div>
+  <div class="card">
+    <div class="section-title" style="margin-bottom:8px">상세 통계</div>
+    <table class="rank-table" id="soloDetail"></table>
+  </div>
+  <div class="card">
+    <div class="section-title" style="margin-bottom:8px">🏅 내 최고 기록 TOP 5</div>
+    <table class="rank-table" id="soloRank"></table>
+  </div>
+  <button class="btn green" id="btnRetry">다시 도전</button>
+  <button class="btn ghost" id="btnHome1">처음으로</button>
+</div>
+
+<div class="toast" id="toast"></div>
+<script>
+"use strict";
+const $ = id => document.getElementById(id);
+const ROUNDS = 5;
+
+// ---------- helpers ----------
+function show(id) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  $(id).classList.add('active');
+}
+let toastTimer;
+function toast(msg) {
+  const t = $('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove('show'), 2200);
+}
+function starsFor(avg) {
+  if (avg == null) return '☆☆☆☆☆';
+  const full = avg < 200 ? 5 : avg < 240 ? 4.5 : avg < 290 ? 4 : avg < 340 ? 3.5 : avg < 400 ? 3 : avg < 500 ? 2.5 : 2;
+  let s = '★'.repeat(Math.floor(full));
+  if (full % 1) s += '⯨';
+  return s + '☆'.repeat(5 - Math.ceil(full));
+}
+function fmt(ms) { return ms == null ? '—' : ms + ' ms'; }
+
+// SVG line chart in arealme style
+function lineChart(times) {
+  const vals = times.filter(t => t != null);
+  if (!vals.length) return '<div style="color:var(--sub);text-align:center">기록 없음</div>';
+  const W = 520, H = 260, PL = 56, PR = 24, PT = 20, PB = 36;
+  let min = Math.min(...vals), max = Math.max(...vals);
+  if (min === max) { min -= 20; max += 20; }
+  const span = max - min, pad = span * 0.15;
+  min -= pad; max += pad;
+  const x = i => PL + i * (W - PL - PR) / (times.length - 1);
+  const y = v => PT + (max - v) * (H - PT - PB) / (max - min);
+  let g = '';
+  // gridlines + y labels
+  for (let i = 0; i <= 4; i++) {
+    const v = min + (max - min) * i / 4, yy = y(v);
+    g += `<line x1="${PL}" y1="${yy}" x2="${W - PR}" y2="${yy}" stroke="#e3e7f0" stroke-dasharray="4 4"/>`;
+    g += `<text x="${PL - 10}" y="${yy + 4}" text-anchor="end" font-size="13" fill="#8a90a8">${Math.round(v)}</text>`;
+  }
+  // x labels
+  times.forEach((_, i) => {
+    g += `<text x="${x(i)}" y="${H - 10}" text-anchor="middle" font-size="13" fill="#8a90a8">${i + 1}</text>`;
+  });
+  // polyline through valid points
+  const pts = times.map((t, i) => t == null ? null : [x(i), y(t)]).filter(Boolean);
+  const poly = pts.map(p => p.join(',')).join(' ');
+  g += `<polyline points="${poly}" fill="none" stroke="#4285f4" stroke-width="3.5" stroke-linejoin="round"/>`;
+  times.forEach((t, i) => {
+    if (t == null) {
+      g += `<text x="${x(i)}" y="${H / 2}" text-anchor="middle" font-size="14" fill="#ef4444">✕</text>`;
+    } else {
+      g += `<circle cx="${x(i)}" cy="${y(t)}" r="9" fill="#fff" stroke="#4285f4" stroke-width="3.5"/>`;
+    }
+  });
+  return `<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg">${g}</svg>`;
+}
+
+// Local solo history (best 5 averages)
+function loadHistory() {
+  try { return JSON.parse(localStorage.getItem('rt_history') || '[]'); } catch { return []; }
+}
+function saveHistory(avg, best) {
+  const h = loadHistory();
+  const entry = { avg, best, at: Date.now(), rid: Math.random().toString(36).slice(2) };
+  h.push(entry);
+  h.sort((a, b) => a.avg - b.avg);
+  const top = h.slice(0, 5);
+  try { localStorage.setItem('rt_history', JSON.stringify(top)); } catch {}
+  return { top, entry };
+}
+function gradeText(avg) {
+  if (avg < 200) return ['🚀 인간을 초월한 반응속도!', '프로 게이머급이에요.'];
+  if (avg < 250) return ['⚡ 매우 빠름', '상위권 반응속도예요.'];
+  if (avg < 300) return ['👍 평균 이상', '보통 사람보다 빨라요.'];
+  if (avg < 350) return ['🙂 평균 수준', '딱 일반적인 반응속도예요.'];
+  if (avg < 450) return ['🐢 조금 느림', '연습하면 빨라질 수 있어요!'];
+  return ['😴 많이 느림', '집중해서 다시 도전해 보세요.'];
+}
+
+// ---------- game state ----------
+const game = {
+  mode: null,        // 'solo' | 'multi'
+  round: 0,
+  times: [],
+  goAt: 0,           // performance.now() when green shown
+  state: 'idle',     // idle | waiting | go | between
+  delayTimer: null,
+  autoTimer: null,
+};
+function setArena(cls, big, small) {
+  const a = $('arena');
+  a.className = cls;
+  $('arenaBig').textContent = big;
+  $('arenaSmall').textContent = small || '';
+}
+function setRoundBadge() {
+  $('roundBadge').textContent = `라운드 ${Math.min(game.round + 1, ROUNDS)} / ${ROUNDS}`;
+}
+
+// ---------- solo ----------
+function startSolo() {
+  game.mode = 'solo';
+  game.round = 0;
+  game.times = [];
+  clearTimeout(game.delayTimer);
+  clearTimeout(game.autoTimer);
+  show('scr-game');
+  soloIdle();
+}
+function soloIdle() {
+  game.state = 'idle';
+  setRoundBadge();
+  setArena('', game.round === 0 ? '탭해서 시작' : '탭해서 계속', '빨간색에서 기다렸다가 초록색이 되면 클릭!');
+}
+function soloWait() {
+  game.state = 'waiting';
+  setRoundBadge();
+  setArena('waiting', '기다리세요…', '초록색이 되면 최대한 빨리 클릭!');
+  const delay = 2000 + Math.random() * 3000;
+  game.delayTimer = setTimeout(() => {
+    game.state = 'go';
+    game.goAt = performance.now();
+    setArena('go', '클릭!', '');
+  }, delay);
+}
+function soloClick() {
+  if (game.state === 'idle') { soloWait(); return; }
+  if (game.state === 'waiting') {
+    clearTimeout(game.delayTimer);
+    game.state = 'between';
+    setArena('done', '너무 빨라요! 😅', '초록색이 될 때까지 기다려야 해요. 이 라운드를 다시 할게요.');
+    game.autoTimer = setTimeout(soloWait, 1500);
+    return;
+  }
+  if (game.state === 'go') {
+    const ms = Math.round(performance.now() - game.goAt);
+    game.times.push(ms);
+    game.round++;
+    game.state = 'between';
+    setArena('done', ms + ' ms', game.round < ROUNDS ? '좋아요! 다음 라운드로…' : '측정 완료!');
+    game.autoTimer = setTimeout(() => {
+      if (game.round < ROUNDS) soloWait();
+      else showSoloResults();
+    }, 1300);
+  }
+}
+function showSoloResults() {
+  const t = game.times;
+  const avg = Math.round(t.reduce((a, b) => a + b, 0) / t.length);
+  const best = Math.min(...t), worst = Math.max(...t);
+  const spread = worst - best;
+  const sorted = [...t].sort((a, b) => a - b);
+  const median = sorted.length % 2
+    ? sorted[(sorted.length - 1) / 2]
+    : Math.round((sorted[sorted.length / 2 - 1] + sorted[sorted.length / 2]) / 2);
+
+  $('rAvg').innerHTML = avg + '<span>ms</span>';
+  $('rStars').textContent = starsFor(avg);
+  const [title, sub] = gradeText(avg);
+  $('rGrade').innerHTML = `<div class="grade-title">${title}</div><div class="grade-sub">${sub}</div>`;
+  $('rBest').textContent = fmt(best);
+  $('rMean').textContent = fmt(avg);
+  $('rWorst').textContent = fmt(worst);
+  $('chartBox').innerHTML = lineChart(t);
+
+  // detail table: per-round + extra stats
+  $('soloDetail').innerHTML =
+    '<tr><th>라운드</th><th class="num">기록</th><th class="num">평균 대비</th></tr>' +
+    t.map((ms, i) => {
+      const d = ms - avg;
+      const cls = d < 0 ? 'best' : 'worst';
+      return `<tr><td>${i + 1}R</td><td class="num"><b>${ms} ms</b></td>` +
+        `<td class="num ${cls}">${d > 0 ? '+' : ''}${d} ms</td></tr>`;
+    }).join('') +
+    `<tr><td colspan="3" style="padding-top:12px"></td></tr>` +
+    `<tr><td>중앙값</td><td class="num" colspan="2">${fmt(median)}</td></tr>` +
+    `<tr><td>기복 (최고-최저)</td><td class="num" colspan="2">${fmt(spread)}</td></tr>` +
+    `<tr><td>일관성</td><td class="num" colspan="2">${spread < 50 ? '매우 안정적 👍' : spread < 120 ? '보통' : '기복이 큰 편'}</td></tr>`;
+
+  // personal best ranking (local)
+  const { top: hist, entry } = saveHistory(avg, best);
+  const isNewBest = hist.length && hist[0].rid === entry.rid;
+  $('soloRank').innerHTML =
+    '<tr><th>순위</th><th class="num">평균</th><th class="num">최고</th><th>날짜</th></tr>' +
+    hist.map((h, i) => {
+      const cur = h.rid === entry.rid;
+      return `<tr class="${cur ? 'me' : ''}"><td class="medal">${['🥇','🥈','🥉'][i] || (i + 1) + '위'}</td>` +
+        `<td class="num"><b>${h.avg} ms</b></td><td class="num best">${h.best} ms</td>` +
+        `<td>${new Date(h.at).toLocaleDateString('ko-KR', { month: 'numeric', day: 'numeric' })}` +
+        `${cur ? ' <b>(이번)</b>' : ''}</td></tr>`;
+    }).join('');
+  $('newBestBadge').style.display = isNewBest && hist.length > 1 ? '' : 'none';
+
+  show('scr-result');
+}
+
+
+function goHome() {
+  clearTimeout(game.delayTimer);
+  clearTimeout(game.autoTimer);
+  game.mode = null;
+  game.state = 'idle';
+  show('scr-home');
+}
+function arenaPress(e) {
+  if (e.type === 'pointerdown' && e.button !== 0) return;
+  e.preventDefault();
+  if (game.mode === 'solo' && $('scr-game').classList.contains('active')) soloClick();
+}
+$('arena').addEventListener('pointerdown', arenaPress);
+window.addEventListener('keydown', e => {
+  if (e.code === 'Space' && !e.repeat && !e.isComposing &&
+      $('scr-game').classList.contains('active') && e.target !== $('btnCancel')) arenaPress(e);
+});
+$('btnSolo').onclick = startSolo;
+$('btnRetry').onclick = startSolo;
+$('btnHome1').onclick = goHome;
+$('btnCancel').onclick = goHome;
+</script>
+</body>
+</html>
