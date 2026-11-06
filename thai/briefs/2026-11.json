@@ -1,4 +1,26 @@
 {
+  "2026-11-07": {
+    "date": "2026-11-07",
+    "headlines": [
+      {
+        "date": "2026-11-05",
+        "html": "<a href=\"https://www.cesiumastro.com/press-release/series-d\" target=\"_blank\" rel=\"noopener\"><strong>CesiumAstro ระดมทุน 730 ล้านดอลลาร์ เดินหน้าเครือข่ายดาวเทียมสื่อสารและประมวลผล 737 ดวง</strong>: บริษัทวางแผนใช้เงินทุนใหม่เพื่อขยายการผลิตดาวเทียม รวมถึงพัฒนาและนำกลุ่มดาวเทียม Synchronicity ขึ้นสู่วงโคจร — (CesiumAstro)</a>"
+      }
+    ],
+    "summary_html": "<strong>① CesiumAstro (11/5)</strong> — (2026-11-05) CesiumAstro ประกาศระดมทุน 730 ล้านดอลลาร์ โดยจะใช้เงินทุนใหม่ในการผลิตดาวเทียม รวมถึงพัฒนาและนำกลุ่มดาวเทียม Synchronicity จำนวน 737 ดวงขึ้นสู่วงโคจร โครงการนี้เป็นแผนสร้างเครือข่ายสื่อสารที่ผนวกการประมวลผลข้อมูลบนดาวเทียม ยังไม่ใช่การเปิดใช้งานศูนย์ข้อมูลอเนกประสงค์ในอวกาศ การระดมทุนครั้งนี้อาจมองได้ว่าเป็นตัวอย่างของเงินทุนที่ไหลเข้าสู่ห่วงโซ่อุปทานด้านการผลิตดาวเทียมจำนวนมากและเทคโนโลยีประมวลผล ซึ่งจำเป็นต่อศูนย์ข้อมูลในอวกาศเช่นกัน<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.cesiumastro.com/press-release/series-d",
+        "label": "cesiumastro.com"
+      }
+    ],
+    "video": {
+      "id": "ZfRtyuQhZ_g",
+      "title": "세슘아스트로, 7억 3천만 달러 조달…737기 통신·연산 위성망 추진",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-06": {
     "date": "2026-11-06",
     "headlines": [

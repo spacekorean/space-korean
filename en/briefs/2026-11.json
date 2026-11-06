@@ -1,4 +1,26 @@
 {
+  "2026-11-07": {
+    "date": "2026-11-07",
+    "headlines": [
+      {
+        "date": "2026-11-05",
+        "html": "<a href=\"https://www.cesiumastro.com/press-release/series-d\" target=\"_blank\" rel=\"noopener\"><strong>CesiumAstro raises $730 million for planned 737-satellite communications and computing constellation</strong>: The company plans to use the funding to expand satellite production and develop and deploy its Synchronicity constellation. — (CesiumAstro)</a>"
+      }
+    ],
+    "summary_html": "<strong>① CesiumAstro (Nov. 5)</strong> — (2026-11-05) CesiumAstro announced it has raised $730 million. The funding will support satellite production and the development and deployment of its 737-satellite Synchronicity constellation. The proposed communications network incorporates onboard data processing; it does not mark the start of operations for a general-purpose orbital data center. The investment can be viewed as capital flowing into satellite manufacturing at scale and computing supply chains also needed for orbital data centers.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.cesiumastro.com/press-release/series-d",
+        "label": "cesiumastro.com"
+      }
+    ],
+    "video": {
+      "id": "ZfRtyuQhZ_g",
+      "title": "세슘아스트로, 7억 3천만 달러 조달…737기 통신·연산 위성망 추진",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-06": {
     "date": "2026-11-06",
     "headlines": [

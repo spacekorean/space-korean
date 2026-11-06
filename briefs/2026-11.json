@@ -1,4 +1,25 @@
 {
+  "2026-11-07": {
+    "date": "2026-11-07",
+    "headlines": [
+      {
+        "date": "2026-11-05",
+        "html": "<a href=\"https://www.cesiumastro.com/press-release/series-d\" target=\"_blank\" rel=\"noopener\"><strong>세슘아스트로, 7억 3천만 달러 조달…737기 통신·연산 위성망 추진</strong>: 신규 자금을 위성 생산 확대와 싱크로니시티 컨스텔레이션 개발·배치에 투입할 계획입니다. — (CesiumAstro)</a>"
+      }
+    ],
+    "summary_html": "<strong>① 세슘아스트로(CesiumAstro, 11/5)</strong> — (2026-11-05) 세슘아스트로가 7억 3천만 달러 규모의 자금 조달을 발표했습니다. 새 자금은 위성 생산과 737기 싱크로니시티 컨스텔레이션 개발·배치에 쓰입니다. 위성 내 데이터 처리를 결합한 통신망 계획이며, 범용 우주 데이터센터가 가동된 것은 아닙니다. 우주 데이터센터에도 필요한 위성 양산·연산 공급망에 자본이 유입된 사례로 해석할 수 있습니다.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.cesiumastro.com/press-release/series-d",
+        "label": "cesiumastro.com"
+      }
+    ],
+    "video": {
+      "id": "ZfRtyuQhZ_g",
+      "title": "세슘아스트로, 7억 3천만 달러 조달…737기 통신·연산 위성망 추진"
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-06": {
     "date": "2026-11-06",
     "headlines": [
