@@ -1,4 +1,34 @@
 {
+  "2026-11-06": {
+    "date": "2026-11-06",
+    "headlines": [
+      {
+        "date": "2026-11-04",
+        "html": "<a href=\"https://gx.space/news-press-releases/galaxia-unveils-osprey-advancing-canadian-built-space-technology-for-defence-applications\" target=\"_blank\" rel=\"noopener\"><strong>Galaxia เปิดตัว OSPREY เพื่อรับข้อมูลจากดาวเทียมดวงอื่นมาประมวลผลในวงโคจร</strong>: บริษัทกำลังพัฒนาดาวเทียมสาธิตที่ผสานการถ่ายทอดข้อมูลกับการประมวลผลบนดาวเทียม โดยได้รับการสนับสนุนจากกระทรวงกลาโหมแคนาดา — (Galaxia)</a>"
+      },
+      {
+        "date": "2026-11-04",
+        "html": "<a href=\"https://www.ubotica.com/news/ubotica-demonstrates-world-first-autonomous-onboard-scheduling-for-earth-observation-satellites-using-orbital-ai\" target=\"_blank\" rel=\"noopener\"><strong>Ubotica เผยผลทดสอบ AI บนดาวเทียมที่วางแผนและถ่ายภาพติดตามผลได้เอง</strong>: ดาวเทียมที่ตรวจพบเรือกลับมาถ่ายภาพตำแหน่งเดิมอีกครั้งในอีก 2 วันต่อมา โดยไม่ต้องรับคำสั่งจากภาคพื้นดิน — (Ubotica)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Galaxia (11/4)</strong> — (2026-11-04) OSPREY ซึ่งได้รับการสนับสนุนจากโครงการ IDEaS ของกระทรวงกลาโหมแคนาดา มีแผนทดสอบการรับข้อมูลจากดาวเทียมที่มีอยู่มาประมวลผลโดยตรงในวงโคจร หรือส่งต่อไปยังเครือข่ายสื่อสารอื่นในวงโคจรต่ำ โดยรวมระบบประมวลผล ความปลอดภัย และการสื่อสารไว้บนแพลตฟอร์ม Halifax Class ของบริษัท ยังไม่มีการเปิดเผยกำหนดปล่อยหรือสมรรถนะการประมวลผล และโครงการยังอยู่ในขั้นพัฒนา ยังไม่ใช่บริการเชิงพาณิชย์<br><br><strong>② Ubotica (11/4)</strong> — (2026-11-04) บริษัทระบุว่า ในช่วงต้นเดือนตุลาคม AI บน CogniSAT-6 ตรวจพบเรือสำราญในมหาสมุทรแปซิฟิก คำนวณโอกาสถ่ายภาพครั้งถัดไป และถ่ายภาพตำแหน่งเดิมซ้ำในอีก 2 วันต่อมาโดยไม่ต้องรับคำสั่งจากภาคพื้นดิน การทดสอบนี้ดำเนินการบนดาวเทียมขนาด 6U ที่ Open Cosmos ผลิตและดำเนินงาน ผลสำเร็จดังกล่าวเป็นการประมวลผลแบบอัตโนมัติบนดาวเทียมเพียงดวงเดียว ยังไม่ใช่การสาธิตเครือข่ายประมวลผลที่ดาวเทียมหลายดวงทำงานร่วมกัน ข่าวทั้ง 2 เรื่องสะท้อนคุณค่าของการประมวลผลในวงโคจรในการลดปริมาณข้อมูลที่ต้องส่งลงสู่ภาคพื้นดินและลดเวลารอคอย Galaxia กำลังพัฒนาระบบที่รับงานจากดาวเทียมดวงอื่นมาประมวลผล ส่วน Ubotica นำผลการสังเกตการณ์มาใช้กำหนดการทำงานขั้นถัดไปของดาวเทียม ประเด็นสำคัญจากข่าววันนี้คือ การขยายไปสู่ศูนย์ข้อมูลในอวกาศต้องอาศัยมากกว่าความสามารถเฉพาะด้านเหล่านี้ โดยยังต้องพิสูจน์เสถียรภาพของการเชื่อมต่อระหว่างดาวเทียม การจัดสรรทรัพยากรประมวลผล และสมรรถนะการประมวลผลในการใช้งานจริง<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://gx.space/news-press-releases/galaxia-unveils-osprey-advancing-canadian-built-space-technology-for-defence-applications",
+        "label": "gx.space"
+      },
+      {
+        "url": "https://www.ubotica.com/news/ubotica-demonstrates-world-first-autonomous-onboard-scheduling-for-earth-observation-satellites-using-orbital-ai",
+        "label": "ubotica.com"
+      }
+    ],
+    "video": {
+      "id": "EYfLxy00Ur0",
+      "title": "갤럭시아 OSPREY, 다른 위성의 데이터를 궤도에서 처리한다",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-05": {
     "date": "2026-11-05",
     "headlines": [
