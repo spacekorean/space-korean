@@ -1,4 +1,50 @@
 {
+  "2026-11-09": {
+    "date": "2026-11-09",
+    "headlines": [
+      {
+        "date": "2026-11-06",
+        "html": "<a href=\"https://www.investmentnews.com/equities/elon-musk-touts-data-centers-in-space-at-baron-investment-conference/268925\" target=\"_blank\" rel=\"noopener\"><strong>SpaceX Starmind</strong>: Musk คาดว่าจะส่งคอมพิวเตอร์สำหรับใช้งานในวงโคจรที่ร่วมออกแบบกับ NVIDIA ขึ้นสู่อวกาศครั้งแรกในไตรมาส 3 ปี 2027 — (InvestmentNews)</a>"
+      },
+      {
+        "date": "2026-11-05",
+        "html": "<a href=\"https://payloadspace.com/exclusive-orbital-taps-orca-aerospace-for-onboard-autonomy-software/\" target=\"_blank\" rel=\"noopener\"><strong>Orbital·Orca Aerospace</strong>: ลงนามหนังสือแสดงเจตจำนงมูลค่าสูงสุด 20 ล้านดอลลาร์ เพื่อนำซอฟต์แวร์ควบคุมดาวเทียมอัตโนมัติมาใช้กับดาวเทียมศูนย์ข้อมูล — (Payload)</a>"
+      },
+      {
+        "date": "2026-11-06",
+        "html": "<a href=\"https://www.sustainable-markets.org/news/the-sustainable-markets-initiative-and-lonestar-collaborate-to-advance-sustainable-space-data-infrastructure/\" target=\"_blank\" rel=\"noopener\"><strong>Lonestar·SMI</strong>: ประกาศความร่วมมือจัดเก็บกฎบัตรด้านความยั่งยืนและข้อมูลสิ่งแวดล้อมในภารกิจสาธิต StarVault — (SMI)</a>"
+      },
+      {
+        "date": "2026-11-04",
+        "html": "<a href=\"https://payloadspace.com/orbital-matter-endurosat-announce-an-in-space-manufacturing-mission-in-2028/\" target=\"_blank\" rel=\"noopener\"><strong>Orbital Matter·EnduroSat</strong>: เดินหน้าแผนสาธิตแผงเซลล์แสงอาทิตย์ขนาด 5 กิโลวัตต์ โดยพิมพ์โครงรองรับแบบ 3 มิติในอวกาศในปี 2028 — (Payload)</a>"
+      }
+    ],
+    "summary_html": "<strong>① SpaceX(InvestmentNews, 11/6)</strong> — (2026-11-06) Musk กล่าวในการประชุม Baron Investment Conference ว่า คาดว่าจะส่งคอมพิวเตอร์ Starmind ที่ร่วมออกแบบกับ NVIDIA ขึ้นสู่อวกาศครั้งแรกในไตรมาส 3 ปี 2027 พร้อมคาดการณ์ว่าจะขยายการติดตั้งในปี 2028–2029 แต่ย้ำว่าเป็นเพียงการประเมินของตนเอง ยังไม่ใช่การประกาศกำหนดปล่อยที่ยืนยันแล้วหรือผลการใช้งานในวงโคจร<br><br><strong>② Orbital·Orca(Payload, 11/5)</strong> — (2026-11-05) หนังสือแสดงเจตจำนงระหว่างทั้ง 2 บริษัทมีมูลค่าสูงสุด 20 ล้านดอลลาร์ ครอบคลุมแนวคิดการควบคุมการเคลื่อนที่ การปฏิบัติภารกิจ และการรับมือเหตุขัดข้องของดาวเทียมโดยอัตโนมัติ พร้อมตรวจสอบคำสั่งตามกฎความปลอดภัย ทั้ง 2 บริษัทกำลังพิจารณาทดสอบบางฟังก์ชันในภารกิจ Pathfinder ในเดือนกรกฎาคม 2027 และตั้งเป้าติดตั้งบน Orbital-1 ในปี 2028 ปัจจุบันยังอยู่ในขั้นวางแผนนำระบบมาใช้งาน<br><br><strong>③ Lonestar·SMI(SMI, 11/6)</strong> — (2026-11-06) ทั้ง 2 องค์กรตกลงนำกฎบัตร Astra Carta และ Terra Carta รวมถึงข้อมูลสิ่งแวดล้อมและภูมิอากาศไปจัดเก็บในภารกิจสาธิต StarVault ในวงโคจรต่ำของโลก โดยมีคำมั่นว่าจะมอบพื้นที่จัดเก็บ 1 เทราไบต์ให้แต่ละประเทศในเครือจักรภพด้วย ความร่วมมือนี้มุ่งเสริมการสำรองข้อมูลบนโลก ยังไม่ใช่การประกาศว่าจัดเก็บหรือกู้คืนข้อมูลในอวกาศสำเร็จแล้ว <strong>④ Orbital Matter·EnduroSat(Payload, 11/4)</strong> — (2026-11-04) ทั้ง 2 บริษัทกำลังเดินหน้าแผนสาธิตการผลิตโครงรองรับในวงโคจรเพื่อกางแผงเซลล์แสงอาทิตย์ขนาด 5 กิโลวัตต์ในปี 2028 โดยระบุว่า ภารกิจ Replicator-2 ก่อนหน้านี้ได้สาธิตการผลิตโครงรองรับยาว 32.5 เซนติเมตรและการกางแผงเซลล์แสงอาทิตย์บางส่วนแล้ว แม้โครงการจะมุ่งรองรับการจ่ายไฟให้ศูนย์ข้อมูลในอวกาศ แต่การสาธิตขนาด 5 กิโลวัตต์ยังอยู่ในขั้นวางแผน เมื่อพิจารณาร่วมกัน การแข่งขันด้านศูนย์ข้อมูลในอวกาศกำลังขยายจากกำหนดส่งอุปกรณ์ประมวลผลขึ้นสู่วงโคจร ไปสู่การเชื่อมโยงซอฟต์แวร์ควบคุมดาวเทียมอัตโนมัติ ระบบผลิตไฟฟ้าขนาดใหญ่ และข้อมูลที่จะนำไปจัดเก็บจริง อย่างไรก็ตาม แต่ละประกาศมีระดับความพร้อมต่างกัน จึงต้องติดตามแผนห่วงโซ่อุปทานและการหาผู้ใช้บริการ โดยแยกให้ชัดจากผลการพิสูจน์สมรรถนะในวงโคจร ความปลอดภัย และต้นทุนจริง<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.investmentnews.com/equities/elon-musk-touts-data-centers-in-space-at-baron-investment-conference/268925",
+        "label": "investmentnews.com"
+      },
+      {
+        "url": "https://payloadspace.com/exclusive-orbital-taps-orca-aerospace-for-onboard-autonomy-software/",
+        "label": "Payload"
+      },
+      {
+        "url": "https://www.sustainable-markets.org/news/the-sustainable-markets-initiative-and-lonestar-collaborate-to-advance-sustainable-space-data-infrastructure/",
+        "label": "sustainable-markets.org"
+      },
+      {
+        "url": "https://payloadspace.com/orbital-matter-endurosat-announce-an-in-space-manufacturing-mission-in-2028/",
+        "label": "Payload"
+      }
+    ],
+    "video": {
+      "id": "cabAs1UzY5Y",
+      "title": "SpaceX 스타마인드, 2027년 3분기 첫 발사 전망",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-07": {
     "date": "2026-11-07",
     "headlines": [

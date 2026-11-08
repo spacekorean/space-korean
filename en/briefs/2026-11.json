@@ -1,4 +1,50 @@
 {
+  "2026-11-09": {
+    "date": "2026-11-09",
+    "headlines": [
+      {
+        "date": "2026-11-06",
+        "html": "<a href=\"https://www.investmentnews.com/equities/elon-musk-touts-data-centers-in-space-at-baron-investment-conference/268925\" target=\"_blank\" rel=\"noopener\"><strong>SpaceX Starmind</strong>: Musk expects first launch of orbital computer co-designed with NVIDIA in Q3 2027 — (InvestmentNews)</a>"
+      },
+      {
+        "date": "2026-11-05",
+        "html": "<a href=\"https://payloadspace.com/exclusive-orbital-taps-orca-aerospace-for-onboard-autonomy-software/\" target=\"_blank\" rel=\"noopener\"><strong>Orbital·Orca Aerospace</strong>: Letter of intent worth up to $20 million covers autonomous operations software for data center satellites — (Payload)</a>"
+      },
+      {
+        "date": "2026-11-06",
+        "html": "<a href=\"https://www.sustainable-markets.org/news/the-sustainable-markets-initiative-and-lonestar-collaborate-to-advance-sustainable-space-data-infrastructure/\" target=\"_blank\" rel=\"noopener\"><strong>Lonestar·SMI</strong>: Partnership to store sustainability charters and environmental data on StarVault demonstration mission — (SMI)</a>"
+      },
+      {
+        "date": "2026-11-04",
+        "html": "<a href=\"https://payloadspace.com/orbital-matter-endurosat-announce-an-in-space-manufacturing-mission-in-2028/\" target=\"_blank\" rel=\"noopener\"><strong>Orbital Matter·EnduroSat</strong>: Companies plan 2028 demonstration of a 5 kW solar array with support structures 3D-printed in space — (Payload)</a>"
+      }
+    ],
+    "summary_html": "<strong>① SpaceX (InvestmentNews, 11/6)</strong> — (2026-11-06) Speaking at the Baron Investment Conference, Musk said he expected the first launch of the Starmind computer, co-designed with NVIDIA, in Q3 2027. He also projected expanded deployment in 2028–2029, while acknowledging that these were estimates. The remarks did not establish a firm launch schedule or report operational results in orbit.<br><br><strong>② Orbital·Orca (Payload, 11/5)</strong> — (2026-11-05) The companies signed a letter of intent worth up to $20 million. The proposed software would automate satellite maneuvers, mission operations and fault response, while checking commands against safety rules. The companies are considering testing some functions on a pathfinder mission in July 2027 and aim to deploy the software aboard Orbital-1 in 2028. Adoption remains at the planning stage.<br><br><strong>③ Lonestar·SMI (SMI, 11/6)</strong> — (2026-11-06) The organizations agreed to store the Astra Carta and Terra Carta charters, along with environmental and climate data, on the StarVault demonstration mission in low Earth orbit. The agreement also includes a commitment to provide 1 TB of storage to each Commonwealth nation. The partnership is intended to complement terrestrial backups; it does not mark the completion of data storage or recovery in space. <strong>④ Orbital Matter·EnduroSat (Payload, 11/4)</strong> — (2026-11-04) The companies plan a 2028 demonstration in which support structures would be manufactured in orbit to deploy a 5 kW solar array. They said the earlier Replicator-2 mission demonstrated the fabrication of a 32.5 cm support structure and partial deployment of a solar array. The effort targets power supply for space data centers, but the 5 kW demonstration remains a planned mission. Taken together, these developments suggest that competition in space data centers is expanding beyond launch schedules for computing hardware to encompass autonomous satellite operations, large-scale power systems and the data to be stored. The initiatives are at different stages of maturity, however. Supply chain planning and customer commitments should be tracked separately from demonstrated performance, safety and costs in orbit.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.investmentnews.com/equities/elon-musk-touts-data-centers-in-space-at-baron-investment-conference/268925",
+        "label": "investmentnews.com"
+      },
+      {
+        "url": "https://payloadspace.com/exclusive-orbital-taps-orca-aerospace-for-onboard-autonomy-software/",
+        "label": "Payload"
+      },
+      {
+        "url": "https://www.sustainable-markets.org/news/the-sustainable-markets-initiative-and-lonestar-collaborate-to-advance-sustainable-space-data-infrastructure/",
+        "label": "sustainable-markets.org"
+      },
+      {
+        "url": "https://payloadspace.com/orbital-matter-endurosat-announce-an-in-space-manufacturing-mission-in-2028/",
+        "label": "Payload"
+      }
+    ],
+    "video": {
+      "id": "cabAs1UzY5Y",
+      "title": "SpaceX 스타마인드, 2027년 3분기 첫 발사 전망",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-07": {
     "date": "2026-11-07",
     "headlines": [
