@@ -117,6 +117,14 @@
       #expand-all-wrap { text-align: right; margin: -6px 0 12px; }
     #expand-all { background: transparent; color: var(--muted); border: 1px solid var(--border); border-radius: 16px; padding: 5px 14px; font-family: inherit; font-size: 0.76rem; font-weight: 600; cursor: pointer; transition: color .2s, border-color .2s; }
     #expand-all:hover { color: var(--cyan); border-color: var(--border-glow); }
+    /* Editorial features are separate from the daily briefing ledger. */
+    .special-feature {display:block;position:relative;padding:26px 28px;margin:0 0 32px;border:1px solid rgba(112,227,204,.45);border-radius:12px;background:linear-gradient(120deg,#0b2834,#09172c);text-decoration:none;color:var(--white)}
+    .special-feature:hover{border-color:#70e3cc;background:linear-gradient(120deg,#103542,#0b1b32)}
+    .special-feature .sf-label{display:block;color:#70e3cc;font-size:.72rem;font-weight:700;letter-spacing:1.5px;margin-bottom:9px}
+    .special-feature h2{font-size:clamp(1.25rem,4vw,1.7rem);line-height:1.5;letter-spacing:-.7px;margin:0 0 8px}
+    .special-feature p{color:#adc2cf;font-size:.86rem;margin:0 0 16px;line-height:1.75}
+    .special-feature .sf-cta{color:#70e3cc;font-size:.82rem;font-weight:700}
+    .special-feature:focus-visible{outline:3px solid #f1c782;outline-offset:4px}
   </style>
 </head>
 <body>
@@ -137,6 +145,12 @@
       <a href="./reaction-game/">⚡ 반응속도 게임</a>
     </nav>
   </header>
+  <a class="special-feature" id="feature-odc-2026-part1" href="./features/2026-space-data-centers-part1/">
+    <span class="sf-label">특집 · 2026 우주 데이터센터 산업 지도 / 1부</span>
+    <h2>우주 데이터센터, 누가 앞서가고 있나</h2>
+    <p>주요 기업과 국가별 접근, 투자금과 실증 단계를 연결합니다.<br>챕터별 해설과 원문 근거로 읽는 11월 7일 기준 산업 지도.</p>
+    <span class="sf-cta">특집 기사 읽기 →</span>
+  </a>
   <div class="section-label">최신 브리핑</div>
   <div id="expand-all-wrap"><button id="expand-all" type="button" data-expand="모두 펼치기" data-collapse="모두 접기">모두 펼치기</button></div>
   <div id="cards-container"></div>
