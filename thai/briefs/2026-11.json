@@ -1,4 +1,30 @@
 {
+  "2026-11-10": {
+    "date": "2026-11-10",
+    "headlines": [
+      {
+        "date": "2026-11-09",
+        "html": "<a href=\"https://www.ntt.com/en/about-us/press-releases/news/article/2026/1109.html\" target=\"_blank\" rel=\"noopener\"><strong>5 บริษัทญี่ปุ่น รวมถึง NTT และ Mitsubishi Electric ร่วมศึกษาการทำธุรกิจศูนย์ข้อมูลในอวกาศ</strong>: ประกาศลงนาม MOU เพื่อศึกษาการให้บริการสื่อสาร การสังเกตการณ์ และการประมวลผลข้อมูลผ่านเครือข่ายดาวเทียมขนาดใหญ่ — (NTT DOCOMO BUSINESS·Mitsubishi Electric)</a>"
+      }
+    ],
+    "summary_html": "<strong>① NTT·Mitsubishi Electric(NTT DOCOMO BUSINESS, 9 พฤศจิกายน)</strong> — (2026-11-09) NTT, NTT DOCOMO BUSINESS, Mitsubishi Electric, MUFG Bank และ Development Bank of Japan ลงนาม MOU เมื่อวันที่ 6 พฤศจิกายน และประกาศต่อสาธารณะในวันที่ 9 พฤศจิกายน เพื่อร่วมศึกษาบริการประมวลผลและจัดเก็บข้อมูลบนดาวเทียม ก่อนส่งผลลัพธ์กลับมายังภาคพื้นดิน Mitsubishi Electric รับผิดชอบด้านการออกแบบและบูรณาการระบบ กลุ่ม NTT ดูแลด้านการสื่อสารและความต้องการของลูกค้า ส่วนธนาคารทั้ง 2 แห่งศึกษาห่วงโซ่อุปทานและความเป็นไปได้ทางธุรกิจ การประกาศครั้งนี้ยังไม่ได้ระบุจำนวนดาวเทียม กำหนดการปล่อย หรือวงเงินลงทุน ความร่วมมือครั้งนี้สะท้อนว่า การพัฒนาศูนย์ข้อมูลในอวกาศให้เป็นธุรกิจต้องพิจารณาทั้งเทคโนโลยีดาวเทียม เครือข่ายสื่อสาร ความต้องการของลูกค้า และโครงสร้างการจัดหาเงินทุน อย่างไรก็ตาม ขณะนี้ยังอยู่ในขั้นศึกษาความเป็นไปได้ทางเทคนิคและธุรกิจ ประเด็นสำคัญที่ต้องติดตามต่อไปคือ ความร่วมมือนี้จะนำไปสู่แผนทดสอบสาธิตที่ชัดเจนและสัญญากับลูกค้าหรือไม่ มากกว่าการพิจารณาเพียงขนาดของบริษัทที่เข้าร่วม<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.ntt.com/en/about-us/press-releases/news/article/2026/1109.html",
+        "label": "ntt.com"
+      },
+      {
+        "url": "https://www.mitsubishielectric.com/en/pr/2026/1109_ds/",
+        "label": "mitsubishielectric.com"
+      }
+    ],
+    "video": {
+      "id": "RzpMUV8UWEQ",
+      "title": "NTT·미쓰비시전기 등 5개사, 우주 데이터센터 사업화 검토",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-09": {
     "date": "2026-11-09",
     "headlines": [

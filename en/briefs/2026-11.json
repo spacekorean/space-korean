@@ -1,4 +1,30 @@
 {
+  "2026-11-10": {
+    "date": "2026-11-10",
+    "headlines": [
+      {
+        "date": "2026-11-09",
+        "html": "<a href=\"https://www.ntt.com/en/about-us/press-releases/news/article/2026/1109.html\" target=\"_blank\" rel=\"noopener\"><strong>Five Japanese companies, including NTT and Mitsubishi Electric, to jointly assess commercialization of orbital data centers</strong>: The companies announced an MOU to explore providing communications, observation and data processing services through large satellite constellations. — (NTT DOCOMO BUSINESS·Mitsubishi Electric)</a>"
+      }
+    ],
+    "summary_html": "<strong>① NTT and Mitsubishi Electric (NTT DOCOMO BUSINESS, 11/9)</strong> — (2026-11-09) NTT, NTT DOCOMO BUSINESS, Mitsubishi Electric, MUFG Bank and the Development Bank of Japan signed an MOU on November 6 and announced it on November 9. The companies will explore services that process and store data aboard satellites and transmit the results to Earth. Mitsubishi Electric will handle design and integration, the NTT companies will assess communications and customer demand, and the two banks will examine supply chains and commercial viability. The announcement did not specify satellite numbers, launch dates or investment amounts. The collaboration highlights that commercializing orbital data centers requires assessing communications networks, customer demand and financing structures alongside satellite technology. The initiative remains at the technical and commercial feasibility stage. Its progress will be measured by whether it leads to concrete demonstration plans and customer contracts, rather than by the size of the participating companies.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.ntt.com/en/about-us/press-releases/news/article/2026/1109.html",
+        "label": "ntt.com"
+      },
+      {
+        "url": "https://www.mitsubishielectric.com/en/pr/2026/1109_ds/",
+        "label": "mitsubishielectric.com"
+      }
+    ],
+    "video": {
+      "id": "RzpMUV8UWEQ",
+      "title": "NTT·미쓰비시전기 등 5개사, 우주 데이터센터 사업화 검토",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-09": {
     "date": "2026-11-09",
     "headlines": [
