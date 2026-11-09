@@ -1,16 +1,16 @@
 <svg viewBox="70 300 1780 600" role="img" aria-labelledby="figure-title" xmlns="http://www.w3.org/2000/svg"><title id="figure-title">주요 기업의 사업 출발점</title><style>text{font-family:"Noto Sans KR",sans-serif}</style><defs>
-<radialgradient id="space"><stop stop-color="#183353"></stop><stop offset="1" stop-color="#091525"></stop></radialgradient>
-<lineargradient id="sea" x1="0" x2="0.8" y1="0" y2="1"><stop stop-color="#167790"></stop><stop offset=".45" stop-color="#10516e"></stop><stop offset="1" stop-color="#0a2946"></stop></lineargradient>
-<lineargradient id="seaEdge" x2="0" y2="1"><stop stop-color="#3ba7af"></stop><stop offset="1" stop-color="#09263d"></stop></lineargradient>
-<lineargradient id="panel" x2="0.8" y2="1"><stop stop-color="#2b689b"></stop><stop offset="1" stop-color="#123b65"></stop></lineargradient>
-<lineargradient id="metal" x2=".8" y2="1"><stop stop-color="#edf5f6"></stop><stop offset=".45" stop-color="#a1b9c8"></stop><stop offset="1" stop-color="#66879f"></stop></lineargradient>
-<lineargradient id="gold" x2="1" y2="1"><stop stop-color="#f9dd9b"></stop><stop offset=".6" stop-color="#c99540"></stop><stop offset="1" stop-color="#87652c"></stop></lineargradient>
-<lineargradient id="beam" x2="0" y2="1"><stop stop-color="#6ae9df" stop-opacity=".05"></stop><stop offset="1" stop-color="#6ae9df" stop-opacity=".25"></stop></lineargradient>
-<radialgradient id="lens"><stop stop-color="#7cf2e9"></stop><stop offset=".25" stop-color="#265c7a"></stop><stop offset=".7" stop-color="#071c32"></stop><stop offset="1" stop-color="#071323"></stop></radialgradient>
-<filter height="220%" id="shadow" width="200%" x="-50%" y="-50%"><fedropshadow dx="0" dy="18" flood-color="#020c19" flood-opacity=".55" stddeviation="18"></fedropshadow></filter>
-<filter id="glow"><fegaussianblur stddeviation="8"></fegaussianblur></filter>
-<clippath id="oceanClip"><ellipse cx="540" cy="1128" rx="625" ry="216"></ellipse></clippath>
-<pattern height="34" id="solarCells" patternunits="userSpaceOnUse" width="40"><path d="M0 0H40V34H0Z" fill="url(#panel)" stroke="#6ca7c5" stroke-width="1.7"></path><path d="M5 6H35M5 28H35" stroke="#6091b4" stroke-width=".8"></path></pattern>
+<radialGradient id="space"><stop stop-color="#183353"></stop><stop offset="1" stop-color="#091525"></stop></radialGradient>
+<linearGradient id="sea" x1="0" x2="0.8" y1="0" y2="1"><stop stop-color="#167790"></stop><stop offset=".45" stop-color="#10516e"></stop><stop offset="1" stop-color="#0a2946"></stop></linearGradient>
+<linearGradient id="seaEdge" x2="0" y2="1"><stop stop-color="#3ba7af"></stop><stop offset="1" stop-color="#09263d"></stop></linearGradient>
+<linearGradient id="panel" x2="0.8" y2="1"><stop stop-color="#2b689b"></stop><stop offset="1" stop-color="#123b65"></stop></linearGradient>
+<linearGradient id="metal" x2=".8" y2="1"><stop stop-color="#edf5f6"></stop><stop offset=".45" stop-color="#a1b9c8"></stop><stop offset="1" stop-color="#66879f"></stop></linearGradient>
+<linearGradient id="gold" x2="1" y2="1"><stop stop-color="#f9dd9b"></stop><stop offset=".6" stop-color="#c99540"></stop><stop offset="1" stop-color="#87652c"></stop></linearGradient>
+<linearGradient id="beam" x2="0" y2="1"><stop stop-color="#6ae9df" stop-opacity=".05"></stop><stop offset="1" stop-color="#6ae9df" stop-opacity=".25"></stop></linearGradient>
+<radialGradient id="lens"><stop stop-color="#7cf2e9"></stop><stop offset=".25" stop-color="#265c7a"></stop><stop offset=".7" stop-color="#071c32"></stop><stop offset="1" stop-color="#071323"></stop></radialGradient>
+<filter height="220%" id="shadow" width="200%" x="-50%" y="-50%"><feDropShadow dx="0" dy="18" flood-color="#020c19" flood-opacity=".55" stdDeviation="18"></feDropShadow></filter>
+<filter id="glow"><feGaussianBlur stdDeviation="8"></feGaussianBlur></filter>
+<clipPath id="oceanClip"><ellipse cx="540" cy="1128" rx="625" ry="216"></ellipse></clipPath>
+<pattern height="34" id="solarCells" patternUnits="userSpaceOnUse" width="40"><path d="M0 0H40V34H0Z" fill="url(#panel)" stroke="#6ca7c5" stroke-width="1.7"></path><path d="M5 6H35M5 28H35" stroke="#6091b4" stroke-width=".8"></path></pattern>
 <g id="observer"><g filter="url(#shadow)" transform="rotate(-10)">
 <path d="M-74 -8L-155 -26M94 24L174 57" stroke="#adc2d0" stroke-width="14"></path>
 <g transform="translate(-290 -112) skewY(18)"><rect fill="url(#solarCells)" height="136" rx="4" stroke="#a0c6d4" stroke-width="5" width="208"></rect><path d="M104 0V136" stroke="#b7cbd4" stroke-width="5"></path></g>
