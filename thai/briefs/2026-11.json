@@ -1,4 +1,38 @@
 {
+  "2026-11-11": {
+    "date": "2026-11-11",
+    "headlines": [
+      {
+        "date": "2026-11-10",
+        "html": "<a href=\"https://www.cas.cn/cm/202611/t20261110_5123876.shtml\" target=\"_blank\" rel=\"noopener\"><strong>จีนเปิดเผยแผนโครงข่ายประมวลผลในอวกาศ Xingyun</strong>: เดินหน้าพัฒนากลุ่มดาวเทียมที่เชื่อมโยงการสำรวจ การสื่อสาร และการประมวลผล พร้อมทำงานร่วมกับระบบภาคพื้นดิน — (Chinese Academy of Sciences·CCTV)</a>"
+      },
+      {
+        "date": "2026-11-09",
+        "html": "<a href=\"https://rocketlabcorp.gcs-web.com/news-releases/news-release-details/rocket-lab-lands-over-515m-neutron-launch-deals-constellation\" target=\"_blank\" rel=\"noopener\"><strong>Starcloud จองการปล่อยจรวด Neutron แบบเหมาลำในปี 2029</strong>: Rocket Lab เปิดเผยสัญญาปล่อยจรวดฉบับใหม่กับบริษัทศูนย์ข้อมูลในอวกาศ — (Rocket Lab)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Chinese Academy of Sciences(CCTV, 11/10)</strong> — (2026-11-10) สถาบันวิจัยข้อมูลการบินและอวกาศของ Chinese Academy of Sciences ร่วมกับบริษัทต่าง ๆ ประกาศแผนกลุ่มดาวเทียม Xingyun เมื่อวันที่ 9 พฤศจิกายน แนวคิดนี้จะเชื่อมโยงดาวเทียมสำรวจ สื่อสาร และประมวลผล พร้อมกระจายงานระหว่างดาวเทียมกับทรัพยากรภาคพื้นดิน เพื่อรองรับการประมวลผลสำหรับภารกิจต่าง ๆ เช่น การรับมือภัยพิบัติ โดยมีแผนสร้างห่วงโซ่อุปทานครอบคลุมตั้งแต่ชิปที่ผลิตในจีนไปจนถึงเซิร์ฟเวอร์และดาวเทียม อย่างไรก็ตาม รายงานครั้งนี้ไม่ได้ระบุจำนวนดาวเทียม กำหนดการปล่อย หรือสมรรถนะการประมวลผล<br><br><strong>② Starcloud·Rocket Lab(Rocket Lab, 11/9)</strong> — (2026-11-09) Rocket Lab เปิดเผยว่า Starcloud ได้จองการปล่อยจรวด Neutron แบบเหมาลำ 1 เที่ยวในปี 2029 สัญญาใหม่นี้เป็นการจัดหาบริการขนส่งสู่อวกาศให้กับบริษัทศูนย์ข้อมูลในอวกาศ แม้ราคาเริ่มต้นของการปล่อยจรวด Neutron จะเพิ่มจาก 55 ล้านดอลลาร์เป็น 70 ล้านดอลลาร์ แต่ยังไม่มีการเปิดเผยมูลค่าสัญญาที่ Starcloud ตกลงไว้จริง ขณะนี้ Neutron ยังอยู่ระหว่างการพัฒนา โดยตั้งเป้าบินครั้งแรกในปี 2027 เมื่อพิจารณาประกาศทั้งสองร่วมกัน อาจตีความได้ว่าความสามารถในการแข่งขันของศูนย์ข้อมูลในอวกาศไม่ได้ขึ้นอยู่กับอุปกรณ์ประมวลผลเพียงอย่างเดียว แต่ยังขึ้นอยู่กับการหาผู้จัดหาที่พร้อมร่วมงานและการ 확보โอกาสในการปล่อยจรวดด้วย การสร้างเครือข่ายอุตสาหกรรมของจีนและการทำสัญญาขนส่งของบริษัทสหรัฐฯ สะท้อนแนวทางเตรียมความพร้อมที่แตกต่างกัน ประเด็นที่ต้องติดตามต่อไปคือ แผนความร่วมมือจะนำไปสู่สัญญาผลิตจริงหรือไม่ และอุปกรณ์กับจรวดจะพร้อมทันกำหนดการปล่อยที่จองไว้หรือไม่<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.cas.cn/cm/202611/t20261110_5123876.shtml",
+        "label": "cas.cn"
+      },
+      {
+        "url": "https://rocketlabcorp.gcs-web.com/news-releases/news-release-details/rocket-lab-lands-over-515m-neutron-launch-deals-constellation",
+        "label": "rocketlabcorp.gcs-web.com"
+      },
+      {
+        "url": "https://payloadspace.com/rocket-lab-ups-neutron-launch-price-ahead-of-27-debut/",
+        "label": "Payload"
+      }
+    ],
+    "video": {
+      "id": "NbqPP1Gx3cs",
+      "title": "중국과학원, 우주와 지상을 잇는 연산망 계획 공개",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-10": {
     "date": "2026-11-10",
     "headlines": [

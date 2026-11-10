@@ -1,4 +1,38 @@
 {
+  "2026-11-11": {
+    "date": "2026-11-11",
+    "headlines": [
+      {
+        "date": "2026-11-10",
+        "html": "<a href=\"https://www.cas.cn/cm/202611/t20261110_5123876.shtml\" target=\"_blank\" rel=\"noopener\"><strong>China unveils Xingyun orbital computing network plan</strong>: The proposed constellation would link observation, communications and computing satellites, integrating their operations with ground infrastructure. — (Chinese Academy of Sciences·CCTV)</a>"
+      },
+      {
+        "date": "2026-11-09",
+        "html": "<a href=\"https://rocketlabcorp.gcs-web.com/news-releases/news-release-details/rocket-lab-lands-over-515m-neutron-launch-deals-constellation\" target=\"_blank\" rel=\"noopener\"><strong>Starcloud books dedicated Neutron launch for 2029</strong>: Rocket Lab announced a new launch contract with the orbital data center company. — (Rocket Lab)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Chinese Academy of Sciences(CCTV, 11/10)</strong> — (2026-11-10) The Chinese Academy of Sciences’ Aerospace Information Research Institute and industry partners unveiled plans for the Xingyun constellation on November 9. The network would connect observation, communications and computing satellites, distributing workloads across orbital and ground resources to support applications such as disaster response. The partners plan to build a supply chain spanning Chinese-made chips, servers and satellites. The report did not specify the number of satellites, launch schedule or computing performance.<br><br><strong>② Starcloud·Rocket Lab(Rocket Lab, 11/9)</strong> — (2026-11-09) Rocket Lab said Starcloud has booked one dedicated Neutron launch for 2029. The new contract secures launch services for the orbital data center company. Neutron’s base price has risen from $55 million to $70 million, but the value of Starcloud’s contract was not disclosed. Neutron remains under development, with its first flight targeted for 2027. Taken together, the announcements suggest that competitiveness in orbital data centers depends not only on computing hardware but also on securing suppliers and launch opportunities. China’s effort to assemble an industrial network and the U.S. company’s launch contract illustrate different approaches to preparing for deployment. Key questions now are whether proposed partnerships lead to manufacturing contracts and whether both payloads and launch vehicles are ready in time for booked launches.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.cas.cn/cm/202611/t20261110_5123876.shtml",
+        "label": "cas.cn"
+      },
+      {
+        "url": "https://rocketlabcorp.gcs-web.com/news-releases/news-release-details/rocket-lab-lands-over-515m-neutron-launch-deals-constellation",
+        "label": "rocketlabcorp.gcs-web.com"
+      },
+      {
+        "url": "https://payloadspace.com/rocket-lab-ups-neutron-launch-price-ahead-of-27-debut/",
+        "label": "Payload"
+      }
+    ],
+    "video": {
+      "id": "NbqPP1Gx3cs",
+      "title": "중국과학원, 우주와 지상을 잇는 연산망 계획 공개",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-10": {
     "date": "2026-11-10",
     "headlines": [

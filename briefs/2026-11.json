@@ -1,4 +1,37 @@
 {
+  "2026-11-11": {
+    "date": "2026-11-11",
+    "headlines": [
+      {
+        "date": "2026-11-10",
+        "html": "<a href=\"https://www.cas.cn/cm/202611/t20261110_5123876.shtml\" target=\"_blank\" rel=\"noopener\"><strong>중국, 싱윈 우주 연산망 계획 공개</strong>: 관측·통신·연산 위성을 연결하고 지상과 통합 운영하는 컨스텔레이션을 추진합니다. — (중국과학원·CCTV)</a>"
+      },
+      {
+        "date": "2026-11-09",
+        "html": "<a href=\"https://payloadspace.com/rocket-lab-ups-neutron-launch-price-ahead-of-27-debut/\" target=\"_blank\" rel=\"noopener\"><strong>스타클라우드, 2029년 뉴트론 전용 발사 예약</strong>: 로켓랩이 우주 데이터센터 기업의 신규 발사 계약을 공개했습니다. — (로켓랩)</a>"
+      }
+    ],
+    "summary_html": "<strong>① 중국과학원(CCTV, 11/10)</strong> — (2026-11-10) 중국과학원 항공우주정보연구원이 기업들과 11월 9일 싱윈 컨스텔레이션 계획을 발표했습니다. 관측·통신·연산 위성을 연결하고 지상 자원과 함께 작업을 배분해, 재난 대응 등에 필요한 연산을 제공한다는 구상입니다. 중국산 칩부터 서버·위성까지 공급망을 구축할 계획이며, 위성 수와 발사 일정·연산 성능은 이번 보도에 제시되지 않았습니다.<br><br><strong>② 스타클라우드·로켓랩(Rocket Lab, 11/9)</strong> — (2026-11-09) 로켓랩은 스타클라우드가 2029년 뉴트론 전용 발사 1회를 예약했다고 밝혔습니다. 우주 데이터센터 기업이 운송 수단을 확보한 새 계약입니다. 뉴트론 기본가격은 5500만 달러에서 7000만 달러로 올랐지만 스타클라우드의 실제 계약액은 공개되지 않았습니다. 뉴트론은 아직 개발 중이며 첫 비행 목표는 2027년입니다. 두 발표를 함께 보면 우주 데이터센터의 경쟁력은 연산 장치뿐 아니라 함께 일할 공급업체와 발사 기회를 얼마나 확보하느냐에도 달려 있다고 해석할 수 있습니다. 중국의 산업망 구성과 미국 기업의 운송 계약은 서로 다른 준비 과정을 보여줍니다. 앞으로는 협력 구상이 실제 제작 계약으로 이어지는지, 예약한 발사에 맞춰 장비와 발사체가 준비되는지를 확인해야 합니다.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.cas.cn/cm/202611/t20261110_5123876.shtml",
+        "label": "cas.cn"
+      },
+      {
+        "url": "https://rocketlabcorp.gcs-web.com/news-releases/news-release-details/rocket-lab-lands-over-515m-neutron-launch-deals-constellation",
+        "label": "rocketlabcorp.gcs-web.com"
+      },
+      {
+        "url": "https://payloadspace.com/rocket-lab-ups-neutron-launch-price-ahead-of-27-debut/",
+        "label": "Payload"
+      }
+    ],
+    "video": {
+      "id": "NbqPP1Gx3cs",
+      "title": "중국과학원, 우주와 지상을 잇는 연산망 계획 공개"
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-10": {
     "date": "2026-11-10",
     "headlines": [
