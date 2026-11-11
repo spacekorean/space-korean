@@ -1,4 +1,50 @@
 {
+  "2026-11-12": {
+    "date": "2026-11-12",
+    "headlines": [
+      {
+        "date": "2026-11-10",
+        "html": "<a href=\"https://www.singulus.com/2026/11/10/spacex-heterojunction-solar-cells-singulus/\" target=\"_blank\" rel=\"noopener\"><strong>SpaceX signs contract for Starmind solar cell production lines</strong>: Germany’s Singulus secured an order worth more than €60 million for the first production line, with delivery scheduled for the first half of 2027. — (SINGULUS TECHNOLOGIES)</a>"
+      },
+      {
+        "date": "2026-11-11",
+        "html": "<a href=\"https://www.tomshardware.com/tech-industry/artificial-intelligence/spacex-develops-its-own-kessel-rack-scale-system-featuring-72-nvidia-rubin-gpus-for-data-centers-in-space-report-claims-replaces-conventional-nvlink-cable-assemblies-with-a-massive-84-layer-printed-circuit-board\" target=\"_blank\" rel=\"noopener\"><strong>Report details SpaceX’s ‘Kessel’ computing rack for space</strong>: SemiAnalysis reported on a design for terrestrial and orbital use featuring 72 GPUs and an 84-layer circuit board. — (Tom’s Hardware·SemiAnalysis)</a>"
+      },
+      {
+        "date": "2026-11-10",
+        "html": "<a href=\"https://www4.edaily.co.kr/News/Read?mediaCodeNo=257&amp;newsId=06264806645644408\" target=\"_blank\" rel=\"noopener\"><strong>Worker in Space breaks ground on AIT Space Center in Sejong</strong>: The facility will support the development and testing of robots to service space structures, including orbital data centers. — (Edaily·Dong-A Science)</a>"
+      }
+    ],
+    "summary_html": "<strong>① SpaceX·Singulus (SINGULUS TECHNOLOGIES, 11/10)</strong> — (2026-11-10) Singulus announced a contract to supply production lines for solar cells for Starmind satellites. The first line is valued at more than €60 million and is scheduled for delivery in the first half of 2027. Additional lines are planned to support expanded satellite production in Bastrop, Texas. The figure exceeding 100 GW cited in the announcement refers to planned manufacturing capacity expansion, not orbital power generation capacity already in operation.<br><br><strong>② SpaceX Kessel (Tom’s Hardware, 11/11)</strong> — (2026-11-11) Tom’s Hardware, citing SemiAnalysis, reported that SpaceX is developing a computing rack called Kessel for terrestrial and orbital data centers. The design retains 72 Nvidia Rubin GPUs while replacing internal interconnect cables with an 84-layer circuit board. The information currently comes from an external analyst’s report; official company confirmation and in-orbit validation have not been established.<br><br><strong>③ Worker in Space (Edaily, 11/10)</strong> — (2026-11-10) Worker in Space broke ground on a satellite assembly, integration and testing facility in Sejong. Scheduled for completion in August 2027, the facility will include laboratories for developing robots to service structures such as orbital data centers, along with microgravity and space-environment testing facilities. The company plans to begin building VEROS-1, a robotic satellite for demonstrating life-extension capabilities, in 2027, conduct an in-space demonstration in late 2029 and enter commercial service in 2030. Taken together, these developments suggest that commercializing orbital data centers will require not only chip performance but also supply chains capable of supporting serial equipment production, satellite integration and lifecycle management. A signed contract, a reported design and the start of construction on a test facility nevertheless represent different stages of progress. The next milestones to watch are production-line deliveries, equipment validation and actual customer contracts.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.singulus.com/2026/11/10/singulus-spacex-supply-contract/",
+        "label": "singulus.com"
+      },
+      {
+        "url": "https://www.singulus.com/2026/11/10/spacex-heterojunction-solar-cells-singulus/",
+        "label": "singulus.com"
+      },
+      {
+        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/spacex-develops-its-own-kessel-rack-scale-system-featuring-72-nvidia-rubin-gpus-for-data-centers-in-space-report-claims-replaces-conventional-nvlink-cable-assemblies-with-a-massive-84-layer-printed-circuit-board",
+        "label": "tomshardware.com"
+      },
+      {
+        "url": "https://www4.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=06264806645644408",
+        "label": "www4.edaily.co.kr"
+      },
+      {
+        "url": "https://www.dongascience.com/ko/news/80817",
+        "label": "dongascience.com"
+      }
+    ],
+    "video": {
+      "id": "uzZII4EWHbw",
+      "title": "SpaceX, 태양전지 첫 생산라인에 6000만 유로 넘게 주문",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-11": {
     "date": "2026-11-11",
     "headlines": [

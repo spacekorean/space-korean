@@ -1,4 +1,49 @@
 {
+  "2026-11-12": {
+    "date": "2026-11-12",
+    "headlines": [
+      {
+        "date": "2026-11-10",
+        "html": "<a href=\"https://www.singulus.com/2026/11/10/singulus-spacex-supply-contract/\" target=\"_blank\" rel=\"noopener\"><strong>스페이스X, 스타마인드용 태양전지 생산라인 계약</strong>: 독일 싱귤러스가 첫 생산라인에 6000만 유로가 넘는 주문을 확보하고 2027년 상반기 납품을 예고했습니다. — (SINGULUS TECHNOLOGIES)</a>"
+      },
+      {
+        "date": "2026-11-11",
+        "html": "<a href=\"https://www.tomshardware.com/tech-industry/artificial-intelligence/spacex-develops-its-own-kessel-rack-scale-system-featuring-72-nvidia-rubin-gpus-for-data-centers-in-space-report-claims-replaces-conventional-nvlink-cable-assemblies-with-a-massive-84-layer-printed-circuit-board\" target=\"_blank\" rel=\"noopener\"><strong>스페이스X의 우주 연산 랙 ‘케셀’ 설계 보도</strong>: 세미애널리시스가 GPU 72개와 84층 회로기판을 사용하는 지상·궤도 겸용 설계를 전했습니다. — (Tom’s Hardware·SemiAnalysis)</a>"
+      },
+      {
+        "date": "2026-11-10",
+        "html": "<a href=\"https://www.dongascience.com/ko/news/80817\" target=\"_blank\" rel=\"noopener\"><strong>워커린스페이스, 세종 AIT 우주센터 착공</strong>: 우주 데이터센터 등 우주 구조물의 정비 로봇을 개발·시험할 시설을 마련합니다. — (이데일리·동아사이언스)</a>"
+      }
+    ],
+    "summary_html": "<strong>① 스페이스X·싱귤러스(SINGULUS TECHNOLOGIES, 11/10)</strong> — (2026-11-10) 싱귤러스가 스타마인드 위성용 태양전지를 만들 생산라인 공급 계약을 공개했습니다. 첫 라인 주문액은 6000만 유로를 넘고, 2027년 상반기 납품할 예정입니다. 텍사스 배스트롭의 위성 생산 확대에 맞춰 추가 라인도 공급할 계획입니다. 발표에 등장하는 100GW 초과 규모는 향후 생산설비 확대 구상으로, 이미 가동 중인 궤도 발전 용량을 뜻하지 않습니다.<br><br><strong>② 스페이스X 케셀(Tom’s Hardware, 11/11)</strong> — (2026-11-11) 톰스하드웨어는 세미애널리시스를 인용해 스페이스X가 지상·궤도 데이터센터용 연산 랙 ‘케셀’을 개발 중이라고 보도했습니다. 엔비디아 루빈 GPU 72개를 유지하면서 내부 연결 케이블을 84층 회로기판으로 바꾸는 설계입니다. 현재는 외부 분석기관의 설계 보도 단계이며, 회사의 공식 확정과 궤도 운용 검증 여부는 확인되지 않았습니다.<br><br><strong>③ 워커린스페이스(이데일리, 11/10)</strong> — (2026-11-10) 워커린스페이스가 세종에 위성 조립·통합·시험 시설을 착공했습니다. 2027년 8월 완공을 목표로, 우주 데이터센터 등 구조물을 정비할 로봇 개발실과 미세중력·우주환경 시험시설을 갖출 예정입니다. 회사는 2027년부터 수명연장 실증용 로봇위성 VEROS-1을 제작하고, 2029년 말 우주 실증을 거쳐 2030년 상용 서비스 진출을 추진합니다. 세 소식을 함께 보면 우주 데이터센터의 사업화에는 칩 성능뿐 아니라 장비를 반복 생산하고, 위성에 맞게 통합하고, 수명을 관리할 공급망이 필요하다고 해석할 수 있습니다. 다만 계약 체결, 외부에 알려진 설계, 시험시설 착공은 각각 진행 수준이 다릅니다. 앞으로는 생산라인 인도와 장비 검증, 실제 고객 계약이 차례로 이어지는지를 살펴야 합니다.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.singulus.com/2026/11/10/singulus-spacex-supply-contract/",
+        "label": "singulus.com"
+      },
+      {
+        "url": "https://www.singulus.com/2026/11/10/spacex-heterojunction-solar-cells-singulus/",
+        "label": "singulus.com"
+      },
+      {
+        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/spacex-develops-its-own-kessel-rack-scale-system-featuring-72-nvidia-rubin-gpus-for-data-centers-in-space-report-claims-replaces-conventional-nvlink-cable-assemblies-with-a-massive-84-layer-printed-circuit-board",
+        "label": "tomshardware.com"
+      },
+      {
+        "url": "https://www4.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=06264806645644408",
+        "label": "www4.edaily.co.kr"
+      },
+      {
+        "url": "https://www.dongascience.com/ko/news/80817",
+        "label": "dongascience.com"
+      }
+    ],
+    "video": {
+      "id": "uzZII4EWHbw",
+      "title": "SpaceX, 태양전지 첫 생산라인에 6000만 유로 넘게 주문"
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-11": {
     "date": "2026-11-11",
     "headlines": [

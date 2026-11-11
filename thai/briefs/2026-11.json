@@ -1,4 +1,50 @@
 {
+  "2026-11-12": {
+    "date": "2026-11-12",
+    "headlines": [
+      {
+        "date": "2026-11-10",
+        "html": "<a href=\"https://www.singulus.com/2026/11/10/spacex-heterojunction-solar-cells-singulus/\" target=\"_blank\" rel=\"noopener\"><strong>SpaceX ทำสัญญาจัดหาสายการผลิตเซลล์แสงอาทิตย์สำหรับ Starmind</strong>: SINGULUS TECHNOLOGIES จากเยอรมนีได้รับคำสั่งซื้อสายการผลิตแรกมูลค่ากว่า 60 ล้านยูโร และเตรียมส่งมอบในครึ่งแรกของปี 2027 — (SINGULUS TECHNOLOGIES)</a>"
+      },
+      {
+        "date": "2026-11-11",
+        "html": "<a href=\"https://www.tomshardware.com/tech-industry/artificial-intelligence/spacex-develops-its-own-kessel-rack-scale-system-featuring-72-nvidia-rubin-gpus-for-data-centers-in-space-report-claims-replaces-conventional-nvlink-cable-assemblies-with-a-massive-84-layer-printed-circuit-board\" target=\"_blank\" rel=\"noopener\"><strong>เผยรายงานการออกแบบ “Kessel” แร็กประมวลผลในอวกาศของ SpaceX</strong>: SemiAnalysis รายงานถึงการออกแบบที่ใช้ GPU 72 ตัวและแผงวงจร 84 ชั้น สำหรับใช้งานทั้งบนพื้นโลกและในวงโคจร — (Tom’s Hardware·SemiAnalysis)</a>"
+      },
+      {
+        "date": "2026-11-10",
+        "html": "<a href=\"https://www4.edaily.co.kr/News/Read?mediaCodeNo=257&amp;newsId=06264806645644408\" target=\"_blank\" rel=\"noopener\"><strong>워커린스페이스 เริ่มก่อสร้างศูนย์อวกาศ AIT ที่ Sejong</strong>: เตรียมจัดตั้งสถานที่พัฒนาและทดสอบหุ่นยนต์สำหรับบำรุงรักษาโครงสร้างในอวกาศ รวมถึงศูนย์ข้อมูลในอวกาศ — (Edaily·Dong-A Science)</a>"
+      }
+    ],
+    "summary_html": "<strong>① SpaceX·SINGULUS TECHNOLOGIES(SINGULUS TECHNOLOGIES, 11/10)</strong> — (2026-11-10) SINGULUS TECHNOLOGIES เปิดเผยสัญญาจัดหาสายการผลิตเซลล์แสงอาทิตย์สำหรับดาวเทียม Starmind โดยคำสั่งซื้อสายการผลิตแรกมีมูลค่ากว่า 60 ล้านยูโร และมีกำหนดส่งมอบในครึ่งแรกของปี 2027 บริษัทมีแผนจัดหาสายการผลิตเพิ่มเติมเพื่อรองรับการขยายการผลิตดาวเทียมที่ Bastrop รัฐ Texas ส่วนตัวเลขขนาดกว่า 100 กิกะวัตต์ที่ระบุในประกาศนั้น หมายถึงแผนขยายกำลังการผลิตในอนาคต ไม่ใช่กำลังผลิตไฟฟ้าในวงโคจรที่เปิดใช้งานแล้ว<br><br><strong>② Kessel ของ SpaceX(Tom’s Hardware, 11/11)</strong> — (2026-11-11) Tom’s Hardware อ้างอิงข้อมูลจาก SemiAnalysis ว่า SpaceX กำลังพัฒนาแร็กประมวลผล “Kessel” สำหรับศูนย์ข้อมูลทั้งบนพื้นโลกและในวงโคจร การออกแบบยังคงใช้ GPU NVIDIA Rubin จำนวน 72 ตัว แต่เปลี่ยนสายเคเบิลเชื่อมต่อภายในเป็นแผงวงจร 84 ชั้น ขณะนี้ข้อมูลดังกล่าวยังเป็นรายงานด้านการออกแบบจากหน่วยงานวิเคราะห์ภายนอก และยังไม่พบการยืนยันอย่างเป็นทางการจากบริษัทหรือหลักฐานยืนยันว่าผ่านการทดสอบใช้งานในวงโคจรแล้ว<br><br><strong>③ 워커린스페이스(Edaily, 11/10)</strong> — (2026-11-10) 워커린스페이스 เริ่มก่อสร้างสถานที่ประกอบ บูรณาการ และทดสอบดาวเทียมที่ Sejong โดยตั้งเป้าแล้วเสร็จในเดือนสิงหาคม 2027 ภายในจะมีห้องพัฒนาหุ่นยนต์สำหรับบำรุงรักษาโครงสร้างต่าง ๆ รวมถึงศูนย์ข้อมูลในอวกาศ ตลอดจนสถานที่ทดสอบสภาวะแรงโน้มถ่วงต่ำและสภาพแวดล้อมอวกาศ บริษัทมีแผนเริ่มผลิตดาวเทียมหุ่นยนต์ VEROS-1 สำหรับสาธิตเทคโนโลยียืดอายุการใช้งานดาวเทียมตั้งแต่ปี 2027 ก่อนทดสอบสาธิตในอวกาศช่วงปลายปี 2029 และมุ่งเปิดให้บริการเชิงพาณิชย์ในปี 2030 เมื่อพิจารณาข่าวทั้ง 3 เรื่องร่วมกัน อาจตีความได้ว่าการนำศูนย์ข้อมูลในอวกาศไปสู่ธุรกิจเชิงพาณิชย์ต้องอาศัยมากกว่าสมรรถนะของชิป โดยจำเป็นต้องมีห่วงโซ่อุปทานที่รองรับการผลิตอุปกรณ์อย่างต่อเนื่อง การบูรณาการให้เหมาะกับดาวเทียม และการดูแลตลอดอายุการใช้งาน อย่างไรก็ตาม การลงนามในสัญญา การออกแบบที่มีรายงานเผยแพร่จากภายนอก และการเริ่มก่อสร้างสถานที่ทดสอบ ล้วนสะท้อนความคืบหน้าคนละระดับ ประเด็นที่ต้องติดตามต่อไปคือ จะมีการส่งมอบสายการผลิต การตรวจสอบยืนยันสมรรถนะของอุปกรณ์ และการทำสัญญากับลูกค้าจริงตามมาเป็นลำดับหรือไม่<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.singulus.com/2026/11/10/singulus-spacex-supply-contract/",
+        "label": "singulus.com"
+      },
+      {
+        "url": "https://www.singulus.com/2026/11/10/spacex-heterojunction-solar-cells-singulus/",
+        "label": "singulus.com"
+      },
+      {
+        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/spacex-develops-its-own-kessel-rack-scale-system-featuring-72-nvidia-rubin-gpus-for-data-centers-in-space-report-claims-replaces-conventional-nvlink-cable-assemblies-with-a-massive-84-layer-printed-circuit-board",
+        "label": "tomshardware.com"
+      },
+      {
+        "url": "https://www4.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=06264806645644408",
+        "label": "www4.edaily.co.kr"
+      },
+      {
+        "url": "https://www.dongascience.com/ko/news/80817",
+        "label": "dongascience.com"
+      }
+    ],
+    "video": {
+      "id": "uzZII4EWHbw",
+      "title": "SpaceX, 태양전지 첫 생산라인에 6000만 유로 넘게 주문",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-11": {
     "date": "2026-11-11",
     "headlines": [
