@@ -1,4 +1,50 @@
 {
+  "2026-11-13": {
+    "date": "2026-11-13",
+    "headlines": [
+      {
+        "date": "2026-11-12",
+        "html": "<a href=\"https://payloadspace.com/owlo-cloud-emerges-from-stealth-to-build-european-orbital-cloud-network/\" target=\"_blank\" rel=\"noopener\"><strong>Owlo Cloud เปิดเผยแผนสร้างเครือข่ายคลาวด์ในวงโคจรของยุโรป</strong>: บริษัทวางแผนใช้งานดาวเทียมประมวลผลและจัดเก็บข้อมูลอย่างน้อย 10 ดวงภายในปี 2030 เพื่อประมวลผลข้อมูลจากดาวเทียมที่มีอยู่แล้วในอวกาศ — (Payload)</a>"
+      },
+      {
+        "date": "2026-11-12",
+        "html": "<a href=\"https://www.vc-magazin.de/blog/2026/11/12/neuralsat-29-mio-eur-fuer-dateninfrastruktur-im-all/\" target=\"_blank\" rel=\"noopener\"><strong>NeuralSat ระดมทุน 2.9 ล้านยูโร พัฒนาเครือข่ายถ่ายทอดข้อมูลและประมวลผลแบบกระจายในวงโคจร</strong>: บริษัทกำลังพัฒนาเครือข่ายดาวเทียม 72 ดวง และเตรียมสาธิตเทคโนโลยีในวงโคจรครั้งแรกในปี 2027 — (Payload·VC Magazin)</a>"
+      },
+      {
+        "date": "2026-11-12",
+        "html": "<a href=\"https://www.scmp.com/news/china/science/article/3374157/silk-road-orbit-china-build-20-satellite-space-ai-system-oman\" target=\"_blank\" rel=\"noopener\"><strong>Starvision เผยโครงการดาวเทียม AI ในโอมานมีมูลค่า “กว่า 200 ล้านดอลลาร์”</strong>: SCMP อ้างข้อมูลจากบริษัทในการรายงานมูลค่าข้อตกลงที่ลงนามเมื่อต้นเดือนนี้ — (South China Morning Post)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Owlo Cloud(Payload, 11/12)</strong> — (2026-11-12) Owlo Cloud จากลักเซมเบิร์กเปิดเผยแผนใช้งานดาวเทียมประมวลผลและจัดเก็บข้อมูลอย่างน้อย 10 ดวงภายในปี 2030 ดาวเทียมแต่ละดวงตั้งเป้าผลิตไฟฟ้าได้ 10 กิโลวัตต์ และรับข้อมูลจากดาวเทียมดวงอื่นผ่านการสื่อสารด้วยแสงเพื่อนำมาประมวลผล บริษัทเข้าร่วมโครงการบ่มเพาะธุรกิจของ Thales Alenia Space และลงนามบันทึกความเข้าใจด้านความร่วมมือเกี่ยวกับอุปกรณ์ประมวลผลกับ Edge Aerospace โดยยังไม่เปิดเผยวงเงินลงทุนที่จำเป็น<br><br><strong>② NeuralSat(Payload, 11/12)</strong> — (2026-11-12) NeuralSat จากเยอรมนีระดมทุนระยะเริ่มต้นได้ 2.9 ล้านยูโร เพื่อพัฒนาเครือข่ายถ่ายทอดข้อมูลและประมวลผลแบบกระจายในวงโคจร บริษัทวางแผนใช้ดาวเทียม 72 ดวงเพื่อช่วยประมวลผลข้อมูลให้ดาวเทียมของลูกค้าและส่งข้อมูลลงสู่ภาคพื้นดิน โดยตั้งเป้าความเร็วการสื่อสารสูงสุด 50 กิกะบิตต่อวินาที เงินทุนจะนำไปใช้ในการสาธิตเทคโนโลยีในวงโคจรปี 2027 และมีกำหนดเริ่มส่งดาวเทียมสำหรับใช้งานจริงขึ้นสู่วงโคจรตั้งแต่ปี 2028 ตัวเลขสมรรถนะดังกล่าวยังเป็นเพียงเป้าหมายตามแผน<br><br><strong>③ Starvision·Oman Lens(SCMP, 11/12)</strong> — (2026-11-12) South China Morning Post อ้างข้อมูลจาก Starvision ว่าข้อตกลงด้าน AI ในอวกาศกับ Oman Lens มีมูลค่ากว่า 200 ล้านดอลลาร์ ข้อตกลงนี้ลงนามเมื่อต้นเดือน และเพิ่งมีการรายงานมูลค่าในข่าวครั้งนี้ ดาวเทียม 20 ดวงตามแผนที่บริษัทนำเสนอจะวิเคราะห์ภาพสำรวจในวงโคจรเพื่อตรวจจับเรือและน้ำท่วม โครงการยังครอบคลุมสถานที่ประกอบและทดสอบดาวเทียมในโอมาน รวมถึงการพัฒนาบุคลากร โดยขณะนี้ยังอยู่ในขั้นวางแผนการส่งดาวเทียมขึ้นใช้งาน เมื่อพิจารณาข่าวทั้ง 3 เรื่องร่วมกัน อาจมองได้ว่าความต้องการประมวลผลข้อมูล ณ จุดที่เกิดข้อมูลในอวกาศกำลังสร้างโอกาสทางธุรกิจใหม่ บริษัทในยุโรปมุ่งพัฒนาบริการประมวลผลและสื่อสารที่ดาวเทียมหลายดวงใช้ร่วมกันได้ ส่วนจีนและโอมานกำลังผลักดันโครงการที่ผสานภารกิจสำรวจเข้ากับการสร้างขีดความสามารถในการดำเนินงานภายในประเทศ ปัจจัยชี้ขาดของการให้บริการเชิงพาณิชย์คือการพิสูจน์ว่าลูกค้าประหยัดเวลาได้มากเพียงใดและมีต้นทุนเท่าใด จากนี้จึงต้องติดตามทั้งผลการสาธิตในวงโคจรและสัญญาให้บริการที่เกิดขึ้นจริง<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://payloadspace.com/owlo-cloud-emerges-from-stealth-to-build-european-orbital-cloud-network/",
+        "label": "Payload"
+      },
+      {
+        "url": "https://www.advanced-television.com/2026/11/12/owlo-cloud-emerges-from-stealth-mode/",
+        "label": "advanced-television.com"
+      },
+      {
+        "url": "https://payloadspace.com/neuralsat-raises-e2-9m-to-build-orbital-data-relay-network/",
+        "label": "Payload"
+      },
+      {
+        "url": "https://www.vc-magazin.de/blog/2026/11/12/neuralsat-29-mio-eur-fuer-dateninfrastruktur-im-all/",
+        "label": "vc-magazin.de"
+      },
+      {
+        "url": "https://www.scmp.com/news/china/science/article/3374157/silk-road-orbit-china-build-20-satellite-space-ai-system-oman",
+        "label": "scmp.com"
+      }
+    ],
+    "video": {
+      "id": "A8yYnQEJTDc",
+      "title": "아울로 클라우드, 2030년까지 연산 위성 최소 10기 추진",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-12": {
     "date": "2026-11-12",
     "headlines": [

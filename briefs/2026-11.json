@@ -1,4 +1,49 @@
 {
+  "2026-11-13": {
+    "date": "2026-11-13",
+    "headlines": [
+      {
+        "date": "2026-11-12",
+        "html": "<a href=\"https://payloadspace.com/owlo-cloud-emerges-from-stealth-to-build-european-orbital-cloud-network/\" target=\"_blank\" rel=\"noopener\"><strong>아울로 클라우드, 유럽 궤도 클라우드 구축 계획 공개</strong>: 2030년까지 최소 10기의 연산·저장 위성을 운영하고, 기존 위성의 데이터를 우주에서 처리할 계획입니다. — (Payload)</a>"
+      },
+      {
+        "date": "2026-11-12",
+        "html": "<a href=\"https://payloadspace.com/neuralsat-raises-e2-9m-to-build-orbital-data-relay-network/\" target=\"_blank\" rel=\"noopener\"><strong>뉴럴샛, 궤도 중계·분산 연산망에 290만 유로 유치</strong>: 위성 72기로 구성할 네트워크를 개발하며 2027년 첫 궤도 실증을 추진합니다. — (Payload·VC Magazin)</a>"
+      },
+      {
+        "date": "2026-11-12",
+        "html": "<a href=\"https://www.scmp.com/news/china/science/article/3374157/silk-road-orbit-china-build-20-satellite-space-ai-system-oman\" target=\"_blank\" rel=\"noopener\"><strong>스타비전, 오만 AI 위성 사업 ‘2억 달러 초과’ 규모 공개</strong>: SCMP가 회사 측을 인용해 이달 초 체결된 협약의 금액을 보도했습니다. — (South China Morning Post)</a>"
+      }
+    ],
+    "summary_html": "<strong>① 아울로 클라우드(Payload, 11/12)</strong> — (2026-11-12) 룩셈부르크의 아울로 클라우드가 2030년까지 최소 10기의 연산·저장 위성을 운영하겠다는 계획을 공개했습니다. 각 위성은 10kW 발전을 목표로 하며 광통신으로 다른 위성의 데이터를 받아 처리합니다. 탈레스 알레니아 스페이스 육성 프로그램에 참여하고 엣지 에어로스페이스와 연산장비 협력 양해각서를 맺었습니다. 필요한 투자액은 공개하지 않았습니다.<br><br><strong>② 뉴럴샛(Payload, 11/12)</strong> — (2026-11-12) 독일 뉴럴샛이 궤도 데이터 중계·분산 연산망 개발을 위해 290만 유로의 초기 투자를 유치했습니다. 위성 72기로 고객 위성의 연산과 지상 전송을 지원할 계획이며, 통신속도 목표는 최대 50Gbps입니다. 투자금은 2027년 궤도 실증에 쓰고, 2028년부터 운용 위성을 배치할 예정입니다. 성능 수치는 아직 계획 단계입니다.<br><br><strong>③ 스타비전·오만 렌즈(SCMP, 11/12)</strong> — (2026-11-12) 사우스차이나모닝포스트는 스타비전을 인용해 오만 렌즈와의 우주 AI 협약이 2억 달러를 넘는 규모라고 보도했습니다. 협약은 이달 초 체결됐고, 금액은 이번 보도에서 전해졌습니다. 회사 측이 제시한 위성 20기는 관측 영상을 궤도에서 분석해 선박·홍수를 탐지하는 용도입니다. 현지 조립·시험 시설과 인력 양성도 포함되며, 아직 배치 계획 단계입니다. 세 소식을 함께 보면 우주에서 만들어지는 데이터를 현장에서 처리하려는 수요가 새로운 사업 기회를 만들고 있다고 해석할 수 있습니다. 유럽 기업들은 여러 위성이 함께 쓰는 연산·통신 서비스를, 중국과 오만은 관측 임무와 현지 운영 역량을 묶은 사업을 추진합니다. 상용화의 관건은 고객이 얻는 시간 절감 효과와 비용을 입증하는 데 있습니다. 앞으로 궤도 실증 결과와 실제 서비스 계약을 함께 확인해야 합니다.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://payloadspace.com/owlo-cloud-emerges-from-stealth-to-build-european-orbital-cloud-network/",
+        "label": "Payload"
+      },
+      {
+        "url": "https://www.advanced-television.com/2026/11/12/owlo-cloud-emerges-from-stealth-mode/",
+        "label": "advanced-television.com"
+      },
+      {
+        "url": "https://payloadspace.com/neuralsat-raises-e2-9m-to-build-orbital-data-relay-network/",
+        "label": "Payload"
+      },
+      {
+        "url": "https://www.vc-magazin.de/blog/2026/11/12/neuralsat-29-mio-eur-fuer-dateninfrastruktur-im-all/",
+        "label": "vc-magazin.de"
+      },
+      {
+        "url": "https://www.scmp.com/news/china/science/article/3374157/silk-road-orbit-china-build-20-satellite-space-ai-system-oman",
+        "label": "scmp.com"
+      }
+    ],
+    "video": {
+      "id": "A8yYnQEJTDc",
+      "title": "아울로 클라우드, 2030년까지 연산 위성 최소 10기 추진"
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-12": {
     "date": "2026-11-12",
     "headlines": [

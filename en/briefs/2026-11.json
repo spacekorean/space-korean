@@ -1,4 +1,50 @@
 {
+  "2026-11-13": {
+    "date": "2026-11-13",
+    "headlines": [
+      {
+        "date": "2026-11-12",
+        "html": "<a href=\"https://payloadspace.com/owlo-cloud-emerges-from-stealth-to-build-european-orbital-cloud-network/\" target=\"_blank\" rel=\"noopener\"><strong>Owlo Cloud unveils plans for a European orbital cloud</strong>: The company plans to operate at least 10 computing and storage satellites by 2030, processing data from existing satellites in space. — (Payload)</a>"
+      },
+      {
+        "date": "2026-11-12",
+        "html": "<a href=\"https://payloadspace.com/neuralsat-raises-e2-9m-to-build-orbital-data-relay-network/\" target=\"_blank\" rel=\"noopener\"><strong>Neuralsat raises €2.9 million for an orbital relay and distributed computing network</strong>: The company is developing a 72-satellite network and targeting its first orbital demonstration in 2027. — (Payload·VC Magazin)</a>"
+      },
+      {
+        "date": "2026-11-12",
+        "html": "<a href=\"https://www.scmp.com/news/china/science/article/3374157/silk-road-orbit-china-build-20-satellite-space-ai-system-oman\" target=\"_blank\" rel=\"noopener\"><strong>Starvision values Oman AI satellite project at more than $200 million</strong>: SCMP, citing the company, reported the value of an agreement signed earlier this month. — (South China Morning Post)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Owlo Cloud (Payload, 11/12)</strong> — (2026-11-12) Luxembourg-based Owlo Cloud has unveiled plans to operate at least 10 computing and storage satellites by 2030. Each satellite is designed to generate 10 kW of power and receive data from other satellites through optical links for processing. The company is participating in a Thales Alenia Space accelerator program and has signed a memorandum of understanding with Edge Aerospace on computing hardware. It has not disclosed how much investment the project will require.<br><br><strong>② Neuralsat (Payload, 11/12)</strong> — (2026-11-12) Germany’s Neuralsat has raised €2.9 million in early-stage funding to develop an orbital data relay and distributed computing network. The planned 72-satellite network would provide computing and downlink services for customer satellites, targeting data rates of up to 50 Gbps. The funding will support an orbital demonstration in 2027, with deployment of operational satellites scheduled to begin in 2028. The performance figures remain targets.<br><br><strong>③ Starvision and Oman Lens (SCMP, 11/12)</strong> — (2026-11-12) The South China Morning Post, citing Starvision, reported that the company’s space AI agreement with Oman Lens is worth more than $200 million. The agreement was signed earlier this month, with its value disclosed in the latest report. The company’s proposed 20 satellites would analyze imagery in orbit to detect vessels and floods. The project also includes local assembly and testing facilities and workforce training. Satellite deployment remains at the planning stage. Taken together, the three announcements suggest that demand to process space-generated data at its source is creating new business opportunities. European companies are pursuing computing and communications services shared by multiple satellites, while China and Oman are combining observation missions with local operational capabilities. Commercial viability will depend on demonstrating time savings and costs for customers. Orbital demonstration results and actual service contracts will be key indicators to watch.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://payloadspace.com/owlo-cloud-emerges-from-stealth-to-build-european-orbital-cloud-network/",
+        "label": "Payload"
+      },
+      {
+        "url": "https://www.advanced-television.com/2026/11/12/owlo-cloud-emerges-from-stealth-mode/",
+        "label": "advanced-television.com"
+      },
+      {
+        "url": "https://payloadspace.com/neuralsat-raises-e2-9m-to-build-orbital-data-relay-network/",
+        "label": "Payload"
+      },
+      {
+        "url": "https://www.vc-magazin.de/blog/2026/11/12/neuralsat-29-mio-eur-fuer-dateninfrastruktur-im-all/",
+        "label": "vc-magazin.de"
+      },
+      {
+        "url": "https://www.scmp.com/news/china/science/article/3374157/silk-road-orbit-china-build-20-satellite-space-ai-system-oman",
+        "label": "scmp.com"
+      }
+    ],
+    "video": {
+      "id": "A8yYnQEJTDc",
+      "title": "아울로 클라우드, 2030년까지 연산 위성 최소 10기 추진",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-12": {
     "date": "2026-11-12",
     "headlines": [
