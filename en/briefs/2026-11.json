@@ -1,4 +1,46 @@
 {
+  "2026-11-14": {
+    "date": "2026-11-14",
+    "headlines": [
+      {
+        "date": "2026-11-13",
+        "html": "<a href=\"https://www.asiaone.com/money/chinese-ai-satellite-maker-adaspace-slips-hong-kong-debut\" target=\"_blank\" rel=\"noopener\"><strong>ADA Space raises funds for space AI business through Hong Kong listing</strong>: The company raised approximately HK$750 million in gross proceeds to support AI computing satellite development, research facility expansion and other initiatives. — (Reuters·TNGlobal)</a>"
+      },
+      {
+        "date": "2026-11-13",
+        "html": "<a href=\"https://payloadspace.com/gama-raises-e15m-seed-to-boost-europes-solar-array-supply-chain/\" target=\"_blank\" rel=\"noopener\"><strong>Gama raises €15 million to scale satellite solar array production</strong>: The company plans a facility with annual production capacity of 100 MW and targets delivery of its first demonstration units in mid-2027. — (Payload·Tech.eu)</a>"
+      }
+    ],
+    "summary_html": "<strong>① ADA Space (Reuters·TNGlobal, 11/13)</strong> — (2026-11-13) China’s ADA Space listed in Hong Kong on November 13, raising approximately HK$750 million in gross proceeds. Net proceeds after listing expenses totaled approximately HK$651.76 million. The company plans to invest in an AI computing satellite constellation, space-based computing research and development, and a research center in Shenzhen. Proceeds will also be used for loan repayments and working capital.<br><br><strong>② Gama (Payload, 11/13)</strong> — (2026-11-13) France’s Gama announced €15 million in seed funding on November 12. The company is establishing a production facility for its “Wing” satellite solar arrays, targeting annual production capacity of 100 MW. Delivery of the first demonstration units is scheduled for mid-2027. The investment supports the power supply chain for orbital data centers; the 100 MW figure refers to the factory’s target annual production capacity, not power generation capacity operating in orbit. The two announcements suggest that space-based computing operators and power equipment suppliers are securing the funding and manufacturing infrastructure needed for serial production. The next test will be whether these companies can deliver equipment on schedule and operate it reliably in orbit. Funding totals alone do not establish technical capability or validate customer demand; actual deliveries and operational results must also be assessed.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.asiaone.com/money/chinese-ai-satellite-maker-adaspace-slips-hong-kong-debut",
+        "label": "asiaone.com"
+      },
+      {
+        "url": "https://technode.global/2026/11/13/adaspace-raises-96m-hong-kong-ipo/",
+        "label": "technode.global"
+      },
+      {
+        "url": "https://tw.tradingview.com/news/reuters.com%2C2026-11-13%3Anewsml_ACN111562%3A0/",
+        "label": "tw.tradingview.com"
+      },
+      {
+        "url": "https://payloadspace.com/gama-raises-e15m-seed-to-boost-europes-solar-array-supply-chain/",
+        "label": "Payload"
+      },
+      {
+        "url": "https://tech.eu/2026/11/12/gama-secures-eur15m-to-tackle-the-growing-power-demands-of-satellites/",
+        "label": "tech.eu"
+      }
+    ],
+    "video": {
+      "id": "dSRvn5rw7vQ",
+      "title": "ADA Space, 홍콩 상장 공모액 약 7억 5000만 홍콩달러",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-13": {
     "date": "2026-11-13",
     "headlines": [

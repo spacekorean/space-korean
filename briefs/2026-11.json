@@ -1,4 +1,45 @@
 {
+  "2026-11-14": {
+    "date": "2026-11-14",
+    "headlines": [
+      {
+        "date": "2026-11-13",
+        "html": "<a href=\"https://www.asiaone.com/money/chinese-ai-satellite-maker-adaspace-slips-hong-kong-debut\" target=\"_blank\" rel=\"noopener\"><strong>ADA Space, 홍콩 상장으로 우주 AI 사업 자금 확보</strong>: 총 공모액 약 7억 5000만 홍콩달러를 확보하고 AI 연산위성 개발과 연구시설 확충 등을 추진합니다. — (Reuters·TNGlobal)</a>"
+      },
+      {
+        "date": "2026-11-13",
+        "html": "<a href=\"https://payloadspace.com/gama-raises-e15m-seed-to-boost-europes-solar-array-supply-chain/\" target=\"_blank\" rel=\"noopener\"><strong>가마, 위성용 태양전지판 양산에 1500만 유로 유치</strong>: 연간 100MW 생산능력의 시설을 추진하며 2027년 중반 첫 실증용 제품 인도를 목표로 합니다. — (Payload·Tech.eu)</a>"
+      }
+    ],
+    "summary_html": "<strong>① ADA Space(Reuters·TNGlobal, 11/13)</strong> — (2026-11-13) 중국 ADA Space가 11월 13일 홍콩 증시에 상장해 총 약 7억 5000만 홍콩달러를 조달했습니다. 상장 비용을 뺀 순조달액은 약 6억 5176만 홍콩달러입니다. 회사는 AI 연산위성 컨스텔레이션과 우주 연산 연구개발, 선전 연구센터 등에 자금을 투입할 계획입니다. 사용처에는 차입금 상환과 운전자금도 포함됩니다.<br><br><strong>② 가마(Payload, 11/13)</strong> — (2026-11-13) 프랑스 가마가 11월 12일 1500만 유로의 초기 투자 유치를 발표했습니다. 위성용 태양전지판 ‘윙’의 생산시설을 마련하며 연간 100MW 생산능력을 목표로 합니다. 첫 실증용 제품 인도는 2027년 중반 예정입니다. 우주 데이터센터의 전력 공급망과 연결되는 투자이며, 100MW는 공장 생산 목표로서 궤도에서 가동 중인 발전량을 뜻하지 않습니다. 두 소식은 우주 연산 사업자와 전력장비 공급업체가 반복 제작에 필요한 자금과 생산 기반을 마련하는 흐름으로 해석할 수 있습니다. 앞으로는 자금을 확보한 기업들이 장비를 제때 납품하고 궤도에서 안정적으로 운영할 수 있는지가 중요합니다. 조달액만으로 기술력이나 고객 수요가 검증됐다고 판단하기보다, 실제 납품과 운용 결과를 함께 살펴야 합니다.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.asiaone.com/money/chinese-ai-satellite-maker-adaspace-slips-hong-kong-debut",
+        "label": "asiaone.com"
+      },
+      {
+        "url": "https://technode.global/2026/11/13/adaspace-raises-96m-hong-kong-ipo/",
+        "label": "technode.global"
+      },
+      {
+        "url": "https://tw.tradingview.com/news/reuters.com%2C2026-11-13%3Anewsml_ACN111562%3A0/",
+        "label": "tw.tradingview.com"
+      },
+      {
+        "url": "https://payloadspace.com/gama-raises-e15m-seed-to-boost-europes-solar-array-supply-chain/",
+        "label": "Payload"
+      },
+      {
+        "url": "https://tech.eu/2026/11/12/gama-secures-eur15m-to-tackle-the-growing-power-demands-of-satellites/",
+        "label": "tech.eu"
+      }
+    ],
+    "video": {
+      "id": "dSRvn5rw7vQ",
+      "title": "ADA Space, 홍콩 상장 공모액 약 7억 5000만 홍콩달러"
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-13": {
     "date": "2026-11-13",
     "headlines": [

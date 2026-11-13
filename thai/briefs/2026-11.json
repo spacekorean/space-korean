@@ -1,4 +1,46 @@
 {
+  "2026-11-14": {
+    "date": "2026-11-14",
+    "headlines": [
+      {
+        "date": "2026-11-13",
+        "html": "<a href=\"https://www.asiaone.com/money/chinese-ai-satellite-maker-adaspace-slips-hong-kong-debut\" target=\"_blank\" rel=\"noopener\"><strong>ADA Space ระดมทุนเข้าตลาดหุ้นฮ่องกง เดินหน้าธุรกิจ AI ในอวกาศ</strong>: ระดมทุนจากการเสนอขายหุ้นได้รวมประมาณ 750 ล้านดอลลาร์ฮ่องกง เพื่อพัฒนาดาวเทียมประมวลผล AI ขยายศูนย์วิจัย และดำเนินงานด้านอื่น ๆ — (Reuters·TNGlobal)</a>"
+      },
+      {
+        "date": "2026-11-13",
+        "html": "<a href=\"https://tech.eu/2026/11/12/gama-secures-eur15m-to-tackle-the-growing-power-demands-of-satellites/\" target=\"_blank\" rel=\"noopener\"><strong>Gama ระดมทุน 15 ล้านยูโร เตรียมผลิตแผงเซลล์แสงอาทิตย์สำหรับดาวเทียมในระดับอุตสาหกรรม</strong>: เดินหน้าสร้างโรงงานที่ตั้งเป้ากำลังการผลิต 100 เมกะวัตต์ต่อปี โดยมีกำหนดส่งมอบผลิตภัณฑ์ชุดแรกสำหรับการทดสอบสาธิตในช่วงกลางปี 2027 — (Payload·Tech.eu)</a>"
+      }
+    ],
+    "summary_html": "<strong>① ADA Space(Reuters·TNGlobal, 11/13)</strong> — (2026-11-13) ADA Space บริษัทจากจีนเข้าจดทะเบียนในตลาดหุ้นฮ่องกงเมื่อวันที่ 13 พฤศจิกายน ระดมทุนได้รวมประมาณ 750 ล้านดอลลาร์ฮ่องกง หลังหักค่าใช้จ่ายในการเข้าจดทะเบียน เหลือเงินระดมทุนสุทธิประมาณ 651.76 ล้านดอลลาร์ฮ่องกง บริษัทมีแผนนำเงินไปลงทุนในกลุ่มดาวเทียมประมวลผล AI การวิจัยและพัฒนาระบบประมวลผลในอวกาศ และศูนย์วิจัยใน Shenzhen รวมถึงใช้ชำระคืนเงินกู้และเป็นเงินทุนหมุนเวียน<br><br><strong>② Gama(Payload, 11/13)</strong> — (2026-11-13) Gama บริษัทจากฝรั่งเศสประกาศเมื่อวันที่ 12 พฤศจิกายนว่า ระดมทุนรอบเริ่มต้นได้ 15 ล้านยูโร เพื่อจัดตั้งโรงงานผลิตแผงเซลล์แสงอาทิตย์สำหรับดาวเทียมรุ่น ‘Wing’ โดยตั้งเป้ากำลังการผลิต 100 เมกะวัตต์ต่อปี และมีกำหนดส่งมอบผลิตภัณฑ์ชุดแรกสำหรับการทดสอบสาธิตในช่วงกลางปี 2027 การลงทุนนี้เชื่อมโยงกับห่วงโซ่อุปทานด้านพลังงานของศูนย์ข้อมูลในอวกาศ ทั้งนี้ ตัวเลข 100 เมกะวัตต์เป็นเป้าหมายกำลังการผลิตของโรงงาน ไม่ใช่กำลังผลิตไฟฟ้าที่ใช้งานอยู่ในวงโคจร ข่าวทั้งสองสะท้อนแนวโน้มที่ผู้ให้บริการประมวลผลในอวกาศและผู้จัดหาอุปกรณ์ด้านพลังงานกำลังเตรียมเงินทุนและฐานการผลิต เพื่อรองรับการผลิตอย่างต่อเนื่อง ประเด็นสำคัญต่อจากนี้คือ บริษัทที่ระดมทุนได้จะส่งมอบอุปกรณ์ตามกำหนดและใช้งานในวงโคจรได้อย่างมีเสถียรภาพหรือไม่ จึงควรพิจารณาผลการส่งมอบและการใช้งานจริงควบคู่กัน แทนที่จะสรุปจากยอดระดมทุนเพียงอย่างเดียวว่าขีดความสามารถทางเทคโนโลยีหรือความต้องการของลูกค้าได้รับการพิสูจน์แล้ว<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.asiaone.com/money/chinese-ai-satellite-maker-adaspace-slips-hong-kong-debut",
+        "label": "asiaone.com"
+      },
+      {
+        "url": "https://technode.global/2026/11/13/adaspace-raises-96m-hong-kong-ipo/",
+        "label": "technode.global"
+      },
+      {
+        "url": "https://tw.tradingview.com/news/reuters.com%2C2026-11-13%3Anewsml_ACN111562%3A0/",
+        "label": "tw.tradingview.com"
+      },
+      {
+        "url": "https://payloadspace.com/gama-raises-e15m-seed-to-boost-europes-solar-array-supply-chain/",
+        "label": "Payload"
+      },
+      {
+        "url": "https://tech.eu/2026/11/12/gama-secures-eur15m-to-tackle-the-growing-power-demands-of-satellites/",
+        "label": "tech.eu"
+      }
+    ],
+    "video": {
+      "id": "dSRvn5rw7vQ",
+      "title": "ADA Space, 홍콩 상장 공모액 약 7억 5000만 홍콩달러",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-13": {
     "date": "2026-11-13",
     "headlines": [
