@@ -1,4 +1,46 @@
 {
+  "2026-11-16": {
+    "date": "2026-11-16",
+    "headlines": [
+      {
+        "date": "2026-11-12",
+        "html": "<a href=\"https://www.nst.re.kr/www/selectBbsNttView.do?bbsNo=14&amp;key=55&amp;nttNo=52735\" target=\"_blank\" rel=\"noopener\"><strong>K-Moonshot space data center seeks study of business models and economic viability</strong>: The National Research Council of Science &amp; Technology is seeking a research institution to assess the project, including a public-private partnership framework. Applications close November 23. — (National Research Council of Science &amp; Technology)</a>"
+      },
+      {
+        "date": "2026-11-12",
+        "html": "<a href=\"https://news.climate.columbia.edu/2026/11/12/new-report-urges-caution-in-the-race-for-space-based-data-centers/\" target=\"_blank\" rel=\"noopener\"><strong>ICEF releases analysis of risks associated with large-scale deployment of space-based data centers</strong>: A scenario in which space-based facilities meet 10% of global AI data center demand in 2030 would require more than 700 heavy-lift rocket launches annually, the report estimates. — (Columbia Climate School)</a>"
+      },
+      {
+        "date": "2026-11-14",
+        "html": "<a href=\"https://payloadspace.com/spacex-successfully-catches-starship-upper-stage/\" target=\"_blank\" rel=\"noopener\"><strong>Starship upper stage caught by launch tower for first time after orbital flight</strong>: Flight 15 deployed 26 Starlink V3 satellites and recovered the upper stage. The Super Heavy booster recovery attempt failed. — (SpaceX·Payload)</a>"
+      }
+    ],
+    "summary_html": "<strong>① National Research Council of Science &amp; Technology (NST, 11/12)</strong> — (2026-11-12) NST has issued a call for a policy research institution to study business models, a public-private partnership framework and the economic viability of the K-Moonshot space data center. Applications close November 23. The study will examine conditions for commercialization and the roles of the public and private sectors; it does not constitute approval of a construction budget or the launch of an orbital demonstration. [Official announcement](https://www.nst.re.kr/www/selectBbsNttView.do?bbsNo=14&amp;key=55&amp;nttNo=52735)<br><br><strong>② ICEF researchers (Columbia University, 11/12)</strong> — (2026-11-12) A report by a team led by David Sandalow estimates that meeting 10% of global AI data center demand in 2030 from space would require more than 700 heavy-lift rocket launches annually. This is a scenario analysis, not an actual launch plan. The researchers recommend disclosing cooling performance and assessing the effects on orbital debris and astronomical observations before proceeding with large-scale deployment. [Research announcement](https://news.climate.columbia.edu/2026/11/12/new-report-urges-caution-in-the-race-for-space-based-data-centers/)<br><br><strong>③ SpaceX (SpaceX·Payload, 11/14)</strong> — (2026-11-14) On November 14, U.S. local time, the Starship upper stage was caught by its launch tower for the first time after approximately 22 hours in orbit. The flight deployed 26 Starlink V3 satellites, but the booster recovery attempt failed. The achievement advances a technology that could lower recurring transportation costs for space-based data centers. Reflight of the upper stage and actual cost savings remain to be demonstrated. [Flight results coverage](https://payloadspace.com/spacex-successfully-catches-starship-upper-stage/) Launch vehicle recovery, customer demand and the safety of large-scale operations are interconnected requirements for the industry. Even if launch costs fall, commercial viability depends on establishing which services customers will buy and what they will cost to operate. As more satellites are deployed, costs must also account for environmental impacts and end-of-life disposal. Today’s developments suggest that the criteria for assessing space-based data centers are expanding beyond onboard computing performance to include business models capable of sustaining long-term operations.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.nst.re.kr/www/selectBbsNttView.do?bbsNo=14&key=55&nttNo=52735",
+        "label": "nst.re.kr"
+      },
+      {
+        "url": "https://news.climate.columbia.edu/2026/11/12/new-report-urges-caution-in-the-race-for-space-based-data-centers/",
+        "label": "climate.columbia.edu"
+      },
+      {
+        "url": "https://payloadspace.com/spacex-successfully-catches-starship-upper-stage/",
+        "label": "Payload"
+      },
+      {
+        "url": "https://www.spacex.com/launches/starship-flight-15",
+        "label": "spacex.com"
+      }
+    ],
+    "video": {
+      "id": "zAAU-VcD3JI",
+      "title": "K-문샷 우주데이터센터, 사업모델·경제성 연구 공고",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-14": {
     "date": "2026-11-14",
     "headlines": [

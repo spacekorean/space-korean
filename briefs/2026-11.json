@@ -1,4 +1,45 @@
 {
+  "2026-11-16": {
+    "date": "2026-11-16",
+    "headlines": [
+      {
+        "date": "2026-11-12",
+        "html": "<a href=\"https://www.nst.re.kr/www/selectBbsNttView.do?bbsNo=14&amp;key=55&amp;nttNo=52735\" target=\"_blank\" rel=\"noopener\"><strong>K-문샷 우주데이터센터, 사업모델·경제성 연구 공고</strong>: 국가과학기술연구회가 민관협력 체계까지 검토할 연구기관을 모집합니다. 접수 마감은 11월 23일입니다. — (국가과학기술연구회)</a>"
+      },
+      {
+        "date": "2026-11-12",
+        "html": "<a href=\"https://news.climate.columbia.edu/2026/11/12/new-report-urges-caution-in-the-race-for-space-based-data-centers/\" target=\"_blank\" rel=\"noopener\"><strong>ICEF, 우주 데이터센터 대규모 배치의 위험 분석 공개</strong>: 2030년 세계 AI 데이터센터 수요의 10%를 우주에서 충당하는 시나리오에서 매년 대형 로켓 700회 넘는 발사가 필요하다고 추산했습니다. — (컬럼비아대 기후대학)</a>"
+      },
+      {
+        "date": "2026-11-14",
+        "html": "<a href=\"https://payloadspace.com/spacex-successfully-catches-starship-upper-stage/\" target=\"_blank\" rel=\"noopener\"><strong>스타십 상단, 궤도 비행 뒤 첫 발사탑 회수 성공</strong>: 15차 비행에서 스타링크 V3 위성 26기를 배치하고 상단을 회수했습니다. 슈퍼헤비 부스터 회수에는 실패했습니다. — (SpaceX·Payload)</a>"
+      }
+    ],
+    "summary_html": "<strong>① 국가과학기술연구회(NST, 11/12)</strong> — (2026-11-12) K-문샷 우주데이터센터의 비즈니스 모델·민관협력 체계·경제성 분석을 맡을 정책연구기관 모집 공고입니다. 접수는 11월 23일까지입니다. 사업화 조건과 공공·민간의 역할을 검토하는 단계로, 시설 건설 예산 확정이나 궤도 실증 착수 발표와 구분해야 합니다. [공식 공고](https://www.nst.re.kr/www/selectBbsNttView.do?bbsNo=14&amp;key=55&amp;nttNo=52735)<br><br><strong>② ICEF 연구진(컬럼비아대, 11/12)</strong> — (2026-11-12) 데이비드 샌들로가 이끈 보고서는 2030년 세계 AI 데이터센터 수요의 10%를 우주에서 충당하려면 매년 대형 로켓 700회 넘는 발사가 필요하다고 추산합니다. 실제 발사 계획이 아닌 시나리오 분석입니다. 연구진은 냉각 성능 공개와 궤도 잔해·천문 관측 영향을 검증한 뒤 대규모 배치를 추진할 것을 권고합니다. [연구기관 발표](https://news.climate.columbia.edu/2026/11/12/new-report-urges-caution-in-the-race-for-space-based-data-centers/)<br><br><strong>③ 스페이스 엑스(SpaceX·Payload, 11/14)</strong> — (2026-11-14) 미국 현지 11월 14일, 스타십 상단이 약 22시간의 궤도 비행 후 발사탑에 처음 회수됐습니다. 스타링크 V3 위성 26기를 배치했지만 부스터 회수는 실패했습니다. 우주 데이터센터의 반복 운송비를 낮출 기반 기술이라는 의미가 있습니다. 상단 재비행과 실제 비용 절감은 후속 검증 과제입니다. [비행 결과 보도](https://payloadspace.com/spacex-successfully-catches-starship-upper-stage/) 산업적으로 보면 발사체를 회수하는 능력, 서비스를 구매할 수요, 대규모 운용의 안전성은 서로 연결된 조건입니다. 발사비가 낮아져도 구매자가 원하는 서비스와 운영비를 확인해야 사업이 성립하고, 위성을 많이 배치할수록 환경 영향과 수명 종료 뒤 처리까지 비용에 반영해야 합니다. 오늘의 소식은 우주 데이터센터의 평가 기준이 탑재한 연산장비의 성능을 넘어, 오래 운영할 수 있는 사업 구조로 넓어지고 있음을 보여 줍니다.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.nst.re.kr/www/selectBbsNttView.do?bbsNo=14&key=55&nttNo=52735",
+        "label": "nst.re.kr"
+      },
+      {
+        "url": "https://news.climate.columbia.edu/2026/11/12/new-report-urges-caution-in-the-race-for-space-based-data-centers/",
+        "label": "climate.columbia.edu"
+      },
+      {
+        "url": "https://payloadspace.com/spacex-successfully-catches-starship-upper-stage/",
+        "label": "Payload"
+      },
+      {
+        "url": "https://www.spacex.com/launches/starship-flight-15",
+        "label": "spacex.com"
+      }
+    ],
+    "video": {
+      "id": "zAAU-VcD3JI",
+      "title": "K-문샷 우주데이터센터, 사업모델·경제성 연구 공고"
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-14": {
     "date": "2026-11-14",
     "headlines": [
