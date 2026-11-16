@@ -1,4 +1,38 @@
 {
+  "2026-11-17": {
+    "date": "2026-11-17",
+    "headlines": [
+      {
+        "date": "2026-11-16",
+        "html": "<a href=\"https://payloadspace.com/exclusive-spacecomputer-books-a-d-orbit-demo-mission-in-2027/\" target=\"_blank\" rel=\"noopener\"><strong>SpaceComputer books 2027 orbital demonstration of secure computing</strong>: The company plans to validate computation and data integrity on a D-Orbit ION mission, using Aptos Orbital hardware and the Iridium communications network. — (Payload)</a>"
+      },
+      {
+        "date": "2026-11-15",
+        "html": "<a href=\"https://www.fortuneindia.com/business-news/agnikul-to-launch-data-centres-in-space-with-510-crore-mou-in-andhra-pradesh/170414\" target=\"_blank\" rel=\"noopener\"><strong>Agnikul outlines manufacturing facility plans for India&#x27;s orbital data centers</strong>: Its CEO detailed a ₹5.1 billion investment agreement for a facility in Tirupati and plans to use rocket upper stages as computing platforms. A reusable flight test is targeted for the first half of 2027. — (Fortune India)</a>"
+      }
+    ],
+    "summary_html": "<strong>① SpaceComputer (Payload, 11/16)</strong> — (2026-11-16) Singapore-based SpaceComputer plans to fly its secure computing system, ‘Space Fabric,’ on a D-Orbit ION mission in 2027. The demonstration will link Aptos Orbital&#x27;s cEDGE with the Iridium communications network to verify that computation took place in orbit and that data transmitted to the ground was not tampered with. The mission aims to demonstrate secure sharing of a single computing device among multiple customers. The project is currently at the flight-booking stage. [Demonstration plans](https://payloadspace.com/exclusive-spacecomputer-books-a-d-orbit-demo-mission-in-2027/)<br><br><strong>② Agnikul Cosmos (Fortune India, 11/15)</strong> — (2026-11-15) Agnikul&#x27;s CEO outlined plans to invest ₹5.1 billion in a facility in Tirupati to manufacture orbital data center platforms and rockets. The proposal follows a memorandum of understanding signed with the state of Andhra Pradesh on November 13. The company plans to use rocket upper stages as orbital computing platforms and is targeting a reusable flight test in the first half of 2027. Both the facility investment and flight test remain at the planning stage. [CEO interview](https://www.fortuneindia.com/business-news/agnikul-to-launch-data-centres-in-space-with-510-crore-mou-in-andhra-pradesh/170414) For orbital data centers to become an established service, the industry needs both the ability to put hardware in orbit and an environment in which customers can entrust their computing workloads. As more customers share a single device, workload isolation and data verification become increasingly important. Integrating manufacturing, launch and operations also requires coordinated planning for costs and responsibilities. For both projects, the next benchmark will be how reliably they demonstrate their capabilities in flight, rather than the size of their agreements.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://payloadspace.com/exclusive-spacecomputer-books-a-d-orbit-demo-mission-in-2027/",
+        "label": "Payload"
+      },
+      {
+        "url": "https://www.fortuneindia.com/business-news/agnikul-to-launch-data-centres-in-space-with-510-crore-mou-in-andhra-pradesh/170414",
+        "label": "fortuneindia.com"
+      },
+      {
+        "url": "https://www.business-standard.com/companies/news/agnikul-to-set-up-andhra-pradesh-facility-for-orbital-data-centre-units-126111301483_1.html",
+        "label": "business-standard.com"
+      }
+    ],
+    "video": {
+      "id": "ubO43rG_ChM",
+      "title": "스페이스컴퓨터, 2027년 궤도 보안 연산 실증 비행 예약",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-16": {
     "date": "2026-11-16",
     "headlines": [

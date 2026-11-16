@@ -1,4 +1,38 @@
 {
+  "2026-11-17": {
+    "date": "2026-11-17",
+    "headlines": [
+      {
+        "date": "2026-11-16",
+        "html": "<a href=\"https://payloadspace.com/exclusive-spacecomputer-books-a-d-orbit-demo-mission-in-2027/\" target=\"_blank\" rel=\"noopener\"><strong>SpaceComputer จองเที่ยวบินสาธิตระบบประมวลผลที่ปลอดภัยในวงโคจรปี 2027</strong>: บริษัทมีแผนเชื่อมต่ออุปกรณ์ของ Aptos Orbital กับเครือข่ายสื่อสาร Iridium ในภารกิจ ION ของ D-Orbit เพื่อตรวจสอบการประมวลผลและความถูกต้องครบถ้วนของข้อมูล — (Payload)</a>"
+      },
+      {
+        "date": "2026-11-15",
+        "html": "<a href=\"https://www.fortuneindia.com/business-news/agnikul-to-launch-data-centres-in-space-with-510-crore-mou-in-andhra-pradesh/170414\" target=\"_blank\" rel=\"noopener\"><strong>Agnikul เผยแนวคิดโรงงานผลิตสำหรับศูนย์ข้อมูลในวงโคจรของอินเดีย</strong>: CEO อธิบายข้อตกลงลงทุนสร้างโรงงานที่ Tirupati มูลค่า 5,100 ล้านรูปี และแนวทางใช้จรวดท่อนบน โดยตั้งเป้าทดสอบการบินแบบนำกลับมาใช้ใหม่ในครึ่งแรกของปี 2027 — (Fortune India)</a>"
+      }
+    ],
+    "summary_html": "<strong>① SpaceComputer (Payload, 11/16)</strong> — (2026-11-16) SpaceComputer จากสิงคโปร์มีแผนนำระบบประมวลผลที่ปลอดภัย ‘Space Fabric’ ขึ้นสู่วงโคจรในภารกิจ ION ของ D-Orbit ปี 2027 โดยจะเชื่อมต่อ cEDGE ของ Aptos Orbital กับเครือข่ายสื่อสาร Iridium เพื่อตรวจสอบว่าการประมวลผลเกิดขึ้นในวงโคจรจริง และข้อมูลที่ส่งกลับมายังภาคพื้นดินไม่ถูกแก้ไขดัดแปลง การสาธิตนี้มุ่งทดสอบให้ลูกค้าหลายรายใช้อุปกรณ์ประมวลผลร่วมกันได้อย่างปลอดภัย โดยขณะนี้อยู่ในขั้นจองเที่ยวบิน [รายงานแผนการสาธิต](https://payloadspace.com/exclusive-spacecomputer-books-a-d-orbit-demo-mission-in-2027/)<br><br><strong>② Agnikul Cosmos (Fortune India, 11/15)</strong> — (2026-11-15) CEO ของ Agnikul อธิบายแผนลงทุน 5,100 ล้านรูปี เพื่อสร้างโรงงานผลิตแพลตฟอร์มศูนย์ข้อมูลในวงโคจรและจรวดที่ Tirupati แผนดังกล่าวเป็นไปตามบันทึกความเข้าใจที่ลงนามกับรัฐ Andhra Pradesh เมื่อวันที่ 13 พฤศจิกายน บริษัทมีแนวคิดใช้จรวดท่อนบนเป็นแพลตฟอร์มประมวลผลในวงโคจร และตั้งเป้าทดสอบการบินแบบนำกลับมาใช้ใหม่ในครึ่งแรกของปี 2027 ทั้งการลงทุนสร้างโรงงานและการทดสอบการบินยังอยู่ในขั้นวางแผน [บทสัมภาษณ์ CEO](https://www.fortuneindia.com/business-news/agnikul-to-launch-data-centres-in-space-with-510-crore-mou-in-andhra-pradesh/170414) ในมุมอุตสาหกรรม การทำให้ศูนย์ข้อมูลในอวกาศเป็นบริการที่ใช้งานได้จริง ต้องอาศัยทั้งความสามารถในการส่งอุปกรณ์ขึ้นสู่วงโคจรและสภาพแวดล้อมที่ลูกค้าวางใจฝากงานประมวลผลได้ ยิ่งอุปกรณ์เดียวต้องรองรับงานจากลูกค้าหลายราย การแยกงานออกจากกันและการตรวจสอบข้อมูลก็ยิ่งสำคัญ ขณะเดียวกัน การเชื่อมโยงการผลิต การปล่อย และการดำเนินงานเข้าด้วยกัน ต้องวางแผนทั้งต้นทุนและขอบเขตความรับผิดชอบควบคู่กัน เกณฑ์ประเมินขั้นต่อไปของทั้งสองกรณีจึงอยู่ที่ความสามารถในการพิสูจน์ว่าระบบทำงานได้อย่างเสถียรเพียงใดในการบินจริง มากกว่ามูลค่าของข้อตกลง<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://payloadspace.com/exclusive-spacecomputer-books-a-d-orbit-demo-mission-in-2027/",
+        "label": "Payload"
+      },
+      {
+        "url": "https://www.fortuneindia.com/business-news/agnikul-to-launch-data-centres-in-space-with-510-crore-mou-in-andhra-pradesh/170414",
+        "label": "fortuneindia.com"
+      },
+      {
+        "url": "https://www.business-standard.com/companies/news/agnikul-to-set-up-andhra-pradesh-facility-for-orbital-data-centre-units-126111301483_1.html",
+        "label": "business-standard.com"
+      }
+    ],
+    "video": {
+      "id": "ubO43rG_ChM",
+      "title": "스페이스컴퓨터, 2027년 궤도 보안 연산 실증 비행 예약",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-16": {
     "date": "2026-11-16",
     "headlines": [

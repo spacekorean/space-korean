@@ -1,4 +1,37 @@
 {
+  "2026-11-17": {
+    "date": "2026-11-17",
+    "headlines": [
+      {
+        "date": "2026-11-16",
+        "html": "<a href=\"https://payloadspace.com/exclusive-spacecomputer-books-a-d-orbit-demo-mission-in-2027/\" target=\"_blank\" rel=\"noopener\"><strong>스페이스컴퓨터, 2027년 궤도 보안 연산 실증 비행 예약</strong>: D-Orbit의 ION 임무에서 앱토스 오비털 장비·이리듐 통신망과 연결해 연산 수행과 데이터 무결성을 검증할 계획입니다. — (Payload)</a>"
+      },
+      {
+        "date": "2026-11-15",
+        "html": "<a href=\"https://www.fortuneindia.com/business-news/agnikul-to-launch-data-centres-in-space-with-510-crore-mou-in-andhra-pradesh/170414\" target=\"_blank\" rel=\"noopener\"><strong>아그니쿨, 인도 궤도 데이터센터용 제조시설 구상 설명</strong>: CEO가 51억 루피 규모의 티루파티 시설 투자 협약과 로켓 상단 활용 방식을 설명했습니다. 재사용 비행 시험은 2027년 상반기가 목표입니다. — (Fortune India)</a>"
+      }
+    ],
+    "summary_html": "<strong>① 스페이스컴퓨터(Payload, 11/16)</strong> — (2026-11-16) 싱가포르 스페이스컴퓨터가 2027년 D-Orbit의 ION 임무에 보안 연산 시스템 ‘스페이스 패브릭’을 탑재할 예정입니다. 앱토스 오비털의 cEDGE와 이리듐 통신망을 연결해 연산이 궤도에서 수행됐는지, 지상으로 보낸 데이터가 변조되지 않았는지 검증할 계획입니다. 여러 고객이 한 연산장치를 안전하게 공유하기 위한 실증으로, 현재는 비행 예약 단계입니다. [실증 계획 보도](https://payloadspace.com/exclusive-spacecomputer-books-a-d-orbit-demo-mission-in-2027/)<br><br><strong>② 아그니쿨 코스모스(Fortune India, 11/15)</strong> — (2026-11-15) 아그니쿨 CEO는 티루파티에 51억 루피를 투자해 궤도 데이터센터 플랫폼·로켓 제조시설을 세울 계획을 설명했습니다. 11월 13일 안드라프라데시주와 맺은 양해각서에 따른 구상입니다. 로켓 상단을 궤도 연산 플랫폼으로 활용하고, 재사용 비행 시험은 2027년 상반기를 목표로 합니다. 시설 투자와 비행 시험 모두 계획 단계입니다. [CEO 인터뷰](https://www.fortuneindia.com/business-news/agnikul-to-launch-data-centres-in-space-with-510-crore-mou-in-andhra-pradesh/170414) 산업적으로 보면 우주 데이터센터가 서비스로 자리 잡으려면 장비를 궤도에 보내는 능력과 고객이 연산을 믿고 맡길 수 있는 환경이 함께 필요합니다. 여러 고객의 작업을 한 장비에서 처리할수록 작업 간 분리와 데이터 검증이 중요해지고, 제조·발사·운영을 연결할수록 비용과 책임 범위도 함께 설계해야 합니다. 두 사례의 다음 판단 기준은 협약 규모보다 실제 비행에서 기능을 얼마나 안정적으로 입증하는지가 될 것입니다.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://payloadspace.com/exclusive-spacecomputer-books-a-d-orbit-demo-mission-in-2027/",
+        "label": "Payload"
+      },
+      {
+        "url": "https://www.fortuneindia.com/business-news/agnikul-to-launch-data-centres-in-space-with-510-crore-mou-in-andhra-pradesh/170414",
+        "label": "fortuneindia.com"
+      },
+      {
+        "url": "https://www.business-standard.com/companies/news/agnikul-to-set-up-andhra-pradesh-facility-for-orbital-data-centre-units-126111301483_1.html",
+        "label": "business-standard.com"
+      }
+    ],
+    "video": {
+      "id": "ubO43rG_ChM",
+      "title": "스페이스컴퓨터, 2027년 궤도 보안 연산 실증 비행 예약"
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-16": {
     "date": "2026-11-16",
     "headlines": [
