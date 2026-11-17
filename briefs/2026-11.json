@@ -1,4 +1,37 @@
 {
+  "2026-11-18": {
+    "date": "2026-11-18",
+    "headlines": [
+      {
+        "date": "2026-11-17",
+        "html": "<a href=\"https://www.edgx.space/blog/edgx-books-two-d-orbit-launches\" target=\"_blank\" rel=\"noopener\"><strong>EDGX, 고객 AI의 궤도 실행 확인·2027년 추가 비행 일정 공개</strong>: D-Orbit의 ION으로 스테르나는 2월, Jetson Thor 기반 모루스는 10월 비행을 추진합니다. — (EDGX)</a>"
+      },
+      {
+        "date": "2026-11-17",
+        "html": "<a href=\"https://solutions.criticalsoftware.com/en/newsroom/critical-software-brings-flight-proven-karvel-platform-to-lynx-mosaic\" target=\"_blank\" rel=\"noopener\"><strong>카벨·링크스, 위성 제어와 데이터 처리를 한 프로세서에서 분리 실행</strong>: 위성용 소프트웨어 카벨의 LYNX MOSA.ic 통합판을 공개했습니다. — (Critical Software·Lynx)</a>"
+      }
+    ],
+    "summary_html": "<strong>① EDGX(EDGX, 11/17)</strong> — (2026-11-17) 벨기에 EDGX는 고객이 만든 AI 모델을 궤도에 있는 스테르나에서 실행했다고 밝혔습니다. 기존 추가 비행 계획도 구체화했습니다. 스테르나는 2027년 2월, NVIDIA Jetson Thor 기반 모루스는 같은 해 10월 D-Orbit의 ION에 실어 보낼 계획입니다. 고객은 자체 장비를 발사하는 대신 연산 시간을 빌립니다. 두 임무는 예약 단계이며, 처리 성능과 서비스 가격은 이번 발표에서 공개하지 않았습니다. [공식 발표](https://www.edgx.space/blog/edgx-books-two-d-orbit-launches)<br><br><strong>② 크리티컬 소프트웨어·링크스(Critical Software·Lynx, 11/17)</strong> — (2026-11-17) 두 회사는 위성용 소프트웨어 카벨을 LYNX MOSA.ic에서 사용할 수 있게 했습니다. 프로세서 하나에서 비행 제어·탑재체 데이터 처리·리눅스 작업을 함께 돌리되, 실행 영역을 분리해 다른 작업의 간섭을 막도록 설계했습니다. 위성 안에서 여러 연산 작업을 함께 운영하기 위한 기반입니다. 카벨 자체는 기존 비행 실적이 있지만, 새 통합판의 궤도 실증 완료는 발표하지 않았습니다. [공식 발표](https://solutions.criticalsoftware.com/en/newsroom/critical-software-brings-flight-proven-karvel-platform-to-lynx-mosaic) 두 발표를 연결해 보면, 궤도 연산을 서비스로 제공하려면 고객의 프로그램을 받아 실행하는 능력과 위성의 필수 기능을 보호하는 능력이 함께 필요하다는 해석이 가능합니다. 여러 작업이 제한된 장비를 공유할수록 연산 성능뿐 아니라 자원 배분과 장애 격리가 중요해집니다. 앞으로는 고객 작업을 얼마나 오래 안정적으로 처리했는지, 문제가 생겼을 때 위성 운용에 영향을 주지 않고 복구할 수 있는지가 서비스 확대를 판단할 기준입니다.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.edgx.space/blog/edgx-books-two-d-orbit-launches",
+        "label": "edgx.space"
+      },
+      {
+        "url": "https://solutions.criticalsoftware.com/en/newsroom/critical-software-brings-flight-proven-karvel-platform-to-lynx-mosaic",
+        "label": "solutions.criticalsoftware.com"
+      },
+      {
+        "url": "https://www.lynx.com/press-releases/critical-softwares-karvel-on-lynx-mosa.ic-lets-space-missions-run-flight-software-and-mixed-criticality-workloads-on-one-processor",
+        "label": "lynx.com"
+      }
+    ],
+    "video": {
+      "id": "24gqjPmYfBs",
+      "title": "EDGX, 고객 AI 궤도 실행 확인…2027년 추가 비행 예약"
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-17": {
     "date": "2026-11-17",
     "headlines": [

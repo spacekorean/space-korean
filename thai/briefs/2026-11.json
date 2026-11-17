@@ -1,4 +1,38 @@
 {
+  "2026-11-18": {
+    "date": "2026-11-18",
+    "headlines": [
+      {
+        "date": "2026-11-17",
+        "html": "<a href=\"https://www.edgx.space/blog/edgx-books-two-d-orbit-launches\" target=\"_blank\" rel=\"noopener\"><strong>EDGX ยืนยันรัน AI ของลูกค้าในวงโคจร พร้อมเผยกำหนดเที่ยวบินเพิ่มเติมในปี 2027</strong>: บริษัทวางแผนส่ง Sterna ในเดือนกุมภาพันธ์ และ Morus ที่ใช้ Jetson Thor ในเดือนตุลาคม โดยทั้งคู่จะเดินทางไปกับ ION ของ D-Orbit — (EDGX)</a>"
+      },
+      {
+        "date": "2026-11-17",
+        "html": "<a href=\"https://solutions.criticalsoftware.com/en/newsroom/critical-software-brings-flight-proven-karvel-platform-to-lynx-mosaic\" target=\"_blank\" rel=\"noopener\"><strong>Karvel·Lynx แยกการควบคุมดาวเทียมและการประมวลผลข้อมูลบนโปรเซสเซอร์เดียว</strong>: เปิดตัวซอฟต์แวร์สำหรับดาวเทียม Karvel รุ่นที่ผสานเข้ากับ LYNX MOSA.ic — (Critical Software·Lynx)</a>"
+      }
+    ],
+    "summary_html": "<strong>① EDGX(EDGX, 11/17)</strong> — (2026-11-17) EDGX จากเบลเยียมระบุว่าได้รันโมเดล AI ที่ลูกค้าพัฒนาขึ้นบน Sterna ซึ่งอยู่ในวงโคจรแล้ว พร้อมเปิดเผยรายละเอียดเพิ่มเติมของแผนเที่ยวบินที่เคยประกาศไว้ โดยวางแผนส่ง Sterna ในเดือนกุมภาพันธ์ 2027 และ Morus ที่ใช้ NVIDIA Jetson Thor ในเดือนตุลาคมปีเดียวกัน ไปกับ ION ของ D-Orbit ลูกค้าจะเช่าเวลาประมวลผลแทนการส่งอุปกรณ์ของตนเองขึ้นสู่อวกาศ ทั้ง 2 ภารกิจยังอยู่ในขั้นจองเที่ยวบิน และการประกาศครั้งนี้ไม่ได้เปิดเผยสมรรถนะการประมวลผลหรือราคาบริการ [ประกาศอย่างเป็นทางการ](https://www.edgx.space/blog/edgx-books-two-d-orbit-launches)<br><br><strong>② Critical Software·Lynx(Critical Software·Lynx, 11/17)</strong> — (2026-11-17) ทั้ง 2 บริษัททำให้ซอฟต์แวร์สำหรับดาวเทียม Karvel สามารถใช้งานบน LYNX MOSA.ic ได้ โดยออกแบบให้โปรเซสเซอร์ตัวเดียวรองรับทั้งการควบคุมการบิน การประมวลผลข้อมูลจากเพย์โหลด และงานบน Linux พร้อมแยกพื้นที่การทำงานเพื่อป้องกันการรบกวนระหว่างงาน นี่คือพื้นฐานสำหรับการรองรับงานประมวลผลหลายประเภทภายในดาวเทียมดวงเดียว แม้ Karvel จะมีประวัติการใช้งานในภารกิจอวกาศมาแล้ว แต่ยังไม่มีการประกาศว่ารุ่นที่ผสานระบบใหม่นี้ผ่านการสาธิตในวงโคจรแล้ว [ประกาศอย่างเป็นทางการ](https://solutions.criticalsoftware.com/en/newsroom/critical-software-brings-flight-proven-karvel-platform-to-lynx-mosaic) เมื่อนำประกาศทั้ง 2 มาพิจารณาร่วมกัน อาจตีความได้ว่าการให้บริการประมวลผลในวงโคจรต้องอาศัยทั้งความสามารถในการรับโปรแกรมของลูกค้ามารัน และความสามารถในการปกป้องการทำงานที่จำเป็นของดาวเทียม ยิ่งมีงานหลายประเภทใช้ฮาร์ดแวร์ที่มีอยู่อย่างจำกัดร่วมกัน การจัดสรรทรัพยากรและการจำกัดผลกระทบจากข้อขัดข้องก็ยิ่งสำคัญควบคู่กับสมรรถนะการประมวลผล ต่อจากนี้ เกณฑ์ประเมินความพร้อมในการขยายบริการคือ ระบบประมวลผลงานของลูกค้าได้อย่างเสถียรต่อเนื่องนานเพียงใด และเมื่อเกิดปัญหา จะกู้คืนการทำงานได้โดยไม่กระทบการปฏิบัติงานของดาวเทียมหรือไม่<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.edgx.space/blog/edgx-books-two-d-orbit-launches",
+        "label": "edgx.space"
+      },
+      {
+        "url": "https://solutions.criticalsoftware.com/en/newsroom/critical-software-brings-flight-proven-karvel-platform-to-lynx-mosaic",
+        "label": "solutions.criticalsoftware.com"
+      },
+      {
+        "url": "https://www.lynx.com/press-releases/critical-softwares-karvel-on-lynx-mosa.ic-lets-space-missions-run-flight-software-and-mixed-criticality-workloads-on-one-processor",
+        "label": "lynx.com"
+      }
+    ],
+    "video": {
+      "id": "24gqjPmYfBs",
+      "title": "EDGX, 고객 AI 궤도 실행 확인…2027년 추가 비행 예약",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-17": {
     "date": "2026-11-17",
     "headlines": [

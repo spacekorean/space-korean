@@ -1,4 +1,38 @@
 {
+  "2026-11-18": {
+    "date": "2026-11-18",
+    "headlines": [
+      {
+        "date": "2026-11-17",
+        "html": "<a href=\"https://www.edgx.space/blog/edgx-books-two-d-orbit-launches\" target=\"_blank\" rel=\"noopener\"><strong>EDGX confirms customer AI execution in orbit, details additional flights in 2027</strong>: Plans call for STERNA to fly in February and Jetson Thor-based MORUS in October aboard D-Orbit’s ION. — (EDGX)</a>"
+      },
+      {
+        "date": "2026-11-17",
+        "html": "<a href=\"https://www.lynx.com/press-releases/critical-softwares-karvel-on-lynx-mosa.ic-lets-space-missions-run-flight-software-and-mixed-criticality-workloads-on-one-processor\" target=\"_blank\" rel=\"noopener\"><strong>KARVEL and Lynx enable isolated satellite control and data processing on a single processor</strong>: A version of the KARVEL satellite software platform integrated with LYNX MOSA.ic has been unveiled. — (Critical Software·Lynx)</a>"
+      }
+    ],
+    "summary_html": "<strong>① EDGX(EDGX, 11/17)</strong> — (2026-11-17) Belgium-based EDGX said it had run a customer-developed AI model on STERNA in orbit. The company also detailed previously announced plans for additional flights. STERNA is planned to fly in February 2027, followed by NVIDIA Jetson Thor-based MORUS in October that year, both aboard D-Orbit’s ION. Customers rent computing time rather than launch their own hardware. Both missions are at the booking stage, and the announcement did not disclose processing performance or service pricing. [Official announcement](https://www.edgx.space/blog/edgx-books-two-d-orbit-launches)<br><br><strong>② Critical Software·Lynx(Critical Software·Lynx, 11/17)</strong> — (2026-11-17) The two companies have made the KARVEL satellite software platform available on LYNX MOSA.ic. The integration is designed to run flight control, payload data processing and Linux workloads on a single processor while keeping their execution environments separate to prevent interference. It provides a foundation for running multiple computing workloads aboard a satellite. KARVEL itself has flight heritage, but the companies did not announce a completed in-orbit demonstration of the new integration. [Official announcement](https://solutions.criticalsoftware.com/en/newsroom/critical-software-brings-flight-proven-karvel-platform-to-lynx-mosaic) Taken together, the announcements suggest that providing orbital computing as a service requires both the ability to accept and run customer software and the ability to protect essential satellite functions. As more workloads share limited hardware, resource allocation and fault isolation become as important as computing performance. Key measures of readiness for service expansion will include how long systems can reliably process customer workloads and whether they can recover from problems without disrupting satellite operations.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.edgx.space/blog/edgx-books-two-d-orbit-launches",
+        "label": "edgx.space"
+      },
+      {
+        "url": "https://solutions.criticalsoftware.com/en/newsroom/critical-software-brings-flight-proven-karvel-platform-to-lynx-mosaic",
+        "label": "solutions.criticalsoftware.com"
+      },
+      {
+        "url": "https://www.lynx.com/press-releases/critical-softwares-karvel-on-lynx-mosa.ic-lets-space-missions-run-flight-software-and-mixed-criticality-workloads-on-one-processor",
+        "label": "lynx.com"
+      }
+    ],
+    "video": {
+      "id": "24gqjPmYfBs",
+      "title": "EDGX, 고객 AI 궤도 실행 확인…2027년 추가 비행 예약",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-17": {
     "date": "2026-11-17",
     "headlines": [
