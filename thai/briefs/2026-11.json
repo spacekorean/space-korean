@@ -1,4 +1,34 @@
 {
+  "2026-11-19": {
+    "date": "2026-11-19",
+    "headlines": [
+      {
+        "date": "2026-11-17",
+        "html": "<a href=\"https://ramon.space/press/ramon-space-raises-124-million-series-b-leading-the-next-era-of-computing-in-orbit/\" target=\"_blank\" rel=\"noopener\"><strong>Ramon.Space ระดมทุน 124 ล้านดอลลาร์…ขยายการผลิตอุปกรณ์ประมวลผลสำหรับดาวเทียม</strong>: PSG เป็นผู้นำการระดมทุนรอบนี้ โดยมี Micron และผู้ลงทุนรายอื่นเข้าร่วม บริษัทมีแผนนำเงินไปขยายการผลิตและการส่งมอบ รวมถึงนำผลิตภัณฑ์รุ่นใหม่ออกสู่ตลาด — (Ramon.Space)</a>"
+      },
+      {
+        "date": "2026-11-18",
+        "html": "<a href=\"https://www.aerospacelab.com/blog/press-releases-1/aerospacelab-and-loft-orbital-sign-mou-to-scale-access-to-high-power-satellite-platforms-across-europe-40\" target=\"_blank\" rel=\"noopener\"><strong>Aerospacelab·Loft Orbital เดินหน้าความร่วมมือด้านแพลตฟอร์มดาวเทียมกำลังไฟฟ้าสูง</strong>: ทั้งสองบริษัทลงนามในบันทึกความเข้าใจเพื่อผสานการผลิตดาวเทียมเข้ากับเทคโนโลยีการบูรณาการเพย์โหลดและการปฏิบัติภารกิจ พร้อมศึกษาพื้นฐานที่จะรองรับศูนย์ข้อมูลในอวกาศในอนาคต — (Aerospacelab)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Ramon.Space (Ramon.Space, 11/17)</strong> — (2026-11-17) Ramon.Space ระดมทุน Series B ได้ 124 ล้านดอลลาร์ เพื่อเพิ่มการผลิตและการส่งมอบระบบคอมพิวเตอร์สำหรับประมวลผล จัดเก็บ และส่งข้อมูลบนดาวเทียม โดยมี PSG เป็นผู้นำการลงทุน และ Micron ผู้ผลิตชิปหน่วยความจำ รวมถึงผู้ลงทุนรายอื่นเข้าร่วม บริษัทมีแผนนำเงินไปใช้ส่งมอบผลิตภัณฑ์รุ่นใหม่และขยายตลาดต่างประเทศด้วย การประกาศครั้งนี้เป็นเรื่องการระดมทุน ไม่ใช่หลักฐานว่าศูนย์ข้อมูลในอวกาศขนาดใหญ่เปิดใช้งานแล้ว [ประกาศการระดมทุนอย่างเป็นทางการ](https://ramon.space/press/ramon-space-raises-124-million-series-b-leading-the-next-era-of-computing-in-orbit/)<br><br><strong>② Aerospacelab·Loft Orbital (Aerospacelab, 11/18)</strong> — (2026-11-18) ทั้งสองบริษัทลงนามในบันทึกความเข้าใจเพื่อศึกษาความร่วมมือด้านแพลตฟอร์มดาวเทียมกำลังไฟฟ้าสูง โดยมีแนวคิดที่จะผสานระบบการผลิตดาวเทียมของ Aerospacelab เข้ากับเทคโนโลยีการบูรณาการเพย์โหลดและการปฏิบัติภารกิจของ Loft Orbital เป้าหมายคือการวางรากฐานจากการประมวลผลในวงโคจรไปสู่ศูนย์ข้อมูลในอวกาศในอนาคต ปัจจุบันยังอยู่ในขั้นศึกษาความเป็นไปได้ในการบูรณาการ และยังไม่มีการประกาศจำนวนดาวเทียมที่จะจัดซื้อ ข้อกำหนดด้านกำลังไฟฟ้า หรือกำหนดการปล่อยดาวเทียมภายใต้ความร่วมมือนี้ [ประกาศข้อตกลงอย่างเป็นทางการ](https://www.aerospacelab.com/blog/press-releases-1/aerospacelab-and-loft-orbital-sign-mou-to-scale-access-to-high-power-satellite-platforms-across-europe-40) เมื่อพิจารณาประกาศทั้งสองร่วมกัน อาจตีความได้ว่าความพยายามขยายการประมวลผลในวงโคจรกำลังเชื่อมโยงไปสู่ห่วงโซ่อุปทาน ทั้งการผลิตคอมพิวเตอร์และการจัดหาดาวเทียมเพื่อนำอุปกรณ์ขึ้นไปใช้งาน แม้จะผลิตอุปกรณ์ประมวลผลได้มากขึ้น แต่การให้บริการลูกค้ายังต้องอาศัยระบบจ่ายไฟ การจัดการความร้อน ตลอดจนการบูรณาการและการปฏิบัติการของดาวเทียม หลังการระดมทุนและการลงนามข้อตกลง จึงต้องติดตามแยกกันทั้งปริมาณการส่งมอบจริง ประสิทธิภาพของระบบที่บูรณาการแล้ว และผลงานการปฏิบัติการอย่างมีเสถียรภาพในวงโคจร<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://ramon.space/press/ramon-space-raises-124-million-series-b-leading-the-next-era-of-computing-in-orbit/",
+        "label": "ramon.space"
+      },
+      {
+        "url": "https://www.aerospacelab.com/blog/press-releases-1/aerospacelab-and-loft-orbital-sign-mou-to-scale-access-to-high-power-satellite-platforms-across-europe-40",
+        "label": "aerospacelab.com"
+      }
+    ],
+    "video": {
+      "id": "d6fZwDE6T7M",
+      "title": "라몬 스페이스, 1억 2400만 달러 유치…위성 연산장비 확대",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-18": {
     "date": "2026-11-18",
     "headlines": [

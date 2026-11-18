@@ -1,4 +1,33 @@
 {
+  "2026-11-19": {
+    "date": "2026-11-19",
+    "headlines": [
+      {
+        "date": "2026-11-17",
+        "html": "<a href=\"https://ramon.space/press/ramon-space-raises-124-million-series-b-leading-the-next-era-of-computing-in-orbit/\" target=\"_blank\" rel=\"noopener\"><strong>라몬 스페이스, 1억 2400만 달러 조달…위성 연산장비 생산 확대</strong>: PSG가 투자 라운드를 주도하고 마이크론 등이 참여했습니다. 생산·납품 확대와 차세대 제품 공급에 자금을 활용할 계획입니다. — (Ramon.Space)</a>"
+      },
+      {
+        "date": "2026-11-18",
+        "html": "<a href=\"https://www.aerospacelab.com/blog/press-releases-1/aerospacelab-and-loft-orbital-sign-mou-to-scale-access-to-high-power-satellite-platforms-across-europe-40\" target=\"_blank\" rel=\"noopener\"><strong>에어로스페이스랩·로프트 오비털, 고전력 위성 플랫폼 협력 추진</strong>: 위성 생산과 탑재체 통합·운영 기술을 결합하는 양해각서를 맺고, 향후 우주 데이터센터를 지원할 기반을 검토합니다. — (Aerospacelab)</a>"
+      }
+    ],
+    "summary_html": "<strong>① 라몬 스페이스(Ramon.Space, 11/17)</strong> — (2026-11-17) 라몬 스페이스가 위성에서 데이터를 처리·저장·전송하는 연산 시스템의 생산과 납품을 늘리기 위해 시리즈 B 투자 1억 2400만 달러를 유치했습니다. PSG가 주도하고 메모리 반도체 업체 마이크론 등이 참여했습니다. 회사는 차세대 제품 공급과 해외 시장 확대에도 자금을 쓸 계획입니다. 이번 발표는 자금 조달이며, 대형 우주 데이터센터 가동을 입증한 것은 아닙니다. [공식 투자 발표](https://ramon.space/press/ramon-space-raises-124-million-series-b-leading-the-next-era-of-computing-in-orbit/)<br><br><strong>② 에어로스페이스랩·로프트 오비털(Aerospacelab, 11/18)</strong> — (2026-11-18) 두 회사가 고전력 위성 플랫폼 협력을 검토하는 양해각서를 맺었습니다. 에어로스페이스랩의 위성 생산 체계에 로프트의 탑재체 통합·임무 운영 기술을 결합할 구상입니다. 궤도 연산에서 향후 우주 데이터센터로 이어질 기반을 목표로 제시했습니다. 현재는 통합 가능성을 검토하는 단계이며, 이번 협력의 위성 구매 수량·전력 사양·발사 일정은 발표하지 않았습니다. [공식 협약 발표](https://www.aerospacelab.com/blog/press-releases-1/aerospacelab-and-loft-orbital-sign-mou-to-scale-access-to-high-power-satellite-platforms-across-europe-40) 두 발표를 연결하면, 궤도 연산을 확대하려는 움직임이 컴퓨터 생산과 이를 실어 운영할 위성의 공급망으로 이어지고 있다는 해석이 가능합니다. 연산장비를 더 많이 만들어도 위성의 전력·열관리와 통합·운영이 뒷받침돼야 고객에게 서비스를 제공할 수 있습니다. 투자 유치와 협약 이후에는 실제 납품 규모, 통합된 시스템의 성능, 궤도에서의 안정적인 운용 실적을 각각 확인해야 합니다.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://ramon.space/press/ramon-space-raises-124-million-series-b-leading-the-next-era-of-computing-in-orbit/",
+        "label": "ramon.space"
+      },
+      {
+        "url": "https://www.aerospacelab.com/blog/press-releases-1/aerospacelab-and-loft-orbital-sign-mou-to-scale-access-to-high-power-satellite-platforms-across-europe-40",
+        "label": "aerospacelab.com"
+      }
+    ],
+    "video": {
+      "id": "d6fZwDE6T7M",
+      "title": "라몬 스페이스, 1억 2400만 달러 유치…위성 연산장비 확대"
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-18": {
     "date": "2026-11-18",
     "headlines": [

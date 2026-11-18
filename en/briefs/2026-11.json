@@ -1,4 +1,34 @@
 {
+  "2026-11-19": {
+    "date": "2026-11-19",
+    "headlines": [
+      {
+        "date": "2026-11-17",
+        "html": "<a href=\"https://ramon.space/press/ramon-space-raises-124-million-series-b-leading-the-next-era-of-computing-in-orbit/\" target=\"_blank\" rel=\"noopener\"><strong>Ramon.Space raises $124 million to expand production of satellite computing systems</strong>: PSG led the funding round, with participation from Micron and other investors. The company plans to use the funds to scale production and deliveries and bring next-generation products to market. — (Ramon.Space)</a>"
+      },
+      {
+        "date": "2026-11-18",
+        "html": "<a href=\"https://www.aerospacelab.com/blog/press-releases-1/aerospacelab-and-loft-orbital-sign-mou-to-scale-access-to-high-power-satellite-platforms-across-europe-40\" target=\"_blank\" rel=\"noopener\"><strong>Aerospacelab and Loft Orbital explore cooperation on high-power satellite platforms</strong>: The companies signed a memorandum of understanding to combine satellite manufacturing with payload integration and mission operations capabilities, exploring a foundation for future orbital data centers. — (Aerospacelab)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Ramon.Space (Ramon.Space, 11/17)</strong> — (2026-11-17) Ramon.Space raised $124 million in Series B funding to expand production and deliveries of computing systems that process, store and transmit data aboard satellites. PSG led the round, with participation from memory chipmaker Micron and other investors. The company also plans to use the funds to bring next-generation products to market and expand internationally. The announcement concerns financing; it does not demonstrate the operation of a large-scale orbital data center. [Official funding announcement](https://ramon.space/press/ramon-space-raises-124-million-series-b-leading-the-next-era-of-computing-in-orbit/)<br><br><strong>② Aerospacelab and Loft Orbital (Aerospacelab, 11/18)</strong> — (2026-11-18) The two companies signed a memorandum of understanding to explore cooperation on high-power satellite platforms. They envision combining Aerospacelab’s satellite manufacturing capabilities with Loft’s payload integration and mission operations expertise. Their stated goal is to lay the groundwork for a progression from in-orbit computing to future orbital data centers. The collaboration remains at the stage of assessing integration feasibility. Neither company disclosed satellite purchase quantities, power specifications or a launch schedule for the initiative. [Official agreement announcement](https://www.aerospacelab.com/blog/press-releases-1/aerospacelab-and-loft-orbital-sign-mou-to-scale-access-to-high-power-satellite-platforms-across-europe-40) Taken together, the announcements suggest that efforts to scale in-orbit computing are extending across the supply chain, from computer production to the satellites that will host and operate those systems. Producing more computing hardware alone will not enable customer services without adequate satellite power, thermal management, integration and operations. Following the funding round and agreement, actual delivery volumes, integrated system performance and a track record of reliable in-orbit operations will each need to be assessed.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://ramon.space/press/ramon-space-raises-124-million-series-b-leading-the-next-era-of-computing-in-orbit/",
+        "label": "ramon.space"
+      },
+      {
+        "url": "https://www.aerospacelab.com/blog/press-releases-1/aerospacelab-and-loft-orbital-sign-mou-to-scale-access-to-high-power-satellite-platforms-across-europe-40",
+        "label": "aerospacelab.com"
+      }
+    ],
+    "video": {
+      "id": "d6fZwDE6T7M",
+      "title": "라몬 스페이스, 1억 2400만 달러 유치…위성 연산장비 확대",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-18": {
     "date": "2026-11-18",
     "headlines": [
