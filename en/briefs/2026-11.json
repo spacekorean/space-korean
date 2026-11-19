@@ -1,4 +1,46 @@
 {
+  "2026-11-20": {
+    "date": "2026-11-20",
+    "headlines": [
+      {
+        "date": "2026-11-19",
+        "html": "<a href=\"https://www.blueorigin.com/news/google-selects-new-glenn-for-project-suncatcher\" target=\"_blank\" rel=\"noopener\"><strong>Google books dedicated New Glenn launch for Suncatcher, targeting Q1 2029</strong>: The research mission would send satellites into sun-synchronous orbit, each with roughly the computing capacity of a single data center rack. — (Blue Origin·Google)</a>"
+      },
+      {
+        "date": "2026-11-19",
+        "html": "<a href=\"https://www.prnewswire.com/news-releases/sophia-space-deploys-orbital-computing-software-across-multiple-kepler-satellites-302944909.html\" target=\"_blank\" rel=\"noopener\"><strong>Sophia Space announces operating system demonstration across Kepler satellites</strong>: The company deployed SOOS and tested distributed operations using processors and optical links aboard existing satellites. — (Sophia Space·Payload)</a>"
+      },
+      {
+        "date": "2026-11-19",
+        "html": "<a href=\"https://biz.heraldcorp.com/article/10942457\" target=\"_blank\" rel=\"noopener\"><strong>Flexell Space and ALATYR partner on power for orbital data centers</strong>: The companies signed a memorandum of understanding to explore integrating next-generation South Korean solar cells into the French company’s modular orbital infrastructure. — (The Herald Business)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Google·Blue Origin (Blue Origin, 11/19)</strong> — (2026-11-19) Google and Blue Origin announced a dedicated launch agreement for Suncatcher. The companies plan to launch satellites aboard New Glenn into sun-synchronous orbit in the first quarter of 2029. Each satellite would carry TPUs and is designed to provide roughly the computing capacity of a single data center rack. Neither the number of satellites nor the contract value was disclosed. The launch is intended for research and does not establish a firm commitment to operating a commercial data center. [Official launch agreement announcement](https://www.blueorigin.com/news/google-selects-new-glenn-for-project-suncatcher)<br><br><strong>② Sophia Space (Sophia Space·Payload, 11/19)</strong> — (2026-11-19) Sophia Space said it had deployed its SOOS operating system across multiple Kepler satellites. According to Payload, the software was replicated across processors on one satellite before being extended to a second satellite via optical links. The test used three processors per satellite, with one held in reserve. The demonstration should be distinguished from a flight of Sophia Space’s own TILE hardware or validation of large-scale computing performance. [Official deployment announcement](https://www.prnewswire.com/news-releases/sophia-space-deploys-orbital-computing-software-across-multiple-kepler-satellites-302944909.html) · [Reporting on the test](https://payloadspace.com/sophia-space-tests-orbital-compute-software-on-kepler-constellation/)<br><br><strong>③ Flexell Space·ALATYR (The Herald Business, 11/19)</strong> — (2026-11-19) Flexell Space and France’s ALATYR signed a memorandum of understanding to evaluate solar cells for orbital data centers. They will assess CIGS and perovskite technologies for ALATYR’s CITADEL concept, which retains power and cooling infrastructure while replacing computing modules. The companies will initially share power requirements and operating conditions, with development and demonstration methods to be determined in subsequent discussions. The agreement does not constitute a supply contract or a completed orbital demonstration. [Reporting on the agreement](https://biz.heraldcorp.com/article/10942457) Taken together, these developments suggest that orbital data center development is taking shape around distinct challenges: securing launches, linking computing resources across satellites through software, and building long-lasting power infrastructure. Although they target the same market, a launch agreement, an orbital software test and a technology evaluation agreement represent different stages of progress. A South Korean company’s involvement in assessing power requirements for an overseas orbital data center project is also notable. The next question is how well measured power performance, intersatellite computing throughput and long-term operating results support these plans.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.blueorigin.com/news/google-selects-new-glenn-for-project-suncatcher",
+        "label": "blueorigin.com"
+      },
+      {
+        "url": "https://www.prnewswire.com/news-releases/sophia-space-deploys-orbital-computing-software-across-multiple-kepler-satellites-302944909.html",
+        "label": "PR Newswire"
+      },
+      {
+        "url": "https://payloadspace.com/sophia-space-tests-orbital-compute-software-on-kepler-constellation/",
+        "label": "Payload"
+      },
+      {
+        "url": "https://biz.heraldcorp.com/article/10942457",
+        "label": "biz.heraldcorp.com"
+      }
+    ],
+    "video": {
+      "id": "m-0q1mWS64g",
+      "title": "구글 선캐처, 뉴글렌 전용 발사 계약…2029년 1분기 목표",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-19": {
     "date": "2026-11-19",
     "headlines": [

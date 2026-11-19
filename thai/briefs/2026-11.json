@@ -1,4 +1,46 @@
 {
+  "2026-11-20": {
+    "date": "2026-11-20",
+    "headlines": [
+      {
+        "date": "2026-11-19",
+        "html": "<a href=\"https://www.blueorigin.com/news/google-selects-new-glenn-for-project-suncatcher\" target=\"_blank\" rel=\"noopener\"><strong>Google ทำสัญญาปล่อยดาวเทียม Suncatcher ด้วยเที่ยวบินเฉพาะของ New Glenn ตั้งเป้าไตรมาส 1 ปี 2029</strong>: เดินหน้าภารกิจวิจัยที่จะส่งดาวเทียมเข้าสู่วงโคจรสัมพันธ์กับดวงอาทิตย์ โดยดาวเทียมแต่ละดวงจะมีกำลังประมวลผลใกล้เคียงอุปกรณ์ในศูนย์ข้อมูล 1 แร็ก — (Blue Origin·Google)</a>"
+      },
+      {
+        "date": "2026-11-19",
+        "html": "<a href=\"https://payloadspace.com/sophia-space-tests-orbital-compute-software-on-kepler-constellation/\" target=\"_blank\" rel=\"noopener\"><strong>Sophia Space ประกาศผลทดสอบระบบปฏิบัติการระหว่างดาวเทียม Kepler</strong>: ติดตั้ง SOOS และทดสอบการทำงานแบบกระจาย โดยใช้โปรเซสเซอร์และการเชื่อมต่อสื่อสารด้วยแสงของดาวเทียมที่มีอยู่แล้ว — (Sophia Space·Payload)</a>"
+      },
+      {
+        "date": "2026-11-19",
+        "html": "<a href=\"https://biz.heraldcorp.com/article/10942457\" target=\"_blank\" rel=\"noopener\"><strong>Flexell Space·ALATYR ร่วมศึกษาระบบพลังงานสำหรับศูนย์ข้อมูลในวงโคจร</strong>: ลงนามบันทึกความเข้าใจเพื่อศึกษาความเป็นไปได้ในการนำเซลล์แสงอาทิตย์รุ่นใหม่ของเกาหลีใต้มาใช้กับโครงสร้างพื้นฐานแบบโมดูลาร์ในวงโคจรของบริษัทฝรั่งเศส — (헤럴드경제)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Google·Blue Origin(Blue Origin, 11/19)</strong> — (2026-11-19) Google และ Blue Origin ประกาศสัญญาจัดเที่ยวบินปล่อยดาวเทียมสำหรับ Suncatcher โดยเฉพาะ มีแผนใช้ New Glenn ส่งดาวเทียมเข้าสู่วงโคจรสัมพันธ์กับดวงอาทิตย์ในไตรมาส 1 ปี 2029 โดยออกแบบให้ดาวเทียมแต่ละดวงติดตั้ง TPU และมีกำลังประมวลผลใกล้เคียงอุปกรณ์ในศูนย์ข้อมูล 1 แร็ก ทั้งสองบริษัทไม่ได้เปิดเผยจำนวนดาวเทียมหรือมูลค่าสัญญา แผนการปล่อยครั้งนี้มีวัตถุประสงค์เพื่อการวิจัย จึงยังไม่ใช่การยืนยันว่าจะเปิดดำเนินงานศูนย์ข้อมูลเชิงพาณิชย์ [ประกาศสัญญาปล่อยดาวเทียมอย่างเป็นทางการ](https://www.blueorigin.com/news/google-selects-new-glenn-for-project-suncatcher)<br><br><strong>② Sophia Space(Sophia Space·Payload, 11/19)</strong> — (2026-11-19) Sophia Space เปิดเผยว่าได้ติดตั้งระบบปฏิบัติการ SOOS บนดาวเทียม Kepler หลายดวง ตามรายงานของ Payload บริษัททำสำเนาซอฟต์แวร์ลงบนโปรเซสเซอร์หลายตัวในดาวเทียมดวงหนึ่ง ก่อนขยายไปยังดาวเทียมดวงที่ 2 ผ่านการสื่อสารด้วยแสง การทดสอบใช้โปรเซสเซอร์ 3 ตัวต่อดาวเทียม โดยจัดไว้ 1 ตัวเป็นตัวสำรอง ต้องแยกผลทดสอบนี้ออกจากการนำฮาร์ดแวร์ TILE ของบริษัทขึ้นบินจริง หรือการพิสูจน์สมรรถนะการประมวลผลขนาดใหญ่ [ประกาศการติดตั้งอย่างเป็นทางการ](https://www.prnewswire.com/news-releases/sophia-space-deploys-orbital-computing-software-across-multiple-kepler-satellites-302944909.html) · [รายงานรายละเอียดการทดสอบ](https://payloadspace.com/sophia-space-tests-orbital-compute-software-on-kepler-constellation/)<br><br><strong>③ Flexell Space·ALATYR(헤럴드경제, 11/19)</strong> — (2026-11-19) Flexell Space และ ALATYR จากฝรั่งเศส ลงนามบันทึกความเข้าใจเพื่อศึกษาการใช้เซลล์แสงอาทิตย์กับศูนย์ข้อมูลในวงโคจร ทั้งสองบริษัทจะประเมินเทคโนโลยี CIGS และเพอรอฟสไกต์ให้สอดคล้องกับแนวคิด CITADEL ซึ่งออกแบบให้เปลี่ยนโมดูลประมวลผลได้โดยคงโครงสร้างพื้นฐานด้านพลังงานและระบบระบายความร้อนไว้ ขั้นแรกจะแลกเปลี่ยนข้อมูลความต้องการพลังงานและเงื่อนไขการปฏิบัติงาน ส่วนแนวทางพัฒนาและทดสอบสาธิตจะกำหนดในการหารือขั้นต่อไป ข้อตกลงนี้ยังไม่ได้หมายถึงการได้รับคำสั่งซื้อหรือการทดสอบสาธิตในวงโคจรที่เสร็จสมบูรณ์ [รายงานรายละเอียดข้อตกลง](https://biz.heraldcorp.com/article/10942457) เมื่อพิจารณาข่าวทั้ง 3 เรื่องร่วมกัน อาจตีความได้ว่าการพัฒนาศูนย์ข้อมูลในอวกาศกำลังแยกออกเป็นโจทย์ที่ชัดเจนขึ้น ทั้งการจัดหาเที่ยวบินปล่อยดาวเทียม ซอฟต์แวร์ที่เชื่อมการประมวลผลของดาวเทียมหลายดวง และระบบพลังงานที่ใช้งานได้ในระยะยาว แม้ทั้งหมดจะมุ่งสู่ตลาดเดียวกัน แต่สัญญาปล่อยดาวเทียม การทดสอบซอฟต์แวร์ในวงโคจร และข้อตกลงศึกษาทางเทคนิค สะท้อนความคืบหน้าคนละขั้น อีกประเด็นที่น่าจับตาคือบริษัทเกาหลีใต้ได้เข้าร่วมศึกษาข้อกำหนดด้านพลังงานของศูนย์ข้อมูลในวงโคจรจากต่างประเทศ ขั้นต่อไปต้องติดตามว่าสมรรถนะจริงของระบบพลังงาน อัตราการประมวลผลระหว่างดาวเทียม และผลการปฏิบัติงานระยะยาว จะรองรับแผนเหล่านี้ได้มากเพียงใด<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.blueorigin.com/news/google-selects-new-glenn-for-project-suncatcher",
+        "label": "blueorigin.com"
+      },
+      {
+        "url": "https://www.prnewswire.com/news-releases/sophia-space-deploys-orbital-computing-software-across-multiple-kepler-satellites-302944909.html",
+        "label": "PR Newswire"
+      },
+      {
+        "url": "https://payloadspace.com/sophia-space-tests-orbital-compute-software-on-kepler-constellation/",
+        "label": "Payload"
+      },
+      {
+        "url": "https://biz.heraldcorp.com/article/10942457",
+        "label": "biz.heraldcorp.com"
+      }
+    ],
+    "video": {
+      "id": "m-0q1mWS64g",
+      "title": "구글 선캐처, 뉴글렌 전용 발사 계약…2029년 1분기 목표",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-19": {
     "date": "2026-11-19",
     "headlines": [

@@ -1,4 +1,45 @@
 {
+  "2026-11-20": {
+    "date": "2026-11-20",
+    "headlines": [
+      {
+        "date": "2026-11-19",
+        "html": "<a href=\"https://www.blueorigin.com/news/google-selects-new-glenn-for-project-suncatcher\" target=\"_blank\" rel=\"noopener\"><strong>구글 선캐처, 뉴글렌 전용 발사 계약…2029년 1분기 목표</strong>: 위성마다 데이터센터 랙 한 대가량의 연산 용량을 갖춰 태양동기궤도로 보내는 연구 임무를 추진합니다. — (Blue Origin·Google)</a>"
+      },
+      {
+        "date": "2026-11-19",
+        "html": "<a href=\"https://payloadspace.com/sophia-space-tests-orbital-compute-software-on-kepler-constellation/\" target=\"_blank\" rel=\"noopener\"><strong>소피아 스페이스, 케플러 위성 간 운영체제 실증 발표</strong>: 기존 위성의 프로세서와 광통신 연결을 이용해 SOOS를 배치하고 분산 운영 기능을 시험했습니다. — (Sophia Space·Payload)</a>"
+      },
+      {
+        "date": "2026-11-19",
+        "html": "<a href=\"https://biz.heraldcorp.com/article/10942457\" target=\"_blank\" rel=\"noopener\"><strong>플렉셀스페이스·ALATYR, 궤도 데이터센터 전력 협력</strong>: 한국의 차세대 태양전지를 프랑스 기업의 모듈형 궤도 인프라에 적용할 수 있을지 검토하는 업무협약을 맺었습니다. — (헤럴드경제)</a>"
+      }
+    ],
+    "summary_html": "<strong>① 구글·블루오리진(Blue Origin, 11/19)</strong> — (2026-11-19) 구글과 블루오리진이 선캐처 전용 발사 계약을 발표했습니다. 뉴글렌으로 2029년 1분기 태양동기궤도에 위성을 보낼 계획이며, 각 위성은 TPU를 탑재해 데이터센터 랙 한 대가량의 연산 용량을 갖추도록 설계합니다. 위성 수와 계약 금액은 공개하지 않았습니다. 연구용 발사 계획으로, 상용 데이터센터 가동이 확정된 것은 아닙니다. [공식 발사 계약 발표](https://www.blueorigin.com/news/google-selects-new-glenn-for-project-suncatcher)<br><br><strong>② 소피아 스페이스(Sophia Space·Payload, 11/19)</strong> — (2026-11-19) 소피아 스페이스가 케플러 위성 여러 기에 운영체제 SOOS를 배치했다고 밝혔습니다. Payload에 따르면 한 위성의 프로세서들에 소프트웨어를 복제한 뒤 광통신으로 두 번째 위성까지 확장했습니다. 위성마다 프로세서 세 개를 쓰고 하나를 예비로 둔 시험입니다. 자체 TILE 하드웨어의 비행이나 대규모 연산 성능 검증과는 구분해야 합니다. [공식 배치 발표](https://www.prnewswire.com/news-releases/sophia-space-deploys-orbital-computing-software-across-multiple-kepler-satellites-302944909.html) · [시험 과정 취재](https://payloadspace.com/sophia-space-tests-orbital-compute-software-on-kepler-constellation/)<br><br><strong>③ 플렉셀스페이스·ALATYR(헤럴드경제, 11/19)</strong> — (2026-11-19) 플렉셀스페이스와 프랑스 ALATYR가 궤도 데이터센터용 태양전지 적용을 검토하는 업무협약을 맺었습니다. CIGS·페로브스카이트 기술을 전력·냉각 기반은 유지하고 연산 모듈을 교체하는 CITADEL 구상에 맞춰 평가합니다. 우선 전력 수요와 운용 조건을 공유하며, 개발·실증 방법은 후속 협의로 정합니다. 공급 수주나 궤도 실증 완료를 뜻하지 않습니다. [협약 내용 보도](https://biz.heraldcorp.com/article/10942457) 세 소식을 함께 보면, 우주 데이터센터 개발이 발사편 확보와 여러 위성의 연산을 연결하는 소프트웨어, 오래 사용할 전력 설비라는 서로 다른 과제로 구체화되고 있다고 해석할 수 있습니다. 같은 시장을 향해도 발사 계약·궤도 소프트웨어 시험·기술 검토 협약은 진척 단계가 다릅니다. 한국 기업이 해외 궤도 데이터센터의 전력 요구사항을 함께 검토한다는 점도 주목할 만합니다. 이후에는 실제 전력 성능과 위성 간 연산 처리량, 장기 운용 결과가 계획을 얼마나 뒷받침하는지 확인해야 합니다.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.blueorigin.com/news/google-selects-new-glenn-for-project-suncatcher",
+        "label": "blueorigin.com"
+      },
+      {
+        "url": "https://www.prnewswire.com/news-releases/sophia-space-deploys-orbital-computing-software-across-multiple-kepler-satellites-302944909.html",
+        "label": "PR Newswire"
+      },
+      {
+        "url": "https://payloadspace.com/sophia-space-tests-orbital-compute-software-on-kepler-constellation/",
+        "label": "Payload"
+      },
+      {
+        "url": "https://biz.heraldcorp.com/article/10942457",
+        "label": "biz.heraldcorp.com"
+      }
+    ],
+    "video": {
+      "id": "m-0q1mWS64g",
+      "title": "구글 선캐처, 뉴글렌 전용 발사 계약…2029년 1분기 목표"
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-19": {
     "date": "2026-11-19",
     "headlines": [
