@@ -1,4 +1,34 @@
 {
+  "2026-11-23": {
+    "date": "2026-11-23",
+    "headlines": [
+      {
+        "date": "2026-11-18",
+        "html": "<a href=\"https://phisonblog.com/phison-takes-data-storage-beyond-earth-with-pascari-space/\" target=\"_blank\" rel=\"noopener\"><strong>Phison วางแผนจัดหา SSD ความจุ 488 เทราไบต์ให้โหนดจัดเก็บข้อมูลในวงโคจรของ Lonestar</strong>: เปิดตัว ‘Pascari Space’ สำหรับใช้งานในอวกาศ…มีความจุที่ใช้งานได้จริงประมาณ 370 เทราไบต์ ตั้งเป้าส่งขึ้นสู่อวกาศในครึ่งแรกของปี 2027 — (Phison Blog·Phison)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Phison (Phison Blog, 11/18)</strong> — (2026-11-18) Phison เปิดตัว SSD สำหรับใช้งานในอวกาศ ‘Pascari Space’ ที่งาน SC26 เมื่อวันที่ 17 พฤศจิกายน 2026 บริษัทมีแผนจัดหาอุปกรณ์จัดเก็บข้อมูลความจุรวม 488 เทราไบต์ โดยมีความจุที่ใช้งานได้จริงประมาณ 370 เทราไบต์ ให้กับ StarVault-001 ของ Lonestar ตั้งเป้าส่งขึ้นสู่อวกาศในครึ่งแรกของปี 2027 โดยยังไม่ได้เปิดใช้งานจริงในวงโคจร ผลิตภัณฑ์แบ่งตามการใช้งานเป็น 3 กลุ่ม ได้แก่ ระบบสำคัญต่อการบิน การประมวลผลทั่วไปบนเพย์โหลด และศูนย์ข้อมูลในวงโคจร พร้อมรองรับการจัดการข้อผิดพลาดและการประเมินผลกระทบจากรังสีให้เหมาะกับแต่ละภารกิจ [ประกาศต้นฉบับเกี่ยวกับผลิตภัณฑ์และแผนการจัดหา](https://www.phison.com/phison-launches-purpose-built-storage-solutions-for-new-space-economy/)<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://phisonblog.com/phison-takes-data-storage-beyond-earth-with-pascari-space/",
+        "label": "phisonblog.com"
+      },
+      {
+        "url": "https://www.phison.com/phison-launches-purpose-built-storage-solutions-for-new-space-economy/",
+        "label": "phison.com"
+      },
+      {
+        "url": "https://www.cubesatnews.com/reports/Phison_launches_Pascari_Space_drives_and_will_supply_storage_for_Lonestar_orbital_data_node_999.html",
+        "label": "cubesatnews.com"
+      }
+    ],
+    "video": {
+      "id": "22t7bp74Gr4",
+      "title": "파이슨, 우주 데이터센터에 488TB SSD 공급 계획",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-20": {
     "date": "2026-11-20",
     "headlines": [

@@ -1,4 +1,34 @@
 {
+  "2026-11-23": {
+    "date": "2026-11-23",
+    "headlines": [
+      {
+        "date": "2026-11-18",
+        "html": "<a href=\"https://www.cubesatnews.com/reports/Phison_launches_Pascari_Space_drives_and_will_supply_storage_for_Lonestar_orbital_data_node_999.html\" target=\"_blank\" rel=\"noopener\"><strong>Phison plans to supply 488 TB of SSD storage for Lonestar orbital storage node</strong>: The company unveiled its space-focused “Pascari Space” lineup, with approximately 370 TB of usable capacity planned for the mission and launch targeted for the first half of 2027. — (Phison Blog·Phison)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Phison (Phison Blog, 11/18)</strong> — (2026-11-18) Phison unveiled its space-focused “Pascari Space” SSD lineup at SC26 on November 17, 2026. The company plans to supply Lonestar’s StarVault-001 with 488 TB of total storage, providing approximately 370 TB of usable capacity. Launch is targeted for the first half of 2027; the system has yet to operate in orbit. The lineup covers flight-critical systems, general onboard computing and orbital data centers, with mission-specific support for error handling and radiation assessment. [Original product announcement and supply plans](https://www.phison.com/phison-launches-purpose-built-storage-solutions-for-new-space-economy/)<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://phisonblog.com/phison-takes-data-storage-beyond-earth-with-pascari-space/",
+        "label": "phisonblog.com"
+      },
+      {
+        "url": "https://www.phison.com/phison-launches-purpose-built-storage-solutions-for-new-space-economy/",
+        "label": "phison.com"
+      },
+      {
+        "url": "https://www.cubesatnews.com/reports/Phison_launches_Pascari_Space_drives_and_will_supply_storage_for_Lonestar_orbital_data_node_999.html",
+        "label": "cubesatnews.com"
+      }
+    ],
+    "video": {
+      "id": "22t7bp74Gr4",
+      "title": "파이슨, 우주 데이터센터에 488TB SSD 공급 계획",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-20": {
     "date": "2026-11-20",
     "headlines": [

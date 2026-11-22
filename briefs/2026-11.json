@@ -1,4 +1,33 @@
 {
+  "2026-11-23": {
+    "date": "2026-11-23",
+    "headlines": [
+      {
+        "date": "2026-11-18",
+        "html": "<a href=\"https://phisonblog.com/phison-takes-data-storage-beyond-earth-with-pascari-space/\" target=\"_blank\" rel=\"noopener\"><strong>파이슨, 론스타 궤도 저장 노드에 488TB SSD 공급 계획</strong>: 우주용 ‘Pascari Space’ 공개…사용 가능한 용량은 약 370TB, 발사는 2027년 상반기 목표입니다. — (Phison Blog·Phison)</a>"
+      }
+    ],
+    "summary_html": "<strong>① 파이슨(Phison Blog, 11/18)</strong> — (2026-11-18) 파이슨은 2026년 11월 17일 SC26에서 우주용 SSD ‘파스카리 스페이스’를 공개했습니다. 회사는 론스타의 StarVault-001에 총 488TB, 실제 사용 가능한 용량 약 370TB의 저장장치를 공급할 계획입니다. 발사는 2027년 상반기 목표이며, 아직 궤도에서 가동한 실적은 아닙니다. 비행 핵심 시스템용·일반 탑재 연산용·궤도 데이터센터용으로 나누고, 임무에 맞춰 오류 처리와 방사선 평가를 지원합니다. [제품·공급 계획 원문](https://www.phison.com/phison-launches-purpose-built-storage-solutions-for-new-space-economy/)<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://phisonblog.com/phison-takes-data-storage-beyond-earth-with-pascari-space/",
+        "label": "phisonblog.com"
+      },
+      {
+        "url": "https://www.phison.com/phison-launches-purpose-built-storage-solutions-for-new-space-economy/",
+        "label": "phison.com"
+      },
+      {
+        "url": "https://www.cubesatnews.com/reports/Phison_launches_Pascari_Space_drives_and_will_supply_storage_for_Lonestar_orbital_data_node_999.html",
+        "label": "cubesatnews.com"
+      }
+    ],
+    "video": {
+      "id": "22t7bp74Gr4",
+      "title": "파이슨, 우주 데이터센터에 488TB SSD 공급 계획"
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-20": {
     "date": "2026-11-20",
     "headlines": [
