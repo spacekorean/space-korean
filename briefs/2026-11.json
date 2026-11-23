@@ -1,4 +1,41 @@
 {
+  "2026-11-24": {
+    "date": "2026-11-24",
+    "headlines": [
+      {
+        "date": "2026-11-23",
+        "html": "<a href=\"https://gxt.hunan.gov.cn/gxt/xxgk_71033/gzdt/qyzx/202611/t20261120_34107328.html\" target=\"_blank\" rel=\"noopener\"><strong>쿤룬위안, 위성 3기에서 대형 AI 모델 추론 시험 보고</strong>: ‘위안징’ 궤도 연산망의 초기 시험 결과를 소개했습니다. 2028년 말 80기 배치는 향후 목표입니다. — (신화통신·후난성 공업정보화청)</a>"
+      },
+      {
+        "date": "2026-11-22",
+        "html": "<a href=\"https://www.space.com/space-exploration/launches-spacecraft/spacex-spy-satellite-launch-nrol-136-proliferated-architecture\" target=\"_blank\" rel=\"noopener\"><strong>스페이스 엑스, 같은 발사장에서 32시간 만에 다음 발사</strong>: 기존 약 45시간 기록을 단축했습니다. 대규모 위성 배치를 뒷받침하는 발사 운영 소식입니다. — (Space.com·스페이스 엑스)</a>"
+      }
+    ],
+    "summary_html": "<strong>① 쿤룬위안(신화통신, 11/23)</strong> — (2026-11-23) 신화통신 취재에서 중국 쿤룬위안은 2026년 10월까지 시험 위성 3기를 발사해 단일 노드의 대형 AI 모델 추론을 궤도에서 시험했다고 설명했습니다. ‘위안징’ 컨스텔레이션은 모델과 작업을 우주에서 처리하는 연산망을 지향하며, 2028년 말 80기 배치가 목표입니다. 회사가 밝힌 초기 시험 성과로, 대규모 상용 서비스의 성능이 검증됐다는 뜻은 아닙니다. [시험·계획 확인](https://gxt.hunan.gov.cn/gxt/xxgk_71033/gzdt/qyzx/202611/t20261120_34107328.html)<br><br><strong>② 스페이스 엑스(Space.com, 11/22)</strong> — (2026-11-22) 스페이스 엑스는 미국 반덴버그 4E 발사장에서 미우주군 USSF-317에 이어 NROL-136을 발사했습니다. 발사 간격은 32시간 3분 21초로, 종전 약 45시간보다 짧습니다. 서로 다른 발사체를 사용한 발사장 운영 기록입니다. 궤도 데이터센터의 다수 위성 배치에도 발사장 처리 능력이 필요하다는 점에서 주목합니다. 이번 탑재체는 정찰 임무용입니다. [발사·기록 보도](https://www.space.com/space-exploration/launches-spacecraft/spacex-spy-satellite-launch-nrol-136-proliferated-architecture) 편집적 해석으로는, 우주 데이터센터의 확장성을 판단할 때 궤도에서 작업을 처리하는 능력과 위성을 꾸준히 배치하는 능력을 함께 살펴야 합니다. 다음 검증 과제는 여러 노드가 협력할 때의 전력·열 관리와 신뢰성, 그리고 짧은 발사 간격을 반복해서 유지할 수 있는지입니다. 시험 위성 수나 한 차례의 발사 기록만으로 상용 연산망의 처리량과 비용을 판단할 수는 없습니다.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://app.xinhuanet.com/news/article.html?articleId=2026112366e54a8ab62f4c9bb3fe7821379a3d33",
+        "label": "app.xinhuanet.com"
+      },
+      {
+        "url": "https://gxt.hunan.gov.cn/gxt/xxgk_71033/gzdt/qyzx/202611/t20261120_34107328.html",
+        "label": "gxt.hunan.gov.cn"
+      },
+      {
+        "url": "https://hn.rednet.cn/content/646055/53/16488122.html",
+        "label": "hn.rednet.cn"
+      },
+      {
+        "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-spy-satellite-launch-nrol-136-proliferated-architecture",
+        "label": "Space.com"
+      }
+    ],
+    "video": {
+      "id": "J3X2Rdm6Da0",
+      "title": "쿤룬위안, 궤도 AI 추론 시험…80기 배치는 2028년 목표"
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-23": {
     "date": "2026-11-23",
     "headlines": [

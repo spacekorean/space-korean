@@ -1,4 +1,42 @@
 {
+  "2026-11-24": {
+    "date": "2026-11-24",
+    "headlines": [
+      {
+        "date": "2026-11-23",
+        "html": "<a href=\"https://app.xinhuanet.com/news/article.html?articleId=2026112366e54a8ab62f4c9bb3fe7821379a3d33\" target=\"_blank\" rel=\"noopener\"><strong>Kunlunyuan reports large AI model inference tests aboard three satellites</strong>: The company outlined initial test results for its Yuanjing orbital computing network. Deploying 80 satellites by the end of 2028 remains a future goal. — (Xinhua News Agency · Hunan Provincial Department of Industry and Information Technology)</a>"
+      },
+      {
+        "date": "2026-11-22",
+        "html": "<a href=\"https://www.space.com/space-exploration/launches-spacecraft/spacex-spy-satellite-launch-nrol-136-proliferated-architecture\" target=\"_blank\" rel=\"noopener\"><strong>SpaceX launches again from the same pad after 32 hours</strong>: The turnaround surpassed the previous record of roughly 45 hours, highlighting launch operations that support large-scale satellite deployment. — (Space.com · SpaceX)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Kunlunyuan (Xinhua, 11/23)</strong> — (2026-11-23) In an interview with Xinhua, China’s Kunlunyuan said it had launched three test satellites by October 2026 and tested single-node inference with large AI models in orbit. The Yuanjing constellation is envisioned as a computing network that runs models and processes workloads in space, with a target of deploying 80 satellites by the end of 2028. These are company-reported results from initial tests, not validation of performance for large-scale commercial services. [Test results and deployment plans](https://gxt.hunan.gov.cn/gxt/xxgk_71033/gzdt/qyzx/202611/t20261120_34107328.html)<br><br><strong>② SpaceX (Space.com, 11/22)</strong> — (2026-11-22) SpaceX launched NROL-136 from Space Launch Complex 4E at Vandenberg in the United States, following the U.S. Space Force’s USSF-317 mission. The launches were separated by 32 hours, 3 minutes and 21 seconds, beating the previous record of roughly 45 hours. This was a launch pad turnaround record involving two different launch vehicles. It is relevant to orbital data centers because deploying large numbers of satellites also requires sufficient launch pad capacity. The payloads on this launch were intended for reconnaissance missions. [Launch and turnaround record coverage](https://www.space.com/space-exploration/launches-spacecraft/spacex-spy-satellite-launch-nrol-136-proliferated-architecture) In our assessment, evaluating the scalability of orbital data centers requires examining both the ability to process workloads in orbit and the ability to deploy satellites consistently. The next questions to resolve are power and thermal management and reliability when multiple nodes work together, as well as whether short launch turnaround times can be sustained. Neither the number of test satellites nor a single launch record is enough to establish the throughput or cost of a commercial computing network.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://app.xinhuanet.com/news/article.html?articleId=2026112366e54a8ab62f4c9bb3fe7821379a3d33",
+        "label": "app.xinhuanet.com"
+      },
+      {
+        "url": "https://gxt.hunan.gov.cn/gxt/xxgk_71033/gzdt/qyzx/202611/t20261120_34107328.html",
+        "label": "gxt.hunan.gov.cn"
+      },
+      {
+        "url": "https://hn.rednet.cn/content/646055/53/16488122.html",
+        "label": "hn.rednet.cn"
+      },
+      {
+        "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-spy-satellite-launch-nrol-136-proliferated-architecture",
+        "label": "Space.com"
+      }
+    ],
+    "video": {
+      "id": "J3X2Rdm6Da0",
+      "title": "쿤룬위안, 궤도 AI 추론 시험…80기 배치는 2028년 목표",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-23": {
     "date": "2026-11-23",
     "headlines": [
