@@ -1,4 +1,30 @@
 {
+  "2026-11-25": {
+    "date": "2026-11-25",
+    "headlines": [
+      {
+        "date": "2026-11-24",
+        "html": "<a href=\"https://www.moneycontrol.com/news/business/startup/galaxeye-taps-bellatrix-aerospace-for-propulsion-systems-across-its-next-30-satellite-launches-14088173.html\" target=\"_blank\" rel=\"noopener\"><strong>Bellatrix คว้าสัญญาจัดหาระบบขับเคลื่อนไฟฟ้าสำหรับดาวเทียมสำรวจของอินเดีย 30 ดวง</strong>: เป็นสัญญาระยะหลายปีสำหรับกลุ่มดาวเทียม Drishti รุ่นที่ 2 ของ GalaxEye โดยมีเป้าหมายนำดาวเทียมขึ้นประจำการภายในปี 2030 — (Inc42·Moneycontrol)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Bellatrix·GalaxEye(Inc42, 11/24)</strong> — (2026-11-24) GalaxEye ของอินเดียสั่งซื้อระบบขับเคลื่อนไฟฟ้า Arka จาก Bellatrix Aerospace สำหรับดาวเทียมสำรวจ 30 ดวง โดยจะเริ่มส่งมอบระบบสำหรับดาวเทียม 2 ดวงก่อน และไม่มีการเปิดเผยมูลค่าสัญญา ระบบนี้ทำหน้าที่ปรับเปลี่ยนและรักษาวงโคจร รวมถึงนำดาวเทียมออกจากวงโคจรเมื่อสิ้นสุดภารกิจ ในมุมมองของกองบรรณาธิการ นี่เป็นตัวอย่างของการขยายฐานการผลิตและการนำดาวเทียมขึ้นประจำการอย่างต่อเนื่อง ซึ่งจำเป็นต่อศูนย์ข้อมูลในอวกาศเช่นกัน สัญญาครั้งนี้มีไว้สำหรับเครือข่ายดาวเทียมสำรวจโลก ส่วนการส่งมอบระบบและการนำดาวเทียมทั้ง 30 ดวงขึ้นประจำการยังเป็นแผนที่จะดำเนินการต่อไป [ตรวจสอบรายละเอียดสัญญาและแผนการส่งมอบ](https://inc42.com/buzz/galaxeye-awards-bellatrix-propulsion-contract-for-30-satellites/)<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://inc42.com/buzz/galaxeye-awards-bellatrix-propulsion-contract-for-30-satellites/",
+        "label": "inc42.com"
+      },
+      {
+        "url": "https://www.moneycontrol.com/news/business/startup/galaxeye-taps-bellatrix-aerospace-for-propulsion-systems-across-its-next-30-satellite-launches-14088173.html",
+        "label": "moneycontrol.com"
+      }
+    ],
+    "video": {
+      "id": "ejpJf4El1qM",
+      "title": "벨라트릭스, 관측위성 30기용 추진장치 수주…2030년 배치 목표",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-24": {
     "date": "2026-11-24",
     "headlines": [
