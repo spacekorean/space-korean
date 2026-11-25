@@ -1,4 +1,34 @@
 {
+  "2026-11-26": {
+    "date": "2026-11-26",
+    "headlines": [
+      {
+        "date": "2026-11-25",
+        "html": "<a href=\"https://www.lightreading.com/satellite/fcc-greenlights-spacex-plan-to-deploy-up-to-1m-ai-satellites\" target=\"_blank\" rel=\"noopener\"><strong>FCC authorizes up to 1 million SpaceX orbital data center satellites</strong>: The “Starmind” constellation has received the first U.S. authorization for an orbital data center satellite constellation. The scope of the authorization should be distinguished from actual deployment and operational performance. — (FCC·Reuters)</a>"
+      }
+    ],
+    "summary_html": "<strong>① SpaceX (FCC, 11/25)</strong> — (2026-11-25) The U.S. FCC has authorized SpaceX’s “Starmind” orbital data center constellation of up to 1 million satellites. The proposed system would process data in orbit for use on Earth. The authorization also permits radio communications for backup and emergency command and control, complementing the optical communications network. The decision marks a regulatory milestone. The 1 million figure represents the number of satellites authorized, not evidence of actual deployment or demonstrated commercial computing performance. [Read the FCC announcement](https://eu-assets.contentstack.com/v3/assets/blt23eb5bbc4124baa6/blt3284fad4ee39d97e/6b071287af911015536d731d/FCC_Authorizes_1_Million_Satellites_for_Data_Centers_in_Space_PR_11-25-2026.pdf)<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://eu-assets.contentstack.com/v3/assets/blt23eb5bbc4124baa6/blt3284fad4ee39d97e/6b071287af911015536d731d/FCC_Authorizes_1_Million_Satellites_for_Data_Centers_in_Space_PR_11-25-2026.pdf",
+        "label": "eu-assets.contentstack.com"
+      },
+      {
+        "url": "https://www.lightreading.com/satellite/fcc-greenlights-spacex-plan-to-deploy-up-to-1m-ai-satellites",
+        "label": "lightreading.com"
+      },
+      {
+        "url": "https://tech.yahoo.com/science/articles/us-authorizes-spacex-deploy-1-165725964.html",
+        "label": "tech.yahoo.com"
+      }
+    ],
+    "video": {
+      "id": "IJ1AkYSmTVU",
+      "title": "SpaceX, 우주 데이터센터 위성 최대 100만 기 승인",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-25": {
     "date": "2026-11-25",
     "headlines": [

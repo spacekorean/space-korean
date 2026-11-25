@@ -1,4 +1,34 @@
 {
+  "2026-11-26": {
+    "date": "2026-11-26",
+    "headlines": [
+      {
+        "date": "2026-11-25",
+        "html": "<a href=\"https://www.lightreading.com/satellite/fcc-greenlights-spacex-plan-to-deploy-up-to-1m-ai-satellites\" target=\"_blank\" rel=\"noopener\"><strong>FCC อนุมัติดาวเทียมศูนย์ข้อมูลในอวกาศของ SpaceX สูงสุด 1 ล้านดวง</strong>: กลุ่มดาวเทียม ‘Starmind’ ได้รับใบอนุญาตเป็นกลุ่มดาวเทียมศูนย์ข้อมูลในอวกาศกลุ่มแรกของสหรัฐฯ ทั้งนี้ ต้องแยกจำนวนที่ได้รับอนุญาตออกจากจำนวนที่นำขึ้นสู่วงโคจรและเปิดใช้งานจริง — (FCC·Reuters)</a>"
+      }
+    ],
+    "summary_html": "<strong>① SpaceX(FCC, 11/25)</strong> — (2026-11-25) FCC ของสหรัฐฯ อนุมัติกลุ่มดาวเทียมศูนย์ข้อมูลในอวกาศ ‘Starmind’ ของ SpaceX จำนวนสูงสุด 1 ล้านดวง โครงการนี้มีแนวคิดนำข้อมูลที่ประมวลผลในวงโคจรมาใช้บนภาคพื้นดิน โดยยังได้รับอนุญาตให้ใช้การสื่อสารด้วยคลื่นวิทยุสำหรับการควบคุมสำรองและการควบคุมในภาวะฉุกเฉิน เพื่อเสริมเครือข่ายสื่อสารด้วยแสง ข่าวนี้สะท้อนความคืบหน้าในขั้นตอนการอนุมัติจากหน่วยงานกำกับดูแล ตัวเลข 1 ล้านดวงคือจำนวนที่ได้รับอนุญาต ไม่ใช่ตัวเลขที่ยืนยันการนำดาวเทียมขึ้นสู่วงโคจรจริงหรือพิสูจน์สมรรถนะการประมวลผลเชิงพาณิชย์ [อ่านประกาศของ FCC](https://eu-assets.contentstack.com/v3/assets/blt23eb5bbc4124baa6/blt3284fad4ee39d97e/6b071287af911015536d731d/FCC_Authorizes_1_Million_Satellites_for_Data_Centers_in_Space_PR_11-25-2026.pdf)<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://eu-assets.contentstack.com/v3/assets/blt23eb5bbc4124baa6/blt3284fad4ee39d97e/6b071287af911015536d731d/FCC_Authorizes_1_Million_Satellites_for_Data_Centers_in_Space_PR_11-25-2026.pdf",
+        "label": "eu-assets.contentstack.com"
+      },
+      {
+        "url": "https://www.lightreading.com/satellite/fcc-greenlights-spacex-plan-to-deploy-up-to-1m-ai-satellites",
+        "label": "lightreading.com"
+      },
+      {
+        "url": "https://tech.yahoo.com/science/articles/us-authorizes-spacex-deploy-1-165725964.html",
+        "label": "tech.yahoo.com"
+      }
+    ],
+    "video": {
+      "id": "IJ1AkYSmTVU",
+      "title": "SpaceX, 우주 데이터센터 위성 최대 100만 기 승인",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-25": {
     "date": "2026-11-25",
     "headlines": [

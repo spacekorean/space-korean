@@ -1,4 +1,33 @@
 {
+  "2026-11-26": {
+    "date": "2026-11-26",
+    "headlines": [
+      {
+        "date": "2026-11-25",
+        "html": "<a href=\"https://tech.yahoo.com/science/articles/us-authorizes-spacex-deploy-1-165725964.html\" target=\"_blank\" rel=\"noopener\"><strong>FCC, 스페이스 엑스 우주 데이터센터 위성 최대 100만 기 승인</strong>: ‘스타마인드’ 컨스텔레이션이 미국 최초의 우주 데이터센터 위성군 허가를 받았습니다. 허가 규모와 실제 배치·가동 실적은 구분해야 합니다. — (FCC·로이터)</a>"
+      }
+    ],
+    "summary_html": "<strong>① 스페이스 엑스(FCC, 11/25)</strong> — (2026-11-25) 미국 FCC가 스페이스 엑스의 ‘스타마인드’ 우주 데이터센터 컨스텔레이션을 최대 100만 기 규모로 승인했습니다. 궤도에서 처리한 데이터를 지상에서 활용하는 구상으로, 광통신망을 보완할 예비·비상 관제용 무선통신도 허용했습니다. 이번 소식은 규제 승인 단계의 진전입니다. 100만 기는 허가 규모이며, 실제 배치나 상용 연산 성능을 입증한 수치는 아닙니다. [FCC 발표 확인](https://eu-assets.contentstack.com/v3/assets/blt23eb5bbc4124baa6/blt3284fad4ee39d97e/6b071287af911015536d731d/FCC_Authorizes_1_Million_Satellites_for_Data_Centers_in_Space_PR_11-25-2026.pdf)<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://eu-assets.contentstack.com/v3/assets/blt23eb5bbc4124baa6/blt3284fad4ee39d97e/6b071287af911015536d731d/FCC_Authorizes_1_Million_Satellites_for_Data_Centers_in_Space_PR_11-25-2026.pdf",
+        "label": "eu-assets.contentstack.com"
+      },
+      {
+        "url": "https://www.lightreading.com/satellite/fcc-greenlights-spacex-plan-to-deploy-up-to-1m-ai-satellites",
+        "label": "lightreading.com"
+      },
+      {
+        "url": "https://tech.yahoo.com/science/articles/us-authorizes-spacex-deploy-1-165725964.html",
+        "label": "tech.yahoo.com"
+      }
+    ],
+    "video": {
+      "id": "IJ1AkYSmTVU",
+      "title": "SpaceX, 우주 데이터센터 위성 최대 100만 기 승인"
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-25": {
     "date": "2026-11-25",
     "headlines": [
