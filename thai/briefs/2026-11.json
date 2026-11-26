@@ -1,4 +1,30 @@
 {
+  "2026-11-27": {
+    "date": "2026-11-27",
+    "headlines": [
+      {
+        "date": "2026-11-24",
+        "html": "<a href=\"https://www.charleroi.be/actualites/ectro-anciennement-aerospacelab-la-plus-grande-usine-de-satellites-deurope-inauguree-a-charleroi\" target=\"_blank\" rel=\"noopener\"><strong>Aerospacelab เปิดโรงงานผลิตดาวเทียม รองรับกำลังการผลิตสูงสุดปีละ 500 ดวง</strong>: โรงงานขนาด 20,000 ตารางเมตรตั้งอยู่ในเมือง Charleroi ประเทศเบลเยียม เป็นฐานการผลิตเพื่อร่วมสร้างเครือข่ายสื่อสารที่ปลอดภัยของยุโรป IRIS² การเปิดโรงงานครั้งนี้ไม่ใช่การประกาศสร้างศูนย์ข้อมูลในอวกาศ — (ราชสำนักเบลเยียม·เทศบาลเมือง Charleroi)</a>"
+      }
+    ],
+    "summary_html": "<strong>① Aerospacelab (ราชสำนักเบลเยียม, 11/24)</strong> — (2026-11-24) เปิดโรงงานผลิตดาวเทียมขนาด 20,000 ตารางเมตรในเมือง Charleroi ประเทศเบลเยียม ราชสำนักระบุว่าโรงงานมีกำลังการผลิตสูงสุดปีละ 500 ดวง และมีแผนร่วมผลิตดาวเทียม 264 ดวงสำหรับเครือข่ายสื่อสารที่ปลอดภัยของยุโรป IRIS² โรงงานแห่งนี้ผลิตดาวเทียมสื่อสาร ไม่ใช่ศูนย์ข้อมูลในอวกาศ ในมุมมองอุตสาหกรรม ฐานการผลิตดาวเทียมอย่างต่อเนื่องเป็นหนึ่งในเงื่อนไขที่จำเป็นต่อการขยายเครือข่ายประมวลผลในวงโคจรในอนาคตด้วย ประเด็นสำคัญในมุมมองอุตสาหกรรมคือ กำลังการผลิตสูงสุดของโรงงานจะสะท้อนออกมาเป็นความรวดเร็วในการส่งมอบและคุณภาพจริงได้หรือไม่ ศูนย์ข้อมูลขนาดใหญ่ในวงโคจรก็จำเป็นต้องอาศัยฐานการผลิตอย่างต่อเนื่องเช่นกัน แต่ระบบจ่ายพลังงาน การระบายความร้อน และการรับมือรังสีของอุปกรณ์ประมวลผลบนดาวเทียมยังต้องผ่านการทดสอบแยกต่างหาก การเปิดโรงงานครั้งนี้จึงถือเป็นความก้าวหน้าของฐานการผลิตดาวเทียม แต่ไม่ได้หมายถึงการได้รับคำสั่งซื้อหรือมีผลงานการเดินระบบศูนย์ข้อมูลในอวกาศแล้ว<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.monarchie.be/nl/agenda/de-koning-huldigt-de-megafactory-van-aerospacelab-in-marcinelle-in",
+        "label": "monarchie.be"
+      },
+      {
+        "url": "https://www.charleroi.be/actualites/ectro-anciennement-aerospacelab-la-plus-grande-usine-de-satellites-deurope-inauguree-a-charleroi",
+        "label": "charleroi.be"
+      }
+    ],
+    "video": {
+      "id": "WJaUrLNqPuE",
+      "title": "에어로스페이스랩, 연 최대 500기 규모 위성 공장 준공",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-26": {
     "date": "2026-11-26",
     "headlines": [

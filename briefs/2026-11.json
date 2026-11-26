@@ -1,4 +1,29 @@
 {
+  "2026-11-27": {
+    "date": "2026-11-27",
+    "headlines": [
+      {
+        "date": "2026-11-24",
+        "html": "<a href=\"https://www.monarchie.be/nl/agenda/de-koning-huldigt-de-megafactory-van-aerospacelab-in-marcinelle-in\" target=\"_blank\" rel=\"noopener\"><strong>에어로스페이스랩, 연 최대 500기 생산 규모 위성 공장 준공</strong>: 벨기에 샤를루아에 2만㎡ 시설을 열었습니다. 유럽 보안 통신망 IRIS² 제작에 참여할 산업 기반이며, 우주 데이터센터 건설 발표는 아닙니다. — (벨기에 왕실·샤를루아시)</a>"
+      }
+    ],
+    "summary_html": "<strong>① 에어로스페이스랩(벨기에 왕실, 11/24)</strong> — (2026-11-24) 벨기에 샤를루아에 2만㎡ 규모 위성 공장을 준공했습니다. 왕실이 밝힌 생산능력은 연 최대 500기이며, 유럽 보안 통신망 IRIS²용 위성 264기 제작에 참여할 예정입니다. 통신위성 공장이지 우주 데이터센터는 아닙니다. 산업 관점에서 위성의 반복 생산 기반은 향후 궤도 연산망 확장에도 필요한 조건입니다. 산업 관점에서 중요한 것은 공장의 최대 생산능력이 실제 납품 속도와 품질로 이어지는지입니다. 대규모 궤도 데이터센터에도 반복 생산 기반이 필요하지만, 연산 탑재체의 전력·방열·방사선 대응은 별도로 검증해야 합니다. 이번 준공은 위성 제조 기반의 진전으로 볼 수 있으며, 우주 데이터센터 수주나 운용 실적을 뜻하지는 않습니다.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.monarchie.be/nl/agenda/de-koning-huldigt-de-megafactory-van-aerospacelab-in-marcinelle-in",
+        "label": "monarchie.be"
+      },
+      {
+        "url": "https://www.charleroi.be/actualites/ectro-anciennement-aerospacelab-la-plus-grande-usine-de-satellites-deurope-inauguree-a-charleroi",
+        "label": "charleroi.be"
+      }
+    ],
+    "video": {
+      "id": "WJaUrLNqPuE",
+      "title": "에어로스페이스랩, 연 최대 500기 규모 위성 공장 준공"
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-26": {
     "date": "2026-11-26",
     "headlines": [
