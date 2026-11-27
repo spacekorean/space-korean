@@ -1,4 +1,37 @@
 {
+  "2026-11-28": {
+    "date": "2026-11-28",
+    "headlines": [
+      {
+        "date": "2026-11-25",
+        "html": "<a href=\"https://www.hkexnews.hk/listedco/listconews/sehk/2026/1125/2026112501472_c.pdf\" target=\"_blank\" rel=\"noopener\"><strong>ADA Space, 궤도에서 45분 33초 연속 AI 학습 보고</strong>: ‘싱쑤안’ 2차 위성군의 학습·추론 시험과 10kW급 연산 장치의 열 제어 결과를 공시했습니다. — (ADA Space·홍콩거래소 공시)</a>"
+      },
+      {
+        "date": "2026-11-25",
+        "html": "<a href=\"https://news.bequoted.com/newsroom/unibap/pressreleases/unibap-space-solutions-avtal-med-amerikanskt-foretag-68655/\" target=\"_blank\" rel=\"noopener\"><strong>우주 연산 기업 유니뱁, 미국 고객과 870만 달러 계약</strong>: 회사 최대 단일 수주로, 계약 기간은 약 2년이며 첫 납품은 2026년 예정입니다. — (Unibap Space Solutions·beQuoted)</a>"
+      }
+    ],
+    "summary_html": "<strong>① ADA Space(홍콩거래소 공시, 11/25)</strong> — (2026-11-25) 중국 ADA Space는 중국정보통신연구원의 시험 결과를 인용해, ‘싱쑤안(星算)’ 2차 위성군이 궤도에서 45분 33초 연속으로 AI 모델의 전체 매개변수를 갱신하는 학습을 수행했다고 밝혔습니다. Qwen3-32B의 학습·추론 검증과 10kW급 연산 장치의 액체 냉각·방열판 작동도 보고했습니다. 회사 공시로 확인한 시험 성과이며, 장기 상용 운용이나 다른 회사 대비 성능 우위를 뜻하지는 않습니다.<br><br><strong>② 유니뱁(Unibap Space Solutions, 11/25)</strong> — (2026-11-25) 스웨덴 우주 연산 기업 유니뱁이 미국 자회사를 통해 미국 기업과 총 870만 달러의 계약을 체결했습니다. 회사는 최대 단일 수주라고 밝혔으며, 계약 기간은 약 2년, 첫 납품은 2026년 예정입니다. 고객명과 납품 제품·수량은 공개하지 않았습니다. 우주 연산 장비 공급 기반의 소식으로, 특정 대규모 궤도 데이터센터의 건설 계약으로 해석할 수는 없습니다. 편집적 해석으로는, 우주 데이터센터가 확대되려면 연산을 오래 지속하는 기술과 이를 반복해서 공급할 산업 기반이 함께 필요합니다. 이번 두 소식은 각각 시험 성과와 계약 확보 단계의 진전을 보여 줍니다. 다음에는 반복 운용의 안정성·전력과 열 관리, 실제 납품과 고객의 활용 성과를 확인해야 합니다. 시험 시간과 수주액은 서로 다른 지표이므로 이를 합쳐 상용화 수준을 판단해서는 안 됩니다.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/1125/2026112501472_c.pdf",
+        "label": "hkexnews.hk"
+      },
+      {
+        "url": "https://news.bequoted.com/newsroom/unibap/pressreleases/unibap-space-solutions-avtal-med-amerikanskt-foretag-68655/",
+        "label": "bequoted.com"
+      },
+      {
+        "url": "https://news.bequoted.com/newsroom/unibap/pressreleases/komplettering-unibap-space-solutions-avtal-med-amerikanskt-72925/",
+        "label": "bequoted.com"
+      }
+    ],
+    "video": {
+      "id": "nXfyFv20yw8",
+      "title": "ADA Space, 우주 AI 학습 45분 33초…10kW급 열 제어도 보고"
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-27": {
     "date": "2026-11-27",
     "headlines": [

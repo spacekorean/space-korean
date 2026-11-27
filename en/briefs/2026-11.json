@@ -1,4 +1,38 @@
 {
+  "2026-11-28": {
+    "date": "2026-11-28",
+    "headlines": [
+      {
+        "date": "2026-11-25",
+        "html": "<a href=\"https://www.hkexnews.hk/listedco/listconews/sehk/2026/1125/2026112501472_c.pdf\" target=\"_blank\" rel=\"noopener\"><strong>ADA Space reports 45 minutes, 33 seconds of continuous AI training in orbit</strong>: The company disclosed training and inference test results from its second Xingsuan satellite constellation, along with thermal management results for a 10-kW-class computing unit. — (ADA Space·HKEX filing)</a>"
+      },
+      {
+        "date": "2026-11-25",
+        "html": "<a href=\"https://news.bequoted.com/newsroom/unibap/pressreleases/unibap-space-solutions-avtal-med-amerikanskt-foretag-68655/\" target=\"_blank\" rel=\"noopener\"><strong>Space computing company Unibap signs $8.7 million contract with U.S. customer</strong>: The company&#x27;s largest single order covers approximately two years, with initial deliveries scheduled for 2026. — (Unibap Space Solutions·beQuoted)</a>"
+      }
+    ],
+    "summary_html": "<strong>① ADA Space (HKEX filing, Nov. 25)</strong> — (2026-11-25) China&#x27;s ADA Space, citing test results from the China Academy of Information and Communications Technology, said its second Xingsuan (星算) satellite constellation conducted 45 minutes, 33 seconds of continuous AI training in orbit, updating all model parameters. It also reported training and inference validation for Qwen3-32B and operation of liquid cooling and radiators for a 10-kW-class computing unit. These test results were reported in a company filing; they do not establish long-term commercial operation or superior performance relative to other companies.<br><br><strong>② Unibap (Unibap Space Solutions, Nov. 25)</strong> — (2026-11-25) Swedish space computing company Unibap signed an $8.7 million contract with a U.S. company through its U.S. subsidiary. Unibap described it as its largest single order, with a contract term of approximately two years and initial deliveries scheduled for 2026. The customer, products and quantities were not disclosed. The announcement concerns the supply of space computing equipment and should not be interpreted as a contract to build a specific large-scale orbital data center. In our assessment, scaling orbital data centers requires both technology capable of sustaining computing operations and an industrial base able to supply that equipment consistently. These two announcements show progress at different stages: testing and securing orders. The next milestones to watch are reliability over repeated operations, power and thermal management, actual deliveries and results from customer use. Test duration and order value measure different things and should not be combined to judge commercial maturity.<div class=\"ai-model-credit\" style=\"text-align:right;font-size:11px;opacity:.65;margin-top:12px\">AI 제작 · GPT-6 Astra</div>",
+    "sources": [
+      {
+        "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/1125/2026112501472_c.pdf",
+        "label": "hkexnews.hk"
+      },
+      {
+        "url": "https://news.bequoted.com/newsroom/unibap/pressreleases/unibap-space-solutions-avtal-med-amerikanskt-foretag-68655/",
+        "label": "bequoted.com"
+      },
+      {
+        "url": "https://news.bequoted.com/newsroom/unibap/pressreleases/komplettering-unibap-space-solutions-avtal-med-amerikanskt-72925/",
+        "label": "bequoted.com"
+      }
+    ],
+    "video": {
+      "id": "nXfyFv20yw8",
+      "title": "ADA Space, 우주 AI 학습 45분 33초…10kW급 열 제어도 보고",
+      "ko_audio": true
+    },
+    "ai_credit": "AI 제작 · GPT-6 Astra"
+  },
   "2026-11-27": {
     "date": "2026-11-27",
     "headlines": [
